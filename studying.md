@@ -18,8 +18,8 @@ cards that are ready to be learnt that day.
 When you click on a deck, it will become the 'current deck', and Anki
 will change to the study screen. You can return to the deck list to
 change the currently selected deck at any time by clicking on “Decks” at
-the top of the main window. (You can also use the [Study
-Deck](#studydeck) feature to select a new deck from the keyboard, or you
+the top of the main window. (You can also use the Study
+Deck action in the menu to select a new deck from the keyboard, or you
 can press the ‘s’ key to study the currently selected deck.)
 
 You can click the gears button to the right of a deck to rename or

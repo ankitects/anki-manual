@@ -13,7 +13,7 @@ and are lossless, but they usually result in much larger file sizes.
 When **night mode** is enabled, Anki will show cards as white text on a
 black background. Some card templates may need to be modified to work
 properly with this option enabled - please see [night mode
-styling](#nightmode) for more information.
+styling](templates/styling.md#night-mode) for more information.
 
 When using macOS in dark mode, recent Anki versions will automatically
 switch to night mode. If you want to force Anki to use light mode while

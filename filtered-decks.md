@@ -48,7 +48,7 @@ you specify.
 Show cards that will be due in the near future (a number of days you
 specify). This is useful for working through some of your older cards
 before a vacation, but it will not help with cards you have learnt
-recently. Please see the [reviewing ahead](#reviewingahead) section
+recently. Please see the [reviewing ahead](#reviewing-ahead) section
 below for more info.
 
 **Preview new cards*  
