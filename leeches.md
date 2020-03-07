@@ -8,7 +8,7 @@ Anki can help you identify leeches. Each time a review card 'lapses' (is
 failed while it is review mode), a counter is increased. When that
 counter reaches 8, the note is tagged as a leech, and the card is
 suspended. The threshold, and whether to suspend or not, can be adjusted
-in the [deck options](#deckoptions).
+in the [deck options](deck-options.md).
 
 Anki will continue to issue leech warnings periodically for a difficult
 card. The warning interval is half the initial leech threshold. That is,

@@ -118,7 +118,7 @@ This graph counts the number of card reviews you have done. The bars may
 correspond to days, weeks, or months, depending on the time period
 you’ve selected at the bottom of the screen. The differently colored
 blocks show how many of the cards you answered on each day were
-[mature](#cardtypedefinitions), young, relearning, or learning cards.
+[mature](stats.md#types-of-cards), young, relearning, or learning cards.
 There is also a separate group for cards answered in a filtered/cram
 deck while they were not due. The line and the right axis shows the
 cumulative total for each type of review as time progresses across the
@@ -149,7 +149,7 @@ how significant the results are).
 **Answer Buttons**  
 This graph shows how many times you’ve chosen the Again, Hard, Good, or
 Easy button while studying learning/new, young, and
-[mature](#cardtypedefinitions) cards. Anki also displays the percentage
+[mature](stats.md#types-of-cards) cards. Anki also displays the percentage
 of correct reviews for each type of card.
 
 **Cards Types**  

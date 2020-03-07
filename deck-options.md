@@ -23,7 +23,7 @@ New Cards
 ---------
 
 **Steps** controls the number of learning repetitions, and the delay
-between them. Please see the [learning](#learning) section for an
+between them. Please see the [learning](studying.md#learning) section for an
 overview of how the steps work.
 
 Steps over a day (1440 minutes) are supported as well - if you want, you
@@ -32,7 +32,7 @@ days before the card becomes a review card.
 
 If there’s nothing else to study, Anki will show cards up to 20 minutes
 early by default. The amount of time to look ahead is configurable in
-the [preferences](#preferences). One thing to be aware of is that the
+the [preferences](preferences.md). One thing to be aware of is that the
 due counts will differ between the deck screen and study screens in this
 case. The deck screen will not count cards that are not ready, but the
 study screen will. This is done so that you can tell which decks need
@@ -98,7 +98,7 @@ days). Based upon how you rate the card in subsequent reviews, the
 easiness may increase or decrease from what it starts out as.
 
 Turning off **bury related…​** will prevent Anki from [burying
-siblings](#siblings), and instead Anki will just try to avoid showing
+siblings](studying.md#siblings-and-burying), and instead Anki will just try to avoid showing
 siblings directly after one another in the same session. For this to
 work, your new cards/day setting needs to be large enough for the cards
 of multiple notes to be included.
@@ -181,11 +181,11 @@ given 12 days. This option is only available when the experimental
 scheduler is enabled in the preferences.
 
 Turning off **bury related…​** will prevent Anki from [burying
-siblings](#siblings), and instead Anki will just try to avoid showing
+siblings](studying.md#siblings-and-burying), and instead Anki will just try to avoid showing
 siblings directly after one another in the same session.
 
 Review cards are always shown in random order. If you wish to see them
-in a different order, you can use a [filtered deck](#filtered). More
+in a different order, you can use a [filtered deck](filtered-decks.md). More
 specifically, Anki randomizes reviews by grabbing batches of 50 cards in
 the order that they exist in the database, randomizing each batch, then
 putting them together. This means that there is a slight bias towards
@@ -248,7 +248,7 @@ audio until you press the replay audio key, `r` or `F5`.
 The 'when answer shown, replay both question and answer audio' option
 controls what happens when you choose to replay audio while the answer
 is shown. Please note that it does not control what happens when you
-show the answer; for that please see [this section](#specialfields).
+show the answer; for that please see [this section](templates/fields.md#special-fields).
 
 Description
 -----------

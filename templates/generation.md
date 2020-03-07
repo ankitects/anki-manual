@@ -158,7 +158,7 @@ do what you expect.
 Cloze Templates
 ---------------
 
-Please see the [cloze deletion](#cloze) section for background info.
+Please see the [cloze deletion](editing.md#cloze-deletion) section for background info.
 
 The cloze note type functions differently from regular note types.
 Instead of a customizable number of card types, it has a single type

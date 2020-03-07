@@ -103,7 +103,7 @@ big→ookii.
 
 In the above situation Anki can space reviews of those two sibling cards
 out so that they don’t appear one after the other (see [sibling
-spacing](#siblings) in the link at the top of this document).
+spacing](studying.md#siblings-and-burying) in the link at the top of this document).
 
 Some people want to extend this link between arbitrary cards. They want
 to be able to tell Anki "after showing me this card, show me that card",
@@ -272,7 +272,7 @@ Anki’s algorithm differs from SM-2 in some respects. Notably:
     acquisition process does not influence a card’s ease.
 
 You can also check out 'sched.py' in Anki’s source code for the
-scheduling code. Here is a summary (see the [deck options](#deckoptions)
+scheduling code. Here is a summary (see the [deck options](deck-options.md)
 section for the options that are mentioned in 'italics').
 
 If you press…​

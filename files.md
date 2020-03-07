@@ -165,7 +165,7 @@ Backups
 Each time your collection is closed (when closing Anki, switching
 profiles, or synchronizing your deck), Anki exports your collection into
 the backups folder. By default Anki will store up to 30 backups; you can
-adjust this in the [preferences](#preferences).
+adjust this in the [preferences](preferences.md).
 
 Automatic backups do not protect against disk or computer failure, and
 do not extend to your media. To keep your collections safe, please
@@ -176,7 +176,7 @@ menu item to export all decks with scheduling and media information
 included, which will save your data to a .colpkg file.
 
 If you want to back up multiple profiles and your add-ons as well, you
-can make a complete copy of your [Anki folder](#files). Please make sure
+can make a complete copy of your [Anki folder](files.md). Please make sure
 you close Anki first, as backups may be corrupt if run while Anki is
 open.
 
@@ -210,7 +210,7 @@ for each note type first.
 Inaccessible Harddisk
 ---------------------
 
-If Anki can’t write to files in the [Anki folder](#files), a message
+If Anki can’t write to files in the [Anki folder](files.md), a message
 will be displayed on startup saying that Anki can’t write to the
 harddisk, and Anki will close. If you’re unsure how to fix the
 permissions, please contact someone near you who is knowledgable about

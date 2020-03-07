@@ -4,7 +4,7 @@ Adding/Editing
 Adding Cards and Notes
 ----------------------
 
-Recall from the [basics](#basics) that in Anki we add notes rather than
+Recall from the [basics](getting-started.md) that in Anki we add notes rather than
 cards, and Anki creates cards for us. Click 'Add' in the main window,
 and the Add Notes window will appear.
 
@@ -35,7 +35,7 @@ When you’ve entered text into the front and back, you can click the
 note to your collection. When you do so, a card will be created as well,
 and placed into the deck you chose. If you’d like to edit a card you
 added, you can click the history button to search for a recently added
-card in the [browser](#browser).
+card in the [browser](browsing.md).
 
 Anki checks the first field for uniqueness, so it will warn you if you
 enter two cards with a Front field of “apple” (for example). The
@@ -49,7 +49,7 @@ efficiency reasons, but the browser has a “Find Duplicates” function
 which you can run periodically.
 
 For more information on the buttons between the note type and the
-fields, please see the [editor](#editor) section.
+fields, please see the [editor](editing.md) section.
 
 Different people like to review in different ways, but there are some
 general concepts to keep in mind. An excellent introduction is [this
@@ -116,24 +116,24 @@ for the numerical position you want the field to have. So if you want to
 change a field to be the new first field, enter “1”.
 
 Do not use 'Tags', 'Type', 'Deck', 'Card', or 'FrontSide' as field
-names, as they are [special fields](#specialfields) and will not work
+names, as they are [special fields](templates/fields.md#special-fields) and will not work
 properly.
 
 The options at the bottom of the screen allow you to edit various
 properties of the fields to be used when adding and editing the cards.
 This is 'not' where you customize what appears on your cards when
-reviewing; for that, please see [templates](#templates).
+reviewing; for that, please see [templates](templates/intro.md).
 
 **Editing Font** allows you to customize the font and size used when
 editing notes. This is useful if you want to make unimportant
 information smaller, or increase the size of foreign characters which
 are hard to read. The changes you make here do not affect how cards
 appear when reviewing: to do that, please see the
-[templates](#templates) section. If you have enabled the “type in the
+[templates](templates/intro.md) section. If you have enabled the “type in the
 answer” function, however, the text you type will use the font size
 defined here. (For information about how to change the actual font face
 when typing the answer, please see the [checking your
-answer](#typinganswers) section.)
+answer](templates/fields.md#checking-your-answer) section.)
 
 **Sort by this field…​** tells Anki to show this field in the Sort Field
 column of the browser. You can use this to sort cards by that field.
@@ -151,7 +151,7 @@ correctly during review, you’ll need to adjust your
 
 After you’ve added fields, you’ll probably want to add them to the front
 or back of your cards. For more information on that, please see the
-[templates](#templates) section.
+[templates](templates/intro.md) section.
 
 Changing Deck / Note Type
 -------------------------
@@ -199,7 +199,7 @@ supports searching in specific fields, which means you can do a search
 for “book:'my book' page:63” and immediately find what you’re looking
 for.
 
-Anki’s [custom study and filtered deck](#filtered) features make this
+Anki’s [custom study and filtered deck](filtered-decks.md) features make this
 especially powerful, as you can create temporary decks out of search
 terms. This allows you to review your content mixed together in a single
 deck most of the time (for optimum memory), but also create temporary
@@ -212,11 +212,11 @@ under a backlog, etc), tags/fields and filtered decks are better.
 Features
 --------
 
-The editor is shown when [adding notes](#addingnotes), [editing a
-note](#editmore) during reviews, or [browsing](#browser).
+The editor is shown when [adding notes](editing.md), [editing a
+note](studying.md) during reviews, or [browsing](browsing.md).
 
-On the top left are two buttons, which open the [fields](#fields) and
-[cards](#templates) windows.
+On the top left are two buttons, which open the [fields](editing.md#customizing-fields) and
+[cards](templates/intro.md) windows.
 
 On the right are buttons that control formatting. Bold, italic and
 underline work like they do in a word processing program. The next two
@@ -321,7 +321,7 @@ When the card comes up for review, it will appear as:
     [city] was founded in 1913.
 
 For information on testing your ability to type in a cloze deletion
-correctly, please see the section on [typing answers](#typinganswers).
+correctly, please see the section on [typing answers](templates/fields.md#checking-your-answer).
 
 Please note that overlapping clozes are not supported. For example, the
 following field is invalid:
@@ -329,7 +329,7 @@ following field is invalid:
     {{c1::Canberra was {{c2::founded}}}} in 1913
 
 If you need to create clozes from overlapping text, add another Text
-field to your cloze, add it to the [template](#templates), and then when
+field to your cloze, add it to the [template](templates/intro.md), and then when
 creating notes, paste the text into two separate fields, like so:
 
     Text1 field: {{c1::Canberra was founded}} in 1913

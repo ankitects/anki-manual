@@ -69,7 +69,7 @@ changing the deck) can operate on multiple cards at once.
 The background colour will change depending on the card. Marked cards
 are a shade of purple. Suspended cards are a shade of yellow. For more
 information about marked and suspended cards, please see [editing and
-more](#editmore).
+more](studying.md).
 
 One of the available columns is called the *sort field*. Anki allows you
 to choose one field from each type of note to be used for sorting. You
@@ -79,7 +79,7 @@ section.
 The question and answer columns display what you’d see on the question
 and answer while reviewing, except the answer column will strip the
 question part for clarity. You can also choose a [custom
-format](#columntemplates) in the card type editor instead of showing
+format](templates/styling.md#browser-appearance) in the card type editor instead of showing
 what would be seen during review.
 
 Current Note
@@ -87,8 +87,8 @@ Current Note
 
 The bottom right area displays the currently selected card’s note. For
 more information about cards and notes, please see [the
-basics](#basics). For more information on formatting buttons, please see
-[editing](#editor).
+basics](getting-started.md). For more information on formatting buttons, please see
+[editing](editing.md).
 
 You can see a preview of what the currently selected card would look
 like when reviewing by clicking the "preview" button next to the search
@@ -103,9 +103,9 @@ right clicking on command+clicking on the card list area.
 
 *Info* shows various information about the currently selected card,
 including its review history. For more information, see the
-[statistics](#stats) section.
+[statistics](stats.md) section.
 
-*Mark* and *Suspend* are documented in [editing and more](#editmore).
+*Mark* and *Suspend* are documented in [editing and more](studying.md).
 
 *Change Deck* allows you to move cards to a different deck. Cards can be
 placed in different decks, so if you want to move all cards in a note,
@@ -117,7 +117,7 @@ Tools&gt;Check Database from the main window.
 
 *Delete* removes the selected card(s) and their notes. It is not
 possible to remove individual cards, as individual cards are controlled
-by the [templates](#templates).
+by the [templates](templates/intro.md).
 
 Find and Replace
 ----------------
@@ -172,7 +172,7 @@ you could use:
     deck:'myDeck'
 
 The search syntax is the same as used when searching in the browser.
-Please see the [searching](#searching) section for more information.
+Please see the [searching](searching.md) section for more information.
 
 You can click one of the links in the search results list to display the
 duplicate notes in that set. If the search brings up a large number of

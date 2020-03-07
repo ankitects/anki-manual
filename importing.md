@@ -116,7 +116,7 @@ include angle brackets, you may write them differently:
 ### Importing Media
 
 If you want to include audio and pictures from a text file import, copy
-the files into the [collection.media folder](#files). **Do not put
+the files into the [collection.media folder](files.md). **Do not put
 subdirectories in the media folder, or some features will not work.**
 
 After you’ve copied the files, change one of the fields in your text
@@ -155,7 +155,7 @@ you select, with the filenames on the front (minus the file extension,
 so if you have a file named apple.jpg, the front would say 'apple') and
 the images or audio on the back. If you would like a different
 arrangement of media and filenames, you can [change the note
-type](#browsermisc) of the created cards afterwards.
+type](browsing.md) of the created cards afterwards.
 
 ### Adding Tags
 

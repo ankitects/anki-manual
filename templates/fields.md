@@ -148,7 +148,7 @@ when you encounter it in real life. Please have a read about the
 <http://www.supermemo.com/articles/20rules.htm> before proceeding.
 
 First, you’ll need to add a field to store the hint in if you have not
-already. Please see the [fields](#fields) section if you’re not sure how
+already. Please see the [fields](editing.md#customizing-fields) section if you’re not sure how
 to do this.
 
 Assuming you’ve created a field called MyField, you can tell Anki to

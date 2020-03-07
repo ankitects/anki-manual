@@ -102,7 +102,7 @@ other clients.
 
 The most general way to input LaTeX content is to surround it with
 \[latex\]\[/latex\] tags. There’s a shortcut button for this documented
-in the [editor](#editor) section.
+in the [editor](editing.md) section.
 
 \[latex\] tags must be used inside a field - placing them in the card
 template will [cause problems](#mediarefs).

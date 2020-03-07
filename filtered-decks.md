@@ -111,7 +111,7 @@ overview screen.
 The **search** area controls what cards Anki will gather. All of the
 searches possible in the browser are also possible for filtered decks,
 such as limiting to tags, finding cards forgotten a certain number of
-times, and so on. Please see the [searching](#searching) section of the
+times, and so on. Please see the [searching](searching.md) section of the
 manual for more information on the different possibilities.
 
 Filtered decks can not pull in cards that are suspended, buried, or
@@ -176,7 +176,7 @@ you’re most in danger of forgetting first.
 Steps & Returning
 -----------------
 
-Please see the section on [learning](#learning) as a reminder of how
+Please see the section on [learning](studying.md#learning) as a reminder of how
 steps work.
 
 By default, Anki will use the steps of a card’s home deck. If a new card

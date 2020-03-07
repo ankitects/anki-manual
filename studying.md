@@ -26,7 +26,7 @@ You can click the gears button to the right of a deck to rename or
 delete a deck, change its options, or [export](#exporting) it.
 
 When a deck has subdecks, the cards will appear from [each deck in
-turn](#displayorder).
+turn](studying.md#display-order).
 
 Study Overview
 --------------
@@ -64,7 +64,7 @@ and show the answer than keep struggling to remember.
 When the answer is shown, you should compare the answer you thought of
 with the answer which is shown and tell Anki how well you remembered. If
 you don’t trust yourself to compare your answer accurately, you can ask
-Anki to [prompt you to type in the answer](#typinganswers) rather than
+Anki to [prompt you to type in the answer](templates/fields.md#checking-your-answer) rather than
 just showing it to you.
 
 The number of buttons available for grading depends on whether the card
@@ -77,7 +77,7 @@ When learning new cards, or when relearning cards that you have
 forgotten, Anki will show you the cards one or more times to help you
 memorize them. Each time is called a 'learning step'. By default there
 are two steps: 1 minute and 10 minutes. You can change the number of
-steps and the delays between them in the [deck options](#deckoptions).
+steps and the delays between them in the [deck options](deck-options.md).
 
 There are three rating buttons when learning:
 
@@ -107,7 +107,7 @@ button, where 1 is **Again**. Pressing the spacebar will select
 If there are no other cards to show you, Anki will show learning cards
 again even if their delay has not elapsed completely. If you’d prefer to
 wait the full learning delay, you can change this behaviour in the
-[preferences](#preferences).
+[preferences](preferences.md).
 
 Reviewing
 ---------
@@ -153,7 +153,7 @@ fail a card, since that card needs to be shown several times.
 
 When the answer is shown, Anki shows an estimate of the next time a card
 will be shown above each button. If you’d prefer not to see the
-estimates, you can disable them in Anki’s [preferences](#preferences).
+estimates, you can disable them in Anki’s [preferences](preferences.md).
 
 Anki additionally adds a small amount of random variation to the next
 due times, in order to prevent cards that were introduced together and
@@ -166,7 +166,7 @@ Editing and More
 
 You can click the **Edit** button in the bottom left to edit the current
 note. When you finish editing, you’ll be returned to study. The editing
-screen works very similarly to the [add notes](#addingnotes) screen.
+screen works very similarly to the [add notes](editing.md) screen.
 
 At the bottom right of the review screen is a button labeled **More**.
 This button provides some other operations you can do on the current
@@ -182,9 +182,9 @@ during reviews.
 Bury Card / Note  
 Hides a card or all of the note’s cards from review until the next day.
 (If you want to unbury cards before then, you can click the “unbury”
-button on the [deck overview](#deckoverview) screen.) This is useful if
+button on the [deck overview](studying.md#study-overview) screen.) This is useful if
 you cannot answer the card at the moment or you want to come back to it
-another time. Burying can also [happen automatically](#siblings) for
+another time. Burying can also [happen automatically](studying.md#siblings-and-burying) for
 cards of the same note. If cards were in learning when they are buried,
 they are moved back to the new card queue or review queue prior to being
 buried.
@@ -246,13 +246,13 @@ from all decks at once and shown in the order they are due.
 
 To control the order reviews from a given deck appear in, or change new
 cards from ordered to random order, please see the [deck
-options](#deckoptions). For more fine-grained ordering of new cards, you
-can change the order in the [browser](#browser).
+options](deck-options.md). For more fine-grained ordering of new cards, you
+can change the order in the [browser](browsing.md).
 
 Siblings and Burying
 --------------------
 
-Recall from [the basics](#basics) that Anki can create more than one
+Recall from [the basics](getting-started.md) that Anki can create more than one
 card for each thing you input, such as a front→back card and a
 back→front card, or two different cloze deletions from the same text.
 These related cards are called 'siblings'.
@@ -261,11 +261,11 @@ When you answer a card that has siblings, Anki can prevent the card’s
 siblings from being shown in the same session by automatically 'burying'
 them. Buried cards are hidden from review until the clock rolls over to
 a new day or you manually unbury them using the “Unbury” button that’s
-visible at the bottom of the [deck overview](#deckoverview) screen. Anki
+visible at the bottom of the [deck overview](studying.md#study-overview) screen. Anki
 will bury siblings even if the siblings are not in the same deck (for
 instance, if you use the [deck override](#deckoverride) feature).
 
-You can enable burying from the [deck options](#deckoptions) screen -
+You can enable burying from the [deck options](deck-options.md) screen -
 there are separate settings for new cards and reviews.
 
 Anki will only bury siblings that are new or review cards. It will not
@@ -307,7 +307,7 @@ cards, their reviews won’t appear until you’ve gotten through your
 backlog.
 
 If you wish to change the order of the overdue reviews, you can do so by
-creating a [filtered deck](#filtered).
+creating a [filtered deck](filtered-decks.md).
 
 When you answer cards that have been waiting for a while, Anki factors
 in that delay when determining the next time a card should be shown.

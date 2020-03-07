@@ -244,7 +244,7 @@ a TrueType font, we’ll need to add it to the media folder:
     file will be used on a template, and should not be deleted when
     checking for unused media.
 
-2.  In your computer’s file browser, go to your [Anki Folder](#files),
+2.  In your computer’s file browser, go to your [Anki Folder](files.md),
     and then a folder called "User 1" (or your profile name if you’ve
     renamed/added profiles).
 

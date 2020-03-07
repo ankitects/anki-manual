@@ -67,7 +67,7 @@ Things to note from the above:
     without them it would match either 'dog and cat' or 'mouse'.
 
 -   Anki is only able to search within formatting in the [sort
-    field](#fields) you’ve configured. For example, if you add
+    field](editing.md#customizing-fields) you’ve configured. For example, if you add
     "**exa**mple" to one of your fields, this will not be matched when
     searching for "example" unless that field is the sort field. If a
     word is not formatted, or the formatting does not change in the
@@ -152,7 +152,7 @@ reviews (both due and not due) and lapsed cards
 cards that have been manually suspended
 
 `is:buried`  
-cards that have been buried, either [automatically](#siblings) or
+cards that have been buried, either [automatically](studying.md#siblings-and-burying) or
 manually
 
 Cards that have lapsed fall into several of these categories, so it may
@@ -233,7 +233,7 @@ the card with card id 123
 `mid:123`  
 find note types with note type id 123
 
-Note and card IDs can be found in the [card info](#stats) dialog in the
+Note and card IDs can be found in the [card info](stats.md) dialog in the
 browser. Note type IDs can be found by clicking on a note type in the
 Browse screen. These searches may also be helpful when doing add-on
 development or otherwise working closely with the database.

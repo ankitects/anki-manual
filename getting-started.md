@@ -73,7 +73,7 @@ specific topics such as “food verbs” or “lesson 1”. For more info on
 this, please see the [using decks appropriately](#manydecks) section.
 
 For information on how decks affect the order cards are displayed in,
-please see the [display order](#displayorder) section.
+please see the [display order](studying.md#display-order) section.
 
 ### Notes & Fields
 
@@ -134,7 +134,7 @@ has three fields: French, English, and Page.
 
 To add and edit fields, click the “Fields…​” button while adding or
 editing notes. For more information on fields, please see the
-[Customizing Fields](#fields) section.
+[Customizing Fields](editing.md#customizing-fields) section.
 
 ### Card Types
 
@@ -164,7 +164,7 @@ not surrounded by curly brackets remains the same on each card. (For
 instance, we don’t have to type “Page \#” into the Page field when
 adding material – it’s added automatically to every card.) &lt;br&gt; is
 a special code that tells Anki to move to the next line; more details
-are available in the [templates](#templates) section.
+are available in the [templates](templates/intro.md) section.
 
 The production card templates work in a similar way:
 
@@ -182,7 +182,7 @@ related cards updated at once.
 
 To add and edit card types, click the “Cards…​” button while adding or
 editing notes. For more information on card types, please see the [Cards
-and Templates](#templates) section.
+and Templates](templates/intro.md) section.
 
 ### Note Types
 
@@ -218,13 +218,13 @@ Basic (optional reversed card)
 This is a front→back card, and optionally a back→front card. To do this,
 it has a third field called “Add Reverse.” If you enter any text into
 that field, a reverse card will be created. More information about this
-is available in the [Cards and Templates](#templates) section.
+is available in the [Cards and Templates](templates/intro.md) section.
 
 Cloze  
 A note type which makes it easy to select text and turn it into a cloze
 deletion (e.g., “Man landed on the moon in \[…​\]” → “Man landed on the
 moon in 1969”). More information is available in the [cloze
-deletion](#cloze) section.
+deletion](editing.md#cloze-deletion) section.
 
 To add your own note types and modify existing ones, you can use Tools →
 Manage Note Types from the main Anki window.
@@ -236,7 +236,7 @@ from a particular note in different decks. When you add notes using the
 Add window, you can select what note type to use and what deck to use,
 and these choices are completely independent of each other. You can also
 change the note type of some notes [after you’ve already created
-them](#browsermisc).
+them](browsing.md).
 
 ### Collection
 
