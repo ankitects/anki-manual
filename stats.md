@@ -167,7 +167,7 @@ than what Anki provides, it is possible to access the data directly.
 Because of the complexity involved, this is not something we can provide
 any support for.
 
-One option is to [write an add-on](#add-ons) that adds another graph or
+One option is to [write an add-on](addons.md) that adds another graph or
 more details to the statistics window. There are several add-ons of this
 sort on AnkiWeb already, which you can look at to get an idea of how it
 works.

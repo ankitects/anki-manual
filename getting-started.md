@@ -70,7 +70,7 @@ Alternatively, you may rename this deck and use it for other cards.
 
 Decks are best used to hold broad categories of cards, rather than
 specific topics such as “food verbs” or “lesson 1”. For more info on
-this, please see the [using decks appropriately](#manydecks) section.
+this, please see the [using decks appropriately](editing.md#using-decks-appropriately) section.
 
 For information on how decks affect the order cards are displayed in,
 please see the [display order](studying.md#display-order) section.

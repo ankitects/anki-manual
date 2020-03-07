@@ -20,7 +20,7 @@ computer and your AnkiWeb account is empty, choose "upload" to send your
 data to AnkiWeb. If you have cards on AnkiWeb from another device, and
 no cards on your computer, choose "download" to replace the empty local
 collection with the cards that are on AnkiWeb. If you have different
-cards on both devices, [more work is required](#mergingconflicts) to
+cards on both devices, [more work is required](syncing.md#merging-conflicts) to
 avoid losing data.
 
 Once the initial one way sync is completed, Anki will be able to merge

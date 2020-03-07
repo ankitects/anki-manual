@@ -197,7 +197,7 @@ Browser Appearance
 
 If your card templates are complex, it may be difficult to read the
 question and answer columns (called "Front" and "Back") in the [card
-list](#cardlist). The "browser appearance" option allows you to define a
+list](browsing.md). The "browser appearance" option allows you to define a
 custom template to be used only in the browser, so you can include only
 the important fields and change the order if you desire. The syntax is
 the same as in standard card templates.
@@ -272,7 +272,7 @@ After that, you can either change the font for the entire card, or for
 individual fields. To change the font for the entire card, simply locate
 the font-family: line in the .card section and change the font to
 "myfont". To change the font for only certain fields, please see the
-[Field Styling](#fieldstyling) instructions above.
+[Field Styling](templates/styling.md) instructions above.
 
 Please make sure the filenames match exactly. If the file is called
 arial.TTF and you write arial.ttf in your card templates, it will not

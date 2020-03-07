@@ -252,7 +252,7 @@ or corrupted by a bug.
 
 When you run Tools&gt;Check Database, you will receive a message if Anki
 detects the file has been corrupted. **The best way to recover from this
-is to restore from the most recent [automatic backup](#backups)**, but
+is to restore from the most recent [automatic backup](preferences.md)**, but
 if your backup is too old, then you can attempt to repair the corruption
 instead.
 

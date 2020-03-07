@@ -350,5 +350,5 @@ If there are multiple sections elided, you can separate the answers in
 the text box with a comma.
 
 Type answer boxes will not appear in the ["preview"
-dialog](#currentnote-preview) in the browser. When you review or look at
+dialog](templates/intro.md) in the browser. When you review or look at
 the preview in the card types window, they will display.

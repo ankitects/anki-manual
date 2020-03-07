@@ -128,7 +128,7 @@ or
 
     [sound:myaudio.mp3]
 
-Alternatively, you can use the [find and replace](#findreplace) feature
+Alternatively, you can use the [find and replace](browsing.md) feature
 in the browse screen to update all the fields at once. If each field
 contains text like "myaudio", and you wish to make it play a sound,
 you’d search for (.\*) and replace it with "\[sound:\\1.mp3\]", with the
@@ -187,4 +187,4 @@ set in the import dialog. If notes are updated in place, the existing
 scheduling information on all their cards will be preserved.
 
 For info on how duplicates are handled in .apkg files, please see the
-[Deck Packages](#apkg-export) section below.
+[Deck Packages](exporting.md) section below.

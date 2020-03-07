@@ -141,5 +141,5 @@ multi-platform, running on Windows, Mac OSX, Linux/FreeBSD, and some
 mobile devices. And it’s considerably easier to use than SuperMemo.
 
 Anki’s spaced repetition system is based on an older version of the
-SuperMemo algorithm called [SM-2](#what-algorithm).
+SuperMemo algorithm called [SM-2](faqs.md).
 

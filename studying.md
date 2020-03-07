@@ -23,7 +23,7 @@ Deck](#studydeck) feature to select a new deck from the keyboard, or you
 can press the ‘s’ key to study the currently selected deck.)
 
 You can click the gears button to the right of a deck to rename or
-delete a deck, change its options, or [export](#exporting) it.
+delete a deck, change its options, or [export](exporting.md) it.
 
 When a deck has subdecks, the cards will appear from [each deck in
 turn](studying.md#display-order).
@@ -117,7 +117,7 @@ again, there are four buttons to rate your answer:
 
 **Again** marks your answer as incorrect and asks Anki to show the card
 more frequently in the future. The card is said to have 'lapsed'. Please
-see the [lapses](#lapses) section for more information about how lapsed
+see the [lapses](deck-options.md) section for more information about how lapsed
 reviews are handled.
 
 **Hard** shows the card at a slightly longer delay than last time, and
@@ -263,7 +263,7 @@ them. Buried cards are hidden from review until the clock rolls over to
 a new day or you manually unbury them using the “Unbury” button that’s
 visible at the bottom of the [deck overview](studying.md#study-overview) screen. Anki
 will bury siblings even if the siblings are not in the same deck (for
-instance, if you use the [deck override](#deckoverride) feature).
+instance, if you use the [deck override](templates/intro.md) feature).
 
 You can enable burying from the [deck options](deck-options.md) screen -
 there are separate settings for new cards and reviews.
@@ -312,4 +312,4 @@ creating a [filtered deck](filtered-decks.md).
 When you answer cards that have been waiting for a while, Anki factors
 in that delay when determining the next time a card should be shown.
 Please see the section on Anki’s spaced-repetition
-[algorithm](#what-algorithm) for more information.
+[algorithm](faqs.md) for more information.

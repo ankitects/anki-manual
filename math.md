@@ -105,7 +105,7 @@ The most general way to input LaTeX content is to surround it with
 in the [editor](editing.md) section.
 
 \[latex\] tags must be used inside a field - placing them in the card
-template will [cause problems](#mediarefs).
+template will [cause problems](templates/fields.md).
 
 For example, entering the following on the front of an Anki flashcard:
 

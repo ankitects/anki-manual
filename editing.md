@@ -147,7 +147,7 @@ same content into multiple notes, you may find this useful.
 display text from right to left (RTL), such as Arabic or Hebrew. This
 setting currently only controls editing; to make sure the text displays
 correctly during review, you’ll need to adjust your
-[template](#templatesrtl).
+[template](templates/styling.md).
 
 After you’ve added fields, you’ll probably want to add them to the front
 or back of your cards. For more information on that, please see the
@@ -236,14 +236,14 @@ your computer’s hard drive to attach to your notes. Alternatively, you
 can copy the media onto your computer’s clipboard (for instance, by
 right-clicking an image on the web and choosing 'Copy Image') and paste
 it into the field that you want to place it in. For more information
-about media, please see the [media](#media) section.
+about media, please see the [media](media.md) section.
 
 The microphone icon allows you to record from your computer’s microphone
 and attach the recording to the note.
 
 The last button shows more advanced features, such as editing the
 underlying HTML of a field, and shortcuts to add MathJax or
-[LaTeX](#latex) to your notes.
+[LaTeX](math.md) to your notes.
 
 Most of the buttons have shortcut keys. You can hover the mouse cursor
 over a button to see its shortcut.
