@@ -1,31 +1,8 @@
-# Introduction
+Best viewed on the website: https://docs.ankiweb.net
 
-## Quickstart
+This manual is licensed under the CC BY-SA 4 license:
 
-In a hurry? Jump straight to [Getting Started](getting-started.md).
+https://creativecommons.org/licenses/by-sa/4.0/
 
-## Translations
-
-Volunteers have contributed translations of this manual. The
-translations may not always be up to date.
-
--   [Bahasa Indonesia](https://apps.ankiweb.net/docs/manual.id.html)
-
--   [Deutsch](http://www.dennisproksch.de/anki)
-
--   [Español](https://apps.ankiweb.net/docs/manual.es.html)
-
--   [Français](https://apps.ankiweb.net/docs/manual.fr.html)
-
--   [Italiano](https://web.archive.org/web/20160423223801/http://192.167.9.6/Anki_ITA/Manual_ITA.htm)
-
--   [Polski](https://apps.ankiweb.net/docs/manual.pl.html)
-
--   [فارسى](http://ankidroid.ir/anki.pdf)
-
--   [日本語](http://wikiwiki.jp/rage2050/?FrontPage)
-
--   [简体中文](http://www.ankichina.net/anki20.html)
-
-If you would like to help translate the manual into a different language,
-please see the [translation docs](https://translating.ankiweb.net/#/anki/manual).
+Pull requests are welcome. Unless you state otherwise, any pull requests you
+submit will be licensed under the above license.
