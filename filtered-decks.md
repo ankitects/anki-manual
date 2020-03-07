@@ -51,7 +51,7 @@ before a vacation, but it will not help with cards you have learnt
 recently. Please see the [reviewing ahead](#reviewing-ahead) section
 below for more info.
 
-**Preview new cards*  
+**Preview new cards**  
 Show cards that you have recently added, without converting them to
 review cards as they are answered.
 
