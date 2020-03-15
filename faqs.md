@@ -96,7 +96,7 @@ Can I link cards together? Add dependencies? How should I handle synonyms?
 --------------------------------------------------------------------------
 
 Anki supports links between cards of a note, but not between unrelated
-cards. Imagine are you studying Japanese and aiming to be able to both
+cards. Imagine you are studying Japanese and aiming to be able to both
 recognize and reproduce the Japanese. You may enter the word "ookii",
 which means "big", and tell Anki to generate two cards - ookii→big and
 big→ookii.
