@@ -271,7 +271,7 @@ Anki’s algorithm differs from SM-2 in some respects. Notably:
     the card to get stuck in "low interval hell". In Anki, the initial
     acquisition process does not influence a card’s ease.
 
-You can also check out 'sched.py' in Anki’s source code for the
+You can also check out `sched.py` and `schedv2.py` in Anki’s source code for the
 scheduling code. Here is a summary (see the [deck options](deck-options.md)
 section for the options that are mentioned in 'italics').
 
