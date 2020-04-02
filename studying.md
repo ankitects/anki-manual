@@ -146,10 +146,13 @@ When only the question is shown, Anki shows three numbers like 12 + 34 +
 learning, and cards to review. If you’d prefer not to see the numbers,
 you can turn them off in Anki’s preferences.
 
-The numbers count 'reviews' needed to finish all the cards in that
-queue, not the number of 'cards'. If you have multiple steps configured
-for lapsed cards, the number will increase by more than one when you
-fail a card, since that card needs to be shown several times.
+In the old scheduler, the numbers count *reviews* needed to finish all the 
+cards in that queue, not the number of *cards*. If you have multiple
+steps configured for lapsed cards, the number will increase by more than 
+one when you fail a card, since that card needs to be shown several times.
+
+In the new scheduler, the numbers count *cards*, so the number will always
+increase by one regardless of the steps remaining.
 
 When the answer is shown, Anki shows an estimate of the next time a card
 will be shown above each button. If you’d prefer not to see the
