@@ -21,6 +21,8 @@ translations may not always be up to date.
 
 - [Polski](https://apps.ankiweb.net/docs/manual.pl.html)
 
+- [Português Brasileiro](https://mizerablebr.github.io/anki-manual/)
+
 - [فارسى](http://ankidroid.ir/anki.pdf)
 
 - [日本語](http://wikiwiki.jp/rage2050/?FrontPage)
