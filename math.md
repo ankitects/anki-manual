@@ -2,7 +2,6 @@
 
 ## MathJax
 
-
 [MathJax](https://www.mathjax.org) is a modern, browser-based
 typesetting system, useful for mathematical and chemical equations. It
 does not require the installation of any extra software, so it is easy
@@ -31,7 +30,7 @@ Anki’s MathJax support expects content in TeX format. If you’re not
 familiar with TeX formatting, please see [this
 cheatsheet](https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference).
 Please note that point 2 does not apply in Anki - Anki uses `\(` and
-`\)` for inline equations, and `\[` and `\\]` for display equations.
+`\)` for inline equations, and `\[` and `\]` for display equations.
 
 If you want to use newlines in a MathJax expression, please use
 Shift+Enter instead of just Enter, as a normal newline will prevent
@@ -80,7 +79,7 @@ command:
     sudo tlmgr update --self; sudo tlmgr install dvipng
 
 The command may not be on the path, so you may need to provide the full
-path, eg /usr/local/texlive/2014basic/bin/x86\_64-darwin/tlmgr.
+path, eg /usr/local/texlive/2014basic/bin/x86_64-darwin/tlmgr.
 
 If you are not using the above LaTeX packages, you will need to use the
 "edit LaTeX" add-on to specify the full path to latex and dvipng.
