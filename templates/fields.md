@@ -9,8 +9,8 @@ The most basic template looks something like this:
 When you place text within curly brackets, Anki looks for a field by
 that name, and replaces the text with the actual content of the field.
 
-Field names are case sensitive. If you have a field named 'Front',
-writing '\\{{front}\\}' will not work properly.
+Field names are case sensitive. If you have a field named `Front`,
+writing `{{front}}` will not work properly.
 
 Your templates are not limited to a list of fields. You can also include
 arbitrary text on your templates. For example, if you’re studying
@@ -135,7 +135,7 @@ the front and back of the card, you’ll need to manually include the audio
 fields on the back as well.
 
 As with other fields, special field names are case sensitive - you must use
-{{Tags}} rather than {{tags}} for example.
+`{{Tags}}` rather than `{{tags}}` for example.
 
 ## Hint Fields
 
@@ -163,7 +163,7 @@ empty, nothing will be shown.)
 
 If you show the hint on the question and then reveal the answer, the
 hint will be hidden again. If you want to have the hint always revealed
-when the answer is shown, you will need to remove \\{{FrontSide}} from
+when the answer is shown, you will need to remove `{{FrontSide}}` from
 your back template and manually add the fields you wish to appear.
 
 It is not currently possible to use a hint field for audio — the audio
@@ -296,7 +296,7 @@ edit your front template so that it looks like this:
     {{Native Word}}
     {{type:Foreign Word}}
 
-Note that we have added 'type:' in front of the field we want to
+Note that we have added `type:` in front of the field we want to
 compare. Since FrontSide is on the back of the card, the type answer box
 will appear on the back as well.
 
@@ -336,7 +336,7 @@ inline style using `!important`, like so:
     #typeans { font-size: 50px !important; }
 
 It is also possible to type in the answer for cloze deletion cards. To
-do this, add \\{\\{type:cloze:Text}} to both the front and back
+do this, add `{{type:cloze:Text}}` to both the front and back
 template, so the back looks something like this:
 
     {{cloze:Text}}
