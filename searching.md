@@ -14,7 +14,8 @@ for tags). Some examples:
 search for "dog" - will match words like "doggy" and "underdog" too
 
 `dog cat`  
-finds notes with both "dog" and "cat", such as "a dog and cat"
+finds notes that have both "dog" and "cat" on them, such as "raining
+cats and dogs"".
 
 `dog or cat`  
 finds notes with either "dog" or "cat"
@@ -47,31 +48,39 @@ etc.
 
 Things to note from the above:
 
--   Search terms are separated by spaces.
+- Search terms are separated by spaces.
 
--   When multiple search terms are provided, Anki looks for notes that
-    match all of the terms.
+- When multiple search terms are provided, Anki looks for notes that
+  match all of the terms - an implicit 'and' is inserted between each
+  term. On Anki 2.1.24+ and AnkiMobile 2.0.60+ you can be explicit
+  if you like ("dog and cat" is the same as "dog cat"), but older
+  Anki versions will treat "and" as just another word to search for.
 
--   You can use "or" if you only need one of the terms to match.
+- You can use "or" if you only need one of the terms to match.
 
--   You can prepend a minus sign to a term to find notes that don’t
-    match.
+- You can prepend a minus sign to a term to find notes that don’t
+  match.
 
--   If you want to search for something including a space or
-    parenthesis, enclose it in quotes.
+- If you want to search for something including a space or
+  parenthesis, enclose it in double quotes. You can quote either the
+  `"entire:term"`, or just the `part:"after a colon"`.
 
--   You can group search terms by placing them in parentheses, as in the
-    **dog (cat or mouse)** example. This becomes important when
-    combining OR and AND searches — in the example, with the
-    parentheses, it matches either 'dog cat' or 'dog mouse', whereas
-    without them it would match either 'dog and cat' or 'mouse'.
+- You can group search terms by placing them in parentheses, as in the
+  **dog (cat or mouse)** example. This becomes important when
+  combining OR and AND searches — in the example, with the
+  parentheses, it matches either 'dog cat' or 'dog mouse', whereas
+  without them it would match either 'dog and cat' or 'mouse'.
 
--   Anki is only able to search within formatting in the [sort
-    field](editing.md#customizing-fields) you’ve configured. For example, if you add
-    "**exa**mple" to one of your fields, this will not be matched when
-    searching for "example" unless that field is the sort field. If a
-    word is not formatted, or the formatting does not change in the
-    middle of the word, then Anki will be able to find it in any field.
+- Anki is only able to search within formatting in the [sort
+  field](editing.md#customizing-fields) you’ve configured. For example, if you add
+  "**exa**mple" to one of your fields, this will not be matched when
+  searching for "example" unless that field is the sort field. If a
+  word is not formatted, or the formatting does not change in the
+  middle of the word, then Anki will be able to find it in any field.
+
+- If you wish to search for an exact word (eg "most" but not "mostly"), on recent
+  Anki versions you can use a regular expression (covered below) to search on a word
+  boundary.
 
 ## Limiting to a field
 
@@ -94,6 +103,9 @@ find notes that have a non-empty Front field
 
 `front:*`  
 find notes that have a Front field, empty or not
+
+`fr*:text`
+find notes in a field starting with "fr". Requires Anki 2.1.24+ or AnkiMobile 2.1.60+.
 
 ## Tags, decks, cards and notes
 
@@ -133,6 +145,52 @@ deletion for a note, you’d use card:2
 
 `note:basic`  
 search for cards with a Basic note type
+
+## Regular expressions
+
+Anki 2.1.24+ and AnkiMobile 2.0.60+ support searching in notes with "regular expressions",
+a standard and powerful way of searching in text.
+
+Start a search with `re:` to search by regular expression. Some examples:
+
+`re:\btext\b`  
+search for the word "text", with a leading and trailing word boundary, matching "the text is large" and "large text!", but not "texting"
+
+`"re:(some|another).*thing"`  
+find notes that have "some" or "another" on them, followed by 0 or more characters, and then "thing"
+
+`re:\d{3}`  
+find notes that have 3 digits in a row
+
+Regular expressions can also be limited to a specific field. Please note that unlike the normal searches
+in a specific field, regular expressions in fields don't require an exact match. Eg:
+
+`front:re:[a-c]1`  
+matches uppercase or lowercase a1, B1 or c1 that occurs anywhere in the "Front" field
+
+`front:re:^[a-c]1$`  
+like the above, but will not match if any other text falls before or after a1/b1/c1.
+
+You can learn more about regular expressions here: https://regexone.com/lesson/introduction_abcs
+
+Some notes for advanced users:
+
+- the search is case-insensitive by default; use (?-i) at the start to turn on case sensitivity.
+- some advanced features like backreferences are not supported.
+
+## Ignoring accents/combining characters
+
+Requires Anki 2.1.24+ or AnkiMobile 2.0.60+.
+
+You can use `nc:` to remove combining characters ("no combining"). For example:
+
+`nc:uber`  
+matches notes with "uber", "über", "Über" and so on.
+
+`nc:は`  
+matches "は", "ば", and "ぱ"
+
+Searches that ignore combining characters are slower than regular searches.
 
 ## Card state
 
