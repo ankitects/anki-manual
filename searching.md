@@ -11,17 +11,17 @@ does not search for tags (see later in this section for how to search
 for tags). Some examples:
 
 `dog`  
-search for "dog" - will match words like "doggy" and "underdog" too
+search for "dog" - will match words like "doggy" and "underdog" too.
 
 `dog cat`  
 finds notes that have both "dog" and "cat" on them, such as "raining
 cats and dogs"".
 
 `dog or cat`  
-finds notes with either "dog" or "cat"
+finds notes with either "dog" or "cat".
 
 `dog (cat or mouse)`  
-finds notes with dog and cat, or dog and mouse
+finds notes with dog and cat, or dog and mouse.
 
 `-cat`  
 finds notes without the word "cat".
@@ -45,6 +45,16 @@ finds notes with d, &lt;a letter&gt;, g, like dog, dig, dug, and so on.
 `d*g`  
 finds notes with d, &lt;zero or more letters&gt;, g, like dg, dog, dung,
 etc.
+
+`w:dog`  
+search for "dog" on a word boundary - will match "dog", but not "doggy"
+or "underdog". Requires Anki 2.1.24+ or AnkiMobile 2.1.61+.
+
+`w:dog*`  
+will match "dog" and "doggy", but not "underdog".
+
+`w:*dog`  
+will match "dog" and "underdog", but not "doggy".
 
 Things to note from the above:
 
@@ -77,10 +87,6 @@ Things to note from the above:
   searching for "example" unless that field is the sort field. If a
   word is not formatted, or the formatting does not change in the
   middle of the word, then Anki will be able to find it in any field.
-
-- If you wish to search for an exact word (eg "most" but not "mostly"), on recent
-  Anki versions you can use a regular expression (covered below) to search on a word
-  boundary.
 
 ## Limiting to a field
 
@@ -146,15 +152,26 @@ deletion for a note, you’d use card:2
 `note:basic`  
 search for cards with a Basic note type
 
+## Ignoring accents/combining characters
+
+Requires Anki 2.1.24+ or AnkiMobile 2.0.60+.
+
+You can use `nc:` to remove combining characters ("no combining"). For example:
+
+`nc:uber`  
+matches notes with "uber", "über", "Über" and so on.
+
+`nc:は`  
+matches "は", "ば", and "ぱ"
+
+Searches that ignore combining characters are slower than regular searches.
+
 ## Regular expressions
 
 Anki 2.1.24+ and AnkiMobile 2.0.60+ support searching in notes with "regular expressions",
 a standard and powerful way of searching in text.
 
 Start a search with `re:` to search by regular expression. Some examples:
-
-`re:\btext\b`  
-search for the word "text", with a leading and trailing word boundary, matching "the text is large" and "large text!", but not "texting"
 
 `"re:(some|another).*thing"`  
 find notes that have "some" or "another" on them, followed by 0 or more characters, and then "thing"
@@ -177,20 +194,6 @@ Some notes for advanced users:
 
 - the search is case-insensitive by default; use (?-i) at the start to turn on case sensitivity.
 - some advanced features like backreferences are not supported.
-
-## Ignoring accents/combining characters
-
-Requires Anki 2.1.24+ or AnkiMobile 2.0.60+.
-
-You can use `nc:` to remove combining characters ("no combining"). For example:
-
-`nc:uber`  
-matches notes with "uber", "über", "Über" and so on.
-
-`nc:は`  
-matches "は", "ば", and "ぱ"
-
-Searches that ignore combining characters are slower than regular searches.
 
 ## Card state
 
