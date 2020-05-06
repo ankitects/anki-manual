@@ -102,6 +102,16 @@ folder from a terminal:
 
     open /Applications/Anki.app --args -b ~/myankifolder
 
+Alternatively, you can also define the environment variable "ANKI_BASE"
+pointing to the directory where your collection should be.
+On Windows, you can define the environment variable with:
+
+    set "ANKI_BASE=C:/AnkiDataFolder"
+
+On Linux and Mac OS, you can use:
+
+    export ANKI_BASE="/tmp/AnkiDataFolder"
+
 DropBox and File Syncing
 ------------------------
 
