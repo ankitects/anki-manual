@@ -50,13 +50,24 @@ example will use a yellow background on all cards except the first one:
 .card1 { background-color: blue; }
 ```
     
-## Image Resizing   
+## Image Resizing
 
-Anki shrinks images to fit the screen by default. You can change this by
-adding the following to the bottom of your styling section:
+Anki shrinks images to fit the screen by default. You can change this by adding
+the following to the bottom of your styling section (outside of the default
+`.card { ... }`): 
 
 ```css
 img { max-width: none; max-height: none; }
+```
+
+AnkiDroid sometimes has [trouble scaling images to fit the
+screen](https://github.com/ankidroid/Anki-Android/issues/3612). Setting maximum
+image dimensions using css should fix this, but seems to be ignored as of
+AnkiDroid 2.9. A fix is to append `!important` to each style directive, for
+exmaple: 
+
+```css
+img { max-width: 300px !important; max-height: 300px !important; }
 ```
 
 If you try to change the style for images and find that the star that
