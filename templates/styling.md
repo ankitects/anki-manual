@@ -64,7 +64,7 @@ AnkiDroid sometimes has [trouble scaling images to fit the
 screen](https://github.com/ankidroid/Anki-Android/issues/3612). Setting maximum
 image dimensions using css should fix this, but seems to be ignored as of
 AnkiDroid 2.9. A fix is to append `!important` to each style directive, for
-exmaple: 
+example: 
 
 ```css
 img { max-width: 300px !important; max-height: 300px !important; }
