@@ -1,8 +1,6 @@
-Managing Files and Your Collection
-==================================
+# Managing Files and Your Collection
 
-Checking Your Collection
-------------------------
+## Checking Your Collection
 
 It’s a good idea to occasionally check your collection file for
 problems. You can do this via the Tools&gt;Check Database menu item.
@@ -20,8 +18,7 @@ every 2 weeks. This optimization ensures the collection performs well,
 but it does not check for errors or rebuild the tag list when
 automatically optimizing.
 
-File Locations
---------------
+## File Locations
 
 On **Windows**, the latest Anki versions store your Anki files in your
 appdata folder. You can access it by opening the file manager, and
@@ -45,20 +42,19 @@ are stored in a file called prefs.db.
 
 There is also a separate folder for each profile. The folder contains:
 
--   Your notes, decks, cards and so on in a file called collection.anki2
+- Your notes, decks, cards and so on in a file called collection.anki2
 
--   Your audio and images in a collection.media folder
+- Your audio and images in a collection.media folder
 
--   A backups folder
+- A backups folder
 
--   Some system files
+- Some system files
 
 You should never copy or move your collection while Anki is open. Doing
 so could cause your collection to become corrupted. Please don’t move or
 modify the other files in the folder either.
 
-Startup Options
----------------
+## Startup Options
 
 If you have made a destructive change on one computer and have an
 undamaged copy on another computer, you may wish to start Anki without
@@ -77,11 +73,11 @@ The syntax to specify an alternate folder is as follows:
 
     anki -b /path/to/anki/folder
 
--   If you have multiple profiles, you can pass -p &lt;name&gt; to load
-    a specific profile.
+- If you have multiple profiles, you can pass -p &lt;name&gt; to load
+  a specific profile.
 
--   To change the interface language, use -l &lt;iso 639-1 language
-    code&gt;, such as "-l ja" for Japanese.
+- To change the interface language, use -l &lt;iso 639-1 language
+  code&gt;, such as "-l ja" for Japanese.
 
 If you always want to use a custom folder location, you can modify your
 shortcut to Anki. On Windows, right-click on the shortcut, choose
@@ -128,25 +124,23 @@ synced folder to a local folder, launches Anki, and then copies the
 files back when Anki is closed. This will ensure that the files are
 never synchronized while they are open.
 
-Network Filesystems
--------------------
+## Network Filesystems
 
 We strongly recommend you have Anki store your files on a local hard
 disk, as network filesystems can lead to database corruption. If a
 network filesystem is your only option, regular use of Tools&gt;Check
 Database to detect corruption is recommended.
 
-Running from a Flash Drive
---------------------------
+## Running from a Flash Drive
 
 On Windows, Anki can be installed on a USB / flash drive and run as a
 portable application. The following example assumes your USB drive is
 drive G.
 
--   Copy the \\Program Files\\Anki folder to the flash drive, so you
-    have a folder like G:\\Anki.
+- Copy the \\Program Files\\Anki folder to the flash drive, so you
+  have a folder like G:\\Anki.
 
--   Create a text file called G:\\anki.bat with the following text:
+- Create a text file called G:\\anki.bat with the following text:
 
 <!-- -->
 
@@ -157,8 +151,8 @@ remaining open, you can instead use:
 
     start /b g:\anki\anki.exe -b g:\ankidata
 
--   Double-clicking on anki.bat should start Anki with the user data
-    stored in G:\\ankidata.
+- Double-clicking on anki.bat should start Anki with the user data
+  stored in G:\\ankidata.
 
 The full path including drive letter is required - if you try using
 `\anki\anki.exe` instead you will find syncing stops working.
@@ -167,8 +161,7 @@ Media syncing with AnkiWeb may not work if your flash drive is formatted
 as FAT32. Please format the drive as NTFS to ensure media syncs
 correctly.
 
-Backups
--------
+## Backups
 
 Each time your collection is closed (when closing Anki, switching
 profiles, or synchronizing your deck), Anki exports your collection into
@@ -215,8 +208,7 @@ single note type at one time, so if you have deleted notes from
 different note types, you’ll need to split the file into separate files
 for each note type first.
 
-Inaccessible Harddisk
----------------------
+## Inaccessible Harddisk
 
 If Anki can’t write to files in the [Anki folder](files.md), a message
 will be displayed on startup saying that Anki can’t write to the
@@ -224,8 +216,7 @@ harddisk, and Anki will close. If you’re unsure how to fix the
 permissions, please contact someone near you who is knowledgable about
 computers and can help you out.
 
-Permissions of Temp Folder
---------------------------
+## Permissions of Temp Folder
 
 Anki uses the system’s temporary folder to store temporary data. If the
 permissions of this folder have been changed from the default settings
@@ -250,8 +241,7 @@ knowledgeable about Windows if you are not sure.
     default W7 install the control will actually be inherited from
     c:\\users\\your-username.
 
-Corrupt Collections
--------------------
+## Corrupt Collections
 
 Anki uses a file format that is robust against program and computer
 crashes, but it’s still possible for your collection to become corrupt
@@ -324,12 +314,12 @@ normal for the new file to be somewhat smaller than the old one.
 
 When you’ve confirmed the file is not empty:
 
--   rename the original collection.anki2 file to something else
+- rename the original collection.anki2 file to something else
 
--   rename temp.file to collection.anki2
+- rename temp.file to collection.anki2
 
--   move collection.anki2 back into your collection folder, overwriting
-    the old version
+- move collection.anki2 back into your collection folder, overwriting
+  the old version
 
--   start Anki and go to Tools&gt;Check Database to make sure the
-    collection has been successfully restored.
+- start Anki and go to Tools&gt;Check Database to make sure the
+  collection has been successfully restored.
