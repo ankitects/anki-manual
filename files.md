@@ -102,8 +102,16 @@ folder from a terminal:
 
     open /Applications/Anki.app --args -b ~/myankifolder
 
-DropBox and File Syncing
-------------------------
+Alternatively, you can define the environment variable "ANKI_BASE".
+On Windows, you can define the environment variable with:
+
+    set "ANKI_BASE=C:/path/to/AnkiDataFolder"
+
+On Linux and Mac OS, you can use:
+
+    export ANKI_BASE="/path/to/AnkiDataFolder"
+
+## DropBox and File Syncing
 
 We do not recommend you sync your Anki folder directly with a
 third-party synchronization service, as it can lead to database
