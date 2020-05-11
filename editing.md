@@ -121,7 +121,7 @@ properly.
 
 The options at the bottom of the screen allow you to edit various
 properties of the fields to be used when adding and editing the cards.
-This is 'not' where you customize what appears on your cards when
+This is *not* where you customize what appears on your cards when
 reviewing; for that, please see [templates](templates/intro.md).
 
 **Editing Font** allows you to customize the font and size used when
