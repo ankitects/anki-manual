@@ -99,18 +99,21 @@ Both speed and voices are optional, but the language must be included.
 
 On a Mac, you can customize the available voices:
 
--   Open the System Preferences screen.
+- Open the System Preferences screen.
 
--   Click on Accessibility.
+- Click on Accessibility.
 
--   Click on Speech.
+- Click on Speech.
 
--   Click on the system voice dropdown, and choose Customize.
+- Click on the system voice dropdown, and choose Customize.
 
 Some voices sound better than others, so experiment to choose the one
 you prefer. Please note that the Siri voice can only be used by Apple
 apps. Once you’ve installed new voices, you’ll need to restart Anki for
-the new voices to become available.    
+the new voices to become available.
+
+On Windows, some voices like Cortana can not be selected, as Microsoft
+does not make those voices available to other applications.
 
 ## Special Fields
 
@@ -179,9 +182,7 @@ doing so, but the following code should get you started:
     Show Back</a><div id="hint4753594160" class=hint style="display: none">{{Back}}</div>
     {{/Back}}
 
-
-Dictionary Links
-----------------
+## Dictionary Links
 
 You can also use field replacement to create dictionary links. Imagine
 you’re studying a language and your favourite online dictionary allows
@@ -199,8 +200,7 @@ The template above would allow you to search for each note’s expression
 by clicking on the link while reviewing. There is a caveat however, so
 please see the next section.
 
-HTML Stripping
---------------
+## HTML Stripping
 
 Like templates, fields are stored in HTML. In the dictionary link
 example above, if the expression contained the word "myword" without any
@@ -224,17 +224,14 @@ formatted text would be:
 
     <a href="http://example.com/search?q={{text:Expression}}">check in dictionary</a>
 
-
-Right To Left Text
-------------------------
+## Right To Left Text
 
 If you’re using a language that reads from right to left, you’ll need
 to adjust the template like so:
 
     <div dir=rtl>{{FieldThatHasRTLTextInIt}}</div>
 
-Media & LaTeX
---------------
+## Media & LaTeX
 
 Anki does not scan templates for media references, because it is slow to
 do so. This has implications for including media on the template.
@@ -254,7 +251,7 @@ for every card (eg, a company logo at the top of each card):
 
     <img src="_logo.jpg">
 
-### Field References  {docsify-ignore}
+### Field References {docsify-ignore}
 
 Media references to fields are not supported. They may or may not display
 during review, and will not work when checking for unused media,
@@ -270,7 +267,6 @@ Instead, you should include the media references in the field. Please
 see the importing section for more information.
 
 ## Checking Your Answer
-
 
 You can watch [a video about this
 feature](http://www.youtube.com/watch?v=5tYObQ3ocrw&yt:cc=on) on
