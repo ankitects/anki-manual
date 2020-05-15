@@ -1,11 +1,9 @@
-Studying
-========
+# Studying
 
 When you have found a deck you like or entered some notes in, it’s time
 to start studying.
 
-Decks
------
+## Decks
 
 Study in Anki is limited to the currently selected deck as well as any
 subdecks it contains.
@@ -28,21 +26,20 @@ delete a deck, change its options, or [export](exporting.md) it.
 When a deck has subdecks, the cards will appear from [each deck in
 turn](studying.md#display-order).
 
-Study Overview
---------------
+## Study Overview
 
 After clicking on a deck to study, you’ll see a screen that shows you
 how many cards are due today. This is called the 'deck overview' screen.
 The cards are split into three types:
 
--   **New** refers to cards that you have downloaded or entered in, but
-    have never been studied before.
+- **New** refers to cards that you have downloaded or entered in, but
+  have never been studied before.
 
--   **Learning** refers to cards that were seen for the first time
-    recently, and are still being learnt.
+- **Learning** refers to cards that were seen for the first time
+  recently, and are still being learnt.
 
--   **To Review** refers to cards that were previously learnt, and now
-    need to be reviewed so you don’t forget them.
+- **To Review** refers to cards that were previously learnt, and now
+  need to be reviewed so you don’t forget them.
 
 To start a study session, click the **Study Now** button. Anki will
 proceed to show you cards until the cards to be shown for the day have
@@ -51,8 +48,7 @@ run out.
 While studying, you can return to the overview by pressing the “s” key
 on your keyboard.
 
-Questions
----------
+## Questions
 
 When a card is shown, only the question is shown at first. After
 thinking about the answer, either click the **Show Answer** button, or
@@ -70,8 +66,7 @@ just showing it to you.
 The number of buttons available for grading depends on whether the card
 is being 'learnt' or 'reviewed'.
 
-Learning
---------
+## Learning
 
 When learning new cards, or when relearning cards that you have
 forgotten, Anki will show you the cards one or more times to help you
@@ -109,8 +104,7 @@ again even if their delay has not elapsed completely. If you’d prefer to
 wait the full learning delay, you can change this behaviour in the
 [preferences](preferences.md).
 
-Reviewing
----------
+## Reviewing
 
 When a card has been previously learnt and is ready to be reviewed
 again, there are four buttons to rate your answer:
@@ -138,20 +132,19 @@ should find yourself answering 'Good' instead.
 As with learning cards, you can use 1-4 on the keyboard to select an
 answer. Pressing the spacebar will select 'Good'.
 
-Due Counts
-----------
+## Due Counts
 
 When only the question is shown, Anki shows three numbers like 12 + 34 +
 56 at the bottom of the screen. These represent the new cards, cards in
 learning, and cards to review. If you’d prefer not to see the numbers,
 you can turn them off in Anki’s preferences.
 
-In the old scheduler, the numbers count *reviews* needed to finish all the 
-cards in that queue, not the number of *cards*. If you have multiple
-steps configured for lapsed cards, the number will increase by more than 
+In the old scheduler, the numbers count _reviews_ needed to finish all the
+cards in that queue, not the number of _cards_. If you have multiple
+steps configured for lapsed cards, the number will increase by more than
 one when you fail a card, since that card needs to be shown several times.
 
-In the new scheduler, the numbers count *cards*, so the number will always
+In the new scheduler, the numbers count _cards_, so the number will always
 increase by one regardless of the steps remaining.
 
 When the answer is shown, Anki shows an estimate of the next time a card
@@ -164,8 +157,7 @@ always rated the same from always staying next to each other. This
 variation is not shown on the time estimates but will be applied after
 selecting the button.
 
-Editing and More
-----------------
+## Editing and More
 
 You can click the **Edit** button in the bottom left to edit the current
 note. When you finish editing, you’ll be returned to study. The editing
@@ -175,12 +167,18 @@ At the bottom right of the review screen is a button labeled **More**.
 This button provides some other operations you can do on the current
 card or note:
 
+Flag Card  
+Adds a colored marker to the card, or toggles it off. Flags will appear during
+study, and you can search for flagged cards in the Browse screen. This is useful
+when you want to take some action on the card at a later date, such as looking
+up a word when you get home.
+
 Mark Note  
-Adds a “marked” tag to the current note, so it can be easily found in
-the browser. This is useful when you want to take some action on the
-note at a later date, such as looking up a word when you get home.
-Marked cards also show a small star in the upper-right-hand corner
-during reviews.
+Adds a “marked” tag to the current note, so it can be easily found in the
+browser. This is similar to flagging individual cards, but works with a tag
+instead, so if the note has multiple cards, all cards will appear in a search
+for the marked tag. Most users will want to use flags instead - marking is
+mainly left around for compatibility with older Anki versions.
 
 Bury Card / Note  
 Hides a card or all of the note’s cards from review until the next day.
@@ -219,8 +217,7 @@ Replay Own Voice
 Replay the previous recording of your voice (presumably after showing
 the answer).
 
-Display Order
--------------
+## Display Order
 
 Studying will show cards from the selected deck and any decks it
 contains. Thus, if you select your “French” deck, the subdecks
@@ -252,8 +249,7 @@ cards from ordered to random order, please see the [deck
 options](deck-options.md). For more fine-grained ordering of new cards, you
 can change the order in the [browser](browsing.md).
 
-Siblings and Burying
---------------------
+## Siblings and Burying
 
 Recall from [the basics](getting-started.md) that Anki can create more than one
 card for each thing you input, such as a front→back card and a
@@ -276,8 +272,7 @@ hide cards in learning, as time is of the essence for those cards. On
 the other hand, when you study a learning card, any new/review siblings
 will be buried.
 
-Keyboard Shortcuts
-------------------
+## Keyboard Shortcuts
 
 Most of the common operations in Anki have keyboard shortcuts. Most of
 them are discoverable in the interface: menu items list their shortcuts
@@ -298,8 +293,7 @@ characters you type. You can add a space to separate multiple search
 terms, and Anki will show only decks that match all the terms. So “ja 1”
 or “on1 ja” would both match a deck called “Japanese::Lesson1”.
 
-Falling Behind
---------------
+## Falling Behind
 
 If you fall behind in your reviews, Anki will prioritize cards that have
 been waiting the longest. It does this by taking the the cards that have
