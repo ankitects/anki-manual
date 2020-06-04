@@ -1,13 +1,11 @@
-Syncing with AnkiWeb
-===========================
+# Syncing with AnkiWeb
 
 AnkiWeb is a service that allows you to keep your collection
 synchronized across multiple devices, and to study online. Please sign
 up for a [free account](https://ankiweb.net/) before following the steps
 below.
 
-Setup
------
+## Setup
 
 To start syncing your collection across devices, click the sync button
 (the top right one on the main screen), or press 'y' on your keyboard.
@@ -31,15 +29,13 @@ profile for each user, each user will need to create their own AnkiWeb
 account to sync with. If you attempt to synchronize multiple profiles
 with a single AnkiWeb account, you will lose data.
 
-Automatic Syncing
------------------
+## Automatic Syncing
 
 Once syncing is enabled, Anki will automatically sync each time your
 collection is closed or opened. If you would prefer to synchronize
 manually, you can disable automatic syncing in Anki’s preferences.
 
-Media
------
+## Media
 
 Anki will synchronize any sounds and images used by your notes. It will
 notice when media has been added or removed from your media folder, but
@@ -51,8 +47,7 @@ If you’re running Anki off a USB flash drive, you should use an NTFS
 file system, as Anki may not be able to detect media changes on a FAT32
 filesystem.
 
-Conflicts
----------
+## Conflicts
 
 Under normal circumstances, reviews and note edits can be merged, so if
 you review or edit on two different devices before syncing, Anki will
@@ -101,8 +96,7 @@ ensure your client is fully in sync first. After syncing is up to date,
 any files you remove (eg via the Check Media function) will be removed
 from AnkiWeb on the following sync.
 
-Merging Conflicts
------------------
+## Merging Conflicts
 
 Because the [first sync](#setup) can only sync changes in one
 direction, if you have added different content to different devices or
@@ -139,8 +133,7 @@ You can now use File&gt;Import to import the .apkg files you exported
 earlier, which will merge the exported content with the existing
 content, so everything will be in one place.
 
-Firewalls
----------
+## Firewalls
 
 Anki needs to be able to make outbound HTTPS connections to sync. At a
 minimum it must be able to connect to ankiweb.net, sync.ankiweb.net and
@@ -154,12 +147,11 @@ Anki. If you are on a work or school network, please contact your
 network administrator for assistance - it is not something we can help
 you with.
 
-Proxies
--------
+## Proxies
 
 If you need a proxy to access the internet, Anki should automatically
 pick up your system proxy settings if you’re on Windows or OS X, and
-will honour the HTTP\_PROXY environment variable if you’re on another
+will honour the HTTP_PROXY environment variable if you’re on another
 platform.
 
 Anki will only be able to pick up your system settings if a proxy is
@@ -167,7 +159,7 @@ manually configured, and does not require a password. If your system
 uses automatic proxy setup, or uses a proxy that requires a username and
 password, you will need to manually tell Anki the proxy configuration.
 
-To tell Anki your proxy settings, define a HTTPS\_PROXY environmental
+To tell Anki your proxy settings, define a HTTPS_PROXY environmental
 variable that points to the proxy server. It will look like:
 
     http://user:pass@proxy.company.com:8080
@@ -177,10 +169,10 @@ you need to change it to %40, like so:
 
     http://user%40workdomain.com:pass@proxy.company.com:8080
 
-Anki 2.0 expects to find HTTP\_PROXY instead of HTTPS\_PROXY.
+Anki 2.0 expects to find HTTP_PROXY instead of HTTPS_PROXY.
 
 To set environmental variables on Windows, please see
-<https://www.microsoft.com/resources/documentation/windows/xp/all/proddocs/en-us/sysdm_advancd_environmnt_addchange_variable.mspx?mfr=true>
+<https://www.google.com/search?q=windows+set+environmental+variable>
 
 If you’re on a Mac, please see
 <http://stackoverflow.com/questions/135688/setting-environment-variables-in-os-x>
@@ -194,4 +186,3 @@ An alternative solution is to install a local proxy server, and point
 that proxy server at your normal proxy server. You can then tell Anki to
 use the local proxy, which will redirect requests to the proxy you
 normally use.
-
