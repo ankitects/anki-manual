@@ -190,10 +190,12 @@ like the above, but will not match if any other text falls before or after a1/b1
 
 You can learn more about regular expressions here: https://regexone.com/lesson/introduction_abcs
 
-Some notes for advanced users:
+Some things to be aware of:
 
-- the search is case-insensitive by default; use (?-i) at the start to turn on case sensitivity.
-- some advanced features like backreferences are not supported.
+- The search is case-insensitive by default; use (?-i) at the start to turn on case sensitivity.
+- Some text like spaces and newlines may be represented differently in HTML - you can
+  use the HTML editor in the editing screen to see the underlying HTML contents.
+- For the specifics of Anki's regex support, please see the regex crate documentation: https://docs.rs/regex/1.3.9/regex/
 
 ## Card state
 
