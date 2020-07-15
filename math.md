@@ -240,9 +240,10 @@ conflict:
 
 ### Cloze Conflicts
 
-When using cloze deletions, you cannot change the double braces used to
-mark cloze deletions; instead, you can put a space between any double
-closing braces that do not indicate the end of the cloze, so
+Cloze deletions are terminated with `}}`, which can conflict with a `}}`
+appearing in your LaTeX. To prevent LaTeX from being interpreted as a closing
+cloze marker, you can put a space between any double closing braces that do not
+indicate the end of the cloze, so
 
     {{c1::[$]\frac{foo}{\frac{bar}{baz}}[/$] blah blah blah.}}
 
@@ -253,7 +254,8 @@ will not work, but
 will (and LaTeX ignores spaces in math mode, so your equation will
 render the same). If you want to avoid adding the extra space into the
 rendered text (for example, when you are making Cloze cards for learning
-programming languages), another option is to use a HTML comment:
+programming languages), another option is to use a HTML comment when
+editing the card in HTML mode:
 
     {{c1::[$]\frac{foo}{\frac{bar}{baz}<!-- -->}[/$] blah blah blah.}}
 
