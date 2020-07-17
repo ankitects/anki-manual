@@ -1,5 +1,4 @@
-Filtered Decks & Cramming
-=========================
+# Filtered Decks & Cramming
 
 When you study a regular deck in Anki, only a limited number of cards
 are shown: the cards Anki thinks you’re about to forget, and a daily
@@ -15,8 +14,7 @@ previewing cards, cramming cards before a test, studying particular
 tags, catching up on a backlog with a particular sort order, reviewing
 ahead of schedule, going over the day’s failed cards, and more.
 
-Custom Study
-------------
+## Custom Study
 
 The easiest way to create a filtered deck is with the Custom Study
 button, which appears at the bottom of the screen when you click on a
@@ -63,8 +61,7 @@ you wish to see all the cards in the deck (for instance, to study before
 a big test), you can set the number of cards to more than the number of
 cards in the deck.
 
-Home Decks
-----------
+## Home Decks
 
 When a card is moved to a filtered deck, it retains a link to the deck
 it was in previously. That previous deck is said to be the card’s 'home
@@ -92,8 +89,7 @@ remaining relearning steps will be skipped. This has been fixed in the
 [experimental
 scheduler](https://anki.tenderapp.com/kb/anki-ecosystem/experiment-scheduling-changes-in-anki-21).
 
-Creating Manually
------------------
+## Creating Manually
 
 Advanced users can create filtered decks with arbitrary search strings,
 instead of relying on set presets. To create a filtered deck manually,
@@ -129,8 +125,7 @@ lapsed cards.
 For efficiency reasons, if your cram deck contains more than 1000 cards,
 only 1000 cards will be shown as due on the deck list and study screens.
 
-Order
------
+## Order
 
 The "cards selected by" option controls the order that cards will appear
 in. If the maximum number of cards you select is lower than the number
@@ -173,8 +168,7 @@ years overdue by a week). This is useful if you have a large backlog
 that may take some time to get through and want to review the cards
 you’re most in danger of forgetting first.
 
-Steps & Returning
------------------
+## Steps & Returning
 
 Please see the section on [learning](studying.md#learning) as a reminder of how
 steps work.
@@ -191,8 +185,7 @@ The **custom steps** option allows you to override the home deck’s steps
 and provide your own steps instead. The provided steps apply to both
 cards being learnt, lapsed reviews, and reviews ahead of time.
 
-Counts
-------
+## Counts
 
 In a filtered deck, reviews that were already due are displayed in the
 review count as normal. Learning cards and non-due reviews are counted
@@ -201,8 +194,7 @@ Reviews that were not due are not scheduled like new cards however -
 Anki uses a special algorithm that takes into account how close they
 were to their normal due time when reviewed.
 
-Due Reviews
------------
+## Due Reviews
 
 If the filtered deck includes cards that were due for review, they will
 be shown like they would have been in their original deck - they appear
@@ -212,8 +204,7 @@ will be moved back to its home deck, and its next delay adjusted using
 the home deck’s settings. If you forget the card, it will be shown
 according to the relearning steps defined in the home deck.
 
-Reviewing Ahead
----------------
+## Reviewing Ahead
 
 If your search included cards that are not due, Anki will show the
 reviews ahead of time.
@@ -247,8 +238,7 @@ when deciding the next delay, and like relearning in normal decks,
 "Good" and "Easy" differ only in the step change and not the resulting
 delay.
 
-Rescheduling
-------------
+## Rescheduling
 
 By default, Anki will return cards to their home decks with altered
 scheduling based on your performance in the filtered deck. If you
@@ -264,8 +254,7 @@ return to its home deck with its original scheduling.
 Please note that new cards are returned to the end of the new card
 queue, rather than the start of it.
 
-Catching Up
------------
+## Catching Up
 
 Filtered decks can be useful for catching up when you’ve fallen behind
 in your reviews. One Anki user describes the way they use the filtered

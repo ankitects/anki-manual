@@ -1,5 +1,4 @@
-Media
-=====
+# Media
 
 Anki stores the sounds and images used in your notes in a folder next to
 the collection. For more on the folder location, please see the [file

@@ -1,8 +1,6 @@
-Adding/Editing
-===============
+# Adding/Editing
 
-Adding Cards and Notes
-----------------------
+## Adding Cards and Notes
 
 Recall from the [basics](getting-started.md) that in Anki we add notes rather than
 cards, and Anki creates cards for us. Click 'Add' in the main window,
@@ -69,8 +67,7 @@ site. In particular:
     understand the concepts behind the acronyms, learning the acronyms
     will become a lot easier.
 
-Adding a Note Type
-------------------
+# Adding a Note Type
 
 While basic note types are sufficient for simple cards with only a word
 or phrase on each side, as soon as you find yourself wanting to include
@@ -102,8 +99,7 @@ material you’re studying is a good choice here – things like “Japanese”,
 ”Trivia”, and so on. Once you’ve chosen a name, close the Note Types
 window, and you’ll return to the adding window.
 
-Customizing Fields
-------------------
+# Customizing Fields
 
 To customize fields, click the “Fields…​” button when adding or editing
 a note, or while the note type is selected in the Manage Note Types
@@ -153,16 +149,14 @@ After you’ve added fields, you’ll probably want to add them to the front
 or back of your cards. For more information on that, please see the
 [templates](templates/intro.md) section.
 
-Changing Deck / Note Type
--------------------------
+# Changing Deck / Note Type
 
 While adding, you can click on the top left button to change note type,
 and the top right button to change deck. The window that opens up will
 not only allow you to select a deck or note type, but also to add new
 decks or manage your note types.
 
-Using Decks Appropriately
--------------------------
+# Using Decks Appropriately
 
 Decks are designed to divide your content up into broad categories that
 you wish to study separately, such as English, Geography, and so on. You
@@ -209,8 +203,7 @@ some content separately, it should be in a normal deck, and if you only
 occasionally need to be able to study it separately (for a test, when
 under a backlog, etc), tags/fields and filtered decks are better.
 
-Features
---------
+# Features
 
 The editor is shown when [adding notes](editing.md), [editing a
 note](studying.md) during reviews, or [browsing](browsing.md).
@@ -252,8 +245,7 @@ When pasting text, Anki will strip most formatting by default. If you
 hold down the shift key while pasting, Anki will preserve more
 formatting.
 
-Cloze Deletion
---------------
+# Cloze Deletion
 
 'Cloze deletion' is the process of hiding one or more words in a
 sentence. For example, if you have the sentence:
@@ -347,8 +339,7 @@ Things like formatting can be customized, but it is not possible to add
 extra card templates to the cloze note type.
 
 
-Inputting Foreign Characters and Accents
-----------------------------------------
+# Inputting Foreign Characters and Accents
 
 All modern computers have built in support for typing accents and
 foreign characters, and multiple ways to go about it. The method we
