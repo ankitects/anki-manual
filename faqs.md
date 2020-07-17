@@ -1,18 +1,14 @@
-Frequently Asked Questions
-==========================
+# Frequently Asked Questions
 
 Please see https://faqs.ankiweb.net
 
-Can I do multiple-choice questions?
------------------------------------
+## Can I do multiple-choice questions?
 
 
-Can I link cards together? Add dependencies? How should I handle synonyms?
---------------------------------------------------------------------------
+## Can I link cards together? Add dependencies? How should I handle synonyms?
 
 
-Can I give my notes an arbitrary number of fields?
---------------------------------------------------
+## Can I give my notes an arbitrary number of fields?
 
 Notes are designed to represent 'closely' related information, and to
 make it easy to reorganize where that information appears on a card. In
@@ -74,13 +70,11 @@ relationships in notes:
 in different ways, and different dialects may read the same word
 differently, but that is not relevant to the discussion.
 
-Can I host my own AnkiWeb?
---------------------------
+## Can I host my own AnkiWeb?
 
 Sorry, AnkiWeb is only available as a hosted service.
 
-Why is the Android version free when the iPhone version isn’t?
---------------------------------------------------------------
+## Why is the Android version free when the iPhone version isn’t?
 
 Working on Anki desktop, AnkiWeb and AnkiMobile is my full time job, and
 I need some way of paying the bills. Since I make the desktop & web
@@ -92,6 +86,6 @@ it on the free desktop version I make available (and rely on AnkiWeb in
 order to synchronize decks), they decided to make it freely available as
 well.
 
-What spaced repetition algorithm does Anki use?
------------------------------------------------
+## What spaced repetition algorithm does Anki use?
+
 
