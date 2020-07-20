@@ -230,8 +230,8 @@ from “French”, then “My Textbook”, and finally “Vocab”. You can use 
 to control the order cards appear in, placing high priority cards in
 decks that appear higher in the list. When computers sort text
 alphabetically, the “-” character comes before alphabetical characters,
-and “\\~” comes after them. So you could call the deck “-Vocab” to make
-them appear first, and you could call the other deck “~My Textbook” to
+and “\~” comes after them. So you could call the deck “-Vocab” to make
+them appear first, and you could call the other deck “\~My Textbook” to
 force it to appear after everything else.
 
 New cards and reviews are fetched separately, and Anki won’t wait until
