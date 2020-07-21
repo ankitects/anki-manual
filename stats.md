@@ -1,8 +1,6 @@
-Graphs and Statistics
-=====================
+# Graphs and Statistics
 
-Card Info
----------
+## Card Info
 
 You can display information about a card by clicking the Info button in
 the toolbar while browsing. Most of the displayed information should be
@@ -22,20 +20,29 @@ years respectively.
 The approximate amount the interval will grow when you answer a review
 card with the "Good" button.
 
-Statistics
-----------
+## Statistics
 
 The statistics window is accessed by clicking on the graphs icon in the
-top right of the main window, or by pressing Shift+S. The statistics
+top right of the main window, or by pressing T. The statistics
 window will show statistics from the currently selected deck and any
 subdecks. If you click on "collection" on the bottom left, statistics
-will be shown for your entire collection instead.
+will be shown for your entire collection instead. On 2.1.28+, aditionaly,
+you can display graphs for arbitrary searches by adding filters in the
+search box.
 
-By default Anki will show you statistics for the previous month. You can
-change this to a year scope or deck life scope at the bottom. (The
+Anki 2.1.28+ introduces redesigned graphs. The old graphs are currently still
+accessible with a shift+click on the Stats button.
+
+For Anki 2.1.28+, by default Anki will show you statistics for the previous year.
+You can change this to all history scope or deck life scope at the top. (The
 "today" section at the top is of course unaffected by this selection.)
 
-Clicking on "Save Image" will save an image of the statistics to a file
+For older versions of Anki, by default Anki will show you statistics for
+the previous month. You can change this to a year scope or deck life scope
+at the bottom. (The “today” section at the top is of course unaffected
+by this selection.)
+
+Clicking on "Save PDF" will save an PDF document of the statistics to a file
 on your desktop to make it easy to share your statistics with others.
 
 When you delete notes, their review history is maintained in Anki. It
@@ -44,8 +51,7 @@ Anki has no way of knowing which deck the deleted cards belonged to),
 but will be included when you look at statistics for the whole
 collection.
 
-Types of Cards
---------------
+## Types of Cards
 
 The stats window uses some terms that you may not be familiar with:
 
@@ -70,8 +76,7 @@ yet entered learning mode. Unseen cards are sometimes referred to as
 "new" cards, especially when they are in the "new" queue to be shown for
 the first time.
 
-Today
------
+## Today
 
 At the top of the statistics window is a brief list of textual
 statistics about the reviews that you have completed today. A “review”
@@ -100,8 +105,7 @@ performance.
 The “today” statistics are unaffected by the time period selected at the
 bottom of the window.
 
-The Graphs
-----------
+# The Graphs
 
 **Forecast**  
 This graph shows an estimated number of reviews that will be due on a
@@ -159,8 +163,7 @@ calculate a more precise percentage, the key shows the exact number of
 cards in each section, and the total number of cards is displayed to the
 side.
 
-Manual Analysis
----------------
+## Manual Analysis
 
 If you’re interested in getting information from your statistics other
 than what Anki provides, it is possible to access the data directly.
@@ -224,5 +227,5 @@ answer sides of the card before selecting an ease button.
 
 **type**  
 This is 0 for learning cards, 1 for review cards, 2 for relearn cards,
-and 3 for "cram" cards (cards being studied in a filtered deck when they
+and 3 for early "cram" cards (cards being studied in a filtered deck when they
 are not due).

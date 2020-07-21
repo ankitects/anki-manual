@@ -1,5 +1,4 @@
-Deck Options
-============
+# Deck Options
 
 Deck options are accessed by selecting a deck on the 'Decks' screen, and
 then clicking 'Options' at the bottom of the screen.
@@ -19,8 +18,7 @@ Options are not retroactive. For example, if you change an option that
 controls the delay after failing a card, cards that you failed prior to
 changing the option will have the old delay, not the new one.
 
-New Cards
----------
+## New Cards
 
 **Steps** controls the number of learning repetitions, and the delay
 between them. Please see the [learning](studying.md#learning) section for an
@@ -103,8 +101,7 @@ siblings directly after one another in the same session. For this to
 work, your new cards/day setting needs to be large enough for the cards
 of multiple notes to be included.
 
-Reviews
--------
+## Reviews
 
 **Maximum reviews/day** allows you to set an upper limit on the number
 of reviews to show each day. When this limit is reached, Anki will not
@@ -192,8 +189,7 @@ putting them together. This means that there is a slight bias towards
 older cards being shown first, but it prevents individual cards from
 showing up in a predictable order.
 
-Lapses
-------
+## Lapses
 
 When you forget a review card, it is said to have 'lapsed'. The default
 behaviour for lapsed reviews is to reset the interval to 1 (ie, make it
@@ -227,8 +223,7 @@ later. The interval must be 1 day or more.
 The leech options control the way Anki handles leeches. Please see the
 leech section for more information.
 
-General
--------
+## General
 
 Anki monitors how long it takes you to answer each question so that it
 can show you how long was spent studying each day. The time taken does
@@ -250,8 +245,7 @@ controls what happens when you choose to replay audio while the answer
 is shown. Please note that it does not control what happens when you
 show the answer; for that please see [this section](templates/fields.md#special-fields).
 
-Description
------------
+## Description
 
 This section allows you to edit the deck description, which is shown in
 the study overview. The description is automatically set when

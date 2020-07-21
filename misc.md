@@ -1,8 +1,6 @@
-Miscellanea
-===========
+# Miscellanea
 
-Menu Shortcuts
---------------
+## Menu Shortcuts
 
 On Windows/Linux you can hold down the alt key and press a highlighted
 letter to activate a particular menu.
@@ -12,8 +10,7 @@ shortcuts to specific menu items instead. Please see
 <http://lifehacker.com/343328/create-a-keyboard-shortcut-for-any-menu-action-in-any-program>
 for more information.
 
-Debug Console
--------------
+## Debug Console
 
 Sometimes you may be asked to use the debug console to change a setting
 or check something. Unless asked to enter text in the "debug console",

@@ -139,7 +139,7 @@ as expected:
 
 The following limitations do not apply to Anki 2.1.28+ and AnkiMobile 2.0.64+.
 
-Older Anki versions can not used negated conditionals for card generation.
+Older Anki versions cannot use negated conditionals for card generation.
 For example, on Anki 2.1.28, the following would add a card if a field
 called AddIfEmpty is empty, and Front is non-empty:
 

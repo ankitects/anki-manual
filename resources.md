@@ -1,6 +1,4 @@
-
-Resources
-=========
+## Resources
 
 The SuperMemo site has a lot of good information about spaced repetition
 and memory: <http://www.supermemo.com/>

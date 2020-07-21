@@ -27,8 +27,7 @@ There are two simple concepts behind Anki: 'active recall testing' and
 been written about in the scientific literature for many years.
 Understanding how they work will make you a more effective learner.
 
-Active Recall Testing
----------------------
+## Active Recall Testing
 
 'Active recall testing' means being asked a question and trying to
 remember the answer. This is in contrast to 'passive study', where we
@@ -56,8 +55,7 @@ question on one side of a card, and the answer on the other side. By not
 turning the card over until you’ve thought about the answer, you can
 learn things more effectively than passive observation allows.
 
-Use It or Lose It
------------------
+## Use It or Lose It
 
 Our brains are efficient machines, and they rapidly discard information
 that doesn’t seem useful. Chances are that you don’t remember what you
@@ -81,8 +79,7 @@ you are using paper flashcards, it’s easy to flick through all of them
 if you only have 30 of them to review, but as the number grows to 300 or
 3000, it quickly becomes unwieldy.
 
-Spaced Repetition
------------------
+# Spaced Repetition
 
 The 'spacing effect' was reported by a German psychologist in 1885. He
 observed that we tend to remember things more effectively if we spread
@@ -123,8 +120,7 @@ and retained with the absolute minimum amount of effort necessary.
 SuperMemo’s slogan sums it up: with spaced repetition, you can 'forget
 about forgetting'.
 
-Why Anki?
----------
+## Why Anki?
 
 While there is no denying the huge impact SuperMemo has had on the
 field, it is not without its problems. The program is often criticized

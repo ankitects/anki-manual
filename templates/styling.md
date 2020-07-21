@@ -1,5 +1,4 @@
-Card Styling
-------------
+# Card Styling
 
 You can watch [a video about styling
 cards](http://www.youtube.com/watch?v=F1j1Zx0mXME&yt:cc=on) on YouTube.
@@ -83,8 +82,7 @@ You can explore the styling of cards interactively by using Chrome:
 
 <https://ankitects.github.io/addon-docs/#/porting2.0?id=webview-changes>
 
-Field Styling
--------------
+# Field Styling
 
 The default styling applies to the whole card. You can also make certain
 fields or part of the card use a different font, color, and so on. This
@@ -170,8 +168,7 @@ It’s also possible to bundle custom fonts with your deck, so you don’t
 need to install them on your computer or mobile device. Please see the
 installing fonts section for more info.
 
-Audio Replay Buttons
---------------------
+## Audio Replay Buttons
 
 When audio or text to speech is included on your cards, Anki will show
 buttons you can click on to replay the audio.
@@ -189,8 +186,7 @@ make them smaller and coloured, you could use the following:
 .replay-button svg path { stroke: white; fill: green; }
 ```
 
-Other HTML
-----------
+## Other HTML
 
 Your templates can contain arbitrary HTML, which means that all the
 layout possibilities used on internet web pages can also be used on your
@@ -203,8 +199,7 @@ Covering all of HTML’s features is outside the scope of this manual, but
 there are plenty of good introductory guides to HTML available on the
 web if you’d like to learn more.
 
-Browser Appearance
-------------------
+## Browser Appearance
 
 If your card templates are complex, it may be difficult to read the
 question and answer columns (called "Front" and "Back") in the [card
@@ -213,8 +208,7 @@ custom template to be used only in the browser, so you can include only
 the important fields and change the order if you desire. The syntax is
 the same as in standard card templates.
 
-Platform-Specific CSS
----------------------
+## Platform-Specific CSS
 
 Anki defines some special CSS classes that allow you to define different
 styling for different platforms. The example below shows how to vary the
@@ -239,8 +233,7 @@ You can also use properties like .gecko, .opera, and .ie to select
 particular browsers when using AnkiWeb. Please see
 <http://rafael.adm.br/css_browser_selector/> for a full list of options.
 
-Installing Fonts
-----------------
+## Installing Fonts
 
 If you’re using Anki on a work or school computer where you don’t have
 permission to install new fonts, or you’re using Anki on a mobile
@@ -289,8 +282,7 @@ Please make sure the filenames match exactly. If the file is called
 arial.TTF and you write arial.ttf in your card templates, it will not
 work.
 
-Night Mode
-----------
+## Night Mode
 
 You can customize the way templates appear when night mode is enabled in
 the preferences screen.
@@ -310,8 +302,7 @@ yellow when night mode is enabled:
 ```
 
 
-Fading and Scrolling
---------------------
+## Fading and Scrolling
 
 Anki will automatically scroll to the answer by default. It looks for a
 HTML element with id=answer, and scrolls to that. You can place the id
@@ -326,8 +317,7 @@ template:
 
 100 (milliseconds) is the default; set to 0 to disable fading.
 
-Javascript
-----------
+## Javascript
 
 As Anki cards are treated like webpages, it is possible to embed some
 Javascript on your cards via the card template.

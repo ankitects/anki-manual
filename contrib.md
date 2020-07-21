@@ -1,8 +1,6 @@
-Contributing
-============
+# Contributing
 
-Sharing Decks Publicly
-----------------------
+## Sharing Decks Publicly
 
 To share decks with the general public, [synchronize](syncing.md) them
 with AnkiWeb, then log into AnkiWeb and click on "Share" from the menu
@@ -26,8 +24,7 @@ and re-import it, newly added material will be imported without altering
 their existing study progress, provided neither you nor the user has
 altered the note type since the first import.
 
-Sharing Decks Privately
------------------------
+## Sharing Decks Privately
 
 If you’d like to share decks with a limited group of people (such as a
 study group or class) rather than the general public, you can do so by
