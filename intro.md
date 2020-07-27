@@ -19,7 +19,7 @@ translations may not always be up to date.
 
 - [Italiano](https://web.archive.org/web/20160423223801/http://192.167.9.6/Anki_ITA/Manual_ITA.htm)
 
-- [Polski](https://apps.ankiweb.net/docs/manual.pl.html)
+- [Polski](https://platynowy.github.io/anki-manual/#/)
 
 - [Português Brasileiro](https://mizerablebr.github.io/anki-manual/)
 
