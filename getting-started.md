@@ -1,26 +1,29 @@
 # Getting Started
 
+## Installing & Upgrading
+
+Please see the [download site](https://apps.ankiweb.net) for installation and upgrade instructions.
+
 ## Videos
 
 For a quick way to dive into Anki, please have a look at these intro
 videos. They were made with a previous Anki version, but the concepts
 are the same.
 
--   [Shared Decks and Review
-    Basics](http://www.youtube.com/watch?v=QS2G-k2hQyg&yt:cc=on)
+- [Shared Decks and Review
+  Basics](http://www.youtube.com/watch?v=QS2G-k2hQyg&yt:cc=on)
 
--   [Switching Card
-    Order](http://www.youtube.com/watch?v=DnbKwHEQ1mA&yt:cc=on)
+- [Switching Card
+  Order](http://www.youtube.com/watch?v=DnbKwHEQ1mA&yt:cc=on)
 
--   [Styling Cards](http://www.youtube.com/watch?v=F1j1Zx0mXME&yt:cc=on)
+- [Styling Cards](http://www.youtube.com/watch?v=F1j1Zx0mXME&yt:cc=on)
 
--   [Typing in the
-    Answer](http://www.youtube.com/watch?v=5tYObQ3ocrw&yt:cc=on)
+- [Typing in the
+  Answer](http://www.youtube.com/watch?v=5tYObQ3ocrw&yt:cc=on)
 
 If YouTube is unavailable in your country, you can [download the
 videos](https://apps.ankiweb.net/downloads/archive/screencasts/2.0/)
 instead.
-
 
 ## Key Concepts
 
@@ -91,14 +94,14 @@ programs make life easier by providing a feature to flip the front and
 back sides. This is an improvement over the paper situation, but there
 are two major downsides:
 
--   Because such programs don’t track your performance of recognition
-    and production separately, cards will tend not to be shown to you at
-    the optimum time, meaning you forget more than you’d like, or you
-    study more than is necessary.
+- Because such programs don’t track your performance of recognition
+  and production separately, cards will tend not to be shown to you at
+  the optimum time, meaning you forget more than you’d like, or you
+  study more than is necessary.
 
--   Reversing the question and answer only works when you want exactly
-    the same content on each side. This means it’s not possible to
-    display extra info on the back of each card for example.
+- Reversing the question and answer only works when you want exactly
+  the same content on each side. This means it’s not possible to
+  display extra info on the back of each card for example.
 
 Anki solves these problems by allowing you to split the content of your
 cards up into separate pieces of information. You can then tell Anki
@@ -295,4 +298,3 @@ some time. And for simple subjects that are basically a list of facts,
 such as capital city names or pub quiz trivia, you probably don’t need
 external material. But if you attempt to study complex subjects without
 external material, you will probably meet with disappointing results.
-
