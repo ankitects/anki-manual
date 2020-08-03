@@ -1,4 +1,6 @@
-# Card Styling
+# Styling & HTML
+
+## Card Styling
 
 You can watch [a video about styling
 cards](http://www.youtube.com/watch?v=F1j1Zx0mXME&yt:cc=on) on YouTube.
@@ -45,44 +47,55 @@ possible to specify card-specific styling, however. The following
 example will use a yellow background on all cards except the first one:
 
 ```css
-.card { background-color: yellow; }
-.card1 { background-color: blue; }
+.card {
+  background-color: yellow;
+}
+.card1 {
+  background-color: blue;
+}
 ```
-    
+
 ## Image Resizing
 
 Anki shrinks images to fit the screen by default. You can change this by adding
 the following to the bottom of your styling section (outside of the default
-`.card { ... }`): 
+`.card { ... }`):
 
 ```css
-img { max-width: none; max-height: none; }
+img {
+  max-width: none;
+  max-height: none;
+}
 ```
 
 AnkiDroid sometimes has [trouble scaling images to fit the
 screen](https://github.com/ankidroid/Anki-Android/issues/3612). Setting maximum
 image dimensions using css should fix this, but seems to be ignored as of
 AnkiDroid 2.9. A fix is to append `!important` to each style directive, for
-example: 
+example:
 
 ```css
-img { max-width: 300px !important; max-height: 300px !important; }
+img {
+  max-width: 300px !important;
+  max-height: 300px !important;
+}
 ```
 
 If you try to change the style for images and find that the star that
 appears on marked cards is affected (for instance, it becomes way too
 large), you can target it with the following:
 
-
 ```css
-img#star { ... }
+img#star {
+  ...;
+}
 ```
 
 You can explore the styling of cards interactively by using Chrome:
 
 <https://ankitects.github.io/addon-docs/#/porting2.0?id=webview-changes>
 
-# Field Styling
+## Field Styling
 
 The default styling applies to the whole card. You can also make certain
 fields or part of the card use a different font, color, and so on. This
@@ -129,11 +142,11 @@ something like:
 
 ```css
 .card {
- font-family: arial;
- font-size: 20px;
- text-align: center;
- color: black;
- background-color: white;
+  font-family: arial;
+  font-size: 20px;
+  text-align: center;
+  color: black;
+  background-color: white;
 }
 ```
 
@@ -141,15 +154,15 @@ Add your new style to the bottom, so it looks like:
 
 ```css
 .card {
- font-family: arial;
- font-size: 20px;
- text-align: center;
- color: black;
- background-color: white;
+  font-family: arial;
+  font-size: 20px;
+  text-align: center;
+  color: black;
+  background-color: white;
 }
 
 .mystyle1 {
- font-family: ayuthaya;
+  font-family: ayuthaya;
 }
 ```
 
@@ -159,8 +172,8 @@ like:
 
 ```css
 .mystyle1 {
- font-family: ayuthaya;
- font-size: 30px;
+  font-family: ayuthaya;
+  font-size: 30px;
 }
 ```
 
@@ -179,11 +192,18 @@ preferences screen.
 You can customize their appearance in your card styling, for example, to
 make them smaller and coloured, you could use the following:
 
-
 ```css
-.replay-button svg { width: 20px; height: 20px; }
-.replay-button svg circle { fill: blue; }
-.replay-button svg path { stroke: white; fill: green; }
+.replay-button svg {
+  width: 20px;
+  height: 20px;
+}
+.replay-button svg circle {
+  fill: blue;
+}
+.replay-button svg path {
+  stroke: white;
+  fill: green;
+}
 ```
 
 ## Other HTML
@@ -215,10 +235,18 @@ styling for different platforms. The example below shows how to vary the
 font depending on where you’re reviewing:
 
 ```css
-.win .jp { font-family: "MS Mincho"; }
-.mac .jp { font-family: "Hiragino Mincho Pro"; }
-.linux .jp { font-family: "Kochi Mincho"; }
-.mobile .jp { font-family: "Hiragino Mincho ProN"; }
+.win .jp {
+  font-family: "MS Mincho";
+}
+.mac .jp {
+  font-family: "Hiragino Mincho Pro";
+}
+.linux .jp {
+  font-family: "Kochi Mincho";
+}
+.mobile .jp {
+  font-family: "Hiragino Mincho ProN";
+}
 ```
 
 And in the template:
@@ -267,7 +295,10 @@ After that, we need to update the template:
     the file you copied into your media folder:
 
 ```css
-@font-face { font-family: myfont; src: url('_arial.ttf'); }
+@font-face {
+  font-family: myfont;
+  src: url("_arial.ttf");
+}
 ```
 
 Only change the "arial" part, not the "myfont" part.
@@ -291,16 +322,19 @@ If you wanted a lighter grey background, you could use
 something like:
 
 ```css
-.card.nightMode { background-color: #555; }
+.card.nightMode {
+  background-color: #555;
+}
 ```
 
 If you have a 'myclass' style, the following would show the text in
 yellow when night mode is enabled:
 
 ```css
-.nightMode .myclass { color: yellow; }
+.nightMode .myclass {
+  color: yellow;
+}
 ```
-
 
 ## Fading and Scrolling
 
