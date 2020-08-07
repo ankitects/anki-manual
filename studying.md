@@ -296,7 +296,7 @@ or “on1 ja” would both match a deck called “Japanese::Lesson1”.
 ## Falling Behind
 
 If you fall behind in your reviews, Anki will prioritize cards that have
-been waiting the longest. It does this by taking the the cards that have
+been waiting the longest. It does this by taking the cards that have
 been waiting the longest and showing them to you in a random order up
 until your daily review limit. This ordering ensures that no cards will
 be left waiting indefinitely, but it means that if you introduce new
