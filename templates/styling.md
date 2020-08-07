@@ -307,7 +307,7 @@ After that, you can either change the font for the entire card, or for
 individual fields. To change the font for the entire card, simply locate
 the font-family: line in the .card section and change the font to
 "myfont". To change the font for only certain fields, please see the
-[Field Styling](templates/styling.md) instructions above.
+[Field Styling](templates/styling.md#field-styling) instructions above.
 
 Please make sure the filenames match exactly. If the file is called
 arial.TTF and you write arial.ttf in your card templates, it will not

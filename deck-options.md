@@ -221,7 +221,7 @@ option. The default setting says that lapses should be reviewed one day
 later. The interval must be 1 day or more.
 
 The leech options control the way Anki handles leeches. Please see the
-leech section for more information.
+[leeches](leeches.md) section for more information.
 
 ## General
 
@@ -240,7 +240,7 @@ By default, Anki automatically plays audio on the front and back of
 cards. If you uncheck 'automatically play audio', Anki will not play
 audio until you press the replay audio key, `r` or `F5`.
 
-The 'when answer shown, replay both question and answer audio' option
+The 'Always include question side when replaying audio' option
 controls what happens when you choose to replay audio while the answer
 is shown. Please note that it does not control what happens when you
 show the answer; for that please see [this section](templates/fields.md#special-fields).
