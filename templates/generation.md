@@ -151,7 +151,7 @@ On earlier Anki versions, the negated conditional is ignored, and card
 generation will depend only on Front being non-empty.
 
 Mixing **AND** and **OR** conditions can also cause problems on older versions.
-For example, the following ("add the card if A **OR** B **OR** C is non-empty)
+For example, the following ("add the card if A **OR** B **OR** C is non-empty")
 is fine:
 
     {{A}}
@@ -209,9 +209,9 @@ could use the following template:
     {{cloze:Text}}
 
     {{#c1}}
-    {{Hint1}}
+        {{Hint1}}
     {{/c1}}
 
     {{#c2}}
-    {{Hint2}}
+        {{Hint2}}
     {{/c2}}
