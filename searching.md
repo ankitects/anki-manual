@@ -230,10 +230,6 @@ review cards, not including lapsed cards
 `is:learn -is:review`  
 cards that are in learning for the first time
 
-`edited:n`
-cards where the note text was edited in the last n days. Requires Anki 2.1.28+ /
-AnkiMobile 2.0.64+.
-
 ## Card properties
 
 `prop:ivl>=10`  
@@ -261,7 +257,7 @@ Note that due only matches review cards and learning cards with an
 interval of a day or more: cards in learning with small intervals like
 10 minutes are not included.
 
-## Recently added
+## Recently added/edited
 
 `added:1`  
 cards added today
@@ -272,6 +268,10 @@ cards added in last week
 The check is made against card creation time rather than note creation
 time, so cards that were generated within the time frame will be
 included even if their notes were added a long time ago.
+
+`edited:n`
+cards where the note text was added/edited in the last n days. Requires
+Anki 2.1.28+ / AnkiMobile 2.0.64+.
 
 ## Recently answered
 
