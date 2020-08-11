@@ -230,6 +230,10 @@ review cards, not including lapsed cards
 `is:learn -is:review`  
 cards that are in learning for the first time
 
+`edited:n`
+cards where the note text was edited in the last n days. Requires Anki 2.1.28+ /
+AnkiMobile 2.0.64+.
+
 ## Card properties
 
 `prop:ivl>=10`  
