@@ -203,8 +203,8 @@ between currently existing ones, pushing the currently existing ones
 apart. For instance, if you have five cards and you want to move 3, 4,
 and 5 between 1 and 2, selecting this setting would cause the cards to
 end up in the order 1, 3, 4, 5, 2. By contrast, if you turn this option
-off, 2 and 3 will get the same position number (and it will thus be
-random which one comes up first).
+off, 1 and 2 will get the same position number (and it will thus be
+unpredictable which of the cards with the same number comes up first).
 
 _Change Note Type_ allows you to convert the selected notes from one
 type to another. For example, imagine you have a Russian note type and a
