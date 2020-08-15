@@ -66,7 +66,7 @@ changing the deck) can operate on multiple cards at once.
 The background colour will change depending on the card. Marked cards
 are a shade of purple. Suspended cards are a shade of yellow. For more
 information about marked and suspended cards, please see [editing and
-more](studying.md).
+more](studying.md#editing-and-more).
 
 One of the available columns is called the _sort field_. Anki allows you
 to choose one field from each type of note to be used for sorting. You
@@ -94,13 +94,14 @@ cards, which makes it easier to preview cards quickly.
 ## Menu
 
 Up the top of the window/screen is the menu. You can also access it quickly by
-right clicking on command+clicking on the card list area.
+right clicking or command+clicking on the card list area.
 
 _Info_ shows various information about the currently selected card,
 including its review history. For more information, see the
 [statistics](stats.md) section.
 
-_Mark_ and _Suspend_ are documented in [editing and more](studying.md).
+_Toggle Mark_ and _Toggle Suspend_ are documented in
+[editing and more](studying.md#editing-and-more).
 
 _Change Deck_ allows you to move cards to a different deck. Cards can be
 placed in different decks, so if you want to move all cards in a note,
@@ -139,8 +140,10 @@ Will change the card to:
 
     pic.jpg
 
-A full discussion on regular expressions is outside the scope of this
-document. There are a number of tutorials available on the web. For a syntax guide, on Anki 2.1.28+ please see <https://docs.rs/regex/1.3.9/regex/#syntax>. For older Anki versions, please see <http://docs.python.org/library/re.html>.
+A full discussion on regular expressions is outside the scope of this document.
+There are a number of tutorials available on the web.
+For a syntax guide, on Anki 2.1.28+ please see <https://docs.rs/regex/1.3.9/regex/#syntax>.
+For older Anki versions, please see <http://docs.python.org/library/re.html>.
 
 ## Finding Duplicates
 
@@ -155,7 +158,7 @@ finding feature is not limited to a single note type. This means that by
 default, it will search in all note types that have the field you
 provided.
 
-The _optional limit_ text box allows you to narrow down where Anki will
+The _optional filter_ text box allows you to narrow down where Anki will
 look for duplicates. If you only want to search for duplicates in the
 "French Vocab" and "French Verbs" note types, you would enter:
 
