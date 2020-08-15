@@ -2,8 +2,8 @@
 
 If more than one person wants to use Anki on your computer, you can set
 up a separate profile for each user. Each user profile has their own
-collection, and own program settings. Profiles are configured by going
-to the File menu and choosing "Switch Profile".
+collection, and own program settings. Add-ons are shared across profiles.
+Profiles are configured by going to the File menu and choosing "Switch Profile".
 
 Profiles are primariy intended to be used by different people, and are not
 recommended for splitting up your own content.
