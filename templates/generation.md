@@ -135,7 +135,7 @@ as expected:
     {{/Expression}}
     {{Notes}}
 
-## Blank back sides
+## Blank Back Sides
 
 Card generation only looks at the front side of the card. For example, if you have a
 front template:
@@ -158,7 +158,7 @@ on the front template as a conditional, like so:
 
 This will ensure the card is generated only if both Field 2 and Field 1 are non-empty.
 
-## Limitations in older Anki versions
+## Limitations in Older Anki Versions
 
 The following limitations do not apply to Anki 2.1.28+ and AnkiMobile 2.0.64+.
 
