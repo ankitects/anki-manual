@@ -135,6 +135,29 @@ as expected:
     {{/Expression}}
     {{Notes}}
 
+## Blank back sides
+
+Card generation only looks at the front side of the card. For example, if you have a
+front template:
+
+    {{Field 1}}
+
+and a back template:
+
+    {{Field 2}}
+
+Then a card will be generated if Field 1 is non-empty. If Field 2 is empty, the card
+will still be generated, and you will get a blank back side.
+
+If you wish to avoid a blank back side, you will need to place a required field
+on the front template as a conditional, like so:
+
+    {{#Field 2}}
+        {{Field 1}}
+    {{/Field 2}}
+
+This will ensure the card is generated only if both Field 2 and Field 1 are non-empty.
+
 ## Limitations in older Anki versions
 
 The following limitations do not apply to Anki 2.1.28+ and AnkiMobile 2.0.64+.
