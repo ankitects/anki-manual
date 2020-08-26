@@ -15,7 +15,7 @@ search for "dog" - will match words like "doggy" and "underdog" too.
 
 `dog cat`  
 finds notes that have both "dog" and "cat" on them, such as "raining
-cats and dogs"".
+cats and dogs".
 
 `dog or cat`  
 finds notes with either "dog" or "cat".
@@ -269,7 +269,7 @@ The check is made against card creation time rather than note creation
 time, so cards that were generated within the time frame will be
 included even if their notes were added a long time ago.
 
-`edited:n`
+`edited:n`  
 cards where the note text was added/edited in the last n days. Requires
 Anki 2.1.28+ / AnkiMobile 2.0.64+.
 
@@ -301,8 +301,7 @@ the card with card id 123
 find note types with note type id 123
 
 Note and card IDs can be found in the [card info](stats.md) dialog in the
-browser. Note type IDs can be found by clicking on a note type in the
-Browse screen. These searches may also be helpful when doing add-on
+browser. These searches may also be helpful when doing add-on
 development or otherwise working closely with the database.
 
 Object IDs will not work in the mobile clients, and are not intended to
