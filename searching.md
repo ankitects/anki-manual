@@ -297,9 +297,6 @@ all cards of the note with note id 123
 `cid:123`  
 the card with card id 123
 
-`mid:123`  
-find note types with note type id 123
-
 Note and card IDs can be found in the [card info](stats.md) dialog in the
 browser. These searches may also be helpful when doing add-on
 development or otherwise working closely with the database.
