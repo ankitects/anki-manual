@@ -13,8 +13,9 @@ your edits, provided you import back into the same note type.
 
 If you find yourself needing to edit the first field as well, you’ll
 need to change the format of your note type so that the first field is
-an ID number rather than actual text. (You can install the "Add note id"
-plugin to make this easier.)
+an ID number rather than actual text. (You can install
+the [Add note id](https://ankiweb.net/shared/info/1672832404)
+add-on to make this easier.)
 
 In order for formatting to be preserved when you import text back in,
 the text is exported with all the HTML formatting embedded in it.
