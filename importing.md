@@ -109,9 +109,9 @@ HTML syntax.
 If you wish to use HTML for formatting your file but also wish to
 include angle brackets, you may write them differently:
 
--   For "&lt;", use "&lt;"
+-   For "&lt;", use "&amp;lt;"
 
--   For "&gt;", use "&gt;"
+-   For "&gt;", use "&amp;gt;"
 
 ### Importing Media
 
@@ -187,4 +187,4 @@ set in the import dialog. If notes are updated in place, the existing
 scheduling information on all their cards will be preserved.
 
 For info on how duplicates are handled in .apkg files, please see the
-[Deck Packages](exporting.md) section below.
+[Deck Packages](exporting.md#packaged-decks) section.
