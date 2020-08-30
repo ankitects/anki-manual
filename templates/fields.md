@@ -91,7 +91,7 @@ available voice. For example:
 This would use Otoya when on an Apple device, and Haruka when on a
 Windows PC.
 
-Specifing a different speed is possible in some TTS implementations:
+Specifying a different speed is possible in some TTS implementations:
 
     {{tts fr_FR speed=0.8:SomeField}}
 

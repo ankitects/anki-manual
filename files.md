@@ -93,7 +93,7 @@ different languages.
 On Windows, you should use a backslash (\\) not a forward slash (/).
 
 On a Mac there is no easy way to alter the behaviour when clicking on
-the Anki icon, but it is possibile to start Anki with a custom base
+the Anki icon, but it is possible to start Anki with a custom base
 folder from a terminal:
 
     open /Applications/Anki.app --args -b ~/myankifolder
