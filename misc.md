@@ -15,7 +15,7 @@ for more information.
 Sometimes you may be asked to use the debug console to change a setting
 or check something. Unless asked to enter text in the "debug console",
 you will probably not need this. Advanced users may like to read more
-about it in the add-ons page, linked below.
+about it in the [add-on writing guide](https://addon-docs.ankiweb.net/#/more?id=debugging).
 
 When asked to enter text into the "debug console", please start Anki,
 and in the main window, press
