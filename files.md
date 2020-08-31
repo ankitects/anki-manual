@@ -142,8 +142,6 @@ drive G.
 
 - Create a text file called G:\\anki.bat with the following text:
 
-<!-- -->
-
     g:\anki\anki.exe -b g:\ankidata
 
 If you would like to prevent the black command prompt window from
@@ -177,7 +175,7 @@ menu item to export all decks with scheduling and media information
 included, which will save your data to a .colpkg file.
 
 If you want to back up multiple profiles and your add-ons as well, you
-can make a complete copy of your [Anki folder](files.md). Please make sure
+can make a complete copy of your [Anki folder](#file-locations). Please make sure
 you close Anki first, as backups may be corrupt if run while Anki is
 open.
 
@@ -210,7 +208,7 @@ for each note type first.
 
 ## Inaccessible Harddisk
 
-If Anki can’t write to files in the [Anki folder](files.md), a message
+If Anki can’t write to files in the [Anki folder](#file-locations), a message
 will be displayed on startup saying that Anki can’t write to the
 harddisk, and Anki will close. If you’re unsure how to fix the
 permissions, please contact someone near you who is knowledgable about
@@ -250,7 +248,7 @@ or corrupted by a bug.
 
 When you run Tools&gt;Check Database, you will receive a message if Anki
 detects the file has been corrupted. **The best way to recover from this
-is to restore from the most recent [automatic backup](preferences.md)**, but
+is to restore from the most recent [automatic backup](#backups)**, but
 if your backup is too old, then you can attempt to repair the corruption
 instead.
 
