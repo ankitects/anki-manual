@@ -2,9 +2,9 @@
 
 ## Card Info
 
-You can display information about a card by clicking the Info button in
-the toolbar while browsing. Most of the displayed information should be
-self-explanatory. A few notes:
+You can display information about a card by using the Cards&gt;Info menu item,
+or by right-clicking on the card and then selecting **Info**.
+Most of the displayed information should be self-explanatory. A few notes:
 
 **Position**  
 Only shown when the card is new, it shows the order the card will appear
@@ -22,8 +22,8 @@ card with the "Good" button.
 
 ## Statistics
 
-The statistics window is accessed by clicking on the graphs icon in the
-top right of the main window, or by pressing T. The statistics
+The statistics window is accessed by clicking on **Stats** button at the
+top of the main window, or by pressing T. The statistics
 window will show statistics from the currently selected deck and any
 subdecks. If you click on "collection" on the bottom left, statistics
 will be shown for your entire collection instead. On 2.1.28+, additionally,
