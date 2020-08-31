@@ -105,7 +105,7 @@ performance.
 The “today” statistics are unaffected by the time period selected at the
 bottom of the window.
 
-# The Graphs
+## The Graphs
 
 **Forecast**  
 This graph shows an estimated number of reviews that will be due on a
