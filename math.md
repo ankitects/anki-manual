@@ -82,7 +82,8 @@ The command may not be on the path, so you may need to provide the full
 path, eg /usr/local/texlive/2014basic/bin/x86_64-darwin/tlmgr.
 
 If you are not using the above LaTeX packages, you will need to use the
-"edit LaTeX" add-on to specify the full path to latex and dvipng.
+[edit LaTeX](https://ankiweb.net/shared/info/937148547) add-on to specify
+the full path to latex and dvipng.
 
 ### Web/Mobile
 
@@ -180,7 +181,7 @@ an example file for chemtex on the internet:
 
 Firstly, follow the documentation of the package and MiKTeX/MacTex in
 order to install the package. To check the package is working, you’ll
-want to put code like the above into a .latex file and test you can
+want to put code like the above into a .latex file and test if you can
 compile it from the command line. Once you’ve confirmed that the package
 is available and working, we can integrate it with Anki.
 
