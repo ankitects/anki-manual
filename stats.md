@@ -26,7 +26,7 @@ The statistics window is accessed by clicking on the graphs icon in the
 top right of the main window, or by pressing T. The statistics
 window will show statistics from the currently selected deck and any
 subdecks. If you click on "collection" on the bottom left, statistics
-will be shown for your entire collection instead. On 2.1.28+, aditionaly,
+will be shown for your entire collection instead. On 2.1.28+, additionally,
 you can display graphs for arbitrary searches by adding filters in the
 search box.
 
