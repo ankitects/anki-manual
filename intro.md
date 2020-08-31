@@ -23,6 +23,8 @@ translations may not always be up to date.
 
 - [Português Brasileiro](https://mizerablebr.github.io/anki-manual/)
 
+- [العربية](https://anh25.github.io/anki-manual/)
+
 - [فارسى](http://ankidroid.ir/anki.pdf)
 
 - [日本語](http://wikiwiki.jp/rage2050/?FrontPage)
