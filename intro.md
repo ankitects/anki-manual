@@ -23,7 +23,7 @@ translations may not always be up to date.
 
 - [Português Brasileiro](https://mizerablebr.github.io/anki-manual/)
 
-- [العربية](https://anh25.github.io/anki-manual/)
+- [العربية](https://abdnh.github.io/anki-manual/)
 
 - [فارسى](http://ankidroid.ir/anki.pdf)
 
