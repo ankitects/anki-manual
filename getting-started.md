@@ -13,6 +13,8 @@ are the same.
 - [Shared Decks and Review
   Basics](http://www.youtube.com/watch?v=QS2G-k2hQyg&yt:cc=on)
 
+- [Syncing](https://www.youtube.com/watch?v=YkiM4DPzSVc&list=PLGgmaKOIHykFoomqkBJAyGiDQ2kyiuTao&yt:cc=on)
+
 - [Switching Card
   Order](http://www.youtube.com/watch?v=DnbKwHEQ1mA&yt:cc=on)
 
