@@ -119,6 +119,8 @@ On a cloze note type, you can make Anki read only the the elided sections
 using the `cloze-only` filter, like so:
 
     {{tts en_US:cloze-only:Text}}
+    
+The cloze-only filter is supported in Anki 2.1.29+ and AnkiMobile 2.0.65+.
 
 ## Special Fields
 
