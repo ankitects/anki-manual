@@ -115,7 +115,7 @@ the new voices to become available.
 On Windows, some voices like Cortana can not be selected, as Microsoft
 does not make those voices available to other applications.
 
-On a cloze note type, you can make Anki read only the the elided sections
+On a cloze note type, you can make Anki read only the elided sections
 using the `cloze-only` filter, like so:
 
     {{tts en_US:cloze-only:Text}}
