@@ -7,7 +7,7 @@ Please see the [download site](https://apps.ankiweb.net) for installation and up
 ## Videos
 
 For a quick way to dive into Anki, please have a look at these intro
-videos. They were made with a previous Anki version, but the concepts
+videos. Some were made with a previous Anki version, but the concepts
 are the same.
 
 - [Shared Decks and Review
