@@ -8,3 +8,5 @@ piece](http://augmentingcognition.com/ltm.html) about long term memory
 and how he uses Anki. He also provides a [condensed
 version](https://twitter.com/michael_nielsen/status/957763229454774272)
 as a series of tweets.
+
+Some medical students have banded together to make a paid-for guide focusing on the use of Anki in medical school: https://courses.ankipalace.com/
