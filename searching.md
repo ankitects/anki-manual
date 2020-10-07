@@ -88,6 +88,11 @@ Things to note from the above:
   word is not formatted, or the formatting does not change in the
   middle of the word, then Anki will be able to find it in any field.
 
+- Standard searches are case insensitive for Latin characters - a-z will
+  match A-Z, and vice versa. Other characters such as Cyrillic are case sensitive
+  in a standard search, but can be made case insensitive by searching on a word
+  boundary or regular expression (w:, re:).
+
 ## Limiting to a field
 
 You can also ask Anki to match only if a particular field contains some
