@@ -211,7 +211,7 @@ for each note type first.
 If Anki can’t write to files in the [Anki folder](#file-locations), a message
 will be displayed on startup saying that Anki can’t write to the
 harddisk, and Anki will close. If you’re unsure how to fix the
-permissions, please contact someone near you who is knowledgable about
+permissions, please contact someone near you who is knowledgeable about
 computers and can help you out.
 
 ## Permissions of Temp Folder
