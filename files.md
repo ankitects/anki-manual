@@ -114,9 +114,11 @@ third-party synchronization service, as it can lead to database
 corruption when files are synced while in use.
 
 If you just want to synchronize your media, you can link external
-folders into services like DropBox. Please see
-<http://www.dropboxwiki.com/tips-and-tricks/sync-other-folders> for more
-info.
+folders into services like DropBox. Please see [DropboxWiki: Sync 
+Folders Outside Dropbox (archive.org)][dropboxwiki-sync-other]
+for more info.
+
+[dropboxwiki-sync-other]: http://web.archive.org/web/20180919153730/http://www.dropboxwiki.com/tips-and-tricks/sync-other-folders
 
 If you wish to keep your collection in sync as well, it is strongly
 recommended that you create a script that copies your files from your
