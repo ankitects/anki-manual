@@ -309,4 +309,4 @@ creating a [filtered deck](filtered-decks.md).
 When you answer cards that have been waiting for a while, Anki factors
 in that delay when determining the next time a card should be shown.
 Please see the section on Anki’s spaced-repetition
-[algorithm](faqs.md) for more information.
+[algorithm](https://faqs.ankiweb.net/due-times-after-a-break.html) for more information.
