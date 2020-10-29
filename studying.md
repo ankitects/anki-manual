@@ -111,7 +111,7 @@ again, there are four buttons to rate your answer:
 
 **Again** marks your answer as incorrect and asks Anki to show the card
 more frequently in the future. The card is said to have 'lapsed'. Please
-see the [lapses](deck-options.md) section for more information about how lapsed
+see the [lapses](deck-options.md#lapses) section for more information about how lapsed
 reviews are handled.
 
 **Hard** shows the card at a slightly longer delay than last time, and
