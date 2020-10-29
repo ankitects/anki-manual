@@ -235,6 +235,18 @@ review cards, not including lapsed cards
 `is:learn -is:review`  
 cards that are in learning for the first time
 
+`flag:1`  
+cards with a red flag
+
+`flag:2`  
+cards with an orange flag
+
+`flag:3`  
+cards with a green flag
+
+`flag:4`  
+cards with a blue flag
+
 ## Card properties
 
 `prop:ivl>=10`  
