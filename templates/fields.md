@@ -271,7 +271,7 @@ importing/exporting, and so on. Examples that won’t work:
     [latex]{{Field 1}}[/latex]
 
 Instead, you should include the media references in the field. Please
-see the importing section for more information.
+see the [importing section](../importing.md#importing-media) for more information.
 
 ## Checking Your Answer
 
