@@ -202,7 +202,7 @@ interval determined by the settings below.
 
 The new interval is determined when you answer "Again" to a review card,
 not when the card finishes its relearning steps. For this reason, the
-"Good" and "Easy" buttons during relearing do not alter the interval
+"Good" and "Easy" buttons during relearning do not alter the interval
 again - they only control which step you are on. If there is only a
 single step (the default), the "Easy" button will be hidden, since it
 would accomplish the same thing as the "Good" button. If you have 2 or
