@@ -179,7 +179,7 @@ like:
 
 It’s also possible to bundle custom fonts with your deck, so you don’t
 need to install them on your computer or mobile device. Please see the
-installing fonts section for more info.
+[installing fonts](templates/styling.md#installing-fonts) section for more info.
 
 ## Audio Replay Buttons
 
