@@ -175,7 +175,7 @@ higher retention.
 press the Hard button. The percentage is relative to the previous
 interval, eg with a default 120%, a card with a 10 day interval will be
 given 12 days. This option is only available when the [experimental
-scheduler](https://anki.tenderapp.com/kb/anki-ecosystem/the-anki-21-scheduler) is enabled in the preferences.
+scheduler](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html) is enabled in the preferences.
 
 Turning off **bury related…​** will prevent Anki from [burying
 siblings](studying.md#siblings-and-burying), and instead Anki will just try to avoid showing
