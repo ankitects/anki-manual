@@ -223,7 +223,7 @@ web if you’d like to learn more.
 
 If your card templates are complex, it may be difficult to read the
 question and answer columns (called "Front" and "Back") in the [card
-list](browsing.md). The "browser appearance" option allows you to define a
+list](browsing.md#card-list). The "browser appearance" option allows you to define a
 custom template to be used only in the browser, so you can include only
 the important fields and change the order if you desire. The syntax is
 the same as in standard card templates.
