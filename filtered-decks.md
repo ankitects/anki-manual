@@ -87,7 +87,7 @@ filtered deck while cards are still in learning, they will be turned
 back into new cards. In the case of failed reviews in relearning, any
 remaining relearning steps will be skipped. This has been fixed in the
 [experimental
-scheduler](https://anki.tenderapp.com/kb/anki-ecosystem/experiment-scheduling-changes-in-anki-21).
+scheduler](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html).
 
 ## Creating Manually
 
