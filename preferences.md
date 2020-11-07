@@ -22,7 +22,7 @@ using the rest of your system in dark mode, please install Anki
 -standard one.
 
 The **Anki 2.1 scheduler** is documented here:
-<https://anki.tenderapp.com/kb/anki-ecosystem/experiment-scheduling-changes-in-anki-21>
+<https://faqs.ankiweb.net/the-anki-2.1-scheduler.html>
 
 The first drop-down box controls how note types and decks interact. The
 default of "When adding, default to current deck" means that Anki saves
