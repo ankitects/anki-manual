@@ -34,8 +34,8 @@ from the main window.
 ## Searching
 
 Above the card list is a search box. You can type in various things
-there to search for cards. For information on the search syntax, please
-see the [searching section](searching.md).
+there to search for cards. For information on the search syntax,
+see [Searching](searching.md).
 
 ## Card List
 
@@ -65,8 +65,8 @@ changing the deck) can operate on multiple cards at once.
 
 The background colour will change depending on the card. Marked cards
 are a shade of purple. Suspended cards are a shade of yellow. For more
-information about marked and suspended cards, please see [editing and
-more](studying.md#editing-and-more).
+information about marked and suspended cards, see [Editing and
+More](studying.md#editing-and-more).
 
 One of the available columns is called the **Sort Field**. Anki allows you
 to choose one field from each type of note to be used for sorting. You
@@ -82,9 +82,8 @@ what would be seen during review.
 ## Current Note
 
 The bottom right area displays the currently selected card’s note. For
-more information about cards and notes, please see [the
-basics](getting-started.md). For more information on formatting buttons, please see
-[editing](editing.md).
+more information about cards and notes, see [Getting Started](getting-started.md).
+For more information on formatting buttons, see [Editing](editing.md).
 
 You can see a preview of what the currently selected card would look
 like when reviewing by clicking the **Preview** button next to the search
@@ -97,8 +96,7 @@ Up the top of the window/screen is the menu. You can also access it quickly by
 right clicking or command+clicking on the card list area.
 
 **Info** shows various information about the currently selected card,
-including its review history. For more information, see the
-[statistics](stats.md) section.
+including its review history. For more information, see [Card Info](stats.md#card-info).
 
 **Toggle Mark** and ***Toggle Suspend*** are documented in
 [editing and more](studying.md#editing-and-more).
@@ -141,9 +139,9 @@ Will change the card to:
     pic.jpg
 
 A full discussion on regular expressions is outside the scope of this document.
-There are a number of tutorials available on the web.
-For a syntax guide, on Anki 2.1.28+ please see <https://docs.rs/regex/1.3.9/regex/#syntax>.
-For older Anki versions, please see <http://docs.python.org/library/re.html>.
+There are a number of syntax guides available on the web:
+- For Anki 2.1.28+, see <https://docs.rs/regex/1.3.9/regex/#syntax>.
+- For older Anki versions, see <http://docs.python.org/library/re.html>.
 
 ## Finding Duplicates
 
@@ -170,7 +168,7 @@ you could use:
     deck:'myDeck'
 
 The search syntax is the same as used when searching in the browser.
-Please see the [searching](searching.md) section for more information.
+For more information, see [Searching](searching.md).
 
 You can click one of the links in the search results list to display the
 duplicate notes in that set. If the search brings up a large number of
