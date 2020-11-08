@@ -63,7 +63,7 @@ If you drag the mouse or hold ctrl or command to select multiple cards,
 the editor will be temporarily hidden. Various operations (such as
 changing the deck) can operate on multiple cards at once.
 
-The background colour will change depending on the card. Marked cards
+The background color will change depending on the card. Marked cards
 are a shade of purple. Suspended cards are a shade of yellow. For more
 information about marked and suspended cards, please see [editing and
 more](studying.md#editing-and-more).
