@@ -8,7 +8,7 @@ The video shows Anki 2.0’s interface, but the concepts are largely the
 same.
 
 In between the front and back template in the Cards screen is the card
-styling area. In that section, you can change the background colour of
+styling area. In that section, you can change the background color of
 the card, the default font, the text alignment, and so on.
 
 The standard options available to you are:
@@ -190,7 +190,7 @@ If you prefer not to see the buttons, you can hide them in the
 preferences screen.
 
 You can customize their appearance in your card styling, for example, to
-make them smaller and coloured, you could use the following:
+make them smaller and colored, you could use the following:
 
 ```css
 .replay-button svg {
