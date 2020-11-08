@@ -35,7 +35,7 @@ Once syncing is enabled, Anki will automatically sync each time your
 collection is closed or opened. If you would prefer to synchronize
 manually, you can disable automatic syncing in Anki’s preferences.
 
-## Button Colour
+## Button Color
 
 The sync button will change to blue when a normal sync is required,
 and red when a full sync is required.
