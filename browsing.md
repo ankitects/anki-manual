@@ -5,7 +5,7 @@ them. It is opened by clicking **Browse** in the main window, or by pressing
 **b**. It is comprised of three sections: the *sidebar* on the
 left, the *card list* on the top right, and the *current note* on the bottom
 right. By positioning the mouse between two sections, it is possible to click
-and drag to expand one section and shrink another.
+and drag to expand one section and shrink the other.
 
 ## Sidebar
 
@@ -31,7 +31,7 @@ term that is negated).
 To remove tags that are not used by any notes, use **Tools &gt; Check Database**
 from the main window.
 
-## Searching
+## Search Box
 
 Above the card list is a search box. You can type in various things
 there to search for cards. For information on the search syntax,
@@ -92,8 +92,8 @@ cards, which makes it easier to preview cards quickly.
 
 ## Menu
 
-Up the top of the window/screen is the menu. You can also access it quickly by
-right clicking or command+clicking on the card list area.
+Right clicking on selected cards in the *card list* shows up a menu of actions 
+you can perform on those cards:
 
 **Info** shows various information about the currently selected card,
 including its review history. For more information, see [Card Info](stats.md#card-info).
@@ -103,11 +103,12 @@ including its review history. For more information, see [Card Info](stats.md#car
 
 **Change Deck** allows you to move cards to a different deck. Cards can be
 placed in different decks, so if you want to move all cards in a note,
-you should first use **Edit &gt; Select Notes**.
+you should first use **Edit &gt; Select Notes** to select all cards, right click on
+selected cards and then click **Change Deck**.
 
 **Add Tags** and **Remove Tags** allow you to add or remove tags from notes
-in bulk. To remove unused tags from the list on the left, use
-**Tools &gt; Check Database** from the main window.
+in bulk. To remove unused tags from *sidebar*, start from the main window,
+click **Tools** in the menu bar and click **Check Database**.
 
 **Delete** removes the selected card(s) and their notes. It is not
 possible to remove individual cards, as individual cards are controlled
@@ -115,10 +116,14 @@ by the [templates](templates/intro.md).
 
 ## Find and Replace
 
-This option (Notes→Find and Replace…​) allows you to replace text in the
-notes you have selected. The regular expression option allows you to
-perform complex replacements. For example, given the following text in a
-field:
+To replace text in selected notes, you can either:
+
+- Right click on selected notes in the *card list*, and click **Find and Replace**.
+
+- In the **Browser** window, click **Notes** in the menu bar and click **Find and Replace**.
+
+The regular expression option allows you to perform complex replacements.
+For example, given the following text in a field:
 
     <img src="pic.jpg" />
 
@@ -151,10 +156,9 @@ of your note types and present a list of all possible fields. If you
 want to look for duplicates in the *Back* field, you’d select it from
 the list and then click **Search**.
 
-Unlike the check that happens when you add cards manually, the duplicate
-finding feature is not limited to a single note type. This means that by
-default, it will search in all note types that have the field you
-provided.
+By default, it will search in all note types that have the field you provided. 
+This differs from the duplicate check when you add cards manually, which 
+is limited to a single note type.
 
 The **Optional filter** text box allows you to narrow down where Anki will
 look for duplicates. If you only want to search for duplicates in the
