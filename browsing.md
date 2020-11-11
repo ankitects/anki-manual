@@ -116,9 +116,9 @@ by the [templates](templates/intro.md).
 
 ## Find and Replace
 
-To replace text in selected notes, follow either instructions:
+To replace text in selected notes, you can either:
 
-- Right click on selected notes in *card list*, and click **Find and Replace**.
+- Right click on selected notes in the *card list*, and click **Find and Replace**.
 
 - In the **Browser** window, click **Notes** in the menu bar and click **Find and Replace**.
 
