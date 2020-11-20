@@ -95,34 +95,34 @@ The above examples show that some characters have special meaning to Anki. The
 following is an exhaustive list of these special characters and describes how
 you can search for each of them as a literal.
 
-- *Space*
+- *Space*  
   To match something including spaces, enclose the `"entire term"` in double
   quotes. If it is a colon search, you also have the option to only quote the
   `part:"after the colon"`.
 
-- `\`
+- `\`  
   The backslash is used to deprive characters, including itself, of their special
   meaning. This is called “escaping”. So `\\` must be used to match a single `\`.
 
-- `"`, `*` and `_`
+- `"`, `*` and `_`  
   These three characters can only be matched literally if you escape them with `\`.
   For example, `_` will match any single character, but `\_` matches the literal
   underscore `_`.
 
-- `(` and `)`
+- `(` and `)`  
   Escaping parentheses is optional if they are enclosed in quotes. That is,
   `"()"`, `\(\)` and `"\(\)"` are all equivalent, but `()` is not.
 
-- `-`
+- `-`  
   The minus is ambiguous if it is the first character of a term. In that case, you
   can escape it or quote the entire term to distinguish it from the negator. Both
   `\-.-` and `"-.-"` are fine to match a resigned emoji.
 
-- `:`
+- `:`  
   Colons have to be escaped unless they are preceded by another, unescaped colon.
   So `w:e:b` is a word boundary search for `e:b`, `w\:e\:b` searches literally for
-  `w:e:b` and `w\:e:b` searches the field `w:e` for `b` (see [field searches]
-  (searching.md#limiting-to-a-field)).
+  `w:e:b` and `w\:e:b` searches the field `w:e` for `b` (see
+  [field searches](#limiting-to-a-field)).
 
 
 ## Limiting to a field
