@@ -221,7 +221,7 @@ Anki 2.1.24+ and AnkiMobile 2.0.60+ support searching in notes with "regular exp
 a standard and powerful way of searching in text.
 
 Start a search with `re:` to search by regular expression. To make things easier, Anki will
-treat the following as [raw input](####raw-input), so bear in mind the rules listed above.
+treat the following as [raw input](#raw-input), so bear in mind the rules listed above.
 
 Some examples:
 
