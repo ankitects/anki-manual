@@ -101,8 +101,9 @@ you can search for each of them as a literal.
   `part:"after the colon"`.
 
 - `\`  
-  The backslash is used to deprive characters, including itself, of their special
-  meaning. This is called “escaping”. So `\\` must be used to match a single `\`.
+  The backslash is used to deprive the following character, possibly another `\`,
+  of its special meaning. This is called “escaping”. So `\\` must be used to match
+  a single `\`.
 
 - `"`, `*` and `_`  
   These three characters can only be matched literally if you escape them with `\`.
