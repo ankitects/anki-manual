@@ -125,6 +125,17 @@ you can search for each of them as a literal.
   `w:e:b` and `w\:e:b` searches the field `w:e` for `b` (see
   [field searches](#limiting-to-a-field)).
 
+#### Raw input
+
+If your search contains a lot of literal special characters, escaping can become tedious.
+For that reason, Anki provides the `r:` prefix which marks the following text as raw
+input. Only a minimum of escaping is required to prevent ambiguity:
+
+- `"` must be escaped.
+
+- Spaces and unescaped parentheses require the search term to be quoted.
+
+- The search term must not end in an odd number of backslashes.
 
 ## Limiting to a field
 
@@ -209,7 +220,10 @@ Searches that ignore combining characters are slower than regular searches.
 Anki 2.1.24+ and AnkiMobile 2.0.60+ support searching in notes with "regular expressions",
 a standard and powerful way of searching in text.
 
-Start a search with `re:` to search by regular expression. Some examples:
+Start a search with `re:` to search by regular expression. To make things easier, Anki will
+treat the following as [raw input](####raw-input), so bear in mind the rules listed above.
+
+Some examples:
 
 `"re:(some|another).*thing"`  
 find notes that have "some" or "another" on them, followed by 0 or more characters, and then "thing"
