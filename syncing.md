@@ -5,6 +5,11 @@ synchronized across multiple devices, and to study online. Please sign
 up for a [free account](https://ankiweb.net/) before following the steps
 below.
 
+## Intro Videos
+
+For a quick introduction to syncing, please check out the
+[syncing intro videos](https://www.youtube.com/watch?v=YkiM4DPzSVc&list=PLGgmaKOIHykFoomqkBJAyGiDQ2kyiuTao&yt:cc=on).
+
 ## Setup
 
 To start syncing your collection across devices, click the sync button
