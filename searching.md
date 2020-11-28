@@ -89,57 +89,6 @@ Things to note from the above:
   in a standard search, but can be made case insensitive by searching on a word
   boundary or regular expression (w:, re:).
 
-## Matching special characters
-
-This section was written for Anki 2.1.36+ - earlier versions did not support escaping
-characters in certain situations.
-
-As shown in the previous section, some characters like `*`, `_` and `"` have a
-special meaning in Anki. If you need to locate those characters in a search,
-you need to tell Anki not to treat them specially.
-
-- _Space_  
-  To match something including spaces, enclose the `"entire term"` in double
-  quotes. If it is a colon search, you also have the option to only quote the
-  `part:"after the colon"`.
-
-- `"`, `*` and `_`  
-  Add a backslash before these characters to treat them literally. For example,
-  `_` will match any single character, but `\_` matches only an actual underscore.
-
-- `\`  
-  Because a backlash is used to remove the special meaning from other characters,
-  it too is treated specially. If you need to search for an actual backslash,
-  use `\\` instead of `\`.
-
-- `(` and `)`  
-  You can search for parentheses either by enclosing them in quotes, and/or by using
-  a backslash. That is, `"()"`, `\(\)` and `"\(\)"` are all equivalent, but `()` is not.
-
-- `-`  
-  Starting a search term with `-` usually inverts it: `-dog` matches everything
-  except dog for example. If you instead wish to include an actual hyphen,
-  you can either use a backslash, or include the text in quotes, such as
-  `\-.-` or `"-.-"`.
-
-- `:`  
-  Colons have to be escaped unless they are preceded by another, unescaped colon.
-  So `w:e:b` is a word boundary search for `e:b`, `w\:e\:b` searches literally for
-  `w:e:b` and `w\:e:b` searches the field `w:e` for `b` (see
-  [field searches](#limiting-to-a-field)).
-
-#### Raw input
-
-Text preceded by certain keywords (like `re:`) will be treated as raw input. That is,
-the charcters listed above largely lose their special meaning. In such a context, only
-a minimum of escaping is required to prevent ambiguity:
-
-- `"` must be escaped.
-
-- Spaces and unescaped parentheses require the search term to be quoted.
-
-- The search term must not end in an odd number of backslashes.
-
 ## Limiting to a field
 
 You can also ask Anki to match only if a particular field contains some
@@ -355,6 +304,57 @@ cards answered Again (1) over the last 7 days
 cards answered Easy (4) in the last month
 
 For speed, rating searches are limited to 31 days.
+
+## Matching special characters
+
+This section was written for Anki 2.1.36+ - earlier versions did not support escaping
+characters in certain situations.
+
+As shown in the previous section, some characters like `*`, `_` and `"` have a
+special meaning in Anki. If you need to locate those characters in a search,
+you need to tell Anki not to treat them specially.
+
+- _Space_  
+  To match something including spaces, enclose the `"entire term"` in double
+  quotes. If it is a colon search, you also have the option to only quote the
+  `part:"after the colon"`.
+
+- `"`, `*` and `_`  
+  Add a backslash before these characters to treat them literally. For example,
+  `_` will match any single character, but `\_` matches only an actual underscore.
+
+- `\`  
+  Because a backlash is used to remove the special meaning from other characters,
+  it too is treated specially. If you need to search for an actual backslash,
+  use `\\` instead of `\`.
+
+- `(` and `)`  
+  You can search for parentheses either by enclosing them in quotes, and/or by using
+  a backslash. That is, `"()"`, `\(\)` and `"\(\)"` are all equivalent, but `()` is not.
+
+- `-`  
+  Starting a search term with `-` usually inverts it: `-dog` matches everything
+  except dog for example. If you instead wish to include an actual hyphen,
+  you can either use a backslash, or include the text in quotes, such as
+  `\-.-` or `"-.-"`.
+
+- `:`  
+  Colons have to be escaped unless they are preceded by another, unescaped colon.
+  So `w:e:b` is a word boundary search for `e:b`, `w\:e\:b` searches literally for
+  `w:e:b` and `w\:e:b` searches the field `w:e` for `b` (see
+  [field searches](#limiting-to-a-field)).
+
+#### Raw input
+
+Text preceded by certain keywords (like `re:`) will be treated as raw input. That is,
+the charcters listed above largely lose their special meaning. In such a context, only
+a minimum of escaping is required to prevent ambiguity:
+
+- `"` must be escaped.
+
+- Spaces and unescaped parentheses require the search term to be quoted.
+
+- The search term must not end in an odd number of backslashes.
 
 ## Object IDs
 
