@@ -91,33 +91,36 @@ Things to note from the above:
 
 ## Matching special characters
 
-The above examples show that some characters have special meaning to Anki. The
-following is an exhaustive list of these special characters and describes how
-you can search for each of them as a literal.
+This section was written for Anki 2.1.36+ - earlier versions did not support escaping
+characters in certain situations.
 
-- *Space*  
+As shown in the previous section, some characters like `*`, `_` and `"` have a
+special meaning in Anki. If you need to locate those characters in a search,
+you need to tell Anki not to treat them specially.
+
+- _Space_  
   To match something including spaces, enclose the `"entire term"` in double
   quotes. If it is a colon search, you also have the option to only quote the
   `part:"after the colon"`.
 
-- `\`  
-  The backslash is used to deprive the following character, possibly another `\`,
-  of its special meaning. This is called “escaping”. So `\\` must be used to match
-  a single `\`.
-
 - `"`, `*` and `_`  
-  These three characters can only be matched literally if you escape them with `\`.
-  For example, `_` will match any single character, but `\_` matches the literal
-  underscore `_`.
+  Add a backslash before these characters to treat them literally. For example,
+  `_` will match any single character, but `\_` matches only an actual underscore.
+
+- `\`  
+  Because a backlash is used to remove the special meaning from other characters,
+  it too is treated specially. If you need to search for an actual backslash,
+  use `\\` instead of `\`.
 
 - `(` and `)`  
-  Escaping parentheses is optional if they are enclosed in quotes. That is,
-  `"()"`, `\(\)` and `"\(\)"` are all equivalent, but `()` is not.
+  You can search for parentheses either by enclosing them in quotes, and/or by using
+  a backslash. That is, `"()"`, `\(\)` and `"\(\)"` are all equivalent, but `()` is not.
 
 - `-`  
-  The minus is ambiguous if it is the first character of a term. In that case, you
-  can escape it or quote the entire term to distinguish it from the negator. Both
-  `\-.-` and `"-.-"` are fine to match a resigned emoji.
+  Starting a search term with `-` usually inverts it: `-dog` matches everything
+  except dog for example. If you instead wish to include an actual hyphen,
+  you can either use a backslash, or include the text in quotes, such as
+  `\-.-` or `"-.-"`.
 
 - `:`  
   Colons have to be escaped unless they are preceded by another, unescaped colon.
