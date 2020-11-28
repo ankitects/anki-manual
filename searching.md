@@ -127,9 +127,9 @@ you can search for each of them as a literal.
 
 #### Raw input
 
-If your search contains a lot of literal special characters, escaping can become tedious.
-For that reason, Anki provides the `r:` prefix which marks the following text as raw
-input. Only a minimum of escaping is required to prevent ambiguity:
+Text preceded by certain keywords (like `re:`) will be treated as raw input. That is,
+the charcters listed above largely lose their special meaning. In such a context, only
+a minimum of escaping is required to prevent ambiguity:
 
 - `"` must be escaped.
 
