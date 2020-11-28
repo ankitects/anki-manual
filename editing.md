@@ -218,9 +218,9 @@ chemical compounds like H<sub>2</sub>O or simple math equations like
 x<sup>2</sup>.
 
 The Fx button clears any formatting in the currently selected text. This
-includes colours, bold, etc.
+includes colors, bold, etc.
 
-The next two buttons allow you to change text colour.
+The next two buttons allow you to change text color.
 
 The \[…​\] button is visible when a cloze note type is selected.
 

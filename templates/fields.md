@@ -328,7 +328,7 @@ Which will affect the following HTML for the answer comparison:
 
     <code id=typeans>...</code>
 
-Advanced users can override the default type-answer colours with the css
+Advanced users can override the default type-answer colors with the css
 classes 'typeGood', 'typeBad' and 'typeMissed'. AnkiMobile supports
 'typeGood' and 'typeBad', but not 'typeMissed'.
 
