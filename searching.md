@@ -71,10 +71,6 @@ Things to note from the above:
 - You can prepend a minus sign to a term to find notes that don’t
   match.
 
-- If you want to search for something including a space or
-  parenthesis, enclose it in double quotes. You can quote either the
-  `"entire:term"`, or just the `part:"after a colon"`.
-
 - You can group search terms by placing them in parentheses, as in the
   **dog (cat or mouse)** example. This becomes important when
   combining OR and AND searches — in the example, with the
@@ -92,6 +88,54 @@ Things to note from the above:
   match A-Z, and vice versa. Other characters such as Cyrillic are case sensitive
   in a standard search, but can be made case insensitive by searching on a word
   boundary or regular expression (w:, re:).
+
+## Matching special characters
+
+The above examples show that some characters have special meaning to Anki. The
+following is an exhaustive list of these special characters and describes how
+you can search for each of them as a literal.
+
+- *Space*  
+  To match something including spaces, enclose the `"entire term"` in double
+  quotes. If it is a colon search, you also have the option to only quote the
+  `part:"after the colon"`.
+
+- `\`  
+  The backslash is used to deprive the following character, possibly another `\`,
+  of its special meaning. This is called “escaping”. So `\\` must be used to match
+  a single `\`.
+
+- `"`, `*` and `_`  
+  These three characters can only be matched literally if you escape them with `\`.
+  For example, `_` will match any single character, but `\_` matches the literal
+  underscore `_`.
+
+- `(` and `)`  
+  Escaping parentheses is optional if they are enclosed in quotes. That is,
+  `"()"`, `\(\)` and `"\(\)"` are all equivalent, but `()` is not.
+
+- `-`  
+  The minus is ambiguous if it is the first character of a term. In that case, you
+  can escape it or quote the entire term to distinguish it from the negator. Both
+  `\-.-` and `"-.-"` are fine to match a resigned emoji.
+
+- `:`  
+  Colons have to be escaped unless they are preceded by another, unescaped colon.
+  So `w:e:b` is a word boundary search for `e:b`, `w\:e\:b` searches literally for
+  `w:e:b` and `w\:e:b` searches the field `w:e` for `b` (see
+  [field searches](#limiting-to-a-field)).
+
+#### Raw input
+
+Text preceded by certain keywords (like `re:`) will be treated as raw input. That is,
+the charcters listed above largely lose their special meaning. In such a context, only
+a minimum of escaping is required to prevent ambiguity:
+
+- `"` must be escaped.
+
+- Spaces and unescaped parentheses require the search term to be quoted.
+
+- The search term must not end in an odd number of backslashes.
 
 ## Limiting to a field
 
@@ -176,7 +220,10 @@ Searches that ignore combining characters are slower than regular searches.
 Anki 2.1.24+ and AnkiMobile 2.0.60+ support searching in notes with "regular expressions",
 a standard and powerful way of searching in text.
 
-Start a search with `re:` to search by regular expression. Some examples:
+Start a search with `re:` to search by regular expression. To make things easier, Anki will
+treat the following as [raw input](#raw-input), so bear in mind the rules listed above.
+
+Some examples:
 
 `"re:(some|another).*thing"`  
 find notes that have "some" or "another" on them, followed by 0 or more characters, and then "thing"
