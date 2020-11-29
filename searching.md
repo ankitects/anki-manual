@@ -173,7 +173,7 @@ Anki 2.1.24+ and AnkiMobile 2.0.60+ support searching in notes with "regular exp
 a standard and powerful way of searching in text.
 
 Start a search with `re:` to search by regular expression. To make things easier, Anki will
-treat the following as [raw input](#raw-input), so bear in mind the rules listed above.
+treat the following as [raw input](#raw-input), so bear in mind the rules listed there.
 
 Some examples:
 
@@ -329,8 +329,9 @@ you need to tell Anki not to treat them specially.
   use `\\` instead of `\`.
 
 - `(` and `)`  
-  You can search for parentheses either by enclosing them in quotes, and/or by using
-  a backslash. That is, `"()"`, `\(\)` and `"\(\)"` are all equivalent, but `()` is not.
+  You can search for parentheses either by enclosing the full term in quotes,
+  and/or by using a backslash. That is, `"some(text)"`, `some\(text\)` and
+  `"some\(text\)"` are all equivalent, but `some(text)` is not.
 
 - `-`  
   Starting a search term with `-` usually inverts it: `-dog` matches everything
