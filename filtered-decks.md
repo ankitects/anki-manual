@@ -4,7 +4,7 @@ When you study a regular deck in Anki, only a limited number of cards
 are shown: the cards Anki thinks you’re about to forget, and a daily
 limit of new cards. This is generally useful, as it ensures you don’t
 spend more time studying than necessary. But sometimes it can be useful
-to step outside of these normal limits, such as when you need to revise
+to step outside of these normal limits, such as when you need to review
 for a test, focus on particular material, and so on. To make this
 possible, Anki provides a different type of deck called a 'filtered
 deck'.
