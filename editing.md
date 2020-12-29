@@ -241,9 +241,10 @@ underlying HTML of a field, and shortcuts to add MathJax or
 Most of the buttons have shortcut keys. You can hover the mouse cursor
 over a button to see its shortcut.
 
-When pasting text, Anki will strip most formatting by default. If you
-hold down the shift key while pasting, Anki will preserve more
-formatting.
+When pasting text, Anki will keep most formatting by default. If you
+hold down the shift key while pasting, Anki will strip most of the
+formatting. Under Preferences, you can toggle "Paste without shift
+key strips formatting" to modify the default behavior.
 
 ## Cloze Deletion
 
