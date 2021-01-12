@@ -47,6 +47,8 @@ and red when a full sync is required.
 
 ## Media
 
+Related video: https://www.youtube.com/watch?v=phP9GGG-PxY
+
 Anki will synchronize any sounds and images used by your notes. It will
 notice when media has been added or removed from your media folder, but
 will not notice if you have edited some existing files without adding or
@@ -58,6 +60,8 @@ file system, as Anki may not be able to detect media changes on a FAT32
 filesystem.
 
 ## Conflicts
+
+Related video: https://www.youtube.com/watch?v=UEAcpfMQnjo
 
 Under normal circumstances, reviews and note edits can be merged, so if
 you review or edit on two different devices before syncing, Anki will
