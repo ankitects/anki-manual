@@ -215,12 +215,12 @@ your Anki cards:
 
 ### Template Conflicts
 
-As of Anki 2.1.20 / AnkiMobile 2.0.56, this workaround is no longer
-required, as `{{field}}` text inside fields no longer causes problems.
-If you need to support AnkiDroid or older Anki versions and want to keep
-using this syntax, please make sure you place the `{{=<% %>=}}` string
-at the very top of your front and back template, as recent Anki versions
-will not recognize it anywhere but the start.
+As of Anki 2.1.20 / AnkiMobile 2.0.56 / AnkiDroid 2.13, this workaround is no
+longer required, as `{{field}}` text inside fields no longer causes problems. If
+you need to support older versions and want to keep using this syntax, please
+make sure you place the `{{=<% %>=}}` string at the very top of your front and
+back template, as recent Anki versions will not recognize it anywhere but the
+start.
 
 For older versions:
 
