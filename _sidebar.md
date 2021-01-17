@@ -1,4 +1,4 @@
-- [Introduction](/)
+- [Introduction](intro.md)
 - [Background](background.md)
 - [Getting Started](getting-started.md)
 - [Studying](studying.md)
