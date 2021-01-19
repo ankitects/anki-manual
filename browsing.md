@@ -28,6 +28,17 @@ do *not* have a certain tag. `Alt`/`Option` can be combined with either `Ctrl`
 or `Shift` (e.g., Ctrl-Alt-clicking will result in adding a new search
 term that is negated).
 
+On Anki 2.1.39+, you can also hold down both <kbd>Ctrl</kbd> and
+<kbd>Shift</kbd> when clicking a search term to replace all occurences of the
+same kind of search with the new one.
+Let’s say you had previously typed in a complicated search expression like
+`deck:French (is:due or tag:important)`
+and now want to perform the same search for your Spanish deck. You can
+<kbd>Ctrl+Shift+click</kbd> the Spanish deck in the sidebar to obtain the
+according search expression:
+`deck:Spanish (is:due or tag:important)`.
+
+
 To remove tags that are not used by any notes, use **Tools &gt; Check Database**
 from the main window.
 
