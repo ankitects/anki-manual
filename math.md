@@ -33,7 +33,7 @@ Please note that point 2 does not apply in Anki - Anki uses `\(` and
 `\)` for inline equations, and `\[` and `\]` for display equations.
 
 If you want to use newlines in a MathJax expression, please use
-Shift+Enter instead of just Enter, as a normal newline will prevent
+<kbd>Shift</kbd>+<kbd>Enter</kbd> instead of just <kbd>Enter</kbd>, as a normal newline will prevent
 MathJax from working correctly.
 
 Anki includes built in support for mhchem for rendering chemical

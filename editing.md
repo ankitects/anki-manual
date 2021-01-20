@@ -29,7 +29,7 @@ them. Tags are separated by a space. If the tags area says
 …​then the note you add would have two tags.
 
 When you’ve entered text into the front and back, you can click the
-“Add” button or press Ctrl+Enter (Command+Enter on a Mac) to add the
+“Add” button or press <kbd>Ctrl</kbd>+<kbd>Enter</kbd> (<kbd>Command</kbd>+<kbd>Enter</kbd> on a Mac) to add the
 note to your collection. When you do so, a card will be created as well,
 and placed into the deck you chose. If you’d like to edit a card you
 added, you can click the history button to search for a recently added
@@ -242,7 +242,7 @@ Most of the buttons have shortcut keys. You can hover the mouse cursor
 over a button to see its shortcut.
 
 When pasting text, Anki will keep most formatting by default. If you
-hold down the shift key while pasting, Anki will strip most of the
+hold down the <kbd>Shift</kbd> key while pasting, Anki will strip most of the
 formatting. Under Preferences, you can toggle "Paste without shift
 key strips formatting" to modify the default behavior.
 
@@ -291,7 +291,7 @@ will have the following on the question:
 
 You can also elide multiple sections on the same card. In the above
 example, if you change c2 to c1, only one card would be created, with
-both Canberra and 1913 hidden. If you hold down alt (option on a Mac)
+both Canberra and 1913 hidden. If you hold down <kbd>Alt</kbd> (<kbd>Option</kbd> on a Mac)
 while creating a cloze, Anki will automatically use the same number
 instead of incrementing it.
 
@@ -372,5 +372,5 @@ information.
 
 The toolkit Anki is built on has trouble dealing with a few input
 methods, such as holding down keys to select accented characters on Mac
-OS X, and typing characters by holding down the alt key and typing a
+OS X, and typing characters by holding down the <kbd>Alt</kbd> key and typing a
 numeric code on Windows.

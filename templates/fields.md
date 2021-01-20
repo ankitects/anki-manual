@@ -304,7 +304,7 @@ compare. Since FrontSide is on the back of the card, the type answer box
 will appear on the back as well.
 
 When reviewing, Anki will display a text box where you can type in the
-answer, and upon hitting enter or showing the answer, Anki will show you
+answer, and upon hitting <kbd>Enter</kbd> or showing the answer, Anki will show you
 which parts you got right and which parts you got wrong. The text box’s
 font size will be the size you configured for that field (via the
 “Fields” button when editing).

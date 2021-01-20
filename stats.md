@@ -31,7 +31,7 @@ you can display graphs for arbitrary searches by adding filters in the
 search box.
 
 Anki 2.1.28+ introduces redesigned graphs. The old graphs are currently still
-accessible with a shift+click on the Stats button.
+accessible with a <kbd>Shift</kbd>-click on the Stats button.
 
 For Anki 2.1.28+, by default Anki will show you statistics for the previous year.
 You can change this to all history scope or deck life scope at the top. (The
