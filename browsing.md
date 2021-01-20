@@ -32,11 +32,11 @@ On Anki 2.1.39+, you can also hold down both <kbd>Ctrl</kbd> and
 <kbd>Shift</kbd> when clicking a search term to replace all occurences of the
 same kind of search with the new one.
 Let’s say you had previously typed in a complicated search expression like
-`deck:French (is:due or tag:important)`
-and now want to perform the same search for your Spanish deck. You can
-<kbd>Ctrl</kbd>+<kbd>Shift</kbd>-click the Spanish deck in the sidebar to obtain the
+`deck:Swahili (is:due or tag:important)`
+and now want to perform the same search for your Urdu deck. You can
+<kbd>Ctrl</kbd>+<kbd>Shift</kbd>-click the Urdu deck in the sidebar to obtain the
 according search expression:
-`deck:Spanish (is:due or tag:important)`.
+`deck:Urdu (is:due or tag:important)`.
 
 
 To remove tags that are not used by any notes, use **Tools &gt; Check Database**
