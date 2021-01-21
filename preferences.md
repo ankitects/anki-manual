@@ -26,7 +26,7 @@ You can use the option to paste as PNG images instead. PNG images support
 transparent backgrounds and are lossless, but they usually result in much larger
 file sizes.
 
-**Paste without <kbd>Shift</kbd> strips formatting**  
+**Paste without Shift strips formatting**  
 By default, formatting like bold and colors are stripped when pasting,
 unless the <kbd>Shift</kbd> key is held down. This option reverses the behaviour.
 
