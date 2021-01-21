@@ -270,11 +270,11 @@ them are discoverable in the interface: menu items list their shortcuts
 next to them, and hovering the mouse cursor over a button will generally
 show its shortcut in a tooltip.
 
-When studying, either space or enter will show the answer. When the
-answer is shown, you can use space or enter to select the Good button.
-You can use the 1-4 keys to select a specific ease button. Many people
-find it convenient to answer most cards with space and keep one finger
-on 1 for when they forget.
+When studying, either <kbd>Space</kbd> or <kbd>Enter</kbd> will show the answer. When the
+answer is shown, you can use <kbd>Space</kbd> or <kbd>Enter</kbd> to select the Good button.
+You can use the <kbd>1</kbd>-<kbd>4</kbd> keys to select a specific ease button. Many people
+find it convenient to answer most cards with <kbd>Space</kbd> and keep one finger
+on <kbd>1</kbd> for when they forget.
 
 The "Study Deck" item in the Tools menu allows you to quickly switch to
 a deck with the keyboard. You can trigger it with the '/' key. When

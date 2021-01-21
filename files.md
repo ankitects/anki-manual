@@ -62,7 +62,7 @@ syncing in order to use the full sync option without first downloading
 the changes. Similarly, if you are experiencing problems with Anki, you
 might want to (or might be instructed to) disable add-ons temporarily to
 see if one might be causing the problem. You can do both of these things
-by holding down the Shift key while starting Anki.
+by holding down the <kbd>Shift</kbd> key while starting Anki.
 
 It is possible to specify a custom folder location during startup. This
 is an advanced feature that is primarily intended to be used with
@@ -227,7 +227,7 @@ are listed below. As this is somewhat complicated, please ask someone
 knowledgeable about Windows if you are not sure.
 
 1.  Click on the start bar, and type in %temp% (including the percents),
-    then hit enter.
+    then hit <kbd>Enter</kbd>.
 
 2.  Go up one folder, and locate the temp folder. Right click on it, and
     choose Properties.

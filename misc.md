@@ -2,7 +2,7 @@
 
 ## Menu Shortcuts
 
-On Windows/Linux you can hold down the alt key and press a highlighted
+On Windows/Linux you can hold down the <kbd>Alt</kbd> key and press a highlighted
 letter to activate a particular menu.
 
 OS X doesn’t support this feature, but it does allow you to assign
@@ -20,18 +20,18 @@ about it in the [add-on writing guide](https://addon-docs.ankiweb.net/#/more?id=
 When asked to enter text into the "debug console", please start Anki,
 and in the main window, press
 
-Ctrl+Shift+;
+<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>;</kbd>
 
 (the control key, shift key, and semi-colon key at the same time)
 
 On a Mac, press
 
-Command+Shift+;
+<kbd>Command</kbd>+<kbd>Shift</kbd>+<kbd>;</kbd>
 
 (the command key, shift key, and semi-colon key at the same time)
 
-On some non-English keyboards, you may need to press ":" or "+" instead
-of ";".
+On some non-English keyboards, you may need to press <kbd>:</kbd> or <kbd>+</kbd> instead
+of <kbd>;</kbd>.
 
 In the window that has popped up, please paste the text you were asked
 to paste in the top section. When you’ve done so, please press
@@ -40,7 +40,7 @@ the bottom section. If you’ve been asked to paste the resulting output,
 please copy it from the bottom area, and paste it back to the support
 person.
 
-If you press Ctrl+Shift+Return instead of just Ctrl+Return, Anki will
+If you press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Return</kbd> instead of just <kbd>Ctrl</kbd>+<kbd>Return</kbd>, Anki will
 try to print the result rather than doing what you asked it to. If you
 are getting unexpected errors, please make sure you’re not holding down
-the Shift key.
+the <kbd>Shift</kbd> key.
