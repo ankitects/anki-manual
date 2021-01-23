@@ -25,7 +25,7 @@ cards from either of the decks in the same view.
 You can hold down <kbd>Alt</kbd> (<kbd>Option</kbd> on Mac) in order to reverse the
 search (prepend a `-`) – for instance, to show all cards in a current deck that
 do *not* have a certain tag. <kbd>Alt</kbd>/<kbd>Option</kbd> can be combined with
-either <kbd>Ctrl</kbd> or <kbd>Shift</kbd> (e.g., <kbd>Ctrl</kbd>-<kbd>Alt</kbd>-clicking
+either <kbd>Ctrl</kbd> or <kbd>Shift</kbd> (e.g., <kbd>Ctrl</kbd>+<kbd>Alt</kbd>-clicking
 will result in adding a new search term that is negated).
 
 On Anki 2.1.39+, you can also hold down both <kbd>Ctrl</kbd> and
