@@ -4,6 +4,7 @@
 
 In a hurry? Jump straight to [Getting Started](getting-started.md).
 
+
 ## Translations
 
 Volunteers have contributed translations of this manual. The
