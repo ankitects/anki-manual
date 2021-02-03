@@ -54,18 +54,18 @@ general concepts to keep in mind. An excellent introduction is [this
 article](http://www.supermemo.com/articles/20rules.htm) on the SuperMemo
 site. In particular:
 
--   **Keep it simple**: The shorter your cards, the easier they are to
-    review. You may be tempted to include lots of information “just in
-    case,” but reviews will quickly become painful.
+- **Keep it simple**: The shorter your cards, the easier they are to
+  review. You may be tempted to include lots of information “just in
+  case,” but reviews will quickly become painful.
 
--   **Don’t memorize without understanding**: If you’re studying a
-    language, try to avoid large lists of words. The best way to learn
-    languages is in context, which means seeing those words used in a
-    sentence. Likewise, imagine you’re studying a computer course. If
-    you attempt to memorize the mountain of acronyms, you’ll find it
-    very difficult to make progress. But if you take the time to
-    understand the concepts behind the acronyms, learning the acronyms
-    will become a lot easier.
+- **Don’t memorize without understanding**: If you’re studying a
+  language, try to avoid large lists of words. The best way to learn
+  languages is in context, which means seeing those words used in a
+  sentence. Likewise, imagine you’re studying a computer course. If
+  you attempt to memorize the mountain of acronyms, you’ll find it
+  very difficult to make progress. But if you take the time to
+  understand the concepts behind the acronyms, learning the acronyms
+  will become a lot easier.
 
 ## Adding a Note Type
 
@@ -117,7 +117,7 @@ properly.
 
 The options at the bottom of the screen allow you to edit various
 properties of the fields to be used when adding and editing the cards.
-This is *not* where you customize what appears on your cards when
+This is _not_ where you customize what appears on your cards when
 reviewing; for that, please see [templates](templates/intro.md).
 
 **Editing Font** allows you to customize the font and size used when
@@ -164,20 +164,19 @@ may be tempted to create lots of little decks to keep your content
 organized, such as “my geography book chapter 1”, or “food verbs”, but
 this is not recommended, for the following reasons:
 
--   Lots of little decks mean you end up reviewing cards in a
-    recognizable order. Whether it’s because you’re clicking on each
-    deck in turn (which is slow) or you’ve added a number of decks under
-    a single parent deck, you’ll end up seeing all the “chapter 1” or
-    “food verb” cards together. This makes it easier to answer the
-    cards, as you can guess them from the context, which leads to weaker
-    memories. When you need to recall the word or phrase outside Anki,
-    you won’t have the luxury of being shown related content first!
+- Lots of little decks mean you end up reviewing cards in a
+  recognizable order. Whether it’s because you’re clicking on each
+  deck in turn (which is slow) or you’ve added a number of decks under
+  a single parent deck, you’ll end up seeing all the “chapter 1” or
+  “food verb” cards together. This makes it easier to answer the
+  cards, as you can guess them from the context, which leads to weaker
+  memories. When you need to recall the word or phrase outside Anki,
+  you won’t have the luxury of being shown related content first!
 
--   Anki was not designed to handle many decks (more than several
-    dozen), and it will slow down as you add more – especially if you’re
-    studying on a mobile client. A few extra decks is not going to make
-    a noticeable difference, but if you have many decks the delays will
-    start to add up.
+- While less of a problem than it was in earlier Anki versions,
+  adding hundreds of decks may cause slowdowns, and very large deck
+  trees with thousands of items can actually break the display of
+  the deck list in the current implementation.
 
 Instead of creating lots of little decks, it’s a better idea to use tags
 and/or fields to classify your content. Instead of creating a “food
@@ -338,7 +337,6 @@ based on a regular note type. If you wish to customize it, please make
 sure to clone the existing Cloze type instead of another type of note.
 Things like formatting can be customized, but it is not possible to add
 extra card templates to the cloze note type.
-
 
 ## Inputting Foreign Characters and Accents
 
