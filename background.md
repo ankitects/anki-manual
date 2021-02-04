@@ -81,7 +81,7 @@ if you only have 30 of them to review, but as the number grows to 300 or
 
 # Spaced Repetition
 
-The 'spacing effect' was reported by a German psychologist in 1885. He
+The 'spacing effect' was reported by a German psychologist Hermann Ebbinghaus in 1885. He
 observed that we tend to remember things more effectively if we spread
 reviews out over time, instead of studying multiple times in one
 session. Since the 1930s there have been a number of proposals for
