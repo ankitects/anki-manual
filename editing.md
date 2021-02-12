@@ -372,3 +372,29 @@ The toolkit Anki is built on has trouble dealing with a few input
 methods, such as holding down keys to select accented characters on Mac
 OS X, and typing characters by holding down the <kbd>Alt</kbd> key and typing a
 numeric code on Windows.
+
+## Unicode Normalization
+
+Text like `á` can be represented in multiple ways on a computer, such as
+using a specific code for that symbol, or by using a standard `a` and then
+another code for the accent on top. This causes problems when mixing input
+from different sources, or using different computers - if your computer
+handles keyboard input in one form, but the content is stored in a different
+form, it will not match when searching, even though the end result appears
+identical.
+
+To ensure content can easily be found in searches, Anki normalizes the text
+to a standard form. For most users this process is transparent, but if you
+are studying certain material like archaic Japanese symbols, the normalization
+process can end up converting them to a more modern equivalent.
+
+If you want character variants preserved, the following in the [debug console](./misc.md)
+will turn off normalization:
+
+```python
+mw.col.conf["normalize_note_text"] = False
+```
+
+Any content added after that will remain untouched. The trade-off is that you may
+find it difficult to search for the content if you're switching between operating
+systems, or pasting content from mixed sources.
