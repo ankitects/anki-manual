@@ -27,7 +27,7 @@ transparent backgrounds and are lossless, but they usually result in much larger
 file sizes.
 
 **Paste without Shift strips formatting**  
-By default, formatting like bold and colors are stripped when pasting,
+By default, formatting like bold and colors are kept when pasting,
 unless the <kbd>Shift</kbd> key is held down. This option reverses the behaviour.
 
 **Night mode**  
