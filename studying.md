@@ -23,10 +23,13 @@ can press the ‘s’ key to study the currently selected deck.)
 You can click the gears button to the right of a deck to rename or
 delete a deck, change its options, or [export](exporting.md) it.
 
-When a deck has subdecks, [reviews are now taken from all children decks
-at once](studying.md#display-order), instead of showing each deck's review
-cards one by one (as in the old scheduler). The review limit of the child
-decks is ignored - only the limit of the deck you clicked on applies.
+With the old scheduler, when a deck has subdecks, the cards will appear from [each deck in
+turn](studying.md#display-order). 
+
+With the [new scheduler](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html),
+when a deck has subdecks, reviews are now taken from all children decks
+at once. The review limit of the child decks is ignored - only the limit of the 
+deck you clicked on applies.
 
 ## Study Overview
 
