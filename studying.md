@@ -189,7 +189,8 @@ With the old scheduler, if cards were in learning when they are buried,
 they are moved back to the new card queue or review queue prior to being
 buried.
 
-With the new scheduler, however, burying cards does not reset a card's learning steps.
+With the [new scheduler](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html),
+however, burying cards does not reset a card's learning steps.
 
 **Suspend Card / Note**: Hides a card or all of the note’s cards from review until they are
 manually unsuspended (by clicking the suspend button in the browser).
@@ -200,7 +201,8 @@ With the old scheduler, if cards were in learning when they are
 suspended, they are moved back to the new card queue or review queue
 prior to being suspended.
 
-With the new scheduler, however, suspending cards does not reset a card's learning steps.
+With the [new scheduler](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html),
+however, suspending cards does not reset a card's learning steps.
 
 **Delete Note**: Deletes the note and all of its cards.
 
