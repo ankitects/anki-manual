@@ -183,16 +183,26 @@ mainly left around for compatibility with older Anki versions.
 button on the [deck overview](studying.md#study-overview) screen.) This is useful if
 you cannot answer the card at the moment or you want to come back to it
 another time. Burying can also [happen automatically](studying.md#siblings-and-burying) for
-cards of the same note. If cards were in learning when they are buried,
+cards of the same note. 
+
+With the old scheduler, if cards were in learning when they are buried,
 they are moved back to the new card queue or review queue prior to being
 buried.
+
+With the [new scheduler](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html),
+however, burying cards does not reset a card's learning steps.
 
 **Suspend Card / Note**: Hides a card or all of the note’s cards from review until they are
 manually unsuspended (by clicking the suspend button in the browser).
 This is useful if you want to avoid reviewing the note for some time,
-but don’t want to delete it. If cards were in learning when they are
+but don’t want to delete it. 
+
+With the old scheduler, if cards were in learning when they are
 suspended, they are moved back to the new card queue or review queue
 prior to being suspended.
+
+With the [new scheduler](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html),
+however, suspending cards does not reset a card's learning steps.
 
 **Delete Note**: Deletes the note and all of its cards.
 
