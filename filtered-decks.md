@@ -82,12 +82,13 @@ It is also possible to move all cards back to their home decks at once:
     also removes the emptied deck from the deck list. No cards are
     deleted when you delete a filtered deck.
 
-In the current implementation, if you create, rebuild, empty or delete a
+In the old scheduler, if you create, rebuild, empty or delete a
 filtered deck while cards are still in learning, they will be turned
 back into new cards. In the case of failed reviews in relearning, any
 remaining relearning steps will be skipped. This has been fixed in the
-[experimental
-scheduler](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html).
+[new
+scheduler](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html) so cards
+are no longer reset.
 
 ## Creating Manually
 
@@ -181,9 +182,11 @@ Cards return to their home deck when (re)learning is complete. Thus if
 you have 3 learning steps, a new card will return to its home deck upon
 three presses of "Good" or a single press of "Easy".
 
-The **custom steps** option allows you to override the home deck’s steps
-and provide your own steps instead. The provided steps apply to both
-cards being learnt, lapsed reviews, and reviews ahead of time.
+In the old scheduler, the **custom steps** option allows you to override the 
+home deck’s steps and provide your own steps instead. The provided steps apply to both
+cards being learnt, lapsed reviews, and reviews ahead of time. Please note, however, that
+in the [new scheduler](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html)
+filtered decks no longer support custom steps.
 
 ## Counts
 
@@ -241,9 +244,9 @@ delay.
 ## Rescheduling
 
 By default, Anki will return cards to their home decks with altered
-scheduling based on your performance in the filtered deck. If you
-disable the **reschedule cards based on my answers** option, Anki will
-return the cards in the same state they were in when they were moved
+scheduling based on your performance in the filtered deck. In the old
+scheduler, if you disable the **reschedule cards based on my answers** option,
+Anki will return the cards in the same state they were in when they were moved
 into the filtered deck. This is useful for quickly flipping through
 material.
 
@@ -253,6 +256,11 @@ return to its home deck with its original scheduling.
 
 Please note that new cards are returned to the end of the new card
 queue, rather than the start of it.
+
+In the [new scheduler](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html), 
+there is no longer an option to disable scheduling changes. Instead, you will
+have access to a simple "preview mode". The new card order does not get forgotten
+when previewing.
 
 ## Catching Up
 
