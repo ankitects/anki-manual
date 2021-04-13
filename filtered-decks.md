@@ -111,11 +111,13 @@ such as limiting to tags, finding cards forgotten a certain number of
 times, and so on. Please see the [searching](searching.md) section of the
 manual for more information on the different possibilities.
 
-Filtered decks can not pull in cards that are suspended, buried, or
-already in a different filtered deck. And unless you are using the
-experimental scheduler, they can not pull in cards that are in
-(re)learning. For this reason, a search in the browser may reveal cards
-that don’t end up in the filtered deck.
+With the old scheduler, filtered decks cannot pull in cards that are
+suspended, buried, or already in a different filtered deck, whereas in the 
+[new scheduler](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html)
+cards *can* be buried or suspended while remaining in the filtered deck. 
+Again, unless you are using the new scheduler, filtered decks also can not
+pull in cards that are in (re)learning. For this reason, a search in the browser
+may reveal cards that don’t end up in the filtered deck.
 
 The **limit** option controls how many cards will be gathered into the
 deck. The order you select controls both the order cards are gathered
