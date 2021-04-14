@@ -222,6 +222,10 @@ cards that have been manually suspended
 cards that have been buried, either [automatically](studying.md#siblings-and-burying) or
 manually
 
+Note that with the [new scheduler](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html),
+Anki now distinguishes between manually and automatically buried cards so you can
+unbury one set without the other.
+
 Cards that have lapsed fall into several of these categories, so it may
 be useful to combine them to get more precise results:
 
