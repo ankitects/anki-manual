@@ -73,14 +73,14 @@ reviews, depending on your settings.
 
 It is also possible to move all cards back to their home decks at once:
 
--   The "Empty" button in the study overview moves all cards in the
-    filtered deck back to their home deck, but does not delete the empty
-    filtered deck. This can be useful if you want to fill it again later
-    (using the Rebuild button).
+- The "Empty" button in the study overview moves all cards in the
+  filtered deck back to their home deck, but does not delete the empty
+  filtered deck. This can be useful if you want to fill it again later
+  (using the Rebuild button).
 
--   Deleting a filtered deck does the same thing as "Empty" does, but
-    also removes the emptied deck from the deck list. No cards are
-    deleted when you delete a filtered deck.
+- Deleting a filtered deck does the same thing as "Empty" does, but
+  also removes the emptied deck from the deck list. No cards are
+  deleted when you delete a filtered deck.
 
 In the old scheduler, if you create, rebuild, empty or delete a
 filtered deck while cards are still in learning, they will be turned
@@ -111,13 +111,11 @@ such as limiting to tags, finding cards forgotten a certain number of
 times, and so on. Please see the [searching](searching.md) section of the
 manual for more information on the different possibilities.
 
-With the old scheduler, filtered decks cannot pull in cards that are
-suspended, buried, or already in a different filtered deck, whereas in the 
-[new scheduler](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html)
-cards *can* be buried or suspended while remaining in the filtered deck. 
-Again, unless you are using the new scheduler, filtered decks also can not
-pull in cards that are in (re)learning. For this reason, a search in the browser
-may reveal cards that don’t end up in the filtered deck.
+Filtered decks cannot pull in cards that are suspended, buried, or already in a
+different filtered deck. And if you are not using the [new
+scheduler](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html), cards in
+(re)learning will not be included either. For this reason, a search in the
+browser may reveal cards that don’t end up in the filtered deck.
 
 The **limit** option controls how many cards will be gathered into the
 deck. The order you select controls both the order cards are gathered
@@ -184,7 +182,7 @@ Cards return to their home deck when (re)learning is complete. Thus if
 you have 3 learning steps, a new card will return to its home deck upon
 three presses of "Good" or a single press of "Easy".
 
-In the old scheduler, the **custom steps** option allows you to override the 
+In the old scheduler, the **custom steps** option allows you to override the
 home deck’s steps and provide your own steps instead. The provided steps apply to both
 cards being learnt, lapsed reviews, and reviews ahead of time. Please note, however, that
 in the [new scheduler](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html)
@@ -259,7 +257,7 @@ return to its home deck with its original scheduling.
 Please note that new cards are returned to the end of the new card
 queue, rather than the start of it.
 
-In the [new scheduler](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html), 
+In the [new scheduler](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html),
 there is no longer an option to disable scheduling changes. Instead, you will
 have access to a simple "preview mode". The new card order does not get forgotten
 when previewing.
@@ -272,21 +270,21 @@ decks to catch up as follows:
 
     I did this for a backlog of 800 cards with filtered subdecks. Worked
     very well for me.
-    
+
     Just Due filter with: "is:due prop:due>-7"
-    
+
     Over Due filter with: "is:due prop:due<=-7"
-        
+
     The Just Due deck will then contain cards that became due in the past
     week. That's the deck you should study every day as it gets the cards
     that become due regularly. With this you can study as if there wasn't
     any backlog.
-    
+
     The Over Due deck will contain your backlog, cards which you didn't
     study in time. You can study them the same way you would study new
     cards. They go back into the regular cards, so the number of overdue
     will never grow as long as you keep your Just Due deck in check.
-    
+
     How long it takes depends on how many overdue cards you study each day
     in addition to the ones that become due regularly. You can still motor
     through them when you feel like it - or you can do a specific number per
