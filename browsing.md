@@ -91,9 +91,12 @@ if its note is selected. If an operation only works for a single card (like
 showing card info) and Notes Mode is active, it's performed on the current note's
 card with index 1.
 
-The background color will change depending on the card. Marked cards
-are a shade of purple. Suspended cards are a shade of yellow. For more
-information about marked and suspended cards, see [Editing and
+The background color will change depending on the card and note.
+In Cards Mode, a row is assigned the first applicable of the following colors:
+The color of its flag if any; a shade of yellow if the card is suspended; a
+shade of purple if its note is marked. In Notes Mode, only the last criterion
+applies.  
+For more information about marked notes and suspended cards, see [Editing and
 More](studying.md#editing-and-more).
 
 One of the available columns is called the **Sort Field**. Anki allows you
