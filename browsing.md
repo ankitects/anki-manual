@@ -3,9 +3,21 @@
 The Browse window allows you to search through your cards and notes, and edit
 them. It is opened by clicking **Browse** in the main window, or by pressing
 **b**. It is comprised of three sections: the *sidebar* on the
-left, the *card list* on the top right, and the *current note* on the bottom
+left, the *card/note table* on the top right, and the *current note* on the bottom
 right. By positioning the mouse between two sections, it is possible to click
 and drag to expand one section and shrink the other.
+
+## Table Modes
+
+Anki 2.1.43+ offers two modes to show either cards or notes in the data table.
+You can change the current mode by clicking the switch in the top left corner
+right of the sidebar or pressing <kbd>Alt</kbd>+<kbd>T</kbd>. The switch also
+indicates if **C**ards or **N**otes are currently shown.  
+
+**Note:** For the sake of simplicity, this manual generally assumes the Cards
+Mode to be the active one. Whenever selecting/finding/etc. “cards” is mentioned,
+the reader may substitute it for “cards or notes depending on the active mode”.
+
 
 ## Sidebar
 
@@ -48,9 +60,9 @@ Above the card list is a search box. You can type in various things
 there to search for cards. For information on the search syntax,
 see [Searching](searching.md).
 
-## Card List
+## Card/Note Table
 
-The card list displays cards that match the current search.
+The table's rows represent cards or notes that match the current search.
 
 The columns are configurable: right click on one (or <kbd>Ctrl</kbd>-click on a
 Mac) to choose which columns you’d like to see. You can drag columns to
@@ -92,7 +104,7 @@ what would be seen during review.
 
 ## Current Note
 
-The bottom right area displays the currently selected card’s note. For
+The bottom right area displays the note of the currently selected row. For
 more information about cards and notes, see [Getting Started](getting-started.md).
 For more information on formatting buttons, see [Editing](editing.md).
 
@@ -100,6 +112,7 @@ You can see a preview of what the currently selected card would look
 like when reviewing by clicking the **Preview** button next to the search
 box. Note that this will not display any type answer fields on your
 cards, which makes it easier to preview cards quickly.
+In Notes Mode, the preview is shown for the first card of the selected note.
 
 ## Menu
 
