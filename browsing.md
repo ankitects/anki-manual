@@ -81,10 +81,15 @@ things. "Edited" tracks the last time changes were made to the _note_
 the last time changes were made to the _card_ (e.g., when you reviewed
 the card and the review history and interval were updated).
 
-When you click on a card, its note will be shown in the bottom section.
-If you drag the mouse or hold <kbd>Ctrl</kbd> or <kbd>Command</kbd> to select multiple cards,
-the editor will be temporarily hidden. Various operations (such as
-changing the deck) can operate on multiple cards at once.
+When you click on a row, the corresponding note will be shown in the bottom section.
+If you drag the mouse or hold <kbd>Ctrl</kbd> or <kbd>Command</kbd> to select multiple
+rows, the editor will be temporarily hidden. Various operations (such as
+changing the deck) can operate on multiple cards or notes at once, independent
+of the active mode. Therefore in Cards Mode, a note is considered to be selected
+if any of its cards is selected and in Notes Mode, a card is considered to be selected
+if its note is selected. If an operation only works for a single card (like
+showing card info) and Notes Mode is active, it's performed on the current note's
+card with index 1.
 
 The background color will change depending on the card. Marked cards
 are a shade of purple. Suspended cards are a shade of yellow. For more
