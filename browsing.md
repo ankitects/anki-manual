@@ -65,21 +65,11 @@ see [Searching](searching.md).
 The table's rows represent cards or notes that match the current search.
 
 The columns are configurable: right click on one (or <kbd>Ctrl</kbd>-click on a
-Mac) to choose which columns you’d like to see. You can drag columns to
-reorder them. Clicking on a column will sort by that column; click again
-to reverse the sort order. Not all columns can be sorted on.
-
-The due column behaves differently for different types of cards. New
-cards show a number rather than a due date, which indicates the order
-the new cards will be presented in. Cards in (re)learning and reviews
-will both show a due date, but when sorting they are first grouped by
-type and then sorted by date.
-
-The "edited" and "changed" columns sound the same but track different
-things. "Edited" tracks the last time changes were made to the _note_
-(e.g., when the content of a field was edited), while "changed" tracks
-the last time changes were made to the _card_ (e.g., when you reviewed
-the card and the review history and interval were updated).
+Mac) to choose which columns you’d like to see.
+You can find the list of available columns and their descriptions in the
+[appendix](appendix.md#browser-columns).
+You can drag columns to reorder them. Clicking on a column will sort by that column;
+click again to reverse the sort order. Not all columns can be sorted on.
 
 When you click on a row, the corresponding note will be shown in the bottom section.
 If you drag the mouse or hold <kbd>Ctrl</kbd> or <kbd>Command</kbd> to select multiple
@@ -99,16 +89,6 @@ marked notes.
 For more information about marked notes and suspended cards, see [Editing and
 More](studying.md#editing-and-more).
 
-One of the available columns is called the **Sort Field**. Anki allows you
-to choose one field from each type of note to be used for sorting. You
-can change the sort field by clicking **Fields** in the current note
-section.
-
-The question and answer columns display what you’d see on the question
-and answer while reviewing, except the answer column will strip the
-question part for clarity. You can also choose a [custom
-format](templates/styling.md#browser-appearance) in the card type editor instead of showing
-what would be seen during review.
 
 ## Current Note
 
