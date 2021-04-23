@@ -2,7 +2,7 @@
 
 The Browse window allows you to search through your cards and notes, and edit
 them. It is opened by clicking **Browse** in the main window, or by pressing
-**b**. It is comprised of three sections: the *sidebar* on the
+<kbd>B</kbd>. It is comprised of three sections: the *sidebar* on the
 left, the *card/note table* on the top right, and the *editing area* on the bottom
 right. By positioning the mouse between two sections, it is possible to click
 and drag to expand one section and shrink the other.
@@ -17,7 +17,6 @@ indicates if **C**ards or **N**otes are currently shown.
 **Note:** For the sake of simplicity, this manual generally assumes the Cards
 mode to be the active one. Whenever selecting/finding/etc. “cards” is mentioned,
 the reader may substitute it for “cards or notes depending on the active mode”.
-
 
 ## Sidebar
 
@@ -49,7 +48,6 @@ and now want to perform the same search for your Urdu deck. You can
 <kbd>Ctrl</kbd>+<kbd>Shift</kbd>-click the Urdu deck in the sidebar to obtain the
 according search expression:
 `deck:Urdu (is:due or tag:important)`.
-
 
 To remove tags that are not used by any notes, use **Tools &gt; Check Database**
 from the main window.
@@ -88,7 +86,6 @@ suspended, yellow; 3. if marked, purple. In Notes mode, color is only applied to
 marked notes.  
 For more information about marked notes and suspended cards, see [Editing and
 More](studying.md#editing-and-more).
-
 
 ## Editing Area
 
@@ -145,7 +142,7 @@ they can be found in a submenu of the context menu.
 
 | Name | Action |
 |-|-|
-| Change Deck | Move all selected cards to a different deck. Cards of the same note can be in different decks. If you want to make sure this doesn't happen, you can use **Edit &gt; Select Notes** first or perform the deck change in Notes Mode. |
+| Change Deck | Move all selected cards to a different deck. Cards of the same note can be in different decks. If you want to make sure this doesn't happen, you can use **Edit &gt; Select Notes** first or perform the deck change in Notes mode. |
 | Set Due Date | Move cards to the end of the new card queue, or reschedule them as a review card on a given date. The second option is useful if you have imported already-learnt material, and you want to start it off with higher initial intervals. For example, choosing 60 and 90 will give all the imported cards an initial interval of 2 to 3 months.The card’s revision history is not cleared when rescheduling: rescheduling changes the current state of a card, but not its history. If you want to hide the history, you will need to export your notes as a text file, delete the notes, and then import the text file again, creating new notes. |
 | Forget |  |
 | Reposition | Change the order new cards will appear in. You can find out the existing positions by enabling the _due_ column, as described in the [table](#cardnote-table) section above. If you run the reposition command when multiple cards are selected, it will apply increasing numbers to each card in turn. By default the number increases by one for each card, but this can be adjusted by changing the "step" setting. The **Shift position of existing cards** option allows you to insert cards between currently existing ones, pushing the currently existing ones apart. For instance, if you have five cards and you want to move 3, 4, and 5 between 1 and 2, selecting this setting would cause the cards to end up in the order 1, 3, 4, 5, 2. By contrast, if you turn this option off, 1 and 2 will get the same position number (and it will thus be unpredictable which of the cards with the same number comes up first). |
@@ -153,12 +150,10 @@ they can be found in a submenu of the context menu.
 | Flag | Toggle the flags of all selected cards. Whether a flag is added or removed depends on whether the current card has this flag. |
 | Info | Show various information about the current card, including its review history. For more information, see [Card Info](stats.md#card-info). |
 
-
 ### Go
 
 This menu exists to provide keyboard shortcuts to jump to various
 parts of the browser, and to go up and down the card list.
-
 
 ## Find and Replace
 
@@ -191,6 +186,7 @@ Will change the card to:
 
 A full discussion on regular expressions is outside the scope of this document.
 There are a number of syntax guides available on the web:
+
 - For Anki 2.1.28+, see <https://docs.rs/regex/1.3.9/regex/#syntax>.
 - For older Anki versions, see <http://docs.python.org/library/re.html>.
 
@@ -202,8 +198,8 @@ of your note types and present a list of all possible fields. If you
 want to look for duplicates in the *Back* field, you’d select it from
 the list and then click **Search**.
 
-By default, it will search in all note types that have the field you provided. 
-This differs from the duplicate check when you add cards manually, which 
+By default, it will search in all note types that have the field you provided.
+This differs from the duplicate check when you add cards manually, which
 is limited to a single note type.
 
 The **Optional filter** text box allows you to narrow down where Anki will
@@ -226,7 +222,6 @@ duplicates, you may wish to instead click the **Tag Duplicates** button,
 which will tag all matching notes with *duplicate*. You can then search
 for this tag in the browser and handle them all from the same screen.
 
-
 ## Columns
 
 All columns are available for both [Cards and Notes mode](#table-modes)
@@ -234,7 +229,6 @@ but sometimes with slightly different names and data. The following table lists
 the behaviours for both modes.
 The list of cards or notes can be sorted by every column except for the
 Question and Answer columns.
-
 
 | Column | Cards mode | Notes mode |
 |-|-|-|
