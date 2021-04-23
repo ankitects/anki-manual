@@ -261,5 +261,5 @@ Question and Answer columns.
 | Note Modified | The same as in Notes mode for the card's note. | The last time the note (e.g. the content of a field) was edited. |
 | Question | The front side of the card in one line. You can also choose a [custom format](templates/styling.md#browser-appearance) in the card type editor instead. | The same as in Cards mode, only for the first card of the note. |
 | Reviews | How often the card has been reviewed. | The total review count for all cards of the note. |
-| Sort Field | The same as in Notes mode for the card's note. | Anki allows you to choose one field from each type of note to be used for sorting, and displayed in this column. You can change the sort field by clicking **Fields** in the editing area at the bottom. |
+| Sort Field | The same as in Notes mode for the card's note. | The content of the note's field that is defined as the notetype's sort field. Only this one field can be displayed and sorted by. You can change the sort field by clicking **Fields...** in the editing area. |
 | Tags | The same as in Notes mode for the card's note. | The note's tags. |
