@@ -24,6 +24,5 @@
 - [Add-ons](addons.md)
 - [Miscellaneous](misc.md)
 - [Contributing](contrib.md)
-- [Appendix](appendix.md)
 - [FAQs](faqs.md)
 - [Resources](resources.md)
