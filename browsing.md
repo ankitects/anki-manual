@@ -70,9 +70,12 @@ rows, the editor will be temporarily hidden. Various operations (such as
 changing the deck) can operate on multiple cards or notes at once, independent
 of the active mode. Therefore in Cards mode, a note is considered to be selected
 if any of its cards is selected, and in Notes mode, a card is considered to be selected
-if its note is selected. If an operation only works for a single card (like
-showing card info), and Notes mode is active, it's performed on the current note's
-first card.
+if its note is selected.
+
+Other operations (like showing card info) only operate on a single, the so-called
+*current*, card or note, which is usually the one that was last left- or rightclicked.
+In Cards Mode, again, the current note is the note of the current card and in Notes
+mode, the current card is the first card of the current note.
 
 The background color will change depending on the card and note.
 In Cards mode, Anki will change the color of the row depending on the state of
