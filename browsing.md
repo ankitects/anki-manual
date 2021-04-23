@@ -61,15 +61,10 @@ see [Searching](searching.md).
 ## Card/Note Table
 
 The table's rows represent cards or notes that match the current search.
-
-The columns are configurable: right click on one (or <kbd>Ctrl</kbd>-click on a
-Mac) to choose which columns you’d like to see.
-You can find the list of available columns and their descriptions
-[below](#browser-columns).
-You can drag columns to reorder them. Clicking on a column will sort by that column;
-click again to reverse the sort order. Not all columns can be sorted on.
-
 When you click on a row, the corresponding note will be shown in the bottom section.
+
+### Rows
+
 If you drag the mouse or hold <kbd>Ctrl</kbd> or <kbd>Command</kbd> to select multiple
 rows, the editor will be temporarily hidden. Various operations (such as
 changing the deck) can operate on multiple cards or notes at once, independent
@@ -86,6 +81,36 @@ suspended, yellow; 3. if marked, purple. In Notes mode, color is only applied to
 marked notes.  
 For more information about marked notes and suspended cards, see [Editing and
 More](studying.md#editing-and-more).
+
+### Columns
+
+The columns are configurable: right click on one (or <kbd>Ctrl</kbd>-click on a
+Mac) to choose which columns you’d like to see.
+You can drag columns to reorder them. Clicking on a column will sort by that column;
+click again to reverse the sort order. Note that you can't sort by the Question
+and Answer columns.
+
+All columns are available for both [Cards and Notes mode](#table-modes)
+but sometimes with slightly different names and data. The following table lists
+the behaviours for both modes.
+
+| Column | Cards mode | Notes mode |
+|-|-|-|
+| Answer | The back side of the card in one line with the question stripped. You can also choose a [custom format](templates/styling.md#browser-appearance) in the card type editor instead. | The same as in Cards mode, only for the first card of the note. |
+| Card(s) | The name of the card's template. | The number of cards the note has. |
+| Card Modified | The last time changes were made to the card (e.g., when you reviewed the card and the review history and interval were updated). | The last time changes were made to one of the note's cards. |
+| Created | The same as in Notes mode for the card's note. | The date the note was created. |
+| Deck | The name of the deck the card is in. | The number of different decks the note's cards are in, or the deck name if all cards are in the same deck. |
+| Due | The due date for cards in review or (re)learning, and the position in the new card queue for new cards. The line is wrapped in brackets if the card is suspended or buried. Sorting is done by type and only then by date or position. | The due date for the note's next due review or (re)learning card that is not suspended, buried or in a filtered deck. |
+| (Avg.) Ease | The card's ease if it is not new. | The average ease for the note's cards that are not new. |
+| (Avg.) Interval | The card's interval if the card is in review or relearning. | The average interval for the note's cards that are in review or relearning. |
+| Lapses | How often the card was rated “Again”. | The total lapses for all cards of the note. |
+| Note | The same as in Notes mode for the card's note. | The name of the note's notetype. |
+| Note Modified | The same as in Notes mode for the card's note. | The last time the note (e.g. the content of a field) was edited. |
+| Question | The front side of the card in one line. You can also choose a [custom format](templates/styling.md#browser-appearance) in the card type editor instead. | The same as in Cards mode, only for the first card of the note. |
+| Reviews | How often the card has been reviewed. | The total review count for all cards of the note. |
+| Sort Field | The same as in Notes mode for the card's note. | The content of the note's field that is defined as the notetype's sort field. Only this one field can be displayed and sorted by. You can change the sort field by clicking **Fields...** in the editing area. |
+| Tags | The same as in Notes mode for the card's note. | The note's tags. |
 
 ## Editing Area
 
@@ -221,29 +246,3 @@ duplicate notes in that set. If the search brings up a large number of
 duplicates, you may wish to instead click the **Tag Duplicates** button,
 which will tag all matching notes with *duplicate*. You can then search
 for this tag in the browser and handle them all from the same screen.
-
-## Columns
-
-All columns are available for both [Cards and Notes mode](#table-modes)
-but sometimes with slightly different names and data. The following table lists
-the behaviours for both modes.
-The list of cards or notes can be sorted by every column except for the
-Question and Answer columns.
-
-| Column | Cards mode | Notes mode |
-|-|-|-|
-| Answer | The back side of the card in one line with the question stripped. You can also choose a [custom format](templates/styling.md#browser-appearance) in the card type editor instead. | The same as in Cards mode, only for the first card of the note. |
-| Card(s) | The name of the card's template. | The number of cards the note has. |
-| Card Modified | The last time changes were made to the card (e.g., when you reviewed the card and the review history and interval were updated). | The last time changes were made to one of the note's cards. |
-| Created | The same as in Notes mode for the card's note. | The date the note was created. |
-| Deck | The name of the deck the card is in. | The number of different decks the note's cards are in, or the deck name if all cards are in the same deck. |
-| Due | The due date for cards in review or (re)learning, and the position in the new card queue for new cards. The line is wrapped in brackets if the card is suspended or buried. Sorting is done by type and only then by date or position. | The due date for the note's next due review or (re)learning card that is not suspended, buried or in a filtered deck. |
-| (Avg.) Ease | The card's ease if it is not new. | The average ease for the note's cards that are not new. |
-| (Avg.) Interval | The card's interval if the card is in review or relearning. | The average interval for the note's cards that are in review or relearning. |
-| Lapses | How often the card was rated “Again”. | The total lapses for all cards of the note. |
-| Note | The same as in Notes mode for the card's note. | The name of the note's notetype. |
-| Note Modified | The same as in Notes mode for the card's note. | The last time the note (e.g. the content of a field) was edited. |
-| Question | The front side of the card in one line. You can also choose a [custom format](templates/styling.md#browser-appearance) in the card type editor instead. | The same as in Cards mode, only for the first card of the note. |
-| Reviews | How often the card has been reviewed. | The total review count for all cards of the note. |
-| Sort Field | The same as in Notes mode for the card's note. | The content of the note's field that is defined as the notetype's sort field. Only this one field can be displayed and sorted by. You can change the sort field by clicking **Fields...** in the editing area. |
-| Tags | The same as in Notes mode for the card's note. | The note's tags. |
