@@ -102,29 +102,63 @@ box. Note that this will not display any type answer fields on your
 cards, which makes it easier to preview cards quickly.
 In Notes mode, the preview is shown for the first card of the selected note.
 
-## Menu
+## Menus and Actions
 
-Right clicking on selected cards in the *card list* shows up a menu of actions 
-you can perform on those cards:
+At the top of the browser window, you find a toolbar with various menus which in
+turn offer various actions that can be performed in the browser.
 
-**Info** shows various information about the currently selected card,
-including its review history. For more information, see [Card Info](stats.md#card-info).
+### Edit
 
-**Toggle Mark** and ***Toggle Suspend*** are documented in
-[editing and more](studying.md#editing-and-more).
+| Name | Action |
+|-|-|
+| Undo | Revert the last performed operation. |
+| Select All | Select all table rows. |
+| Select Notes | Show only the currently selected notes and select all rows.  |
+| Invert Selection | Select unselected and deselect selected rows. |
+| Create Filtered Deck | Open or raise the [filtered deck](filtered-decks.md#creating-manually) dialog and set the current browser search as filter. Use <kbd>Alt</kbd> / <kbd>Option</kbd> to set the second filter instead (requires scheduler version 2+). |
 
-**Change Deck** allows you to move cards to a different deck. Cards can be
-placed in different decks, so if you want to move all cards in a note,
-you should first use **Edit &gt; Select Notes** to select all cards, right click on
-selected cards and then click **Change Deck**.
+### Notes
 
-**Add Tags** and **Remove Tags** allow you to add or remove tags from notes
-in bulk. To remove unused tags from *sidebar*, start from the main window,
-click **Tools** in the menu bar and click **Check Database**.
+Most of the following actions operate on the selected notes. They are also available through
+a context menu when a selected row is rightclicked in Notes mode. In Cards mode,
+they can be found in a submenu of the context menu.
 
-**Delete** removes the selected card(s) and their notes. It is not
-possible to remove individual cards, as individual cards are controlled
-by the [templates](templates/intro.md).
+| Name | Action |
+|-|-|
+| Add Notes | Open the [Add](editing#adding-cards-and-notes) dialog. |
+| Export Notes | Open the [Export](exporting.md) dialog. |
+| Add Tags | Enter tags and add them to all selected notes. |
+| Remove Tags | Enter tags and remove them from all selected notes. |
+| Clear Unused Tags | Remove all tags from the sidebar that are not used by any notes. |
+| Toggle Mark | If the current note is marked (i.e., has the *Marked* tag), unmark all selected notes. If the current is not marked, mark all selected notes. |
+| Change Notetype | Convert the selected notes from one type to another. For example, imagine you have a *Russian* notetype and a *Computer* notetype, and you accidentally added some computer-related text into a *Russian* note. You can use this option to fix that mistake. The scheduling of cards is not affected. |
+| Find Duplicates | Open the [Duplicates](#finding-duplicates) dialog. |
+| Find and Replace | Open the [Find and Replace](#find-and-replace) dialog. |
+| Manage Notetypes | Open the [Notetypes](editing#adding-a-note-type) dialog. |
+| Delete | Delete all selected notes and their cards. It is not possible to remove individual cards, as individual cards are controlled by the [templates](templates/intro.md). |
+
+### Cards
+
+The following actions operate on the selected cards. They are also available through
+a context menu when a selected row is rightclicked in Cards mode. In Notes mode,
+they can be found in a submenu of the context menu.
+
+| Name | Action |
+|-|-|
+| Change Deck | Move all selected cards to a different deck. Cards of the same note can be in different decks. If you want to make sure this doesn't happen, you can use **Edit &gt; Select Notes** first or perform the deck change in Notes Mode. |
+| Set Due Date | Move cards to the end of the new card queue, or reschedule them as a review card on a given date. The second option is useful if you have imported already-learnt material, and you want to start it off with higher initial intervals. For example, choosing 60 and 90 will give all the imported cards an initial interval of 2 to 3 months.The card’s revision history is not cleared when rescheduling: rescheduling changes the current state of a card, but not its history. If you want to hide the history, you will need to export your notes as a text file, delete the notes, and then import the text file again, creating new notes. |
+| Forget |  |
+| Reposition | Change the order new cards will appear in. You can find out the existing positions by enabling the _due_ column, as described in the [table](#cardnote-table) section above. If you run the reposition command when multiple cards are selected, it will apply increasing numbers to each card in turn. By default the number increases by one for each card, but this can be adjusted by changing the "step" setting. The **Shift position of existing cards** option allows you to insert cards between currently existing ones, pushing the currently existing ones apart. For instance, if you have five cards and you want to move 3, 4, and 5 between 1 and 2, selecting this setting would cause the cards to end up in the order 1, 3, 4, 5, 2. By contrast, if you turn this option off, 1 and 2 will get the same position number (and it will thus be unpredictable which of the cards with the same number comes up first). |
+| Toggle Suspend | [Suspend](studying.md#editing-and-more) or unsuspend all selected cards, depending on whether the current card is suspended or not. |
+| Flag | Toggle the flags of all selected cards. Whether a flag is added or removed depends on whether the current card has this flag. |
+| Info | Show various information about the current card, including its review history. For more information, see [Card Info](stats.md#card-info). |
+
+
+### Go
+
+This menu exists to provide keyboard shortcuts to jump to various
+parts of the browser, and to go up and down the card list.
+
 
 ## Find and Replace
 
@@ -191,50 +225,6 @@ duplicate notes in that set. If the search brings up a large number of
 duplicates, you may wish to instead click the **Tag Duplicates** button,
 which will tag all matching notes with *duplicate*. You can then search
 for this tag in the browser and handle them all from the same screen.
-
-## Other Menu Items
-
-Some other items in the menus:
-
-**Reschedule** allows you to move cards to the end of the new card queue,
-or reschedule them as a review card on a given date. The second option
-is useful if you have imported already-learnt material, and you want to
-start it off with higher initial intervals. For example, choosing 60 and
-90 will give all the imported cards an initial interval of 2 to 3
-months.
-
-The card’s revision history is not cleared when rescheduling:
-rescheduling changes the current state of a card, but not its history.
-If you want to hide the history, you will need to export your notes as a
-text file, delete the notes, and then import the text file again,
-creating new notes.
-
-**Reposition** allows you to change the order new cards will appear in.
-You can find out the existing positions by enabling the _due_ column, as
-described in the card list section above. If you run the reposition
-command when multiple cards are selected, it will apply increasing
-numbers to each card in turn. By default the number increases by one for
-each card, but this can be adjusted by changing the "step" setting. The
-**Shift position of existing cards** option allows you to insert cards
-between currently existing ones, pushing the currently existing ones
-apart. For instance, if you have five cards and you want to move 3, 4,
-and 5 between 1 and 2, selecting this setting would cause the cards to
-end up in the order 1, 3, 4, 5, 2. By contrast, if you turn this option
-off, 1 and 2 will get the same position number (and it will thus be
-unpredictable which of the cards with the same number comes up first).
-
-**Change Note Type** allows you to convert the selected notes from one
-type to another. For example, imagine you have a *Russian* note type and a
-*Computer* note type, and you accidentally added some computer-related
-text into a *Russian* note. You can use this option to fix that mistake.
-The scheduling of cards is not affected.
-
-**Select Notes** takes the currently selected cards, finds their notes,
-and then selects all cards of those notes. If your notes have only one
-card, this does nothing.
-
-The **Go** menu exists to provide keyboard shortcuts to jump to various
-parts of the browser, and to go up and down the card list.
 
 
 ## Columns
