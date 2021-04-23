@@ -10,12 +10,12 @@ and drag to expand one section and shrink the other.
 ## Table Modes
 
 Anki 2.1.43+ offers two modes to show either cards or notes in the data table.
-You can change the current mode by clicking the switch in the top left corner
-right of the sidebar or pressing <kbd>Alt</kbd>+<kbd>T</kbd>. The switch also
+You can change the current mode by clicking the switch at the top, to the left
+of the search area, or pressing <kbd>Alt</kbd>+<kbd>T</kbd>. The switch also
 indicates if **C**ards or **N**otes are currently shown.  
 
 **Note:** For the sake of simplicity, this manual generally assumes the Cards
-Mode to be the active one. Whenever selecting/finding/etc. “cards” is mentioned,
+mode to be the active one. Whenever selecting/finding/etc. “cards” is mentioned,
 the reader may substitute it for “cards or notes depending on the active mode”.
 
 
@@ -85,17 +85,17 @@ When you click on a row, the corresponding note will be shown in the bottom sect
 If you drag the mouse or hold <kbd>Ctrl</kbd> or <kbd>Command</kbd> to select multiple
 rows, the editor will be temporarily hidden. Various operations (such as
 changing the deck) can operate on multiple cards or notes at once, independent
-of the active mode. Therefore in Cards Mode, a note is considered to be selected
-if any of its cards is selected, and in Notes Mode, a card is considered to be selected
+of the active mode. Therefore in Cards mode, a note is considered to be selected
+if any of its cards is selected, and in Notes mode, a card is considered to be selected
 if its note is selected. If an operation only works for a single card (like
-showing card info), and Notes Mode is active, it's performed on the current note's
-card with index 1.
+showing card info), and Notes mode is active, it's performed on the current note's
+first card.
 
 The background color will change depending on the card and note.
-In Cards Mode, a row is assigned the first applicable of the following colors:
-The color of its flag if any; a shade of yellow if the card is suspended; a
-shade of purple if its note is marked. In Notes Mode, only the last criterion
-applies.  
+In Cards mode, Anki will change the color of the row depending on the state of
+the card. The first match will be used: 1. if flagged, use the flag color; 2. if
+suspended, yellow; 3. if marked, purple. In Notes mode, color is only applied to
+marked notes.  
 For more information about marked notes and suspended cards, see [Editing and
 More](studying.md#editing-and-more).
 
@@ -120,7 +120,7 @@ You can see a preview of what the currently selected card would look
 like when reviewing by clicking the **Preview** button next to the search
 box. Note that this will not display any type answer fields on your
 cards, which makes it easier to preview cards quickly.
-In Notes Mode, the preview is shown for the first card of the selected note.
+In Notes mode, the preview is shown for the first card of the selected note.
 
 ## Menu
 
