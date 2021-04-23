@@ -3,7 +3,7 @@
 The Browse window allows you to search through your cards and notes, and edit
 them. It is opened by clicking **Browse** in the main window, or by pressing
 **b**. It is comprised of three sections: the *sidebar* on the
-left, the *card/note table* on the top right, and the *current note* on the bottom
+left, the *card/note table* on the top right, and the *editing area* on the bottom
 right. By positioning the mouse between two sections, it is possible to click
 and drag to expand one section and shrink the other.
 
@@ -90,7 +90,7 @@ For more information about marked notes and suspended cards, see [Editing and
 More](studying.md#editing-and-more).
 
 
-## Current Note
+## Editing Area
 
 The bottom right area displays the note of the currently selected row. For
 more information about cards and notes, see [Getting Started](getting-started.md).
