@@ -1,6 +1,11 @@
-- [Introduction](intro.md)
+# Summary
+
+[Introduction](intro.md)
+
 - [Background](background.md)
-- [Getting Started](getting-started.md)
+- [Getting Started](getting-started/getting-started.md)
+  - [Key Concepts](getting-started/key-concepts.md)
+  - [Shared Decks](getting-started/shared-decks.md)
 - [Studying](studying.md)
 - [Adding/Editing](editing.md)
 - [Card Templates](templates/intro.md)
@@ -23,6 +28,7 @@
 - [Leeches](leeches.md)
 - [Add-ons](addons.md)
 - [Miscellaneous](misc.md)
-- [Contributing](contrib.md)
-- [FAQs](faqs.md)
-- [Resources](resources.md)
+
+[Contributing](contrib.md)
+[FAQs](faqs.md)
+[Resources](resources.md)
