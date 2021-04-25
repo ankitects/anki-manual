@@ -293,7 +293,7 @@ included even if their notes were added a long time ago.
 cards where the note text was added/edited in the last n days. Requires
 Anki 2.1.28+ / AnkiMobile 2.0.64+.
 
-## Recently answered
+## Recently answered (for the first time)
 
 `rated:1`  
 cards answered today
@@ -308,6 +308,13 @@ cards answered Again (1) over the last 7 days
 cards answered Easy (4) in the last month
 
 Rating searches had been limited to 31 days before version 2.1.39.
+On version 2.1.43+, you can also search for the very first review only:
+
+`introduced:1`  
+cards answered for the first time today
+
+`introduced:365`  
+cards answered for the first time within the last 365 days
 
 ## Matching special characters
 
