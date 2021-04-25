@@ -192,14 +192,14 @@ matches uppercase or lowercase a1, B1 or c1 that occurs anywhere in the "Front" 
 `front:re:^[a-c]1$`  
 like the above, but will not match if any other text falls before or after a1/b1/c1.
 
-You can learn more about regular expressions here: https://regexone.com/lesson/introduction_abcs
+You can learn more about regular expressions here: <https://regexone.com/lesson/introduction_abcs>
 
 Some things to be aware of:
 
 - The search is case-insensitive by default; use (?-i) at the start to turn on case sensitivity.
 - Some text like spaces and newlines may be represented differently in HTML - you can
   use the HTML editor in the editing screen to see the underlying HTML contents.
-- For the specifics of Anki's regex support, please see the regex crate documentation: https://docs.rs/regex/1.3.9/regex/#syntax
+- For the specifics of Anki's regex support, please see the regex crate documentation: <https://docs.rs/regex/1.3.9/regex/#syntax>
 
 ## Card state
 
@@ -356,7 +356,7 @@ you need to tell Anki not to treat them specially.
   `w:e:b` and `w\:e:b` searches the field `w:e` for `b` (see
   [field searches](#limiting-to-a-field)).
 
-#### Raw input
+### Raw input
 
 Text preceded by certain keywords (like `re:`) will be treated as raw input. That is,
 the charcters listed above largely lose their special meaning. In such a context, only
