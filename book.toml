@@ -8,11 +8,16 @@ title = "Anki Manual"
 [build]
 create-missing = true
 
+[preprocessor.toc]
+command = "mdbook-toc"
+renderer = ["html"]
+marker = "<!-- toc -->"
+
 [output.html]
 git-repository-url = "https://github.com/ankitects/anki-manual/"
 cname = "docs.ankiweb.net"
 
-[output.linkcheck]
-optional = true
-warning-policy = "warn"
-follow-web-links = true
+#[output.linkcheck]
+#optional = true
+#warning-policy = "warn"
+#follow-web-links = true

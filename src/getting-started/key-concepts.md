@@ -1,6 +1,8 @@
-## Key Concepts
+# Key Concepts
 
-### Cards
+<!-- toc -->
+
+## Cards
 
 A question and answer pair is called a 'card'. This is based on a paper
 flashcard with a question on one side and the answer on the back. In
@@ -19,7 +21,7 @@ show answer button, and Anki shows you:
 After confirming that you are correct, you can tell Anki how well you
 remembered, and Anki will choose a next time to show you again.
 
-### Decks
+## Decks
 
 A 'deck' is a group of cards. You can place cards in different decks to
 study parts of your card collection instead of studying everything at
@@ -51,7 +53,7 @@ this, please see the [using decks appropriately](editing.md#using-decks-appropri
 For information on how decks affect the order cards are displayed in,
 please see the [display order](studying.md#display-order) section.
 
-### Notes & Fields
+## Notes & Fields
 
 When making flashcards, it’s often desirable to make more than one card
 that relates to some information. For example, if you’re learning
@@ -112,7 +114,7 @@ To add and edit fields, click the “Fields…​” button while adding or
 editing notes. For more information on fields, please see the
 [Customizing Fields](editing.md#customizing-fields) section.
 
-### Card Types
+## Card Types
 
 In order for Anki to create cards based on our notes, we need to give it
 a blueprint that says which fields should be displayed on the front or
@@ -160,7 +162,7 @@ To add and edit card types, click the “Cards…​” button while adding or
 editing notes. For more information on card types, please see the [Cards
 and Templates](templates/intro.md) section.
 
-### Note Types
+## Note Types
 
 Anki allows you to create different types of notes for different
 material. Each type of note has its own set of fields and card types.
@@ -214,7 +216,7 @@ and these choices are completely independent of each other. You can also
 change the note type of some notes [after you’ve already created
 them](browsing.md).
 
-### Collection
+## Collection
 
 Your 'collection' is all the material stored in Anki – your cards,
 notes, decks, note types, deck options, and so on.
