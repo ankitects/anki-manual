@@ -307,7 +307,7 @@ cards answered Again (1) over the last 7 days
 `rated:31:4`  
 cards answered Easy (4) in the last month
 
-For speed, rating searches are limited to 31 days.
+Rating searches had been limited to 31 days before version 2.1.39.
 
 ## Matching special characters
 
