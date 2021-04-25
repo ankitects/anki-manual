@@ -277,7 +277,9 @@ Note that due only matches review cards and learning cards with an
 interval of a day or more: cards in learning with small intervals like
 10 minutes are not included.
 
-## Recently added/edited
+## Recent Events
+
+### Added
 
 `added:1`  
 cards added today
@@ -289,11 +291,14 @@ The check is made against card creation time rather than note creation
 time, so cards that were generated within the time frame will be
 included even if their notes were added a long time ago.
 
-`edited:n`  
-cards where the note text was added/edited in the last n days. Requires
-Anki 2.1.28+ / AnkiMobile 2.0.64+.
+### Edited
 
-## Recently answered (for the first time)
+`edited:n`  
+cards where the note text was added/edited in the last n days.
+
+This requires Anki 2.1.28+ / AnkiMobile 2.0.64+.
+
+### Answered
 
 `rated:1`  
 cards answered today
@@ -308,6 +313,9 @@ cards answered Again (1) over the last 7 days
 cards answered Easy (4) in the last month
 
 Rating searches had been limited to 31 days before version 2.1.39.
+
+### First Answered
+
 On version 2.1.43+, you can also search for the very first review only:
 
 `introduced:1`  
