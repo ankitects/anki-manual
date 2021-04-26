@@ -20,8 +20,16 @@ the reader may substitute it for “cards or notes depending on the active mode�
 
 ## Sidebar
 
-The *sidebar* on the left allows quick access to common search terms. Clicking
-on an item will search for it.
+The *sidebar* on the left allows quick access to common search terms. On Anki
+2.1.43+, it also provides a searchbar, facilities to edit tags and decks and a
+choice of two different tools, which are discussed in the following sections.
+You can switch tools using the toolbar at the top of the sidebar or the shortcuts
+<kbd>Alt</kbd>+<kbd>1</kbd>/<kbd>2</kbd>.
+
+### Search Tool
+
+With this tool, the sidebar behaves as in previous versions: Clicking on an item
+will search for it.
 
 You can hold down <kbd>Ctrl</kbd> (<kbd>Command</kbd> on Mac) while clicking in
 order to append the clicked item to the current search with an AND condition,
@@ -49,8 +57,40 @@ and now want to perform the same search for your Urdu deck. You can
 according search expression:
 `deck:Urdu (is:due or tag:important)`.
 
-To remove tags that are not used by any notes, use **Tools &gt; Check Database**
-from the main window.
+### Selection Tool
+
+The Selection tool allows for selecting multiple items at the same time by <kbd>Ctrl</kbd>-
+and <kbd>Shift</kbd>-clicking. It also enables drag and drop to reorder decks and
+tags.
+
+Here is an example: Say you have the tags `Math`, `Calculus` and `Algebra`.
+Click on the `Calculus` tag, then <kbd>Ctrl</kbd>-click on the `Algebra` tag. Now both
+tags are selected, click and drag any of the two onto the `Math` tag to make them
+both children of this tag. Behind the curtains, Anki has renamed the two tags to
+`Math::Calculus` and `Math::Algebra` respectively and updated your notes accordingly.
+
+Another use case for selecting multiple items is searching: If you rightclick on
+a selection of items, you can choose **Search &gt; All/Any Selected Items**. This
+can be combined with keyboard modifiers as described in [Search Mode](#search-tool)
+to append the resulting search to the current search.
+
+### Saved Searches
+
+If you regularly search for the same thing,
+you can save the current search by rightclicking the topmost item in the sidebar,
+choosing “Save Current Search” and typing in a name.
+
+### Editing Items
+
+You can delete or rename tags, decks and saved searches directly from the sidebar
+through the context menu or using the according keys (<kbd>Del</kbd> and <kbd>F2</kbd>
+on Windows). Deleting even works for multiple items at once
+(see [Selection Tool](#selection-tool)).
+
+### Finding Items
+
+To find a certain item in the sidebar tree, type part of its name into the searchbar
+at the top to temporarily hide all items not matching the search.
 
 ## Search Box
 
