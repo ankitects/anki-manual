@@ -71,7 +71,7 @@ both children of this tag. Behind the curtains, Anki has renamed the two tags to
 
 Another use case for selecting multiple items is searching: If you rightclick on
 a selection of items, you can choose **Search &gt; All/Any Selected Items**. This
-can be combined with keyboard modifiers as described in [Search Mode](#search-tool)
+can be combined with keyboard modifiers as described in [Search Tool](#search-tool)
 to append the resulting search to the current search.
 
 ### Saved Searches
