@@ -117,11 +117,14 @@ Other operations (like showing card info) only operate on a single, the so-calle
 In Cards Mode, again, the current note is the note of the current card and in Notes
 mode, the current card is the first card of the current note.
 
-The background color will change depending on the card and note.
-In Cards mode, Anki will change the color of the row depending on the state of
-the card. The first match will be used: 1. if flagged, use the flag color; 2. if
-suspended, yellow; 3. if marked, purple. In Notes mode, color is only applied to
-marked notes.  
+The background color will change depending on the card and note. In Cards mode,
+the first match will be used:
+
+1. if the card is flagged, use the flag color,
+2. if the card is suspended, yellow,
+3. if the card's note is marked, purple.
+
+In Notes mode, color is only applied to marked notes.  
 For more information about marked notes and suspended cards, see [Editing and
 More](studying.md#editing-and-more).
 
