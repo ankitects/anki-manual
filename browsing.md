@@ -69,7 +69,7 @@ tags are selected, click and drag any of the two onto the `Math` tag to make the
 both children of this tag. Behind the curtains, Anki has renamed the two tags to
 `Math::Calculus` and `Math::Algebra` respectively and updated your notes accordingly.
 
-Another use case for selecting multiple items is searching: If you rightclick on
+Another use case for selecting multiple items is searching: If you right-click on
 a selection of items, you can choose **Search &gt; All/Any Selected Items**. This
 can be combined with keyboard modifiers as described in [Search Tool](#search-tool)
 to append the resulting search to the current search.
@@ -77,13 +77,13 @@ to append the resulting search to the current search.
 ### Saved Searches
 
 If you regularly search for the same thing,
-you can save the current search by rightclicking the topmost item in the sidebar,
+you can save the current search by right-clicking the topmost item in the sidebar,
 choosing “Save Current Search” and typing in a name.
 
 ### Editing Items
 
-You can delete or rename tags, decks and saved searches directly from the sidebar
-through the context menu or using the according keys (<kbd>Del</kbd> and <kbd>F2</kbd>
+You can delete or rename tags, decks and saved searches directly from the sidebar,
+via the right-click menu, or by using a shortcut key (<kbd>Del</kbd> and <kbd>F2</kbd>
 on Windows). Deleting even works for multiple items at once
 (see [Selection Tool](#selection-tool)).
 
