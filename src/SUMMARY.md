@@ -1,4 +1,7 @@
-- [Introduction](intro.md)
+# Summary
+
+[Introduction](intro.md)
+
 - [Background](background.md)
 - [Getting Started](getting-started.md)
 - [Studying](studying.md)
@@ -23,6 +26,7 @@
 - [Leeches](leeches.md)
 - [Add-ons](addons.md)
 - [Miscellaneous](misc.md)
-- [Contributing](contrib.md)
-- [FAQs](faqs.md)
-- [Resources](resources.md)
+
+[Contributing](contrib.md)
+[FAQs](faqs.md)
+[Resources](resources.md)
