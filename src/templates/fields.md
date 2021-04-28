@@ -119,7 +119,7 @@ On a cloze note type, you can make Anki read only the elided sections
 using the `cloze-only` filter, like so:
 
     {{tts en_US:cloze-only:Text}}
-    
+
 The cloze-only filter is supported in Anki 2.1.29+ and AnkiMobile 2.0.65+.
 
 ## Special Fields
@@ -248,11 +248,11 @@ do so. This has implications for including media on the template.
 If you wish to include images or sounds on your cards that are the same
 for every card (eg, a company logo at the top of each card):
 
-1.  Rename the file so it starts with an underscore, eg "\_logo.jpg".
+1. Rename the file so it starts with an underscore, eg "\_logo.jpg".
     The underscore tells Anki that the file is used by the template and
     it should be exported when sharing the deck.
 
-2.  Add a reference to the media on your front or back template, like:
+2. Add a reference to the media on your front or back template, like:
 
 <!-- -->
 

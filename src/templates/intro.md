@@ -7,13 +7,11 @@ cards at once.
 
 Card templates are covered in some of the intro videos:
 
--   [Switching Card
-    Order](http://www.youtube.com/watch?v=DnbKwHEQ1mA&yt:cc=on)
+- [Switching Card Order](http://www.youtube.com/watch?v=DnbKwHEQ1mA&yt:cc=on)
 
--   [Styling Cards](http://www.youtube.com/watch?v=F1j1Zx0mXME&yt:cc=on)
+- [Styling Cards](http://www.youtube.com/watch?v=F1j1Zx0mXME&yt:cc=on)
 
--   [Typing in the
-    Answer](http://www.youtube.com/watch?v=5tYObQ3ocrw&yt:cc=on)
+- [Typing in the Answer](http://www.youtube.com/watch?v=5tYObQ3ocrw&yt:cc=on)
 
 ## The Templates Screen {docsify-ignore}
 
@@ -41,7 +39,7 @@ At the top right of the window is an Options button that gives you
 options to rename or reorder the cards, as well as the following two
 options:
 
--   The 'Deck Override' option allows you to change the deck that cards
+- The 'Deck Override' option allows you to change the deck that cards
     generated from the current card type will be placed into. By
     default, cards are placed into the deck you provide in the Add Notes
     window. If you set a deck here, that card type will be placed into
@@ -52,7 +50,7 @@ options:
     can check which deck the cards are currently going to by choosing
     Deck Override again.
 
--   The 'Browser Appearance' option allows you to set different (perhaps
+- The 'Browser Appearance' option allows you to set different (perhaps
     simplified) templates for display in the Question and Answer columns
     of the browser; see [browser appearance](templates/styling.md#browser-appearance) for more
     information.

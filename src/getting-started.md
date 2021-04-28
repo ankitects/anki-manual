@@ -256,12 +256,12 @@ Basics](http://www.youtube.com/watch?v=QS2G-k2hQyg&yt:cc=on) on YouTube.
 The easiest way to get started with Anki is to download a deck of cards
 someone has shared:
 
-1.  Click the “Get Shared” button at the bottom of the deck list.
+1. Click the “Get Shared” button at the bottom of the deck list.
 
-2.  When you’ve found a deck you’re interested in, click the “Download”
+2. When you’ve found a deck you’re interested in, click the “Download”
     button to download a deck package.
 
-3.  Double-click on the downloaded package to load it into Anki, or
+3. Double-click on the downloaded package to load it into Anki, or
     File→Import it.
 
 Please note that it’s not currently possible to add shared decks

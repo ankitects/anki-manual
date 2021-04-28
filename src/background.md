@@ -10,17 +10,17 @@ Anki. Since it is content-agnostic and supports images, audio, videos
 and scientific markup (via LaTeX), the possibilities are endless. For
 example:
 
--   learning a language
+- learning a language
 
--   studying for medical and law exams
+- studying for medical and law exams
 
--   memorizing people’s names and faces
+- memorizing people’s names and faces
 
--   brushing up on geography
+- brushing up on geography
 
--   mastering long poems
+- mastering long poems
 
--   even practicing guitar chords!
+- even practicing guitar chords!
 
 There are two simple concepts behind Anki: 'active recall testing' and
 'spaced repetition'. They are not known to most learners, despite having
@@ -36,10 +36,10 @@ know the answer. Research has shown that active recall testing is far
 more effective at building strong memories than passive study. There are
 two reasons for this:
 
--   The act of recalling something 'strengthens' the memory, increasing
+- The act of recalling something 'strengthens' the memory, increasing
     the chances we’ll be able to remember it again.
 
--   When we’re unable to answer a question, it tells us we need to
+- When we’re unable to answer a question, it tells us we need to
     return to the material to review or relearn it.
 
 You have probably encountered active recall testing in your school years
@@ -79,7 +79,7 @@ you are using paper flashcards, it’s easy to flick through all of them
 if you only have 30 of them to review, but as the number grows to 300 or
 3000, it quickly becomes unwieldy.
 
-# Spaced Repetition
+## Spaced Repetition
 
 The 'spacing effect' was reported by a German psychologist Hermann Ebbinghaus in 1885. He
 observed that we tend to remember things more effectively if we spread
@@ -138,4 +138,3 @@ mobile devices. And it’s considerably easier to use than SuperMemo.
 
 Anki’s spaced repetition system is based on an older version of the
 SuperMemo algorithm called [SM-2](faqs.md).
-

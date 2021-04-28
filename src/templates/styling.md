@@ -251,7 +251,7 @@ font depending on where you’re reviewing:
 
 And in the template:
 
-```
+```html
 <div class=jp>{{Field}}</div>
 ```
 
@@ -271,26 +271,26 @@ To add a font to Anki, it must be in the TrueType format. TrueType fonts
 have a filename ending in .ttf, such as "Arial.ttf". Once you’ve located
 a TrueType font, we’ll need to add it to the media folder:
 
-1.  Rename the file, adding an underscore at the start, so it becomes
+1. Rename the file, adding an underscore at the start, so it becomes
     like "\_arial.ttf". Adding an underscore will tell Anki that this
     file will be used on a template, and should not be deleted when
     checking for unused media.
 
-2.  In your computer’s file browser, go to your [Anki Folder](files.md),
+2. In your computer’s file browser, go to your [Anki Folder](files.md),
     and then a folder called "User 1" (or your profile name if you’ve
     renamed/added profiles).
 
-3.  Inside the folder, you should see a folder called collection.media.
+3. Inside the folder, you should see a folder called collection.media.
     Drag the renamed file to that folder.
 
 After that, we need to update the template:
 
-1.  Click **Add** at the top of the main screen, and then select the
+1. Click **Add** at the top of the main screen, and then select the
     note type you want to change with the top left button.
 
-2.  Click **Cards**.
+2. Click **Cards**.
 
-3.  In the styling section, add the following text to the bottom (after
+3. In the styling section, add the following text to the bottom (after
     the last "}" character), replacing "\_arial.ttf" with the name of
     the file you copied into your media folder:
 
@@ -347,7 +347,9 @@ The question side of a card fades in by default. If you wish to adjust
 this delay, you can place the following at the top of your front card
 template:
 
+```html
     <script>qFade=100; if (typeof anki !== 'undefined') anki.qFade=qFade;</script>
+```
 
 100 (milliseconds) is the default; set to 0 to disable fading.
 

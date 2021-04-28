@@ -10,17 +10,17 @@ Any **plain text** file that contains fields separated by commas,
 semicolons or tabs can be imported into Anki, provided some conditions
 are met.
 
--   The files must be plain text (myfile.txt). Other formats like
+- The files must be plain text (myfile.txt). Other formats like
     myfile.xls, myfile.rtf, myfile.doc must be saved as a plain text
     file first.
 
--   The files must be in UTF-8 format (see below).
+- The files must be in UTF-8 format (see below).
 
--   Anki determines the number of fields in the file by looking at the
+- Anki determines the number of fields in the file by looking at the
     first (non-commented) line. Any lines in the file which have a
     different number of fields will be ignored.
 
--   The first line also defines the separating character – if Anki finds
+- The first line also defines the separating character – if Anki finds
     a ';' on the first line it will use that, if it finds a comma it’ll
     use that, etc.
 
@@ -109,9 +109,9 @@ HTML syntax.
 If you wish to use HTML for formatting your file but also wish to
 include angle brackets, you may write them differently:
 
--   For "&lt;", use "&amp;lt;"
+- For "&lt;", use "&amp;lt;"
 
--   For "&gt;", use "&amp;gt;"
+- For "&gt;", use "&amp;gt;"
 
 ### Importing Media
 

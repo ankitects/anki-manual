@@ -114,7 +114,7 @@ third-party synchronization service, as it can lead to database
 corruption when files are synced while in use.
 
 If you just want to synchronize your media, you can link external
-folders into services like DropBox. Please see [DropboxWiki: Sync 
+folders into services like DropBox. Please see [DropboxWiki: Sync
 Folders Outside Dropbox (archive.org)][dropboxwiki-sync-other]
 for more info.
 
@@ -183,21 +183,21 @@ open.
 
 To restore from an automatic backup:
 
-1.  From the File menu, select Switch Profile to show the Profiles
+1. From the File menu, select Switch Profile to show the Profiles
     window.
 
-2.  Select the profile you wish to restore on the left.
+2. Select the profile you wish to restore on the left.
 
-3.  Click the Open Backup…​ button.
+3. Click the Open Backup…​ button.
 
-4.  Choose Yes and the available backups will appear.
+4. Choose Yes and the available backups will appear.
 
-5.  Open a backup based on the date you wish to restore to.
+5. Open a backup based on the date you wish to restore to.
 
-6.  Check that that the backup that was restored was the one you
+6. Check that that the backup that was restored was the one you
     intended. If you wish to try a different backup, return to step 1.
 
-7.  Anki has disabled automatic syncing and backups while you check the
+7. Anki has disabled automatic syncing and backups while you check the
     backup. When you’re happy with the backup you’ve selected, quit Anki
     and start it again to return to the normal behaviour.
 
@@ -226,18 +226,18 @@ If you’re on a Windows 7 machine, the general steps to fix the problem
 are listed below. As this is somewhat complicated, please ask someone
 knowledgeable about Windows if you are not sure.
 
-1.  Click on the start bar, and type in %temp% (including the percents),
+1. Click on the start bar, and type in %temp% (including the percents),
     then hit <kbd>Enter</kbd>.
 
-2.  Go up one folder, and locate the temp folder. Right click on it, and
+2. Go up one folder, and locate the temp folder. Right click on it, and
     choose Properties.
 
-3.  In the security tab, click on Advanced.
+3. In the security tab, click on Advanced.
 
-4.  Click on the Owner tab. If you’re not listed as the owner, click the
+4. Click on the Owner tab. If you’re not listed as the owner, click the
     button to take ownership.
 
-5.  On the permissions tab, ensure that you have full control. On a
+5. On the permissions tab, ensure that you have full control. On a
     default W7 install the control will actually be inherited from
     c:\\users\\your-username.
 
@@ -261,7 +261,7 @@ installed already. On Windows, download
 Next, create a backup of your collection.anki2 file, in case something
 goes wrong with the steps below.
 
-**Linux/OSX**
+### Linux/OSX
 
 Open a terminal, change to the folder your collection is located in, and
 type:
@@ -279,7 +279,7 @@ Make sure you use temp.file - do not put collection.anki2 on the right,
 or you will blank out the file. When you’re done, proceed to the final
 step.
 
-**Windows**
+### Windows
 
 Copy the `sqlite3.exe` program and your deck to your desktop. Then go to
 **Start&gt;Run** and type in `cmd.exe`.
@@ -306,7 +306,7 @@ Make sure you use temp.file - do not put collection.anki2 on the right,
 or you will blank out the file. When you’re done, proceed to the final
 step.
 
-**Final Step**
+### Final Step
 
 Check that you didn’t get an error message, and that temp.file is not
 empty. The procedure optimizes the collection in the process, so it’s

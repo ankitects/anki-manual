@@ -66,7 +66,7 @@ Controls when Anki should start showing the next day’s cards. The default
 setting of 4AM ensures that if you’re studying around midnight, you won’t have
 two days' worth of cards shown to you in one session. If you stay up very late
 or wake up very early, you may want to adjust this to a time you’re usually
-sleeping. Note that the start of the next day is relative to your current timezone. 
+sleeping. Note that the start of the next day is relative to your current timezone.
 
 **Learn ahead limit**  
 Tells Anki how to behave when there is nothing left to study in the current deck

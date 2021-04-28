@@ -54,11 +54,11 @@ them about it.
 
 ## Sharing Add-ons
 
-Please see https://addon-docs.ankiweb.net/#/sharing
+Please see <https://addon-docs.ankiweb.net/#/sharing>
 
 ## Translating Anki
 
-Please see https://translating.ankiweb.net
+Please see <https://translating.ankiweb.net>
 
 ## Contributing Code
 

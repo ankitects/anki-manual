@@ -24,11 +24,11 @@ You can click the gears button to the right of a deck to rename or
 delete a deck, change its options, or [export](exporting.md) it.
 
 With the old scheduler, when a deck has subdecks, the cards will appear from [each deck in
-turn](studying.md#display-order). 
+turn](studying.md#display-order).
 
 With the [new scheduler](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html),
 when a deck has subdecks, reviews are now taken from all children decks
-at once. The review limit of the child decks is ignored - only the limit of the 
+at once. The review limit of the child decks is ignored - only the limit of the
 deck you clicked on applies.
 
 ## Study Overview
@@ -189,7 +189,7 @@ mainly left around for compatibility with older Anki versions.
 button on the [deck overview](studying.md#study-overview) screen.) This is useful if
 you cannot answer the card at the moment or you want to come back to it
 another time. Burying can also [happen automatically](studying.md#siblings-and-burying) for
-cards of the same note. 
+cards of the same note.
 
 With the old scheduler, if cards were in learning when they are buried,
 they are moved back to the new card queue or review queue prior to being
@@ -201,7 +201,7 @@ however, burying cards does not reset a card's learning steps.
 **Suspend Card / Note**: Hides a card or all of the note’s cards from review until they are
 manually unsuspended (by clicking the suspend button in the browser).
 This is useful if you want to avoid reviewing the note for some time,
-but don’t want to delete it. 
+but don’t want to delete it.
 
 With the old scheduler, if cards were in learning when they are
 suspended, they are moved back to the new card queue or review queue

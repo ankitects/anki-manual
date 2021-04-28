@@ -1,3 +1,3 @@
 # Frequently Asked Questions
 
-Please see https://faqs.ankiweb.net
+Please see <https://faqs.ankiweb.net>
