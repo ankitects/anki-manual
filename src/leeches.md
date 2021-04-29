@@ -1,5 +1,7 @@
 # Leeches
 
+<!-- toc -->
+
 Leeches are cards that you keep on forgetting. Because they require so
 many reviews, they take up a lot more of your time than other cards.
 

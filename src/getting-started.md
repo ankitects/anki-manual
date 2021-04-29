@@ -1,5 +1,7 @@
 # Getting Started
 
+<!-- toc -->
+
 ## Installing & Upgrading
 
 Please see the [download site](https://apps.ankiweb.net) for installation and upgrade instructions.

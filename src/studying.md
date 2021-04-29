@@ -1,5 +1,7 @@
 # Studying
 
+<!-- toc -->
+
 When you have found a deck you like or entered some notes in, it’s time
 to start studying.
 

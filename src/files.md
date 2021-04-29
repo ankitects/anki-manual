@@ -1,5 +1,7 @@
 # Managing Files and Your Collection
 
+<!-- toc -->
+
 ## Checking Your Collection
 
 It’s a good idea to occasionally check your collection file for

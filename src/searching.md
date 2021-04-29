@@ -1,5 +1,7 @@
 # Searching
 
+<!-- toc -->
+
 Anki's Browse screen and the Filtered Deck feature use a common method
 of searching for specific cards/notes.
 

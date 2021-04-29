@@ -1,5 +1,7 @@
 # Filtered Decks & Cramming
 
+<!-- toc -->
+
 When you study a regular deck in Anki, only a limited number of cards
 are shown: the cards Anki thinks you’re about to forget, and a daily
 limit of new cards. This is generally useful, as it ensures you don’t

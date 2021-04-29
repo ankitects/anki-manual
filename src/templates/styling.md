@@ -1,5 +1,7 @@
 # Styling & HTML
 
+<!-- toc -->
+
 ## Card Styling
 
 You can watch [a video about styling

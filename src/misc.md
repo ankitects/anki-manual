@@ -1,5 +1,7 @@
 # Miscellanea
 
+<!-- toc -->
+
 ## Menu Shortcuts
 
 On Windows/Linux you can hold down the <kbd>Alt</kbd> key and press a highlighted

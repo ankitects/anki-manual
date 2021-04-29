@@ -1,5 +1,7 @@
 # Contributing
 
+<!-- toc -->
+
 ## Sharing Decks Publicly
 
 To share decks with the general public, [synchronize](syncing.md) them

@@ -1,5 +1,7 @@
 # Graphs and Statistics
 
+<!-- toc -->
+
 ## Card Info
 
 You can display information about a card by using the Cards&gt;Info menu item,

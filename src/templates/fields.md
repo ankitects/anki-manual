@@ -1,5 +1,7 @@
 # Field Replacements
 
+<!-- toc -->
+
 ## Basic Replacements
 
 The most basic template looks something like this:

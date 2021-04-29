@@ -1,5 +1,7 @@
 # Adding/Editing
 
+<!-- toc -->
+
 ## Adding Cards and Notes
 
 Recall from the [basics](getting-started.md) that in Anki we add notes rather than

@@ -1,5 +1,7 @@
 # Card Generation
 
+<!-- toc -->
+
 ## Reverse Cards
 
 You can watch [a video about reversing

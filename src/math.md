@@ -1,5 +1,7 @@
 # Math and Symbols
 
+<!-- toc -->
+
 ## MathJax
 
 [MathJax](https://www.mathjax.org) is a modern, browser-based
