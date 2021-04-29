@@ -13,7 +13,7 @@ Card templates are covered in some of the intro videos:
 
 - [Typing in the Answer](http://www.youtube.com/watch?v=5tYObQ3ocrw&yt:cc=on)
 
-## The Templates Screen {docsify-ignore}
+## The Templates Screen
 
 You can modify card templates by clicking the "Cards..." button inside the
 editing screen.

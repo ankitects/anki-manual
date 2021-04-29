@@ -245,7 +245,7 @@ to adjust the template like so:
 Anki does not scan templates for media references, because it is slow to
 do so. This has implications for including media on the template.
 
-### Static Sounds/Images {docsify-ignore}
+### Static Sounds/Images
 
 If you wish to include images or sounds on your cards that are the same
 for every card (eg, a company logo at the top of each card):
@@ -260,7 +260,7 @@ for every card (eg, a company logo at the top of each card):
 
     <img src="_logo.jpg">
 
-### Field References {docsify-ignore}
+### Field References
 
 Media references to fields are not supported. They may or may not display
 during review, and will not work when checking for unused media,
