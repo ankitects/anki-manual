@@ -85,8 +85,8 @@ choosing “Save Current Search” and typing in a name.
 ### Editing Items
 
 You can delete or rename tags, decks and saved searches directly from the sidebar,
-via the right-click menu, or by using a shortcut key (<kbd>Del</kbd> and <kbd>F2</kbd>
-on Windows). Deleting even works for multiple items at once
+via the right-click menu, or by using a shortcut key (<kbd>Del</kbd> and
+<kbd>F2</kbd> on Windows). Deleting even works for multiple items at once
 (see [Selection Tool](#selection-tool)).
 
 ### Finding Items
