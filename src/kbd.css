@@ -1,0 +1,26 @@
+.ayu, .coal, .navy {
+	--kbd-bg: var(--table-header-bg);
+	--kbd-shadow: var(--bg);
+}
+
+.light {
+	--kbd-bg: var(--theme-hover);
+	--kbd-shadow: var(--table-header-bg);
+}
+
+.rust {
+	--kbd-bg: var(--table-header-bg);
+	--kbd-shadow: var(--theme-hover);
+}
+
+kbd {
+    margin: 0.1em 0.1em;
+	padding: 0.1em 0.6em;
+    font-family: sans-serif;
+	border-radius: 4px;
+	display: inline-block;
+	box-shadow:
+		0px 2px 0px var(--kbd-bg),
+		inset 0px 0px 0px 3px var(--kbd-shadow);
+	background-color: var(--kbd-bg);
+}

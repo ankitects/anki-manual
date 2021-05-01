@@ -15,6 +15,7 @@ renderer = ["html"]
 [output.html]
 git-repository-url = "https://github.com/ankitects/anki-manual/"
 cname = "docs.ankiweb.net"
+additional-css = ["src/kbd.css"]
 
 #[output.linkcheck]
 #optional = true
