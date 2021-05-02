@@ -4,8 +4,8 @@
 
 The Browse window allows you to search through your cards and notes, and edit
 them. It is opened by clicking **Browse** in the main window, or by pressing
-<kbd>B</kbd>. It is comprised of three sections: the *sidebar* on the
-left, the *card/note table* on the top right, and the *editing area* on the bottom
+<kbd>B</kbd>. It is comprised of three sections: the _sidebar_ on the
+left, the _card/note table_ on the top right, and the _editing area_ on the bottom
 right. By positioning the mouse between two sections, it is possible to click
 and drag to expand one section and shrink the other.
 
@@ -14,7 +14,7 @@ and drag to expand one section and shrink the other.
 Anki 2.1.43+ offers two modes to show either cards or notes in the data table.
 You can change the current mode by clicking the switch at the top, to the left
 of the search area, or pressing <kbd>Alt</kbd>+<kbd>T</kbd>. The switch also
-indicates if **C**ards or **N**otes are currently shown.  
+indicates if **C**ards or **N**otes are currently shown.
 
 **Note:** For the sake of simplicity, this manual generally assumes the Cards
 mode to be the active one. Whenever selecting/finding/etc. “cards” is mentioned,
@@ -22,7 +22,7 @@ the reader may substitute it for “cards or notes depending on the active mode�
 
 ## Sidebar
 
-The *sidebar* on the left allows quick access to common search terms. On Anki
+The _sidebar_ on the left allows quick access to common search terms. On Anki
 2.1.43+, it also provides a searchbar, facilities to edit tags and decks and a
 choice of two different tools, which are discussed in the following sections.
 You can switch tools using the toolbar at the top of the sidebar or the shortcuts
@@ -45,7 +45,7 @@ cards from either of the decks in the same view.
 
 You can hold down <kbd>Alt</kbd> (<kbd>Option</kbd> on Mac) in order to reverse the
 search (prepend a `-`) – for instance, to show all cards in a current deck that
-do *not* have a certain tag. <kbd>Alt</kbd>/<kbd>Option</kbd> can be combined with
+do _not_ have a certain tag. <kbd>Alt</kbd>/<kbd>Option</kbd> can be combined with
 either <kbd>Ctrl</kbd> or <kbd>Shift</kbd> (e.g., <kbd>Ctrl</kbd>+<kbd>Alt</kbd>-clicking
 will result in adding a new search term that is negated).
 
@@ -115,7 +115,7 @@ if any of its cards is selected, and in Notes mode, a card is considered to be s
 if its note is selected.
 
 Other operations (like showing card info) only operate on a single, the so-called
-*current*, card or note, which is usually the one that was last left- or rightclicked.
+_current_, card or note, which is usually the one that was last left- or rightclicked.
 In Cards Mode, again, the current note is the note of the current card and in Notes
 mode, the current card is the first card of the current note.
 
@@ -142,6 +142,7 @@ All columns are available for both [Cards and Notes mode](#table-modes)
 but sometimes with slightly different names and data. The following table lists
 the behaviours for both modes.
 
+<!-- prettier-ignore -->
 | Column | Cards mode | Notes mode |
 |-|-|-|
 | Answer | The back side of the card in one line with the question stripped. You can also choose a [custom format](templates/styling.md#browser-appearance) in the card type editor instead. | The same as in Cards mode, only for the first card of the note. |
@@ -179,6 +180,7 @@ turn offer various actions that can be performed in the browser.
 
 ### Edit
 
+<!-- prettier-ignore -->
 | Name | Action |
 |-|-|
 | Undo | Revert the last performed operation. |
@@ -193,6 +195,7 @@ Most of the following actions operate on the selected notes. They are also avail
 a context menu when a selected row is right-clicked in Notes mode. In Cards mode,
 they can be found in a submenu of the context menu.
 
+<!-- prettier-ignore -->
 | Name | Action |
 |-|-|
 | Add Notes | Open the [Add](editing#adding-cards-and-notes) dialog. |
@@ -213,11 +216,12 @@ The following actions operate on the currently selected cards. They are also ava
 a context menu when a selected row is rightclicked in Cards mode. In Notes mode,
 they can be found in a submenu of the context menu.
 
+<!-- prettier-ignore -->
 | Name | Action |
 |-|-|
 | Change Deck | Move currently selected cards to a different deck. |
 | Set Due Date | Move cards to the end of the new card queue, or reschedule them as a review card on a given date. The second option is useful if you have imported already-learnt material, and you want to start it off with higher initial intervals. For example, entering `60-90` will give all the imported cards an initial interval of 2 to 3 months. The card’s revision history is not cleared when rescheduling: rescheduling changes the current state of a card, but not its history. If you want to hide the history, you will need to export your notes as a text file, delete the notes, and then import the text file again, creating new notes. |
-| Forget |  |
+| Forget | Move currently selected cards back to the new queue, and reset their ease. Their review history is preserved. |
 | Reposition | Change the order new cards will appear in. You can find out the existing positions by enabling the _due_ column, as described in the [table](#cardnote-table) section above. If you run the reposition command when multiple cards are selected, it will apply increasing numbers to each card in turn. By default the number increases by one for each card, but this can be adjusted by changing the "step" setting. The **Shift position of existing cards** option allows you to insert cards between currently existing ones, pushing the currently existing ones apart. For instance, if you have five cards and you want to move 3, 4, and 5 between 1 and 2, selecting this setting would cause the cards to end up in the order 1, 3, 4, 5, 2. By contrast, if you turn this option off, 1 and 2 will get the same position number (and it will thus be unpredictable which of the cards with the same number comes up first). Please note that when enabled, any card with a higher position will be modified, and all of those changed cards will need to be sent the next time you sync.  ||
 | Toggle Suspend | [Suspend](studying.md#editing-and-more) or unsuspend all selected cards, depending on whether the current card is suspended or not. |
 | Flag | Toggle the flags of all selected cards. Whether a flag is added or removed depends on whether the current card has the chosen flag. |
@@ -232,7 +236,7 @@ parts of the browser, and to go up and down the card list.
 
 To replace text in selected notes, you can either:
 
-- Right click on selected notes in the *card list*, and click **Find and Replace**.
+- Right click on selected notes in the _card list_, and click **Find and Replace**.
 
 - In the **Browser** window, click **Notes** in the menu bar and click **Find and Replace**.
 
@@ -268,7 +272,7 @@ There are a number of syntax guides available on the web:
 You can use the **Notes > Find Duplicates** option to search for notes that
 have the same content. When you open the window, Anki will look at all
 of your note types and present a list of all possible fields. If you
-want to look for duplicates in the *Back* field, you’d select it from
+want to look for duplicates in the _Back_ field, you’d select it from
 the list and then click **Search**.
 
 By default, it will search in all note types that have the field you provided.
@@ -292,5 +296,5 @@ For more information, see [Searching](searching.md).
 You can click one of the links in the search results list to display the
 duplicate notes in that set. If the search brings up a large number of
 duplicates, you may wish to instead click the **Tag Duplicates** button,
-which will tag all matching notes with *duplicate*. You can then search
+which will tag all matching notes with _duplicate_. You can then search
 for this tag in the browser and handle them all from the same screen.
