@@ -1,0 +1,519 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Getting Started - Anki Manual</title>
+        
+        
+
+
+        <!-- Custom HTML head -->
+        
+
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        
+        <link rel="icon" href="favicon.svg">
+        
+        
+        <link rel="shortcut icon" href="favicon.png">
+        
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        
+        <link rel="stylesheet" href="css/print.css" media="print">
+        
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        
+        <link rel="stylesheet" href="fonts/fonts.css">
+        
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="src/kbd.css">
+        
+
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="intro.html">Introduction</a></li><li class="chapter-item expanded "><a href="background.html"><strong aria-hidden="true">1.</strong> Background</a></li><li class="chapter-item expanded "><a href="getting-started.html" class="active"><strong aria-hidden="true">2.</strong> Getting Started</a></li><li class="chapter-item expanded "><a href="studying.html"><strong aria-hidden="true">3.</strong> Studying</a></li><li class="chapter-item expanded "><a href="editing.html"><strong aria-hidden="true">4.</strong> Adding/Editing</a></li><li class="chapter-item expanded "><a href="templates/intro.html"><strong aria-hidden="true">5.</strong> Card Templates</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="templates/fields.html"><strong aria-hidden="true">5.1.</strong> Field Replacements</a></li><li class="chapter-item expanded "><a href="templates/generation.html"><strong aria-hidden="true">5.2.</strong> Card Generation</a></li><li class="chapter-item expanded "><a href="templates/styling.html"><strong aria-hidden="true">5.3.</strong> Styling &amp; HTML</a></li></ol></li><li class="chapter-item expanded "><a href="preferences.html"><strong aria-hidden="true">6.</strong> Preferences</a></li><li class="chapter-item expanded "><a href="deck-options.html"><strong aria-hidden="true">7.</strong> Deck Options</a></li><li class="chapter-item expanded "><a href="syncing.html"><strong aria-hidden="true">8.</strong> Syncing with AnkiWeb</a></li><li class="chapter-item expanded "><a href="profiles.html"><strong aria-hidden="true">9.</strong> Profiles</a></li><li class="chapter-item expanded "><a href="browsing.html"><strong aria-hidden="true">10.</strong> Browsing</a></li><li class="chapter-item expanded "><a href="filtered-decks.html"><strong aria-hidden="true">11.</strong> Filtered Decks</a></li><li class="chapter-item expanded "><a href="searching.html"><strong aria-hidden="true">12.</strong> Searching</a></li><li class="chapter-item expanded "><a href="importing.html"><strong aria-hidden="true">13.</strong> Importing</a></li><li class="chapter-item expanded "><a href="exporting.html"><strong aria-hidden="true">14.</strong> Exporting</a></li><li class="chapter-item expanded "><a href="files.html"><strong aria-hidden="true">15.</strong> Managing Files</a></li><li class="chapter-item expanded "><a href="stats.html"><strong aria-hidden="true">16.</strong> Statistics</a></li><li class="chapter-item expanded "><a href="media.html"><strong aria-hidden="true">17.</strong> Media</a></li><li class="chapter-item expanded "><a href="math.html"><strong aria-hidden="true">18.</strong> Math &amp; Symbols</a></li><li class="chapter-item expanded "><a href="leeches.html"><strong aria-hidden="true">19.</strong> Leeches</a></li><li class="chapter-item expanded "><a href="addons.html"><strong aria-hidden="true">20.</strong> Add-ons</a></li><li class="chapter-item expanded "><a href="misc.html"><strong aria-hidden="true">21.</strong> Miscellaneous</a></li><li class="chapter-item expanded affix "><a href="contrib.html">Contributing</a></li><li class="chapter-item expanded affix "><a href="faqs.html">FAQs</a></li><li class="chapter-item expanded affix "><a href="resources.html">Resources</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        
+                    </div>
+
+                    <h1 class="menu-title">Anki Manual</h1>
+
+                    <div class="right-buttons">
+                        
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        
+                        
+                        <a href="https://github.com/ankitects/anki-manual/" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#getting-started" id="getting-started">Getting Started</a></h1>
+<ul>
+<li><a href="#installing--upgrading">Installing &amp; Upgrading</a></li>
+<li><a href="#videos">Videos</a></li>
+<li><a href="#key-concepts">Key Concepts</a>
+<ul>
+<li><a href="#cards">Cards</a></li>
+<li><a href="#decks">Decks</a></li>
+<li><a href="#notes--fields">Notes &amp; Fields</a></li>
+<li><a href="#card-types">Card Types</a></li>
+<li><a href="#note-types">Note Types</a></li>
+<li><a href="#collection">Collection</a></li>
+</ul>
+</li>
+<li><a href="#shared-decks">Shared Decks</a></li>
+</ul>
+<h2><a class="header" href="#installing--upgrading" id="installing--upgrading">Installing &amp; Upgrading</a></h2>
+<p>Please see the <a href="https://apps.ankiweb.net">download site</a> for installation and upgrade instructions.</p>
+<h2><a class="header" href="#videos" id="videos">Videos</a></h2>
+<p>For a quick way to dive into Anki, please have a look at these intro
+videos. Some were made with a previous Anki version, but the concepts
+are the same.</p>
+<ul>
+<li>
+<p><a href="http://www.youtube.com/watch?v=QS2G-k2hQyg&amp;yt:cc=on">Shared Decks and Review
+Basics</a></p>
+</li>
+<li>
+<p><a href="https://www.youtube.com/watch?v=YkiM4DPzSVc&amp;list=PLGgmaKOIHykFoomqkBJAyGiDQ2kyiuTao&amp;yt:cc=on">Syncing</a></p>
+</li>
+<li>
+<p><a href="http://www.youtube.com/watch?v=DnbKwHEQ1mA&amp;yt:cc=on">Switching Card
+Order</a></p>
+</li>
+<li>
+<p><a href="http://www.youtube.com/watch?v=F1j1Zx0mXME&amp;yt:cc=on">Styling Cards</a></p>
+</li>
+<li>
+<p><a href="http://www.youtube.com/watch?v=5tYObQ3ocrw&amp;yt:cc=on">Typing in the
+Answer</a></p>
+</li>
+</ul>
+<p>If YouTube is unavailable in your country, you can <a href="https://apps.ankiweb.net/downloads/archive/screencasts/2.0/">download the
+videos</a>
+instead.</p>
+<h2><a class="header" href="#key-concepts" id="key-concepts">Key Concepts</a></h2>
+<h3><a class="header" href="#cards" id="cards">Cards</a></h3>
+<p>A question and answer pair is called a 'card'. This is based on a paper
+flashcard with a question on one side and the answer on the back. In
+Anki a card doesn’t actually look like a physical card, and when you
+show the answer the question remains visible by default. For example, if
+you’re studying basic chemistry, you might see a question like:</p>
+<pre><code>Q: Chemical symbol for oxygen?
+</code></pre>
+<p>After thinking about it, and deciding the answer is O, you click the
+show answer button, and Anki shows you:</p>
+<pre><code>Q: Chemical symbol for oxygen?
+A: O
+</code></pre>
+<p>After confirming that you are correct, you can tell Anki how well you
+remembered, and Anki will choose a next time to show you again.</p>
+<h3><a class="header" href="#decks" id="decks">Decks</a></h3>
+<p>A 'deck' is a group of cards. You can place cards in different decks to
+study parts of your card collection instead of studying everything at
+once. Each deck can have different settings, such as how many new cards
+to show each day, or how long to wait until cards are shown again.</p>
+<p>Decks can contain other decks, which allows you to organize decks into a
+tree. Anki uses “::” to show different levels. A deck called
+“Chinese::Hanzi” refers to a “Hanzi” deck, which is part of a “Chinese”
+deck. If you select “Hanzi” then only the Hanzi cards will be shown; if
+you select “Chinese” then all Chinese cards, including Hanzi cards, will
+be shown.</p>
+<p>To place decks into a tree, you can either name them with “::” between
+each level, or drag and drop them from the deck list. Decks that have
+been nested under another deck (that is, that have at least one “::” in
+their names) are often called 'subdecks', and top-level decks are
+sometimes called 'superdecks' or 'parent decks'.</p>
+<p>Anki starts with a deck called “default”; any cards which have somehow
+become separated from other decks will go here. Anki will hide the
+default deck if it contains no cards and you have added other decks.
+Alternatively, you may rename this deck and use it for other cards.</p>
+<p>Decks are best used to hold broad categories of cards, rather than
+specific topics such as “food verbs” or “lesson 1”. For more info on
+this, please see the <a href="editing.html#using-decks-appropriately">using decks appropriately</a> section.</p>
+<p>For information on how decks affect the order cards are displayed in,
+please see the <a href="studying.html#display-order">display order</a> section.</p>
+<h3><a class="header" href="#notes--fields" id="notes--fields">Notes &amp; Fields</a></h3>
+<p>When making flashcards, it’s often desirable to make more than one card
+that relates to some information. For example, if you’re learning
+French, and you learn that the word “bonjour” means “hello”, you may
+wish to create one card that shows you “bonjour” and asks you to
+remember “hello”, and another card that shows you “hello” and asks you
+to remember “bonjour”. One card is testing your ability to recognize the
+foreign word, and the other card is testing your ability to produce it.</p>
+<p>When using paper flashcards, your only option in this case is to write
+out the information twice, once for each card. Some computer flashcard
+programs make life easier by providing a feature to flip the front and
+back sides. This is an improvement over the paper situation, but there
+are two major downsides:</p>
+<ul>
+<li>
+<p>Because such programs don’t track your performance of recognition
+and production separately, cards will tend not to be shown to you at
+the optimum time, meaning you forget more than you’d like, or you
+study more than is necessary.</p>
+</li>
+<li>
+<p>Reversing the question and answer only works when you want exactly
+the same content on each side. This means it’s not possible to
+display extra info on the back of each card for example.</p>
+</li>
+</ul>
+<p>Anki solves these problems by allowing you to split the content of your
+cards up into separate pieces of information. You can then tell Anki
+which pieces of information you want on each card, and Anki will take
+care of creating the cards for you and updating them if you make any
+edits in the future.</p>
+<p>Imagine we want to study French vocabulary, and we want to include the
+page number on the back of each card. We want our cards to look like
+this:</p>
+<pre><code>Q: Bonjour
+A: Hello
+   Page #12
+</code></pre>
+<p>And:</p>
+<pre><code>Q: Hello
+A: Bonjour
+   Page #12
+</code></pre>
+<p>In this example, we have three pieces of related information: a French
+word, an English meaning, and a page number. If we put them together,
+they’d look like this:</p>
+<pre><code>French: Bonjour
+English: Hello
+Page: 12
+</code></pre>
+<p>In Anki, this related information is called a 'note', and each piece of
+information is called a 'field'. So we can say that this type of note
+has three fields: French, English, and Page.</p>
+<p>To add and edit fields, click the “Fields…​” button while adding or
+editing notes. For more information on fields, please see the
+<a href="editing.html#customizing-fields">Customizing Fields</a> section.</p>
+<h3><a class="header" href="#card-types" id="card-types">Card Types</a></h3>
+<p>In order for Anki to create cards based on our notes, we need to give it
+a blueprint that says which fields should be displayed on the front or
+back of each card. This blueprint is called a 'card type'. Each type of
+note can have one or more card types; when you add a note, Anki will
+create one card for each card type.</p>
+<p>Each card type has two 'templates', one for the question and one for the
+answer. In the above French example, we wanted the recognition card to
+look like this:</p>
+<pre><code>Q: Bonjour
+A: Hello
+   Page #12
+</code></pre>
+<p>To do this, we can set the question and answer templates to:</p>
+<pre><code>Q: {{French}}
+A: {{English}}&lt;br&gt;
+   Page #{{Page}}
+</code></pre>
+<p>By surrounding a field name in double curly brackets, we tell Anki to
+replace that section with the actual information in the field. Anything
+not surrounded by curly brackets remains the same on each card. (For
+instance, we don’t have to type “Page #” into the Page field when
+adding material – it’s added automatically to every card.) &lt;br&gt; is
+a special code that tells Anki to move to the next line; more details
+are available in the <a href="templates/intro.html">templates</a> section.</p>
+<p>The production card templates work in a similar way:</p>
+<pre><code>Q: {{English}}
+A: {{French}}&lt;br&gt;
+   Page #{{Page}}
+</code></pre>
+<p>Once a card type has been created, every time you add a new note, a card
+will be created based on that card type. Card types make it easy to keep
+the formatting of your cards consistent and can greatly reduce the
+amount of effort involved in adding information. They also mean Anki can
+ensure related cards don’t appear too close to each other, and they
+allow you to fix a typing mistake or factual error once and have all the
+related cards updated at once.</p>
+<p>To add and edit card types, click the “Cards…​” button while adding or
+editing notes. For more information on card types, please see the <a href="templates/intro.html">Cards
+and Templates</a> section.</p>
+<h3><a class="header" href="#note-types" id="note-types">Note Types</a></h3>
+<p>Anki allows you to create different types of notes for different
+material. Each type of note has its own set of fields and card types.
+It’s a good idea to create a separate note type for each broad topic
+you’re studying. In the above French example, we might create a note
+type called “French” for that. If we wanted to learn capital cities, we
+could create a separate note type for that as well, with fields such as
+“Country” and “Capital City”.</p>
+<p>When Anki checks for duplicates, it only compares other notes of the
+same type. Thus if you add a capital city called “Orange” using the
+capital city note type, you won’t see a duplicate message when it comes
+time to learn how to say “orange” in French.</p>
+<p>When you create a new collection, Anki automatically adds some standard
+note types to it. These note types are provided to make Anki easier for
+new users, but in the long run it’s recommended you define your own note
+types for the content you are learning. The standard note types are as
+follows:</p>
+<p>Basic<br />
+Has Front and Back fields, and will create one card. Text you enter in
+Front will appear on the front of the card, and text you enter in Back
+will appear on the back of the card.</p>
+<p>Basic (and reversed card)<br />
+Like Basic, but creates two cards for the text you enter: one from
+front→back and one from back→front.</p>
+<p>Basic (optional reversed card)<br />
+This is a front→back card, and optionally a back→front card. To do this,
+it has a third field called “Add Reverse.” If you enter any text into
+that field, a reverse card will be created. More information about this
+is available in the <a href="templates/intro.html">Cards and Templates</a> section.</p>
+<p>Cloze<br />
+A note type which makes it easy to select text and turn it into a cloze
+deletion (e.g., “Man landed on the moon in […​]” → “Man landed on the
+moon in 1969”). More information is available in the <a href="editing.html#cloze-deletion">cloze
+deletion</a> section.</p>
+<p>To add your own note types and modify existing ones, you can use Tools →
+Manage Note Types from the main Anki window.</p>
+<p>Notes and note types are common to your whole collection rather than
+limited to an individual deck. This means you can use many different
+types of notes in a particular deck, or have different cards generated
+from a particular note in different decks. When you add notes using the
+Add window, you can select what note type to use and what deck to use,
+and these choices are completely independent of each other. You can also
+change the note type of some notes <a href="browsing.html">after you’ve already created
+them</a>.</p>
+<h3><a class="header" href="#collection" id="collection">Collection</a></h3>
+<p>Your 'collection' is all the material stored in Anki – your cards,
+notes, decks, note types, deck options, and so on.</p>
+<h2><a class="header" href="#shared-decks" id="shared-decks">Shared Decks</a></h2>
+<p>You can watch <a href="http://www.youtube.com/watch?v=QS2G-k2hQyg&amp;yt:cc=on">a video about Shared Decks and Review
+Basics</a> on YouTube.</p>
+<p>The easiest way to get started with Anki is to download a deck of cards
+someone has shared:</p>
+<ol>
+<li>
+<p>Click the “Get Shared” button at the bottom of the deck list.</p>
+</li>
+<li>
+<p>When you’ve found a deck you’re interested in, click the “Download”
+button to download a deck package.</p>
+</li>
+<li>
+<p>Double-click on the downloaded package to load it into Anki, or
+File→Import it.</p>
+</li>
+</ol>
+<p>Please note that it’s not currently possible to add shared decks
+directly to your AnkiWeb account. You need to import them with the
+desktop program, then synchronize to upload them to AnkiWeb.</p>
+<p>Creating your own deck is the most effective way to learn a complex
+subject. Subjects like languages and the sciences can’t be understood
+simply by memorizing facts — they require explanation and context to
+learn effectively. Furthermore, inputting the information yourself
+forces you to decide what the key points are, leading to a better
+understanding.</p>
+<p>If you are a language learner, you may be tempted to download a long
+list of words and their translations, but this won’t teach you a
+language any more than memorizing scientific equations will teach you
+astrophysics. To learn properly, you need textbooks, teachers, or
+exposure to real-world sentences.</p>
+<pre><code>Do not learn if you do not understand.
+--SuperMemo
+</code></pre>
+<p>Most shared decks are created by people who are learning material
+outside of Anki – from textbooks, classes, TV, etc. They select the
+interesting points from what they learn and put them into Anki. They
+make no effort to add background information or explanations to the
+cards, because they already understand the material. So when someone
+else downloads their deck and tries to use it, they’ll find it very
+difficult as the background information and explanations are missing.</p>
+<p>That is not to say shared decks are useless – simply that for complex
+subjects, they should be used as a 'supplement' to external material,
+not as a 'replacement' for it. If you’re studying textbook ABC and
+someone has shared a deck of ideas from ABC, that’s a great way to save
+some time. And for simple subjects that are basically a list of facts,
+such as capital city names or pub quiz trivia, you probably don’t need
+external material. But if you attempt to study complex subjects without
+external material, you will probably meet with disappointing results.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="background.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="studying.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a rel="prev" href="background.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a rel="next" href="studying.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

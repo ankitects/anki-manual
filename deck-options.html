@@ -1,0 +1,456 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Deck Options - Anki Manual</title>
+        
+        
+
+
+        <!-- Custom HTML head -->
+        
+
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        
+        <link rel="icon" href="favicon.svg">
+        
+        
+        <link rel="shortcut icon" href="favicon.png">
+        
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        
+        <link rel="stylesheet" href="css/print.css" media="print">
+        
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        
+        <link rel="stylesheet" href="fonts/fonts.css">
+        
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="src/kbd.css">
+        
+
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="intro.html">Introduction</a></li><li class="chapter-item expanded "><a href="background.html"><strong aria-hidden="true">1.</strong> Background</a></li><li class="chapter-item expanded "><a href="getting-started.html"><strong aria-hidden="true">2.</strong> Getting Started</a></li><li class="chapter-item expanded "><a href="studying.html"><strong aria-hidden="true">3.</strong> Studying</a></li><li class="chapter-item expanded "><a href="editing.html"><strong aria-hidden="true">4.</strong> Adding/Editing</a></li><li class="chapter-item expanded "><a href="templates/intro.html"><strong aria-hidden="true">5.</strong> Card Templates</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="templates/fields.html"><strong aria-hidden="true">5.1.</strong> Field Replacements</a></li><li class="chapter-item expanded "><a href="templates/generation.html"><strong aria-hidden="true">5.2.</strong> Card Generation</a></li><li class="chapter-item expanded "><a href="templates/styling.html"><strong aria-hidden="true">5.3.</strong> Styling &amp; HTML</a></li></ol></li><li class="chapter-item expanded "><a href="preferences.html"><strong aria-hidden="true">6.</strong> Preferences</a></li><li class="chapter-item expanded "><a href="deck-options.html" class="active"><strong aria-hidden="true">7.</strong> Deck Options</a></li><li class="chapter-item expanded "><a href="syncing.html"><strong aria-hidden="true">8.</strong> Syncing with AnkiWeb</a></li><li class="chapter-item expanded "><a href="profiles.html"><strong aria-hidden="true">9.</strong> Profiles</a></li><li class="chapter-item expanded "><a href="browsing.html"><strong aria-hidden="true">10.</strong> Browsing</a></li><li class="chapter-item expanded "><a href="filtered-decks.html"><strong aria-hidden="true">11.</strong> Filtered Decks</a></li><li class="chapter-item expanded "><a href="searching.html"><strong aria-hidden="true">12.</strong> Searching</a></li><li class="chapter-item expanded "><a href="importing.html"><strong aria-hidden="true">13.</strong> Importing</a></li><li class="chapter-item expanded "><a href="exporting.html"><strong aria-hidden="true">14.</strong> Exporting</a></li><li class="chapter-item expanded "><a href="files.html"><strong aria-hidden="true">15.</strong> Managing Files</a></li><li class="chapter-item expanded "><a href="stats.html"><strong aria-hidden="true">16.</strong> Statistics</a></li><li class="chapter-item expanded "><a href="media.html"><strong aria-hidden="true">17.</strong> Media</a></li><li class="chapter-item expanded "><a href="math.html"><strong aria-hidden="true">18.</strong> Math &amp; Symbols</a></li><li class="chapter-item expanded "><a href="leeches.html"><strong aria-hidden="true">19.</strong> Leeches</a></li><li class="chapter-item expanded "><a href="addons.html"><strong aria-hidden="true">20.</strong> Add-ons</a></li><li class="chapter-item expanded "><a href="misc.html"><strong aria-hidden="true">21.</strong> Miscellaneous</a></li><li class="chapter-item expanded affix "><a href="contrib.html">Contributing</a></li><li class="chapter-item expanded affix "><a href="faqs.html">FAQs</a></li><li class="chapter-item expanded affix "><a href="resources.html">Resources</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        
+                    </div>
+
+                    <h1 class="menu-title">Anki Manual</h1>
+
+                    <div class="right-buttons">
+                        
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        
+                        
+                        <a href="https://github.com/ankitects/anki-manual/" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#deck-options" id="deck-options">Deck Options</a></h1>
+<ul>
+<li><a href="#new-cards">New Cards</a></li>
+<li><a href="#reviews">Reviews</a></li>
+<li><a href="#lapses">Lapses</a></li>
+<li><a href="#general">General</a></li>
+<li><a href="#description">Description</a></li>
+</ul>
+<p>Deck options are accessed by selecting a deck on the 'Decks' screen, and
+then clicking 'Options' at the bottom of the screen.</p>
+<p>Anki allows you to share options between different decks, to make
+updating options in many decks at once easy. To do this, options are
+grouped into an 'options group'. By default, all newly created decks use
+the same options group, and decks imported from previous versions of
+Anki have separate option groups. If you’d like to alter the settings on
+one deck but not other decks, click the gears icon in the top right and
+add a new options group.</p>
+<p>Please only change options that you fully understand, as inappropriate
+adjustments may render Anki less effective.</p>
+<p>Options are not retroactive. For example, if you change an option that
+controls the delay after failing a card, cards that you failed prior to
+changing the option will have the old delay, not the new one.</p>
+<h2><a class="header" href="#new-cards" id="new-cards">New Cards</a></h2>
+<p><strong>Steps</strong> controls the number of learning repetitions, and the delay
+between them. Please see the <a href="studying.html#learning">learning</a> section for an
+overview of how the steps work.</p>
+<p>Steps over a day (1440 minutes) are supported as well - if you want, you
+can define a schedule like 10 minutes, 1 day, 3 days and then finally 7
+days before the card becomes a review card.</p>
+<p>If there’s nothing else to study, Anki will show cards up to 20 minutes
+early by default. The amount of time to look ahead is configurable in
+the <a href="preferences.html">preferences</a>. One thing to be aware of is that the
+due counts will differ between the deck screen and study screens in this
+case. The deck screen will not count cards that are not ready, but the
+study screen will. This is done so that you can tell which decks need
+your attention.</p>
+<p>Anki treats small steps and steps that cross a day boundary differently.
+With small steps, the cards are shown as soon as the delay has passed,
+in preference to other waiting cards like reviews. This is done so that
+you can answer the card as closely to your requested delay as possible.
+In contrast, cards that cross a day boundary are scheduled on a per-day
+basis like reviews are. When you return to study the next day, the
+per-day learning cards will not be shown first, as that can make the
+first half of a review session frustratingly difficult. Instead, the
+cards will be shown after reviews are completed. They are included in
+the review count rather than the learning count, due to the way they are
+handled internally.</p>
+<p><strong>Order</strong> controls whether Anki should add new cards into the deck
+randomly, or in order. When you change this option, Anki will re-sort
+the decks using the current option group. One caveat with random order
+mode: if you review many of your new cards and then add more new cards,
+the newly added material is statistically more likely to appear than the
+previously remaining cards. To correct this, you can change the order to
+ordered mode and back again to force a re-sort.</p>
+<p>When you select random order, Anki will randomize your notes, keeping
+the cards of a given note close together. The cards of a given note are
+shown in the order their card types appear in, so that siblings are
+introduced consistently - otherwise you could end up in a state where
+some notes had all their cards introduced and other notes had only one
+or two. Please see the &quot;bury related&quot; option below for more info.</p>
+<p><strong>New cards/day</strong> tells Anki how many new cards you’d like introduced on
+each day you open the program. Missed days will not cause the cards to
+pile up. The limit applies to the current deck and subdecks. This means
+if &quot;French&quot; has a limit of 20 cards and &quot;French::Lesson 1&quot; and
+&quot;French::Lesson 2&quot; both have limits of 15 cards, you’ll get 15 cards
+from lesson 1 but only 5 cards from lesson 2.</p>
+<p>Studying new cards will temporarily increase the number of reviews you
+need to do a day, as freshly learnt material needs to be repeated a
+number of times before the delay between repetitions can increase
+appreciably. If you are consistently learning 20 new cards a day, you
+can expect your daily reviews to be roughly about 200 cards/day. You can
+decrease the reviews required by introducing fewer new cards each day,
+or by turning off new card display until your review burden decreases.
+More than one Anki user has excitedly studied hundreds of new cards over
+their first few days of using the program, and then become overwhelmed
+by the reviews required.</p>
+<p><strong>Graduating interval</strong> is the delay between answering 'Good' on a card
+with no steps left, and seeing the card again.</p>
+<p><strong>Easy interval</strong> is the delay between answering 'easy' on a learning
+card and seeing it in review mode for the first time.</p>
+<p><strong>Starting ease</strong> controls the easiness that cards start out with. It is
+set when a card graduates from learning for the first time. It defaults
+to 250%, meaning that once you’ve finished learning a card, answering
+&quot;Good&quot; on subsequent reviews will increase the delay by approximately
+2.5x (eg if the last delay was 10 days, the next delay would be 25
+days). Based upon how you rate the card in subsequent reviews, the
+easiness may increase or decrease from what it starts out as.</p>
+<p>Turning off <strong>bury related…​</strong> will prevent Anki from <a href="studying.html#siblings-and-burying">burying
+siblings</a>, and instead Anki will just try to avoid showing
+siblings directly after one another in the same session. For this to
+work, your new cards/day setting needs to be large enough for the cards
+of multiple notes to be included.</p>
+<h2><a class="header" href="#reviews" id="reviews">Reviews</a></h2>
+<p><strong>Maximum reviews/day</strong> allows you to set an upper limit on the number
+of reviews to show each day. When this limit is reached, Anki will not
+show any more review cards for the day, even if there are some waiting.
+If you study consistently, this setting can help to smooth out
+occasional peaks in due card counts, and can save you from a heart
+attack when returning to Anki after a week off. When reviews have been
+hidden due to this option, a message will appear in the congratulations
+screen, suggesting you consider increasing the limit if you have time.</p>
+<p><strong>Easy bonus</strong> allows you to set the difference in intervals between
+answering 'Good' and 'Easy' on a card. For instance, with the default
+value of 130%, Easy will give an interval that is 1.3 times the Good
+interval.</p>
+<p><strong>Interval modifier</strong> allows you to apply a multiplication factor to the
+intervals Anki generates. At its default of 100% it does nothing; if you
+set it to 80% for example, intervals will be generated at 80% of their
+normal size (so a 10 day interval would become 8 days). You can thus use
+the multiplier to make Anki present cards more or less frequently than
+it would otherwise, trading study time for retention or vice versa.</p>
+<p>For moderately difficult material, the average user should find they
+remember approximately 90% of mature cards that come up for review. You
+can find out your own performance by opening the graphs/statistics for a
+deck and looking at the Answer Buttons graph - mature retention is the
+correct% on the right side of the graph. If you haven’t been studying
+long you may not have any mature cards yet. As performance with new
+cards and younger cards can vary considerably, it’s a good idea to wait
+until you have a reasonable amount of mature reviews before you start
+drawing conclusions about your retention rate.</p>
+<p>On the SuperMemo website, they suggest that you can find an appropriate
+multiplier for a desired retention rate. Their formula boils down to:</p>
+<pre><code>log(desired retention%) / log(current retention%)
+</code></pre>
+<p>Imagine we have a current retention rate of 85% and we want to increase
+it to 90%. We’d calculate the modifier as:</p>
+<pre><code>log(90%) / log(85%) = 0.65
+</code></pre>
+<p>You can use Google to <a href="https://www.google.com/search?q=log(90%25)+%2F+log(85%25)">calculate
+it</a> for you.</p>
+<p>If you plug the resulting 65% into the interval modifier, you should
+find over time that your retention moves closer to your desired
+retention.</p>
+<p>One important thing to note however is that the tradeoff between time
+spent studying and retention is not linear: we can see here that to
+increase our retention by 5 percentage points, we’d have to study 35%
+more frequently. If the material you are learning is very important then
+it may be worth the extra effort – that’s something you’ll need to
+decide for yourself. If you’re simply worried that you’re forgetting too
+much, you may find investing more time into the initial learning stage
+and/or making mnemonics gives you more gain for less effort.</p>
+<p>One final thing to note is that Anki forces a new interval to be at
+least 1 day longer than it was previously so that you don’t get stuck
+reviewing with the same interval forever. If your goal is to repeat a
+card once a day for multiple days, you can do that by setting more
+learning mode steps instead of by adjusting this modifier.</p>
+<p><strong>Maximum interval</strong> allows you to place an upper limit on the time Anki
+will wait to reshow a card. The default is 100 years; you can decrease
+this to a smaller number if you’re willing to trade extra study time for
+higher retention.</p>
+<p><strong>Hard interval</strong> specifies what the next interval will be when you
+press the Hard button. The percentage is relative to the previous
+interval, eg with a default 120%, a card with a 10 day interval will be
+given 12 days. This option is only available when the <a href="https://faqs.ankiweb.net/the-anki-2.1-scheduler.html">experimental
+scheduler</a> is enabled in the preferences.</p>
+<p>Turning off <strong>bury related…​</strong> will prevent Anki from <a href="studying.html#siblings-and-burying">burying
+siblings</a>, and instead Anki will just try to avoid showing
+siblings directly after one another in the same session.</p>
+<p>Review cards are always shown in random order. If you wish to see them
+in a different order, you can use a <a href="filtered-decks.html">filtered deck</a>. More
+specifically, Anki randomizes reviews by grabbing batches of 50 cards in
+the order that they exist in the database, randomizing each batch, then
+putting them together. This means that there is a slight bias towards
+older cards being shown first, but it prevents individual cards from
+showing up in a predictable order.</p>
+<h2><a class="header" href="#lapses" id="lapses">Lapses</a></h2>
+<p>When you forget a review card, it is said to have 'lapsed'. The default
+behaviour for lapsed reviews is to reset the interval to 1 (ie, make it
+due tomorrow), and put it in the learning queue for a refresher in 10
+minutes. This behaviour can be customized with the options listed below.</p>
+<p>If you leave the steps blank, Anki will not place the card back in the
+learning queue, and it will be rescheduled as a review with its new
+interval determined by the settings below.</p>
+<p>The new interval is determined when you answer &quot;Again&quot; to a review card,
+not when the card finishes its relearning steps. For this reason, the
+&quot;Good&quot; and &quot;Easy&quot; buttons during relearning do not alter the interval
+again - they only control which step you are on. If there is only a
+single step (the default), the &quot;Easy&quot; button will be hidden, since it
+would accomplish the same thing as the &quot;Good&quot; button. If you have 2 or
+more steps, &quot;Easy&quot; is not hidden, to allow you to graduate cards from
+the queue before all of their steps are finished.</p>
+<p>'New interval' controls how much Anki should reduce the previous
+interval. It reduces the previous interval to the percentage you
+specify. If a card had a 200 day interval, the default of 0% would
+reduce the interval to 0 (but see the next option). If you set this
+option to 50%, the card would have its interval reduced to 100 days
+instead.</p>
+<p>'Minimum interval' allows you to apply a minimum limit to the above
+option. The default setting says that lapses should be reviewed one day
+later. The interval must be 1 day or more.</p>
+<p>The leech options control the way Anki handles leeches. Please see the
+<a href="leeches.html">leeches</a> section for more information.</p>
+<h2><a class="header" href="#general" id="general">General</a></h2>
+<p>Anki monitors how long it takes you to answer each question so that it
+can show you how long was spent studying each day. The time taken does
+not influence scheduling. If you take longer than 60 seconds, Anki
+assumes you have walked away from your computer or have been distracted,
+and limits the recorded time to 60 seconds, so that you don’t end up
+with inaccurate statistics. The 'ignore answer times…​' option allows
+you to adjust the cutoff threshold. The minimum cutoff is 30 seconds.</p>
+<p>If 'show answer timer' is checked, Anki will display the current time
+taken for each card in the study area.</p>
+<p>By default, Anki automatically plays audio on the front and back of
+cards. If you uncheck 'automatically play audio', Anki will not play
+audio until you press the replay audio key, <code>r</code> or <code>F5</code>.</p>
+<p>The 'Always include question side when replaying audio' option
+controls what happens when you choose to replay audio while the answer
+is shown. Please note that it does not control what happens when you
+show the answer; for that please see <a href="templates/fields.html#special-fields">this section</a>.</p>
+<h2><a class="header" href="#description" id="description">Description</a></h2>
+<p>This section allows you to edit the deck description, which is shown in
+the study overview. The description is automatically set when
+downloading shared decks. You can delete all the text in the description
+if you no longer want to see it in the study overview area.</p>
+<p>You can also use HTML in the description—anything that works on a note
+should be valid.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="preferences.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="syncing.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a rel="prev" href="preferences.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a rel="next" href="syncing.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

@@ -1,0 +1,432 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Statistics - Anki Manual</title>
+        
+        
+
+
+        <!-- Custom HTML head -->
+        
+
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        
+        <link rel="icon" href="favicon.svg">
+        
+        
+        <link rel="shortcut icon" href="favicon.png">
+        
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        
+        <link rel="stylesheet" href="css/print.css" media="print">
+        
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        
+        <link rel="stylesheet" href="fonts/fonts.css">
+        
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="src/kbd.css">
+        
+
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="intro.html">Introduction</a></li><li class="chapter-item expanded "><a href="background.html"><strong aria-hidden="true">1.</strong> Background</a></li><li class="chapter-item expanded "><a href="getting-started.html"><strong aria-hidden="true">2.</strong> Getting Started</a></li><li class="chapter-item expanded "><a href="studying.html"><strong aria-hidden="true">3.</strong> Studying</a></li><li class="chapter-item expanded "><a href="editing.html"><strong aria-hidden="true">4.</strong> Adding/Editing</a></li><li class="chapter-item expanded "><a href="templates/intro.html"><strong aria-hidden="true">5.</strong> Card Templates</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="templates/fields.html"><strong aria-hidden="true">5.1.</strong> Field Replacements</a></li><li class="chapter-item expanded "><a href="templates/generation.html"><strong aria-hidden="true">5.2.</strong> Card Generation</a></li><li class="chapter-item expanded "><a href="templates/styling.html"><strong aria-hidden="true">5.3.</strong> Styling &amp; HTML</a></li></ol></li><li class="chapter-item expanded "><a href="preferences.html"><strong aria-hidden="true">6.</strong> Preferences</a></li><li class="chapter-item expanded "><a href="deck-options.html"><strong aria-hidden="true">7.</strong> Deck Options</a></li><li class="chapter-item expanded "><a href="syncing.html"><strong aria-hidden="true">8.</strong> Syncing with AnkiWeb</a></li><li class="chapter-item expanded "><a href="profiles.html"><strong aria-hidden="true">9.</strong> Profiles</a></li><li class="chapter-item expanded "><a href="browsing.html"><strong aria-hidden="true">10.</strong> Browsing</a></li><li class="chapter-item expanded "><a href="filtered-decks.html"><strong aria-hidden="true">11.</strong> Filtered Decks</a></li><li class="chapter-item expanded "><a href="searching.html"><strong aria-hidden="true">12.</strong> Searching</a></li><li class="chapter-item expanded "><a href="importing.html"><strong aria-hidden="true">13.</strong> Importing</a></li><li class="chapter-item expanded "><a href="exporting.html"><strong aria-hidden="true">14.</strong> Exporting</a></li><li class="chapter-item expanded "><a href="files.html"><strong aria-hidden="true">15.</strong> Managing Files</a></li><li class="chapter-item expanded "><a href="stats.html" class="active"><strong aria-hidden="true">16.</strong> Statistics</a></li><li class="chapter-item expanded "><a href="media.html"><strong aria-hidden="true">17.</strong> Media</a></li><li class="chapter-item expanded "><a href="math.html"><strong aria-hidden="true">18.</strong> Math &amp; Symbols</a></li><li class="chapter-item expanded "><a href="leeches.html"><strong aria-hidden="true">19.</strong> Leeches</a></li><li class="chapter-item expanded "><a href="addons.html"><strong aria-hidden="true">20.</strong> Add-ons</a></li><li class="chapter-item expanded "><a href="misc.html"><strong aria-hidden="true">21.</strong> Miscellaneous</a></li><li class="chapter-item expanded affix "><a href="contrib.html">Contributing</a></li><li class="chapter-item expanded affix "><a href="faqs.html">FAQs</a></li><li class="chapter-item expanded affix "><a href="resources.html">Resources</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        
+                    </div>
+
+                    <h1 class="menu-title">Anki Manual</h1>
+
+                    <div class="right-buttons">
+                        
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        
+                        
+                        <a href="https://github.com/ankitects/anki-manual/" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#graphs-and-statistics" id="graphs-and-statistics">Graphs and Statistics</a></h1>
+<ul>
+<li><a href="#card-info">Card Info</a></li>
+<li><a href="#statistics">Statistics</a></li>
+<li><a href="#types-of-cards">Types of Cards</a></li>
+<li><a href="#today">Today</a></li>
+<li><a href="#the-graphs">The Graphs</a></li>
+<li><a href="#manual-analysis">Manual Analysis</a></li>
+</ul>
+<h2><a class="header" href="#card-info" id="card-info">Card Info</a></h2>
+<p>You can display information about a card by using the Cards&gt;Info menu item,
+or by right-clicking on the card and then selecting <strong>Info</strong>.
+Most of the displayed information should be self-explanatory. A few notes:</p>
+<p><strong>Position</strong><br />
+Only shown when the card is new, it shows the order the card will appear
+in relative to other new cards. The position can be changed in the
+browser.</p>
+<p><strong>Interval</strong><br />
+The delay from one review to the next. Times are abbreviated; &quot;0s, 1m,
+3h, 4d, 5mo, 6y&quot; refers to seconds, minutes, hours, days, months and
+years respectively.</p>
+<p><strong>Ease</strong><br />
+The approximate amount the interval will grow when you answer a review
+card with the &quot;Good&quot; button.</p>
+<h2><a class="header" href="#statistics" id="statistics">Statistics</a></h2>
+<p>The statistics window is accessed by clicking on <strong>Stats</strong> button at the
+top of the main window, or by pressing T. The statistics
+window will show statistics from the currently selected deck and any
+subdecks. If you click on &quot;collection&quot; on the bottom left, statistics
+will be shown for your entire collection instead. On 2.1.28+, additionally,
+you can display graphs for arbitrary searches by adding filters in the
+search box.</p>
+<p>Anki 2.1.28+ introduces redesigned graphs. The old graphs are currently still
+accessible with a <kbd>Shift</kbd>-click on the Stats button.</p>
+<p>For Anki 2.1.28+, by default Anki will show you statistics for the previous year.
+You can change this to all history scope or deck life scope at the top. (The
+&quot;today&quot; section at the top is of course unaffected by this selection.)</p>
+<p>For older versions of Anki, by default Anki will show you statistics for
+the previous month. You can change this to a year scope or deck life scope
+at the bottom. (The “today” section at the top is of course unaffected
+by this selection.)</p>
+<p>Clicking on &quot;Save PDF&quot; will save an PDF document of the statistics to a file
+on your desktop to make it easy to share your statistics with others.</p>
+<p>When you delete notes, their review history is maintained in Anki. It
+will not be included when looking at statistics for a specific deck (as
+Anki has no way of knowing which deck the deleted cards belonged to),
+but will be included when you look at statistics for the whole
+collection.</p>
+<h2><a class="header" href="#types-of-cards" id="types-of-cards">Types of Cards</a></h2>
+<p>The stats window uses some terms that you may not be familiar with:</p>
+<p><strong>Mature</strong><br />
+A mature card is one that has an interval of 21 days or greater.</p>
+<p><strong>Young</strong><br />
+A young card is one that has an interval of less than 21 days, but is
+not in learning.</p>
+<p><strong>Learn</strong><br />
+A learning card is one that is still in learning mode (using whatever
+steps may be defined in the deck’s options).</p>
+<p><strong>Relearn</strong><br />
+A relearning card is a card that you have failed in review mode, thus
+returning it to learning mode to be relearned.</p>
+<p><strong>Unseen</strong><br />
+An unseen card is one that has been added to your collection but has not
+yet entered learning mode. Unseen cards are sometimes referred to as
+&quot;new&quot; cards, especially when they are in the &quot;new&quot; queue to be shown for
+the first time.</p>
+<h2><a class="header" href="#today" id="today">Today</a></h2>
+<p>At the top of the statistics window is a brief list of textual
+statistics about the reviews that you have completed today. A “review”
+in this context is 'one answering of a card', so a card might count as
+multiple reviews if it needed to be seen multiple times, and a learning
+card answered also counts as a “review.” A couple of the stats whose
+meaning may not be immediately obvious:</p>
+<p><strong>Again count</strong><br />
+This is the number of reviews that you have failed (i.e., pressed Again
+on). The correct percentage listed afterwards is the number of cards you
+did 'not' fail divided by the total number of cards you studied.</p>
+<p><strong>Learn, Review, Relearn, Filtered</strong><br />
+The number of reviews that were learning cards, review cards, relearning
+cards, or studied in a filtered deck when not due.</p>
+<p>The stats for the current day are not a good overall indicator of your
+learning progress; everyone has bad days and good days, and seeing that
+you got a lower percentage correct on a particular day should not be
+cause for concern. The remainder of the stats, which take longer periods
+of time into account, will give more useful information if you wish to
+try to change your study habits or scheduling settings based on your
+performance.</p>
+<p>The “today” statistics are unaffected by the time period selected at the
+bottom of the window.</p>
+<h2><a class="header" href="#the-graphs" id="the-graphs">The Graphs</a></h2>
+<p><strong>Forecast</strong><br />
+This graph shows an estimated number of reviews that will be due on a
+given day in the future if you learn no new cards and fail no cards. The
+bars and the left axis show the number of cards due on each day if you
+study all cards each day, while the line and the right axis show the
+number of cards due on that day if you don’t study at all until then.
+Note that the forecast graph does not count reviews that are currently
+overdue, so if you have a large backlog, the overdue cards will not be
+displayed.</p>
+<p><strong>Review Count</strong><br />
+This graph counts the number of card reviews you have done. The bars may
+correspond to days, weeks, or months, depending on the time period
+you’ve selected at the bottom of the screen. The differently colored
+blocks show how many of the cards you answered on each day were
+<a href="stats.html#types-of-cards">mature</a>, young, relearning, or learning cards.
+There is also a separate group for cards answered in a filtered/cram
+deck while they were not due. The line and the right axis shows the
+cumulative total for each type of review as time progresses across the
+graph (so at 0 days, it would display the number for the entire time
+period displayed on the graph).</p>
+<p><strong>Review Time</strong><br />
+This graph works exactly like Review Count, except that it deals with
+the amount of time you spent on each card rather than the number of
+cards answered.</p>
+<p><strong>Intervals</strong><br />
+This graph displays the number of cards that have a given interval (the
+delay between two reviews). The line and the right axis tell you what
+percentage of your cards have an interval of less than or equal to the
+time below that point. The time scope has a different effect on this
+graph than other graphs: rather than changing which cards or period of
+studying is included, it limits how far out the intervals are displayed
+to (so 14-month intervals are not displayed at all on a 1-year graph).</p>
+<p><strong>Hourly Breakdown</strong><br />
+This graph shows what percentage of total reviews you have passed (i.e.,
+not pressed Again on) during given hours. The larger, darker bars and
+left axis show the success rate; the thinner, lighter bars and right
+axis show the number of reviews you’ve made at that hour (so you know
+how significant the results are).</p>
+<p><strong>Answer Buttons</strong><br />
+This graph shows how many times you’ve chosen the Again, Hard, Good, or
+Easy button while studying learning/new, young, and
+<a href="stats.html#types-of-cards">mature</a> cards. Anki also displays the percentage
+of correct reviews for each type of card.</p>
+<p><strong>Cards Types</strong><br />
+This pie chart shows what percentage of your deck or collection consists
+of mature, unseen, young/learn, and suspended cards. If you wish to
+calculate a more precise percentage, the key shows the exact number of
+cards in each section, and the total number of cards is displayed to the
+side.</p>
+<h2><a class="header" href="#manual-analysis" id="manual-analysis">Manual Analysis</a></h2>
+<p>If you’re interested in getting information from your statistics other
+than what Anki provides, it is possible to access the data directly.
+Because of the complexity involved, this is not something we can provide
+any support for.</p>
+<p>One option is to <a href="addons.html">write an add-on</a> that adds another graph or
+more details to the statistics window. There are several add-ons of this
+sort on AnkiWeb already, which you can look at to get an idea of how it
+works.</p>
+<p>A more powerful and more complex option is to extract the review log
+information directly from Anki’s database and analyze it in an external
+program. Anki uses a database format called SQLite. There are many tools
+available for working with SQLite databases; one of the easiest to start
+with is called <a href="http://sqlitebrowser.org/">SQLite Browser</a>, which will
+allow you to look around the database as well as export a CSV version of
+tables for import into another program.</p>
+<p>The most important table for statistics is the 'revlog' table, which
+stores an entry for each review that you conduct. The columns are as
+follows:</p>
+<p><strong>id</strong><br />
+The time at which the review was conducted, as the number of
+milliseconds that had passed since midnight UTC on January 1, 1970.
+(This is sometimes known as 'Unix epoch time', especially when in
+straight seconds instead of milliseconds.)</p>
+<p><strong>cid</strong><br />
+The ID of the card that was reviewed. You can look up this value in the
+id field of the 'cards' table to get more information about the card,
+although note that the card could have changed between when the revlog
+entry was recorded and when you are looking it up. It is also the
+millisecond timestamp of the card’s creation time.</p>
+<p><strong>usn</strong><br />
+This column is used to keep track of the sync state of reviews and
+provides no useful information for analysis.</p>
+<p><strong>ease</strong><br />
+Which button you pressed at the end of the review (1 for Again, 4 for
+Easy).</p>
+<p><strong>ivl</strong><br />
+The new interval that the card was pushed to after the review. Positive
+values are in days; negative values are in seconds (for learning cards).</p>
+<p><strong>lastIvl</strong><br />
+The interval the card had before the review. Cards introduced for the
+first time have a last interval equal to the Again delay.</p>
+<p><strong>factor</strong><br />
+The new ease factor of the card in permille (parts per thousand). If the
+ease factor is 2500, the card’s interval will be multiplied by 2.5 the
+next time you press Good.</p>
+<p><strong>time</strong><br />
+The amount of time (in milliseconds) you spent on the question and
+answer sides of the card before selecting an ease button.</p>
+<p><strong>type</strong><br />
+This is 0 for learning cards, 1 for review cards, 2 for relearn cards,
+and 3 for early &quot;cram&quot; cards (cards being studied in a filtered deck when they
+are not due).</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="files.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="media.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a rel="prev" href="files.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a rel="next" href="media.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

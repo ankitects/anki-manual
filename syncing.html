@@ -1,0 +1,405 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Syncing with AnkiWeb - Anki Manual</title>
+        
+        
+
+
+        <!-- Custom HTML head -->
+        
+
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        
+        <link rel="icon" href="favicon.svg">
+        
+        
+        <link rel="shortcut icon" href="favicon.png">
+        
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        
+        <link rel="stylesheet" href="css/print.css" media="print">
+        
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        
+        <link rel="stylesheet" href="fonts/fonts.css">
+        
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="src/kbd.css">
+        
+
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="intro.html">Introduction</a></li><li class="chapter-item expanded "><a href="background.html"><strong aria-hidden="true">1.</strong> Background</a></li><li class="chapter-item expanded "><a href="getting-started.html"><strong aria-hidden="true">2.</strong> Getting Started</a></li><li class="chapter-item expanded "><a href="studying.html"><strong aria-hidden="true">3.</strong> Studying</a></li><li class="chapter-item expanded "><a href="editing.html"><strong aria-hidden="true">4.</strong> Adding/Editing</a></li><li class="chapter-item expanded "><a href="templates/intro.html"><strong aria-hidden="true">5.</strong> Card Templates</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="templates/fields.html"><strong aria-hidden="true">5.1.</strong> Field Replacements</a></li><li class="chapter-item expanded "><a href="templates/generation.html"><strong aria-hidden="true">5.2.</strong> Card Generation</a></li><li class="chapter-item expanded "><a href="templates/styling.html"><strong aria-hidden="true">5.3.</strong> Styling &amp; HTML</a></li></ol></li><li class="chapter-item expanded "><a href="preferences.html"><strong aria-hidden="true">6.</strong> Preferences</a></li><li class="chapter-item expanded "><a href="deck-options.html"><strong aria-hidden="true">7.</strong> Deck Options</a></li><li class="chapter-item expanded "><a href="syncing.html" class="active"><strong aria-hidden="true">8.</strong> Syncing with AnkiWeb</a></li><li class="chapter-item expanded "><a href="profiles.html"><strong aria-hidden="true">9.</strong> Profiles</a></li><li class="chapter-item expanded "><a href="browsing.html"><strong aria-hidden="true">10.</strong> Browsing</a></li><li class="chapter-item expanded "><a href="filtered-decks.html"><strong aria-hidden="true">11.</strong> Filtered Decks</a></li><li class="chapter-item expanded "><a href="searching.html"><strong aria-hidden="true">12.</strong> Searching</a></li><li class="chapter-item expanded "><a href="importing.html"><strong aria-hidden="true">13.</strong> Importing</a></li><li class="chapter-item expanded "><a href="exporting.html"><strong aria-hidden="true">14.</strong> Exporting</a></li><li class="chapter-item expanded "><a href="files.html"><strong aria-hidden="true">15.</strong> Managing Files</a></li><li class="chapter-item expanded "><a href="stats.html"><strong aria-hidden="true">16.</strong> Statistics</a></li><li class="chapter-item expanded "><a href="media.html"><strong aria-hidden="true">17.</strong> Media</a></li><li class="chapter-item expanded "><a href="math.html"><strong aria-hidden="true">18.</strong> Math &amp; Symbols</a></li><li class="chapter-item expanded "><a href="leeches.html"><strong aria-hidden="true">19.</strong> Leeches</a></li><li class="chapter-item expanded "><a href="addons.html"><strong aria-hidden="true">20.</strong> Add-ons</a></li><li class="chapter-item expanded "><a href="misc.html"><strong aria-hidden="true">21.</strong> Miscellaneous</a></li><li class="chapter-item expanded affix "><a href="contrib.html">Contributing</a></li><li class="chapter-item expanded affix "><a href="faqs.html">FAQs</a></li><li class="chapter-item expanded affix "><a href="resources.html">Resources</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        
+                    </div>
+
+                    <h1 class="menu-title">Anki Manual</h1>
+
+                    <div class="right-buttons">
+                        
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        
+                        
+                        <a href="https://github.com/ankitects/anki-manual/" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#syncing-with-ankiweb" id="syncing-with-ankiweb">Syncing with AnkiWeb</a></h1>
+<ul>
+<li><a href="#intro-videos">Intro Videos</a></li>
+<li><a href="#setup">Setup</a></li>
+<li><a href="#automatic-syncing">Automatic Syncing</a></li>
+<li><a href="#button-color">Button Color</a></li>
+<li><a href="#media">Media</a></li>
+<li><a href="#conflicts">Conflicts</a></li>
+<li><a href="#merging-conflicts">Merging Conflicts</a></li>
+<li><a href="#firewalls">Firewalls</a></li>
+<li><a href="#proxies">Proxies</a></li>
+</ul>
+<p>AnkiWeb is a service that allows you to keep your collection
+synchronized across multiple devices, and to study online. Please sign
+up for a <a href="https://ankiweb.net/">free account</a> before following the steps
+below.</p>
+<h2><a class="header" href="#intro-videos" id="intro-videos">Intro Videos</a></h2>
+<p>For a quick introduction to syncing, please check out the
+<a href="https://www.youtube.com/watch?v=YkiM4DPzSVc&amp;list=PLGgmaKOIHykFoomqkBJAyGiDQ2kyiuTao&amp;yt:cc=on">syncing intro videos</a>.</p>
+<h2><a class="header" href="#setup" id="setup">Setup</a></h2>
+<p>To start syncing your collection across devices, click the sync button
+(the top right one on the main screen), or press 'y' on your keyboard.
+You’ll be prompted for your AnkiWeb ID and password, which you created
+in the signup process.</p>
+<p>When you synchronize your collection for the first time, Anki will ask
+you if you want to upload or download. If you have cards on your
+computer and your AnkiWeb account is empty, choose &quot;upload&quot; to send your
+data to AnkiWeb. If you have cards on AnkiWeb from another device, and
+no cards on your computer, choose &quot;download&quot; to replace the empty local
+collection with the cards that are on AnkiWeb. If you have different
+cards on both devices, <a href="#merging-conflicts">more work is required</a> to
+avoid losing data.</p>
+<p>Once the initial one way sync is completed, Anki will be able to merge
+changes from multiple locations with a few exceptions.</p>
+<p>If you have multiple people using Anki on one machine and have created a
+profile for each user, each user will need to create their own AnkiWeb
+account to sync with. If you attempt to synchronize multiple profiles
+with a single AnkiWeb account, you will lose data.</p>
+<h2><a class="header" href="#automatic-syncing" id="automatic-syncing">Automatic Syncing</a></h2>
+<p>Once syncing is enabled, Anki will automatically sync each time your
+collection is closed or opened. If you would prefer to synchronize
+manually, you can disable automatic syncing in Anki’s preferences.</p>
+<h2><a class="header" href="#button-color" id="button-color">Button Color</a></h2>
+<p>The sync button will change to blue when a normal sync is required,
+and red when a full sync is required.</p>
+<h2><a class="header" href="#media" id="media">Media</a></h2>
+<p>Related video: <a href="https://www.youtube.com/watch?v=phP9GGG-PxY">https://www.youtube.com/watch?v=phP9GGG-PxY</a></p>
+<p>Anki will synchronize any sounds and images used by your notes. It will
+notice when media has been added or removed from your media folder, but
+will not notice if you have edited some existing files without adding or
+removing any. To get your edits noticed, you need to add or remove a
+file as well.</p>
+<p>If you’re running Anki off a USB flash drive, you should use an NTFS
+file system, as Anki may not be able to detect media changes on a FAT32
+filesystem.</p>
+<h2><a class="header" href="#conflicts" id="conflicts">Conflicts</a></h2>
+<p>Related video: <a href="https://www.youtube.com/watch?v=UEAcpfMQnjo">https://www.youtube.com/watch?v=UEAcpfMQnjo</a></p>
+<p>Under normal circumstances, reviews and note edits can be merged, so if
+you review or edit on two different devices before syncing, Anki will
+preserve your changes from both locations. If the same card has been
+reviewed in two different locations, both reviews will be marked in the
+revision history, and the card will be kept in the state it was when it
+was most recently answered.</p>
+<p>There are certain changes that Anki is unable to merge. These mainly
+relate to the format of notes: things like adding a new field, or
+removing a card template. When you perform an operation that can’t be
+merged, Anki will warn you, and give you the option of aborting the
+operation. If you choose to continue, you’ll be asked to choose whether
+to keep the local copy or the copy on AnkiWeb when your collection is
+next synchronized.</p>
+<p>If certain problems are detected while syncing, it will also force a one
+way sync. If you find this consistently happens, please post on our
+support site.</p>
+<p>When a one way sync is required, you need to choose whether you wish to
+keep the collection on your local device, or the collection on AnkiWeb.
+If changes have been made on both ends, only changes on one end can be
+preserved.</p>
+<p>If you choose Upload, the content on your local device will be sent to
+AnkiWeb. You then need to sync your other devices, and choose &quot;Download&quot;
+to have them grab a copy of that content.</p>
+<p>If you choose Download, it will replace any local changes you’ve made
+with the data that is on AnkiWeb.</p>
+<p>Once all devices are in sync, future syncs will return to the normal
+behaviour of merging changes from both ends.</p>
+<p>If you wish to force a full upload or download (for example, because you
+accidentally deleted a deck on one side and want to restore the deck
+rather than having its deletion synchronized), you can check the &quot;On
+next sync, force changes in one direction&quot; box in
+Tools&gt;Preferences&gt;Network, then sync as usual. (You’ll be given
+the option to choose which side you want to use.)</p>
+<p>Forcing a one way sync only affects card syncing - media is synced as
+normal. If you have files that you want to remove from AnkiWeb, please
+ensure your client is fully in sync first. After syncing is up to date,
+any files you remove (eg via the Check Media function) will be removed
+from AnkiWeb on the following sync.</p>
+<h2><a class="header" href="#merging-conflicts" id="merging-conflicts">Merging Conflicts</a></h2>
+<p>Because the <a href="#setup">first sync</a> can only sync changes in one
+direction, if you have added different content to different devices or
+profiles before setting syncing up, content on one device will be lost
+if you overwrite it with the content from the other device. With some
+work, it is possible to manually merge data into a single collection.</p>
+<p>Start by taking a backup on each device/profile, in case something goes
+wrong. With the computer version you can use File&gt;Export to export
+&quot;all decks&quot; with scheduling information and media files included, and
+save the file somewhere safe. In AnkiMobile, the Add/Export button on
+the decks list screen will let you export all decks with media.</p>
+<p>Next, if one of your devices is a mobile device, synchronize it first.
+If there’s a conflict, choose &quot;upload&quot; to overwrite any existing data on
+AnkiWeb with the data from your mobile device. If both devices/profiles
+are on your computer, synchronize the device/profile with the most
+number of decks first.</p>
+<p>Now return to the other device/profile. If automatic syncing is enabled,
+a message may pop up asking if you want to upload or download. Click the
+cancel button - we don’t want to sync yet.</p>
+<p>Once you’re looking at the deck list, click the cog icon next to the
+first deck, and choose &quot;export&quot;. Export the content with scheduling
+information and media included, and save the .apkg file somewhere. Now
+you’ll need to repeat this for each top-level deck.</p>
+<p>Once all top-level decks have been exported, click the sync button at
+the top right, and choose &quot;download&quot;, which will overwrite the local
+content with the content you synced from your other device.</p>
+<p>You can now use File&gt;Import to import the .apkg files you exported
+earlier, which will merge the exported content with the existing
+content, so everything will be in one place.</p>
+<h2><a class="header" href="#firewalls" id="firewalls">Firewalls</a></h2>
+<p>Anki needs to be able to make outbound HTTPS connections to sync. At a
+minimum it must be able to connect to ankiweb.net, sync.ankiweb.net and
+syncN.ankiweb.net, where N is number between 2 and 6. These domains may
+change over time, and the IP addresses they point to may also change, so
+we recommend you allow wildcard access to *.ankiweb.net to reduce the
+chance of the firewall rules needing to be updated in the future.</p>
+<p>If you have a firewall on your machine, you should add an exception for
+Anki. If you are on a work or school network, please contact your
+network administrator for assistance - it is not something we can help
+you with.</p>
+<h2><a class="header" href="#proxies" id="proxies">Proxies</a></h2>
+<p>If you need a proxy to access the internet, Anki should automatically
+pick up your system proxy settings if you’re on Windows or OS X, and
+will honour the HTTP_PROXY environment variable if you’re on another
+platform.</p>
+<p>Anki will only be able to pick up your system settings if a proxy is
+manually configured, and does not require a password. If your system
+uses automatic proxy setup, or uses a proxy that requires a username and
+password, you will need to manually tell Anki the proxy configuration.</p>
+<p>To tell Anki your proxy settings, define a HTTPS_PROXY environmental
+variable that points to the proxy server. It will look like:</p>
+<pre><code>http://user:pass@proxy.company.com:8080
+</code></pre>
+<p>If your username or password contains an @ (eg <a href="user@workdomain.com">user@workdomain.com</a>),
+you need to change it to %40, like so:</p>
+<pre><code>http://user%40workdomain.com:pass@proxy.company.com:8080
+</code></pre>
+<p>Anki 2.0 expects to find HTTP_PROXY instead of HTTPS_PROXY.</p>
+<p>To set environmental variables on Windows, please see
+<a href="https://www.google.com/search?q=windows+set+environmental+variable">https://www.google.com/search?q=windows+set+environmental+variable</a></p>
+<p>If you’re on a Mac, please see
+<a href="http://stackoverflow.com/questions/135688/setting-environment-variables-in-os-x">http://stackoverflow.com/questions/135688/setting-environment-variables-in-os-x</a></p>
+<p>Heavily locked down networks that intercept secure connections and
+present their own certificate instead may cause Anki to throw up SSL
+errors. In such environments, you may be able to work around the errors
+with <a href="https://ankiweb.net/shared/info/878367706">https://ankiweb.net/shared/info/878367706</a></p>
+<p>An alternative solution is to install a local proxy server, and point
+that proxy server at your normal proxy server. You can then tell Anki to
+use the local proxy, which will redirect requests to the proxy you
+normally use.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="deck-options.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="profiles.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a rel="prev" href="deck-options.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a rel="next" href="profiles.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

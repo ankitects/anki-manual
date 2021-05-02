@@ -1,0 +1,484 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Math &amp; Symbols - Anki Manual</title>
+        
+        
+
+
+        <!-- Custom HTML head -->
+        
+
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        
+        <link rel="icon" href="favicon.svg">
+        
+        
+        <link rel="shortcut icon" href="favicon.png">
+        
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        
+        <link rel="stylesheet" href="css/print.css" media="print">
+        
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        
+        <link rel="stylesheet" href="fonts/fonts.css">
+        
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="src/kbd.css">
+        
+
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="intro.html">Introduction</a></li><li class="chapter-item expanded "><a href="background.html"><strong aria-hidden="true">1.</strong> Background</a></li><li class="chapter-item expanded "><a href="getting-started.html"><strong aria-hidden="true">2.</strong> Getting Started</a></li><li class="chapter-item expanded "><a href="studying.html"><strong aria-hidden="true">3.</strong> Studying</a></li><li class="chapter-item expanded "><a href="editing.html"><strong aria-hidden="true">4.</strong> Adding/Editing</a></li><li class="chapter-item expanded "><a href="templates/intro.html"><strong aria-hidden="true">5.</strong> Card Templates</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="templates/fields.html"><strong aria-hidden="true">5.1.</strong> Field Replacements</a></li><li class="chapter-item expanded "><a href="templates/generation.html"><strong aria-hidden="true">5.2.</strong> Card Generation</a></li><li class="chapter-item expanded "><a href="templates/styling.html"><strong aria-hidden="true">5.3.</strong> Styling &amp; HTML</a></li></ol></li><li class="chapter-item expanded "><a href="preferences.html"><strong aria-hidden="true">6.</strong> Preferences</a></li><li class="chapter-item expanded "><a href="deck-options.html"><strong aria-hidden="true">7.</strong> Deck Options</a></li><li class="chapter-item expanded "><a href="syncing.html"><strong aria-hidden="true">8.</strong> Syncing with AnkiWeb</a></li><li class="chapter-item expanded "><a href="profiles.html"><strong aria-hidden="true">9.</strong> Profiles</a></li><li class="chapter-item expanded "><a href="browsing.html"><strong aria-hidden="true">10.</strong> Browsing</a></li><li class="chapter-item expanded "><a href="filtered-decks.html"><strong aria-hidden="true">11.</strong> Filtered Decks</a></li><li class="chapter-item expanded "><a href="searching.html"><strong aria-hidden="true">12.</strong> Searching</a></li><li class="chapter-item expanded "><a href="importing.html"><strong aria-hidden="true">13.</strong> Importing</a></li><li class="chapter-item expanded "><a href="exporting.html"><strong aria-hidden="true">14.</strong> Exporting</a></li><li class="chapter-item expanded "><a href="files.html"><strong aria-hidden="true">15.</strong> Managing Files</a></li><li class="chapter-item expanded "><a href="stats.html"><strong aria-hidden="true">16.</strong> Statistics</a></li><li class="chapter-item expanded "><a href="media.html"><strong aria-hidden="true">17.</strong> Media</a></li><li class="chapter-item expanded "><a href="math.html" class="active"><strong aria-hidden="true">18.</strong> Math &amp; Symbols</a></li><li class="chapter-item expanded "><a href="leeches.html"><strong aria-hidden="true">19.</strong> Leeches</a></li><li class="chapter-item expanded "><a href="addons.html"><strong aria-hidden="true">20.</strong> Add-ons</a></li><li class="chapter-item expanded "><a href="misc.html"><strong aria-hidden="true">21.</strong> Miscellaneous</a></li><li class="chapter-item expanded affix "><a href="contrib.html">Contributing</a></li><li class="chapter-item expanded affix "><a href="faqs.html">FAQs</a></li><li class="chapter-item expanded affix "><a href="resources.html">Resources</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        
+                    </div>
+
+                    <h1 class="menu-title">Anki Manual</h1>
+
+                    <div class="right-buttons">
+                        
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        
+                        
+                        <a href="https://github.com/ankitects/anki-manual/" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#math-and-symbols" id="math-and-symbols">Math and Symbols</a></h1>
+<ul>
+<li><a href="#mathjax">MathJax</a></li>
+<li><a href="#latex">LaTeX</a>
+<ul>
+<li><a href="#assumed-knowledge">Assumed Knowledge</a></li>
+<li><a href="#webmobile">Web/Mobile</a></li>
+<li><a href="#example">Example</a></li>
+<li><a href="#packages">Packages</a></li>
+<li><a href="#template-conflicts">Template Conflicts</a></li>
+<li><a href="#cloze-conflicts">Cloze Conflicts</a></li>
+<li><a href="#unsafe-commands">Unsafe commands</a></li>
+</ul>
+</li>
+</ul>
+<h2><a class="header" href="#mathjax" id="mathjax">MathJax</a></h2>
+<p><a href="https://www.mathjax.org">MathJax</a> is a modern, browser-based
+typesetting system, useful for mathematical and chemical equations. It
+does not require the installation of any extra software, so it is easy
+to use, and it is recommended for most users.</p>
+<p>MathJax is supported out of the box on Anki 2.1+, AnkiMobile, and
+AnkiDroid 2.9+.</p>
+<p>To try it out:</p>
+<ol>
+<li>
+<p>Type the following in a field:</p>
+<pre><code> \sqrt{x}
+</code></pre>
+</li>
+<li>
+<p>Select the text you just typed.</p>
+</li>
+<li>
+<p>Click the rightmost button in the editor, and choose &quot;MathJax
+inline&quot; from the menu. Anki will change the text so it reads:</p>
+<pre><code> \(\sqrt{x}\)
+</code></pre>
+</li>
+<li>
+<p>If you click the Cards…​ button, you’ll see a preview of how the
+equation will appear when the card is reviewed.</p>
+</li>
+</ol>
+<p>Anki’s MathJax support expects content in TeX format. If you’re not
+familiar with TeX formatting, please see <a href="https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference">this
+cheatsheet</a>.
+Please note that point 2 does not apply in Anki - Anki uses <code>\(</code> and
+<code>\)</code> for inline equations, and <code>\[</code> and <code>\]</code> for display equations.</p>
+<p>If you want to use newlines in a MathJax expression, please use
+<kbd>Shift</kbd>+<kbd>Enter</kbd> instead of just <kbd>Enter</kbd>, as a normal newline will prevent
+MathJax from working correctly.</p>
+<p>Anki includes built in support for mhchem for rendering chemical
+equations. Please see the 'chemical equations' section and the following
+sections for more information:
+<a href="https://mhchem.github.io/MathJax-mhchem/">https://mhchem.github.io/MathJax-mhchem/</a></p>
+<h2><a class="header" href="#latex" id="latex">LaTeX</a></h2>
+<p>LaTeX is a powerful typesetting system, useful for entering mathematical
+formulas, chemical formulas, musical notation and so on. Anki provides
+some support for LaTeX, allowing you to enter LaTeX code in your notes.
+When you review a card, Anki will call LaTeX and display the generated
+image instead.</p>
+<p>LaTeX is more work to set up, and images can only be generated with the
+computer version of Anki - though once generated, the images can be
+displayed by mobile clients. Because of the extra complexity LaTeX
+brings, it is only recommended for users that need more features than
+MathJax provides.</p>
+<h3><a class="header" href="#assumed-knowledge" id="assumed-knowledge">Assumed Knowledge</a></h3>
+<p>Anki’s LaTeX support is not turn-key: it is assumed that you know how to
+use LaTeX already, and that you have it installed. If you have no
+experience with LaTeX, please consult one of the many guides available
+on the internet. If you are having trouble with markup, please ask on a
+LaTeX forum.</p>
+<p>To install LaTeX, on Windows use MiKTeX; on OSX use MacTex, and on Linux
+use your distro’s package manager. Dvipng must also be installed.</p>
+<p>On Windows, go to Settings in MikTek’s maintenance window, and make sure
+&quot;Install missing packages on the fly&quot; is set to &quot;No&quot;, not to &quot;Ask me
+first&quot;. If you continue to have difficulties, one user reported that
+running Anki as an administrator until all the packages were fetched
+helped.</p>
+<p>On OSX, LaTeX has only been tested with MacTex and BasicTex. If you use
+BasicTex, you need to install dvipng separately, with the following
+command:</p>
+<pre><code>sudo tlmgr update --self; sudo tlmgr install dvipng
+</code></pre>
+<p>The command may not be on the path, so you may need to provide the full
+path, eg /usr/local/texlive/2014basic/bin/x86_64-darwin/tlmgr.</p>
+<p>If you are not using the above LaTeX packages, you will need to use the
+<a href="https://ankiweb.net/shared/info/937148547">edit LaTeX</a> add-on to specify
+the full path to latex and dvipng.</p>
+<h3><a class="header" href="#webmobile" id="webmobile">Web/Mobile</a></h3>
+<p>When you review a card with LaTeX on it, Anki will generate an image for
+that LaTeX and place the image in your collection’s media folder for
+future use. The web &amp; mobile clients will display these images if they
+already exist, but can not generate the images on their own.</p>
+<p>To avoid having to review all your cards at least once before you can
+study on the other clients, Anki can generate the images in bulk for
+you. To generate all the images, please go to Tools&gt;Check Media.
+After that, syncing should upload the generated media to AnkiWeb and the
+other clients.</p>
+<h3><a class="header" href="#example" id="example">Example</a></h3>
+<p>The most general way to input LaTeX content is to surround it with
+[latex][/latex] tags. There’s a shortcut button for this documented
+in the <a href="editing.html">editor</a> section.</p>
+<p>[latex] tags must be used inside a field - placing them in the card
+template will <a href="templates/fields.html">cause problems</a>.</p>
+<p>For example, entering the following on the front of an Anki flashcard:</p>
+<pre><code>Does [latex]\begin{math}\sum_{k = 1}^{\infty}\frac{1}{k}\end{math}[/latex] converge?
+</code></pre>
+<p>will produce this when the flashcard is viewed:</p>
+<p><img src="math/convergence_question.png" alt="convergence question" /></p>
+<p>The formula in the example above is called a 'text formula', because it
+is displayed right within the non-mathematical text. In contrast, the
+following example shows a 'displayed formula':</p>
+<pre><code>Does the sum below converge?
+
+[latex]\begin{displaymath}\sum_{k = 1}^{\infty}\frac{1}{k}\end{displaymath}[/latex]
+</code></pre>
+<p><img src="math/convergence_question_2.png" alt="convergence question 2" /></p>
+<p>'Text formulas' and 'display formulas' are the most common type of LaTeX
+expressions, so Anki provides abbreviated versions of them. Expressions
+of the form:</p>
+<pre><code>[latex]\begin{math}...\end{math}[/latex]
+</code></pre>
+<p>can be shortened to</p>
+<pre><code>[$]...[/$]
+</code></pre>
+<p>and expressions of the form</p>
+<pre><code>[latex]\begin{displaymath}...\end{displaymath}[/latex]
+</code></pre>
+<p>can be shortened to</p>
+<pre><code>[$$]...[/$$]
+</code></pre>
+<p>For example, the two LaTeX snippets shown before are equivalent to</p>
+<pre><code>Does [$]\sum_{k = 1}^{\infty}\frac{1}{k}[/$] converge?
+</code></pre>
+<p>and</p>
+<pre><code>Does the sum below converge?
+
+[$$]\sum_{k = 1}^{\infty}\frac{1}{k}[/$$]
+</code></pre>
+<p>respectively.</p>
+<h3><a class="header" href="#packages" id="packages">Packages</a></h3>
+<p>Anki allows you to customize the LaTeX preamble so you can import custom
+packages for chemistry, music and so on. For example, imagine you find
+an example file for chemtex on the internet:</p>
+<pre><code>\documentclass[a4paper,12pt]{report}
+\usepackage{chemtex}
+\begin{document}
+
+\initial
+\begin{figure}[h]\centering
+\parbox{.3\textwidth}{\ethene{H}{H$_3$C}{CH$_3$}{Br}}
+\hfil
+\parbox{.3\textwidth}{\cbranch{H}{S}{H}{S}{C}{S}{}{S}{H}
+  \xi=-200 \cright{}{Q}{C}{D}{O}{S}{OH}}
+\hfil
+\parbox{.3\textwidth}{\hetisix{Q}{Q}{Q}{Q}{Q}{Q}{O}{Q}{O}
+  \xi=-171 \fuseup{Q}{Q}{Q}{Q}{D}{Q}{D}{Q}{D}}
+\caption{Chemie mit {\tt CHEMTEX}\label{a1}}
+\end{figure}
+
+\end{document}
+</code></pre>
+<p>Firstly, follow the documentation of the package and MiKTeX/MacTex in
+order to install the package. To check the package is working, you’ll
+want to put code like the above into a .latex file and test if you can
+compile it from the command line. Once you’ve confirmed that the package
+is available and working, we can integrate it with Anki.</p>
+<p>To use the package with Anki, click &quot;Add&quot; in the main window, then click
+the note type selection button. Click the &quot;Manage&quot; button, then select
+the note type you plan to use and click &quot;Options&quot;. The LaTeX header and
+footer are shown. The header will look something like:</p>
+<pre><code>\documentclass[12pt]{article}
+\special{papersize=3in,5in}
+\usepackage{amssymb,amsmath}
+\pagestyle{empty}
+\setlength{\parindent}{0in}
+\begin{document}
+</code></pre>
+<p>To use chemtex, you’d add the usepackage line in the earlier example, so
+it looks like:</p>
+<pre><code>\documentclass[12pt]{article}
+\special{papersize=3in,5in}
+\usepackage{amssymb,amsmath}
+\usepackage{chemtex}
+\pagestyle{empty}
+\setlength{\parindent}{0in}
+\begin{document}
+</code></pre>
+<p>After that, you should be able to include lines like the following in
+your Anki cards:</p>
+<pre><code>[latex]\ethene{H}{H$_3$C}{CH$_3$}{Br}[/latex]
+</code></pre>
+<h3><a class="header" href="#template-conflicts" id="template-conflicts">Template Conflicts</a></h3>
+<p>As of Anki 2.1.20 / AnkiMobile 2.0.56 / AnkiDroid 2.13, this workaround is no
+longer required, as <code>{{field}}</code> text inside fields no longer causes problems. If
+you need to support older versions and want to keep using this syntax, please
+make sure you place the <code>{{=&lt;% %&gt;=}}</code> string at the very top of your front and
+back template, as recent Anki versions will not recognize it anywhere but the
+start.</p>
+<p>For older versions:</p>
+<p>It’s not uncommon for {{ and }} to pop up in LaTeX code when writing
+mathematical equations. To ensure that your LaTeX equations don’t
+conflict with Anki’s field replacements, it’s possible to change the
+separator to something else.</p>
+<p>For example, if you have a template:</p>
+<pre><code>{{latex field}}
+</code></pre>
+<p>Changing it to the following will make it unlikely that the LaTeX will
+conflict:</p>
+<pre><code>{{=&lt;% %&gt;=}}
+&lt;%latex field%&gt;
+</code></pre>
+<h3><a class="header" href="#cloze-conflicts" id="cloze-conflicts">Cloze Conflicts</a></h3>
+<p>Cloze deletions are terminated with <code>}}</code>, which can conflict with a <code>}}</code>
+appearing in your LaTeX. To prevent LaTeX from being interpreted as a closing
+cloze marker, you can put a space between any double closing braces that do not
+indicate the end of the cloze, so</p>
+<pre><code>{{c1::[$]\frac{foo}{\frac{bar}{baz}}[/$] blah blah blah.}}
+</code></pre>
+<p>will not work, but</p>
+<pre><code>{{c1::[$]\frac{foo}{\frac{bar}{baz} }[/$] blah blah blah.}}
+</code></pre>
+<p>will (and LaTeX ignores spaces in math mode, so your equation will
+render the same). If you want to avoid adding the extra space into the
+rendered text (for example, when you are making Cloze cards for learning
+programming languages), another option is to use a HTML comment when
+editing the card in HTML mode:</p>
+<pre><code>{{c1::[$]\frac{foo}{\frac{bar}{baz}&lt;!-- --&gt;}[/$] blah blah blah.}}
+</code></pre>
+<p>You may use either workaround if you need to use the <code>::</code> character
+sequence within the Cloze-deleted text. The first card generated for the
+following note text will read <code>[type] in C++ is a type-safe union</code>:</p>
+<pre><code>{{c1::std:&lt;!-- --&gt;:variant::~type~}} in C++ is a {{c2::type-safe union}}
+</code></pre>
+<h3><a class="header" href="#unsafe-commands" id="unsafe-commands">Unsafe commands</a></h3>
+<p>Anki prohibits certain commands like \input or \def from being used on
+cards or in templates, because allowing them could allow malicious
+shared decks to damage your system. (To be on the safe side, these
+commands are prohibited even in comments, so if you’re getting this
+error but don’t think you’ve used one, please double-check any comments
+you have in your headers, templates, and cards.) If you need to use
+these commands, please add them to a system package and import that
+package as described in the previous section.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="media.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="leeches.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a rel="prev" href="media.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a rel="next" href="leeches.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

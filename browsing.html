@@ -1,0 +1,509 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Browsing - Anki Manual</title>
+        
+        
+
+
+        <!-- Custom HTML head -->
+        
+
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        
+        <link rel="icon" href="favicon.svg">
+        
+        
+        <link rel="shortcut icon" href="favicon.png">
+        
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        
+        <link rel="stylesheet" href="css/print.css" media="print">
+        
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        
+        <link rel="stylesheet" href="fonts/fonts.css">
+        
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="src/kbd.css">
+        
+
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="intro.html">Introduction</a></li><li class="chapter-item expanded "><a href="background.html"><strong aria-hidden="true">1.</strong> Background</a></li><li class="chapter-item expanded "><a href="getting-started.html"><strong aria-hidden="true">2.</strong> Getting Started</a></li><li class="chapter-item expanded "><a href="studying.html"><strong aria-hidden="true">3.</strong> Studying</a></li><li class="chapter-item expanded "><a href="editing.html"><strong aria-hidden="true">4.</strong> Adding/Editing</a></li><li class="chapter-item expanded "><a href="templates/intro.html"><strong aria-hidden="true">5.</strong> Card Templates</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="templates/fields.html"><strong aria-hidden="true">5.1.</strong> Field Replacements</a></li><li class="chapter-item expanded "><a href="templates/generation.html"><strong aria-hidden="true">5.2.</strong> Card Generation</a></li><li class="chapter-item expanded "><a href="templates/styling.html"><strong aria-hidden="true">5.3.</strong> Styling &amp; HTML</a></li></ol></li><li class="chapter-item expanded "><a href="preferences.html"><strong aria-hidden="true">6.</strong> Preferences</a></li><li class="chapter-item expanded "><a href="deck-options.html"><strong aria-hidden="true">7.</strong> Deck Options</a></li><li class="chapter-item expanded "><a href="syncing.html"><strong aria-hidden="true">8.</strong> Syncing with AnkiWeb</a></li><li class="chapter-item expanded "><a href="profiles.html"><strong aria-hidden="true">9.</strong> Profiles</a></li><li class="chapter-item expanded "><a href="browsing.html" class="active"><strong aria-hidden="true">10.</strong> Browsing</a></li><li class="chapter-item expanded "><a href="filtered-decks.html"><strong aria-hidden="true">11.</strong> Filtered Decks</a></li><li class="chapter-item expanded "><a href="searching.html"><strong aria-hidden="true">12.</strong> Searching</a></li><li class="chapter-item expanded "><a href="importing.html"><strong aria-hidden="true">13.</strong> Importing</a></li><li class="chapter-item expanded "><a href="exporting.html"><strong aria-hidden="true">14.</strong> Exporting</a></li><li class="chapter-item expanded "><a href="files.html"><strong aria-hidden="true">15.</strong> Managing Files</a></li><li class="chapter-item expanded "><a href="stats.html"><strong aria-hidden="true">16.</strong> Statistics</a></li><li class="chapter-item expanded "><a href="media.html"><strong aria-hidden="true">17.</strong> Media</a></li><li class="chapter-item expanded "><a href="math.html"><strong aria-hidden="true">18.</strong> Math &amp; Symbols</a></li><li class="chapter-item expanded "><a href="leeches.html"><strong aria-hidden="true">19.</strong> Leeches</a></li><li class="chapter-item expanded "><a href="addons.html"><strong aria-hidden="true">20.</strong> Add-ons</a></li><li class="chapter-item expanded "><a href="misc.html"><strong aria-hidden="true">21.</strong> Miscellaneous</a></li><li class="chapter-item expanded affix "><a href="contrib.html">Contributing</a></li><li class="chapter-item expanded affix "><a href="faqs.html">FAQs</a></li><li class="chapter-item expanded affix "><a href="resources.html">Resources</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        
+                    </div>
+
+                    <h1 class="menu-title">Anki Manual</h1>
+
+                    <div class="right-buttons">
+                        
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        
+                        
+                        <a href="https://github.com/ankitects/anki-manual/" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#browsing" id="browsing">Browsing</a></h1>
+<ul>
+<li><a href="#table-modes">Table Modes</a></li>
+<li><a href="#sidebar">Sidebar</a>
+<ul>
+<li><a href="#search-tool">Search Tool</a></li>
+<li><a href="#selection-tool">Selection Tool</a></li>
+<li><a href="#saved-searches">Saved Searches</a></li>
+<li><a href="#editing-items">Editing Items</a></li>
+<li><a href="#finding-items">Finding Items</a></li>
+</ul>
+</li>
+<li><a href="#search-box">Search Box</a></li>
+<li><a href="#cardnote-table">Card/Note Table</a>
+<ul>
+<li><a href="#rows">Rows</a></li>
+<li><a href="#columns">Columns</a></li>
+</ul>
+</li>
+<li><a href="#editing-area">Editing Area</a></li>
+<li><a href="#menus-and-actions">Menus and Actions</a>
+<ul>
+<li><a href="#edit">Edit</a></li>
+<li><a href="#notes">Notes</a></li>
+<li><a href="#cards">Cards</a></li>
+<li><a href="#go">Go</a></li>
+</ul>
+</li>
+<li><a href="#find-and-replace">Find and Replace</a></li>
+<li><a href="#finding-duplicates">Finding Duplicates</a></li>
+</ul>
+<p>The Browse window allows you to search through your cards and notes, and edit
+them. It is opened by clicking <strong>Browse</strong> in the main window, or by pressing
+<kbd>B</kbd>. It is comprised of three sections: the <em>sidebar</em> on the
+left, the <em>card/note table</em> on the top right, and the <em>editing area</em> on the bottom
+right. By positioning the mouse between two sections, it is possible to click
+and drag to expand one section and shrink the other.</p>
+<h2><a class="header" href="#table-modes" id="table-modes">Table Modes</a></h2>
+<p>Anki 2.1.43+ offers two modes to show either cards or notes in the data table.
+You can change the current mode by clicking the switch at the top, to the left
+of the search area, or pressing <kbd>Alt</kbd>+<kbd>T</kbd>. The switch also
+indicates if <strong>C</strong>ards or <strong>N</strong>otes are currently shown.</p>
+<p><strong>Note:</strong> For the sake of simplicity, this manual generally assumes the Cards
+mode to be the active one. Whenever selecting/finding/etc. “cards” is mentioned,
+the reader may substitute it for “cards or notes depending on the active mode”.</p>
+<h2><a class="header" href="#sidebar" id="sidebar">Sidebar</a></h2>
+<p>The <em>sidebar</em> on the left allows quick access to common search terms. On Anki
+2.1.43+, it also provides a searchbar, facilities to edit tags and decks and a
+choice of two different tools, which are discussed in the following sections.
+You can switch tools using the toolbar at the top of the sidebar or the shortcuts
+<kbd>Alt</kbd>+<kbd>1</kbd>/<kbd>2</kbd>.</p>
+<h3><a class="header" href="#search-tool" id="search-tool">Search Tool</a></h3>
+<p>With this tool, the sidebar behaves as in previous versions: Clicking on an item
+will search for it.</p>
+<p>You can hold down <kbd>Ctrl</kbd> (<kbd>Command</kbd> on Mac) while clicking in
+order to append the clicked item to the current search with an AND condition,
+instead of starting a new search. If you wanted to show learning cards that were
+also in the German deck for instance, you could click on &quot;Learning&quot;,
+then <kbd>Ctrl</kbd>-click on &quot;German&quot;.</p>
+<p>You can hold down <kbd>Shift</kbd> to create an OR search instead of an AND. For
+example, you could click one deck, then <kbd>Shift</kbd>-click another to show
+cards from either of the decks in the same view.</p>
+<p>You can hold down <kbd>Alt</kbd> (<kbd>Option</kbd> on Mac) in order to reverse the
+search (prepend a <code>-</code>) – for instance, to show all cards in a current deck that
+do <em>not</em> have a certain tag. <kbd>Alt</kbd>/<kbd>Option</kbd> can be combined with
+either <kbd>Ctrl</kbd> or <kbd>Shift</kbd> (e.g., <kbd>Ctrl</kbd>+<kbd>Alt</kbd>-clicking
+will result in adding a new search term that is negated).</p>
+<p>On Anki 2.1.39+, you can also hold down both <kbd>Ctrl</kbd> and
+<kbd>Shift</kbd> when clicking a search term to replace all occurences of the
+same kind of search with the new one.
+Let’s say you had previously typed in a complicated search expression like
+<code>deck:Swahili (is:due or tag:important)</code>
+and now want to perform the same search for your Urdu deck. You can
+<kbd>Ctrl</kbd>+<kbd>Shift</kbd>-click the Urdu deck in the sidebar to obtain the
+according search expression:
+<code>deck:Urdu (is:due or tag:important)</code>.</p>
+<h3><a class="header" href="#selection-tool" id="selection-tool">Selection Tool</a></h3>
+<p>The Selection tool allows for selecting multiple items at the same time by <kbd>Ctrl</kbd>-
+and <kbd>Shift</kbd>-clicking. It also enables drag and drop to reorder decks and
+tags.</p>
+<p>Here is an example: Say you have the tags <code>Math</code>, <code>Calculus</code> and <code>Algebra</code>.
+Click on the <code>Calculus</code> tag, then <kbd>Ctrl</kbd>-click on the <code>Algebra</code> tag. Now both
+tags are selected, click and drag any of the two onto the <code>Math</code> tag to make them
+both children of this tag. Behind the curtains, Anki has renamed the two tags to
+<code>Math::Calculus</code> and <code>Math::Algebra</code> respectively and updated your notes accordingly.</p>
+<p>Another use case for selecting multiple items is searching: If you right-click on
+a selection of items, you can choose <strong>Search &gt; All/Any Selected Items</strong>. This
+can be combined with keyboard modifiers as described in <a href="#search-tool">Search Tool</a>
+to append the resulting search to the current search.</p>
+<h3><a class="header" href="#saved-searches" id="saved-searches">Saved Searches</a></h3>
+<p>If you regularly search for the same thing,
+you can save the current search by right-clicking the topmost item in the sidebar,
+choosing “Save Current Search” and typing in a name.</p>
+<h3><a class="header" href="#editing-items" id="editing-items">Editing Items</a></h3>
+<p>You can delete or rename tags, decks and saved searches directly from the sidebar,
+via the right-click menu, or by using a shortcut key (<kbd>Del</kbd> and
+<kbd>F2</kbd> on Windows). Deleting even works for multiple items at once
+(see <a href="#selection-tool">Selection Tool</a>).</p>
+<h3><a class="header" href="#finding-items" id="finding-items">Finding Items</a></h3>
+<p>To find a certain item in the sidebar tree, type part of its name into the searchbar
+at the top to temporarily hide all items not matching the search.</p>
+<h2><a class="header" href="#search-box" id="search-box">Search Box</a></h2>
+<p>Above the card list is a search box. You can type in various things
+there to search for cards. For information on the search syntax,
+see <a href="searching.html">Searching</a>.</p>
+<h2><a class="header" href="#cardnote-table" id="cardnote-table">Card/Note Table</a></h2>
+<p>The table's rows represent cards or notes that match the current search.
+When you click on a row, the corresponding note will be shown in the bottom section.</p>
+<h3><a class="header" href="#rows" id="rows">Rows</a></h3>
+<p>If you drag the mouse or hold <kbd>Ctrl</kbd> or <kbd>Command</kbd> to select multiple
+rows, the editor will be temporarily hidden. Various operations (such as
+changing the deck) can operate on multiple cards or notes at once, independent
+of the active mode. Therefore in Cards mode, a note is considered to be selected
+if any of its cards is selected, and in Notes mode, a card is considered to be selected
+if its note is selected.</p>
+<p>Other operations (like showing card info) only operate on a single, the so-called
+<em>current</em>, card or note, which is usually the one that was last left- or rightclicked.
+In Cards Mode, again, the current note is the note of the current card and in Notes
+mode, the current card is the first card of the current note.</p>
+<p>The background color will change depending on the card and note. In Cards mode,
+the first match will be used:</p>
+<ol>
+<li>if the card is flagged, use the flag color,</li>
+<li>if the card is suspended, yellow,</li>
+<li>if the card's note is marked, purple.</li>
+</ol>
+<p>In Notes mode, color is only applied to marked notes.<br />
+For more information about marked notes and suspended cards, see <a href="studying.html#editing-and-more">Editing and
+More</a>.</p>
+<h3><a class="header" href="#columns" id="columns">Columns</a></h3>
+<p>The columns are configurable: right click on one (or <kbd>Ctrl</kbd>-click on a
+Mac) to choose which columns you’d like to see.
+You can drag columns to reorder them. Clicking on a column will sort by that column;
+click again to reverse the sort order. Note that you can't sort by the Question
+and Answer columns.</p>
+<p>All columns are available for both <a href="#table-modes">Cards and Notes mode</a>
+but sometimes with slightly different names and data. The following table lists
+the behaviours for both modes.</p>
+<!-- prettier-ignore -->
+<table><thead><tr><th>Column</th><th>Cards mode</th><th>Notes mode</th></tr></thead><tbody>
+<tr><td>Answer</td><td>The back side of the card in one line with the question stripped. You can also choose a <a href="templates/styling.html#browser-appearance">custom format</a> in the card type editor instead.</td><td>The same as in Cards mode, only for the first card of the note.</td></tr>
+<tr><td>Card(s)</td><td>The name of the card's template.</td><td>The number of cards the note has.</td></tr>
+<tr><td>Card Modified</td><td>The last time changes were made to the card (e.g., when you reviewed the card and the review history and interval were updated).</td><td>The last time changes were made to one of the note's cards.</td></tr>
+<tr><td>Created</td><td>The same as in Notes mode for the card's note.</td><td>The date the note was created.</td></tr>
+<tr><td>Deck</td><td>The name of the deck the card is in.</td><td>The number of different decks the note's cards are in, or the deck name if all cards are in the same deck.</td></tr>
+<tr><td>Due</td><td>The due date for cards in review or (re)learning, and the position in the new card queue for new cards. The line is wrapped in brackets if the card is suspended or buried. Sorting is done by type and only then by date or position.</td><td>The due date for the note's next due review or (re)learning card that is not suspended, buried or in a filtered deck.</td></tr>
+<tr><td>(Avg.) Ease</td><td>The card's ease if it is not new.</td><td>The average ease for the note's cards that are not new.</td></tr>
+<tr><td>(Avg.) Interval</td><td>The card's interval if the card is in review or relearning.</td><td>The average interval for the note's cards that are in review or relearning.</td></tr>
+<tr><td>Lapses</td><td>How often the card was rated “Again”.</td><td>The total lapses for all cards of the note.</td></tr>
+<tr><td>Note</td><td>The same as in Notes mode for the card's note.</td><td>The name of the note's notetype.</td></tr>
+<tr><td>Note Modified</td><td>The same as in Notes mode for the card's note.</td><td>The last time the note (e.g. the content of a field) was edited.</td></tr>
+<tr><td>Question</td><td>The front side of the card in one line. You can also choose a <a href="templates/styling.html#browser-appearance">custom format</a> in the card type editor instead.</td><td>The same as in Cards mode, only for the first card of the note.</td></tr>
+<tr><td>Reviews</td><td>How often the card has been reviewed.</td><td>The total review count for all cards of the note.</td></tr>
+<tr><td>Sort Field</td><td>The same as in Notes mode for the card's note.</td><td>The content of the note's field that is defined as the notetype's sort field. Only this one field can be displayed and sorted by. You can change the sort field by clicking <strong>Fields...</strong> in the editing area.</td></tr>
+<tr><td>Tags</td><td>The same as in Notes mode for the card's note.</td><td>The note's tags.</td></tr>
+</tbody></table>
+<h2><a class="header" href="#editing-area" id="editing-area">Editing Area</a></h2>
+<p>The bottom right area displays the note of the currently selected row. For
+more information about cards and notes, see <a href="getting-started.html">Getting Started</a>.
+For more information on formatting buttons, see <a href="editing.html">Editing</a>.</p>
+<p>You can see a preview of what the currently selected card would look
+like when reviewing by clicking the <strong>Preview</strong> button next to the search
+box. Note that this will not display any type answer fields on your
+cards, which makes it easier to preview cards quickly.
+In Notes mode, the preview is shown for the first card of the selected note.</p>
+<h2><a class="header" href="#menus-and-actions" id="menus-and-actions">Menus and Actions</a></h2>
+<p>At the top of the browser window, you find a toolbar with various menus which in
+turn offer various actions that can be performed in the browser.</p>
+<h3><a class="header" href="#edit" id="edit">Edit</a></h3>
+<!-- prettier-ignore -->
+<table><thead><tr><th>Name</th><th>Action</th></tr></thead><tbody>
+<tr><td>Undo</td><td>Revert the last performed operation.</td></tr>
+<tr><td>Select All</td><td>Select all table rows.</td></tr>
+<tr><td>Select Notes</td><td>Show only the currently selected notes and select all rows.</td></tr>
+<tr><td>Invert Selection</td><td>Select unselected and deselect selected rows.</td></tr>
+<tr><td>Create Filtered Deck</td><td>Show the <a href="filtered-decks.html#creating-manually">filtered deck</a> dialog and set the current browser search as a filter. Use <kbd>Alt</kbd> / <kbd>Option</kbd> to set the second filter instead (requires scheduler version 2+).</td></tr>
+</tbody></table>
+<h3><a class="header" href="#notes" id="notes">Notes</a></h3>
+<p>Most of the following actions operate on the selected notes. They are also available through
+a context menu when a selected row is right-clicked in Notes mode. In Cards mode,
+they can be found in a submenu of the context menu.</p>
+<!-- prettier-ignore -->
+<table><thead><tr><th>Name</th><th>Action</th></tr></thead><tbody>
+<tr><td>Add Notes</td><td>Open the <a href="editing#adding-cards-and-notes">Add</a> dialog.</td></tr>
+<tr><td>Export Notes</td><td>Open the <a href="exporting.html">Export</a> dialog.</td></tr>
+<tr><td>Add Tags</td><td>Add provided tags to all selected notes.</td></tr>
+<tr><td>Remove Tags</td><td>Enter tags and remove them from all selected notes.</td></tr>
+<tr><td>Clear Unused Tags</td><td>Remove all tags from the sidebar that are not used by any notes.</td></tr>
+<tr><td>Toggle Mark</td><td>If the current note is marked (i.e., has the <em>Marked</em> tag), unmark all selected notes. If the current is not marked, mark all selected notes.</td></tr>
+<tr><td>Change Notetype</td><td>Convert the selected notes from one type to another. For example, imagine you have a <em>Russian</em> notetype and a <em>Computer</em> notetype, and you accidentally added some computer-related text into a <em>Russian</em> note. You can use this option to fix that mistake. The scheduling of cards is not affected. Changing the type of a note requires a one-way sync.</td></tr>
+<tr><td>Find Duplicates</td><td>Open the <a href="#finding-duplicates">Duplicates</a> dialog.</td></tr>
+<tr><td>Find and Replace</td><td>Open the <a href="#find-and-replace">Find and Replace</a> dialog.</td></tr>
+<tr><td>Manage Notetypes</td><td>Open the <a href="editing#adding-a-note-type">Notetypes</a> dialog.</td></tr>
+<tr><td>Delete</td><td>Delete all selected notes and their cards. It is not possible to remove individual cards, as individual cards are controlled by the <a href="templates/intro.html">templates</a>.</td></tr>
+</tbody></table>
+<h3><a class="header" href="#cards" id="cards">Cards</a></h3>
+<p>The following actions operate on the currently selected cards. They are also available through
+a context menu when a selected row is rightclicked in Cards mode. In Notes mode,
+they can be found in a submenu of the context menu.</p>
+<!-- prettier-ignore -->
+<table><thead><tr><th>Name</th><th>Action</th></tr></thead><tbody>
+<tr><td>Change Deck</td><td>Move currently selected cards to a different deck.</td></tr>
+<tr><td>Set Due Date</td><td>Move cards to the end of the new card queue, or reschedule them as a review card on a given date. The second option is useful if you have imported already-learnt material, and you want to start it off with higher initial intervals. For example, entering <code>60-90</code> will give all the imported cards an initial interval of 2 to 3 months. The card’s revision history is not cleared when rescheduling: rescheduling changes the current state of a card, but not its history. If you want to hide the history, you will need to export your notes as a text file, delete the notes, and then import the text file again, creating new notes.</td></tr>
+<tr><td>Forget</td><td>Move currently selected cards back to the new queue, and reset their ease. Their review history is preserved.</td></tr>
+<tr><td>Reposition</td><td>Change the order new cards will appear in. You can find out the existing positions by enabling the <em>due</em> column, as described in the <a href="#cardnote-table">table</a> section above. If you run the reposition command when multiple cards are selected, it will apply increasing numbers to each card in turn. By default the number increases by one for each card, but this can be adjusted by changing the &quot;step&quot; setting. The <strong>Shift position of existing cards</strong> option allows you to insert cards between currently existing ones, pushing the currently existing ones apart. For instance, if you have five cards and you want to move 3, 4, and 5 between 1 and 2, selecting this setting would cause the cards to end up in the order 1, 3, 4, 5, 2. By contrast, if you turn this option off, 1 and 2 will get the same position number (and it will thus be unpredictable which of the cards with the same number comes up first). Please note that when enabled, any card with a higher position will be modified, and all of those changed cards will need to be sent the next time you sync.</td></tr>
+<tr><td>Toggle Suspend</td><td><a href="studying.html#editing-and-more">Suspend</a> or unsuspend all selected cards, depending on whether the current card is suspended or not.</td></tr>
+<tr><td>Flag</td><td>Toggle the flags of all selected cards. Whether a flag is added or removed depends on whether the current card has the chosen flag.</td></tr>
+<tr><td>Info</td><td>Show various information about the current card, including its review history. For more information, see <a href="stats.html#card-info">Card Info</a>.</td></tr>
+</tbody></table>
+<h3><a class="header" href="#go" id="go">Go</a></h3>
+<p>This menu exists to provide keyboard shortcuts to jump to various
+parts of the browser, and to go up and down the card list.</p>
+<h2><a class="header" href="#find-and-replace" id="find-and-replace">Find and Replace</a></h2>
+<p>To replace text in selected notes, you can either:</p>
+<ul>
+<li>
+<p>Right click on selected notes in the <em>card list</em>, and click <strong>Find and Replace</strong>.</p>
+</li>
+<li>
+<p>In the <strong>Browser</strong> window, click <strong>Notes</strong> in the menu bar and click <strong>Find and Replace</strong>.</p>
+</li>
+</ul>
+<p>The regular expression option allows you to perform complex replacements.
+For example, given the following text in a field:</p>
+<pre><code>&lt;img src=&quot;pic.jpg&quot; /&gt;
+</code></pre>
+<p>Searching for:</p>
+<pre><code>&lt;img src=&quot;(.+?)&quot; /&gt;
+</code></pre>
+<p>and on Anki 2.1.28, replacing with:</p>
+<pre><code>${1}
+</code></pre>
+<p>on older Anki versions, replacing with:</p>
+<pre><code>\1
+</code></pre>
+<p>Will change the card to:</p>
+<pre><code>pic.jpg
+</code></pre>
+<p>A full discussion on regular expressions is outside the scope of this document.
+There are a number of syntax guides available on the web:</p>
+<ul>
+<li>For Anki 2.1.28+, see <a href="https://docs.rs/regex/1.3.9/regex/#syntax">https://docs.rs/regex/1.3.9/regex/#syntax</a>.</li>
+<li>For older Anki versions, see <a href="http://docs.python.org/library/re.html">http://docs.python.org/library/re.html</a>.</li>
+</ul>
+<h2><a class="header" href="#finding-duplicates" id="finding-duplicates">Finding Duplicates</a></h2>
+<p>You can use the <strong>Notes &gt; Find Duplicates</strong> option to search for notes that
+have the same content. When you open the window, Anki will look at all
+of your note types and present a list of all possible fields. If you
+want to look for duplicates in the <em>Back</em> field, you’d select it from
+the list and then click <strong>Search</strong>.</p>
+<p>By default, it will search in all note types that have the field you provided.
+This differs from the duplicate check when you add cards manually, which
+is limited to a single note type.</p>
+<p>The <strong>Optional filter</strong> text box allows you to narrow down where Anki will
+look for duplicates. If you only want to search for duplicates in the
+&quot;French Vocab&quot; and &quot;French Verbs&quot; note types, you would enter:</p>
+<pre><code>note:'french vocab' or note:'french verbs'
+</code></pre>
+<p>Or you might want to look only for duplicates in a particular deck, so
+you could use:</p>
+<pre><code>deck:'myDeck'
+</code></pre>
+<p>The search syntax is the same as used when searching in the browser.
+For more information, see <a href="searching.html">Searching</a>.</p>
+<p>You can click one of the links in the search results list to display the
+duplicate notes in that set. If the search brings up a large number of
+duplicates, you may wish to instead click the <strong>Tag Duplicates</strong> button,
+which will tag all matching notes with <em>duplicate</em>. You can then search
+for this tag in the browser and handle them all from the same screen.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="profiles.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="filtered-decks.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a rel="prev" href="profiles.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a rel="next" href="filtered-decks.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

@@ -1,0 +1,553 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Managing Files - Anki Manual</title>
+        
+        
+
+
+        <!-- Custom HTML head -->
+        
+
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        
+        <link rel="icon" href="favicon.svg">
+        
+        
+        <link rel="shortcut icon" href="favicon.png">
+        
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        
+        <link rel="stylesheet" href="css/print.css" media="print">
+        
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        
+        <link rel="stylesheet" href="fonts/fonts.css">
+        
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="src/kbd.css">
+        
+
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="intro.html">Introduction</a></li><li class="chapter-item expanded "><a href="background.html"><strong aria-hidden="true">1.</strong> Background</a></li><li class="chapter-item expanded "><a href="getting-started.html"><strong aria-hidden="true">2.</strong> Getting Started</a></li><li class="chapter-item expanded "><a href="studying.html"><strong aria-hidden="true">3.</strong> Studying</a></li><li class="chapter-item expanded "><a href="editing.html"><strong aria-hidden="true">4.</strong> Adding/Editing</a></li><li class="chapter-item expanded "><a href="templates/intro.html"><strong aria-hidden="true">5.</strong> Card Templates</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="templates/fields.html"><strong aria-hidden="true">5.1.</strong> Field Replacements</a></li><li class="chapter-item expanded "><a href="templates/generation.html"><strong aria-hidden="true">5.2.</strong> Card Generation</a></li><li class="chapter-item expanded "><a href="templates/styling.html"><strong aria-hidden="true">5.3.</strong> Styling &amp; HTML</a></li></ol></li><li class="chapter-item expanded "><a href="preferences.html"><strong aria-hidden="true">6.</strong> Preferences</a></li><li class="chapter-item expanded "><a href="deck-options.html"><strong aria-hidden="true">7.</strong> Deck Options</a></li><li class="chapter-item expanded "><a href="syncing.html"><strong aria-hidden="true">8.</strong> Syncing with AnkiWeb</a></li><li class="chapter-item expanded "><a href="profiles.html"><strong aria-hidden="true">9.</strong> Profiles</a></li><li class="chapter-item expanded "><a href="browsing.html"><strong aria-hidden="true">10.</strong> Browsing</a></li><li class="chapter-item expanded "><a href="filtered-decks.html"><strong aria-hidden="true">11.</strong> Filtered Decks</a></li><li class="chapter-item expanded "><a href="searching.html"><strong aria-hidden="true">12.</strong> Searching</a></li><li class="chapter-item expanded "><a href="importing.html"><strong aria-hidden="true">13.</strong> Importing</a></li><li class="chapter-item expanded "><a href="exporting.html"><strong aria-hidden="true">14.</strong> Exporting</a></li><li class="chapter-item expanded "><a href="files.html" class="active"><strong aria-hidden="true">15.</strong> Managing Files</a></li><li class="chapter-item expanded "><a href="stats.html"><strong aria-hidden="true">16.</strong> Statistics</a></li><li class="chapter-item expanded "><a href="media.html"><strong aria-hidden="true">17.</strong> Media</a></li><li class="chapter-item expanded "><a href="math.html"><strong aria-hidden="true">18.</strong> Math &amp; Symbols</a></li><li class="chapter-item expanded "><a href="leeches.html"><strong aria-hidden="true">19.</strong> Leeches</a></li><li class="chapter-item expanded "><a href="addons.html"><strong aria-hidden="true">20.</strong> Add-ons</a></li><li class="chapter-item expanded "><a href="misc.html"><strong aria-hidden="true">21.</strong> Miscellaneous</a></li><li class="chapter-item expanded affix "><a href="contrib.html">Contributing</a></li><li class="chapter-item expanded affix "><a href="faqs.html">FAQs</a></li><li class="chapter-item expanded affix "><a href="resources.html">Resources</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        
+                    </div>
+
+                    <h1 class="menu-title">Anki Manual</h1>
+
+                    <div class="right-buttons">
+                        
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        
+                        
+                        <a href="https://github.com/ankitects/anki-manual/" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#managing-files-and-your-collection" id="managing-files-and-your-collection">Managing Files and Your Collection</a></h1>
+<ul>
+<li><a href="#checking-your-collection">Checking Your Collection</a></li>
+<li><a href="#file-locations">File Locations</a></li>
+<li><a href="#startup-options">Startup Options</a></li>
+<li><a href="#dropbox-and-file-syncing">DropBox and File Syncing</a></li>
+<li><a href="#network-filesystems">Network Filesystems</a></li>
+<li><a href="#running-from-a-flash-drive">Running from a Flash Drive</a></li>
+<li><a href="#backups">Backups</a></li>
+<li><a href="#inaccessible-harddisk">Inaccessible Harddisk</a></li>
+<li><a href="#permissions-of-temp-folder">Permissions of Temp Folder</a></li>
+<li><a href="#corrupt-collections">Corrupt Collections</a>
+<ul>
+<li><a href="#linuxosx">Linux/OSX</a></li>
+<li><a href="#windows">Windows</a></li>
+<li><a href="#final-step">Final Step</a></li>
+</ul>
+</li>
+</ul>
+<h2><a class="header" href="#checking-your-collection" id="checking-your-collection">Checking Your Collection</a></h2>
+<p>It’s a good idea to occasionally check your collection file for
+problems. You can do this via the Tools&gt;Check Database menu item.
+Checking the database ensures the file is not corrupted, rebuilds some
+internal structures, and optimizes the file.</p>
+<p>When you check the database, your tag list is also rebuilt. When you
+delete individual decks or cards, Anki does not update the list of used
+tags, as it’s inefficient to do so. If you want to clear old tags out
+from the list that are no longer in use, checking your database is the
+way to do it.</p>
+<p>Please note that Anki will automatically optimize your collection once
+every 2 weeks. This optimization ensures the collection performs well,
+but it does not check for errors or rebuild the tag list when
+automatically optimizing.</p>
+<h2><a class="header" href="#file-locations" id="file-locations">File Locations</a></h2>
+<p>On <strong>Windows</strong>, the latest Anki versions store your Anki files in your
+appdata folder. You can access it by opening the file manager, and
+typing <code>%APPDATA%\Anki2</code> in the location field. Older versions of Anki
+stored your Anki files in a folder called <code>Anki</code> in your <code>Documents</code>
+folder.</p>
+<p>On <strong>Mac</strong> computers, recent Anki versions store all their files in the
+<code>~/Library/Application Support/Anki2</code> folder. The Library folder is
+hidden by default, but can be revealed in Finder by holding down the
+option key while clicking on the Go menu. If you’re on an older Anki
+version, your Anki files will be in your <code>Documents/Anki</code> folder.</p>
+<p>On <strong>Linux</strong>, recent Anki versions store your data in
+<code>~/.local/share/Anki2</code>, or <code>$XDG_DATA_HOME/Anki2</code> if you have set a
+custom data path. Older versions of Anki stored your files in
+<code>~/Documents/Anki</code> or <code>~/Anki</code>.</p>
+<p>Within the Anki folder, the program-level and profile-level preferences
+are stored in a file called prefs.db.</p>
+<p>There is also a separate folder for each profile. The folder contains:</p>
+<ul>
+<li>
+<p>Your notes, decks, cards and so on in a file called collection.anki2</p>
+</li>
+<li>
+<p>Your audio and images in a collection.media folder</p>
+</li>
+<li>
+<p>A backups folder</p>
+</li>
+<li>
+<p>Some system files</p>
+</li>
+</ul>
+<p>You should never copy or move your collection while Anki is open. Doing
+so could cause your collection to become corrupted. Please don’t move or
+modify the other files in the folder either.</p>
+<h2><a class="header" href="#startup-options" id="startup-options">Startup Options</a></h2>
+<p>If you have made a destructive change on one computer and have an
+undamaged copy on another computer, you may wish to start Anki without
+syncing in order to use the full sync option without first downloading
+the changes. Similarly, if you are experiencing problems with Anki, you
+might want to (or might be instructed to) disable add-ons temporarily to
+see if one might be causing the problem. You can do both of these things
+by holding down the <kbd>Shift</kbd> key while starting Anki.</p>
+<p>It is possible to specify a custom folder location during startup. This
+is an advanced feature that is primarily intended to be used with
+portable installations, and we recommend you use the default location in
+most circumstances.</p>
+<p>The syntax to specify an alternate folder is as follows:</p>
+<pre><code>anki -b /path/to/anki/folder
+</code></pre>
+<ul>
+<li>
+<p>If you have multiple profiles, you can pass -p &lt;name&gt; to load
+a specific profile.</p>
+</li>
+<li>
+<p>To change the interface language, use -l &lt;iso 639-1 language
+code&gt;, such as &quot;-l ja&quot; for Japanese.</p>
+</li>
+</ul>
+<p>If you always want to use a custom folder location, you can modify your
+shortcut to Anki. On Windows, right-click on the shortcut, choose
+Properties, select the Shortcut tab, and add &quot;-b
+\path\to\data\folder&quot; after the path to the program, which should
+leave you with something like</p>
+<pre><code>&quot;C:\Program Files\Anki\anki.exe&quot; -b &quot;C:\AnkiDataFolder&quot;
+</code></pre>
+<p>You can also use this technique with the -l option to easily use Anki in
+different languages.</p>
+<p>On Windows, you should use a backslash (\) not a forward slash (/).</p>
+<p>On a Mac there is no easy way to alter the behaviour when clicking on
+the Anki icon, but it is possible to start Anki with a custom base
+folder from a terminal:</p>
+<pre><code>open /Applications/Anki.app --args -b ~/myankifolder
+</code></pre>
+<p>Alternatively, you can define the environment variable &quot;ANKI_BASE&quot;.
+On Windows, you can define the environment variable with:</p>
+<pre><code>set &quot;ANKI_BASE=C:/path/to/AnkiDataFolder&quot;
+</code></pre>
+<p>On Linux and Mac OS, you can use:</p>
+<pre><code>export ANKI_BASE=&quot;/path/to/AnkiDataFolder&quot;
+</code></pre>
+<h2><a class="header" href="#dropbox-and-file-syncing" id="dropbox-and-file-syncing">DropBox and File Syncing</a></h2>
+<p>We do not recommend you sync your Anki folder directly with a
+third-party synchronization service, as it can lead to database
+corruption when files are synced while in use.</p>
+<p>If you just want to synchronize your media, you can link external
+folders into services like DropBox. Please see <a href="http://web.archive.org/web/20180919153730/http://www.dropboxwiki.com/tips-and-tricks/sync-other-folders">DropboxWiki: Sync
+Folders Outside Dropbox (archive.org)</a>
+for more info.</p>
+<p>If you wish to keep your collection in sync as well, it is strongly
+recommended that you create a script that copies your files from your
+synced folder to a local folder, launches Anki, and then copies the
+files back when Anki is closed. This will ensure that the files are
+never synchronized while they are open.</p>
+<h2><a class="header" href="#network-filesystems" id="network-filesystems">Network Filesystems</a></h2>
+<p>We strongly recommend you have Anki store your files on a local hard
+disk, as network filesystems can lead to database corruption. If a
+network filesystem is your only option, regular use of Tools&gt;Check
+Database to detect corruption is recommended.</p>
+<h2><a class="header" href="#running-from-a-flash-drive" id="running-from-a-flash-drive">Running from a Flash Drive</a></h2>
+<p>On Windows, Anki can be installed on a USB / flash drive and run as a
+portable application. The following example assumes your USB drive is
+drive G.</p>
+<ul>
+<li>
+<p>Copy the \Program Files\Anki folder to the flash drive, so you
+have a folder like G:\Anki.</p>
+</li>
+<li>
+<p>Create a text file called G:\anki.bat with the following text:</p>
+<p>g:\anki\anki.exe -b g:\ankidata</p>
+</li>
+</ul>
+<p>If you would like to prevent the black command prompt window from
+remaining open, you can instead use:</p>
+<pre><code>start /b g:\anki\anki.exe -b g:\ankidata
+</code></pre>
+<ul>
+<li>Double-clicking on anki.bat should start Anki with the user data
+stored in G:\ankidata.</li>
+</ul>
+<p>The full path including drive letter is required - if you try using
+<code>\anki\anki.exe</code> instead you will find syncing stops working.</p>
+<p>Media syncing with AnkiWeb may not work if your flash drive is formatted
+as FAT32. Please format the drive as NTFS to ensure media syncs
+correctly.</p>
+<h2><a class="header" href="#backups" id="backups">Backups</a></h2>
+<p>Each time your collection is closed (when closing Anki, switching
+profiles, or synchronizing your deck), Anki exports your collection into
+the backups folder. By default Anki will store up to 30 backups; you can
+adjust this in the <a href="preferences.html">preferences</a>.</p>
+<p>Automatic backups do not protect against disk or computer failure, and
+do not extend to your media. To keep your collections safe, please
+consider making manual backups too.</p>
+<p>The easiest way to make a manual backup is to use the File&gt;Export
+menu item to export all decks with scheduling and media information
+included, which will save your data to a .colpkg file.</p>
+<p>If you want to back up multiple profiles and your add-ons as well, you
+can make a complete copy of your <a href="#file-locations">Anki folder</a>. Please make sure
+you close Anki first, as backups may be corrupt if run while Anki is
+open.</p>
+<p>To restore from an automatic backup:</p>
+<ol>
+<li>
+<p>From the File menu, select Switch Profile to show the Profiles
+window.</p>
+</li>
+<li>
+<p>Select the profile you wish to restore on the left.</p>
+</li>
+<li>
+<p>Click the Open Backup…​ button.</p>
+</li>
+<li>
+<p>Choose Yes and the available backups will appear.</p>
+</li>
+<li>
+<p>Open a backup based on the date you wish to restore to.</p>
+</li>
+<li>
+<p>Check that that the backup that was restored was the one you
+intended. If you wish to try a different backup, return to step 1.</p>
+</li>
+<li>
+<p>Anki has disabled automatic syncing and backups while you check the
+backup. When you’re happy with the backup you’ve selected, quit Anki
+and start it again to return to the normal behaviour.</p>
+</li>
+</ol>
+<p>Anki also logs deleted notes to a text file called deleted.txt in your
+profile folder. These notes are in a text format that can be read by
+File&gt;Import, though please note the import feature only supports a
+single note type at one time, so if you have deleted notes from
+different note types, you’ll need to split the file into separate files
+for each note type first.</p>
+<h2><a class="header" href="#inaccessible-harddisk" id="inaccessible-harddisk">Inaccessible Harddisk</a></h2>
+<p>If Anki can’t write to files in the <a href="#file-locations">Anki folder</a>, a message
+will be displayed on startup saying that Anki can’t write to the
+harddisk, and Anki will close. If you’re unsure how to fix the
+permissions, please contact someone near you who is knowledgeable about
+computers and can help you out.</p>
+<h2><a class="header" href="#permissions-of-temp-folder" id="permissions-of-temp-folder">Permissions of Temp Folder</a></h2>
+<p>Anki uses the system’s temporary folder to store temporary data. If the
+permissions of this folder have been changed from the default settings
+by a rogue app or buggy antivirus app, Anki will not function properly.</p>
+<p>If you’re on a Windows 7 machine, the general steps to fix the problem
+are listed below. As this is somewhat complicated, please ask someone
+knowledgeable about Windows if you are not sure.</p>
+<ol>
+<li>
+<p>Click on the start bar, and type in %temp% (including the percents),
+then hit <kbd>Enter</kbd>.</p>
+</li>
+<li>
+<p>Go up one folder, and locate the temp folder. Right click on it, and
+choose Properties.</p>
+</li>
+<li>
+<p>In the security tab, click on Advanced.</p>
+</li>
+<li>
+<p>Click on the Owner tab. If you’re not listed as the owner, click the
+button to take ownership.</p>
+</li>
+<li>
+<p>On the permissions tab, ensure that you have full control. On a
+default W7 install the control will actually be inherited from
+c:\users\your-username.</p>
+</li>
+</ol>
+<h2><a class="header" href="#corrupt-collections" id="corrupt-collections">Corrupt Collections</a></h2>
+<p>Anki uses a file format that is robust against program and computer
+crashes, but it’s still possible for your collection to become corrupt
+if the files are modified while Anki is open, stored on a network drive,
+or corrupted by a bug.</p>
+<p>When you run Tools&gt;Check Database, you will receive a message if Anki
+detects the file has been corrupted. <strong>The best way to recover from this
+is to restore from the most recent <a href="#backups">automatic backup</a></strong>, but
+if your backup is too old, then you can attempt to repair the corruption
+instead.</p>
+<p>On Linux, make sure sqlite3 is installed. On a Mac, it should be
+installed already. On Windows, download
+<a href="http://www.sqlite.org/sqlite-3_6_23.zip">http://www.sqlite.org/sqlite-3_6_23.zip</a>.</p>
+<p>Next, create a backup of your collection.anki2 file, in case something
+goes wrong with the steps below.</p>
+<h3><a class="header" href="#linuxosx" id="linuxosx">Linux/OSX</a></h3>
+<p>Open a terminal, change to the folder your collection is located in, and
+type:</p>
+<pre><code>sqlite3 collection.anki2 .dump &gt; dump.txt
+</code></pre>
+<p>Open the resulting dump.txt file in a text editor, and look at the final
+line. If it reads &quot;rollback;&quot;, change it to &quot;commit;&quot;</p>
+<p>Then run the following in a terminal:</p>
+<pre><code>cat dump.txt | sqlite3 temp.file
+</code></pre>
+<p>Make sure you use temp.file - do not put collection.anki2 on the right,
+or you will blank out the file. When you’re done, proceed to the final
+step.</p>
+<h3><a class="header" href="#windows" id="windows">Windows</a></h3>
+<p>Copy the <code>sqlite3.exe</code> program and your deck to your desktop. Then go to
+<strong>Start&gt;Run</strong> and type in <code>cmd.exe</code>.</p>
+<p>If you’re on a recent Windows, the command prompt may not start on your
+desktop. If you don’t see desktop displayed in the command prompt, type
+something like the following, replacing 'administrator' with your login
+name.</p>
+<pre><code>cd C:\Users\Administrator\Desktop
+</code></pre>
+<p>Then type:</p>
+<pre><code>sqlite3 collection.anki2 .dump &gt; dump.txt
+</code></pre>
+<p>Open the resulting dump.txt file in a text editor, and look at the final
+line. If it reads &quot;rollback;&quot;, change it to &quot;commit;&quot;</p>
+<p>Then run the following in a terminal:</p>
+<pre><code>type dump.txt | sqlite3 temp.file
+</code></pre>
+<p>Make sure you use temp.file - do not put collection.anki2 on the right,
+or you will blank out the file. When you’re done, proceed to the final
+step.</p>
+<h3><a class="header" href="#final-step" id="final-step">Final Step</a></h3>
+<p>Check that you didn’t get an error message, and that temp.file is not
+empty. The procedure optimizes the collection in the process, so it’s
+normal for the new file to be somewhat smaller than the old one.</p>
+<p>When you’ve confirmed the file is not empty:</p>
+<ul>
+<li>
+<p>rename the original collection.anki2 file to something else</p>
+</li>
+<li>
+<p>rename temp.file to collection.anki2</p>
+</li>
+<li>
+<p>move collection.anki2 back into your collection folder, overwriting
+the old version</p>
+</li>
+<li>
+<p>start Anki and go to Tools&gt;Check Database to make sure the
+collection has been successfully restored.</p>
+</li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="exporting.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="stats.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a rel="prev" href="exporting.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a rel="next" href="stats.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

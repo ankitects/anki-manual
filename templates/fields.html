@@ -1,0 +1,548 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Field Replacements - Anki Manual</title>
+        
+        
+
+
+        <!-- Custom HTML head -->
+        
+
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        
+        <link rel="icon" href="../favicon.svg">
+        
+        
+        <link rel="shortcut icon" href="../favicon.png">
+        
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        
+        <link rel="stylesheet" href="../css/print.css" media="print">
+        
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        
+        <link rel="stylesheet" href="../fonts/fonts.css">
+        
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="../src/kbd.css">
+        
+
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../intro.html">Introduction</a></li><li class="chapter-item expanded "><a href="../background.html"><strong aria-hidden="true">1.</strong> Background</a></li><li class="chapter-item expanded "><a href="../getting-started.html"><strong aria-hidden="true">2.</strong> Getting Started</a></li><li class="chapter-item expanded "><a href="../studying.html"><strong aria-hidden="true">3.</strong> Studying</a></li><li class="chapter-item expanded "><a href="../editing.html"><strong aria-hidden="true">4.</strong> Adding/Editing</a></li><li class="chapter-item expanded "><a href="../templates/intro.html"><strong aria-hidden="true">5.</strong> Card Templates</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../templates/fields.html" class="active"><strong aria-hidden="true">5.1.</strong> Field Replacements</a></li><li class="chapter-item expanded "><a href="../templates/generation.html"><strong aria-hidden="true">5.2.</strong> Card Generation</a></li><li class="chapter-item expanded "><a href="../templates/styling.html"><strong aria-hidden="true">5.3.</strong> Styling &amp; HTML</a></li></ol></li><li class="chapter-item expanded "><a href="../preferences.html"><strong aria-hidden="true">6.</strong> Preferences</a></li><li class="chapter-item expanded "><a href="../deck-options.html"><strong aria-hidden="true">7.</strong> Deck Options</a></li><li class="chapter-item expanded "><a href="../syncing.html"><strong aria-hidden="true">8.</strong> Syncing with AnkiWeb</a></li><li class="chapter-item expanded "><a href="../profiles.html"><strong aria-hidden="true">9.</strong> Profiles</a></li><li class="chapter-item expanded "><a href="../browsing.html"><strong aria-hidden="true">10.</strong> Browsing</a></li><li class="chapter-item expanded "><a href="../filtered-decks.html"><strong aria-hidden="true">11.</strong> Filtered Decks</a></li><li class="chapter-item expanded "><a href="../searching.html"><strong aria-hidden="true">12.</strong> Searching</a></li><li class="chapter-item expanded "><a href="../importing.html"><strong aria-hidden="true">13.</strong> Importing</a></li><li class="chapter-item expanded "><a href="../exporting.html"><strong aria-hidden="true">14.</strong> Exporting</a></li><li class="chapter-item expanded "><a href="../files.html"><strong aria-hidden="true">15.</strong> Managing Files</a></li><li class="chapter-item expanded "><a href="../stats.html"><strong aria-hidden="true">16.</strong> Statistics</a></li><li class="chapter-item expanded "><a href="../media.html"><strong aria-hidden="true">17.</strong> Media</a></li><li class="chapter-item expanded "><a href="../math.html"><strong aria-hidden="true">18.</strong> Math &amp; Symbols</a></li><li class="chapter-item expanded "><a href="../leeches.html"><strong aria-hidden="true">19.</strong> Leeches</a></li><li class="chapter-item expanded "><a href="../addons.html"><strong aria-hidden="true">20.</strong> Add-ons</a></li><li class="chapter-item expanded "><a href="../misc.html"><strong aria-hidden="true">21.</strong> Miscellaneous</a></li><li class="chapter-item expanded affix "><a href="../contrib.html">Contributing</a></li><li class="chapter-item expanded affix "><a href="../faqs.html">FAQs</a></li><li class="chapter-item expanded affix "><a href="../resources.html">Resources</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        
+                    </div>
+
+                    <h1 class="menu-title">Anki Manual</h1>
+
+                    <div class="right-buttons">
+                        
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        
+                        
+                        <a href="https://github.com/ankitects/anki-manual/" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#field-replacements" id="field-replacements">Field Replacements</a></h1>
+<ul>
+<li><a href="#basic-replacements">Basic Replacements</a></li>
+<li><a href="#newlines">Newlines</a></li>
+<li><a href="#text-to-speech">Text to Speech</a></li>
+<li><a href="#special-fields">Special Fields</a></li>
+<li><a href="#hint-fields">Hint Fields</a></li>
+<li><a href="#dictionary-links">Dictionary Links</a></li>
+<li><a href="#html-stripping">HTML Stripping</a></li>
+<li><a href="#right-to-left-text">Right To Left Text</a></li>
+<li><a href="#media--latex">Media &amp; LaTeX</a>
+<ul>
+<li><a href="#static-soundsimages">Static Sounds/Images</a></li>
+<li><a href="#field-references">Field References</a></li>
+</ul>
+</li>
+<li><a href="#checking-your-answer">Checking Your Answer</a></li>
+</ul>
+<h2><a class="header" href="#basic-replacements" id="basic-replacements">Basic Replacements</a></h2>
+<p>The most basic template looks something like this:</p>
+<pre><code>{{Front}}
+</code></pre>
+<p>When you place text within curly brackets, Anki looks for a field by
+that name, and replaces the text with the actual content of the field.</p>
+<p>Field names are case sensitive. If you have a field named <code>Front</code>,
+writing <code>{{front}}</code> will not work properly.</p>
+<p>Your templates are not limited to a list of fields. You can also include
+arbitrary text on your templates. For example, if you’re studying
+capital cities, and you’ve created a note type with a “Country” field,
+you might create a front template like this:</p>
+<pre><code>What's the capital city of {{Country}}?
+</code></pre>
+<p>The default back template will look something like this:</p>
+<pre><code>{{FrontSide}}
+
+&lt;hr id=answer&gt;
+
+{{Back}}
+</code></pre>
+<p>This means “show me the text that’s on the front side, then a divider
+line, and then the Back field”.</p>
+<p>The 'id=answer' part tells Anki where the divider is between the
+question and the answer. This allows Anki to automatically scroll to the
+spot where the answer starts when you press 'show answer' on a long card
+(especially useful on mobile devices with small screens). If you don’t
+want a horizontal line at the beginning of the answer, you can use
+another HTML element such as a paragraph or div instead.</p>
+<h2><a class="header" href="#newlines" id="newlines">Newlines</a></h2>
+<p>Card templates are like web pages, which means a special command is required
+to create a new line. For example, if you wrote the following in the template:</p>
+<pre><code>one
+two
+</code></pre>
+<p>In the preview, you’d actually see:</p>
+<pre><code>one two
+</code></pre>
+<p>To add a new line, you need to add a &lt;br&gt; code to the end of a
+line, like so:</p>
+<pre><code>one&lt;br&gt;
+two
+</code></pre>
+<p>The br code stands for &quot;(line) br(eak)&quot;.</p>
+<p>The same applies for fields. If you want to display two fields, one on
+each line, you would use</p>
+<pre><code>{{Field 1}}&lt;br&gt;
+{{Field 2}}
+</code></pre>
+<h2><a class="header" href="#text-to-speech" id="text-to-speech">Text to Speech</a></h2>
+<p>This feature requires Anki 2.1.20, or AnkiMobile 2.0.56. AnkiDroid does
+not currently support this method.</p>
+<p>To have Anki read the Front field in a US English voice, you can place
+the following in your card template:</p>
+<pre><code>{{tts en_US:Front}}
+</code></pre>
+<p>On Windows, MacOS, and iOS, Anki will use the OS’s built in voices. On
+Linux, no voices are built in, but voices can be provided by add-ons,
+such as <a href="https://ankiweb.net/shared/info/391644525">this one</a>.</p>
+<p>To see a list of all available languages/voices, place the following on
+your card template:</p>
+<pre><code>{{tts-voices:}}
+</code></pre>
+<p>If there are multiple voices that support your chosen language, you can
+specify desired voices in a list, and Anki will choose the first
+available voice. For example:</p>
+<pre><code>{{tts ja_JP voices=Apple_Otoya,Microsoft_Haruka:Field}}
+</code></pre>
+<p>This would use Otoya when on an Apple device, and Haruka when on a
+Windows PC.</p>
+<p>Specifying a different speed is possible in some TTS implementations:</p>
+<pre><code>{{tts fr_FR speed=0.8:SomeField}}
+</code></pre>
+<p>Both speed and voices are optional, but the language must be included.</p>
+<p>On a Mac, you can customize the available voices:</p>
+<ul>
+<li>
+<p>Open the System Preferences screen.</p>
+</li>
+<li>
+<p>Click on Accessibility.</p>
+</li>
+<li>
+<p>Click on Speech.</p>
+</li>
+<li>
+<p>Click on the system voice dropdown, and choose Customize.</p>
+</li>
+</ul>
+<p>Some voices sound better than others, so experiment to choose the one
+you prefer. Please note that the Siri voice can only be used by Apple
+apps. Once you’ve installed new voices, you’ll need to restart Anki for
+the new voices to become available.</p>
+<p>On Windows, some voices like Cortana can not be selected, as Microsoft
+does not make those voices available to other applications.</p>
+<p>On a cloze note type, you can make Anki read only the elided sections
+using the <code>cloze-only</code> filter, like so:</p>
+<pre><code>{{tts en_US:cloze-only:Text}}
+</code></pre>
+<p>The cloze-only filter is supported in Anki 2.1.29+ and AnkiMobile 2.0.65+.</p>
+<h2><a class="header" href="#special-fields" id="special-fields">Special Fields</a></h2>
+<p>There are some special fields you can include in your templates:</p>
+<pre><code>The note's tags: {{Tags}}
+
+The type of note: {{Type}}
+
+The card's deck: {{Deck}}
+
+The card's subdeck: {{Subdeck}}
+
+The type of card (&quot;Forward&quot;, etc): {{Card}}
+
+The content of the front template
+(only valid in back template): {{FrontSide}}
+</code></pre>
+<p>FrontSide will not automatically play any audio that was on the front side
+of the card. If you wish to have the same audio play automatically on both
+the front and back of the card, you’ll need to manually include the audio
+fields on the back as well.</p>
+<p>As with other fields, special field names are case sensitive - you must use
+<code>{{Tags}}</code> rather than <code>{{tags}}</code> for example.</p>
+<h2><a class="header" href="#hint-fields" id="hint-fields">Hint Fields</a></h2>
+<p>It’s possible to add a field to the front or back of a card, but make it
+hidden until you explicitly show it. We call this a 'hint field'. Before
+adding a hint, please bear in mind that the easier you make it to answer
+a question in Anki, the less likely you are to remember that question
+when you encounter it in real life. Please have a read about the
+'minimum information principle' on
+<a href="http://www.supermemo.com/articles/20rules.htm">http://www.supermemo.com/articles/20rules.htm</a> before proceeding.</p>
+<p>First, you’ll need to add a field to store the hint in if you have not
+already. Please see the <a href="editing.html#customizing-fields">fields</a> section if you’re not sure how
+to do this.</p>
+<p>Assuming you’ve created a field called MyField, you can tell Anki to
+include it on the card but hide it by default by adding the following to
+your template:</p>
+<pre><code>{{hint:MyField}}
+</code></pre>
+<p>This will show a link labeled “show hint”; when you click it, the
+content of the field will be displayed on the card. (If MyField is
+empty, nothing will be shown.)</p>
+<p>If you show the hint on the question and then reveal the answer, the
+hint will be hidden again. If you want to have the hint always revealed
+when the answer is shown, you will need to remove <code>{{FrontSide}}</code> from
+your back template and manually add the fields you wish to appear.</p>
+<p>It is not currently possible to use a hint field for audio — the audio
+will play regardless of whether you’ve clicked on the hint link.</p>
+<p>If you want to customize the appearance or behaviour, you’ll need to
+implement the hint field yourself. We can not provide any support for
+doing so, but the following code should get you started:</p>
+<pre><code>{{#Back}}
+﻿&lt;a class=hint href=&quot;#&quot;
+onclick=&quot;this.style.display='none';document.getElementById('hint4753594160').style.display='inline-block';return false;&quot;&gt;
+Show Back&lt;/a&gt;&lt;div id=&quot;hint4753594160&quot; class=hint style=&quot;display: none&quot;&gt;{{Back}}&lt;/div&gt;
+{{/Back}}
+</code></pre>
+<h2><a class="header" href="#dictionary-links" id="dictionary-links">Dictionary Links</a></h2>
+<p>You can also use field replacement to create dictionary links. Imagine
+you’re studying a language and your favourite online dictionary allows
+you to search for text using a web URL like:</p>
+<pre><code>http://example.com/search?q=myword
+</code></pre>
+<p>You could add an automatic link by doing the following in your template:</p>
+<pre><code>{{Expression}}
+
+&lt;a href=&quot;http://example.com/search?q={{Expression}}&quot;&gt;check in dictionary&lt;/a&gt;
+</code></pre>
+<p>The template above would allow you to search for each note’s expression
+by clicking on the link while reviewing. There is a caveat however, so
+please see the next section.</p>
+<h2><a class="header" href="#html-stripping" id="html-stripping">HTML Stripping</a></h2>
+<p>Like templates, fields are stored in HTML. In the dictionary link
+example above, if the expression contained the word &quot;myword&quot; without any
+formatting, then the HTML would be the same: &quot;myword&quot;. But when you
+include formatting in your fields, extra HTML is included. If &quot;myword&quot;
+was bolded for example, the actual HTML would be
+&quot;&lt;b&gt;myword&lt;/b&gt;&quot;.</p>
+<p>This can present a problem for things like dictionary links. In the
+above example, the dictionary link would end up being:</p>
+<pre><code>&lt;a href=&quot;http://example.com/search?q=&lt;b&gt;myword&lt;/b&gt;&quot;&gt;check in dictionary&lt;/a&gt;
+</code></pre>
+<p>The extra characters in the link would likely confuse the dictionary
+site, and you’re likely not to get any matches.</p>
+<p>To solve this, Anki provides the ability to strip formatting from fields
+when they are replaced. If you prefix a field name with text:, Anki will
+not include any formatting. So a dictionary link that worked even with
+formatted text would be:</p>
+<pre><code>&lt;a href=&quot;http://example.com/search?q={{text:Expression}}&quot;&gt;check in dictionary&lt;/a&gt;
+</code></pre>
+<h2><a class="header" href="#right-to-left-text" id="right-to-left-text">Right To Left Text</a></h2>
+<p>If you’re using a language that reads from right to left, you’ll need
+to adjust the template like so:</p>
+<pre><code>&lt;div dir=rtl&gt;{{FieldThatHasRTLTextInIt}}&lt;/div&gt;
+</code></pre>
+<h2><a class="header" href="#media--latex" id="media--latex">Media &amp; LaTeX</a></h2>
+<p>Anki does not scan templates for media references, because it is slow to
+do so. This has implications for including media on the template.</p>
+<h3><a class="header" href="#static-soundsimages" id="static-soundsimages">Static Sounds/Images</a></h3>
+<p>If you wish to include images or sounds on your cards that are the same
+for every card (eg, a company logo at the top of each card):</p>
+<ol>
+<li>
+<p>Rename the file so it starts with an underscore, eg &quot;_logo.jpg&quot;.
+The underscore tells Anki that the file is used by the template and
+it should be exported when sharing the deck.</p>
+</li>
+<li>
+<p>Add a reference to the media on your front or back template, like:</p>
+</li>
+</ol>
+<!-- -->
+<pre><code>&lt;img src=&quot;_logo.jpg&quot;&gt;
+</code></pre>
+<h3><a class="header" href="#field-references" id="field-references">Field References</a></h3>
+<p>Media references to fields are not supported. They may or may not display
+during review, and will not work when checking for unused media,
+importing/exporting, and so on. Examples that won’t work:</p>
+<pre><code>&lt;img src=&quot;{{Expression}}.jpg&quot;&gt;
+
+[sound:{{Word}}]
+
+[latex]{{Field 1}}[/latex]
+</code></pre>
+<p>Instead, you should include the media references in the field. Please
+see the <a href="../importing.html#importing-media">importing section</a> for more information.</p>
+<h2><a class="header" href="#checking-your-answer" id="checking-your-answer">Checking Your Answer</a></h2>
+<p>You can watch <a href="http://www.youtube.com/watch?v=5tYObQ3ocrw&amp;yt:cc=on">a video about this
+feature</a> on
+YouTube.</p>
+<p>The easiest way to check your answer is to click &quot;Basic&quot; at the top
+left of the card adding screen, and select &quot;Basic (type in the answer)&quot;.</p>
+<p>If you have downloaded a shared deck and would like to type in the answer
+with it, you can modify its card template. If it has a template like:</p>
+<pre><code>{{Native Word}}
+
+{{FrontSide}}
+
+&lt;hr id=answer&gt;
+
+{{Foreign Word}}
+</code></pre>
+<p>To type in the foreign word and check if you are correct, you need to
+edit your front template so that it looks like this:</p>
+<pre><code>{{Native Word}}
+{{type:Foreign Word}}
+</code></pre>
+<p>Note that we have added <code>type:</code> in front of the field we want to
+compare. Since FrontSide is on the back of the card, the type answer box
+will appear on the back as well.</p>
+<p>When reviewing, Anki will display a text box where you can type in the
+answer, and upon hitting <kbd>Enter</kbd> or showing the answer, Anki will show you
+which parts you got right and which parts you got wrong. The text box’s
+font size will be the size you configured for that field (via the
+“Fields” button when editing).</p>
+<p>This feature does not change how the cards are answered, so it’s still
+up to you to decide how well you remembered or not.</p>
+<p>Only one typing comparison can be used on a card. If you add the above
+text multiple times, it will not work. It also only supports a single
+line, so it is not useful for comparing against a field that is
+comprised on multiple lines.</p>
+<p>Anki uses a monospaced font for the answer comparison so that the
+“provided” and “correct” sections line up. If you wish to override the
+font for the answer comparison, you can put the following at the bottom
+of your styling section:</p>
+<pre><code>code#typeans { font-family: &quot;myfontname&quot;; }
+</code></pre>
+<p>Which will affect the following HTML for the answer comparison:</p>
+<pre><code>&lt;code id=typeans&gt;...&lt;/code&gt;
+</code></pre>
+<p>Advanced users can override the default type-answer colors with the css
+classes 'typeGood', 'typeBad' and 'typeMissed'. AnkiMobile supports
+'typeGood' and 'typeBad', but not 'typeMissed'.</p>
+<p>If you wish to override the size of the typing box and don’t want to
+change the font in the Fields dialog, you can override the default
+inline style using <code>!important</code>, like so:</p>
+<pre><code>#typeans { font-size: 50px !important; }
+</code></pre>
+<p>It is also possible to type in the answer for cloze deletion cards. To
+do this, add <code>{{type:cloze:Text}}</code> to both the front and back
+template, so the back looks something like this:</p>
+<pre><code>{{cloze:Text}}
+{{type:cloze:Text}}
+{{Extra}}
+</code></pre>
+<p>Note that since the cloze type does not use FrontSide, this must be
+added to both sides on a cloze note type.</p>
+<p>If there are multiple sections elided, you can separate the answers in
+the text box with a comma.</p>
+<p>Type answer boxes will not appear in the <a href="templates/intro.html">&quot;preview&quot;
+dialog</a> in the browser. When you review or look at
+the preview in the card types window, they will display.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="../templates/intro.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="../templates/generation.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a rel="prev" href="../templates/intro.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a rel="next" href="../templates/generation.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>
