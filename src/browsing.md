@@ -1,6 +1,8 @@
 # Browsing
 
+<div class="toc">
 <!-- toc -->
+</div>
 
 The Browse window allows you to search through your cards and notes, and edit
 them. It is opened by clicking **Browse** in the main window, or by pressing
