@@ -1,0 +1,32 @@
+name: github pages
+
+on:
+  push:
+    branches:
+      - main
+      - test
+
+jobs:
+  deploy:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Setup mdBook
+        uses: peaceiris/actions-mdbook@v1
+        with:
+          mdbook-version: "0.4.6"
+
+      - name: Setup mdbook-toc
+        run: |
+          curl -L -o mdbook-toc.tgz https://github.com/badboy/mdbook-toc/releases/download/0.6.3/mdbook-toc-0.6.3-x86_64-unknown-linux-gnu.tar.gz
+          tar xzf mdbook-toc.tgz -C ~/.cargo/bin
+
+      - run: mdbook build
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./book
+          cname: docs.ankiweb.net
