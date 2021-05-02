@@ -64,3 +64,4 @@ your collection will be kept.
 If you choose not to include scheduling information, Anki will assume
 that you are sharing the deck with other people, and will remove marked
 and leech tags so that they will have a clean copy of it.
+\newpage

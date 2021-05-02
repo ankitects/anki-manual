@@ -300,3 +300,4 @@ some time. And for simple subjects that are basically a list of facts,
 such as capital city names or pub quiz trivia, you probably don’t need
 external material. But if you attempt to study complex subjects without
 external material, you will probably meet with disappointing results.
+\newpage

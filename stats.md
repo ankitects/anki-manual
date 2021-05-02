@@ -229,3 +229,5 @@ answer sides of the card before selecting an ease button.
 This is 0 for learning cards, 1 for review cards, 2 for relearn cards,
 and 3 for early "cram" cards (cards being studied in a filtered deck when they
 are not due).
+
+\newpage

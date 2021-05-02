@@ -292,3 +292,4 @@ duplicate notes in that set. If the search brings up a large number of
 duplicates, you may wish to instead click the **Tag Duplicates** button,
 which will tag all matching notes with *duplicate*. You can then search
 for this tag in the browser and handle them all from the same screen.
+\newpage

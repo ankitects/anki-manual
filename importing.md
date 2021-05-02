@@ -188,3 +188,4 @@ scheduling information on all their cards will be preserved.
 
 For info on how duplicates are handled in .apkg files, please see the
 [Deck Packages](exporting.md#packaged-decks) section.
+\newpage

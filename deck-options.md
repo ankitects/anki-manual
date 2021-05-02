@@ -254,3 +254,4 @@ if you no longer want to see it in the study overview area.
 
 You can also use HTML in the description—anything that works on a note
 should be valid.
+\newpage

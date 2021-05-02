@@ -289,3 +289,4 @@ decks to catch up as follows:
     in addition to the ones that become due regularly. You can still motor
     through them when you feel like it - or you can do a specific number per
     day like you would for new cards. Up to you.
+\newpage

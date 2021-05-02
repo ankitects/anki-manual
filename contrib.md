@@ -66,3 +66,4 @@ Anki’s source code is available at <https://github.com/ankitects/anki>
 
 Before contributing, please see the README.contributing file in that
 repo.
+\newpage

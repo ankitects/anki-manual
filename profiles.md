@@ -19,3 +19,4 @@ profile A, and then importing it into profile B, repeating for any other decks
 in profile A, until everything is in profile B.
 
 AnkiDroid does not support profiles.
+\newpage

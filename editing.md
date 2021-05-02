@@ -398,3 +398,4 @@ mw.col.conf["normalize_note_text"] = False
 Any content added after that will remain untouched. The trade-off is that you may
 find it difficult to search for the content if you're switching between operating
 systems, or pasting content from mixed sources.
+\newpage

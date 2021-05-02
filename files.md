@@ -323,3 +323,4 @@ When you’ve confirmed the file is not empty:
 
 - start Anki and go to Tools&gt;Check Database to make sure the
   collection has been successfully restored.
+\newpage

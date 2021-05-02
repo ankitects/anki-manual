@@ -44,3 +44,4 @@ If you press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Return</kbd> instead of just 
 try to print the result rather than doing what you asked it to. If you
 are getting unexpected errors, please make sure you’re not holding down
 the <kbd>Shift</kbd> key.
+\newpage

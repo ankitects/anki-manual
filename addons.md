@@ -17,3 +17,4 @@ accidentally made a mistake when editing an add-on, you can use the
 
 To learn how to write your own add-ons, please see the [add-on writing
 guide](https://addon-docs.ankiweb.net).
+\newpage

@@ -24,3 +24,4 @@ Anki uses a program called mpv (and mplayer as a fallback) in order to support
 sounds and videos. A wide variety of file formats are supported, but not all of
 these formats will work on AnkiWeb and the mobile clients. MP3 audio and
 MP4 video seems to be the most universally supported.
+\newpage

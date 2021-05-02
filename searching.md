@@ -390,3 +390,4 @@ development or otherwise working closely with the database.
 
 Object IDs will not work in the mobile clients, and are not intended to
 be used in filtered decks at the moment.
+\newpage

@@ -200,3 +200,4 @@ An alternative solution is to install a local proxy server, and point
 that proxy server at your normal proxy server. You can then tell Anki to
 use the local proxy, which will redirect requests to the proxy you
 normally use.
+\newpage

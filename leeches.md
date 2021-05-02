@@ -43,3 +43,4 @@ perhaps you’re trying to memorize something without fully understanding
 it. Sometimes spending some time changing the way the card is phrased
 can help. It’s also a good time to think about making a mnemonic to help
 you remember.
+\newpage
