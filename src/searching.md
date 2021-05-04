@@ -318,7 +318,7 @@ Rating searches had been limited to 31 days before version 2.1.39.
 
 ### First Answered
 
-On version 2.1.43+, you can also search for the very first review only:
+On version 2.1.45+, you can also search for the very first review only:
 
 `introduced:1`  
 cards answered for the first time today

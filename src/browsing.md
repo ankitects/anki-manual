@@ -11,7 +11,7 @@ and drag to expand one section and shrink the other.
 
 ## Table Modes
 
-Anki 2.1.43+ offers two modes to show either cards or notes in the data table.
+Anki 2.1.45+ offers two modes to show either cards or notes in the data table.
 You can change the current mode by clicking the switch at the top, to the left
 of the search area, or pressing <kbd>Alt</kbd>+<kbd>T</kbd>. The switch also
 indicates if **C**ards or **N**otes are currently shown.
@@ -23,7 +23,7 @@ the reader may substitute it for â€œcards or notes depending on the active modeâ
 ## Sidebar
 
 The _sidebar_ on the left allows quick access to common search terms. On Anki
-2.1.43+, it also provides a searchbar, facilities to edit tags and decks and a
+2.1.45+, it also provides a searchbar, facilities to edit tags and decks and a
 choice of two different tools, which are discussed in the following sections.
 You can switch tools using the toolbar at the top of the sidebar or the shortcuts
 <kbd>Alt</kbd>+<kbd>1</kbd>/<kbd>2</kbd>.
