@@ -14,18 +14,18 @@ AnkiDroid 2.9+.
 
 To try it out:
 
-1. Type the following in a field:
+1.  Type the following in a field:
 
         \sqrt{x}
 
-2. Select the text you just typed.
+2.  Select the text you just typed.
 
-3. Click the rightmost button in the editor, and choose "MathJax
+3.  Click the rightmost button in the editor, and choose "MathJax
     inline" from the menu. Anki will change the text so it reads:
 
         \(\sqrt{x}\)
 
-4. If you click the Cards…​ button, you’ll see a preview of how the
+4.  If you click the Cards…​ button, you’ll see a preview of how the
     equation will appear when the card is reviewed.
 
 Anki’s MathJax support expects content in TeX format. If you’re not
@@ -42,6 +42,8 @@ Anki includes built in support for mhchem for rendering chemical
 equations. Please see the 'chemical equations' section and the following
 sections for more information:
 <https://mhchem.github.io/MathJax-mhchem/>
+
+It is possible to [customize some settings](https://faqs.ankiweb.net/customizing-mathjax.html).
 
 ## LaTeX
 
