@@ -275,15 +275,12 @@ fields&quot; checkbox when importing. You may wish to turn this off if you’re
 trying to import cards whose content contains angle brackets or other
 HTML syntax.</p>
 <p>If you wish to use HTML for formatting your file but also wish to
-include angle brackets, you may write them differently:</p>
-<ul>
-<li>
-<p>For &quot;&lt;&quot;, use &quot;&lt;&quot;</p>
-</li>
-<li>
-<p>For &quot;&gt;&quot;, use &quot;&gt;&quot;</p>
-</li>
-</ul>
+include angle brackets or ampersands, you may use the following replacements:</p>
+<table><thead><tr><th>Character</th><th>Replacement</th></tr></thead><tbody>
+<tr><td>&lt;</td><td><code>&amp;lt;</code></td></tr>
+<tr><td>&gt;</td><td><code>&amp;gt;</code></td></tr>
+<tr><td>&amp;</td><td><code>&amp;amp;</code></td></tr>
+</tbody></table>
 <h3><a class="header" href="#importing-media" id="importing-media">Importing Media</a></h3>
 <p>If you want to include audio and pictures from a text file import, copy
 the files into the <a href="files.html">collection.media folder</a>. <strong>Do not put
