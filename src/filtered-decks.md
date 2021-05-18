@@ -245,24 +245,18 @@ delay.
 
 ## Rescheduling
 
-By default, Anki will return cards to their home decks with altered
-scheduling based on your performance in the filtered deck. In the old
-scheduler, if you disable the **reschedule cards based on my answers** option,
-Anki will return the cards in the same state they were in when they were moved
-into the filtered deck. This is useful for quickly flipping through
-material.
-
-If you have disabled rescheduling, the "Good" and "Easy" buttons will
-display no time above them when pressing them would cause the card to
-return to its home deck with its original scheduling.
-
-Please note that new cards are returned to the end of the new card
-queue, rather than the start of it.
+By default, Anki will return cards to their home decks with altered scheduling,
+based on your performance in the filtered deck. There is a **reschedule
+cards based on my answers** option available which alters this behaviour.
 
 In the [new scheduler](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html),
-there is no longer an option to disable scheduling changes. Instead, you will
-have access to a simple "preview mode". The new card order does not get forgotten
-when previewing.
+when rescheduling is disabled, cards are shown in a simple "preview mode", and
+when they are returned to the original deck, they are returned exactly as they
+started.
+
+In the old scheduler, cards were presented more similarly to how they normally
+are, but studying cards had side effects, and the original position of new cards
+was lost when you studied them.
 
 ## Catching Up
 
