@@ -29,6 +29,39 @@ Options are not retroactive. For example, if you change an option that
 controls the delay after failing a card, cards that you failed prior to
 changing the option will have the old delay, not the new one.
 
+## Daily Limits
+**New cards/day** tells Anki how many new cards you’d like introduced on
+each day you open the program. Missed days will not cause the cards to
+pile up. The limit applies to the current deck and subdecks. This means
+if "French" has a limit of 20 cards and "French::Lesson 1" and
+"French::Lesson 2" both have limits of 15 cards, you’ll get 15 cards
+from lesson 1 but only 5 cards from lesson 2.
+
+Studying new cards will temporarily increase the number of reviews you
+need to do a day, as freshly learnt material needs to be repeated a
+number of times before the delay between repetitions can increase
+appreciably. If you are consistently learning 20 new cards a day, you
+can expect your daily reviews to be roughly about 200 cards/day. You can
+decrease the reviews required by introducing fewer new cards each day,
+or by turning off new card display until your review burden decreases.
+More than one Anki user has excitedly studied hundreds of new cards over
+their first few days of using the program, and then become overwhelmed
+by the reviews required.
+
+If using 2021 scheduler (v3), please keep in mind that the new count 
+is capped by the review count. If you have limits of 200 reviews 
+and 20 new cards, and 190 reviews are due, only 10 new cards will be 
+introduced.
+
+**Maximum reviews/day** allows you to set an upper limit on the number
+of reviews to show each day. When this limit is reached, Anki will not
+show any more review cards for the day, even if there are some waiting.
+If you study consistently, this setting can help to smooth out
+occasional peaks in due card counts, and can save you from a heart
+attack when returning to Anki after a week off. When reviews have been
+hidden due to this option, a message will appear in the congratulations
+screen, suggesting you consider increasing the limit if you have time.
+
 ## New Cards
 
 **Steps** controls the number of learning repetitions, and the delay
@@ -74,24 +107,6 @@ introduced consistently - otherwise you could end up in a state where
 some notes had all their cards introduced and other notes had only one
 or two. Please see the "bury related" option below for more info.
 
-**New cards/day** tells Anki how many new cards you’d like introduced on
-each day you open the program. Missed days will not cause the cards to
-pile up. The limit applies to the current deck and subdecks. This means
-if "French" has a limit of 20 cards and "French::Lesson 1" and
-"French::Lesson 2" both have limits of 15 cards, you’ll get 15 cards
-from lesson 1 but only 5 cards from lesson 2.
-
-Studying new cards will temporarily increase the number of reviews you
-need to do a day, as freshly learnt material needs to be repeated a
-number of times before the delay between repetitions can increase
-appreciably. If you are consistently learning 20 new cards a day, you
-can expect your daily reviews to be roughly about 200 cards/day. You can
-decrease the reviews required by introducing fewer new cards each day,
-or by turning off new card display until your review burden decreases.
-More than one Anki user has excitedly studied hundreds of new cards over
-their first few days of using the program, and then become overwhelmed
-by the reviews required.
-
 **Graduating interval** is the delay between answering 'Good' on a card
 with no steps left, and seeing the card again.
 
@@ -114,14 +129,7 @@ of multiple notes to be included.
 
 ## Reviews
 
-**Maximum reviews/day** allows you to set an upper limit on the number
-of reviews to show each day. When this limit is reached, Anki will not
-show any more review cards for the day, even if there are some waiting.
-If you study consistently, this setting can help to smooth out
-occasional peaks in due card counts, and can save you from a heart
-attack when returning to Anki after a week off. When reviews have been
-hidden due to this option, a message will appear in the congratulations
-screen, suggesting you consider increasing the limit if you have time.
+
 
 **Easy bonus** allows you to set the difference in intervals between
 answering 'Good' and 'Easy' on a card. For instance, with the default
