@@ -48,10 +48,10 @@ More than one Anki user has excitedly studied hundreds of new cards over
 their first few days of using the program, and then become overwhelmed
 by the reviews required.
 
-If using 2021 scheduler (v3), please keep in mind that the new count 
-is capped by the review count. If you have limits of 200 reviews 
-and 20 new cards, and 190 reviews are due, only 10 new cards will be 
-introduced.
+If using [2021 scheduler (v3)](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html),
+please keep in mind that the new count is capped by the review count. 
+If you have limits of 200 reviews and 20 new cards, and 190 reviews are
+due, only 10 new cards will be introduced.
 
 **Maximum reviews/day** allows you to set an upper limit on the number
 of reviews to show each day. When this limit is reached, Anki will not
@@ -64,7 +64,7 @@ screen, suggesting you consider increasing the limit if you have time.
 
 ## New Cards
 
-**Steps** controls the number of learning repetitions, and the delay
+**Learning Steps** controls the number of learning repetitions, and the delay
 between them. Please see the [learning](studying.md#learning) section for an
 overview of how the steps work.
 
@@ -92,6 +92,12 @@ cards will be shown after reviews are completed. They are included in
 the review count rather than the learning count, due to the way they are
 handled internally.
 
+**Graduating interval** is the delay between answering 'Good' on a card
+with no steps left, and seeing the card again.
+
+**Easy interval** is the delay between answering 'easy' on a learning
+card and seeing it in review mode for the first time.
+
 **Order** controls whether Anki should add new cards into the deck
 randomly, or in order. When you change this option, Anki will re-sort
 the decks using the current option group. One caveat with random order
@@ -107,11 +113,9 @@ introduced consistently - otherwise you could end up in a state where
 some notes had all their cards introduced and other notes had only one
 or two. Please see the "bury related" option below for more info.
 
-**Graduating interval** is the delay between answering 'Good' on a card
-with no steps left, and seeing the card again.
 
-**Easy interval** is the delay between answering 'easy' on a learning
-card and seeing it in review mode for the first time.
+
+
 
 **Starting ease** controls the easiness that cards start out with. It is
 set when a card graduates from learning for the first time. It defaults
