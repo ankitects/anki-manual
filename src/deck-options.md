@@ -106,7 +106,12 @@ The delay between answering 'easy' on a learning
 card and seeing it in review mode for the first time.
 
 ### Insertion Order
-Controls whether Anki should add new cards into the deck. The options are:
+Controls the position (due #) new cards are assigned when you add
+new cards. Cards with a lower due number will be show first when 
+studying. Changing this option will automatically update the 
+existing position of new cards. 
+
+The options are:
 
 - Sequential (older cards first)
 - Random
@@ -177,28 +182,59 @@ Decks / subdecks are always ordered alphabetically, so if you
 want to move a particular deck to the top or to the buttom of 
 the screen, you just need to change it's name. 
 - Position (lowest first): gather cards from all decks before they are
-- sorted. This ensures cards appear in stric position order (#1, #2, ...)
-- , even if the parent limit is not high enough to see cards from all decks. 
+sorted. This ensures cards appear in stric position order (#1, #2, ...)
+, even if the parent limit is not high enough to see cards from all decks. 
 - Position (highest first): gather cards from all decks before they are sorted.
--  This ensures cards appear in stric position order (#n, #n-1, …), even 
--  if the parent limit is not high enough to see cards from all decks. 
+This ensures cards appear in stric position order (#n, #n-1, …), even 
+if the parent limit is not high enough to see cards from all decks. 
 
 
-Please, read more about how position works [here](https://docs.ankiweb.net/browsing.html#cards)
+Please, read more about how position works [here](https://docs.ankiweb.net/browsing.html#cards) and on the 'Insertion
+Order' section above. 
 
 ### New card sort order 
+Controls how cards are sorted **after they have been gathered**. 
+By default, Anki sorts by template first, to avoid multiple cards of the
+same note from being shown in sucession. 
+The availiable options are:
+- Card template, then lowest position. 
+- Card template, then highest position. 
+- Card template, then random. 
+- Lowest position
+- Highest position
+- Random
 
 ### New/review priority 
+Controls when Anki will show new cards in relation with review cards. 
+- Mix new and review cards
+- Show new cards after reviews
+- Show new cards before reviews
 
 ### Interday learning/review priority 
+When to show (re)learning cards that cross a day boundary. 
+- Mix with reviews
+- Show after reviews
+- Show before reviews
 
 ### Review sort order 
+The default order prioritizes cards that have been waiting longest, so
+that if you have a backlog of reviews, the longest waiting ones will 
+appear first. If you have a large backlog that will take more than a few
+days to clear, or wish to see cards in subdeck order, you may find the 
+alternate sort orders preferable.
+Options are:
+- Due date, then random
+- Due date, then deck
+- Deck, then due date
+- Ascending intervals
+- Descending intervals
 
+## Timer
+### Maximum answer seconds 
+The maximum number of seconds to record for a single review. If an answer exceeds this time (because you stepped away from the screen for example), the time taken will be recorded as the limit you have set.
 
-
-Turning off **bury related…​** will prevent Anki from [burying
-siblings](studying.md#siblings-and-burying), and instead Anki will just try to avoid showing
-siblings directly after one another in the same session.
+### Show answer timer 
+In the review screen, show a timer that counts the number of seconds you're taking to review each card.
 _____
 
 
