@@ -126,6 +126,12 @@ behaviour for lapsed reviews is to reset the interval to 1 (ie, make it
 due tomorrow), and put it in the learning queue for a refresher in 10
 minutes. This behaviour can be customized with the options listed below.
 
+### Relearning steps. 
+The same ss learning steps for new cards. When you fail a card (press “Again”)
+the card enters re-learning phase (same as learning phase) and before it 
+becomes a review card again, you’ll have to pass all re-learning steps 
+or press easy on the card.
+
 If you leave the steps blank, Anki will not place the card back in the
 learning queue, and it will be rescheduled as a review with its new
 interval determined by the settings below.
@@ -139,18 +145,14 @@ would accomplish the same thing as the "Good" button. If you have 2 or
 more steps, "Easy" is not hidden, to allow you to graduate cards from
 the queue before all of their steps are finished.
 
-'New interval' controls how much Anki should reduce the previous
-interval. It reduces the previous interval to the percentage you
-specify. If a card had a 200 day interval, the default of 0% would
-reduce the interval to 0 (but see the next option). If you set this
-option to 50%, the card would have its interval reduced to 100 days
-instead.
 
-'Minimum interval' allows you to apply a minimum limit to the above
+### Minimum interval
+Allows you to apply a minimum limit to the above
 option. The default setting says that lapses should be reviewed one day
 later. The interval must be 1 day or more.
 
-The leech options control the way Anki handles leeches. Please see the
+### Leech options
+Control the way Anki handles leeches. Please see the
 [leeches](leeches.md) section for more information.
 _____
 
@@ -250,6 +252,13 @@ putting them together. This means that there is a slight bias towards
 older cards being shown first, but it prevents individual cards from
 showing up in a predictable order.
 
+### New interval
+Controls how much Anki should reduce the previous
+interval. It reduces the previous interval to the percentage you
+specify. If a card had a 200 day interval, the default of 0% would
+reduce the interval to 0 (but see the next option). If you set this
+option to 50%, the card would have its interval reduced to 100 days
+instead.
 
 
 ## General
