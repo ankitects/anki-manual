@@ -1,20 +1,29 @@
 # Deck Options
 
 <!-- toc -->
-TEST
-Deck options are accessed by selecting a deck on the 'Decks' screen, and
-then clicking 'Options' at the bottom of the screen.
+Deck options are probably one of the most important things to understand in
+order to get the most out of Anki. These options controls Anki Scheduler, 
+the core of the program, so if inappropraite adjustments are used you could
+have to review too many cards every day, getting easily frustrated, or 
+you might not see cards in a deck often enough, rendering Anki less 
+effective. So please, only change options that you fully understand.
+
+Deck options are accessed by:
+- Clicking the gears icon on de 'Decks' screen.
+- Selecting a deck on the 'Decks' screen, and then clicking 'Options' 
+at the bottom of the screen.
+- Clicking on 'More' > 'Option' while in review mode. 
+- Pressing "o" while in review mode. 
 
 Anki allows you to share options between different decks, to make
 updating options in many decks at once easy. To do this, options are
 grouped into an 'options group'. By default, all newly created decks use
 the same options group, and decks imported from previous versions of
 Anki have separate option groups. If you’d like to alter the settings on
-one deck but not other decks, click the gears icon in the top right and
-add a new options group.
-
-Please only change options that you fully understand, as inappropriate
-adjustments may render Anki less effective.
+one deck but not other decks, click the arrow icon in the top right 
+of the Deck Options window and add a new preset. From there you can 
+also clone, rename or delete the actual preset, or save the current
+preset to all subdecks. 
 
 Options are not retroactive. For example, if you change an option that
 controls the delay after failing a card, cards that you failed prior to
