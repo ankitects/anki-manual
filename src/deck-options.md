@@ -15,7 +15,7 @@ at the bottom of the screen.
 - Clicking on 'More' > 'Option' while in review mode. 
 - Pressing "o" while in review mode. 
 
-## Managing Deck Options
+# Managing Deck Options
 
 Anki allows you to share options between different decks, to make
 updating options in many decks at once easy. To do this, options are
@@ -33,7 +33,7 @@ Options are not retroactive. For example, if you change an option that
 controls the delay after failing a card, cards that you failed prior to
 changing the option will have the old delay, not the new one.
 
-## Daily Limits
+# Daily Limits
 ### New cards/day
 Tells Anki how many new cards you’d like introduced on
 each day you open the program. Missed days will not cause the cards to
@@ -68,7 +68,7 @@ attack when returning to Anki after a week off. When reviews have been
 hidden due to this option, a message will appear in the congratulations
 screen, suggesting you consider increasing the limit if you have time.
 
-## New Cards
+# New Cards
 
 ### Learning Steps
 Controls the number of learning repetitions, and the delay
@@ -133,7 +133,7 @@ some notes had all their cards introduced and other notes had only one
 or two. Please see the "bury related" option below for more info.
 
 
-## Lapses
+# Lapses
 
 When you forget a review card, it is said to have 'lapsed'. The default
 behaviour for lapsed reviews is to reset the interval to 1 (ie, make it
@@ -169,7 +169,7 @@ Control the way Anki handles leeches. Please see the
 [leeches](leeches.md) section for more information.
 
 
-## Burying
+# Burying
 ### Bury new / review siblings until the next day 
 Wheter other cards of the same note (eg reverse cards, adjacent cloze
 deletions) will be delayed until the next day.
@@ -231,7 +231,7 @@ Options are:
 - Ascending intervals
 - Descending intervals
 
-## Timer
+# Timer
 Anki monitors how long it takes you to answer each question so that it
 can show you how long was spent studying each day. The time taken does
 not influence scheduling. The default time is 60 seconds, if you take 
@@ -248,7 +248,7 @@ example), the time taken will be recorded as the limit you have set.
 In the review screen, show a timer that counts the number of seconds 
 you're taking to review each card.
 
-## Audio
+# Audio
 ### Don't play audio automatically
 By default, Anki automatically plays audio on the front and back of
 cards. If you uncheck 'automatically play audio', Anki will not play
@@ -260,15 +260,15 @@ controls what happens when you choose to replay audio while the answer
 is shown. Please note that it does not control what happens when you
 show the answer; for that please see [this section](templates/fields.md#special-fields).
 
+# Advanced
+### Maximum interval 
+Allows you to place an upper limit on the time Anki
+will wait to reshow a card. The default is 100 years; you can decrease
+this to a smaller number if you’re willing to trade extra study time for
+higher retention.
 
-
-
-
-
-_____
-
-
-**Starting ease** controls the easiness that cards start out with. It is
+### Starting ease 
+Controls the easiness that cards start out with. It is
 set when a card graduates from learning for the first time. It defaults
 to 250%, meaning that once you’ve finished learning a card, answering
 "Good" on subsequent reviews will increase the delay by approximately
@@ -276,22 +276,14 @@ to 250%, meaning that once you’ve finished learning a card, answering
 days). Based upon how you rate the card in subsequent reviews, the
 easiness may increase or decrease from what it starts out as.
 
-Turning off **bury related…​** will prevent Anki from [burying
-siblings](studying.md#siblings-and-burying), and instead Anki will just try to avoid showing
-siblings directly after one another in the same session. For this to
-work, your new cards/day setting needs to be large enough for the cards
-of multiple notes to be included.
-
-## Reviews
-
-
-
-**Easy bonus** allows you to set the difference in intervals between
+### Easy bonus 
+Allows you to set the difference in intervals between
 answering 'Good' and 'Easy' on a card. For instance, with the default
 value of 130%, Easy will give an interval that is 1.3 times the Good
 interval.
 
-**Interval modifier** allows you to apply a multiplication factor to the
+### Interval modifier 
+allows you to apply a multiplication factor to the
 intervals Anki generates. At its default of 100% it does nothing; if you
 set it to 80% for example, intervals will be generated at 80% of their
 normal size (so a 10 day interval would become 8 days). You can thus use
@@ -340,18 +332,13 @@ reviewing with the same interval forever. If your goal is to repeat a
 card once a day for multiple days, you can do that by setting more
 learning mode steps instead of by adjusting this modifier.
 
-**Maximum interval** allows you to place an upper limit on the time Anki
-will wait to reshow a card. The default is 100 years; you can decrease
-this to a smaller number if you’re willing to trade extra study time for
-higher retention.
 
-**Hard interval** specifies what the next interval will be when you
+### Hard interval 
+Specifies what the next interval will be when you
 press the Hard button. The percentage is relative to the previous
 interval, eg with a default 120%, a card with a 10 day interval will be
 given 12 days. This option is only available when the [experimental
 scheduler](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html) is enabled in the preferences.
-
-
 
 Review cards are always shown in random order. If you wish to see them
 in a different order, you can use a [filtered deck](filtered-decks.md). More
@@ -361,7 +348,7 @@ putting them together. This means that there is a slight bias towards
 older cards being shown first, but it prevents individual cards from
 showing up in a predictable order.
 
-### New interval
+### New interval 
 Controls how much Anki should reduce the previous
 interval. It reduces the previous interval to the percentage you
 specify. If a card had a 200 day interval, the default of 0% would
@@ -369,19 +356,7 @@ reduce the interval to 0 (but see the next option). If you set this
 option to 50%, the card would have its interval reduced to 100 days
 instead.
 
-
-## General
-
-
+### Custom scheduling. 
+Affects the entire collection. Use at your own risk!
 
 
-
-## Description
-
-This section allows you to edit the deck description, which is shown in
-the study overview. The description is automatically set when
-downloading shared decks. You can delete all the text in the description
-if you no longer want to see it in the study overview area.
-
-You can also use HTML in the description—anything that works on a note
-should be valid.
