@@ -72,12 +72,13 @@ screen, suggesting you consider increasing the limit if you have time.
 
 ### Learning Steps
 Controls the number of learning repetitions, and the delay
-between them. Please see the [learning](studying.md#learning) section for an
-overview of how the steps work.
-
-Steps over a day (1440 minutes) are supported as well - if you want, you
-can define a schedule like 10 minutes, 1 day, 3 days and then finally 7
-days before the card becomes a review card.
+between them. One or more delays, separated by spaces must be entered.
+The first delay will be used when you press the Again button on a new
+card, and is 1 minute by default. The Good button will advance to the 
+next step, which is 10 minutes by default. Once all steps have been 
+passed, the card will become a review card, and will appear on a 
+different day. Delays are typically minutes (eg 1m) or days (eg 2d), 
+but hours (eg 1h) and seconds (eg 30s) are also supported.
 
 If there’s nothing else to study, Anki will show cards up to 20 minutes
 early by default. The amount of time to look ahead is configurable in
@@ -98,6 +99,9 @@ first half of a review session frustratingly difficult. Instead, the
 cards will be shown after reviews are completed. They are included in
 the review count rather than the learning count, due to the way they are
 handled internally.
+
+Please see the [learning](studying.md#learning) section for more info on
+how the steps work.
 
 ### Graduating interval
 The delay between answering 'Good' on a card
