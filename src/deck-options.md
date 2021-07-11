@@ -15,6 +15,8 @@ at the bottom of the screen.
 - Clicking on 'More' > 'Option' while in review mode. 
 - Pressing "o" while in review mode. 
 
+## Managing Deck Options
+
 Anki allows you to share options between different decks, to make
 updating options in many decks at once easy. To do this, options are
 grouped into an 'options group'. By default, all newly created decks use
@@ -104,8 +106,12 @@ The delay between answering 'easy' on a learning
 card and seeing it in review mode for the first time.
 
 ### Insertion Order
-Controls whether Anki should add new cards into the deck
-randomly, or in order. When you change this option, Anki will re-sort
+Controls whether Anki should add new cards into the deck. The options are:
+
+- Sequential (older cards first)
+- Random
+
+When you change this option, Anki will re-sort
 the decks using the current option group. One caveat with random order
 mode: if you review many of your new cards and then add more new cards,
 the newly added material is statistically more likely to appear than the
@@ -118,6 +124,7 @@ shown in the order their card types appear in, so that siblings are
 introduced consistently - otherwise you could end up in a state where
 some notes had all their cards introduced and other notes had only one
 or two. Please see the "bury related" option below for more info.
+
 
 ## Lapses
 
@@ -145,7 +152,6 @@ would accomplish the same thing as the "Good" button. If you have 2 or
 more steps, "Easy" is not hidden, to allow you to graduate cards from
 the queue before all of their steps are finished.
 
-
 ### Minimum interval
 Allows you to apply a minimum limit to the above
 option. The default setting says that lapses should be reviewed one day
@@ -154,6 +160,45 @@ later. The interval must be 1 day or more.
 ### Leech options
 Control the way Anki handles leeches. Please see the
 [leeches](leeches.md) section for more information.
+
+
+## Burying
+### Bury new / review siblings until the next day 
+Wheter other cards of the same note (eg reverse cards, adjacent cloze
+deletions) will be delayed until the next day.
+
+## Display Order
+### New card gather priority 
+Controls how Anki gather cards from eaach subdeck:
+- **Deck:** gather cards from each subdeck in order, and stops when the
+limit of the selected deck has been exceeded. This is faster, and 
+allows you to priorize subdecks that are closer to the top. 
+Decks / subdecks are always ordered alphabetically, so if you
+want to move a particular deck to the top or to the buttom of 
+the screen, you just need to change it's name. 
+- Position (lowest first): gather cards from all decks before they are
+- sorted. This ensures cards appear in stric position order (#1, #2, ...)
+- , even if the parent limit is not high enough to see cards from all decks. 
+- Position (highest first): gather cards from all decks before they are sorted.
+-  This ensures cards appear in stric position order (#n, #n-1, …), even 
+-  if the parent limit is not high enough to see cards from all decks. 
+
+
+Please, read more about how position works [here](https://docs.ankiweb.net/browsing.html#cards)
+
+### New card sort order 
+
+### New/review priority 
+
+### Interday learning/review priority 
+
+### Review sort order 
+
+
+
+Turning off **bury related…​** will prevent Anki from [burying
+siblings](studying.md#siblings-and-burying), and instead Anki will just try to avoid showing
+siblings directly after one another in the same session.
 _____
 
 
@@ -240,9 +285,7 @@ interval, eg with a default 120%, a card with a 10 day interval will be
 given 12 days. This option is only available when the [experimental
 scheduler](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html) is enabled in the preferences.
 
-Turning off **bury related…​** will prevent Anki from [burying
-siblings](studying.md#siblings-and-burying), and instead Anki will just try to avoid showing
-siblings directly after one another in the same session.
+
 
 Review cards are always shown in random order. If you wish to see them
 in a different order, you can use a [filtered deck](filtered-decks.md). More
