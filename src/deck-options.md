@@ -2,14 +2,14 @@
 
 <!-- toc -->
 Deck options are probably one of the most important things to understand in
-order to get the most out of Anki. These options controls Anki Scheduler, 
-the core of the program, so if inappropraite adjustments are used you could
+order to get the most out of Anki. These options control Anki Scheduler, 
+the core of the program, so if inappropriate adjustments are used you could
 have to review too many cards every day, getting easily frustrated, or 
 you might not see cards in a deck often enough, rendering Anki less 
 effective. So please, only change options that you fully understand.
 
 Deck options are accessed by:
-- Clicking the gears icon on de 'Decks' screen.
+- Clicking the gears icon on the 'Decks' screen.
 - Selecting a deck on the 'Decks' screen, and then clicking 'Options' 
 at the bottom of the screen.
 - Clicking on 'More' > 'Option' while in review mode. 
@@ -174,7 +174,7 @@ Control the way Anki handles leeches. Please see the
 Wheter other cards of the same note (eg reverse cards, adjacent cloze
 deletions) will be delayed until the next day.
 
-## Display Order
+# Display Order
 ### New card gather priority 
 Controls how Anki gather cards from eaach subdeck:
 - **Deck:** gather cards from each subdeck in order, and stops when the
