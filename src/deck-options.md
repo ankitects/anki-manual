@@ -21,11 +21,13 @@ Anki allows you to share options between different decks, to make
 updating options in many decks at once easy. To do this, options are
 grouped into an 'options group'. By default, all newly created decks use
 the same options group, and decks imported from previous versions of
-Anki have separate option groups. If you’d like to alter the settings on
+Anki have separate option groups. 
+
+If you’d like to alter the settings on
 one deck but not other decks, click the arrow icon in the top right 
-of the Deck Options window and add a new preset. From there you can 
-also clone, rename or delete the actual preset, or save the current
-preset to all subdecks. 
+of the Deck Options window and **add** a new preset. From there you can 
+also **clone, rename** or **delete** the actual preset, or even **save the current
+preset to all subdecks**. 
 
 Options are not retroactive. For example, if you change an option that
 controls the delay after failing a card, cards that you failed prior to
@@ -230,11 +232,39 @@ Options are:
 - Descending intervals
 
 ## Timer
+Anki monitors how long it takes you to answer each question so that it
+can show you how long was spent studying each day. The time taken does
+not influence scheduling. The default time is 60 seconds, if you take 
+longer than that, Anki assumes you have walked away from your computer 
+or have been distracted, and limits the recorded time to 60 seconds, so 
+that you don’t end up with inaccurate statistics. 
+
 ### Maximum answer seconds 
-The maximum number of seconds to record for a single review. If an answer exceeds this time (because you stepped away from the screen for example), the time taken will be recorded as the limit you have set.
+The maximum number of seconds to record for a single review. If an 
+answer exceeds this time (because you stepped away from the screen for 
+example), the time taken will be recorded as the limit you have set.
 
 ### Show answer timer 
-In the review screen, show a timer that counts the number of seconds you're taking to review each card.
+In the review screen, show a timer that counts the number of seconds 
+you're taking to review each card.
+
+## Audio
+### Don't play audio automatically
+By default, Anki automatically plays audio on the front and back of
+cards. If you uncheck 'automatically play audio', Anki will not play
+audio until you press the replay audio key, `r` or `F5`.
+
+### Always include question side when replaying audio 
+This option
+controls what happens when you choose to replay audio while the answer
+is shown. Please note that it does not control what happens when you
+show the answer; for that please see [this section](templates/fields.md#special-fields).
+
+
+
+
+
+
 _____
 
 
@@ -342,25 +372,9 @@ instead.
 
 ## General
 
-Anki monitors how long it takes you to answer each question so that it
-can show you how long was spent studying each day. The time taken does
-not influence scheduling. If you take longer than 60 seconds, Anki
-assumes you have walked away from your computer or have been distracted,
-and limits the recorded time to 60 seconds, so that you don’t end up
-with inaccurate statistics. The 'ignore answer times…​' option allows
-you to adjust the cutoff threshold. The minimum cutoff is 30 seconds.
 
-If 'show answer timer' is checked, Anki will display the current time
-taken for each card in the study area.
 
-By default, Anki automatically plays audio on the front and back of
-cards. If you uncheck 'automatically play audio', Anki will not play
-audio until you press the replay audio key, `r` or `F5`.
 
-The 'Always include question side when replaying audio' option
-controls what happens when you choose to replay audio while the answer
-is shown. Please note that it does not control what happens when you
-show the answer; for that please see [this section](templates/fields.md#special-fields).
 
 ## Description
 
