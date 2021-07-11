@@ -30,7 +30,8 @@ controls the delay after failing a card, cards that you failed prior to
 changing the option will have the old delay, not the new one.
 
 ## Daily Limits
-**New cards/day** tells Anki how many new cards you’d like introduced on
+### New cards/day
+Tells Anki how many new cards you’d like introduced on
 each day you open the program. Missed days will not cause the cards to
 pile up. The limit applies to the current deck and subdecks. This means
 if "French" has a limit of 20 cards and "French::Lesson 1" and
@@ -53,7 +54,8 @@ please keep in mind that the new count is capped by the review count.
 If you have limits of 200 reviews and 20 new cards, and 190 reviews are
 due, only 10 new cards will be introduced.
 
-**Maximum reviews/day** allows you to set an upper limit on the number
+###  Maximum reviews/day
+Allows you to set an upper limit on the number
 of reviews to show each day. When this limit is reached, Anki will not
 show any more review cards for the day, even if there are some waiting.
 If you study consistently, this setting can help to smooth out
@@ -64,7 +66,8 @@ screen, suggesting you consider increasing the limit if you have time.
 
 ## New Cards
 
-**Learning Steps** controls the number of learning repetitions, and the delay
+### Learning Steps
+Controls the number of learning repetitions, and the delay
 between them. Please see the [learning](studying.md#learning) section for an
 overview of how the steps work.
 
@@ -92,13 +95,16 @@ cards will be shown after reviews are completed. They are included in
 the review count rather than the learning count, due to the way they are
 handled internally.
 
-**Graduating interval** is the delay between answering 'Good' on a card
+### Graduating interval
+The delay between answering 'Good' on a card
 with no steps left, and seeing the card again.
 
-**Easy interval** is the delay between answering 'easy' on a learning
+### Easy interval
+The delay between answering 'easy' on a learning
 card and seeing it in review mode for the first time.
 
-**Order** controls whether Anki should add new cards into the deck
+### Insertion Order
+Controls whether Anki should add new cards into the deck
 randomly, or in order. When you change this option, Anki will re-sort
 the decks using the current option group. One caveat with random order
 mode: if you review many of your new cards and then add more new cards,
@@ -113,8 +119,40 @@ introduced consistently - otherwise you could end up in a state where
 some notes had all their cards introduced and other notes had only one
 or two. Please see the "bury related" option below for more info.
 
+## Lapses
 
+When you forget a review card, it is said to have 'lapsed'. The default
+behaviour for lapsed reviews is to reset the interval to 1 (ie, make it
+due tomorrow), and put it in the learning queue for a refresher in 10
+minutes. This behaviour can be customized with the options listed below.
 
+If you leave the steps blank, Anki will not place the card back in the
+learning queue, and it will be rescheduled as a review with its new
+interval determined by the settings below.
+
+The new interval is determined when you answer "Again" to a review card,
+not when the card finishes its relearning steps. For this reason, the
+"Good" and "Easy" buttons during relearning do not alter the interval
+again - they only control which step you are on. If there is only a
+single step (the default), the "Easy" button will be hidden, since it
+would accomplish the same thing as the "Good" button. If you have 2 or
+more steps, "Easy" is not hidden, to allow you to graduate cards from
+the queue before all of their steps are finished.
+
+'New interval' controls how much Anki should reduce the previous
+interval. It reduces the previous interval to the percentage you
+specify. If a card had a 200 day interval, the default of 0% would
+reduce the interval to 0 (but see the next option). If you set this
+option to 50%, the card would have its interval reduced to 100 days
+instead.
+
+'Minimum interval' allows you to apply a minimum limit to the above
+option. The default setting says that lapses should be reviewed one day
+later. The interval must be 1 day or more.
+
+The leech options control the way Anki handles leeches. Please see the
+[leeches](leeches.md) section for more information.
+_____
 
 
 **Starting ease** controls the easiness that cards start out with. It is
@@ -212,39 +250,7 @@ putting them together. This means that there is a slight bias towards
 older cards being shown first, but it prevents individual cards from
 showing up in a predictable order.
 
-## Lapses
 
-When you forget a review card, it is said to have 'lapsed'. The default
-behaviour for lapsed reviews is to reset the interval to 1 (ie, make it
-due tomorrow), and put it in the learning queue for a refresher in 10
-minutes. This behaviour can be customized with the options listed below.
-
-If you leave the steps blank, Anki will not place the card back in the
-learning queue, and it will be rescheduled as a review with its new
-interval determined by the settings below.
-
-The new interval is determined when you answer "Again" to a review card,
-not when the card finishes its relearning steps. For this reason, the
-"Good" and "Easy" buttons during relearning do not alter the interval
-again - they only control which step you are on. If there is only a
-single step (the default), the "Easy" button will be hidden, since it
-would accomplish the same thing as the "Good" button. If you have 2 or
-more steps, "Easy" is not hidden, to allow you to graduate cards from
-the queue before all of their steps are finished.
-
-'New interval' controls how much Anki should reduce the previous
-interval. It reduces the previous interval to the percentage you
-specify. If a card had a 200 day interval, the default of 0% would
-reduce the interval to 0 (but see the next option). If you set this
-option to 50%, the card would have its interval reduced to 100 days
-instead.
-
-'Minimum interval' allows you to apply a minimum limit to the above
-option. The default setting says that lapses should be reviewed one day
-later. The interval must be 1 day or more.
-
-The leech options control the way Anki handles leeches. Please see the
-[leeches](leeches.md) section for more information.
 
 ## General
 
