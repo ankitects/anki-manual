@@ -35,12 +35,16 @@ changing the option will have the old delay, not the new one.
 
 # Daily Limits
 ### New cards/day
-Tells Anki how many new cards you’d like introduced on
-each day you open the program. Missed days will not cause the cards to
-pile up. The limit applies to the current deck and subdecks. This means
-if "French" has a limit of 20 cards and "French::Lesson 1" and
-"French::Lesson 2" both have limits of 15 cards, you’ll get 15 cards
-from lesson 1 but only 5 cards from lesson 2.
+The maximum number of new cards to introduce in a day, if new cards 
+are available. Because new material will increase your short-term 
+review workload, this should typically be at least 10x smaller 
+than your review limit.
+
+When studying a deck that has subdecks inside it, the limits set 
+on each subdeck control the maximum number of cards drawn from 
+that particular deck. The selected deck's limits control the total 
+cards that will be shown. Missed days will not cause the cards to
+pile up. 
 
 Studying new cards will temporarily increase the number of reviews you
 need to do a day, as freshly learnt material needs to be repeated a
@@ -59,9 +63,17 @@ If you have limits of 200 reviews and 20 new cards, and 190 reviews are
 due, only 10 new cards will be introduced.
 
 ###  Maximum reviews/day
-Allows you to set an upper limit on the number
-of reviews to show each day. When this limit is reached, Anki will not
-show any more review cards for the day, even if there are some waiting.
+The maximum number of review cards to show in a day, if cards are ready for review.
+
+The review limit affects the new limit. For example, if your review limit 
+is set to 200, and you have 190 reviews waiting, a maximum of 10 new cards 
+will be introduced. If your review limit has been reached, no new cards 
+will be shown.
+
+When studying a deck that has subdecks inside it, the limits set on 
+each subdeck control the maximum number of cards drawn from that particular 
+deck. The selected deck's limits control the total cards that will be shown.
+
 If you study consistently, this setting can help to smooth out
 occasional peaks in due card counts, and can save you from a heart
 attack when returning to Anki after a week off. When reviews have been
@@ -101,7 +113,8 @@ the review count rather than the learning count, due to the way they are
 handled internally.
 
 Please see the [learning](studying.md#learning) section for more info on
-how the steps work.
+how the steps work. Also, check [this forum's post](https://forums.ankiweb.net/t/deck-options-explained/213)
+for examples.
 
 ### Graduating interval
 The delay between answering 'Good' on a card
