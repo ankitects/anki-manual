@@ -145,7 +145,7 @@ due tomorrow), and put it in the learning queue for a refresher in 10
 minutes. This behaviour can be customized with the options listed below.
 
 ### Relearning steps. 
-The same ss learning steps for new cards. When you fail a card (press “Again”)
+The same as learning steps for new cards. When you fail a card (press “Again”)
 the card enters re-learning phase (same as learning phase) and before it 
 becomes a review card again, you’ll have to pass all re-learning steps 
 or press easy on the card.
@@ -187,11 +187,11 @@ allows you to priorize subdecks that are closer to the top.
 Decks / subdecks are always ordered alphabetically, so if you
 want to move a particular deck to the top or to the buttom of 
 the screen, you just need to change it's name. 
-- Position (lowest first): gather cards from all decks before they are
-sorted. This ensures cards appear in stric position order (#1, #2, ...)
+- **Position (lowest first):** gather cards from all decks before they are
+sorted. This ensures cards appear in strict position order (#1, #2, ...)
 , even if the parent limit is not high enough to see cards from all decks. 
-- Position (highest first): gather cards from all decks before they are sorted.
-This ensures cards appear in stric position order (#n, #n-1, …), even 
+- **Position (highest first):** gather cards from all decks before they are sorted.
+This ensures cards appear in reverse position order (#n, #n-1, …), even 
 if the parent limit is not high enough to see cards from all decks. 
 
 
@@ -341,16 +341,7 @@ learning mode steps instead of by adjusting this modifier.
 Specifies what the next interval will be when you
 press the Hard button. The percentage is relative to the previous
 interval, eg with a default 120%, a card with a 10 day interval will be
-given 12 days. This option is only available when the [experimental
-scheduler](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html) is enabled in the preferences.
-
-Review cards are always shown in random order. If you wish to see them
-in a different order, you can use a [filtered deck](filtered-decks.md). More
-specifically, Anki randomizes reviews by grabbing batches of 50 cards in
-the order that they exist in the database, randomizing each batch, then
-putting them together. This means that there is a slight bias towards
-older cards being shown first, but it prevents individual cards from
-showing up in a predictable order.
+given 12 days. 
 
 ### New interval 
 Controls how much Anki should reduce the previous
