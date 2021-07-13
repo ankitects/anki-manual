@@ -95,6 +95,18 @@ deck. The selected deck's limits control the total cards that will be shown.
 
 # New Cards
 
+### Learning cards vs graduated cards
+The settings on this section will only affect new cards, still in [learning](https://docs.ankiweb.net/studying.html?#learning)
+mode. Once the card is graduated (it has been learnt), it will enter [reviewing](https://docs.ankiweb.net/studying.html?#reviewing)
+mode and the settings in this sectios are no longer applicable to them. 
+
+The difference between a graduated card and a card in learning phase is
+, basically, that a card in learning phase doesn’t have ease, so
+pressing “Again” on that card, won’t affect its ease. Graduated cards, on the 
+other hand, get an ease value: each time you press 'Again' on a graduated card
+, Anki will decrease that card’s ease by 20%,  which will have a strong
+impact on future reviews for that card. 
+
 ### Learning Steps
 Controls the number of learning repetitions, and the delay
 between them. One or more delays, separated by spaces must be entered. 
@@ -184,18 +196,6 @@ shown in the order their card types appear in, so that siblings are
 introduced consistently - otherwise you could end up in a state where
 some notes had all their cards introduced and other notes had only one
 or two. Please see the "bury related" option below for more info.
-
-### Learning cards vs graduated cards
-The settings will only affect cards in [learning](https://docs.ankiweb.net/studying.html?#learning)
-mode. Once the card is graduated (has been learnt), it will enter [reviewing](https://docs.ankiweb.net/studying.html?#reviewing)
-mode and the settings in this sectios are no longer applicable to them. 
-The difference between a graduated card and a card in learning phase is
-, basically, that a card in learning phase doesn’t have ease, so
-pressing “Again” on that card, won’t affect its ease. Graduated cards, on the 
-other hand, get an ease value: each time you press 'Again' on a graduated card
-, Anki will decrease that card’s ease by 20%,  which will have a strong
-impact on future reviews for that card. 
-
 
 # Lapses
 
