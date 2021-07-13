@@ -101,19 +101,23 @@ between them. One or more delays, separated by spaces must be entered.
 You’ll pass one  learning step on a new/learn card each time you press 
 “Good” on that card.
 
-For example, let's say that your learning steps are **1m 10m 1d**. The first 
-one (1m) is for the 'Again' button. When you press again on a new/learn card,
-anki will show you that card again in 1 minute aproximately.
+For example, let's say that your learning steps are **1m 10m 1d**. 
 
-The second number (10m) is the first learning step. When you press 'Good'
+- The first one (1m) is for the 'Again' button. When you press again on 
+a new/learn card, anki will show you that card again in 1 minute aproximately.
+
+- The second number (10m) is the first learning step. When you press 'Good'
 on a new/learn card for the first time, Anki will show you that card 
 again in the next 10 minutes aproximately.
 
-The third number (1 day) is the second learning step. When you press 'Good'
-on a new/learn card for the second anki will show you that card again the next day.
+- The third number (1 day) is the second learning step. When you press 'Good'
+on a new/learn card for the second time anki will show you that card again
+the next day.
 
-From this moment, the cards exits learning phase, it’ll get an ease (Starting ease)
-and it will be a graduated card.
+- From this moment, the cards exits learning phase, it’ll get an ease (Starting ease)
+and it will be a graduated card. Remember that pressing 'Again' in 
+any step of the learning fase means that Anki will show the card again 
+in 1 minute, and you'll need to repeat the whole process.
 
 
 If there’s nothing else to study, Anki will show cards up to 20 minutes
@@ -141,9 +145,12 @@ how the steps work. Also, check [this forum's post](https://forums.ankiweb.net/t
 for more examples.
 
 ### Graduating interval
-The delay between answering 'Good' on a card with no steps left, 
+The delay in days between answering 'Good' on a card with no steps left, 
 and seeing the card again.
-After finishing the learning steps, the next interval will be “Graduating interval”
+In our previous example, if you have Graduating Interval setted to 2 days,
+When you press 'Good' on the third time anki will show you that card again
+in two days. 
+
 
 ### Easy interval
 The delay between answering 'easy' on a learning
