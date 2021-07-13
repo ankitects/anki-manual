@@ -7,7 +7,12 @@ the core of the program, so if inappropriate adjustments are used you could
 have to review too many cards every day, getting easily frustrated, or 
 you might not see cards in a deck often enough, rendering Anki less 
 effective. So please, only change options that you fully understand.
-Deck options primarily control the way Anki schedules cards. It is recommended that you spend a few weeks with the defaults to get a feel for how Anki works before you start adjusting options. Please make sure you understand the options before changing them, as mistakes could reduce Anki's effectiveness.
+Deck options primarily control the way Anki schedules cards. It is 
+recommended that you spend a few weeks with the defaults to get a feel 
+for how Anki works before you start adjusting options. Please make sure
+you understand the options before changing them, as mistakes could reduce
+Anki's effectiveness.
+
 Deck options are accessed by:
 - Clicking the gear icon on the 'Decks' screen.
 - Selecting a deck on the 'Decks' screen, and then clicking 'Options' 
@@ -57,7 +62,7 @@ More than one Anki user has excitedly studied hundreds of new cards over
 their first few days of using the program, and then become overwhelmed
 by the reviews required.
 
-If using [the 2021 scheduler](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html),
+If using [the 2021 scheduler](https://faqs.ankiweb.net/the-2021-scheduler.html),
 please keep in mind that the new count is capped by the review count. 
 If you have limits of 200 reviews and 20 new cards, and 190 reviews are
 due, only 10 new cards will be introduced.
