@@ -12,7 +12,7 @@ Deck options are accessed by:
 - Clicking the gear icon on the 'Decks' screen.
 - Selecting a deck on the 'Decks' screen, and then clicking 'Options' 
 at the bottom of the screen.
-- Clicking on 'More' > 'Option' while in review mode. 
+- Clicking on 'More' > 'Options' while in review mode. 
 - Pressing "o" while in review mode. 
 
 # Managing Deck Options
