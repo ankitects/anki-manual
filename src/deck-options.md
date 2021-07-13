@@ -119,7 +119,6 @@ and it will be a graduated card. Remember that pressing 'Again' in
 any step of the learning fase means that Anki will show the card again 
 in 1 minute, and you'll need to repeat the whole process.
 
-
 If there’s nothing else to study, Anki will show cards up to 20 minutes
 early by default. The amount of time to look ahead is configurable in
 the [preferences](preferences.md). One thing to be aware of is that the
@@ -147,14 +146,19 @@ for more examples.
 ### Graduating interval
 The delay in days between answering 'Good' on a card with no steps left, 
 and seeing the card again.
+
 In our previous example, if you have Graduating Interval setted to 2 days,
 When you press 'Good' on the third time anki will show you that card again
-in two days. 
-
+after two days. 
 
 ### Easy interval
 The delay between answering 'easy' on a learning
 card and seeing it in review mode for the first time.
+
+In our  example, if you have Easy Interval setted to 4 days,
+When you press 'Easy' on any step of the learning phase, the
+card will inmediately exit the learning phase and Anki will show
+you that card again after four days, in review mode.
 
 ### Insertion Order
 Controls the position (due #) new cards are assigned when you add
@@ -180,6 +184,17 @@ shown in the order their card types appear in, so that siblings are
 introduced consistently - otherwise you could end up in a state where
 some notes had all their cards introduced and other notes had only one
 or two. Please see the "bury related" option below for more info.
+
+### Learning cards vs graduated cards
+The settings will only affect cards in [learning](https://docs.ankiweb.net/studying.html?#learning)
+mode. Once the card is graduated (has been learnt), it will enter [reviewing](https://docs.ankiweb.net/studying.html?#reviewing)
+mode and the settings in this sectios are no longer applicable to them. 
+The difference between a graduated card and a card in learning phase is
+, basically, that a card in learning phase doesn’t have ease, so
+pressing “Again” on that card, won’t affect its ease. Graduated cards, on the 
+other hand, get an ease value: each time you press 'Again' on a graduated card
+, Anki will decrease that card’s ease by 20%,  which will have a strong
+impact on future reviews for that card. 
 
 
 # Lapses
