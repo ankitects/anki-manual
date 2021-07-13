@@ -57,7 +57,7 @@ More than one Anki user has excitedly studied hundreds of new cards over
 their first few days of using the program, and then become overwhelmed
 by the reviews required.
 
-If using [2021 scheduler (v3)](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html),
+If using [the 2021 scheduler](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html),
 please keep in mind that the new count is capped by the review count. 
 If you have limits of 200 reviews and 20 new cards, and 190 reviews are
 due, only 10 new cards will be introduced.
