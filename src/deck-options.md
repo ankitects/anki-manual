@@ -26,7 +26,7 @@ Anki have separate option groups.
 If you’d like to alter the settings on
 one deck but not other decks, click the arrow icon in the top right 
 of the Deck Options window and **add** a new preset. From there you can 
-also **clone, rename** or **delete** the actual preset, or even **save the current
+also **clone**, **rename** or **delete** the actual preset, or even **save the current
 preset to all subdecks**. 
 
 Options are not retroactive. For example, if you change an option that
