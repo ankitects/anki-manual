@@ -49,27 +49,24 @@ changing the option will have the old delay, not the new one.
 
 # Daily Limits
 ### New cards/day
-The maximum number of new cards to introduce in a day, if new cards 
-are available. Because new material will increase your short-term 
-review workload, this should typically be at least 10x smaller 
-than your review limit.
 
-When studying a deck that has subdecks inside it, the limits set 
-on each subdeck control the maximum number of cards drawn from 
-that particular deck. The selected deck's limits control the total 
-cards that will be shown. Missed days will not cause the cards to
-pile up. 
+New cards/day tells Anki how many new cards you’d like introduced on
+each day you open the program. Missed days will not cause the cards
+to pile up. The limit applies to the current deck and subdecks. 
+This means if "French" has a limit of 20 cards and "French::Lesson 1" 
+and "French::Lesson 2" both have limits of 15 cards, you’ll get 15 
+cards from lesson 1 but only 5 cards from lesson 2.
 
-Studying new cards will temporarily increase the number of reviews you
-need to do a day, as freshly learnt material needs to be repeated a
-number of times before the delay between repetitions can increase
-appreciably. If you are consistently learning 20 new cards a day, you
-can expect your daily reviews to be roughly about 200 cards/day. You can
-decrease the reviews required by introducing fewer new cards each day,
-or by turning off new card display until your review burden decreases.
-More than one Anki user has excitedly studied hundreds of new cards over
-their first few days of using the program, and then become overwhelmed
-by the reviews required.
+Studying new cards will temporarily increase the number of reviews
+you need to do a day, as freshly learnt material needs to be repeated 
+a number of times before the delay between repetitions can increase 
+appreciably. If you are consistently learning 20 new cards a day, 
+you can expect your daily reviews to be roughly about 200 cards/day. 
+You can decrease the reviews required by introducing fewer new cards 
+each day, or by turning off new card display until your review burden 
+decreases. More than one Anki user has excitedly studied hundreds 
+of new cards over their first few days of using the program, and 
+then become overwhelmed by the reviews required.
 
 If using [the 2021 scheduler](https://faqs.ankiweb.net/the-2021-scheduler.html),
 please keep in mind that the new count is capped by the review count. 
@@ -77,9 +74,17 @@ If you have limits of 200 reviews and 20 new cards, and 190 reviews are
 due, only 10 new cards will be introduced.
 
 ###  Maximum reviews/day
-The maximum number of review cards to show in a day, if cards are ready for review.
+This allows you to set an upper limit on the number of reviews to show each day. 
+When this limit is reached, Anki will not show any more review cards 
+for the day, even if there are some waiting. If you study 
+consistently, this setting can help to smooth out occasional peaks 
+in due card counts, and can save you from a heart attack when returning 
+to Anki after a week off. When reviews have been hidden due to this 
+option, a message will appear in the congratulations screen, 
+suggesting you consider increasing the limit if you have time.
 
-The review limit affects the new limit. For example, if your review limit 
+With [the 2021 scheduler](https://faqs.ankiweb.net/the-2021-scheduler.html)
+, the review limit affects the new limit. For example, if your review limit 
 is set to 200, and you have 190 reviews waiting, a maximum of 10 new cards 
 will be introduced. If your review limit has been reached, no new cards 
 will be shown.
@@ -88,23 +93,28 @@ When studying a deck that has subdecks inside it, the limits set on
 each subdeck control the maximum number of cards drawn from that particular 
 deck. The selected deck's limits control the total cards that will be shown.
 
-If you study consistently, this setting can help to smooth out
-occasional peaks in due card counts, and can save you from a heart
-attack when returning to Anki after a week off. When reviews have been
-hidden due to this option, a message will appear in the congratulations
-screen, suggesting you consider increasing the limit if you have time.
-
 # New Cards
 
 ### Learning Steps
 Controls the number of learning repetitions, and the delay
-between them. One or more delays, separated by spaces must be entered.
-The first delay will be used when you press the Again button on a new
-card, and is 1 minute by default. The Good button will advance to the 
-next step, which is 10 minutes by default. Once all steps have been 
-passed, the card will become a review card, and will appear on a 
-different day. Delays are typically minutes (eg 1m) or days (eg 2d), 
-but hours (eg 1h) and seconds (eg 30s) are also supported.
+between them. One or more delays, separated by spaces must be entered. 
+You’ll pass one  learning step on a new/learn card each time you press 
+“Good” on that card.
+
+For example, let's say that your learning steps are **1m 10m 1d**. The first 
+one (1m) is for the 'Again' button. When you press again on a new/learn card,
+anki will show you that card again in 1 minute aproximately.
+
+The second number (10m) is the first learning step. When you press 'Good'
+on a new/learn card for the first time, Anki will show you that card 
+again in the next 10 minutes aproximately.
+
+The third number (1 day) is the second learning step. When you press 'Good'
+on a new/learn card for the second anki will show you that card again the next day.
+
+From this moment, the cards exits learning phase, it’ll get an ease (Starting ease)
+and it will be a graduated card.
+
 
 If there’s nothing else to study, Anki will show cards up to 20 minutes
 early by default. The amount of time to look ahead is configurable in
@@ -128,11 +138,12 @@ handled internally.
 
 Please see the [learning](studying.md#learning) section for more info on
 how the steps work. Also, check [this forum's post](https://forums.ankiweb.net/t/deck-options-explained/213)
-for examples.
+for more examples.
 
 ### Graduating interval
-The delay between answering 'Good' on a card
-with no steps left, and seeing the card again.
+The delay between answering 'Good' on a card with no steps left, 
+and seeing the card again.
+After finishing the learning steps, the next interval will be “Graduating interval”
 
 ### Easy interval
 The delay between answering 'easy' on a learning
