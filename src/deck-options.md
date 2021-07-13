@@ -20,7 +20,7 @@ at the bottom of the screen.
 - Clicking on 'More' > 'Options' while in review mode. 
 - Pressing "o" while in review mode. 
 
-# Managing Deck Options
+# Managing Deck Options. 
 
 Anki allows you to share options between different decks, to make
 updating options in many decks at once easy. To do this, options are
@@ -30,9 +30,18 @@ Anki have separate option groups.
 
 If you’d like to alter the settings on
 one deck but not other decks, click the arrow icon in the top right 
-of the Deck Options window and **add** a new preset. From there you can 
-also **clone**, **rename** or **delete** the actual preset, or even **save the current
-preset to all subdecks**. 
+of the Deck Options window. The options are:
+
+- **Save**: Saves the modifications you've made to the current 
+preset. 
+- **Add**: Add a new preset, with the default options.
+- **Clone**: Clone your current present, which is useful if you 
+just want to modify certain options, keeping the rest as they are.  
+- **Rename**  the current preset.
+- **Delete** the current preset, which will require a full synch 
+of your datase. After saving your changes, this action cannot be
+undone. 
+- **Save the current preset to all subdecks**. 
 
 Options are not retroactive. For example, if you change an option that
 controls the delay after failing a card, cards that you failed prior to
@@ -205,10 +214,10 @@ allows you to priorize subdecks that are closer to the top.
 Decks / subdecks are always ordered alphabetically, so if you
 want to move a particular deck to the top or to the buttom of 
 the screen, you just need to change it's name. 
-- **Position (lowest first):** gather cards from all decks before they are
+- **Ascending Position:** gather cards from all decks before they are
 sorted. This ensures cards appear in strict position order (#1, #2, ...)
 , even if the parent limit is not high enough to see cards from all decks. 
-- **Position (highest first):** gather cards from all decks before they are sorted.
+- **Descending Position:** gather cards from all decks before they are sorted.
 This ensures cards appear in reverse position order (#n, #n-1, …), even 
 if the parent limit is not high enough to see cards from all decks. 
 
