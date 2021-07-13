@@ -7,7 +7,7 @@ the core of the program, so if inappropriate adjustments are used you could
 have to review too many cards every day, getting easily frustrated, or 
 you might not see cards in a deck often enough, rendering Anki less 
 effective. So please, only change options that you fully understand.
-
+Deck options primarily control the way Anki schedules cards. It is recommended that you spend a few weeks with the defaults to get a feel for how Anki works before you start adjusting options. Please make sure you understand the options before changing them, as mistakes could reduce Anki's effectiveness.
 Deck options are accessed by:
 - Clicking the gears icon on the 'Decks' screen.
 - Selecting a deck on the 'Decks' screen, and then clicking 'Options' 
@@ -366,5 +366,4 @@ instead.
 
 ### Custom scheduling. 
 Affects the entire collection. Use at your own risk!
-
 
