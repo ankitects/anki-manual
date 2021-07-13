@@ -157,7 +157,7 @@ behaviour for lapsed reviews is to reset the interval to 1 (ie, make it
 due tomorrow), and put it in the learning queue for a refresher in 10
 minutes. This behaviour can be customized with the options listed below.
 
-### Relearning steps. 
+### Relearning Steps
 The same as learning steps for new cards. When you fail a card (press “Again”)
 the card enters re-learning phase (same as learning phase) and before it 
 becomes a review card again, you’ll have to pass all re-learning steps 
