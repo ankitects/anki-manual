@@ -175,17 +175,16 @@ you that card again after four days, in review mode.
 ### Insertion Order
 Controls the position (due #) new cards are assigned when you add
 new cards. Cards with a lower due number will be show first when 
-studying. Changing this option will automatically update the 
-existing position of new cards. 
+studying by default. Changing this option will automatically update 
+the existing position of new cards. 
 
 The options are:
 
 - Sequential (older cards first)
 - Random
 
-When you change this option, Anki will re-sort
-the decks using the current option group. One caveat with random order
-mode: if you review many of your new cards and then add more new cards,
+One caveat with random order mode: if you review many of your new cards 
+and then add more new cards,
 the newly added material is statistically more likely to appear than the
 previously remaining cards. To correct this, you can change the order to
 ordered mode and back again to force a re-sort.
