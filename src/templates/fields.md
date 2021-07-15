@@ -160,7 +160,7 @@ when you encounter it in real life. Please have a read about the
 <http://www.supermemo.com/articles/20rules.htm> before proceeding.
 
 First, you’ll need to add a field to store the hint in if you have not
-already. Please see the [fields](editing.md#customizing-fields) section if you’re not sure how
+already. Please see the [fields](../editing.md#customizing-fields) section if you’re not sure how
 to do this.
 
 Assuming you’ve created a field called MyField, you can tell Anki to
@@ -355,5 +355,5 @@ If there are multiple sections elided, you can separate the answers in
 the text box with a comma.
 
 Type answer boxes will not appear in the ["preview"
-dialog](templates/intro.md) in the browser. When you review or look at
+dialog](intro.md) in the browser. When you review or look at
 the preview in the card types window, they will display.

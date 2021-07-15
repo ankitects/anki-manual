@@ -52,5 +52,5 @@ options:
 
 - The 'Browser Appearance' option allows you to set different (perhaps
     simplified) templates for display in the Question and Answer columns
-    of the browser; see [browser appearance](templates/styling.md#browser-appearance) for more
+    of the browser; see [browser appearance](styling.md#browser-appearance) for more
     information.
