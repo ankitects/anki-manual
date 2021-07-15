@@ -182,11 +182,6 @@ using the current option group.  Cards with a lower due number will
 be show first when studying by default. Changing this option will 
 automatically update the existing position of new cards. 
 
-The options are:
-
-- Sequential (older cards first)
-- Random
-
 One caveat with random order mode: if you review many of your new cards 
 and then add more new cards,
 the newly added material is statistically more likely to appear than the
