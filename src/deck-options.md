@@ -176,10 +176,11 @@ card will inmediately exit the learning phase and Anki will show
 you that card again after four days, in review mode.
 
 ### Insertion Order
-Controls the position (due #) new cards are assigned when you add
-new cards. Cards with a lower due number will be show first when 
-studying by default. Changing this option will automatically update 
-the existing position of new cards. 
+Controls whether Anki should add new cards into the deck randomly, 
+or in order. When you change this option, Anki will re-sort the decks 
+using the current option group.  Cards with a lower due number will 
+be show first when studying by default. Changing this option will 
+automatically update the existing position of new cards. 
 
 The options are:
 
@@ -189,7 +190,10 @@ The options are:
 One caveat with random order mode: if you review many of your new cards 
 and then add more new cards,
 the newly added material is statistically more likely to appear than the
-previously remaining cards. To correct this, you can change the order to
+previously remaining cards. For example, if you have 100 cards in random 
+order, then review the first 50, newly added cards are still given position
+1-100, but as you’ve already reviewed the first 50 the newly added cards 
+are more likely to appear earlier. To correct this, you can change the order to
 ordered mode and back again to force a re-sort.
 
 When you select random order, Anki will randomize your notes, keeping
