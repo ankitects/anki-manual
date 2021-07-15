@@ -66,12 +66,12 @@ in which those cards will be shown in the study session.
 
 For example, let's say you have this:
 
-- **Deck A** (Deck options A) - No cards inside
-  - **Subdeck B** (Deck options B)
+- **Deck 1** (Deck options A) - No cards inside
+  - **Subdeck 2** (Deck options B)
     - Card B1
     - Card B2
     - ...
-  - **Subdeck C** (Deck options B)
+  - **Subdeck 3** (Deck options B)
     - Card C1
     - Card C2
     - ...
@@ -84,11 +84,11 @@ Deck options A and B are identical, with two exceptions:
    - A: Display Order - New/review priority: Mix with reviews
    - B: Display Order - New/review priority: Show after reviews
 
-If you choose to study Deck A:
+If you choose to study Deck 1:
 - Learning steps for all new cards will be 20m 2h 
 - All new cards will be mixed with reviews. 
 
-If you choose to study Deck B:
+If you choose to study Deck 2 or Deck 3:
 - Learning steps for all new cards will be 20m 2h 
 - All new cards will be shown after reviews. 
 
