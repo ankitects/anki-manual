@@ -50,6 +50,28 @@ Options are not retroactive. For example, if you change an option that
 controls the delay after failing a card, cards that you failed prior to
 changing the option will have the old delay, not the new one.
 
+### Deck options priority. 
+As stated above, each deck and subdeck can have its own options. You 
+may want your settings being applied to all your subdecks, in which case
+you may use the 'Save the current preset to all subdecks'option, but 
+you you may want, in some cases, use different settings for different 
+subdecks. 
+
+The general rule is that each card will use the options of the deck 
+it belongs to, with two exceptions: 
+- The 'Daily Limit' options from the deck you select controls the maximum 
+number of cards that will be shown in the study session.
+- The 'Display Order' options from the deck you select controls the order
+in which those cards will be shown in the study session. 
+
+For example:
+
+
+
+
+In general, 
+
+
 # Daily Limits
 ### New cards/day
 
@@ -200,16 +222,16 @@ or two. Please see the "bury related" option below for more info.
 
 # Lapses
 
-When you forget a review card, it is said to have 'lapsed'. The default
+When you forget a review card, it is said to have 'lapsed', and the card must be relearned. The default
 behaviour for lapsed reviews is to reset the interval to 1 (ie, make it
 due tomorrow), and put it in the learning queue for a refresher in 10
 minutes. This behaviour can be customized with the options listed below.
 
 ### Relearning Steps
-The same as learning steps for new cards. When you fail a card (press “Again”)
+The same as 'learning steps' for new cards. When you fail a card (press 'Again')
 the card enters re-learning phase (same as learning phase) and before it 
 becomes a review card again, you’ll have to pass all re-learning steps 
-or press easy on the card.
+or press 'Easy' on the card.
 
 If you leave the steps blank, Anki will not place the card back in the
 learning queue, and it will be rescheduled as a review with its new
@@ -240,6 +262,7 @@ Wheter other cards of the same note (eg reverse cards, adjacent cloze
 deletions) will be delayed until the next day.
 
 # Display Order
+Each deck and subdeck may have its own options. Anki will 
 ### New card gather priority 
 Controls how Anki gather cards from eaach subdeck:
 - **Deck:** gather cards from each subdeck in order, and stops when the
