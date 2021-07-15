@@ -54,7 +54,7 @@ changing the option will have the old delay, not the new one.
 As stated above, each deck and subdeck can have its own options. You 
 may want your settings being applied to all your subdecks, in which case
 you may use the 'Save the current preset to all subdecks'option, but 
-you you may want, in some cases, use different settings for different 
+you also may want, in some cases, use different settings for different 
 subdecks. 
 
 The general rule is that each card will use the options of the deck 
@@ -64,12 +64,33 @@ number of cards that will be shown in the study session.
 - The 'Display Order' options from the deck you select controls the order
 in which those cards will be shown in the study session. 
 
-For example:
+For example, let's say you have this:
 
+- **Deck A** (Deck options A) - No cards inside
+  - **Subdeck B** (Deck options B)
+    - Card B1
+    - Card B2
+    - ...
+  - **Subdeck C** (Deck options B)
+    - Card C1
+    - Card C2
+    - ...
 
+Deck options A and B are identical, with two exceptions:
 
+   - A: New Cards - Learning steps: 1m 10m
+   - B: New Cards - Learning steps: 20m 2h
 
-In general, 
+   - A: Display Order - New/review priority: Mix with reviews
+   - B: Display Order - New/review priority: Show after reviews
+
+If you choose to study Deck A:
+- Learning steps for all new cards will be 20m 2h 
+- All new cards will be mixed with reviews. 
+
+If you choose to study Deck B:
+- Learning steps for all new cards will be 20m 2h 
+- All new cards will be shown after reviews. 
 
 
 # Daily Limits
