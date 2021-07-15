@@ -41,7 +41,10 @@ just want to modify certain options, keeping the rest as they are.
 - **Delete** the current preset, which will require a full synch 
 of your datase. After saving your changes, this action cannot be
 undone. 
-- **Save the current preset to all subdecks**. 
+- **Save the current preset to all subdecks**. Each deck has its 
+own options. To ensure your settings apply to all of your subdecks,
+please use the option to apply to all children while editing the
+top level deck.
 
 Options are not retroactive. For example, if you change an option that
 controls the delay after failing a card, cards that you failed prior to
