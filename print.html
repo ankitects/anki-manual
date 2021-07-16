@@ -1263,7 +1263,7 @@ Deck Override again.</p>
 <li>
 <p>The 'Browser Appearance' option allows you to set different (perhaps
 simplified) templates for display in the Question and Answer columns
-of the browser; see <a href="templates/templates/styling.html#browser-appearance">browser appearance</a> for more
+of the browser; see <a href="templates/styling.html#browser-appearance">browser appearance</a> for more
 information.</p>
 </li>
 </ul>
@@ -1415,7 +1415,7 @@ when you encounter it in real life. Please have a read about the
 'minimum information principle' on
 <a href="http://www.supermemo.com/articles/20rules.htm">http://www.supermemo.com/articles/20rules.htm</a> before proceeding.</p>
 <p>First, you’ll need to add a field to store the hint in if you have not
-already. Please see the <a href="templates/editing.html#customizing-fields">fields</a> section if you’re not sure how
+already. Please see the <a href="templates/../editing.html#customizing-fields">fields</a> section if you’re not sure how
 to do this.</p>
 <p>Assuming you’ve created a field called MyField, you can tell Anki to
 include it on the card but hide it by default by adding the following to
@@ -1572,7 +1572,7 @@ template, so the back looks something like this:</p>
 added to both sides on a cloze note type.</p>
 <p>If there are multiple sections elided, you can separate the answers in
 the text box with a comma.</p>
-<p>Type answer boxes will not appear in the <a href="templates/templates/intro.html">&quot;preview&quot;
+<p>Type answer boxes will not appear in the <a href="templates/intro.html">&quot;preview&quot;
 dialog</a> in the browser. When you review or look at
 the preview in the card types window, they will display.</p>
 <h1><a class="header" href="#card-generation" id="card-generation">Card Generation</a></h1>
@@ -1762,7 +1762,7 @@ wish to keep an empty note, you can remove it with the Empty Cards function.</p>
 <p>On older Anki versions, Anki refuses to add or import a note if no cards
 would be generated.</p>
 <h2><a class="header" href="#cloze-templates" id="cloze-templates">Cloze Templates</a></h2>
-<p>Please see the <a href="templates/editing.html#cloze-deletion">cloze deletion</a> section for background info.</p>
+<p>Please see the <a href="templates/../editing.html#cloze-deletion">cloze deletion</a> section for background info.</p>
 <p>The cloze note type functions differently from regular note types.
 Instead of a customizable number of card types, it has a single type
 which is shared by all cloze deletions on a note.</p>
@@ -1835,7 +1835,7 @@ Whether the text should be aligned in the center, left, or right.</p>
 <p><strong>color</strong><br />
 The color of the text. Simple color names like 'blue', 'lightyellow',
 and so on will work, or you can use HTML color codes to select arbitrary
-colors. Please see <a href="http://htmlcolorcodes.org/">this webpage</a> for more
+colors. Please see <a href="https://html-color.codes/">this webpage</a> for more
 information.</p>
 <p><strong>background-color</strong><br />
 The color of the card background.</p>
@@ -1950,7 +1950,7 @@ like:</p>
 </code></pre>
 <p>It’s also possible to bundle custom fonts with your deck, so you don’t
 need to install them on your computer or mobile device. Please see the
-<a href="templates/templates/styling.html#installing-fonts">installing fonts</a> section for more info.</p>
+<a href="templates/styling.html#installing-fonts">installing fonts</a> section for more info.</p>
 <h2><a class="header" href="#audio-replay-buttons" id="audio-replay-buttons">Audio Replay Buttons</a></h2>
 <p>When audio or text to speech is included on your cards, Anki will show
 buttons you can click on to replay the audio.</p>
@@ -1982,7 +1982,7 @@ there are plenty of good introductory guides to HTML available on the
 web if you’d like to learn more.</p>
 <h2><a class="header" href="#browser-appearance" id="browser-appearance">Browser Appearance</a></h2>
 <p>If your card templates are complex, it may be difficult to read the
-question and answer columns (called &quot;Front&quot; and &quot;Back&quot;) in the <a href="templates/browsing.html#card-list">card
+question and answer columns (called &quot;Front&quot; and &quot;Back&quot;) in the <a href="templates/../browsing.html#card-list">card
 list</a>. The &quot;browser appearance&quot; option allows you to define a
 custom template to be used only in the browser, so you can include only
 the important fields and change the order if you desire. The syntax is
@@ -2026,7 +2026,7 @@ file will be used on a template, and should not be deleted when
 checking for unused media.</p>
 </li>
 <li>
-<p>In your computer’s file browser, go to your <a href="templates/files.html">Anki Folder</a>,
+<p>In your computer’s file browser, go to your <a href="templates/../files.html">Anki Folder</a>,
 and then a folder called &quot;User 1&quot; (or your profile name if you’ve
 renamed/added profiles).</p>
 </li>
@@ -2060,7 +2060,7 @@ the file you copied into your media folder:</p>
 individual fields. To change the font for the entire card, simply locate
 the font-family: line in the .card section and change the font to
 &quot;myfont&quot;. To change the font for only certain fields, please see the
-<a href="templates/templates/styling.html#field-styling">Field Styling</a> instructions above.</p>
+<a href="templates/styling.html#field-styling">Field Styling</a> instructions above.</p>
 <p>Please make sure the filenames match exactly. If the file is called
 arial.TTF and you write arial.ttf in your card templates, it will not
 work.</p>
@@ -2558,7 +2558,7 @@ password, you will need to manually tell Anki the proxy configuration.</p>
 variable that points to the proxy server. It will look like:</p>
 <pre><code>http://user:pass@proxy.company.com:8080
 </code></pre>
-<p>If your username or password contains an @ (eg <a href="user@workdomain.com">user@workdomain.com</a>),
+<p>If your username or password contains an @ (eg <code>user@workdomain.com</code>),
 you need to change it to %40, like so:</p>
 <pre><code>http://user%40workdomain.com:pass@proxy.company.com:8080
 </code></pre>
@@ -2775,7 +2775,7 @@ a context menu when a selected row is right-clicked in Notes mode. In Cards mode
 they can be found in a submenu of the context menu.</p>
 <!-- prettier-ignore -->
 <table><thead><tr><th>Name</th><th>Action</th></tr></thead><tbody>
-<tr><td>Add Notes</td><td>Open the <a href="editing#adding-cards-and-notes">Add</a> dialog.</td></tr>
+<tr><td>Add Notes</td><td>Open the <a href="editing.html#adding-cards-and-notes">Add</a> dialog.</td></tr>
 <tr><td>Export Notes</td><td>Open the <a href="exporting.html">Export</a> dialog.</td></tr>
 <tr><td>Add Tags</td><td>Add provided tags to all selected notes.</td></tr>
 <tr><td>Remove Tags</td><td>Enter tags and remove them from all selected notes.</td></tr>
@@ -2784,7 +2784,7 @@ they can be found in a submenu of the context menu.</p>
 <tr><td>Change Notetype</td><td>Convert the selected notes from one type to another. For example, imagine you have a <em>Russian</em> notetype and a <em>Computer</em> notetype, and you accidentally added some computer-related text into a <em>Russian</em> note. You can use this option to fix that mistake. The scheduling of cards is not affected. Changing the type of a note requires a one-way sync.</td></tr>
 <tr><td>Find Duplicates</td><td>Open the <a href="browsing.html#finding-duplicates">Duplicates</a> dialog.</td></tr>
 <tr><td>Find and Replace</td><td>Open the <a href="browsing.html#find-and-replace">Find and Replace</a> dialog.</td></tr>
-<tr><td>Manage Notetypes</td><td>Open the <a href="editing#adding-a-note-type">Notetypes</a> dialog.</td></tr>
+<tr><td>Manage Notetypes</td><td>Open the <a href="editing.html#adding-a-note-type">Notetypes</a> dialog.</td></tr>
 <tr><td>Delete</td><td>Delete all selected notes and their cards. It is not possible to remove individual cards, as individual cards are controlled by the <a href="templates/intro.html">templates</a>.</td></tr>
 </tbody></table>
 <h3><a class="header" href="#cards-1" id="cards-1">Cards</a></h3>
