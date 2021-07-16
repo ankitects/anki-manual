@@ -198,7 +198,7 @@ they can be found in a submenu of the context menu.
 <!-- prettier-ignore -->
 | Name | Action |
 |-|-|
-| Add Notes | Open the [Add](editing#adding-cards-and-notes) dialog. |
+| Add Notes | Open the [Add](editing.md#adding-cards-and-notes) dialog. |
 | Export Notes | Open the [Export](exporting.md) dialog. |
 | Add Tags | Add provided tags to all selected notes. |
 | Remove Tags | Enter tags and remove them from all selected notes. |
@@ -207,7 +207,7 @@ they can be found in a submenu of the context menu.
 | Change Notetype | Convert the selected notes from one type to another. For example, imagine you have a *Russian* notetype and a *Computer* notetype, and you accidentally added some computer-related text into a *Russian* note. You can use this option to fix that mistake. The scheduling of cards is not affected. Changing the type of a note requires a one-way sync. |
 | Find Duplicates | Open the [Duplicates](#finding-duplicates) dialog. |
 | Find and Replace | Open the [Find and Replace](#find-and-replace) dialog. |
-| Manage Notetypes | Open the [Notetypes](editing#adding-a-note-type) dialog. |
+| Manage Notetypes | Open the [Notetypes](editing.md#adding-a-note-type) dialog. |
 | Delete | Delete all selected notes and their cards. It is not possible to remove individual cards, as individual cards are controlled by the [templates](templates/intro.md). |
 
 ### Cards

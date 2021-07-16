@@ -180,7 +180,7 @@ variable that points to the proxy server. It will look like:
 
     http://user:pass@proxy.company.com:8080
 
-If your username or password contains an @ (eg <user@workdomain.com>),
+If your username or password contains an @ (eg `user@workdomain.com`),
 you need to change it to %40, like so:
 
     http://user%40workdomain.com:pass@proxy.company.com:8080

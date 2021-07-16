@@ -31,7 +31,7 @@ Whether the text should be aligned in the center, left, or right.
 **color**  
 The color of the text. Simple color names like 'blue', 'lightyellow',
 and so on will work, or you can use HTML color codes to select arbitrary
-colors. Please see [this webpage](http://htmlcolorcodes.org/) for more
+colors. Please see [this webpage](https://html-color.codes/) for more
 information.
 
 **background-color**  
@@ -181,7 +181,7 @@ like:
 
 It’s also possible to bundle custom fonts with your deck, so you don’t
 need to install them on your computer or mobile device. Please see the
-[installing fonts](templates/styling.md#installing-fonts) section for more info.
+[installing fonts](#installing-fonts) section for more info.
 
 ## Audio Replay Buttons
 
@@ -225,7 +225,7 @@ web if you’d like to learn more.
 
 If your card templates are complex, it may be difficult to read the
 question and answer columns (called "Front" and "Back") in the [card
-list](browsing.md#card-list). The "browser appearance" option allows you to define a
+list](../browsing.md#card-list). The "browser appearance" option allows you to define a
 custom template to be used only in the browser, so you can include only
 the important fields and change the order if you desire. The syntax is
 the same as in standard card templates.
@@ -278,7 +278,7 @@ a TrueType font, we’ll need to add it to the media folder:
     file will be used on a template, and should not be deleted when
     checking for unused media.
 
-2. In your computer’s file browser, go to your [Anki Folder](files.md),
+2. In your computer’s file browser, go to your [Anki Folder](../files.md),
     and then a folder called "User 1" (or your profile name if you’ve
     renamed/added profiles).
 
@@ -309,7 +309,7 @@ After that, you can either change the font for the entire card, or for
 individual fields. To change the font for the entire card, simply locate
 the font-family: line in the .card section and change the font to
 "myfont". To change the font for only certain fields, please see the
-[Field Styling](templates/styling.md#field-styling) instructions above.
+[Field Styling](#field-styling) instructions above.
 
 Please make sure the filenames match exactly. If the file is called
 arial.TTF and you write arial.ttf in your card templates, it will not
