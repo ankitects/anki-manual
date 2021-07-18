@@ -350,6 +350,10 @@ appear first. If you have a large backlog that will take more than a few
 days to clear, or wish to see cards in subdeck order, you may find the 
 alternate sort orders preferable.
 
+#### More info
+Please, check also [this section on on the manual](https://docs.ankiweb.net/studying.html#display-order)
+to learn more about how to use Display Order settings. 
+
 # Timer
 Anki monitors how long it takes you to answer each question so that it
 can show you how long was spent studying each day. The time taken does
