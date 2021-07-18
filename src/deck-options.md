@@ -273,7 +273,7 @@ later. The interval must be 1 day or more.
 - Relearning Steps: 10m 1h
 - Minimum interval: 1d
 
-If you press "Again" on a card that you reviewd 30 days ago (interval 30):
+If you press "Again" on a card that you reviewed 30 days ago (interval 30):
 - Anki will show the card again in 10 minutes.
 - If you press 'Good', Anki will show the card again in 1 hour. 
 - If you press 'Good', Anki will show the card again the next day (interval 1)
@@ -456,9 +456,10 @@ given 12 days.
 
 ### New interval 
 Controls how much Anki should reduce the previous
-interval. It reduces the previous interval to the percentage you
+interval when pressing 'Again' in review cards. 
+It reduces the previous interval to the percentage you
 specify. If a card had a 200 day interval, the default of 0% would
-reduce the interval to 0 (but see the next option). If you set this
+reduce the interval to 0. If you set this
 option to 50%, the card would have its interval reduced to 100 days
 instead.
 
