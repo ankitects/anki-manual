@@ -6,12 +6,7 @@ order to get the most out of Anki. These options control Anki Scheduler,
 the core of the program, so if inappropriate adjustments are used you could
 have to review too many cards every day, getting easily frustrated, or 
 you might not see cards in a deck often enough, rendering Anki less 
-effective. So please, only change options that you fully understand.
-Deck options primarily control the way Anki schedules cards. It is 
-recommended that you spend a few weeks with the defaults to get a feel 
-for how Anki works before you start adjusting options. Please make sure
-you understand the options before changing them, as mistakes could reduce
-Anki's effectiveness.
+effective, so please, only change options that you fully understand.
 
 Deck options are accessed by:
 - Clicking the gear icon on the 'Decks' screen.
@@ -24,9 +19,9 @@ at the bottom of the screen.
 
 Anki allows you to share options between different decks, to make
 updating options in many decks at once easy. To do this, options are
-grouped into an 'options group'. By default, all newly created decks use
-the same options group, and decks imported from previous versions of
-Anki have separate option groups. 
+grouped into 'presets'. By default, all newly created decks use
+the same prest, and decks imported from previous versions of
+Anki have separate presets. 
 
 If you’d like to alter the settings on
 one deck but not other decks, click the arrow icon in the top right 
@@ -46,49 +41,51 @@ own options. To ensure your settings apply to all of your subdecks,
 please use the option to apply to all children while editing the
 top level deck.
 
-Options are not retroactive. For example, if you change an option that
+Deck Options are not retroactive. For example, if you change an option that
 controls the delay after failing a card, cards that you failed prior to
 changing the option will have the old delay, not the new one.
 
-### Deck options priority. 
-As stated above, each deck and subdeck can have its own options. You 
+### Deck Options priority. 
+Each deck and subdeck can have its own options. You 
 may want your settings being applied to all your subdecks, in which case
 you may use the 'Save the current preset to all subdecks'option, but 
 you also may want, in some cases, use different settings for different 
 subdecks. 
 
-The general rule is that each card will use the options of the deck 
-it belongs to, with two exceptions: 
-- The 'Daily Limit' options from the deck you select controls the maximum 
+The general rule to keep in mind when working with decks / subdecks is
+that each card will use the options of the deck it belongs to, with
+two **exceptions**: 
+
+- The **Daily Limit** options from the deck you select controls the maximum 
 number of cards that will be shown in the study session.
-- The 'Display Order' options from the deck you select controls the order
+- The **Display Order** options from the deck you select controls the order
 in which those cards will be shown in the study session. 
 
-For example, let's say you have this:
+For example, let's say you have this collection:
 
-- **Deck 1** (Deck options A) - No cards inside
-  - **Subdeck 2** (Deck options B)
+- **Deck A** (Deck Options X)
+  - **Subdeck B** (Deck Options Z)
     - Card B1
     - Card B2
     - ...
-  - **Subdeck 3** (Deck options B)
+  - **Subdeck C** (Deck Options Z)
     - Card C1
     - Card C2
     - ...
 
-Deck options A and B are identical, with two exceptions:
+Deck Options X and Z are identical, with two exceptions:
 
-   - A: New Cards - Learning steps: 1m 10m
-   - B: New Cards - Learning steps: 20m 2h
+   - X: New Cards - Learning steps: 1m 10m
+   - Z: New Cards - Learning steps: 20m 2h
 
-   - A: Display Order - New/review priority: Mix with reviews
-   - B: Display Order - New/review priority: Show after reviews
+   - X: Display Order - New/review priority: Mix with reviews
+   - Z: Display Order - New/review priority: Show after reviews
 
-If you choose to study Deck 1:
+If you choose to study Deck A:
 - Learning steps for all new cards will be 20m 2h 
 - All new cards will be mixed with reviews. 
 
-If you choose to study Deck 2 or Deck 3:
+If you choose to study Subdeck B or Subdeck C:
 - Learning steps for all new cards will be 20m 2h 
 - All new cards will be shown after reviews. 
 
