@@ -175,55 +175,64 @@ At the bottom right of the review screen is a button labeled **More**.
 This button provides some other operations you can do on the current
 card or note:
 
-**Flag Card**: Adds a colored marker to the card, or toggles it off. Flags will appear during
+- **Flag Card**: Adds a colored marker to the card, or toggles it off. Flags will appear during
 study, and you can search for flagged cards in the Browse screen. This is useful
 when you want to take some action on the card at a later date, such as looking
 up a word when you get home.
 
-**Mark Note**: Adds a “marked” tag to the current note, so it can be easily found in the
-browser. This is similar to flagging individual cards, but works with a tag
-instead, so if the note has multiple cards, all cards will appear in a search
-for the marked tag. Most users will want to use flags instead - marking is
-mainly left around for compatibility with older Anki versions.
-
-**Bury Card / Note**: Hides a card or all of the note’s cards from review until the next day.
+- **Bury Card / Note**: Hides a card or all of the note’s cards from review until the next day.
 (If you want to unbury cards before then, you can click the “unbury”
 button on the [deck overview](studying.md#study-overview) screen.) This is useful if
 you cannot answer the card at the moment or you want to come back to it
 another time. Burying can also [happen automatically](studying.md#siblings-and-burying) for
 cards of the same note.
 
-With the old scheduler, if cards were in learning when they are buried,
-they are moved back to the new card queue or review queue prior to being
-buried.
+   With the old scheduler, if cards were in learning when they are buried,
+   they are moved back to the new card queue or review queue prior to being
+   buried.
 
-With the [new scheduler](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html),
-however, burying cards does not reset a card's learning steps.
+   With the [2.1 scheduler](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html),
+   however, burying cards does not reset a card's learning steps.
 
-**Suspend Card / Note**: Hides a card or all of the note’s cards from review until they are
-manually unsuspended (by clicking the suspend button in the browser).
-This is useful if you want to avoid reviewing the note for some time,
-but don’t want to delete it.
+- **Set Due Card**: Make cards review cards, and [make them due on a certain date.](browsing.md#cards)
 
-With the old scheduler, if cards were in learning when they are
-suspended, they are moved back to the new card queue or review queue
-prior to being suspended.
+- **Suspend Card / Note**: Hides a card or all of the note’s cards from review until they are
+   manually unsuspended (by clicking the suspend button in the browser).
+   This is useful if you want to avoid reviewing the note for some time,
+   but don’t want to delete it.
+   With the old scheduler, if cards were in learning when they are
+   suspended, they are moved back to the new card queue or review queue
+   prior to being suspended.
 
-With the [new scheduler](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html),
-however, suspending cards does not reset a card's learning steps.
+   With the [2.1 scheduler](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html),
+   however, suspending cards does not reset a card's learning steps.
 
-**Delete Note**: Deletes the note and all of its cards.
+- **Options**: Edit the [options](deck-options.md) for the current deck.
 
-**Options**: Edit the options for the current deck.
+- **Card Info**: Displays [statistical information](stats.md#card-info) about the card.
 
-**Replay Audio**: If the card has audio on the front or back, play it again.
+- **Mark Note**: Adds a “marked” tag to the current note, so it can be easily found in the
+browser. This is similar to flagging individual cards, but works with a tag
+instead, so if the note has multiple cards, all cards will appear in a search
+for the marked tag. Most users will want to use flags instead - marking is
+mainly left around for compatibility with older Anki versions.
 
-**Record Own Voice**: Record from your microphone for the purposes of checking your
+- **Delete Note**: Deletes the note and all of its cards.
+
+- **Options**: Edit the options for the current deck.
+
+- **Replay Audio**: If the card has audio on the front or back, play it again.
+
+- **Pause Audio**: Pauses the audio if it is playing.
+
+- **Audio -5s / +5s**: Fast-forwards or delays the audio on the card.  
+
+- **Record Own Voice**: Record from your microphone for the purposes of checking your
 pronunciation. This recording is temporary and will go away when you
 move to the next card. If you want to add audio to a card permanently,
 you can do that in the edit window.
 
-**Replay Own Voice**: Replay the previous recording of your voice (presumably after showing
+- **Replay Own Voice**: Replay the previous recording of your voice (presumably after showing
 the answer).
 
 ## Display Order
