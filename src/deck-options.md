@@ -75,19 +75,17 @@ For example, let's say you have this collection:
 
 Deck Options X and Z are identical, with two exceptions:
 
-   - X: New Cards - Learning steps: 1m 10m
-   - Z: New Cards - Learning steps: 20m 2h
-
-   - X: Display Order - New/review priority: Mix with reviews
-   - Z: Display Order - New/review priority: Show after reviews
+   - X: New Cards - Learning steps: **1m 10m**; Display Order - New/review priority: **Mix with reviews**
+   - Z: New Cards - Learning steps: **20m 2h**; Display Order - New/review priority: **Show after reviews**
 
 If you choose to study Deck A:
-- Learning steps for all new cards will be 20m 2h 
-- All new cards will be mixed with reviews. 
+- Learning steps for all new cards will be 20m 2h (Deck Options Z apply)
+- All new cards will be mixed with reviews (Deck Options X apply)
+
 
 If you choose to study Subdeck B or Subdeck C:
-- Learning steps for all new cards will be 20m 2h 
-- All new cards will be shown after reviews. 
+- Learning steps for all new cards will be 20m 2h (Deck Options Z apply)
+- All new cards will be shown after reviews (Deck Options Z apply)
 
 
 # Daily Limits
@@ -116,8 +114,10 @@ then become overwhelmed by the reviews required.
 
 If using [the 2021 scheduler](https://faqs.ankiweb.net/the-2021-scheduler.html),
 please keep in mind that the new count is capped by the review count. 
-If you have limits of 200 reviews and 20 new cards, and 190 reviews are
-due, only 10 new cards will be introduced.
+If your review limit 
+is set to 200, and you have 190 reviews waiting, a maximum of 10 new cards 
+will be introduced. If your review limit has been reached, no new cards 
+will be shown.
 
 ###  Maximum reviews/day
 This allows you to set an upper limit on the number of reviews to show each day. 
@@ -129,12 +129,6 @@ to Anki after a week off. When reviews have been hidden due to this
 option, a message will appear in the congratulations screen, 
 suggesting you consider increasing the limit if you have time.
 
-With [the 2021 scheduler](https://faqs.ankiweb.net/the-2021-scheduler.html)
-, the review limit affects the new limit. For example, if your review limit 
-is set to 200, and you have 190 reviews waiting, a maximum of 10 new cards 
-will be introduced. If your review limit has been reached, no new cards 
-will be shown.
-
 When studying a deck that has subdecks inside it, the limits set on 
 each subdeck control the maximum number of cards drawn from that particular 
 deck. The selected deck's limits control the total cards that will be shown.
@@ -144,7 +138,7 @@ deck. The selected deck's limits control the total cards that will be shown.
 ### Learning cards vs graduated cards
 The settings on this section will only affect new cards, still in [learning](https://docs.ankiweb.net/studying.html?#learning)
 mode. Once the card is graduated (it has been learnt), it will enter [reviewing](https://docs.ankiweb.net/studying.html?#reviewing)
-mode and the settings in this sectios are no longer applicable to them. 
+mode and the settings in this section are no longer applicable to them. 
 
 The difference between a graduated card and a card in learning phase is
 , basically, that a card in learning phase doesn’t have ease, so
@@ -172,9 +166,9 @@ again in the next 10 minutes aproximately.
 on a new/learn card for the second time anki will show you that card again
 the next day.
 
-- From this moment, the cards exits learning phase, it’ll get an ease (Starting ease)
+- From this moment, the cards exits learning phase, it’ll get an ease (by default 250)
 and it will be a graduated card. Remember that pressing 'Again' in 
-any step of the learning fase means that Anki will show the card again 
+any step of the learning period means that Anki will show the card again 
 in 1 minute, and you'll need to repeat the whole process.
 
 If there’s nothing else to study, Anki will show cards up to 20 minutes
@@ -240,6 +234,9 @@ shown in the order their card types appear in, so that siblings are
 introduced consistently - otherwise you could end up in a state where
 some notes had all their cards introduced and other notes had only one
 or two. Please see the "bury related" option below for more info.
+
+This setting is also related to the setting under 'Display Order' section 
+below, Please, check that section too. 
 
 # Lapses
 
