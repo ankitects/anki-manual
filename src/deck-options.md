@@ -94,8 +94,11 @@ If you choose to study Deck 2 or Deck 3:
 
 
 # Daily Limits
-### New cards/day
+Even if each deck and subdeck may have its own options, Anki will use the 
+Daily Limits options from the deck you select to study, and not any 
+subdecks it may have. 
 
+### New cards/day
 New cards/day tells Anki how many new cards you’d like introduced on
 each day you open the program. Missed days will not cause the cards
 to pile up. The limit applies to the current deck and subdecks. 
@@ -206,7 +209,7 @@ The delay in days between answering 'Good' on a card with no steps left,
 and seeing the card again.
 
 In our previous example, if you have Graduating Interval setted to 2 days,
-When you press 'Good' on the third time anki will show you that card again
+when you press 'Good' on the third time anki will show you that card again
 after two days. 
 
 ### Easy interval
@@ -283,9 +286,12 @@ Wheter other cards of the same note (eg reverse cards, adjacent cloze
 deletions) will be delayed until the next day.
 
 # Display Order
-Each deck and subdeck may have its own options. Anki will 
+Even if each deck and subdeck may have its own options, Anki will use the 
+display order options from the deck you select to study, and not any 
+subdecks it may have. 
+
 ### New card gather priority 
-Controls how Anki gather cards from eaach subdeck:
+Controls how Anki gathers cards from each subdeck:
 - **Deck:** gather cards from each subdeck in order, and stops when the
 limit of the selected deck has been exceeded. This is faster, and 
 allows you to priorize subdecks that are closer to the top. 
@@ -299,33 +305,35 @@ sorted. This ensures cards appear in strict position order (#1, #2, ...)
 This ensures cards appear in reverse position order (#n, #n-1, …), even 
 if the parent limit is not high enough to see cards from all decks. 
 
+Please, keep in mind that although position order depends initially on the 
+'Insertion Order' setting above, you can manually [reposition](https://docs.ankiweb.net/browsing.html#cards) cards in 
+different ways. 
 
-Please, read more about how position works [here](https://docs.ankiweb.net/browsing.html#cards) and on the 'Insertion
-Order' section above. 
 
 ### New card sort order 
 Controls how cards are sorted **after they have been gathered**. 
 By default, Anki sorts by template first, to avoid multiple cards of the
 same note from being shown in sucession. 
 The availiable options are:
-- Card template, then lowest position. 
-- Card template, then highest position. 
+- Card template, then ascending position. Anki will sort cards based on card 
+template, and then by incremental #due number (oldest added first, if
+'Insertion Order' is setted to 'Sequential') 
+- Card template, then descending position. Anki will show based on card 
+template, and then by decremental #due number (latest added first, if
+'Insertion Order' is setted to 'Sequential') 
 - Card template, then random. 
-- Lowest position
-- Highest position
+- Ascending position. Anki will show cards by incremental #due number 
+(oldest added first, if 'Insertion Order' is setted to 'Sequential') 
+- Descending position. Anki will show cards by decremental #due number 
+(latest added first, if 'Insertion Order' is setted to 'Sequential') 
 - Random
 
 ### New/review priority 
 Controls when Anki will show new cards in relation with review cards. 
-- Mix new and review cards
-- Show new cards after reviews
-- Show new cards before reviews
 
 ### Interday learning/review priority 
 When to show (re)learning cards that cross a day boundary. 
-- Mix with reviews
-- Show after reviews
-- Show before reviews
+
 
 ### Review sort order 
 The default order prioritizes cards that have been waiting longest, so
@@ -333,12 +341,6 @@ that if you have a backlog of reviews, the longest waiting ones will
 appear first. If you have a large backlog that will take more than a few
 days to clear, or wish to see cards in subdeck order, you may find the 
 alternate sort orders preferable.
-Options are:
-- Due date, then random
-- Due date, then deck
-- Deck, then due date
-- Ascending intervals
-- Descending intervals
 
 # Timer
 Anki monitors how long it takes you to answer each question so that it
