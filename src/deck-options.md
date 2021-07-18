@@ -269,6 +269,16 @@ Allows you to apply a minimum limit to the above
 option. The default setting says that lapses should be reviewed one day
 later. The interval must be 1 day or more.
 
+#### Example.
+- Relearning Steps: 10m 1h
+- Minimum interval: 1d
+
+If you press "Again" on a card that you reviewd 30 days ago (interval 30):
+- Anki will show the card again in 10 minutes.
+- If you press 'Good', Anki will show the card again in 1 hour. 
+- If you press 'Good', Anki will show the card again the next day (interval 1)
+, in review mode. 
+
 ### Leech options
 Control the way Anki handles leeches. Please see the
 [leeches](leeches.md) section for more information.
