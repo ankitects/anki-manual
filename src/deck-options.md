@@ -265,19 +265,23 @@ more steps, "Easy" is not hidden, to allow you to graduate cards from
 the queue before all of their steps are finished.
 
 ### Minimum interval
-Allows you to apply a minimum limit to the above
-option. The default setting says that lapses should be reviewed one day
+Allows you to apply a minimum limit to the 'New Interval' setting 
+. The default setting says that lapses should be reviewed one day
 later. The interval must be 1 day or more.
+Please, check the 'New Interval' setting (Advanced section) to learn 
+more. 
 
 #### Example.
 - Relearning Steps: 10m 1h
+- New interval: 0%
 - Minimum interval: 1d
 
 If you press "Again" on a card that you reviewed 30 days ago (interval 30):
+- The interval will be reduced from 30 to 0.
 - Anki will show the card again in 10 minutes.
 - If you press 'Good', Anki will show the card again in 1 hour. 
-- If you press 'Good', Anki will show the card again the next day (interval 1)
-, in review mode. 
+- If you press 'Good', Anki will show the card again the next day 
+(minimum interval 1), in review mode. 
 
 ### Leech options
 Control the way Anki handles leeches. Please see the
@@ -455,6 +459,8 @@ interval, eg with a default 120%, a card with a 10 day interval will be
 given 12 days. 
 
 ### New interval 
+This setting works together with the 'Relearning Steps' and 'Minimun interval' 
+settings from the 'Lapses' section. It
 Controls how much Anki should reduce the previous
 interval when pressing 'Again' in review cards. 
 It reduces the previous interval to the percentage you
