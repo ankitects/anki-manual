@@ -225,7 +225,7 @@ mainly left around for compatibility with older Anki versions.
 
 - **Pause Audio**: Pauses the audio if it is playing.
 
-- **Audio -5s / +5s**: Fast-forwards or delays the audio on the card.  
+- **Audio -5s / +5s**: Jump backwards / forward 5 seconds in the currently playing audio.
 
 - **Record Own Voice**: Record from your microphone for the purposes of checking your
 pronunciation. This recording is temporary and will go away when you
