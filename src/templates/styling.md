@@ -95,7 +95,7 @@ img#star {
 
 You can explore the styling of cards interactively by using Chrome:
 
-<https://ankitects.github.io/addon-docs/#/porting2.0?id=webview-changes>
+<https://addon-docs.ankiweb.net/porting2.0.html#webview-changes>
 
 ## Field Styling
 
@@ -225,7 +225,7 @@ web if you’d like to learn more.
 
 If your card templates are complex, it may be difficult to read the
 question and answer columns (called "Front" and "Back") in the [card
-list](../browsing.md#card-list). The "browser appearance" option allows you to define a
+list](../browsing.md#cardnote-table). The "browser appearance" option allows you to define a
 custom template to be used only in the browser, so you can include only
 the important fields and change the order if you desire. The syntax is
 the same as in standard card templates.
