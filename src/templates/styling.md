@@ -31,7 +31,7 @@ Whether the text should be aligned in the center, left, or right.
 **color**  
 The color of the text. Simple color names like 'blue', 'lightyellow',
 and so on will work, or you can use HTML color codes to select arbitrary
-colors. Please see [this webpage](https://html-color.codes/) for more
+colors. Please see [this webpage](https://htmlcolorcodes.com/) for more
 information.
 
 **background-color**  
