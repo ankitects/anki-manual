@@ -4,49 +4,30 @@
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
         <title>Card Generation - Anki Manual</title>
-        
-        
-
-
         <!-- Custom HTML head -->
         
-
 
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff" />
 
-        
         <link rel="icon" href="../favicon.svg">
-        
-        
         <link rel="shortcut icon" href="../favicon.png">
-        
         <link rel="stylesheet" href="../css/variables.css">
         <link rel="stylesheet" href="../css/general.css">
         <link rel="stylesheet" href="../css/chrome.css">
-        
         <link rel="stylesheet" href="../css/print.css" media="print">
-        
-
         <!-- Fonts -->
         <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
-        
         <link rel="stylesheet" href="../fonts/fonts.css">
-        
-
         <!-- Highlight.js Stylesheets -->
         <link rel="stylesheet" href="../highlight.css">
         <link rel="stylesheet" href="../tomorrow-night.css">
         <link rel="stylesheet" href="../ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
-        
         <link rel="stylesheet" href="../css/kbd.css">
-        
-
-        
     </head>
     <body>
         <!-- Provide site root to javascript -->
@@ -122,33 +103,26 @@
                             <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
                         </ul>
-                        
                         <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
                             <i class="fa fa-search"></i>
                         </button>
-                        
                     </div>
 
                     <h1 class="menu-title">Anki Manual</h1>
 
                     <div class="right-buttons">
-                        
                         <a href="../print.html" title="Print this book" aria-label="Print this book">
                             <i id="print-button" class="fa fa-print"></i>
                         </a>
-                        
-                        
                         <a href="https://github.com/ankitects/anki-manual/" title="Git repository" aria-label="Git repository">
                             <i id="git-repository-button" class="fa fa-github"></i>
                         </a>
-                        
                     </div>
                 </div>
 
-                
                 <div id="search-wrapper" class="hidden">
                     <form id="searchbar-outer" class="searchbar-outer">
-                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
                     </form>
                     <div id="searchresults-outer" class="searchresults-outer hidden">
                         <div id="searchresults-header" class="searchresults-header"></div>
@@ -156,8 +130,6 @@
                         </ul>
                     </div>
                 </div>
-                
-
                 <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
                 <script type="text/javascript">
                     document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
@@ -169,7 +141,7 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1><a class="header" href="#card-generation" id="card-generation">Card Generation</a></h1>
+                        <h1 id="card-generation"><a class="header" href="#card-generation">Card Generation</a></h1>
 <ul>
 <li><a href="#reverse-cards">Reverse Cards</a></li>
 <li><a href="#card-generation--deletion">Card Generation &amp; Deletion</a></li>
@@ -180,7 +152,7 @@
 <li><a href="#adding-empty-notes">Adding Empty Notes</a></li>
 <li><a href="#cloze-templates">Cloze Templates</a></li>
 </ul>
-<h2><a class="header" href="#reverse-cards" id="reverse-cards">Reverse Cards</a></h2>
+<h2 id="reverse-cards"><a class="header" href="#reverse-cards">Reverse Cards</a></h2>
 <p>You can watch <a href="http://www.youtube.com/watch?v=DnbKwHEQ1mA&amp;yt:cc=on">a video about reversing
 cards</a> on YouTube.</p>
 <p>If you want to create cards that go in both directions (e.g., both
@@ -195,7 +167,7 @@ type generates a forward-only card when you fill in only the first two
 fields; if you additionally enter something in the “Add Reverse” field
 (like a 'y'), Anki will generate a reverse card as well. The contents of
 this field will never be displayed on a card.</p>
-<h2><a class="header" href="#card-generation--deletion" id="card-generation--deletion">Card Generation &amp; Deletion</a></h2>
+<h2 id="card-generation--deletion"><a class="header" href="#card-generation--deletion">Card Generation &amp; Deletion</a></h2>
 <p>Anki will not create cards with empty front sides. Thus if “My Field”
 was empty, and one card’s front template included only that field, the
 card would not be created.</p>
@@ -219,7 +191,7 @@ of card generation. Thus if your front template looked like the
 following, no card would be generated if Country was empty:</p>
 <pre><code>Where is {{Country}} on the map?
 </code></pre>
-<h2><a class="header" href="#selective-card-generation" id="selective-card-generation">Selective Card Generation</a></h2>
+<h2 id="selective-card-generation"><a class="header" href="#selective-card-generation">Selective Card Generation</a></h2>
 <p>Sometimes you may want to generate extra cards for only some of your
 material, such as testing your ability to recall the most important
 words of a set. You can accomplish this by adding an extra field to your
@@ -227,7 +199,7 @@ note, and adding some text into it (such as &quot;1&quot;) on the notes you want
 the extra card. Then in the card template, you can make the card’s
 creation depend on that field being non-empty. For more information on
 this, please see the conditional replacement section below.</p>
-<h2><a class="header" href="#conditional-replacement" id="conditional-replacement">Conditional Replacement</a></h2>
+<h2 id="conditional-replacement"><a class="header" href="#conditional-replacement">Conditional Replacement</a></h2>
 <p>It is possible to include certain text, fields, or HTML on your cards
 only if a field is empty or not empty. An example:</p>
 <pre><code>This text is always shown.
@@ -295,7 +267,7 @@ as expected:</p>
 {{/Expression}}
 {{Notes}}
 </code></pre>
-<h2><a class="header" href="#blank-back-sides" id="blank-back-sides">Blank Back Sides</a></h2>
+<h2 id="blank-back-sides"><a class="header" href="#blank-back-sides">Blank Back Sides</a></h2>
 <p>Card generation only looks at the front side of the card. For example, if you have a
 front template:</p>
 <pre><code>{{Field 1}}
@@ -312,7 +284,7 @@ on the front template as a conditional, like so:</p>
 {{/Field 2}}
 </code></pre>
 <p>This will ensure the card is generated only if both Field 2 and Field 1 are non-empty.</p>
-<h2><a class="header" href="#limitations-in-older-anki-versions" id="limitations-in-older-anki-versions">Limitations in Older Anki Versions</a></h2>
+<h2 id="limitations-in-older-anki-versions"><a class="header" href="#limitations-in-older-anki-versions">Limitations in Older Anki Versions</a></h2>
 <p>The following limitations do not apply to Anki 2.1.28+ and AnkiMobile 2.0.64+.</p>
 <p>Older Anki versions cannot use negated conditionals for card generation.
 For example, on Anki 2.1.28, the following would add a card if a field
@@ -347,7 +319,7 @@ is fine:</p>
     {{/C}}
 {{/B}}
 </code></pre>
-<h2><a class="header" href="#adding-empty-notes" id="adding-empty-notes">Adding Empty Notes</a></h2>
+<h2 id="adding-empty-notes"><a class="header" href="#adding-empty-notes">Adding Empty Notes</a></h2>
 <p>When you add a new note in Anki 2.1.28+ and AnkiMobile 2.0.64+, if the card
 templates and note fields combine to produce no cards, a blank card will be
 created using the first template. This allows you to add material even if it's
@@ -355,7 +327,7 @@ incomplete, and modify it or the template later to make it valid. If you don't
 wish to keep an empty note, you can remove it with the Empty Cards function.</p>
 <p>On older Anki versions, Anki refuses to add or import a note if no cards
 would be generated.</p>
-<h2><a class="header" href="#cloze-templates" id="cloze-templates">Cloze Templates</a></h2>
+<h2 id="cloze-templates"><a class="header" href="#cloze-templates">Cloze Templates</a></h2>
 <p>Please see the <a href="../editing.html#cloze-deletion">cloze deletion</a> section for background info.</p>
 <p>The cloze note type functions differently from regular note types.
 Instead of a customizable number of card types, it has a single type
@@ -398,67 +370,38 @@ could use the following template:</p>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                        
                             <a rel="prev" href="../templates/fields.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
-                        
-
-                        
                             <a rel="next" href="../templates/styling.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
-                        
-
                         <div style="clear: both"></div>
                     </nav>
                 </div>
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                
                     <a rel="prev" href="../templates/fields.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
-                
-
-                
                     <a rel="next" href="../templates/styling.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
-                
             </nav>
 
         </div>
 
-        
-
-        
-
-        
-
-        
         <script type="text/javascript">
             window.playground_copyable = true;
         </script>
-        
-
-        
-
-        
         <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
         <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
         <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
-        
-
         <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
         <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
         <script src="../book.js" type="text/javascript" charset="utf-8"></script>
 
         <!-- Custom JS scripts -->
-        
-
-        
-
     </body>
 </html>

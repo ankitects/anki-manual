@@ -4,49 +4,30 @@
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
         <title>Studying - Anki Manual</title>
-        
-        
-
-
         <!-- Custom HTML head -->
         
-
 
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff" />
 
-        
         <link rel="icon" href="favicon.svg">
-        
-        
         <link rel="shortcut icon" href="favicon.png">
-        
         <link rel="stylesheet" href="css/variables.css">
         <link rel="stylesheet" href="css/general.css">
         <link rel="stylesheet" href="css/chrome.css">
-        
         <link rel="stylesheet" href="css/print.css" media="print">
-        
-
         <!-- Fonts -->
         <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
-        
         <link rel="stylesheet" href="fonts/fonts.css">
-        
-
         <!-- Highlight.js Stylesheets -->
         <link rel="stylesheet" href="highlight.css">
         <link rel="stylesheet" href="tomorrow-night.css">
         <link rel="stylesheet" href="ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
-        
         <link rel="stylesheet" href="css/kbd.css">
-        
-
-        
     </head>
     <body>
         <!-- Provide site root to javascript -->
@@ -122,33 +103,26 @@
                             <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
                         </ul>
-                        
                         <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
                             <i class="fa fa-search"></i>
                         </button>
-                        
                     </div>
 
                     <h1 class="menu-title">Anki Manual</h1>
 
                     <div class="right-buttons">
-                        
                         <a href="print.html" title="Print this book" aria-label="Print this book">
                             <i id="print-button" class="fa fa-print"></i>
                         </a>
-                        
-                        
                         <a href="https://github.com/ankitects/anki-manual/" title="Git repository" aria-label="Git repository">
                             <i id="git-repository-button" class="fa fa-github"></i>
                         </a>
-                        
                     </div>
                 </div>
 
-                
                 <div id="search-wrapper" class="hidden">
                     <form id="searchbar-outer" class="searchbar-outer">
-                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
                     </form>
                     <div id="searchresults-outer" class="searchresults-outer hidden">
                         <div id="searchresults-header" class="searchresults-header"></div>
@@ -156,8 +130,6 @@
                         </ul>
                     </div>
                 </div>
-                
-
                 <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
                 <script type="text/javascript">
                     document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
@@ -169,7 +141,7 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1><a class="header" href="#studying" id="studying">Studying</a></h1>
+                        <h1 id="studying"><a class="header" href="#studying">Studying</a></h1>
 <ul>
 <li><a href="#decks">Decks</a></li>
 <li><a href="#study-overview">Study Overview</a></li>
@@ -185,7 +157,7 @@
 </ul>
 <p>When you have found a deck you like or entered some notes in, it’s time
 to start studying.</p>
-<h2><a class="header" href="#decks" id="decks">Decks</a></h2>
+<h2 id="decks"><a class="header" href="#decks">Decks</a></h2>
 <p>Study in Anki is limited to the currently selected deck as well as any
 subdecks it contains.</p>
 <p>On the decks screen, your decks will be displayed in a list. There are
@@ -206,7 +178,7 @@ turn</a>.</p>
 when a deck has subdecks, reviews are now taken from all children decks
 at once. The review limit of the child decks is ignored - only the limit of the
 deck you clicked on applies.</p>
-<h2><a class="header" href="#study-overview" id="study-overview">Study Overview</a></h2>
+<h2 id="study-overview"><a class="header" href="#study-overview">Study Overview</a></h2>
 <p>After clicking on a deck to study, you’ll see a screen that shows you
 how many cards are due today. This is called the 'deck overview' screen.
 The cards are split into three types:</p>
@@ -229,7 +201,7 @@ proceed to show you cards until the cards to be shown for the day have
 run out.</p>
 <p>While studying, you can return to the overview by pressing the “s” key
 on your keyboard.</p>
-<h2><a class="header" href="#questions" id="questions">Questions</a></h2>
+<h2 id="questions"><a class="header" href="#questions">Questions</a></h2>
 <p>When a card is shown, only the question is shown at first. After
 thinking about the answer, either click the <strong>Show Answer</strong> button, or
 press the spacebar. The answer will then be shown. It’s okay if it takes
@@ -243,7 +215,7 @@ Anki to <a href="templates/fields.html#checking-your-answer">prompt you to type 
 just showing it to you.</p>
 <p>The number of buttons available for grading depends on whether the card
 is being 'learnt' or 'reviewed'.</p>
-<h2><a class="header" href="#learning" id="learning">Learning</a></h2>
+<h2 id="learning"><a class="header" href="#learning">Learning</a></h2>
 <p>When learning new cards, or when relearning cards that you have
 forgotten, Anki will show you the cards one or more times to help you
 memorize them. Each time is called a 'learning step'. By default there
@@ -273,7 +245,7 @@ button, where 1 is <strong>Again</strong>. Pressing the spacebar will select
 again even if their delay has not elapsed completely. If you’d prefer to
 wait the full learning delay, you can change this behaviour in the
 <a href="preferences.html">preferences</a>.</p>
-<h2><a class="header" href="#reviewing" id="reviewing">Reviewing</a></h2>
+<h2 id="reviewing"><a class="header" href="#reviewing">Reviewing</a></h2>
 <p>When a card has been previously learnt and is ready to be reviewed
 again, there are four buttons to rate your answer:</p>
 <p><strong>Again</strong> marks your answer as incorrect and asks Anki to show the card
@@ -294,7 +266,7 @@ the delay, it’s best used for only the easiest of cards. Usually you
 should find yourself answering 'Good' instead.</p>
 <p>As with learning cards, you can use 1-4 on the keyboard to select an
 answer. Pressing the spacebar will select 'Good'.</p>
-<h2><a class="header" href="#due-counts" id="due-counts">Due Counts</a></h2>
+<h2 id="due-counts"><a class="header" href="#due-counts">Due Counts</a></h2>
 <p>When only the question is shown, Anki shows three numbers like 12 + 34 +
 56 at the bottom of the screen. These represent the new cards, cards in
 learning, and cards to review. If you’d prefer not to see the numbers,
@@ -313,7 +285,7 @@ due times, in order to prevent cards that were introduced together and
 always rated the same from always staying next to each other. This
 variation is not shown on the time estimates but will be applied after
 selecting the button.</p>
-<h2><a class="header" href="#editing-and-more" id="editing-and-more">Editing and More</a></h2>
+<h2 id="editing-and-more"><a class="header" href="#editing-and-more">Editing and More</a></h2>
 <p>You can click the <strong>Edit</strong> button in the bottom left to edit the current
 note. When you finish editing, you’ll be returned to study. The editing
 screen works very similarly to the <a href="editing.html">add notes</a> screen.</p>
@@ -358,7 +330,7 @@ move to the next card. If you want to add audio to a card permanently,
 you can do that in the edit window.</p>
 <p><strong>Replay Own Voice</strong>: Replay the previous recording of your voice (presumably after showing
 the answer).</p>
-<h2><a class="header" href="#display-order" id="display-order">Display Order</a></h2>
+<h2 id="display-order"><a class="header" href="#display-order">Display Order</a></h2>
 <p>Studying will show cards from the selected deck and any decks it
 contains. Thus, if you select your “French” deck, the subdecks
 “French::Vocab” and “French::My Textbook::Lesson 1” will be shown as
@@ -384,7 +356,7 @@ from all decks at once and shown in the order they are due.</p>
 cards from ordered to random order, please see the <a href="deck-options.html">deck
 options</a>. For more fine-grained ordering of new cards, you
 can change the order in the <a href="browsing.html">browser</a>.</p>
-<h2><a class="header" href="#siblings-and-burying" id="siblings-and-burying">Siblings and Burying</a></h2>
+<h2 id="siblings-and-burying"><a class="header" href="#siblings-and-burying">Siblings and Burying</a></h2>
 <p>Recall from <a href="getting-started.html">the basics</a> that Anki can create more than one
 card for each thing you input, such as a front→back card and a
 back→front card, or two different cloze deletions from the same text.
@@ -402,7 +374,7 @@ there are separate settings for new cards and reviews.</p>
 hide cards in learning, as time is of the essence for those cards. On
 the other hand, when you study a learning card, any new/review siblings
 will be buried.</p>
-<h2><a class="header" href="#keyboard-shortcuts" id="keyboard-shortcuts">Keyboard Shortcuts</a></h2>
+<h2 id="keyboard-shortcuts"><a class="header" href="#keyboard-shortcuts">Keyboard Shortcuts</a></h2>
 <p>Most of the common operations in Anki have keyboard shortcuts. Most of
 them are discoverable in the interface: menu items list their shortcuts
 next to them, and hovering the mouse cursor over a button will generally
@@ -419,7 +391,7 @@ top. As you type characters, Anki will display only decks matching the
 characters you type. You can add a space to separate multiple search
 terms, and Anki will show only decks that match all the terms. So “ja 1”
 or “on1 ja” would both match a deck called “Japanese::Lesson1”.</p>
-<h2><a class="header" href="#falling-behind" id="falling-behind">Falling Behind</a></h2>
+<h2 id="falling-behind"><a class="header" href="#falling-behind">Falling Behind</a></h2>
 <p>If you fall behind in your reviews, Anki will prioritize cards that have
 been waiting the longest. It does this by taking the cards that have
 been waiting the longest and showing them to you in a random order up
@@ -438,67 +410,38 @@ Please see the section on Anki’s spaced-repetition
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                        
                             <a rel="prev" href="getting-started.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
-                        
-
-                        
                             <a rel="next" href="editing.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
-                        
-
                         <div style="clear: both"></div>
                     </nav>
                 </div>
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                
                     <a rel="prev" href="getting-started.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
-                
-
-                
                     <a rel="next" href="editing.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
-                
             </nav>
 
         </div>
 
-        
-
-        
-
-        
-
-        
         <script type="text/javascript">
             window.playground_copyable = true;
         </script>
-        
-
-        
-
-        
         <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
         <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
         <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
-        
-
         <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
         <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
         <script src="book.js" type="text/javascript" charset="utf-8"></script>
 
         <!-- Custom JS scripts -->
-        
-
-        
-
     </body>
 </html>

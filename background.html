@@ -4,49 +4,30 @@
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
         <title>Background - Anki Manual</title>
-        
-        
-
-
         <!-- Custom HTML head -->
         
-
 
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff" />
 
-        
         <link rel="icon" href="favicon.svg">
-        
-        
         <link rel="shortcut icon" href="favicon.png">
-        
         <link rel="stylesheet" href="css/variables.css">
         <link rel="stylesheet" href="css/general.css">
         <link rel="stylesheet" href="css/chrome.css">
-        
         <link rel="stylesheet" href="css/print.css" media="print">
-        
-
         <!-- Fonts -->
         <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
-        
         <link rel="stylesheet" href="fonts/fonts.css">
-        
-
         <!-- Highlight.js Stylesheets -->
         <link rel="stylesheet" href="highlight.css">
         <link rel="stylesheet" href="tomorrow-night.css">
         <link rel="stylesheet" href="ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
-        
         <link rel="stylesheet" href="css/kbd.css">
-        
-
-        
     </head>
     <body>
         <!-- Provide site root to javascript -->
@@ -122,33 +103,26 @@
                             <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
                         </ul>
-                        
                         <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
                             <i class="fa fa-search"></i>
                         </button>
-                        
                     </div>
 
                     <h1 class="menu-title">Anki Manual</h1>
 
                     <div class="right-buttons">
-                        
                         <a href="print.html" title="Print this book" aria-label="Print this book">
                             <i id="print-button" class="fa fa-print"></i>
                         </a>
-                        
-                        
                         <a href="https://github.com/ankitects/anki-manual/" title="Git repository" aria-label="Git repository">
                             <i id="git-repository-button" class="fa fa-github"></i>
                         </a>
-                        
                     </div>
                 </div>
 
-                
                 <div id="search-wrapper" class="hidden">
                     <form id="searchbar-outer" class="searchbar-outer">
-                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
                     </form>
                     <div id="searchresults-outer" class="searchresults-outer hidden">
                         <div id="searchresults-header" class="searchresults-header"></div>
@@ -156,8 +130,6 @@
                         </ul>
                     </div>
                 </div>
-                
-
                 <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
                 <script type="text/javascript">
                     document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
@@ -169,7 +141,7 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1><a class="header" href="#background" id="background">Background</a></h1>
+                        <h1 id="background"><a class="header" href="#background">Background</a></h1>
 <ul>
 <li><a href="#active-recall-testing">Active Recall Testing</a></li>
 <li><a href="#use-it-or-lose-it">Use It or Lose It</a></li>
@@ -208,7 +180,7 @@ example:</p>
 'spaced repetition'. They are not known to most learners, despite having
 been written about in the scientific literature for many years.
 Understanding how they work will make you a more effective learner.</p>
-<h2><a class="header" href="#active-recall-testing" id="active-recall-testing">Active Recall Testing</a></h2>
+<h2 id="active-recall-testing"><a class="header" href="#active-recall-testing">Active Recall Testing</a></h2>
 <p>'Active recall testing' means being asked a question and trying to
 remember the answer. This is in contrast to 'passive study', where we
 read, watch or listen to something without pausing to consider if we
@@ -236,7 +208,7 @@ to use 'flashcards'. With traditional paper flashcards, you write a
 question on one side of a card, and the answer on the other side. By not
 turning the card over until you’ve thought about the answer, you can
 learn things more effectively than passive observation allows.</p>
-<h2><a class="header" href="#use-it-or-lose-it" id="use-it-or-lose-it">Use It or Lose It</a></h2>
+<h2 id="use-it-or-lose-it"><a class="header" href="#use-it-or-lose-it">Use It or Lose It</a></h2>
 <p>Our brains are efficient machines, and they rapidly discard information
 that doesn’t seem useful. Chances are that you don’t remember what you
 had for dinner on Monday two weeks ago, because this information is not
@@ -255,7 +227,7 @@ information, we can greatly reduce forgetting.</p>
 you are using paper flashcards, it’s easy to flick through all of them
 if you only have 30 of them to review, but as the number grows to 300 or
 3000, it quickly becomes unwieldy.</p>
-<h2><a class="header" href="#spaced-repetition" id="spaced-repetition">Spaced Repetition</a></h2>
+<h2 id="spaced-repetition"><a class="header" href="#spaced-repetition">Spaced Repetition</a></h2>
 <p>The 'spacing effect' was reported by a German psychologist Hermann Ebbinghaus in 1885. He
 observed that we tend to remember things more effectively if we spread
 reviews out over time, instead of studying multiple times in one
@@ -290,7 +262,7 @@ time, then 3 days later, 15 days later, 45 days later, and so on.</p>
 and retained with the absolute minimum amount of effort necessary.
 SuperMemo’s slogan sums it up: with spaced repetition, you can 'forget
 about forgetting'.</p>
-<h2><a class="header" href="#why-anki" id="why-anki">Why Anki?</a></h2>
+<h2 id="why-anki"><a class="header" href="#why-anki">Why Anki?</a></h2>
 <p>While there is no denying the huge impact SuperMemo has had on the
 field, it is not without its problems. The program is often criticized
 for being buggy and difficult to navigate. It only runs on Windows
@@ -310,67 +282,38 @@ SuperMemo algorithm called <a href="faqs.html">SM-2</a>.</p>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                        
                             <a rel="prev" href="intro.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
-                        
-
-                        
                             <a rel="next" href="getting-started.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
-                        
-
                         <div style="clear: both"></div>
                     </nav>
                 </div>
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                
                     <a rel="prev" href="intro.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
-                
-
-                
                     <a rel="next" href="getting-started.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
-                
             </nav>
 
         </div>
 
-        
-
-        
-
-        
-
-        
         <script type="text/javascript">
             window.playground_copyable = true;
         </script>
-        
-
-        
-
-        
         <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
         <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
         <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
-        
-
         <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
         <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
         <script src="book.js" type="text/javascript" charset="utf-8"></script>
 
         <!-- Custom JS scripts -->
-        
-
-        
-
     </body>
 </html>

@@ -4,49 +4,30 @@
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
         <title>Importing - Anki Manual</title>
-        
-        
-
-
         <!-- Custom HTML head -->
         
-
 
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff" />
 
-        
         <link rel="icon" href="favicon.svg">
-        
-        
         <link rel="shortcut icon" href="favicon.png">
-        
         <link rel="stylesheet" href="css/variables.css">
         <link rel="stylesheet" href="css/general.css">
         <link rel="stylesheet" href="css/chrome.css">
-        
         <link rel="stylesheet" href="css/print.css" media="print">
-        
-
         <!-- Fonts -->
         <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
-        
         <link rel="stylesheet" href="fonts/fonts.css">
-        
-
         <!-- Highlight.js Stylesheets -->
         <link rel="stylesheet" href="highlight.css">
         <link rel="stylesheet" href="tomorrow-night.css">
         <link rel="stylesheet" href="ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
-        
         <link rel="stylesheet" href="css/kbd.css">
-        
-
-        
     </head>
     <body>
         <!-- Provide site root to javascript -->
@@ -122,33 +103,26 @@
                             <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
                         </ul>
-                        
                         <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
                             <i class="fa fa-search"></i>
                         </button>
-                        
                     </div>
 
                     <h1 class="menu-title">Anki Manual</h1>
 
                     <div class="right-buttons">
-                        
                         <a href="print.html" title="Print this book" aria-label="Print this book">
                             <i id="print-button" class="fa fa-print"></i>
                         </a>
-                        
-                        
                         <a href="https://github.com/ankitects/anki-manual/" title="Git repository" aria-label="Git repository">
                             <i id="git-repository-button" class="fa fa-github"></i>
                         </a>
-                        
                     </div>
                 </div>
 
-                
                 <div id="search-wrapper" class="hidden">
                     <form id="searchbar-outer" class="searchbar-outer">
-                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
                     </form>
                     <div id="searchresults-outer" class="searchresults-outer hidden">
                         <div id="searchresults-header" class="searchresults-header"></div>
@@ -156,8 +130,6 @@
                         </ul>
                     </div>
                 </div>
-                
-
                 <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
                 <script type="text/javascript">
                     document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
@@ -169,7 +141,7 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1><a class="header" href="#importing" id="importing">Importing</a></h1>
+                        <h1 id="importing"><a class="header" href="#importing">Importing</a></h1>
 <ul>
 <li><a href="#text-files">Text Files</a>
 <ul>
@@ -185,7 +157,7 @@
 <p>Anki can import text files, packaged Anki decks created by the export
 feature, Mnemosyne 2.0 .db files, and SuperMemo .xml files. To import a
 file, click the File menu and then &quot;Import&quot;.</p>
-<h2><a class="header" href="#text-files" id="text-files">Text Files</a></h2>
+<h2 id="text-files"><a class="header" href="#text-files">Text Files</a></h2>
 <p>Any <strong>plain text</strong> file that contains fields separated by commas,
 semicolons or tabs can be imported into Anki, provided some conditions
 are met.</p>
@@ -253,7 +225,7 @@ in the import dialog:</p>
 foo bar; bar baz; baz quux
 field1; field2; field3
 </code></pre>
-<h3><a class="header" href="#spreadsheets-and-utf-8" id="spreadsheets-and-utf-8">Spreadsheets and UTF-8</a></h3>
+<h3 id="spreadsheets-and-utf-8"><a class="header" href="#spreadsheets-and-utf-8">Spreadsheets and UTF-8</a></h3>
 <p>If you have non-Latin characters in your file (such as accents, Japanese
 and so on), Anki expects files to be saved in a 'UTF-8 encoding'. The
 easiest way to do this is to use the free LibreOffice spreadsheet
@@ -266,7 +238,7 @@ for more information.</p>
 File&gt;Save As, and then select CSV for the type of file. After
 accepting the default options, LibreOffice will save the file and you
 can then import the saved file into Anki.</p>
-<h3><a class="header" href="#html" id="html">HTML</a></h3>
+<h3 id="html"><a class="header" href="#html">HTML</a></h3>
 <p>Anki can treat text imported from text files as HTML (the language used
 for web pages). This means that text with bold, italics and other
 formatting can be exported to a text file and imported again. If you
@@ -281,7 +253,7 @@ include angle brackets or ampersands, you may use the following replacements:</p
 <tr><td>&gt;</td><td><code>&amp;gt;</code></td></tr>
 <tr><td>&amp;</td><td><code>&amp;amp;</code></td></tr>
 </tbody></table>
-<h3><a class="header" href="#importing-media" id="importing-media">Importing Media</a></h3>
+<h3 id="importing-media"><a class="header" href="#importing-media">Importing Media</a></h3>
 <p>If you want to include audio and pictures from a text file import, copy
 the files into the <a href="files.html">collection.media folder</a>. <strong>Do not put
 subdirectories in the media folder, or some features will not work.</strong></p>
@@ -306,7 +278,7 @@ enable the &quot;Allow HTML&quot; option.</p>
 expensive, as each card has to be rendered, and such functionality isn’t
 obvious to shared deck users. Please use the find &amp; replace technique
 instead.</p>
-<h3><a class="header" href="#bulk-media" id="bulk-media">Bulk Media</a></h3>
+<h3 id="bulk-media"><a class="header" href="#bulk-media">Bulk Media</a></h3>
 <p>Another option for importing large amounts of media at once is to use
 the <a href="https://ankiweb.net/shared/info/1531997860">media import add-on</a>.
 This add-on will automatically create notes for all files in a folder
@@ -315,12 +287,12 @@ so if you have a file named apple.jpg, the front would say 'apple') and
 the images or audio on the back. If you would like a different
 arrangement of media and filenames, you can <a href="browsing.html">change the note
 type</a> of the created cards afterwards.</p>
-<h3><a class="header" href="#adding-tags" id="adding-tags">Adding Tags</a></h3>
+<h3 id="adding-tags"><a class="header" href="#adding-tags">Adding Tags</a></h3>
 <p>If you want to add 'tag1' and 'tag2' to every line you’re importing, add
 the following to the top of the text file:</p>
 <pre><code>tags:tag1 tag2
 </code></pre>
-<h3><a class="header" href="#duplicates-and-updating" id="duplicates-and-updating">Duplicates and Updating</a></h3>
+<h3 id="duplicates-and-updating"><a class="header" href="#duplicates-and-updating">Duplicates and Updating</a></h3>
 <p>When importing text files, Anki uses the first field to determine if a
 note is unique. By default, if the file you are importing has a first
 field that matches one of the existing notes in your collection and that
@@ -345,67 +317,38 @@ scheduling information on all their cards will be preserved.</p>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                        
                             <a rel="prev" href="searching.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
-                        
-
-                        
                             <a rel="next" href="exporting.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
-                        
-
                         <div style="clear: both"></div>
                     </nav>
                 </div>
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                
                     <a rel="prev" href="searching.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
-                
-
-                
                     <a rel="next" href="exporting.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
-                
             </nav>
 
         </div>
 
-        
-
-        
-
-        
-
-        
         <script type="text/javascript">
             window.playground_copyable = true;
         </script>
-        
-
-        
-
-        
         <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
         <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
         <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
-        
-
         <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
         <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
         <script src="book.js" type="text/javascript" charset="utf-8"></script>
 
         <!-- Custom JS scripts -->
-        
-
-        
-
     </body>
 </html>

@@ -4,49 +4,30 @@
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
         <title>Managing Files - Anki Manual</title>
-        
-        
-
-
         <!-- Custom HTML head -->
         
-
 
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff" />
 
-        
         <link rel="icon" href="favicon.svg">
-        
-        
         <link rel="shortcut icon" href="favicon.png">
-        
         <link rel="stylesheet" href="css/variables.css">
         <link rel="stylesheet" href="css/general.css">
         <link rel="stylesheet" href="css/chrome.css">
-        
         <link rel="stylesheet" href="css/print.css" media="print">
-        
-
         <!-- Fonts -->
         <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
-        
         <link rel="stylesheet" href="fonts/fonts.css">
-        
-
         <!-- Highlight.js Stylesheets -->
         <link rel="stylesheet" href="highlight.css">
         <link rel="stylesheet" href="tomorrow-night.css">
         <link rel="stylesheet" href="ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
-        
         <link rel="stylesheet" href="css/kbd.css">
-        
-
-        
     </head>
     <body>
         <!-- Provide site root to javascript -->
@@ -122,33 +103,26 @@
                             <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
                         </ul>
-                        
                         <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
                             <i class="fa fa-search"></i>
                         </button>
-                        
                     </div>
 
                     <h1 class="menu-title">Anki Manual</h1>
 
                     <div class="right-buttons">
-                        
                         <a href="print.html" title="Print this book" aria-label="Print this book">
                             <i id="print-button" class="fa fa-print"></i>
                         </a>
-                        
-                        
                         <a href="https://github.com/ankitects/anki-manual/" title="Git repository" aria-label="Git repository">
                             <i id="git-repository-button" class="fa fa-github"></i>
                         </a>
-                        
                     </div>
                 </div>
 
-                
                 <div id="search-wrapper" class="hidden">
                     <form id="searchbar-outer" class="searchbar-outer">
-                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
                     </form>
                     <div id="searchresults-outer" class="searchresults-outer hidden">
                         <div id="searchresults-header" class="searchresults-header"></div>
@@ -156,8 +130,6 @@
                         </ul>
                     </div>
                 </div>
-                
-
                 <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
                 <script type="text/javascript">
                     document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
@@ -169,7 +141,7 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1><a class="header" href="#managing-files-and-your-collection" id="managing-files-and-your-collection">Managing Files and Your Collection</a></h1>
+                        <h1 id="managing-files-and-your-collection"><a class="header" href="#managing-files-and-your-collection">Managing Files and Your Collection</a></h1>
 <ul>
 <li><a href="#checking-your-collection">Checking Your Collection</a></li>
 <li><a href="#file-locations">File Locations</a></li>
@@ -188,7 +160,7 @@
 </ul>
 </li>
 </ul>
-<h2><a class="header" href="#checking-your-collection" id="checking-your-collection">Checking Your Collection</a></h2>
+<h2 id="checking-your-collection"><a class="header" href="#checking-your-collection">Checking Your Collection</a></h2>
 <p>It’s a good idea to occasionally check your collection file for
 problems. You can do this via the Tools&gt;Check Database menu item.
 Checking the database ensures the file is not corrupted, rebuilds some
@@ -202,7 +174,7 @@ way to do it.</p>
 every 2 weeks. This optimization ensures the collection performs well,
 but it does not check for errors or rebuild the tag list when
 automatically optimizing.</p>
-<h2><a class="header" href="#file-locations" id="file-locations">File Locations</a></h2>
+<h2 id="file-locations"><a class="header" href="#file-locations">File Locations</a></h2>
 <p>On <strong>Windows</strong>, the latest Anki versions store your Anki files in your
 appdata folder. You can access it by opening the file manager, and
 typing <code>%APPDATA%\Anki2</code> in the location field. Older versions of Anki
@@ -237,7 +209,7 @@ are stored in a file called prefs.db.</p>
 <p>You should never copy or move your collection while Anki is open. Doing
 so could cause your collection to become corrupted. Please don’t move or
 modify the other files in the folder either.</p>
-<h2><a class="header" href="#startup-options" id="startup-options">Startup Options</a></h2>
+<h2 id="startup-options"><a class="header" href="#startup-options">Startup Options</a></h2>
 <p>If you have made a destructive change on one computer and have an
 undamaged copy on another computer, you may wish to start Anki without
 syncing in order to use the full sync option without first downloading
@@ -284,7 +256,7 @@ On Windows, you can define the environment variable with:</p>
 <p>On Linux and Mac OS, you can use:</p>
 <pre><code>export ANKI_BASE=&quot;/path/to/AnkiDataFolder&quot;
 </code></pre>
-<h2><a class="header" href="#dropbox-and-file-syncing" id="dropbox-and-file-syncing">DropBox and File Syncing</a></h2>
+<h2 id="dropbox-and-file-syncing"><a class="header" href="#dropbox-and-file-syncing">DropBox and File Syncing</a></h2>
 <p>We do not recommend you sync your Anki folder directly with a
 third-party synchronization service, as it can lead to database
 corruption when files are synced while in use.</p>
@@ -297,12 +269,12 @@ recommended that you create a script that copies your files from your
 synced folder to a local folder, launches Anki, and then copies the
 files back when Anki is closed. This will ensure that the files are
 never synchronized while they are open.</p>
-<h2><a class="header" href="#network-filesystems" id="network-filesystems">Network Filesystems</a></h2>
+<h2 id="network-filesystems"><a class="header" href="#network-filesystems">Network Filesystems</a></h2>
 <p>We strongly recommend you have Anki store your files on a local hard
 disk, as network filesystems can lead to database corruption. If a
 network filesystem is your only option, regular use of Tools&gt;Check
 Database to detect corruption is recommended.</p>
-<h2><a class="header" href="#running-from-a-flash-drive" id="running-from-a-flash-drive">Running from a Flash Drive</a></h2>
+<h2 id="running-from-a-flash-drive"><a class="header" href="#running-from-a-flash-drive">Running from a Flash Drive</a></h2>
 <p>On Windows, Anki can be installed on a USB / flash drive and run as a
 portable application. The following example assumes your USB drive is
 drive G.</p>
@@ -329,7 +301,7 @@ stored in G:\ankidata.</li>
 <p>Media syncing with AnkiWeb may not work if your flash drive is formatted
 as FAT32. Please format the drive as NTFS to ensure media syncs
 correctly.</p>
-<h2><a class="header" href="#backups" id="backups">Backups</a></h2>
+<h2 id="backups"><a class="header" href="#backups">Backups</a></h2>
 <p>Each time your collection is closed (when closing Anki, switching
 profiles, or synchronizing your deck), Anki exports your collection into
 the backups folder. By default Anki will store up to 30 backups; you can
@@ -378,13 +350,13 @@ File&gt;Import, though please note the import feature only supports a
 single note type at one time, so if you have deleted notes from
 different note types, you’ll need to split the file into separate files
 for each note type first.</p>
-<h2><a class="header" href="#inaccessible-harddisk" id="inaccessible-harddisk">Inaccessible Harddisk</a></h2>
+<h2 id="inaccessible-harddisk"><a class="header" href="#inaccessible-harddisk">Inaccessible Harddisk</a></h2>
 <p>If Anki can’t write to files in the <a href="#file-locations">Anki folder</a>, a message
 will be displayed on startup saying that Anki can’t write to the
 harddisk, and Anki will close. If you’re unsure how to fix the
 permissions, please contact someone near you who is knowledgeable about
 computers and can help you out.</p>
-<h2><a class="header" href="#permissions-of-temp-folder" id="permissions-of-temp-folder">Permissions of Temp Folder</a></h2>
+<h2 id="permissions-of-temp-folder"><a class="header" href="#permissions-of-temp-folder">Permissions of Temp Folder</a></h2>
 <p>Anki uses the system’s temporary folder to store temporary data. If the
 permissions of this folder have been changed from the default settings
 by a rogue app or buggy antivirus app, Anki will not function properly.</p>
@@ -413,7 +385,7 @@ default W7 install the control will actually be inherited from
 c:\users\your-username.</p>
 </li>
 </ol>
-<h2><a class="header" href="#corrupt-collections" id="corrupt-collections">Corrupt Collections</a></h2>
+<h2 id="corrupt-collections"><a class="header" href="#corrupt-collections">Corrupt Collections</a></h2>
 <p>Anki uses a file format that is robust against program and computer
 crashes, but it’s still possible for your collection to become corrupt
 if the files are modified while Anki is open, stored on a network drive,
@@ -428,7 +400,7 @@ installed already. On Windows, download
 <a href="http://www.sqlite.org/sqlite-3_6_23.zip">http://www.sqlite.org/sqlite-3_6_23.zip</a>.</p>
 <p>Next, create a backup of your collection.anki2 file, in case something
 goes wrong with the steps below.</p>
-<h3><a class="header" href="#linuxosx" id="linuxosx">Linux/OSX</a></h3>
+<h3 id="linuxosx"><a class="header" href="#linuxosx">Linux/OSX</a></h3>
 <p>Open a terminal, change to the folder your collection is located in, and
 type:</p>
 <pre><code>sqlite3 collection.anki2 .dump &gt; dump.txt
@@ -441,7 +413,7 @@ line. If it reads &quot;rollback;&quot;, change it to &quot;commit;&quot;</p>
 <p>Make sure you use temp.file - do not put collection.anki2 on the right,
 or you will blank out the file. When you’re done, proceed to the final
 step.</p>
-<h3><a class="header" href="#windows" id="windows">Windows</a></h3>
+<h3 id="windows"><a class="header" href="#windows">Windows</a></h3>
 <p>Copy the <code>sqlite3.exe</code> program and your deck to your desktop. Then go to
 <strong>Start&gt;Run</strong> and type in <code>cmd.exe</code>.</p>
 <p>If you’re on a recent Windows, the command prompt may not start on your
@@ -461,7 +433,7 @@ line. If it reads &quot;rollback;&quot;, change it to &quot;commit;&quot;</p>
 <p>Make sure you use temp.file - do not put collection.anki2 on the right,
 or you will blank out the file. When you’re done, proceed to the final
 step.</p>
-<h3><a class="header" href="#final-step" id="final-step">Final Step</a></h3>
+<h3 id="final-step"><a class="header" href="#final-step">Final Step</a></h3>
 <p>Check that you didn’t get an error message, and that temp.file is not
 empty. The procedure optimizes the collection in the process, so it’s
 normal for the new file to be somewhat smaller than the old one.</p>
@@ -487,67 +459,38 @@ collection has been successfully restored.</p>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                        
                             <a rel="prev" href="exporting.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
-                        
-
-                        
                             <a rel="next" href="stats.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
-                        
-
                         <div style="clear: both"></div>
                     </nav>
                 </div>
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                
                     <a rel="prev" href="exporting.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
-                
-
-                
                     <a rel="next" href="stats.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
-                
             </nav>
 
         </div>
 
-        
-
-        
-
-        
-
-        
         <script type="text/javascript">
             window.playground_copyable = true;
         </script>
-        
-
-        
-
-        
         <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
         <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
         <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
-        
-
         <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
         <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
         <script src="book.js" type="text/javascript" charset="utf-8"></script>
 
         <!-- Custom JS scripts -->
-        
-
-        
-
     </body>
 </html>

@@ -4,51 +4,31 @@
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
         <title>Anki Manual</title>
-        
         <meta name="robots" content="noindex" />
-        
-        
-
-
         <!-- Custom HTML head -->
         
-
 
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff" />
 
-        
         <link rel="icon" href="favicon.svg">
-        
-        
         <link rel="shortcut icon" href="favicon.png">
-        
         <link rel="stylesheet" href="css/variables.css">
         <link rel="stylesheet" href="css/general.css">
         <link rel="stylesheet" href="css/chrome.css">
-        
         <link rel="stylesheet" href="css/print.css" media="print">
-        
-
         <!-- Fonts -->
         <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
-        
         <link rel="stylesheet" href="fonts/fonts.css">
-        
-
         <!-- Highlight.js Stylesheets -->
         <link rel="stylesheet" href="highlight.css">
         <link rel="stylesheet" href="tomorrow-night.css">
         <link rel="stylesheet" href="ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
-        
         <link rel="stylesheet" href="css/kbd.css">
-        
-
-        
     </head>
     <body>
         <!-- Provide site root to javascript -->
@@ -124,33 +104,26 @@
                             <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
                         </ul>
-                        
                         <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
                             <i class="fa fa-search"></i>
                         </button>
-                        
                     </div>
 
                     <h1 class="menu-title">Anki Manual</h1>
 
                     <div class="right-buttons">
-                        
                         <a href="print.html" title="Print this book" aria-label="Print this book">
                             <i id="print-button" class="fa fa-print"></i>
                         </a>
-                        
-                        
                         <a href="https://github.com/ankitects/anki-manual/" title="Git repository" aria-label="Git repository">
                             <i id="git-repository-button" class="fa fa-github"></i>
                         </a>
-                        
                     </div>
                 </div>
 
-                
                 <div id="search-wrapper" class="hidden">
                     <form id="searchbar-outer" class="searchbar-outer">
-                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
                     </form>
                     <div id="searchresults-outer" class="searchresults-outer hidden">
                         <div id="searchresults-header" class="searchresults-header"></div>
@@ -158,8 +131,6 @@
                         </ul>
                     </div>
                 </div>
-                
-
                 <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
                 <script type="text/javascript">
                     document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
@@ -171,10 +142,10 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1><a class="header" href="#introduction" id="introduction">Introduction</a></h1>
-<h2><a class="header" href="#quickstart" id="quickstart">Quickstart</a></h2>
+                        <h1 id="introduction"><a class="header" href="#introduction">Introduction</a></h1>
+<h2 id="quickstart"><a class="header" href="#quickstart">Quickstart</a></h2>
 <p>In a hurry? Jump straight to <a href="getting-started.html">Getting Started</a>.</p>
-<h2><a class="header" href="#translations" id="translations">Translations</a></h2>
+<h2 id="translations"><a class="header" href="#translations">Translations</a></h2>
 <p>Volunteers have contributed translations of this manual. The
 translations may not always be up to date.</p>
 <ul>
@@ -183,17 +154,17 @@ translations may not always be up to date.</p>
 <li><a href="https://apps.ankiweb.net/docs/manual.es.html">Español</a></li>
 <li><a href="https://apps.ankiweb.net/docs/manual.fr.html">Français</a></li>
 <li><a href="https://web.archive.org/web/20160423223801/http://192.167.9.6/Anki_ITA/Manual_ITA.htm">Italiano</a></li>
-<li><a href="https://platynowy.github.io/anki-manual/#/">Polski</a></li>
+<li><a href="https://platynowy.github.io/anki-manual/">Polski</a></li>
 <li><a href="https://mizerablebr.github.io/anki-manual/">Português Brasileiro</a></li>
-<li><a href="https://alexeygorelov.github.io/anki-manual-ru/#/">русский язык</a></li>
+<li><a href="https://alexeygorelov.github.io/anki-manual-ru/">русский язык</a></li>
 <li><a href="https://abdnh.github.io/anki-manual/">العربية</a></li>
 <li><a href="http://ankidroid.ir/anki.pdf">فارسى</a></li>
 <li><a href="http://wikiwiki.jp/rage2050/?FrontPage">日本語</a></li>
 <li><a href="http://www.ankichina.net/manual/anki/">简体中文</a></li>
 </ul>
 <p>If you would like to help translate the manual into a different language,
-please see the <a href="https://translating.ankiweb.net/#/anki/manual">translation docs</a>.</p>
-<h1><a class="header" href="#background" id="background">Background</a></h1>
+please see the <a href="https://translating.ankiweb.net/anki/manual.html">translation docs</a>.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="background"><a class="header" href="#background">Background</a></h1>
 <ul>
 <li><a href="background.html#active-recall-testing">Active Recall Testing</a></li>
 <li><a href="background.html#use-it-or-lose-it">Use It or Lose It</a></li>
@@ -232,7 +203,7 @@ example:</p>
 'spaced repetition'. They are not known to most learners, despite having
 been written about in the scientific literature for many years.
 Understanding how they work will make you a more effective learner.</p>
-<h2><a class="header" href="#active-recall-testing" id="active-recall-testing">Active Recall Testing</a></h2>
+<h2 id="active-recall-testing"><a class="header" href="#active-recall-testing">Active Recall Testing</a></h2>
 <p>'Active recall testing' means being asked a question and trying to
 remember the answer. This is in contrast to 'passive study', where we
 read, watch or listen to something without pausing to consider if we
@@ -260,7 +231,7 @@ to use 'flashcards'. With traditional paper flashcards, you write a
 question on one side of a card, and the answer on the other side. By not
 turning the card over until you’ve thought about the answer, you can
 learn things more effectively than passive observation allows.</p>
-<h2><a class="header" href="#use-it-or-lose-it" id="use-it-or-lose-it">Use It or Lose It</a></h2>
+<h2 id="use-it-or-lose-it"><a class="header" href="#use-it-or-lose-it">Use It or Lose It</a></h2>
 <p>Our brains are efficient machines, and they rapidly discard information
 that doesn’t seem useful. Chances are that you don’t remember what you
 had for dinner on Monday two weeks ago, because this information is not
@@ -279,7 +250,7 @@ information, we can greatly reduce forgetting.</p>
 you are using paper flashcards, it’s easy to flick through all of them
 if you only have 30 of them to review, but as the number grows to 300 or
 3000, it quickly becomes unwieldy.</p>
-<h2><a class="header" href="#spaced-repetition" id="spaced-repetition">Spaced Repetition</a></h2>
+<h2 id="spaced-repetition"><a class="header" href="#spaced-repetition">Spaced Repetition</a></h2>
 <p>The 'spacing effect' was reported by a German psychologist Hermann Ebbinghaus in 1885. He
 observed that we tend to remember things more effectively if we spread
 reviews out over time, instead of studying multiple times in one
@@ -314,7 +285,7 @@ time, then 3 days later, 15 days later, 45 days later, and so on.</p>
 and retained with the absolute minimum amount of effort necessary.
 SuperMemo’s slogan sums it up: with spaced repetition, you can 'forget
 about forgetting'.</p>
-<h2><a class="header" href="#why-anki" id="why-anki">Why Anki?</a></h2>
+<h2 id="why-anki"><a class="header" href="#why-anki">Why Anki?</a></h2>
 <p>While there is no denying the huge impact SuperMemo has had on the
 field, it is not without its problems. The program is often criticized
 for being buggy and difficult to navigate. It only runs on Windows
@@ -329,7 +300,7 @@ multi-platform, running on Windows, Mac OSX, Linux/FreeBSD, and some
 mobile devices. And it’s considerably easier to use than SuperMemo.</p>
 <p>Anki’s spaced repetition system is based on an older version of the
 SuperMemo algorithm called <a href="faqs.html">SM-2</a>.</p>
-<h1><a class="header" href="#getting-started" id="getting-started">Getting Started</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="getting-started"><a class="header" href="#getting-started">Getting Started</a></h1>
 <ul>
 <li><a href="getting-started.html#installing--upgrading">Installing &amp; Upgrading</a></li>
 <li><a href="getting-started.html#videos">Videos</a></li>
@@ -345,9 +316,9 @@ SuperMemo algorithm called <a href="faqs.html">SM-2</a>.</p>
 </li>
 <li><a href="getting-started.html#shared-decks">Shared Decks</a></li>
 </ul>
-<h2><a class="header" href="#installing--upgrading" id="installing--upgrading">Installing &amp; Upgrading</a></h2>
+<h2 id="installing--upgrading"><a class="header" href="#installing--upgrading">Installing &amp; Upgrading</a></h2>
 <p>Please see the <a href="https://apps.ankiweb.net">download site</a> for installation and upgrade instructions.</p>
-<h2><a class="header" href="#videos" id="videos">Videos</a></h2>
+<h2 id="videos"><a class="header" href="#videos">Videos</a></h2>
 <p>For a quick way to dive into Anki, please have a look at these intro
 videos. Some were made with a previous Anki version, but the concepts
 are the same.</p>
@@ -374,8 +345,8 @@ Answer</a></p>
 <p>If YouTube is unavailable in your country, you can <a href="https://apps.ankiweb.net/downloads/archive/screencasts/2.0/">download the
 videos</a>
 instead.</p>
-<h2><a class="header" href="#key-concepts" id="key-concepts">Key Concepts</a></h2>
-<h3><a class="header" href="#cards" id="cards">Cards</a></h3>
+<h2 id="key-concepts"><a class="header" href="#key-concepts">Key Concepts</a></h2>
+<h3 id="cards"><a class="header" href="#cards">Cards</a></h3>
 <p>A question and answer pair is called a 'card'. This is based on a paper
 flashcard with a question on one side and the answer on the back. In
 Anki a card doesn’t actually look like a physical card, and when you
@@ -390,7 +361,7 @@ A: O
 </code></pre>
 <p>After confirming that you are correct, you can tell Anki how well you
 remembered, and Anki will choose a next time to show you again.</p>
-<h3><a class="header" href="#decks" id="decks">Decks</a></h3>
+<h3 id="decks"><a class="header" href="#decks">Decks</a></h3>
 <p>A 'deck' is a group of cards. You can place cards in different decks to
 study parts of your card collection instead of studying everything at
 once. Each deck can have different settings, such as how many new cards
@@ -415,7 +386,7 @@ specific topics such as “food verbs” or “lesson 1”. For more info on
 this, please see the <a href="editing.html#using-decks-appropriately">using decks appropriately</a> section.</p>
 <p>For information on how decks affect the order cards are displayed in,
 please see the <a href="studying.html#display-order">display order</a> section.</p>
-<h3><a class="header" href="#notes--fields" id="notes--fields">Notes &amp; Fields</a></h3>
+<h3 id="notes--fields"><a class="header" href="#notes--fields">Notes &amp; Fields</a></h3>
 <p>When making flashcards, it’s often desirable to make more than one card
 that relates to some information. For example, if you’re learning
 French, and you learn that the word “bonjour” means “hello”, you may
@@ -471,7 +442,7 @@ has three fields: French, English, and Page.</p>
 <p>To add and edit fields, click the “Fields…​” button while adding or
 editing notes. For more information on fields, please see the
 <a href="editing.html#customizing-fields">Customizing Fields</a> section.</p>
-<h3><a class="header" href="#card-types" id="card-types">Card Types</a></h3>
+<h3 id="card-types"><a class="header" href="#card-types">Card Types</a></h3>
 <p>In order for Anki to create cards based on our notes, we need to give it
 a blueprint that says which fields should be displayed on the front or
 back of each card. This blueprint is called a 'card type'. Each type of
@@ -511,7 +482,7 @@ related cards updated at once.</p>
 <p>To add and edit card types, click the “Cards…​” button while adding or
 editing notes. For more information on card types, please see the <a href="templates/intro.html">Cards
 and Templates</a> section.</p>
-<h3><a class="header" href="#note-types" id="note-types">Note Types</a></h3>
+<h3 id="note-types"><a class="header" href="#note-types">Note Types</a></h3>
 <p>Anki allows you to create different types of notes for different
 material. Each type of note has its own set of fields and card types.
 It’s a good idea to create a separate note type for each broad topic
@@ -555,10 +526,10 @@ Add window, you can select what note type to use and what deck to use,
 and these choices are completely independent of each other. You can also
 change the note type of some notes <a href="browsing.html">after you’ve already created
 them</a>.</p>
-<h3><a class="header" href="#collection" id="collection">Collection</a></h3>
+<h3 id="collection"><a class="header" href="#collection">Collection</a></h3>
 <p>Your 'collection' is all the material stored in Anki – your cards,
 notes, decks, note types, deck options, and so on.</p>
-<h2><a class="header" href="#shared-decks" id="shared-decks">Shared Decks</a></h2>
+<h2 id="shared-decks"><a class="header" href="#shared-decks">Shared Decks</a></h2>
 <p>You can watch <a href="http://www.youtube.com/watch?v=QS2G-k2hQyg&amp;yt:cc=on">a video about Shared Decks and Review
 Basics</a> on YouTube.</p>
 <p>The easiest way to get started with Anki is to download a deck of cards
@@ -608,7 +579,7 @@ some time. And for simple subjects that are basically a list of facts,
 such as capital city names or pub quiz trivia, you probably don’t need
 external material. But if you attempt to study complex subjects without
 external material, you will probably meet with disappointing results.</p>
-<h1><a class="header" href="#studying" id="studying">Studying</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="studying"><a class="header" href="#studying">Studying</a></h1>
 <ul>
 <li><a href="studying.html#decks">Decks</a></li>
 <li><a href="studying.html#study-overview">Study Overview</a></li>
@@ -624,7 +595,7 @@ external material, you will probably meet with disappointing results.</p>
 </ul>
 <p>When you have found a deck you like or entered some notes in, it’s time
 to start studying.</p>
-<h2><a class="header" href="#decks-1" id="decks-1">Decks</a></h2>
+<h2 id="decks-1"><a class="header" href="#decks-1">Decks</a></h2>
 <p>Study in Anki is limited to the currently selected deck as well as any
 subdecks it contains.</p>
 <p>On the decks screen, your decks will be displayed in a list. There are
@@ -645,7 +616,7 @@ turn</a>.</p>
 when a deck has subdecks, reviews are now taken from all children decks
 at once. The review limit of the child decks is ignored - only the limit of the
 deck you clicked on applies.</p>
-<h2><a class="header" href="#study-overview" id="study-overview">Study Overview</a></h2>
+<h2 id="study-overview"><a class="header" href="#study-overview">Study Overview</a></h2>
 <p>After clicking on a deck to study, you’ll see a screen that shows you
 how many cards are due today. This is called the 'deck overview' screen.
 The cards are split into three types:</p>
@@ -668,7 +639,7 @@ proceed to show you cards until the cards to be shown for the day have
 run out.</p>
 <p>While studying, you can return to the overview by pressing the “s” key
 on your keyboard.</p>
-<h2><a class="header" href="#questions" id="questions">Questions</a></h2>
+<h2 id="questions"><a class="header" href="#questions">Questions</a></h2>
 <p>When a card is shown, only the question is shown at first. After
 thinking about the answer, either click the <strong>Show Answer</strong> button, or
 press the spacebar. The answer will then be shown. It’s okay if it takes
@@ -682,7 +653,7 @@ Anki to <a href="templates/fields.html#checking-your-answer">prompt you to type 
 just showing it to you.</p>
 <p>The number of buttons available for grading depends on whether the card
 is being 'learnt' or 'reviewed'.</p>
-<h2><a class="header" href="#learning" id="learning">Learning</a></h2>
+<h2 id="learning"><a class="header" href="#learning">Learning</a></h2>
 <p>When learning new cards, or when relearning cards that you have
 forgotten, Anki will show you the cards one or more times to help you
 memorize them. Each time is called a 'learning step'. By default there
@@ -712,7 +683,7 @@ button, where 1 is <strong>Again</strong>. Pressing the spacebar will select
 again even if their delay has not elapsed completely. If you’d prefer to
 wait the full learning delay, you can change this behaviour in the
 <a href="preferences.html">preferences</a>.</p>
-<h2><a class="header" href="#reviewing" id="reviewing">Reviewing</a></h2>
+<h2 id="reviewing"><a class="header" href="#reviewing">Reviewing</a></h2>
 <p>When a card has been previously learnt and is ready to be reviewed
 again, there are four buttons to rate your answer:</p>
 <p><strong>Again</strong> marks your answer as incorrect and asks Anki to show the card
@@ -733,7 +704,7 @@ the delay, it’s best used for only the easiest of cards. Usually you
 should find yourself answering 'Good' instead.</p>
 <p>As with learning cards, you can use 1-4 on the keyboard to select an
 answer. Pressing the spacebar will select 'Good'.</p>
-<h2><a class="header" href="#due-counts" id="due-counts">Due Counts</a></h2>
+<h2 id="due-counts"><a class="header" href="#due-counts">Due Counts</a></h2>
 <p>When only the question is shown, Anki shows three numbers like 12 + 34 +
 56 at the bottom of the screen. These represent the new cards, cards in
 learning, and cards to review. If you’d prefer not to see the numbers,
@@ -752,7 +723,7 @@ due times, in order to prevent cards that were introduced together and
 always rated the same from always staying next to each other. This
 variation is not shown on the time estimates but will be applied after
 selecting the button.</p>
-<h2><a class="header" href="#editing-and-more" id="editing-and-more">Editing and More</a></h2>
+<h2 id="editing-and-more"><a class="header" href="#editing-and-more">Editing and More</a></h2>
 <p>You can click the <strong>Edit</strong> button in the bottom left to edit the current
 note. When you finish editing, you’ll be returned to study. The editing
 screen works very similarly to the <a href="editing.html">add notes</a> screen.</p>
@@ -797,7 +768,7 @@ move to the next card. If you want to add audio to a card permanently,
 you can do that in the edit window.</p>
 <p><strong>Replay Own Voice</strong>: Replay the previous recording of your voice (presumably after showing
 the answer).</p>
-<h2><a class="header" href="#display-order" id="display-order">Display Order</a></h2>
+<h2 id="display-order"><a class="header" href="#display-order">Display Order</a></h2>
 <p>Studying will show cards from the selected deck and any decks it
 contains. Thus, if you select your “French” deck, the subdecks
 “French::Vocab” and “French::My Textbook::Lesson 1” will be shown as
@@ -823,7 +794,7 @@ from all decks at once and shown in the order they are due.</p>
 cards from ordered to random order, please see the <a href="deck-options.html">deck
 options</a>. For more fine-grained ordering of new cards, you
 can change the order in the <a href="browsing.html">browser</a>.</p>
-<h2><a class="header" href="#siblings-and-burying" id="siblings-and-burying">Siblings and Burying</a></h2>
+<h2 id="siblings-and-burying"><a class="header" href="#siblings-and-burying">Siblings and Burying</a></h2>
 <p>Recall from <a href="getting-started.html">the basics</a> that Anki can create more than one
 card for each thing you input, such as a front→back card and a
 back→front card, or two different cloze deletions from the same text.
@@ -841,7 +812,7 @@ there are separate settings for new cards and reviews.</p>
 hide cards in learning, as time is of the essence for those cards. On
 the other hand, when you study a learning card, any new/review siblings
 will be buried.</p>
-<h2><a class="header" href="#keyboard-shortcuts" id="keyboard-shortcuts">Keyboard Shortcuts</a></h2>
+<h2 id="keyboard-shortcuts"><a class="header" href="#keyboard-shortcuts">Keyboard Shortcuts</a></h2>
 <p>Most of the common operations in Anki have keyboard shortcuts. Most of
 them are discoverable in the interface: menu items list their shortcuts
 next to them, and hovering the mouse cursor over a button will generally
@@ -858,7 +829,7 @@ top. As you type characters, Anki will display only decks matching the
 characters you type. You can add a space to separate multiple search
 terms, and Anki will show only decks that match all the terms. So “ja 1”
 or “on1 ja” would both match a deck called “Japanese::Lesson1”.</p>
-<h2><a class="header" href="#falling-behind" id="falling-behind">Falling Behind</a></h2>
+<h2 id="falling-behind"><a class="header" href="#falling-behind">Falling Behind</a></h2>
 <p>If you fall behind in your reviews, Anki will prioritize cards that have
 been waiting the longest. It does this by taking the cards that have
 been waiting the longest and showing them to you in a random order up
@@ -872,7 +843,7 @@ creating a <a href="filtered-decks.html">filtered deck</a>.</p>
 in that delay when determining the next time a card should be shown.
 Please see the section on Anki’s spaced-repetition
 <a href="https://faqs.ankiweb.net/due-times-after-a-break.html">algorithm</a> for more information.</p>
-<h1><a class="header" href="#addingediting" id="addingediting">Adding/Editing</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="addingediting"><a class="header" href="#addingediting">Adding/Editing</a></h1>
 <ul>
 <li><a href="editing.html#adding-cards-and-notes">Adding Cards and Notes</a></li>
 <li><a href="editing.html#adding-a-note-type">Adding a Note Type</a></li>
@@ -884,7 +855,7 @@ Please see the section on Anki’s spaced-repetition
 <li><a href="editing.html#inputting-foreign-characters-and-accents">Inputting Foreign Characters and Accents</a></li>
 <li><a href="editing.html#unicode-normalization">Unicode Normalization</a></li>
 </ul>
-<h2><a class="header" href="#adding-cards-and-notes" id="adding-cards-and-notes">Adding Cards and Notes</a></h2>
+<h2 id="adding-cards-and-notes"><a class="header" href="#adding-cards-and-notes">Adding Cards and Notes</a></h2>
 <p>Recall from the <a href="getting-started.html">basics</a> that in Anki we add notes rather than
 cards, and Anki creates cards for us. Click 'Add' in the main window,
 and the Add Notes window will appear.</p>
@@ -943,7 +914,7 @@ understand the concepts behind the acronyms, learning the acronyms
 will become a lot easier.</p>
 </li>
 </ul>
-<h2><a class="header" href="#adding-a-note-type" id="adding-a-note-type">Adding a Note Type</a></h2>
+<h2 id="adding-a-note-type"><a class="header" href="#adding-a-note-type">Adding a Note Type</a></h2>
 <p>While basic note types are sufficient for simple cards with only a word
 or phrase on each side, as soon as you find yourself wanting to include
 more than one piece of information on the front or back, it’s better to
@@ -970,7 +941,7 @@ vocab type.</p>
 material you’re studying is a good choice here – things like “Japanese”,
 ”Trivia”, and so on. Once you’ve chosen a name, close the Note Types
 window, and you’ll return to the adding window.</p>
-<h2><a class="header" href="#customizing-fields" id="customizing-fields">Customizing Fields</a></h2>
+<h2 id="customizing-fields"><a class="header" href="#customizing-fields">Customizing Fields</a></h2>
 <p>To customize fields, click the “Fields…​” button when adding or editing
 a note, or while the note type is selected in the Manage Note Types
 window.</p>
@@ -1010,12 +981,12 @@ correctly during review, you’ll need to adjust your
 <p>After you’ve added fields, you’ll probably want to add them to the front
 or back of your cards. For more information on that, please see the
 <a href="templates/intro.html">templates</a> section.</p>
-<h2><a class="header" href="#changing-deck--note-type" id="changing-deck--note-type">Changing Deck / Note Type</a></h2>
+<h2 id="changing-deck--note-type"><a class="header" href="#changing-deck--note-type">Changing Deck / Note Type</a></h2>
 <p>While adding, you can click on the top left button to change note type,
 and the top right button to change deck. The window that opens up will
 not only allow you to select a deck or note type, but also to add new
 decks or manage your note types.</p>
-<h2><a class="header" href="#using-decks-appropriately" id="using-decks-appropriately">Using Decks Appropriately</a></h2>
+<h2 id="using-decks-appropriately"><a class="header" href="#using-decks-appropriately">Using Decks Appropriately</a></h2>
 <p>Decks are designed to divide your content up into broad categories that
 you wish to study separately, such as English, Geography, and so on. You
 may be tempted to create lots of little decks to keep your content
@@ -1060,7 +1031,7 @@ test. The general rule is that if you always want to be able to study
 some content separately, it should be in a normal deck, and if you only
 occasionally need to be able to study it separately (for a test, when
 under a backlog, etc), tags/fields and filtered decks are better.</p>
-<h2><a class="header" href="#features" id="features">Features</a></h2>
+<h2 id="features"><a class="header" href="#features">Features</a></h2>
 <p>The editor is shown when <a href="editing.html">adding notes</a>, <a href="studying.html">editing a
 note</a> during reviews, or <a href="browsing.html">browsing</a>.</p>
 <p>On the top left are two buttons, which open the <a href="editing.html#customizing-fields">fields</a> and
@@ -1091,7 +1062,7 @@ over a button to see its shortcut.</p>
 hold down the <kbd>Shift</kbd> key while pasting, Anki will strip most of the
 formatting. Under Preferences, you can toggle &quot;Paste without shift
 key strips formatting&quot; to modify the default behavior.</p>
-<h2><a class="header" href="#cloze-deletion" id="cloze-deletion">Cloze Deletion</a></h2>
+<h2 id="cloze-deletion"><a class="header" href="#cloze-deletion">Cloze Deletion</a></h2>
 <p>'Cloze deletion' is the process of hiding one or more words in a
 sentence. For example, if you have the sentence:</p>
 <pre><code>Canberra was founded in 1913.
@@ -1165,7 +1136,7 @@ based on a regular note type. If you wish to customize it, please make
 sure to clone the existing Cloze type instead of another type of note.
 Things like formatting can be customized, but it is not possible to add
 extra card templates to the cloze note type.</p>
-<h2><a class="header" href="#inputting-foreign-characters-and-accents" id="inputting-foreign-characters-and-accents">Inputting Foreign Characters and Accents</a></h2>
+<h2 id="inputting-foreign-characters-and-accents"><a class="header" href="#inputting-foreign-characters-and-accents">Inputting Foreign Characters and Accents</a></h2>
 <p>All modern computers have built in support for typing accents and
 foreign characters, and multiple ways to go about it. The method we
 recommend is using a keyboard layout for the language you want to learn.</p>
@@ -1191,7 +1162,7 @@ information.</p>
 methods, such as holding down keys to select accented characters on Mac
 OS X, and typing characters by holding down the <kbd>Alt</kbd> key and typing a
 numeric code on Windows.</p>
-<h2><a class="header" href="#unicode-normalization" id="unicode-normalization">Unicode Normalization</a></h2>
+<h2 id="unicode-normalization"><a class="header" href="#unicode-normalization">Unicode Normalization</a></h2>
 <p>Text like <code>á</code> can be represented in multiple ways on a computer, such as
 using a specific code for that symbol, or by using a standard <code>a</code> and then
 another code for the accent on top. This causes problems when mixing input
@@ -1210,7 +1181,7 @@ will turn off normalization:</p>
 <p>Any content added after that will remain untouched. The trade-off is that you may
 find it difficult to search for the content if you're switching between operating
 systems, or pasting content from mixed sources.</p>
-<h1><a class="header" href="#card-templates" id="card-templates">Card Templates</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="card-templates"><a class="header" href="#card-templates">Card Templates</a></h1>
 <p>Card templates tell Anki which fields should appear on the front and back of your card,
 and control which cards will be generated when certain fields have text in them.
 By adjusting your card templates, you can alter the design and styling of many of your
@@ -1227,7 +1198,7 @@ cards at once.</p>
 <p><a href="http://www.youtube.com/watch?v=5tYObQ3ocrw&amp;yt:cc=on">Typing in the Answer</a></p>
 </li>
 </ul>
-<h2><a class="header" href="#the-templates-screen" id="the-templates-screen">The Templates Screen</a></h2>
+<h2 id="the-templates-screen"><a class="header" href="#the-templates-screen">The Templates Screen</a></h2>
 <p>You can modify card templates by clicking the &quot;Cards...&quot; button inside the
 editing screen.</p>
 <p>For older Anki versions, on the top left is the front template, on the bottom left is the back
@@ -1267,7 +1238,7 @@ of the browser; see <a href="templates/styling.html#browser-appearance">browser 
 information.</p>
 </li>
 </ul>
-<h1><a class="header" href="#field-replacements" id="field-replacements">Field Replacements</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="field-replacements"><a class="header" href="#field-replacements">Field Replacements</a></h1>
 <ul>
 <li><a href="templates/fields.html#basic-replacements">Basic Replacements</a></li>
 <li><a href="templates/fields.html#newlines">Newlines</a></li>
@@ -1285,7 +1256,7 @@ information.</p>
 </li>
 <li><a href="templates/fields.html#checking-your-answer">Checking Your Answer</a></li>
 </ul>
-<h2><a class="header" href="#basic-replacements" id="basic-replacements">Basic Replacements</a></h2>
+<h2 id="basic-replacements"><a class="header" href="#basic-replacements">Basic Replacements</a></h2>
 <p>The most basic template looks something like this:</p>
 <pre><code>{{Front}}
 </code></pre>
@@ -1314,7 +1285,7 @@ spot where the answer starts when you press 'show answer' on a long card
 (especially useful on mobile devices with small screens). If you don’t
 want a horizontal line at the beginning of the answer, you can use
 another HTML element such as a paragraph or div instead.</p>
-<h2><a class="header" href="#newlines" id="newlines">Newlines</a></h2>
+<h2 id="newlines"><a class="header" href="#newlines">Newlines</a></h2>
 <p>Card templates are like web pages, which means a special command is required
 to create a new line. For example, if you wrote the following in the template:</p>
 <pre><code>one
@@ -1334,7 +1305,7 @@ each line, you would use</p>
 <pre><code>{{Field 1}}&lt;br&gt;
 {{Field 2}}
 </code></pre>
-<h2><a class="header" href="#text-to-speech" id="text-to-speech">Text to Speech</a></h2>
+<h2 id="text-to-speech"><a class="header" href="#text-to-speech">Text to Speech</a></h2>
 <p>This feature requires Anki 2.1.20, or AnkiMobile 2.0.56. AnkiDroid does
 not currently support this method.</p>
 <p>To have Anki read the Front field in a US English voice, you can place
@@ -1385,7 +1356,7 @@ using the <code>cloze-only</code> filter, like so:</p>
 <pre><code>{{tts en_US:cloze-only:Text}}
 </code></pre>
 <p>The cloze-only filter is supported in Anki 2.1.29+ and AnkiMobile 2.0.65+.</p>
-<h2><a class="header" href="#special-fields" id="special-fields">Special Fields</a></h2>
+<h2 id="special-fields"><a class="header" href="#special-fields">Special Fields</a></h2>
 <p>There are some special fields you can include in your templates:</p>
 <pre><code>The note's tags: {{Tags}}
 
@@ -1406,7 +1377,7 @@ the front and back of the card, you’ll need to manually include the audio
 fields on the back as well.</p>
 <p>As with other fields, special field names are case sensitive - you must use
 <code>{{Tags}}</code> rather than <code>{{tags}}</code> for example.</p>
-<h2><a class="header" href="#hint-fields" id="hint-fields">Hint Fields</a></h2>
+<h2 id="hint-fields"><a class="header" href="#hint-fields">Hint Fields</a></h2>
 <p>It’s possible to add a field to the front or back of a card, but make it
 hidden until you explicitly show it. We call this a 'hint field'. Before
 adding a hint, please bear in mind that the easier you make it to answer
@@ -1440,7 +1411,7 @@ onclick=&quot;this.style.display='none';document.getElementById('hint4753594160'
 Show Back&lt;/a&gt;&lt;div id=&quot;hint4753594160&quot; class=hint style=&quot;display: none&quot;&gt;{{Back}}&lt;/div&gt;
 {{/Back}}
 </code></pre>
-<h2><a class="header" href="#dictionary-links" id="dictionary-links">Dictionary Links</a></h2>
+<h2 id="dictionary-links"><a class="header" href="#dictionary-links">Dictionary Links</a></h2>
 <p>You can also use field replacement to create dictionary links. Imagine
 you’re studying a language and your favourite online dictionary allows
 you to search for text using a web URL like:</p>
@@ -1454,7 +1425,7 @@ you to search for text using a web URL like:</p>
 <p>The template above would allow you to search for each note’s expression
 by clicking on the link while reviewing. There is a caveat however, so
 please see the next section.</p>
-<h2><a class="header" href="#html-stripping" id="html-stripping">HTML Stripping</a></h2>
+<h2 id="html-stripping"><a class="header" href="#html-stripping">HTML Stripping</a></h2>
 <p>Like templates, fields are stored in HTML. In the dictionary link
 example above, if the expression contained the word &quot;myword&quot; without any
 formatting, then the HTML would be the same: &quot;myword&quot;. But when you
@@ -1473,15 +1444,15 @@ not include any formatting. So a dictionary link that worked even with
 formatted text would be:</p>
 <pre><code>&lt;a href=&quot;http://example.com/search?q={{text:Expression}}&quot;&gt;check in dictionary&lt;/a&gt;
 </code></pre>
-<h2><a class="header" href="#right-to-left-text" id="right-to-left-text">Right To Left Text</a></h2>
+<h2 id="right-to-left-text"><a class="header" href="#right-to-left-text">Right To Left Text</a></h2>
 <p>If you’re using a language that reads from right to left, you’ll need
 to adjust the template like so:</p>
 <pre><code>&lt;div dir=rtl&gt;{{FieldThatHasRTLTextInIt}}&lt;/div&gt;
 </code></pre>
-<h2><a class="header" href="#media--latex" id="media--latex">Media &amp; LaTeX</a></h2>
+<h2 id="media--latex"><a class="header" href="#media--latex">Media &amp; LaTeX</a></h2>
 <p>Anki does not scan templates for media references, because it is slow to
 do so. This has implications for including media on the template.</p>
-<h3><a class="header" href="#static-soundsimages" id="static-soundsimages">Static Sounds/Images</a></h3>
+<h3 id="static-soundsimages"><a class="header" href="#static-soundsimages">Static Sounds/Images</a></h3>
 <p>If you wish to include images or sounds on your cards that are the same
 for every card (eg, a company logo at the top of each card):</p>
 <ol>
@@ -1497,7 +1468,7 @@ it should be exported when sharing the deck.</p>
 <!-- -->
 <pre><code>&lt;img src=&quot;_logo.jpg&quot;&gt;
 </code></pre>
-<h3><a class="header" href="#field-references" id="field-references">Field References</a></h3>
+<h3 id="field-references"><a class="header" href="#field-references">Field References</a></h3>
 <p>Media references to fields are not supported. They may or may not display
 during review, and will not work when checking for unused media,
 importing/exporting, and so on. Examples that won’t work:</p>
@@ -1509,7 +1480,7 @@ importing/exporting, and so on. Examples that won’t work:</p>
 </code></pre>
 <p>Instead, you should include the media references in the field. Please
 see the <a href="templates/../importing.html#importing-media">importing section</a> for more information.</p>
-<h2><a class="header" href="#checking-your-answer" id="checking-your-answer">Checking Your Answer</a></h2>
+<h2 id="checking-your-answer"><a class="header" href="#checking-your-answer">Checking Your Answer</a></h2>
 <p>You can watch <a href="http://www.youtube.com/watch?v=5tYObQ3ocrw&amp;yt:cc=on">a video about this
 feature</a> on
 YouTube.</p>
@@ -1575,7 +1546,7 @@ the text box with a comma.</p>
 <p>Type answer boxes will not appear in the <a href="templates/intro.html">&quot;preview&quot;
 dialog</a> in the browser. When you review or look at
 the preview in the card types window, they will display.</p>
-<h1><a class="header" href="#card-generation" id="card-generation">Card Generation</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="card-generation"><a class="header" href="#card-generation">Card Generation</a></h1>
 <ul>
 <li><a href="templates/generation.html#reverse-cards">Reverse Cards</a></li>
 <li><a href="templates/generation.html#card-generation--deletion">Card Generation &amp; Deletion</a></li>
@@ -1586,7 +1557,7 @@ the preview in the card types window, they will display.</p>
 <li><a href="templates/generation.html#adding-empty-notes">Adding Empty Notes</a></li>
 <li><a href="templates/generation.html#cloze-templates">Cloze Templates</a></li>
 </ul>
-<h2><a class="header" href="#reverse-cards" id="reverse-cards">Reverse Cards</a></h2>
+<h2 id="reverse-cards"><a class="header" href="#reverse-cards">Reverse Cards</a></h2>
 <p>You can watch <a href="http://www.youtube.com/watch?v=DnbKwHEQ1mA&amp;yt:cc=on">a video about reversing
 cards</a> on YouTube.</p>
 <p>If you want to create cards that go in both directions (e.g., both
@@ -1601,7 +1572,7 @@ type generates a forward-only card when you fill in only the first two
 fields; if you additionally enter something in the “Add Reverse” field
 (like a 'y'), Anki will generate a reverse card as well. The contents of
 this field will never be displayed on a card.</p>
-<h2><a class="header" href="#card-generation--deletion" id="card-generation--deletion">Card Generation &amp; Deletion</a></h2>
+<h2 id="card-generation--deletion"><a class="header" href="#card-generation--deletion">Card Generation &amp; Deletion</a></h2>
 <p>Anki will not create cards with empty front sides. Thus if “My Field”
 was empty, and one card’s front template included only that field, the
 card would not be created.</p>
@@ -1625,7 +1596,7 @@ of card generation. Thus if your front template looked like the
 following, no card would be generated if Country was empty:</p>
 <pre><code>Where is {{Country}} on the map?
 </code></pre>
-<h2><a class="header" href="#selective-card-generation" id="selective-card-generation">Selective Card Generation</a></h2>
+<h2 id="selective-card-generation"><a class="header" href="#selective-card-generation">Selective Card Generation</a></h2>
 <p>Sometimes you may want to generate extra cards for only some of your
 material, such as testing your ability to recall the most important
 words of a set. You can accomplish this by adding an extra field to your
@@ -1633,7 +1604,7 @@ note, and adding some text into it (such as &quot;1&quot;) on the notes you want
 the extra card. Then in the card template, you can make the card’s
 creation depend on that field being non-empty. For more information on
 this, please see the conditional replacement section below.</p>
-<h2><a class="header" href="#conditional-replacement" id="conditional-replacement">Conditional Replacement</a></h2>
+<h2 id="conditional-replacement"><a class="header" href="#conditional-replacement">Conditional Replacement</a></h2>
 <p>It is possible to include certain text, fields, or HTML on your cards
 only if a field is empty or not empty. An example:</p>
 <pre><code>This text is always shown.
@@ -1701,7 +1672,7 @@ as expected:</p>
 {{/Expression}}
 {{Notes}}
 </code></pre>
-<h2><a class="header" href="#blank-back-sides" id="blank-back-sides">Blank Back Sides</a></h2>
+<h2 id="blank-back-sides"><a class="header" href="#blank-back-sides">Blank Back Sides</a></h2>
 <p>Card generation only looks at the front side of the card. For example, if you have a
 front template:</p>
 <pre><code>{{Field 1}}
@@ -1718,7 +1689,7 @@ on the front template as a conditional, like so:</p>
 {{/Field 2}}
 </code></pre>
 <p>This will ensure the card is generated only if both Field 2 and Field 1 are non-empty.</p>
-<h2><a class="header" href="#limitations-in-older-anki-versions" id="limitations-in-older-anki-versions">Limitations in Older Anki Versions</a></h2>
+<h2 id="limitations-in-older-anki-versions"><a class="header" href="#limitations-in-older-anki-versions">Limitations in Older Anki Versions</a></h2>
 <p>The following limitations do not apply to Anki 2.1.28+ and AnkiMobile 2.0.64+.</p>
 <p>Older Anki versions cannot use negated conditionals for card generation.
 For example, on Anki 2.1.28, the following would add a card if a field
@@ -1753,7 +1724,7 @@ is fine:</p>
     {{/C}}
 {{/B}}
 </code></pre>
-<h2><a class="header" href="#adding-empty-notes" id="adding-empty-notes">Adding Empty Notes</a></h2>
+<h2 id="adding-empty-notes"><a class="header" href="#adding-empty-notes">Adding Empty Notes</a></h2>
 <p>When you add a new note in Anki 2.1.28+ and AnkiMobile 2.0.64+, if the card
 templates and note fields combine to produce no cards, a blank card will be
 created using the first template. This allows you to add material even if it's
@@ -1761,7 +1732,7 @@ incomplete, and modify it or the template later to make it valid. If you don't
 wish to keep an empty note, you can remove it with the Empty Cards function.</p>
 <p>On older Anki versions, Anki refuses to add or import a note if no cards
 would be generated.</p>
-<h2><a class="header" href="#cloze-templates" id="cloze-templates">Cloze Templates</a></h2>
+<h2 id="cloze-templates"><a class="header" href="#cloze-templates">Cloze Templates</a></h2>
 <p>Please see the <a href="templates/../editing.html#cloze-deletion">cloze deletion</a> section for background info.</p>
 <p>The cloze note type functions differently from regular note types.
 Instead of a customizable number of card types, it has a single type
@@ -1799,7 +1770,7 @@ could use the following template:</p>
     {{Hint2}}
 {{/c2}}
 </code></pre>
-<h1><a class="header" href="#styling--html" id="styling--html">Styling &amp; HTML</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="styling--html"><a class="header" href="#styling--html">Styling &amp; HTML</a></h1>
 <ul>
 <li><a href="templates/styling.html#card-styling">Card Styling</a></li>
 <li><a href="templates/styling.html#image-resizing">Image Resizing</a></li>
@@ -1813,7 +1784,7 @@ could use the following template:</p>
 <li><a href="templates/styling.html#fading-and-scrolling">Fading and Scrolling</a></li>
 <li><a href="templates/styling.html#javascript">Javascript</a></li>
 </ul>
-<h2><a class="header" href="#card-styling" id="card-styling">Card Styling</a></h2>
+<h2 id="card-styling"><a class="header" href="#card-styling">Card Styling</a></h2>
 <p>You can watch <a href="http://www.youtube.com/watch?v=F1j1Zx0mXME&amp;yt:cc=on">a video about styling
 cards</a> on YouTube.
 The video shows Anki 2.0’s interface, but the concepts are largely the
@@ -1835,7 +1806,7 @@ Whether the text should be aligned in the center, left, or right.</p>
 <p><strong>color</strong><br />
 The color of the text. Simple color names like 'blue', 'lightyellow',
 and so on will work, or you can use HTML color codes to select arbitrary
-colors. Please see <a href="https://html-color.codes/">this webpage</a> for more
+colors. Please see <a href="https://htmlcolorcodes.com/">this webpage</a> for more
 information.</p>
 <p><strong>background-color</strong><br />
 The color of the card background.</p>
@@ -1855,7 +1826,7 @@ example will use a yellow background on all cards except the first one:</p>
   background-color: blue;
 }
 </code></pre>
-<h2><a class="header" href="#image-resizing" id="image-resizing">Image Resizing</a></h2>
+<h2 id="image-resizing"><a class="header" href="#image-resizing">Image Resizing</a></h2>
 <p>Anki shrinks images to fit the screen by default. You can change this by adding
 the following to the bottom of your styling section (outside of the default
 <code>.card { ... }</code>):</p>
@@ -1882,8 +1853,8 @@ large), you can target it with the following:</p>
 }
 </code></pre>
 <p>You can explore the styling of cards interactively by using Chrome:</p>
-<p><a href="https://ankitects.github.io/addon-docs/#/porting2.0?id=webview-changes">https://ankitects.github.io/addon-docs/#/porting2.0?id=webview-changes</a></p>
-<h2><a class="header" href="#field-styling" id="field-styling">Field Styling</a></h2>
+<p><a href="https://addon-docs.ankiweb.net/porting2.0.html#webview-changes">https://addon-docs.ankiweb.net/porting2.0.html#webview-changes</a></p>
+<h2 id="field-styling"><a class="header" href="#field-styling">Field Styling</a></h2>
 <p>The default styling applies to the whole card. You can also make certain
 fields or part of the card use a different font, color, and so on. This
 is particularly important when studying foreign languages, as Anki will
@@ -1951,7 +1922,7 @@ like:</p>
 <p>It’s also possible to bundle custom fonts with your deck, so you don’t
 need to install them on your computer or mobile device. Please see the
 <a href="templates/styling.html#installing-fonts">installing fonts</a> section for more info.</p>
-<h2><a class="header" href="#audio-replay-buttons" id="audio-replay-buttons">Audio Replay Buttons</a></h2>
+<h2 id="audio-replay-buttons"><a class="header" href="#audio-replay-buttons">Audio Replay Buttons</a></h2>
 <p>When audio or text to speech is included on your cards, Anki will show
 buttons you can click on to replay the audio.</p>
 <p>If you prefer not to see the buttons, you can hide them in the
@@ -1970,7 +1941,7 @@ make them smaller and colored, you could use the following:</p>
   fill: green;
 }
 </code></pre>
-<h2><a class="header" href="#other-html" id="other-html">Other HTML</a></h2>
+<h2 id="other-html"><a class="header" href="#other-html">Other HTML</a></h2>
 <p>Your templates can contain arbitrary HTML, which means that all the
 layout possibilities used on internet web pages can also be used on your
 cards. Things like tables, lists, images, links to external pages and so
@@ -1980,14 +1951,14 @@ instead of the top and bottom.</p>
 <p>Covering all of HTML’s features is outside the scope of this manual, but
 there are plenty of good introductory guides to HTML available on the
 web if you’d like to learn more.</p>
-<h2><a class="header" href="#browser-appearance" id="browser-appearance">Browser Appearance</a></h2>
+<h2 id="browser-appearance"><a class="header" href="#browser-appearance">Browser Appearance</a></h2>
 <p>If your card templates are complex, it may be difficult to read the
-question and answer columns (called &quot;Front&quot; and &quot;Back&quot;) in the <a href="templates/../browsing.html#card-list">card
+question and answer columns (called &quot;Front&quot; and &quot;Back&quot;) in the <a href="templates/../browsing.html#cardnote-table">card
 list</a>. The &quot;browser appearance&quot; option allows you to define a
 custom template to be used only in the browser, so you can include only
 the important fields and change the order if you desire. The syntax is
 the same as in standard card templates.</p>
-<h2><a class="header" href="#platform-specific-css" id="platform-specific-css">Platform-Specific CSS</a></h2>
+<h2 id="platform-specific-css"><a class="header" href="#platform-specific-css">Platform-Specific CSS</a></h2>
 <p>Anki defines some special CSS classes that allow you to define different
 styling for different platforms. The example below shows how to vary the
 font depending on where you’re reviewing:</p>
@@ -2011,7 +1982,7 @@ font depending on where you’re reviewing:</p>
 <p>You can also use properties like .gecko, .opera, and .ie to select
 particular browsers when using AnkiWeb. Please see
 <a href="http://rafael.adm.br/css_browser_selector/">http://rafael.adm.br/css_browser_selector/</a> for a full list of options.</p>
-<h2><a class="header" href="#installing-fonts" id="installing-fonts">Installing Fonts</a></h2>
+<h2 id="installing-fonts"><a class="header" href="#installing-fonts">Installing Fonts</a></h2>
 <p>If you’re using Anki on a work or school computer where you don’t have
 permission to install new fonts, or you’re using Anki on a mobile
 device, it’s possible to add fonts directly to Anki.</p>
@@ -2064,7 +2035,7 @@ the font-family: line in the .card section and change the font to
 <p>Please make sure the filenames match exactly. If the file is called
 arial.TTF and you write arial.ttf in your card templates, it will not
 work.</p>
-<h2><a class="header" href="#night-mode" id="night-mode">Night Mode</a></h2>
+<h2 id="night-mode"><a class="header" href="#night-mode">Night Mode</a></h2>
 <p>You can customize the way templates appear when night mode is enabled in
 the preferences screen.</p>
 <p>If you wanted a lighter grey background, you could use
@@ -2079,7 +2050,7 @@ yellow when night mode is enabled:</p>
   color: yellow;
 }
 </code></pre>
-<h2><a class="header" href="#fading-and-scrolling" id="fading-and-scrolling">Fading and Scrolling</a></h2>
+<h2 id="fading-and-scrolling"><a class="header" href="#fading-and-scrolling">Fading and Scrolling</a></h2>
 <p>Anki will automatically scroll to the answer by default. It looks for a
 HTML element with id=answer, and scrolls to that. You can place the id
 on a different element to adjust the scrolling position, or remove the
@@ -2090,7 +2061,7 @@ template:</p>
 <pre><code class="language-html">    &lt;script&gt;qFade=100; if (typeof anki !== 'undefined') anki.qFade=qFade;&lt;/script&gt;
 </code></pre>
 <p>100 (milliseconds) is the default; set to 0 to disable fading.</p>
-<h2><a class="header" href="#javascript" id="javascript">Javascript</a></h2>
+<h2 id="javascript"><a class="header" href="#javascript">Javascript</a></h2>
 <p>As Anki cards are treated like webpages, it is possible to embed some
 Javascript on your cards via the card template.</p>
 <p>Because Javascript is an advanced feature and so many things can go
@@ -2113,7 +2084,7 @@ Windows computer, you’ll need to manually catch the errors and write
 them to the document to see them. There is no debugger available, so to
 figure out problems you’ll need to break down your code until you
 discover which parts are causing problems.</p>
-<h1><a class="header" href="#preferences" id="preferences">Preferences</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="preferences"><a class="header" href="#preferences">Preferences</a></h1>
 <ul>
 <li><a href="preferences.html#basic">Basic</a></li>
 <li><a href="preferences.html#scheduling">Scheduling</a></li>
@@ -2121,7 +2092,7 @@ discover which parts are causing problems.</p>
 </ul>
 <p>The preferences are available from the Tools menu on Windows/Linux, or
 the Anki menu on a Mac.</p>
-<h2><a class="header" href="#basic" id="basic">Basic</a></h2>
+<h2 id="basic"><a class="header" href="#basic">Basic</a></h2>
 <p><strong>Video driver</strong><br />
 Anki's libraries need a video driver to draw content on the screen.
 Due to different hardware and software configurations, the driver that
@@ -2156,7 +2127,7 @@ option, &quot;Change deck depending on note type,&quot; saves the last-used deck
 note type (and opens the add window to the last-used note type when you choose
 Add). This may be more convenient if you always use a single note type for each
 deck.</p>
-<h2><a class="header" href="#scheduling" id="scheduling">Scheduling</a></h2>
+<h2 id="scheduling"><a class="header" href="#scheduling">Scheduling</a></h2>
 <p><strong>Show learning cards with larger steps before</strong><br />
 Only shown when the 2.1 scheduler is enabled. Normally learning cards with a 1+
 day delay are shown after normal reviews. If checked, Anki will show them before
@@ -2185,7 +2156,7 @@ Timeboxing is a technique to help you focus by dividing a longer activity (such
 as a 30 minute study session) into smaller blocks. If you set the timebox time
 limit to a non-zero number of minutes, Anki will periodically show you how many
 cards you’ve managed to study during the prescribed time limit.</p>
-<h2><a class="header" href="#network" id="network">Network</a></h2>
+<h2 id="network"><a class="header" href="#network">Network</a></h2>
 <p>The network tab contains options related to syncing with AnkiWeb.</p>
 <ul>
 <li>When logged in, the <strong>deauthorize</strong> button will log you out.</li>
@@ -2194,7 +2165,7 @@ ask you whether you wish to upload or download. This is useful if
 you have made some changes accidentally, and wish to overwrite them
 with an older version that is on AnkiWeb.</li>
 </ul>
-<h1><a class="header" href="#deck-options" id="deck-options">Deck Options</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="deck-options"><a class="header" href="#deck-options">Deck Options</a></h1>
 <ul>
 <li><a href="deck-options.html#new-cards">New Cards</a></li>
 <li><a href="deck-options.html#reviews">Reviews</a></li>
@@ -2216,7 +2187,7 @@ adjustments may render Anki less effective.</p>
 <p>Options are not retroactive. For example, if you change an option that
 controls the delay after failing a card, cards that you failed prior to
 changing the option will have the old delay, not the new one.</p>
-<h2><a class="header" href="#new-cards" id="new-cards">New Cards</a></h2>
+<h2 id="new-cards"><a class="header" href="#new-cards">New Cards</a></h2>
 <p><strong>Steps</strong> controls the number of learning repetitions, and the delay
 between them. Please see the <a href="studying.html#learning">learning</a> section for an
 overview of how the steps work.</p>
@@ -2286,7 +2257,7 @@ siblings</a>, and instead Anki will just try to avoid showing
 siblings directly after one another in the same session. For this to
 work, your new cards/day setting needs to be large enough for the cards
 of multiple notes to be included.</p>
-<h2><a class="header" href="#reviews" id="reviews">Reviews</a></h2>
+<h2 id="reviews"><a class="header" href="#reviews">Reviews</a></h2>
 <p><strong>Maximum reviews/day</strong> allows you to set an upper limit on the number
 of reviews to show each day. When this limit is reached, Anki will not
 show any more review cards for the day, even if there are some waiting.
@@ -2359,7 +2330,7 @@ the order that they exist in the database, randomizing each batch, then
 putting them together. This means that there is a slight bias towards
 older cards being shown first, but it prevents individual cards from
 showing up in a predictable order.</p>
-<h2><a class="header" href="#lapses" id="lapses">Lapses</a></h2>
+<h2 id="lapses"><a class="header" href="#lapses">Lapses</a></h2>
 <p>When you forget a review card, it is said to have 'lapsed'. The default
 behaviour for lapsed reviews is to reset the interval to 1 (ie, make it
 due tomorrow), and put it in the learning queue for a refresher in 10
@@ -2386,7 +2357,7 @@ option. The default setting says that lapses should be reviewed one day
 later. The interval must be 1 day or more.</p>
 <p>The leech options control the way Anki handles leeches. Please see the
 <a href="leeches.html">leeches</a> section for more information.</p>
-<h2><a class="header" href="#general" id="general">General</a></h2>
+<h2 id="general"><a class="header" href="#general">General</a></h2>
 <p>Anki monitors how long it takes you to answer each question so that it
 can show you how long was spent studying each day. The time taken does
 not influence scheduling. If you take longer than 60 seconds, Anki
@@ -2403,14 +2374,14 @@ audio until you press the replay audio key, <code>r</code> or <code>F5</code>.</
 controls what happens when you choose to replay audio while the answer
 is shown. Please note that it does not control what happens when you
 show the answer; for that please see <a href="templates/fields.html#special-fields">this section</a>.</p>
-<h2><a class="header" href="#description" id="description">Description</a></h2>
+<h2 id="description"><a class="header" href="#description">Description</a></h2>
 <p>This section allows you to edit the deck description, which is shown in
 the study overview. The description is automatically set when
 downloading shared decks. You can delete all the text in the description
 if you no longer want to see it in the study overview area.</p>
 <p>You can also use HTML in the description—anything that works on a note
 should be valid.</p>
-<h1><a class="header" href="#syncing-with-ankiweb" id="syncing-with-ankiweb">Syncing with AnkiWeb</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="syncing-with-ankiweb"><a class="header" href="#syncing-with-ankiweb">Syncing with AnkiWeb</a></h1>
 <ul>
 <li><a href="syncing.html#intro-videos">Intro Videos</a></li>
 <li><a href="syncing.html#setup">Setup</a></li>
@@ -2426,10 +2397,10 @@ should be valid.</p>
 synchronized across multiple devices, and to study online. Please sign
 up for a <a href="https://ankiweb.net/">free account</a> before following the steps
 below.</p>
-<h2><a class="header" href="#intro-videos" id="intro-videos">Intro Videos</a></h2>
+<h2 id="intro-videos"><a class="header" href="#intro-videos">Intro Videos</a></h2>
 <p>For a quick introduction to syncing, please check out the
 <a href="https://www.youtube.com/watch?v=YkiM4DPzSVc&amp;list=PLGgmaKOIHykFoomqkBJAyGiDQ2kyiuTao&amp;yt:cc=on">syncing intro videos</a>.</p>
-<h2><a class="header" href="#setup" id="setup">Setup</a></h2>
+<h2 id="setup"><a class="header" href="#setup">Setup</a></h2>
 <p>To start syncing your collection across devices, click the sync button
 (the top right one on the main screen), or press 'y' on your keyboard.
 You’ll be prompted for your AnkiWeb ID and password, which you created
@@ -2448,14 +2419,14 @@ changes from multiple locations with a few exceptions.</p>
 profile for each user, each user will need to create their own AnkiWeb
 account to sync with. If you attempt to synchronize multiple profiles
 with a single AnkiWeb account, you will lose data.</p>
-<h2><a class="header" href="#automatic-syncing" id="automatic-syncing">Automatic Syncing</a></h2>
+<h2 id="automatic-syncing"><a class="header" href="#automatic-syncing">Automatic Syncing</a></h2>
 <p>Once syncing is enabled, Anki will automatically sync each time your
 collection is closed or opened. If you would prefer to synchronize
 manually, you can disable automatic syncing in Anki’s preferences.</p>
-<h2><a class="header" href="#button-color" id="button-color">Button Color</a></h2>
+<h2 id="button-color"><a class="header" href="#button-color">Button Color</a></h2>
 <p>The sync button will change to blue when a normal sync is required,
 and red when a full sync is required.</p>
-<h2><a class="header" href="#media" id="media">Media</a></h2>
+<h2 id="media"><a class="header" href="#media">Media</a></h2>
 <p>Related video: <a href="https://www.youtube.com/watch?v=phP9GGG-PxY">https://www.youtube.com/watch?v=phP9GGG-PxY</a></p>
 <p>Anki will synchronize any sounds and images used by your notes. It will
 notice when media has been added or removed from your media folder, but
@@ -2465,7 +2436,7 @@ file as well.</p>
 <p>If you’re running Anki off a USB flash drive, you should use an NTFS
 file system, as Anki may not be able to detect media changes on a FAT32
 filesystem.</p>
-<h2><a class="header" href="#conflicts" id="conflicts">Conflicts</a></h2>
+<h2 id="conflicts"><a class="header" href="#conflicts">Conflicts</a></h2>
 <p>Related video: <a href="https://www.youtube.com/watch?v=UEAcpfMQnjo">https://www.youtube.com/watch?v=UEAcpfMQnjo</a></p>
 <p>Under normal circumstances, reviews and note edits can be merged, so if
 you review or edit on two different devices before syncing, Anki will
@@ -2505,7 +2476,7 @@ normal. If you have files that you want to remove from AnkiWeb, please
 ensure your client is fully in sync first. After syncing is up to date,
 any files you remove (eg via the Check Media function) will be removed
 from AnkiWeb on the following sync.</p>
-<h2><a class="header" href="#merging-conflicts" id="merging-conflicts">Merging Conflicts</a></h2>
+<h2 id="merging-conflicts"><a class="header" href="#merging-conflicts">Merging Conflicts</a></h2>
 <p>Because the <a href="syncing.html#setup">first sync</a> can only sync changes in one
 direction, if you have added different content to different devices or
 profiles before setting syncing up, content on one device will be lost
@@ -2534,7 +2505,7 @@ content with the content you synced from your other device.</p>
 <p>You can now use File&gt;Import to import the .apkg files you exported
 earlier, which will merge the exported content with the existing
 content, so everything will be in one place.</p>
-<h2><a class="header" href="#firewalls" id="firewalls">Firewalls</a></h2>
+<h2 id="firewalls"><a class="header" href="#firewalls">Firewalls</a></h2>
 <p>Anki needs to be able to make outbound HTTPS connections to sync. At a
 minimum it must be able to connect to ankiweb.net, sync.ankiweb.net and
 syncN.ankiweb.net, where N is number between 2 and 6. These domains may
@@ -2545,7 +2516,7 @@ chance of the firewall rules needing to be updated in the future.</p>
 Anki. If you are on a work or school network, please contact your
 network administrator for assistance - it is not something we can help
 you with.</p>
-<h2><a class="header" href="#proxies" id="proxies">Proxies</a></h2>
+<h2 id="proxies"><a class="header" href="#proxies">Proxies</a></h2>
 <p>If you need a proxy to access the internet, Anki should automatically
 pick up your system proxy settings if you’re on Windows or OS X, and
 will honour the HTTP_PROXY environment variable if you’re on another
@@ -2575,7 +2546,7 @@ with <a href="https://ankiweb.net/shared/info/878367706">https://ankiweb.net/sha
 that proxy server at your normal proxy server. You can then tell Anki to
 use the local proxy, which will redirect requests to the proxy you
 normally use.</p>
-<h1><a class="header" href="#profiles" id="profiles">Profiles</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="profiles"><a class="header" href="#profiles">Profiles</a></h1>
 <p>If more than one person wants to use Anki on your computer, you can set
 up a separate profile for each user. Each user profile has their own
 collection, and own program settings. Add-ons are shared across profiles.
@@ -2592,7 +2563,7 @@ merge them into a single profile. You can do so by exporting one deck from
 profile A, and then importing it into profile B, repeating for any other decks
 in profile A, until everything is in profile B.</p>
 <p>AnkiDroid does not support profiles.</p>
-<h1><a class="header" href="#browsing" id="browsing">Browsing</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="browsing"><a class="header" href="#browsing">Browsing</a></h1>
 <ul>
 <li><a href="browsing.html#table-modes">Table Modes</a></li>
 <li><a href="browsing.html#sidebar">Sidebar</a>
@@ -2629,7 +2600,7 @@ them. It is opened by clicking <strong>Browse</strong> in the main window, or by
 left, the <em>card/note table</em> on the top right, and the <em>editing area</em> on the bottom
 right. By positioning the mouse between two sections, it is possible to click
 and drag to expand one section and shrink the other.</p>
-<h2><a class="header" href="#table-modes" id="table-modes">Table Modes</a></h2>
+<h2 id="table-modes"><a class="header" href="#table-modes">Table Modes</a></h2>
 <p>Anki 2.1.45+ offers two modes to show either cards or notes in the data table.
 You can change the current mode by clicking the switch at the top, to the left
 of the search area, or pressing <kbd>Alt</kbd>+<kbd>T</kbd>. The switch also
@@ -2637,13 +2608,13 @@ indicates if <strong>C</strong>ards or <strong>N</strong>otes are currently show
 <p><strong>Note:</strong> For the sake of simplicity, this manual generally assumes the Cards
 mode to be the active one. Whenever selecting/finding/etc. “cards” is mentioned,
 the reader may substitute it for “cards or notes depending on the active mode”.</p>
-<h2><a class="header" href="#sidebar" id="sidebar">Sidebar</a></h2>
+<h2 id="sidebar"><a class="header" href="#sidebar">Sidebar</a></h2>
 <p>The <em>sidebar</em> on the left allows quick access to common search terms. On Anki
 2.1.45+, it also provides a searchbar, facilities to edit tags and decks and a
 choice of two different tools, which are discussed in the following sections.
 You can switch tools using the toolbar at the top of the sidebar or the shortcuts
 <kbd>Alt</kbd>+<kbd>1</kbd>/<kbd>2</kbd>.</p>
-<h3><a class="header" href="#search-tool" id="search-tool">Search Tool</a></h3>
+<h3 id="search-tool"><a class="header" href="#search-tool">Search Tool</a></h3>
 <p>With this tool, the sidebar behaves as in previous versions: Clicking on an item
 will search for it.</p>
 <p>You can hold down <kbd>Ctrl</kbd> (<kbd>Command</kbd> on Mac) while clicking in
@@ -2668,7 +2639,7 @@ and now want to perform the same search for your Urdu deck. You can
 <kbd>Ctrl</kbd>+<kbd>Shift</kbd>-click the Urdu deck in the sidebar to obtain the
 according search expression:
 <code>deck:Urdu (is:due or tag:important)</code>.</p>
-<h3><a class="header" href="#selection-tool" id="selection-tool">Selection Tool</a></h3>
+<h3 id="selection-tool"><a class="header" href="#selection-tool">Selection Tool</a></h3>
 <p>The Selection tool allows for selecting multiple items at the same time by <kbd>Ctrl</kbd>-
 and <kbd>Shift</kbd>-clicking. It also enables drag and drop to reorder decks and
 tags.</p>
@@ -2681,26 +2652,26 @@ both children of this tag. Behind the curtains, Anki has renamed the two tags to
 a selection of items, you can choose <strong>Search &gt; All/Any Selected Items</strong>. This
 can be combined with keyboard modifiers as described in <a href="browsing.html#search-tool">Search Tool</a>
 to append the resulting search to the current search.</p>
-<h3><a class="header" href="#saved-searches" id="saved-searches">Saved Searches</a></h3>
+<h3 id="saved-searches"><a class="header" href="#saved-searches">Saved Searches</a></h3>
 <p>If you regularly search for the same thing,
 you can save the current search by right-clicking the topmost item in the sidebar,
 choosing “Save Current Search” and typing in a name.</p>
-<h3><a class="header" href="#editing-items" id="editing-items">Editing Items</a></h3>
+<h3 id="editing-items"><a class="header" href="#editing-items">Editing Items</a></h3>
 <p>You can delete or rename tags, decks and saved searches directly from the sidebar,
 via the right-click menu, or by using a shortcut key (<kbd>Del</kbd> and
 <kbd>F2</kbd> on Windows). Deleting even works for multiple items at once
 (see <a href="browsing.html#selection-tool">Selection Tool</a>).</p>
-<h3><a class="header" href="#finding-items" id="finding-items">Finding Items</a></h3>
+<h3 id="finding-items"><a class="header" href="#finding-items">Finding Items</a></h3>
 <p>To find a certain item in the sidebar tree, type part of its name into the searchbar
 at the top to temporarily hide all items not matching the search.</p>
-<h2><a class="header" href="#search-box" id="search-box">Search Box</a></h2>
+<h2 id="search-box"><a class="header" href="#search-box">Search Box</a></h2>
 <p>Above the card list is a search box. You can type in various things
 there to search for cards. For information on the search syntax,
 see <a href="searching.html">Searching</a>.</p>
-<h2><a class="header" href="#cardnote-table" id="cardnote-table">Card/Note Table</a></h2>
+<h2 id="cardnote-table"><a class="header" href="#cardnote-table">Card/Note Table</a></h2>
 <p>The table's rows represent cards or notes that match the current search.
 When you click on a row, the corresponding note will be shown in the bottom section.</p>
-<h3><a class="header" href="#rows" id="rows">Rows</a></h3>
+<h3 id="rows"><a class="header" href="#rows">Rows</a></h3>
 <p>If you drag the mouse or hold <kbd>Ctrl</kbd> or <kbd>Command</kbd> to select multiple
 rows, the editor will be temporarily hidden. Various operations (such as
 changing the deck) can operate on multiple cards or notes at once, independent
@@ -2721,7 +2692,7 @@ the first match will be used:</p>
 <p>In Notes mode, color is only applied to marked notes.<br />
 For more information about marked notes and suspended cards, see <a href="studying.html#editing-and-more">Editing and
 More</a>.</p>
-<h3><a class="header" href="#columns" id="columns">Columns</a></h3>
+<h3 id="columns"><a class="header" href="#columns">Columns</a></h3>
 <p>The columns are configurable: right click on one (or <kbd>Ctrl</kbd>-click on a
 Mac) to choose which columns you’d like to see.
 You can drag columns to reorder them. Clicking on a column will sort by that column;
@@ -2748,7 +2719,7 @@ the behaviours for both modes.</p>
 <tr><td>Sort Field</td><td>The same as in Notes mode for the card's note.</td><td>The content of the note's field that is defined as the notetype's sort field. Only this one field can be displayed and sorted by. You can change the sort field by clicking <strong>Fields...</strong> in the editing area.</td></tr>
 <tr><td>Tags</td><td>The same as in Notes mode for the card's note.</td><td>The note's tags.</td></tr>
 </tbody></table>
-<h2><a class="header" href="#editing-area" id="editing-area">Editing Area</a></h2>
+<h2 id="editing-area"><a class="header" href="#editing-area">Editing Area</a></h2>
 <p>The bottom right area displays the note of the currently selected row. For
 more information about cards and notes, see <a href="getting-started.html">Getting Started</a>.
 For more information on formatting buttons, see <a href="editing.html">Editing</a>.</p>
@@ -2757,10 +2728,10 @@ like when reviewing by clicking the <strong>Preview</strong> button next to the 
 box. Note that this will not display any type answer fields on your
 cards, which makes it easier to preview cards quickly.
 In Notes mode, the preview is shown for the first card of the selected note.</p>
-<h2><a class="header" href="#menus-and-actions" id="menus-and-actions">Menus and Actions</a></h2>
+<h2 id="menus-and-actions"><a class="header" href="#menus-and-actions">Menus and Actions</a></h2>
 <p>At the top of the browser window, you find a toolbar with various menus which in
 turn offer various actions that can be performed in the browser.</p>
-<h3><a class="header" href="#edit" id="edit">Edit</a></h3>
+<h3 id="edit"><a class="header" href="#edit">Edit</a></h3>
 <!-- prettier-ignore -->
 <table><thead><tr><th>Name</th><th>Action</th></tr></thead><tbody>
 <tr><td>Undo</td><td>Revert the last performed operation.</td></tr>
@@ -2769,7 +2740,7 @@ turn offer various actions that can be performed in the browser.</p>
 <tr><td>Invert Selection</td><td>Select unselected and deselect selected rows.</td></tr>
 <tr><td>Create Filtered Deck</td><td>Show the <a href="filtered-decks.html#creating-manually">filtered deck</a> dialog and set the current browser search as a filter. Use <kbd>Alt</kbd> / <kbd>Option</kbd> to set the second filter instead (requires scheduler version 2+).</td></tr>
 </tbody></table>
-<h3><a class="header" href="#notes" id="notes">Notes</a></h3>
+<h3 id="notes"><a class="header" href="#notes">Notes</a></h3>
 <p>Most of the following actions operate on the selected notes. They are also available through
 a context menu when a selected row is right-clicked in Notes mode. In Cards mode,
 they can be found in a submenu of the context menu.</p>
@@ -2787,7 +2758,7 @@ they can be found in a submenu of the context menu.</p>
 <tr><td>Manage Notetypes</td><td>Open the <a href="editing.html#adding-a-note-type">Notetypes</a> dialog.</td></tr>
 <tr><td>Delete</td><td>Delete all selected notes and their cards. It is not possible to remove individual cards, as individual cards are controlled by the <a href="templates/intro.html">templates</a>.</td></tr>
 </tbody></table>
-<h3><a class="header" href="#cards-1" id="cards-1">Cards</a></h3>
+<h3 id="cards-1"><a class="header" href="#cards-1">Cards</a></h3>
 <p>The following actions operate on the currently selected cards. They are also available through
 a context menu when a selected row is rightclicked in Cards mode. In Notes mode,
 they can be found in a submenu of the context menu.</p>
@@ -2801,10 +2772,10 @@ they can be found in a submenu of the context menu.</p>
 <tr><td>Flag</td><td>Toggle the flags of all selected cards. Whether a flag is added or removed depends on whether the current card has the chosen flag.</td></tr>
 <tr><td>Info</td><td>Show various information about the current card, including its review history. For more information, see <a href="stats.html#card-info">Card Info</a>.</td></tr>
 </tbody></table>
-<h3><a class="header" href="#go" id="go">Go</a></h3>
+<h3 id="go"><a class="header" href="#go">Go</a></h3>
 <p>This menu exists to provide keyboard shortcuts to jump to various
 parts of the browser, and to go up and down the card list.</p>
-<h2><a class="header" href="#find-and-replace" id="find-and-replace">Find and Replace</a></h2>
+<h2 id="find-and-replace"><a class="header" href="#find-and-replace">Find and Replace</a></h2>
 <p>To replace text in selected notes, you can either:</p>
 <ul>
 <li>
@@ -2836,7 +2807,7 @@ There are a number of syntax guides available on the web:</p>
 <li>For Anki 2.1.28+, see <a href="https://docs.rs/regex/1.3.9/regex/#syntax">https://docs.rs/regex/1.3.9/regex/#syntax</a>.</li>
 <li>For older Anki versions, see <a href="http://docs.python.org/library/re.html">http://docs.python.org/library/re.html</a>.</li>
 </ul>
-<h2><a class="header" href="#finding-duplicates" id="finding-duplicates">Finding Duplicates</a></h2>
+<h2 id="finding-duplicates"><a class="header" href="#finding-duplicates">Finding Duplicates</a></h2>
 <p>You can use the <strong>Notes &gt; Find Duplicates</strong> option to search for notes that
 have the same content. When you open the window, Anki will look at all
 of your note types and present a list of all possible fields. If you
@@ -2861,7 +2832,7 @@ duplicate notes in that set. If the search brings up a large number of
 duplicates, you may wish to instead click the <strong>Tag Duplicates</strong> button,
 which will tag all matching notes with <em>duplicate</em>. You can then search
 for this tag in the browser and handle them all from the same screen.</p>
-<h1><a class="header" href="#filtered-decks--cramming" id="filtered-decks--cramming">Filtered Decks &amp; Cramming</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="filtered-decks--cramming"><a class="header" href="#filtered-decks--cramming">Filtered Decks &amp; Cramming</a></h1>
 <ul>
 <li><a href="filtered-decks.html#custom-study">Custom Study</a></li>
 <li><a href="filtered-decks.html#home-decks">Home Decks</a></li>
@@ -2886,7 +2857,7 @@ deck'.</p>
 previewing cards, cramming cards before a test, studying particular
 tags, catching up on a backlog with a particular sort order, reviewing
 ahead of schedule, going over the day’s failed cards, and more.</p>
-<h2><a class="header" href="#custom-study" id="custom-study">Custom Study</a></h2>
+<h2 id="custom-study"><a class="header" href="#custom-study">Custom Study</a></h2>
 <p>The easiest way to create a filtered deck is with the Custom Study
 button, which appears at the bottom of the screen when you click on a
 deck. It offers some convenient presets for common tasks like reviewing
@@ -2923,7 +2894,7 @@ click &quot;Choose Tags&quot;, you can also limit the selected cards by tags. If
 you wish to see all the cards in the deck (for instance, to study before
 a big test), you can set the number of cards to more than the number of
 cards in the deck.</p>
-<h2><a class="header" href="#home-decks" id="home-decks">Home Decks</a></h2>
+<h2 id="home-decks"><a class="header" href="#home-decks">Home Decks</a></h2>
 <p>When a card is moved to a filtered deck, it retains a link to the deck
 it was in previously. That previous deck is said to be the card’s 'home
 deck'.</p>
@@ -2951,7 +2922,7 @@ remaining relearning steps will be skipped. This has been fixed in the
 <a href="https://faqs.ankiweb.net/the-anki-2.1-scheduler.html">new
 scheduler</a> so cards
 are no longer reset.</p>
-<h2><a class="header" href="#creating-manually" id="creating-manually">Creating Manually</a></h2>
+<h2 id="creating-manually"><a class="header" href="#creating-manually">Creating Manually</a></h2>
 <p>Advanced users can create filtered decks with arbitrary search strings,
 instead of relying on set presets. To create a filtered deck manually,
 choose Create Filtered Deck from the Tools menu.</p>
@@ -2979,7 +2950,7 @@ and a limit of 20 for example, then Anki will show you only the 20 most
 lapsed cards.</p>
 <p>For efficiency reasons, if your cram deck contains more than 1000 cards,
 only 1000 cards will be shown as due on the deck list and study screens.</p>
-<h2><a class="header" href="#order" id="order">Order</a></h2>
+<h2 id="order"><a class="header" href="#order">Order</a></h2>
 <p>The &quot;cards selected by&quot; option controls the order that cards will appear
 in. If the maximum number of cards you select is lower than the number
 of cards that match the filter criteria, Anki will exclude the cards at
@@ -3011,7 +2982,7 @@ overdue by 2 days displays before a card with a current interval of 5
 years overdue by a week). This is useful if you have a large backlog
 that may take some time to get through and want to review the cards
 you’re most in danger of forgetting first.</p>
-<h2><a class="header" href="#steps--returning" id="steps--returning">Steps &amp; Returning</a></h2>
+<h2 id="steps--returning"><a class="header" href="#steps--returning">Steps &amp; Returning</a></h2>
 <p>Please see the section on <a href="studying.html#learning">learning</a> as a reminder of how
 steps work.</p>
 <p>By default, Anki will use the steps of a card’s home deck. If a new card
@@ -3025,14 +2996,14 @@ home deck’s steps and provide your own steps instead. The provided steps apply
 cards being learnt, lapsed reviews, and reviews ahead of time. Please note, however, that
 in the <a href="https://faqs.ankiweb.net/the-anki-2.1-scheduler.html">new scheduler</a>
 filtered decks no longer support custom steps.</p>
-<h2><a class="header" href="#counts" id="counts">Counts</a></h2>
+<h2 id="counts"><a class="header" href="#counts">Counts</a></h2>
 <p>In a filtered deck, reviews that were already due are displayed in the
 review count as normal. Learning cards and non-due reviews are counted
 in the new card count, due to how the underlying implementation works.
 Reviews that were not due are not scheduled like new cards however -
 Anki uses a special algorithm that takes into account how close they
 were to their normal due time when reviewed.</p>
-<h2><a class="header" href="#due-reviews" id="due-reviews">Due Reviews</a></h2>
+<h2 id="due-reviews"><a class="header" href="#due-reviews">Due Reviews</a></h2>
 <p>If the filtered deck includes cards that were due for review, they will
 be shown like they would have been in their original deck - they appear
 in the review card count at the bottom of the screen, and there are four
@@ -3040,7 +3011,7 @@ choices for how well you remembered. Upon a correct answer, the card
 will be moved back to its home deck, and its next delay adjusted using
 the home deck’s settings. If you forget the card, it will be shown
 according to the relearning steps defined in the home deck.</p>
-<h2><a class="header" href="#reviewing-ahead" id="reviewing-ahead">Reviewing Ahead</a></h2>
+<h2 id="reviewing-ahead"><a class="header" href="#reviewing-ahead">Reviewing Ahead</a></h2>
 <p>If your search included cards that are not due, Anki will show the
 reviews ahead of time.</p>
 <p>Anki uses a special algorithm for these reviews that takes into account
@@ -3068,7 +3039,7 @@ home deck, the non-due card may be shown more than once.</p>
 when deciding the next delay, and like relearning in normal decks,
 &quot;Good&quot; and &quot;Easy&quot; differ only in the step change and not the resulting
 delay.</p>
-<h2><a class="header" href="#rescheduling" id="rescheduling">Rescheduling</a></h2>
+<h2 id="rescheduling"><a class="header" href="#rescheduling">Rescheduling</a></h2>
 <p>By default, Anki will return cards to their home decks with altered scheduling,
 based on your performance in the filtered deck. There is a <strong>reschedule
 cards based on my answers</strong> option available which alters this behaviour.</p>
@@ -3079,7 +3050,7 @@ started.</p>
 <p>In the old scheduler, cards were presented more similarly to how they normally
 are, but studying cards had side effects, and the original position of new cards
 was lost when you studied them.</p>
-<h2><a class="header" href="#catching-up" id="catching-up">Catching Up</a></h2>
+<h2 id="catching-up"><a class="header" href="#catching-up">Catching Up</a></h2>
 <p>Filtered decks can be useful for catching up when you’ve fallen behind
 in your reviews. One Anki user describes the way they use the filtered
 decks to catch up as follows:</p>
@@ -3105,7 +3076,7 @@ in addition to the ones that become due regularly. You can still motor
 through them when you feel like it - or you can do a specific number per
 day like you would for new cards. Up to you.
 </code></pre>
-<h1><a class="header" href="#searching" id="searching">Searching</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="searching"><a class="header" href="#searching">Searching</a></h1>
 <ul>
 <li><a href="searching.html#simple-searches">Simple searches</a></li>
 <li><a href="searching.html#limiting-to-a-field">Limiting to a field</a></li>
@@ -3131,7 +3102,7 @@ day like you would for new cards. Up to you.
 </ul>
 <p>Anki's Browse screen and the Filtered Deck feature use a common method
 of searching for specific cards/notes.</p>
-<h2><a class="header" href="#simple-searches" id="simple-searches">Simple searches</a></h2>
+<h2 id="simple-searches"><a class="header" href="#simple-searches">Simple searches</a></h2>
 <p>When you type some text into the search box, Anki finds matching notes
 and displays their cards. Anki searches in all fields of the notes, but
 does not search for tags (see later in this section for how to search
@@ -3209,7 +3180,7 @@ in a standard search, but can be made case insensitive by searching on a word
 boundary or regular expression (w:, re:).</p>
 </li>
 </ul>
-<h2><a class="header" href="#limiting-to-a-field" id="limiting-to-a-field">Limiting to a field</a></h2>
+<h2 id="limiting-to-a-field"><a class="header" href="#limiting-to-a-field">Limiting to a field</a></h2>
 <p>You can also ask Anki to match only if a particular field contains some
 text. Unlike the searches above, searching on fields requires an 'exact
 match' by default.</p>
@@ -3226,7 +3197,7 @@ find notes that have a non-empty Front field</p>
 find notes that have a Front field, empty or not</p>
 <p><code>fr*:text</code>
 find notes in a field starting with &quot;fr&quot;. Requires Anki 2.1.24+ or AnkiMobile 2.1.60+.</p>
-<h2><a class="header" href="#tags-decks-cards-and-notes" id="tags-decks-cards-and-notes">Tags, decks, cards and notes</a></h2>
+<h2 id="tags-decks-cards-and-notes"><a class="header" href="#tags-decks-cards-and-notes">Tags, decks, cards and notes</a></h2>
 <p><code>tag:animal</code><br />
 find notes with the tag &quot;animal&quot;</p>
 <p><code>tag:none</code><br />
@@ -3252,7 +3223,7 @@ search for cards by template number - eg, to find the second cloze
 deletion for a note, you’d use card:2</p>
 <p><code>note:basic</code><br />
 search for cards with a Basic note type</p>
-<h2><a class="header" href="#ignoring-accentscombining-characters" id="ignoring-accentscombining-characters">Ignoring accents/combining characters</a></h2>
+<h2 id="ignoring-accentscombining-characters"><a class="header" href="#ignoring-accentscombining-characters">Ignoring accents/combining characters</a></h2>
 <p>Requires Anki 2.1.24+ or AnkiMobile 2.0.60+.</p>
 <p>You can use <code>nc:</code> to remove combining characters (&quot;no combining&quot;). For example:</p>
 <p><code>nc:uber</code><br />
@@ -3260,7 +3231,7 @@ matches notes with &quot;uber&quot;, &quot;über&quot;, &quot;Über&quot; and so
 <p><code>nc:は</code><br />
 matches &quot;は&quot;, &quot;ば&quot;, and &quot;ぱ&quot;</p>
 <p>Searches that ignore combining characters are slower than regular searches.</p>
-<h2><a class="header" href="#regular-expressions" id="regular-expressions">Regular expressions</a></h2>
+<h2 id="regular-expressions"><a class="header" href="#regular-expressions">Regular expressions</a></h2>
 <p>Anki 2.1.24+ and AnkiMobile 2.0.60+ support searching in notes with &quot;regular expressions&quot;,
 a standard and powerful way of searching in text.</p>
 <p>Start a search with <code>re:</code> to search by regular expression. To make things easier, Anki will
@@ -3284,7 +3255,7 @@ like the above, but will not match if any other text falls before or after a1/b1
 use the HTML editor in the editing screen to see the underlying HTML contents.</li>
 <li>For the specifics of Anki's regex support, please see the regex crate documentation: <a href="https://docs.rs/regex/1.3.9/regex/#syntax">https://docs.rs/regex/1.3.9/regex/#syntax</a></li>
 </ul>
-<h2><a class="header" href="#card-state" id="card-state">Card state</a></h2>
+<h2 id="card-state"><a class="header" href="#card-state">Card state</a></h2>
 <p><code>is:due</code><br />
 review cards and learning cards waiting to be studied</p>
 <p><code>is:new</code><br />
@@ -3317,7 +3288,7 @@ cards with an orange flag</p>
 cards with a green flag</p>
 <p><code>flag:4</code><br />
 cards with a blue flag</p>
-<h2><a class="header" href="#card-properties" id="card-properties">Card properties</a></h2>
+<h2 id="card-properties"><a class="header" href="#card-properties">Card properties</a></h2>
 <p><code>prop:ivl&gt;=10</code><br />
 cards with interval of 10 days or more</p>
 <p><code>prop:due=1</code><br />
@@ -3335,8 +3306,8 @@ cards easier or harder than default</p>
 <p>Note that due only matches review cards and learning cards with an
 interval of a day or more: cards in learning with small intervals like
 10 minutes are not included.</p>
-<h2><a class="header" href="#recent-events" id="recent-events">Recent Events</a></h2>
-<h3><a class="header" href="#added" id="added">Added</a></h3>
+<h2 id="recent-events"><a class="header" href="#recent-events">Recent Events</a></h2>
+<h3 id="added"><a class="header" href="#added">Added</a></h3>
 <p><code>added:1</code><br />
 cards added today</p>
 <p><code>added:7</code><br />
@@ -3344,11 +3315,11 @@ cards added in last week</p>
 <p>The check is made against card creation time rather than note creation
 time, so cards that were generated within the time frame will be
 included even if their notes were added a long time ago.</p>
-<h3><a class="header" href="#edited" id="edited">Edited</a></h3>
+<h3 id="edited"><a class="header" href="#edited">Edited</a></h3>
 <p><code>edited:n</code><br />
 cards where the note text was added/edited in the last n days.</p>
 <p>This requires Anki 2.1.28+ / AnkiMobile 2.0.64+.</p>
-<h3><a class="header" href="#answered" id="answered">Answered</a></h3>
+<h3 id="answered"><a class="header" href="#answered">Answered</a></h3>
 <p><code>rated:1</code><br />
 cards answered today</p>
 <p><code>rated:1:2</code><br />
@@ -3358,13 +3329,13 @@ cards answered Again (1) over the last 7 days</p>
 <p><code>rated:31:4</code><br />
 cards answered Easy (4) in the last month</p>
 <p>Rating searches had been limited to 31 days before version 2.1.39.</p>
-<h3><a class="header" href="#first-answered" id="first-answered">First Answered</a></h3>
+<h3 id="first-answered"><a class="header" href="#first-answered">First Answered</a></h3>
 <p>On version 2.1.45+, you can also search for the very first review only:</p>
 <p><code>introduced:1</code><br />
 cards answered for the first time today</p>
 <p><code>introduced:365</code><br />
 cards answered for the first time within the last 365 days</p>
-<h2><a class="header" href="#matching-special-characters" id="matching-special-characters">Matching special characters</a></h2>
+<h2 id="matching-special-characters"><a class="header" href="#matching-special-characters">Matching special characters</a></h2>
 <p>This section was written for Anki 2.1.36+ - earlier versions did not support escaping
 characters in certain situations.</p>
 <p>As shown in the previous section, some characters like <code>*</code>, <code>_</code> and <code>&quot;</code> have a
@@ -3409,7 +3380,7 @@ So <code>w:e:b</code> is a word boundary search for <code>e:b</code>, <code>w\:e
 <a href="searching.html#limiting-to-a-field">field searches</a>).</p>
 </li>
 </ul>
-<h3><a class="header" href="#raw-input" id="raw-input">Raw input</a></h3>
+<h3 id="raw-input"><a class="header" href="#raw-input">Raw input</a></h3>
 <p>Text preceded by certain keywords (like <code>re:</code>) will be treated as raw input. That is,
 the charcters listed above largely lose their special meaning. In such a context, only
 a minimum of escaping is required to prevent ambiguity:</p>
@@ -3424,7 +3395,7 @@ a minimum of escaping is required to prevent ambiguity:</p>
 <p>The search term must not end in an odd number of backslashes.</p>
 </li>
 </ul>
-<h2><a class="header" href="#object-ids" id="object-ids">Object IDs</a></h2>
+<h2 id="object-ids"><a class="header" href="#object-ids">Object IDs</a></h2>
 <p><code>nid:123</code><br />
 all cards of the note with note id 123</p>
 <p><code>cid:123</code><br />
@@ -3434,7 +3405,7 @@ browser. These searches may also be helpful when doing add-on
 development or otherwise working closely with the database.</p>
 <p>Object IDs will not work in the mobile clients, and are not intended to
 be used in filtered decks at the moment.</p>
-<h1><a class="header" href="#importing" id="importing">Importing</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="importing"><a class="header" href="#importing">Importing</a></h1>
 <ul>
 <li><a href="importing.html#text-files">Text Files</a>
 <ul>
@@ -3450,7 +3421,7 @@ be used in filtered decks at the moment.</p>
 <p>Anki can import text files, packaged Anki decks created by the export
 feature, Mnemosyne 2.0 .db files, and SuperMemo .xml files. To import a
 file, click the File menu and then &quot;Import&quot;.</p>
-<h2><a class="header" href="#text-files" id="text-files">Text Files</a></h2>
+<h2 id="text-files"><a class="header" href="#text-files">Text Files</a></h2>
 <p>Any <strong>plain text</strong> file that contains fields separated by commas,
 semicolons or tabs can be imported into Anki, provided some conditions
 are met.</p>
@@ -3518,7 +3489,7 @@ in the import dialog:</p>
 foo bar; bar baz; baz quux
 field1; field2; field3
 </code></pre>
-<h3><a class="header" href="#spreadsheets-and-utf-8" id="spreadsheets-and-utf-8">Spreadsheets and UTF-8</a></h3>
+<h3 id="spreadsheets-and-utf-8"><a class="header" href="#spreadsheets-and-utf-8">Spreadsheets and UTF-8</a></h3>
 <p>If you have non-Latin characters in your file (such as accents, Japanese
 and so on), Anki expects files to be saved in a 'UTF-8 encoding'. The
 easiest way to do this is to use the free LibreOffice spreadsheet
@@ -3531,7 +3502,7 @@ for more information.</p>
 File&gt;Save As, and then select CSV for the type of file. After
 accepting the default options, LibreOffice will save the file and you
 can then import the saved file into Anki.</p>
-<h3><a class="header" href="#html" id="html">HTML</a></h3>
+<h3 id="html"><a class="header" href="#html">HTML</a></h3>
 <p>Anki can treat text imported from text files as HTML (the language used
 for web pages). This means that text with bold, italics and other
 formatting can be exported to a text file and imported again. If you
@@ -3546,7 +3517,7 @@ include angle brackets or ampersands, you may use the following replacements:</p
 <tr><td>&gt;</td><td><code>&amp;gt;</code></td></tr>
 <tr><td>&amp;</td><td><code>&amp;amp;</code></td></tr>
 </tbody></table>
-<h3><a class="header" href="#importing-media" id="importing-media">Importing Media</a></h3>
+<h3 id="importing-media"><a class="header" href="#importing-media">Importing Media</a></h3>
 <p>If you want to include audio and pictures from a text file import, copy
 the files into the <a href="files.html">collection.media folder</a>. <strong>Do not put
 subdirectories in the media folder, or some features will not work.</strong></p>
@@ -3571,7 +3542,7 @@ enable the &quot;Allow HTML&quot; option.</p>
 expensive, as each card has to be rendered, and such functionality isn’t
 obvious to shared deck users. Please use the find &amp; replace technique
 instead.</p>
-<h3><a class="header" href="#bulk-media" id="bulk-media">Bulk Media</a></h3>
+<h3 id="bulk-media"><a class="header" href="#bulk-media">Bulk Media</a></h3>
 <p>Another option for importing large amounts of media at once is to use
 the <a href="https://ankiweb.net/shared/info/1531997860">media import add-on</a>.
 This add-on will automatically create notes for all files in a folder
@@ -3580,12 +3551,12 @@ so if you have a file named apple.jpg, the front would say 'apple') and
 the images or audio on the back. If you would like a different
 arrangement of media and filenames, you can <a href="browsing.html">change the note
 type</a> of the created cards afterwards.</p>
-<h3><a class="header" href="#adding-tags" id="adding-tags">Adding Tags</a></h3>
+<h3 id="adding-tags"><a class="header" href="#adding-tags">Adding Tags</a></h3>
 <p>If you want to add 'tag1' and 'tag2' to every line you’re importing, add
 the following to the top of the text file:</p>
 <pre><code>tags:tag1 tag2
 </code></pre>
-<h3><a class="header" href="#duplicates-and-updating" id="duplicates-and-updating">Duplicates and Updating</a></h3>
+<h3 id="duplicates-and-updating"><a class="header" href="#duplicates-and-updating">Duplicates and Updating</a></h3>
 <p>When importing text files, Anki uses the first field to determine if a
 note is unique. By default, if the file you are importing has a first
 field that matches one of the existing notes in your collection and that
@@ -3605,7 +3576,7 @@ set in the import dialog. If notes are updated in place, the existing
 scheduling information on all their cards will be preserved.</p>
 <p>For info on how duplicates are handled in .apkg files, please see the
 <a href="exporting.html#packaged-decks">Deck Packages</a> section.</p>
-<h1><a class="header" href="#exporting" id="exporting">Exporting</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="exporting"><a class="header" href="#exporting">Exporting</a></h1>
 <ul>
 <li><a href="exporting.html#text-files">Text Files</a></li>
 <li><a href="exporting.html#packaged-decks">Packaged Decks</a>
@@ -3617,7 +3588,7 @@ scheduling information on all their cards will be preserved.</p>
 </ul>
 <p>Exporting allows you to save part of your collection as a text file or
 packaged Anki deck. To export, click the File menu and choose 'Export'.</p>
-<h2><a class="header" href="#text-files-1" id="text-files-1">Text Files</a></h2>
+<h2 id="text-files-1"><a class="header" href="#text-files-1">Text Files</a></h2>
 <p>If you choose &quot;Notes in Plain Text&quot;, Anki will write the contents of the
 notes into a text file. Each field is separated by a tab. If you edit
 the resulting file and don’t modify the first field, you can later
@@ -3630,13 +3601,13 @@ the <a href="https://ankiweb.net/shared/info/1672832404">Add note id</a>
 add-on to make this easier.)</p>
 <p>In order for formatting to be preserved when you import text back in,
 the text is exported with all the HTML formatting embedded in it.</p>
-<h2><a class="header" href="#packaged-decks" id="packaged-decks">Packaged Decks</a></h2>
+<h2 id="packaged-decks"><a class="header" href="#packaged-decks">Packaged Decks</a></h2>
 <p>A 'packaged deck' consists of cards, notes, note types and any sounds or
 images bundled up into a file ending with .apkg or .colpkg. You can use
 packaged decks to transfer cards between people, or for backing up parts
 of your collection.</p>
 <p>There are two different kinds of packaged decks.</p>
-<h3><a class="header" href="#collection-colpkg" id="collection-colpkg">Collection (.colpkg)</a></h3>
+<h3 id="collection-colpkg"><a class="header" href="#collection-colpkg">Collection (.colpkg)</a></h3>
 <p>When you export all decks with scheduling included, this is called a
 'collection package'. Anki will copy your entire collection into a file
 ending in .colpkg, and place it on your desktop. A collection package is
@@ -3649,7 +3620,7 @@ file. This is useful for copying your collection back and forth between
 devices.</p>
 <p>Existing media in your collection is not deleted when you import a
 collection package. To delete unused media, use Tools&gt;Check Media.</p>
-<h3><a class="header" href="#deck-apkg" id="deck-apkg">Deck (.apkg)</a></h3>
+<h3 id="deck-apkg"><a class="header" href="#deck-apkg">Deck (.apkg)</a></h3>
 <p>Deck packages contain a single deck (and any child decks it may have).
 They have a filename ending with .apkg, but a filename other than
 collection.apkg. When you import a deck package, Anki will add the
@@ -3663,7 +3634,7 @@ your collection will be kept.</p>
 <p>If you choose not to include scheduling information, Anki will assume
 that you are sharing the deck with other people, and will remove marked
 and leech tags so that they will have a clean copy of it.</p>
-<h1><a class="header" href="#managing-files-and-your-collection" id="managing-files-and-your-collection">Managing Files and Your Collection</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="managing-files-and-your-collection"><a class="header" href="#managing-files-and-your-collection">Managing Files and Your Collection</a></h1>
 <ul>
 <li><a href="files.html#checking-your-collection">Checking Your Collection</a></li>
 <li><a href="files.html#file-locations">File Locations</a></li>
@@ -3682,7 +3653,7 @@ and leech tags so that they will have a clean copy of it.</p>
 </ul>
 </li>
 </ul>
-<h2><a class="header" href="#checking-your-collection" id="checking-your-collection">Checking Your Collection</a></h2>
+<h2 id="checking-your-collection"><a class="header" href="#checking-your-collection">Checking Your Collection</a></h2>
 <p>It’s a good idea to occasionally check your collection file for
 problems. You can do this via the Tools&gt;Check Database menu item.
 Checking the database ensures the file is not corrupted, rebuilds some
@@ -3696,7 +3667,7 @@ way to do it.</p>
 every 2 weeks. This optimization ensures the collection performs well,
 but it does not check for errors or rebuild the tag list when
 automatically optimizing.</p>
-<h2><a class="header" href="#file-locations" id="file-locations">File Locations</a></h2>
+<h2 id="file-locations"><a class="header" href="#file-locations">File Locations</a></h2>
 <p>On <strong>Windows</strong>, the latest Anki versions store your Anki files in your
 appdata folder. You can access it by opening the file manager, and
 typing <code>%APPDATA%\Anki2</code> in the location field. Older versions of Anki
@@ -3731,7 +3702,7 @@ are stored in a file called prefs.db.</p>
 <p>You should never copy or move your collection while Anki is open. Doing
 so could cause your collection to become corrupted. Please don’t move or
 modify the other files in the folder either.</p>
-<h2><a class="header" href="#startup-options" id="startup-options">Startup Options</a></h2>
+<h2 id="startup-options"><a class="header" href="#startup-options">Startup Options</a></h2>
 <p>If you have made a destructive change on one computer and have an
 undamaged copy on another computer, you may wish to start Anki without
 syncing in order to use the full sync option without first downloading
@@ -3778,7 +3749,7 @@ On Windows, you can define the environment variable with:</p>
 <p>On Linux and Mac OS, you can use:</p>
 <pre><code>export ANKI_BASE=&quot;/path/to/AnkiDataFolder&quot;
 </code></pre>
-<h2><a class="header" href="#dropbox-and-file-syncing" id="dropbox-and-file-syncing">DropBox and File Syncing</a></h2>
+<h2 id="dropbox-and-file-syncing"><a class="header" href="#dropbox-and-file-syncing">DropBox and File Syncing</a></h2>
 <p>We do not recommend you sync your Anki folder directly with a
 third-party synchronization service, as it can lead to database
 corruption when files are synced while in use.</p>
@@ -3791,12 +3762,12 @@ recommended that you create a script that copies your files from your
 synced folder to a local folder, launches Anki, and then copies the
 files back when Anki is closed. This will ensure that the files are
 never synchronized while they are open.</p>
-<h2><a class="header" href="#network-filesystems" id="network-filesystems">Network Filesystems</a></h2>
+<h2 id="network-filesystems"><a class="header" href="#network-filesystems">Network Filesystems</a></h2>
 <p>We strongly recommend you have Anki store your files on a local hard
 disk, as network filesystems can lead to database corruption. If a
 network filesystem is your only option, regular use of Tools&gt;Check
 Database to detect corruption is recommended.</p>
-<h2><a class="header" href="#running-from-a-flash-drive" id="running-from-a-flash-drive">Running from a Flash Drive</a></h2>
+<h2 id="running-from-a-flash-drive"><a class="header" href="#running-from-a-flash-drive">Running from a Flash Drive</a></h2>
 <p>On Windows, Anki can be installed on a USB / flash drive and run as a
 portable application. The following example assumes your USB drive is
 drive G.</p>
@@ -3823,7 +3794,7 @@ stored in G:\ankidata.</li>
 <p>Media syncing with AnkiWeb may not work if your flash drive is formatted
 as FAT32. Please format the drive as NTFS to ensure media syncs
 correctly.</p>
-<h2><a class="header" href="#backups" id="backups">Backups</a></h2>
+<h2 id="backups"><a class="header" href="#backups">Backups</a></h2>
 <p>Each time your collection is closed (when closing Anki, switching
 profiles, or synchronizing your deck), Anki exports your collection into
 the backups folder. By default Anki will store up to 30 backups; you can
@@ -3872,13 +3843,13 @@ File&gt;Import, though please note the import feature only supports a
 single note type at one time, so if you have deleted notes from
 different note types, you’ll need to split the file into separate files
 for each note type first.</p>
-<h2><a class="header" href="#inaccessible-harddisk" id="inaccessible-harddisk">Inaccessible Harddisk</a></h2>
+<h2 id="inaccessible-harddisk"><a class="header" href="#inaccessible-harddisk">Inaccessible Harddisk</a></h2>
 <p>If Anki can’t write to files in the <a href="files.html#file-locations">Anki folder</a>, a message
 will be displayed on startup saying that Anki can’t write to the
 harddisk, and Anki will close. If you’re unsure how to fix the
 permissions, please contact someone near you who is knowledgeable about
 computers and can help you out.</p>
-<h2><a class="header" href="#permissions-of-temp-folder" id="permissions-of-temp-folder">Permissions of Temp Folder</a></h2>
+<h2 id="permissions-of-temp-folder"><a class="header" href="#permissions-of-temp-folder">Permissions of Temp Folder</a></h2>
 <p>Anki uses the system’s temporary folder to store temporary data. If the
 permissions of this folder have been changed from the default settings
 by a rogue app or buggy antivirus app, Anki will not function properly.</p>
@@ -3907,7 +3878,7 @@ default W7 install the control will actually be inherited from
 c:\users\your-username.</p>
 </li>
 </ol>
-<h2><a class="header" href="#corrupt-collections" id="corrupt-collections">Corrupt Collections</a></h2>
+<h2 id="corrupt-collections"><a class="header" href="#corrupt-collections">Corrupt Collections</a></h2>
 <p>Anki uses a file format that is robust against program and computer
 crashes, but it’s still possible for your collection to become corrupt
 if the files are modified while Anki is open, stored on a network drive,
@@ -3922,7 +3893,7 @@ installed already. On Windows, download
 <a href="http://www.sqlite.org/sqlite-3_6_23.zip">http://www.sqlite.org/sqlite-3_6_23.zip</a>.</p>
 <p>Next, create a backup of your collection.anki2 file, in case something
 goes wrong with the steps below.</p>
-<h3><a class="header" href="#linuxosx" id="linuxosx">Linux/OSX</a></h3>
+<h3 id="linuxosx"><a class="header" href="#linuxosx">Linux/OSX</a></h3>
 <p>Open a terminal, change to the folder your collection is located in, and
 type:</p>
 <pre><code>sqlite3 collection.anki2 .dump &gt; dump.txt
@@ -3935,7 +3906,7 @@ line. If it reads &quot;rollback;&quot;, change it to &quot;commit;&quot;</p>
 <p>Make sure you use temp.file - do not put collection.anki2 on the right,
 or you will blank out the file. When you’re done, proceed to the final
 step.</p>
-<h3><a class="header" href="#windows" id="windows">Windows</a></h3>
+<h3 id="windows"><a class="header" href="#windows">Windows</a></h3>
 <p>Copy the <code>sqlite3.exe</code> program and your deck to your desktop. Then go to
 <strong>Start&gt;Run</strong> and type in <code>cmd.exe</code>.</p>
 <p>If you’re on a recent Windows, the command prompt may not start on your
@@ -3955,7 +3926,7 @@ line. If it reads &quot;rollback;&quot;, change it to &quot;commit;&quot;</p>
 <p>Make sure you use temp.file - do not put collection.anki2 on the right,
 or you will blank out the file. When you’re done, proceed to the final
 step.</p>
-<h3><a class="header" href="#final-step" id="final-step">Final Step</a></h3>
+<h3 id="final-step"><a class="header" href="#final-step">Final Step</a></h3>
 <p>Check that you didn’t get an error message, and that temp.file is not
 empty. The procedure optimizes the collection in the process, so it’s
 normal for the new file to be somewhat smaller than the old one.</p>
@@ -3976,7 +3947,7 @@ the old version</p>
 collection has been successfully restored.</p>
 </li>
 </ul>
-<h1><a class="header" href="#graphs-and-statistics" id="graphs-and-statistics">Graphs and Statistics</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="graphs-and-statistics"><a class="header" href="#graphs-and-statistics">Graphs and Statistics</a></h1>
 <ul>
 <li><a href="stats.html#card-info">Card Info</a></li>
 <li><a href="stats.html#statistics">Statistics</a></li>
@@ -3985,7 +3956,7 @@ collection has been successfully restored.</p>
 <li><a href="stats.html#the-graphs">The Graphs</a></li>
 <li><a href="stats.html#manual-analysis">Manual Analysis</a></li>
 </ul>
-<h2><a class="header" href="#card-info" id="card-info">Card Info</a></h2>
+<h2 id="card-info"><a class="header" href="#card-info">Card Info</a></h2>
 <p>You can display information about a card by using the Cards&gt;Info menu item,
 or by right-clicking on the card and then selecting <strong>Info</strong>.
 Most of the displayed information should be self-explanatory. A few notes:</p>
@@ -4000,7 +3971,7 @@ years respectively.</p>
 <p><strong>Ease</strong><br />
 The approximate amount the interval will grow when you answer a review
 card with the &quot;Good&quot; button.</p>
-<h2><a class="header" href="#statistics" id="statistics">Statistics</a></h2>
+<h2 id="statistics"><a class="header" href="#statistics">Statistics</a></h2>
 <p>The statistics window is accessed by clicking on <strong>Stats</strong> button at the
 top of the main window, or by pressing T. The statistics
 window will show statistics from the currently selected deck and any
@@ -4024,7 +3995,7 @@ will not be included when looking at statistics for a specific deck (as
 Anki has no way of knowing which deck the deleted cards belonged to),
 but will be included when you look at statistics for the whole
 collection.</p>
-<h2><a class="header" href="#types-of-cards" id="types-of-cards">Types of Cards</a></h2>
+<h2 id="types-of-cards"><a class="header" href="#types-of-cards">Types of Cards</a></h2>
 <p>The stats window uses some terms that you may not be familiar with:</p>
 <p><strong>Mature</strong><br />
 A mature card is one that has an interval of 21 days or greater.</p>
@@ -4042,7 +4013,7 @@ An unseen card is one that has been added to your collection but has not
 yet entered learning mode. Unseen cards are sometimes referred to as
 &quot;new&quot; cards, especially when they are in the &quot;new&quot; queue to be shown for
 the first time.</p>
-<h2><a class="header" href="#today" id="today">Today</a></h2>
+<h2 id="today"><a class="header" href="#today">Today</a></h2>
 <p>At the top of the statistics window is a brief list of textual
 statistics about the reviews that you have completed today. A “review”
 in this context is 'one answering of a card', so a card might count as
@@ -4065,7 +4036,7 @@ try to change your study habits or scheduling settings based on your
 performance.</p>
 <p>The “today” statistics are unaffected by the time period selected at the
 bottom of the window.</p>
-<h2><a class="header" href="#the-graphs" id="the-graphs">The Graphs</a></h2>
+<h2 id="the-graphs"><a class="header" href="#the-graphs">The Graphs</a></h2>
 <p><strong>Forecast</strong><br />
 This graph shows an estimated number of reviews that will be due on a
 given day in the future if you learn no new cards and fail no cards. The
@@ -4115,7 +4086,7 @@ of mature, unseen, young/learn, and suspended cards. If you wish to
 calculate a more precise percentage, the key shows the exact number of
 cards in each section, and the total number of cards is displayed to the
 side.</p>
-<h2><a class="header" href="#manual-analysis" id="manual-analysis">Manual Analysis</a></h2>
+<h2 id="manual-analysis"><a class="header" href="#manual-analysis">Manual Analysis</a></h2>
 <p>If you’re interested in getting information from your statistics other
 than what Anki provides, it is possible to access the data directly.
 Because of the complexity involved, this is not something we can provide
@@ -4168,7 +4139,7 @@ answer sides of the card before selecting an ease button.</p>
 This is 0 for learning cards, 1 for review cards, 2 for relearn cards,
 and 3 for early &quot;cram&quot; cards (cards being studied in a filtered deck when they
 are not due).</p>
-<h1><a class="header" href="#media-1" id="media-1">Media</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="media-1"><a class="header" href="#media-1">Media</a></h1>
 <p>Anki stores the sounds and images used in your notes in a folder next to
 the collection. For more on the folder location, please see the <a href="files.html">file
 locations</a> section. When you add media within Anki, either by
@@ -4191,7 +4162,7 @@ deleted.</p>
 sounds and videos. A wide variety of file formats are supported, but not all of
 these formats will work on AnkiWeb and the mobile clients. MP3 audio and
 MP4 video seems to be the most universally supported.</p>
-<h1><a class="header" href="#math-and-symbols" id="math-and-symbols">Math and Symbols</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="math-and-symbols"><a class="header" href="#math-and-symbols">Math and Symbols</a></h1>
 <ul>
 <li><a href="math.html#mathjax">MathJax</a></li>
 <li><a href="math.html#latex">LaTeX</a>
@@ -4206,7 +4177,7 @@ MP4 video seems to be the most universally supported.</p>
 </ul>
 </li>
 </ul>
-<h2><a class="header" href="#mathjax" id="mathjax">MathJax</a></h2>
+<h2 id="mathjax"><a class="header" href="#mathjax">MathJax</a></h2>
 <p><a href="https://www.mathjax.org">MathJax</a> is a modern, browser-based
 typesetting system, useful for mathematical and chemical equations. It
 does not require the installation of any extra software, so it is easy
@@ -4247,7 +4218,7 @@ equations. Please see the 'chemical equations' section and the following
 sections for more information:
 <a href="https://mhchem.github.io/MathJax-mhchem/">https://mhchem.github.io/MathJax-mhchem/</a></p>
 <p>It is possible to <a href="https://faqs.ankiweb.net/customizing-mathjax.html">customize some settings</a>.</p>
-<h2><a class="header" href="#latex" id="latex">LaTeX</a></h2>
+<h2 id="latex"><a class="header" href="#latex">LaTeX</a></h2>
 <p>LaTeX is a powerful typesetting system, useful for entering mathematical
 formulas, chemical formulas, musical notation and so on. Anki provides
 some support for LaTeX, allowing you to enter LaTeX code in your notes.
@@ -4258,7 +4229,7 @@ computer version of Anki - though once generated, the images can be
 displayed by mobile clients. Because of the extra complexity LaTeX
 brings, it is only recommended for users that need more features than
 MathJax provides.</p>
-<h3><a class="header" href="#assumed-knowledge" id="assumed-knowledge">Assumed Knowledge</a></h3>
+<h3 id="assumed-knowledge"><a class="header" href="#assumed-knowledge">Assumed Knowledge</a></h3>
 <p>Anki’s LaTeX support is not turn-key: it is assumed that you know how to
 use LaTeX already, and that you have it installed. If you have no
 experience with LaTeX, please consult one of the many guides available
@@ -4281,7 +4252,7 @@ path, eg /usr/local/texlive/2014basic/bin/x86_64-darwin/tlmgr.</p>
 <p>If you are not using the above LaTeX packages, you will need to use the
 <a href="https://ankiweb.net/shared/info/937148547">edit LaTeX</a> add-on to specify
 the full path to latex and dvipng.</p>
-<h3><a class="header" href="#webmobile" id="webmobile">Web/Mobile</a></h3>
+<h3 id="webmobile"><a class="header" href="#webmobile">Web/Mobile</a></h3>
 <p>When you review a card with LaTeX on it, Anki will generate an image for
 that LaTeX and place the image in your collection’s media folder for
 future use. The web &amp; mobile clients will display these images if they
@@ -4291,7 +4262,7 @@ study on the other clients, Anki can generate the images in bulk for
 you. To generate all the images, please go to Tools&gt;Check Media.
 After that, syncing should upload the generated media to AnkiWeb and the
 other clients.</p>
-<h3><a class="header" href="#example" id="example">Example</a></h3>
+<h3 id="example"><a class="header" href="#example">Example</a></h3>
 <p>The most general way to input LaTeX content is to surround it with
 [latex][/latex] tags. There’s a shortcut button for this documented
 in the <a href="editing.html">editor</a> section.</p>
@@ -4333,7 +4304,7 @@ of the form:</p>
 [$$]\sum_{k = 1}^{\infty}\frac{1}{k}[/$$]
 </code></pre>
 <p>respectively.</p>
-<h3><a class="header" href="#packages" id="packages">Packages</a></h3>
+<h3 id="packages"><a class="header" href="#packages">Packages</a></h3>
 <p>Anki allows you to customize the LaTeX preamble so you can import custom
 packages for chemistry, music and so on. For example, imagine you find
 an example file for chemtex on the internet:</p>
@@ -4385,7 +4356,7 @@ it looks like:</p>
 your Anki cards:</p>
 <pre><code>[latex]\ethene{H}{H$_3$C}{CH$_3$}{Br}[/latex]
 </code></pre>
-<h3><a class="header" href="#template-conflicts" id="template-conflicts">Template Conflicts</a></h3>
+<h3 id="template-conflicts"><a class="header" href="#template-conflicts">Template Conflicts</a></h3>
 <p>As of Anki 2.1.20 / AnkiMobile 2.0.56 / AnkiDroid 2.13, this workaround is no
 longer required, as <code>{{field}}</code> text inside fields no longer causes problems. If
 you need to support older versions and want to keep using this syntax, please
@@ -4405,7 +4376,7 @@ conflict:</p>
 <pre><code>{{=&lt;% %&gt;=}}
 &lt;%latex field%&gt;
 </code></pre>
-<h3><a class="header" href="#cloze-conflicts" id="cloze-conflicts">Cloze Conflicts</a></h3>
+<h3 id="cloze-conflicts"><a class="header" href="#cloze-conflicts">Cloze Conflicts</a></h3>
 <p>Cloze deletions are terminated with <code>}}</code>, which can conflict with a <code>}}</code>
 appearing in your LaTeX. To prevent LaTeX from being interpreted as a closing
 cloze marker, you can put a space between any double closing braces that do not
@@ -4427,7 +4398,7 @@ sequence within the Cloze-deleted text. The first card generated for the
 following note text will read <code>[type] in C++ is a type-safe union</code>:</p>
 <pre><code>{{c1::std:&lt;!-- --&gt;:variant::~type~}} in C++ is a {{c2::type-safe union}}
 </code></pre>
-<h3><a class="header" href="#unsafe-commands" id="unsafe-commands">Unsafe commands</a></h3>
+<h3 id="unsafe-commands"><a class="header" href="#unsafe-commands">Unsafe commands</a></h3>
 <p>Anki prohibits certain commands like \input or \def from being used on
 cards or in templates, because allowing them could allow malicious
 shared decks to damage your system. (To be on the safe side, these
@@ -4436,7 +4407,7 @@ error but don’t think you’ve used one, please double-check any comments
 you have in your headers, templates, and cards.) If you need to use
 these commands, please add them to a system package and import that
 package as described in the previous section.</p>
-<h1><a class="header" href="#leeches" id="leeches">Leeches</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="leeches"><a class="header" href="#leeches">Leeches</a></h1>
 <ul>
 <li><a href="leeches.html#waiting">Waiting</a></li>
 <li><a href="leeches.html#deleting">Deleting</a></li>
@@ -4454,7 +4425,7 @@ card. The warning interval is half the initial leech threshold. That is,
 if you have Anki configured to warn at 8 lapses, future warnings will
 happen every 4 lapses. (12, 16, etc)</p>
 <p>Once a leech is found, there are a number of ways you can handle it.</p>
-<h2><a class="header" href="#waiting" id="waiting">Waiting</a></h2>
+<h2 id="waiting"><a class="header" href="#waiting">Waiting</a></h2>
 <p>Some leeches are caused by 'interference'. For example, an English
 learner may have recently learnt the words &quot;disappoint&quot; and &quot;disappear&quot;.
 As they look similar, the learner may find themselves confusing the two
@@ -4463,20 +4434,20 @@ concentrate on just one idea. When that idea is firmly ingrained in your
 mind, you can then return to learning the other idea. So in these
 situations, you may want to leave one of the words suspended until you
 have learnt the other one well, and then unsuspend it in the browser.</p>
-<h2><a class="header" href="#deleting" id="deleting">Deleting</a></h2>
+<h2 id="deleting"><a class="header" href="#deleting">Deleting</a></h2>
 <p>Another way to manage leeches is to delete them. Consider if the
 material you’re struggling with is important enough to make it worth
 your while. By selectively deleting difficult and obscure items, you can
 dedicate more time to learning other material, and studying becomes a
 lot more fun.</p>
-<h2><a class="header" href="#editing" id="editing">Editing</a></h2>
+<h2 id="editing"><a class="header" href="#editing">Editing</a></h2>
 <p>Another approach is to change the way the information is presented.
 Perhaps the cards you have created have too much information on them, or
 perhaps you’re trying to memorize something without fully understanding
 it. Sometimes spending some time changing the way the card is phrased
 can help. It’s also a good time to think about making a mnemonic to help
 you remember.</p>
-<h1><a class="header" href="#add-ons" id="add-ons">Add-ons</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="add-ons"><a class="header" href="#add-ons">Add-ons</a></h1>
 <p>Anki’s capabilities can be extended with add-ons. Add-ons can provide
 features like extra support for specific languages, extra control over
 scheduling, and so on.</p>
@@ -4490,23 +4461,23 @@ accidentally made a mistake when editing an add-on, you can use the
 &quot;Delete&quot; option in the menu to remove it.</p>
 <p>To learn how to write your own add-ons, please see the <a href="https://addon-docs.ankiweb.net">add-on writing
 guide</a>.</p>
-<h1><a class="header" href="#miscellanea" id="miscellanea">Miscellanea</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="miscellanea"><a class="header" href="#miscellanea">Miscellanea</a></h1>
 <ul>
 <li><a href="misc.html#menu-shortcuts">Menu Shortcuts</a></li>
 <li><a href="misc.html#debug-console">Debug Console</a></li>
 </ul>
-<h2><a class="header" href="#menu-shortcuts" id="menu-shortcuts">Menu Shortcuts</a></h2>
+<h2 id="menu-shortcuts"><a class="header" href="#menu-shortcuts">Menu Shortcuts</a></h2>
 <p>On Windows/Linux you can hold down the <kbd>Alt</kbd> key and press a highlighted
 letter to activate a particular menu.</p>
 <p>OS X doesn’t support this feature, but it does allow you to assign
 shortcuts to specific menu items instead. Please see
 <a href="http://lifehacker.com/343328/create-a-keyboard-shortcut-for-any-menu-action-in-any-program">http://lifehacker.com/343328/create-a-keyboard-shortcut-for-any-menu-action-in-any-program</a>
 for more information.</p>
-<h2><a class="header" href="#debug-console" id="debug-console">Debug Console</a></h2>
+<h2 id="debug-console"><a class="header" href="#debug-console">Debug Console</a></h2>
 <p>Sometimes you may be asked to use the debug console to change a setting
 or check something. Unless asked to enter text in the &quot;debug console&quot;,
 you will probably not need this. Advanced users may like to read more
-about it in the <a href="https://addon-docs.ankiweb.net/#/more?id=debugging">add-on writing guide</a>.</p>
+about it in the <a href="https://addon-docs.ankiweb.net/features-and-debugging.html#debugging">add-on writing guide</a>.</p>
 <p>When asked to enter text into the &quot;debug console&quot;, please start Anki,
 and in the main window, press</p>
 <p><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>;</kbd></p>
@@ -4526,7 +4497,7 @@ person.</p>
 try to print the result rather than doing what you asked it to. If you
 are getting unexpected errors, please make sure you’re not holding down
 the <kbd>Shift</kbd> key.</p>
-<h1><a class="header" href="#contributing" id="contributing">Contributing</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="contributing"><a class="header" href="#contributing">Contributing</a></h1>
 <ul>
 <li><a href="contrib.html#sharing-decks-publicly">Sharing Decks Publicly</a></li>
 <li><a href="contrib.html#sharing-decks-privately">Sharing Decks Privately</a></li>
@@ -4534,7 +4505,7 @@ the <kbd>Shift</kbd> key.</p>
 <li><a href="contrib.html#translating-anki">Translating Anki</a></li>
 <li><a href="contrib.html#contributing-code">Contributing Code</a></li>
 </ul>
-<h2><a class="header" href="#sharing-decks-publicly" id="sharing-decks-publicly">Sharing Decks Publicly</a></h2>
+<h2 id="sharing-decks-publicly"><a class="header" href="#sharing-decks-publicly">Sharing Decks Publicly</a></h2>
 <p>To share decks with the general public, <a href="syncing.html">synchronize</a> them
 with AnkiWeb, then log into AnkiWeb and click on &quot;Share&quot; from the menu
 next to the deck you wish to share.</p>
@@ -4553,7 +4524,7 @@ will not automatically receive updates. If they download the deck again
 and re-import it, newly added material will be imported without altering
 their existing study progress, provided neither you nor the user has
 altered the note type since the first import.</p>
-<h2><a class="header" href="#sharing-decks-privately" id="sharing-decks-privately">Sharing Decks Privately</a></h2>
+<h2 id="sharing-decks-privately"><a class="header" href="#sharing-decks-privately">Sharing Decks Privately</a></h2>
 <p>If you’d like to share decks with a limited group of people (such as a
 study group or class) rather than the general public, you can do so by
 sharing them outside of AnkiWeb.</p>
@@ -4575,17 +4546,17 @@ prevent data loss, cards that have been deleted in the new apkg file
 will not be deleted in the user’s collection, so if you need to delete
 cards from users' decks for whatever reason, you will need to contact
 them about it.</p>
-<h2><a class="header" href="#sharing-add-ons" id="sharing-add-ons">Sharing Add-ons</a></h2>
-<p>Please see <a href="https://addon-docs.ankiweb.net/#/sharing">https://addon-docs.ankiweb.net/#/sharing</a></p>
-<h2><a class="header" href="#translating-anki" id="translating-anki">Translating Anki</a></h2>
+<h2 id="sharing-add-ons"><a class="header" href="#sharing-add-ons">Sharing Add-ons</a></h2>
+<p>Please see <a href="https://addon-docs.ankiweb.net/sharing.html">https://addon-docs.ankiweb.net/sharing.html</a></p>
+<h2 id="translating-anki"><a class="header" href="#translating-anki">Translating Anki</a></h2>
 <p>Please see <a href="https://translating.ankiweb.net">https://translating.ankiweb.net</a></p>
-<h2><a class="header" href="#contributing-code" id="contributing-code">Contributing Code</a></h2>
+<h2 id="contributing-code"><a class="header" href="#contributing-code">Contributing Code</a></h2>
 <p>Anki’s source code is available at <a href="https://github.com/ankitects/anki">https://github.com/ankitects/anki</a></p>
 <p>Before contributing, please see the README.contributing file in that
 repo.</p>
-<h1><a class="header" href="#frequently-asked-questions" id="frequently-asked-questions">Frequently Asked Questions</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="frequently-asked-questions"><a class="header" href="#frequently-asked-questions">Frequently Asked Questions</a></h1>
 <p>Please see <a href="https://faqs.ankiweb.net">https://faqs.ankiweb.net</a></p>
-<h1><a class="header" href="#resources" id="resources">Resources</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="resources"><a class="header" href="#resources">Resources</a></h1>
 <p>The SuperMemo site has a lot of good information about spaced repetition
 and memory: <a href="http://www.supermemo.com/">http://www.supermemo.com/</a></p>
 <p>Michael Nielsen has written a <a href="http://augmentingcognition.com/ltm.html">thorough piece</a>
@@ -4599,59 +4570,31 @@ the use of Anki in medical school: <a href="https://courses.ankipalace.com/">htt
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                        
-
-                        
-
                         <div style="clear: both"></div>
                     </nav>
                 </div>
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                
-
-                
             </nav>
 
         </div>
 
-        
-
-        
-
-        
-
-        
         <script type="text/javascript">
             window.playground_copyable = true;
         </script>
-        
-
-        
-
-        
         <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
         <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
         <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
-        
-
         <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
         <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
         <script src="book.js" type="text/javascript" charset="utf-8"></script>
 
         <!-- Custom JS scripts -->
-        
-
-        
-        
         <script type="text/javascript">
         window.addEventListener('load', function() {
             window.setTimeout(window.print, 100);
         });
         </script>
-        
-        
-
     </body>
 </html>
