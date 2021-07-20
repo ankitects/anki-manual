@@ -17,7 +17,7 @@ git-repository-url = "https://github.com/ankitects/anki-manual/"
 cname = "docs.ankiweb.net"
 additional-css = ["css/kbd.css"]
 
-#[output.linkcheck]
-#optional = true
-#warning-policy = "warn"
-#follow-web-links = true
+[output.linkcheck]
+optional = true
+warning-policy = "warn"
+follow-web-links = true
