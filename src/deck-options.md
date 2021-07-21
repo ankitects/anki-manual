@@ -344,11 +344,16 @@ When to show (re)learning cards that cross a day boundary.
 
 
 ### Review sort order 
-The default order prioritizes cards that have been waiting longest, so
-that if you have a backlog of reviews, the longest waiting ones will 
-appear first. If you have a large backlog that will take more than a few
-days to clear, or wish to see cards in subdeck order, you may find the 
-alternate sort orders preferable.
+- Due date, then random: Anki will prioritize cards that have been
+waiting longest, sorting all of them randomly in your study session.
+- Due date, then deck: Anki will prioritize cards that have been
+waiting longest, showing first those on the upper decks. 
+- Deck, then Due date: Anki will prioritize cards on the upper decks, 
+showing first those that have been waiting longest. 
+- Ascending Intervals: Anki will prioritize cards with smaller 
+intervals (most recently reviewed, first)
+- Descending Intervals: Anki will prioritize cards with larger 
+intervals (most recently reviewed, last)
 
 #### More info
 Please, check also [this section on on the manual](https://docs.ankiweb.net/studying.html#display-order)
