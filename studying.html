@@ -292,15 +292,14 @@ screen works very similarly to the <a href="editing.html">add notes</a> screen.<
 <p>At the bottom right of the review screen is a button labeled <strong>More</strong>.
 This button provides some other operations you can do on the current
 card or note:</p>
+<ul>
+<li>
 <p><strong>Flag Card</strong>: Adds a colored marker to the card, or toggles it off. Flags will appear during
 study, and you can search for flagged cards in the Browse screen. This is useful
 when you want to take some action on the card at a later date, such as looking
 up a word when you get home.</p>
-<p><strong>Mark Note</strong>: Adds a “marked” tag to the current note, so it can be easily found in the
-browser. This is similar to flagging individual cards, but works with a tag
-instead, so if the note has multiple cards, all cards will appear in a search
-for the marked tag. Most users will want to use flags instead - marking is
-mainly left around for compatibility with older Anki versions.</p>
+</li>
+<li>
 <p><strong>Bury Card / Note</strong>: Hides a card or all of the note’s cards from review until the next day.
 (If you want to unbury cards before then, you can click the “unbury”
 button on the <a href="studying.html#study-overview">deck overview</a> screen.) This is useful if
@@ -310,26 +309,62 @@ cards of the same note.</p>
 <p>With the old scheduler, if cards were in learning when they are buried,
 they are moved back to the new card queue or review queue prior to being
 buried.</p>
-<p>With the <a href="https://faqs.ankiweb.net/the-anki-2.1-scheduler.html">new scheduler</a>,
+<p>With the <a href="https://faqs.ankiweb.net/the-anki-2.1-scheduler.html">2.1 scheduler</a>,
 however, burying cards does not reset a card's learning steps.</p>
+</li>
+<li>
+<p><strong>Set Due Card</strong>: Make cards review cards, and <a href="browsing.html#cards">make them due on a certain date.</a></p>
+</li>
+<li>
 <p><strong>Suspend Card / Note</strong>: Hides a card or all of the note’s cards from review until they are
 manually unsuspended (by clicking the suspend button in the browser).
 This is useful if you want to avoid reviewing the note for some time,
-but don’t want to delete it.</p>
-<p>With the old scheduler, if cards were in learning when they are
+but don’t want to delete it.
+With the old scheduler, if cards were in learning when they are
 suspended, they are moved back to the new card queue or review queue
 prior to being suspended.</p>
-<p>With the <a href="https://faqs.ankiweb.net/the-anki-2.1-scheduler.html">new scheduler</a>,
+<p>With the <a href="https://faqs.ankiweb.net/the-anki-2.1-scheduler.html">2.1 scheduler</a>,
 however, suspending cards does not reset a card's learning steps.</p>
+</li>
+<li>
+<p><strong>Options</strong>: Edit the <a href="deck-options.html">options</a> for the current deck.</p>
+</li>
+<li>
+<p><strong>Card Info</strong>: Displays <a href="stats.html#card-info">statistical information</a> about the card.</p>
+</li>
+<li>
+<p><strong>Mark Note</strong>: Adds a “marked” tag to the current note, so it can be easily found in the
+browser. This is similar to flagging individual cards, but works with a tag
+instead, so if the note has multiple cards, all cards will appear in a search
+for the marked tag. Most users will want to use flags instead - marking is
+mainly left around for compatibility with older Anki versions.</p>
+</li>
+<li>
 <p><strong>Delete Note</strong>: Deletes the note and all of its cards.</p>
+</li>
+<li>
 <p><strong>Options</strong>: Edit the options for the current deck.</p>
+</li>
+<li>
 <p><strong>Replay Audio</strong>: If the card has audio on the front or back, play it again.</p>
+</li>
+<li>
+<p><strong>Pause Audio</strong>: Pauses the audio if it is playing.</p>
+</li>
+<li>
+<p><strong>Audio -5s / +5s</strong>: Jump backwards / forward 5 seconds in the currently playing audio.</p>
+</li>
+<li>
 <p><strong>Record Own Voice</strong>: Record from your microphone for the purposes of checking your
 pronunciation. This recording is temporary and will go away when you
 move to the next card. If you want to add audio to a card permanently,
 you can do that in the edit window.</p>
+</li>
+<li>
 <p><strong>Replay Own Voice</strong>: Replay the previous recording of your voice (presumably after showing
 the answer).</p>
+</li>
+</ul>
 <h2 id="display-order"><a class="header" href="#display-order">Display Order</a></h2>
 <p>Studying will show cards from the selected deck and any decks it
 contains. Thus, if you select your “French” deck, the subdecks
