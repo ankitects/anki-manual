@@ -50,9 +50,9 @@ deck.
 
 ## Scheduling
 
-**Anki 2.1 scheduler**  
-The Anki 2.1 scheduler is documented here:
-<https://faqs.ankiweb.net/the-anki-2.1-scheduler.html>
+**V3 Scheduler**  
+The Anki V3 scheduler is documented here:
+<https://faqs.ankiweb.net/the-2021-scheduler.html>
 
 **Mix new cards and reviews**:
 This drop-down box controls when new cards are shown: either mixed
