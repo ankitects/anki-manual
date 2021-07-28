@@ -50,6 +50,16 @@ deck.
 
 ## Scheduling
 
+**Show next review time above answer buttons**
+Useful to know how far in the future your cards are being pushed.
+
+**Show remaining card count review**
+Enable / Disable this to show / hide the card count at the bottom of the screen.
+
+**Legacy timezone handling**
+Please, see this:
+<https://faqs.ankiweb.net/timezone-handling-changes.html>
+
 **V3 Scheduler**  
 The Anki V3 scheduler is documented here:
 <https://faqs.ankiweb.net/the-2021-scheduler.html>
