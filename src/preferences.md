@@ -54,10 +54,6 @@ deck.
 The Anki V3 scheduler is documented here:
 <https://faqs.ankiweb.net/the-2021-scheduler.html>
 
-**Mix new cards and reviews**:
-This drop-down box controls when new cards are shown: either mixed
-with, before, or after all reviews.
-
 **Next day starts at**  
 Controls when Anki should start showing the next day’s cards. The default
 setting of 4AM ensures that if you’re studying around midnight, you won’t have
