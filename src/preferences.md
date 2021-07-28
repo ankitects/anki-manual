@@ -50,11 +50,6 @@ deck.
 
 ## Scheduling
 
-**Show learning cards with larger steps before**  
-Only shown when the 2.1 scheduler is enabled. Normally learning cards with a 1+
-day delay are shown after normal reviews. If checked, Anki will show them before
-normal reviews instead.
-
 **Anki 2.1 scheduler**  
 The Anki 2.1 scheduler is documented here:
 <https://faqs.ankiweb.net/the-anki-2.1-scheduler.html>
