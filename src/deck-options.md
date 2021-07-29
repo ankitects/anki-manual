@@ -9,10 +9,10 @@ before changing them, as mistakes could reduce Anki's effectiveness.
 
 Deck options are accessed by:
 - Clicking the gear icon on the `Decks` screen.
-- Selecting a deck on the `Decks` screen, and then clicking `Options` 
+- Selecting a deck on the `Decks` screen, and then clicking `Options`
 at the bottom of the screen.
-- Clicking on `More` > `Options` while in review mode. 
-- Pressing `o` while in review mode. 
+- Clicking on `More` > `Options` while in review mode.
+- Pressing `o` while in review mode.
 
 This page describes the options shown in Anki 2.1.45+, when you have the v2 or
 v3 scheduler enabled. On older versions, some options will not be available, or
@@ -27,9 +27,9 @@ the same preset.
 If you’d like to alter the settings on one deck but not other decks, click the
 arrow icon in the top right of the Deck Options window. The options are:
 
-- **Save**: Saves all modifications you've made since opening the deck options screen. 
+- **Save**: Saves all modifications you've made since opening the deck options screen.
 - **Add**: Add a new preset, with the default options.
-- **Clone**: Clone your current present, which is useful if you 
+- **Clone**: Clone your current present, which is useful if you
 just want to modify certain options, keeping the rest as they are.  
 - **Rename**  Changes the name of the current preset.
 - **Delete** Deletes the current preset. This will require that the next sync is
@@ -91,8 +91,8 @@ This means if "French" has a limit of 20 cards and "French::Lesson 1" and
 "French::Lesson 2" both have limits of 15 cards, when you click on "French",
 you’ll get at most 15 cards from either child deck, and only 20 cards in total.
 
-In the v1/v2 scheduler, each parent applies its limits to its children. If you
-have decks in a grandparent/parent/child arrangement, buth the grandparent and
+In the v1 or v2 scheduler, each parent applies its limits to its children. If you
+have decks in a grandparent-parent-child arrangement, both the grandparent and
 parent limits will alter how many cards are shown from the child, even if you
 click directly on the child.
 
@@ -140,9 +140,9 @@ so those learning cards will be subject to the daily limit.
 
 The settings in this section only affect new cards and cards in initial
 [learning](https://docs.ankiweb.net/studying.html?#learning) mode. Once a card
-has graduated (there are no more learning steps), it will become a
+has graduated (i.e. there are no more learning steps for this card), it  becomes a
 [review card](https://docs.ankiweb.net/studying.html?#reviewing), and the
-settings in this section are no longer applicable. 
+settings in this section are no longer applicable.
 
 ### Learning Steps
 
@@ -150,7 +150,7 @@ Controls the number of learning repetitions, and the delay
 between them. One or more delays, separated by spaces must be entered.
 Each time you press `Good` during review, the card moves to the next step.
 
-For example, let's say that your learning steps are **1m 10m 1d**. 
+For example, let's say that your learning steps are **1m 10m 1d**.
 
 - When you press `Again`, the card goes back to first step, and will be shown
   again approximately 1 minute later.
@@ -158,7 +158,7 @@ For example, let's say that your learning steps are **1m 10m 1d**.
   to the next step, and be shown again in approximately 10 minutes.
 - When you press `Good` on a card after the 10 minute step, it will be delayed
   until the next day.
-- When you press `Good` on the card the next day, it will leave learning, and
+- When you press `Good` on the card the next day, it will leave learning (i.e. it will graduate), and
   become a review card. It will be shown again after the delay configured by the
   *graduating interval*.
 
@@ -182,8 +182,8 @@ examples.
 
 ### Graduating Interval
 
-The delay in days between answering 'Good' on a card with no steps left, 
-and seeing the card again as a review card - please see the example in the
+The delay in days between answering "Good" on a learning card with no steps left,
+and seeing the card again as a review card. Please see the example in the
 previous section.
 
 ### Easy Interval
@@ -199,37 +199,37 @@ as long as the *graduating interval*, and typically a few days longer.
 
 Controls whether Anki should add new cards into the deck randomly, or in order.
 When you change this option, Anki will re-sort the decks using the current
-option group.  Cards with a lower due number will be show first when studying by
+Option Group.  Cards with a lower due number will be shown first when studying, by
 default. Changing this option will automatically update the existing position of
-new cards. 
+new cards.
 
 One caveat with random order mode: if you review many of your new cards, and then
 add more new cards, the newly added material is statistically more likely to
-appear than the previously remaining cards. For example, if you have 100 cards
+appear than the new cards that were already in the deck. For example, if you have 100 cards
 in random order, then review the first 50, newly added cards are still given
-position 1-100, but as you’ve already reviewed the first 50, the newly added
+position 1-100, but as you have already reviewed the first 50, the newly added
 cards are more likely to appear earlier. To correct this, you can change the
-order to ordered mode and back again to force a re-sort.
+order to Ordered mode and back again to force a re-sort.
 
 When you select random order, Anki will randomize your notes, keeping
 the cards of a given note close together. The cards of a given note are
-shown in the order their card types appear in, so that siblings are
-introduced consistently - otherwise you could end up in a state where
+shown in the order, in which their card types appear, so that siblings are
+introduced consistently — otherwise you could end up in a state where
 some notes had all their cards introduced and other notes had only one
 or two. Please see the "bury related" and "display order" sections below
 for more info.
 ## Lapses
 
 When you forget a review card, it is said to have 'lapsed', and the card must be
-relearned. The default behaviour for lapsed reviews is to reset the interval to
-1 (ie, make it due tomorrow), and put it in the learning queue for a refresher
+relearnt. The default behaviour for lapsed reviews is to reset the interval to
+1 (i.e. make it due tomorrow), and put it in the learning queue for a refresher
 in 10 minutes. This behaviour can be customized with the options listed below.
 
 ### Relearning Steps
 
 The same as 'learning steps', but for forgotten reviews. When you fail a card
-(press `Again`), the card enters the re-learning phase, and before it becomes a
-review card again, you'll have to pass all the re-learning steps, or press
+(press `Again`), the card enters the relearning phase, and before it becomes a
+review card again, you will have to pass all the relearning steps — or, alternatively, press
 `Easy` on the card.
 
 If you leave the steps blank, the card will skip relearning, and will be assigned
@@ -250,9 +250,9 @@ section for more information.
 
 Anki monitors how long it takes you to answer each question, so that it
 can show you how long was spent studying each day. The time taken does
-not influence scheduling. The default limit is 60 seconds. If you take 
-longer than that, Anki assumes you have walked away from your computer 
-or have been distracted, and limits the recorded time to 60 seconds, so 
+not influence scheduling. The default limit is 60 seconds. If you take
+longer than that, Anki assumes you have walked away from your computer
+or have been distracted, and limits the recorded time to 60 seconds, so
 that you don’t end up with inaccurate statistics. If you consistently
 take longer than 60 seconds to answer a card, you may want to either
 consider raising this limit, or ideally, making your cards simpler.
@@ -267,7 +267,7 @@ The options in this section are taken from the deck you select to study, not
 the deck of the currently displayed card.
 
 This section is only available when you have [the v3
-scheduler](https://faqs.ankiweb.net/the-2021-scheduler.html) enabled. 
+scheduler](https://faqs.ankiweb.net/the-2021-scheduler.html) enabled.
 
 Some further information about display order is available in the [studying
 section](studying.md#display-order).
@@ -286,20 +286,20 @@ prefix to place items at the top or bottom.
 Although position order depends initially on the 'Insertion Order' setting
 above, you can manually
 [reposition](https://docs.ankiweb.net/browsing.html#cards) cards in different
-ways. 
+ways.
 
 ### New Card Sort Order
 
-Controls how cards are sorted **after they have been gathered**. 
+Controls how cards are sorted **after they have been gathered**.
 By default, Anki sorts by template first, to avoid multiple cards of the
 same note from being shown in succession. This results in cards appearing
 in the order they have been added, with the first card template (eg front->back)
 appearing before later card templates (eg back->front).
 
-### New/Review Priority 
+### New/Review Priority
 
 Whether new cards should be mixed in with reviews, or shown before or after them.
-### Interday Learning/Review Priority 
+### Interday Learning/Review Priority
 
 Whether learning cards with a 1+ day delay should be mixed in with reviews, or
 shown before or after them. Because learning cards tend to be harder than
@@ -309,14 +309,14 @@ first), or at the start (allowing more time to review forgotten ones).
 ### Review Sort Order
 
 The default order prioritizes cards that have been waiting longer, which works
-well when you're up to date, or only have a small backlog. If you've taken an
+well when you are up to date, or when you only have a small backlog. If you have taken an
 extended break or have fallen behind in your reviews, you may want to consider
 changing the sort order temporarily. Sorting by ascending intervals will ensure
 cards with shorter delays are shown first, and by descending intervals will allow
 you to work through the easier material first.
 
 Choosing the *Deck, then due date* option will ensure reviews are shown for each
-subdeck in turn. This is generally not recommended, as having material appear 
+subdeck in turn. This is generally not recommended, as having material appear
 consistently in the same order makes it easier to guess the answer based on context,
 and may lead to weaker memories.
 
@@ -339,26 +339,26 @@ will wait to reshow a card. The default is 100 years; you can decrease
 this to a smaller number if you’re willing to trade extra study time for
 higher retention.
 
-### Starting Ease 
+### Starting Ease
 
 Controls the easiness that cards start out with. It is
 set when a card graduates from learning for the first time. It defaults
-to 250%, meaning that once you’ve finished learning a card, answering
+to 250%, meaning that once you have finished learning a card, answering
 `Good` on subsequent reviews will increase the delay by approximately
-2.5x (eg if the last delay was 10 days, the next delay would be around 25
+2.5 (e.g. if the last delay was 10 days, the next delay would be around 25
 days). Based upon how you rate the card in subsequent reviews, the
-easiness may increase or decrease from what it starts out as.
+easiness may increase or decrease from its starting value.
 
 ### Easy Bonus
 
-An extra multipler applied to the interval when a review card is answered
+An extra multiplier applied to the interval when a review card is answered
 `Easy`. With the default value of 130%, `Easy` will give an interval that is
-1.3x the `Good` interval.
+1.3 times the `Good` interval.
 
 ### Interval Modifier
 
 An extra multiplier that is applied to all reviews. At its default of 100% it
-does nothing; if you set it to 80% for example, intervals will be generated at
+does nothing. If you set it to 80%, though, for example, intervals will be generated at
 80% of their normal size (so a 10 day interval would become 8 days). You can
 thus use the multiplier to make Anki present cards more or less frequently than
 it would otherwise, trading study time for retention or vice versa.
@@ -390,26 +390,26 @@ If you plug the resulting 65% into the interval modifier, you should
 find over time that your retention moves closer to your desired
 retention.
 
-One important thing to note however is that the tradeoff between time
+One important thing to note however is that the trade-off between time
 spent studying and retention is not linear: we can see here that to
-increase our retention by 5 percentage points, we’d have to study 35%
+increase our retention by 5 per cent, we would have to study 35%
 more frequently. If the material you are learning is very important then
-it may be worth the extra effort – that’s something you’ll need to
-decide for yourself. If you’re simply worried that you’re forgetting too
-much, you may find investing more time into the initial learning stage
-and/or making mnemonics gives you more gain for less effort.
+it may be worth the extra effort – that is, of course, something you will need to
+decide for yourself. If you are simply worried that you are forgetting too
+much, then you may find investing more time at the initial learning stage
+and/or using mnemonics will give you more gain for less effort.
 
 One final thing to note is that Anki forces a new interval to be at
-least 1 day longer than it was previously, so that you don’t get stuck
+least 1 day longer than it was previously, so that you do not get stuck
 reviewing with the same interval forever. If your goal is to repeat a
 card once a day for multiple days, you can do that by setting more
 learning mode steps, instead of by adjusting this modifier.
 
-### Hard Interval 
+### Hard Interval
 
 The multiplier used when you use the `Hard` button. The percentage is relative
-to the previous interval: eg with a default 120%, a card with a 10 day interval
-will be given 12 days. 
+to the previous interval: e.g. with a default of 120%, a card with a 10-day interval
+will be given 12 days.
 
 ### New Interval
 
@@ -422,7 +422,7 @@ If changed from the default, it is possible for forgotten cards to preserve part
 of their previous delay. For example, if a card had a 100 day interval, and you set
 the *New Interval* to 20%, the new interval would be 20 days.
 
-While preserving part of the interval may seem to make sense, SuperMemo have observed
+While preserving part of the interval may seem to make sense, SuperMemo has observed
 that preserving part of the delay can actually [be counter-productive](https://supermemo.guru/wiki/Post-lapse_stability). For this reason, we recommend you leave it on the default setting.
 
 ## Custom Scheduling

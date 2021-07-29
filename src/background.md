@@ -24,24 +24,24 @@ example:
 
 - even practising guitar chords!
 
-There are two simple concepts behind Anki: 'active recall testing' and
-'spaced repetition'. They are not known to most learners, despite having
+There are two simple concepts behind Anki: __active recall testing__ and
+__spaced repetition__. They are not known to most learners, despite having
 been written about in the scientific literature for many years.
 Understanding how they work will make you a more effective learner.
 
 ## Active Recall Testing
 
-'Active recall testing' means being asked a question and trying to
-remember the answer. This is in contrast to 'passive study', where we
+_Active recall testing_ means being asked a question and trying to
+remember the answer. This is in contrast to _passive study_, where we
 read, watch, or listen to something without pausing to consider if we
 know the answer. Research has shown that active recall testing is far
 more effective at building strong memories than passive study. There are
 two reasons for this:
 
-- The act of recalling something 'strengthens' the memory, increasing
+- The act of recalling something _strengthens_ the memory, increasing
     the chances we’ll be able to remember it again.
 
-- When we’re unable to answer a question, it tells us we need to
+- When we're unable to answer a question, it tells us we need to
     return to the material to review or relearn it.
 
 You have probably encountered active recall testing in your school years
@@ -73,7 +73,7 @@ most of it. In fact, studies show we forget about 75% of material learnt
 within a 48 hour period. This can seem pretty depressing when you need
 to learn a lot of information!
 
-The solution is simple, however: 'review'. By reviewing newly-learnt
+The solution is simple, however: _review_. By reviewing newly-learnt
 information, we can greatly reduce forgetting.
 
 The only problem is that traditionally, reviewing has not been very practical. If
@@ -83,12 +83,12 @@ if you only have 30 of them to review, but as the number grows to 300 or
 
 ## Spaced Repetition
 
-The 'spacing effect' was reported by a German psychologist Hermann Ebbinghaus in 1885. He
+The _spacing effect_ was reported by a German psychologist Hermann Ebbinghaus in 1885. He
 observed that we tend to remember things more effectively, if we spread
 reviews out over time, instead of studying multiple times in one
 session. Since the 1930s, there have been a number of proposals for
 utilizing the spacing effect to improve learning, in what has come to be
-called 'spaced repetition'.
+called _spaced repetition_.
 
 One example was in 1972, when a German scientist called Sebastian Leitner
 popularized a method of spaced repetition with paper flashcards. By
@@ -108,7 +108,7 @@ repetition. SuperMemo pioneered the concept of a system that keeps track
 of the ideal time to review material and optimizes itself based on the
 performance of the user.
 
-In SuperMemo’s spaced repetition system, every time you answer a
+In SuperMemo's spaced repetition system, every time you answer a
 question, you tell the program how well you were able to remember it —
 whether you forgot completely, made a small mistake, remembered with
 trouble, remembered easily, etc. The program uses this feedback to
@@ -119,8 +119,8 @@ time, then 3 days later, 15 days later, 45 days later, and so on.
 
 This was a revolution in learning, as it meant material could be learnt
 and retained with the absolute minimum amount of effort necessary.
-SuperMemo’s slogan sums it up: with spaced repetition, you can 'forget
-about forgetting'.
+SuperMemo's slogan sums it up: with spaced repetition, you can: "forget
+about forgetting".
 
 ## Why Anki?
 
