@@ -56,6 +56,11 @@ Useful to know how far in the future your cards are being pushed.
 **Show remaining card count during review**  
 Disable this option to hide the card count at the bottom of the screen.
 
+**Show learning cards with larger steps before**  
+Only shown when the 2.1 scheduler is enabled. Normally learning cards with a 1+
+day delay are shown after normal reviews. If checked, Anki will show them before
+normal reviews instead.
+
 **Legacy timezone handling**  
 Please see here:
 <https://faqs.ankiweb.net/timezone-handling-changes.html>
@@ -63,6 +68,10 @@ Please see here:
 **V3 Scheduler**  
 The Anki V3 scheduler is documented here:  
 <https://faqs.ankiweb.net/the-2021-scheduler.html>
+
+**Mix new cards and reviews**:
+Only shown when the v1/v2 schedulers are enabled. This drop-down box controls when
+new cards are shown: either mixed with, before, or after all reviews.
 
 **Next day starts at**  
 Controls when Anki should start showing the next day’s cards. The default
