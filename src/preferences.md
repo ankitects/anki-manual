@@ -53,11 +53,11 @@ deck.
 **Show next review time above answer buttons**  
 Useful to know how far in the future your cards are being pushed.
 
-**Show remaining card count review**  
+**Show remaining card count during review**  
 Disable this option to hide the card count at the bottom of the screen.
 
 **Legacy timezone handling**  
-Please, see this:  
+Please see here:
 <https://faqs.ankiweb.net/timezone-handling-changes.html>
 
 **V3 Scheduler**  
