@@ -392,7 +392,7 @@ retention.
 
 One important thing to note however is that the trade-off between time
 spent studying and retention is not linear: we can see here that to
-increase our retention by 5 per cent, we would have to study 35%
+increase our retention by 5 percentage points, we would have to study 35%
 more frequently. If the material you are learning is very important then
 it may be worth the extra effort – that is, of course, something you will need to
 decide for yourself. If you are simply worried that you are forgetting too
