@@ -1,6 +1,6 @@
 # Add-ons
 
-Anki’s capabilities can be extended with add-ons. Add-ons can provide
+Anki's capabilities can be extended with add-ons. Add-ons can provide
 features like extra support for specific languages, extra control over
 scheduling, and so on.
 
