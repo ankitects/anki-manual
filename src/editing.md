@@ -355,7 +355,7 @@ by typing the accent, then the character you want accented - eg an
 apostrophe (') then the letter a (a) gives á.
 
 To add the international keyboard on Windows machines, please see
-<https://support.microsoft.com/en-au/kb/306560>
+<http://www.techlanguage.com/tips/us_international.html>
 
 To add it on Macs, please see
 <http://www.macworld.com/article/1147039/os-x/accentinput.html>
