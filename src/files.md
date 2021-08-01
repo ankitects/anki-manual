@@ -4,9 +4,9 @@
 
 ## Checking Your Collection
 
-It’s a good idea to occasionally check your collection file for
+It is a good idea to occasionally check your collection file for
 problems. You can do this via the Tools&gt;Check Database menu item.
-Checking the database ensures the file is not corrupted, rebuilds some
+Checking the database ensures the file has not been corrupted, rebuilds some
 internal structures, and optimizes the file.
 
 When you check the database, your tag list is also rebuilt. When you
@@ -53,7 +53,7 @@ There is also a separate folder for each profile. The folder contains:
 - Some system files
 
 You should never copy or move your collection while Anki is open. Doing
-so could cause your collection to become corrupted. Please don’t move or
+so could cause your collection to become corrupt. Please do not move or
 modify the other files in the folder either.
 
 ## Startup Options
@@ -180,7 +180,7 @@ included, which will save your data to a .colpkg file.
 
 If you want to back up multiple profiles and your add-ons as well, you
 can make a complete copy of your [Anki folder](#file-locations). Please make sure
-you close Anki first, as backups may be corrupt if run while Anki is
+you close Anki first, as backups may be corrupt, if they are run while Anki is
 open.
 
 To restore from an automatic backup:

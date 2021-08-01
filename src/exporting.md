@@ -9,7 +9,7 @@ packaged Anki deck. To export, click the File menu and choose 'Export'.
 
 If you choose "Notes in Plain Text", Anki will write the contents of the
 notes into a text file. Each field is separated by a tab. If you edit
-the resulting file and don’t modify the first field, you can later
+the resulting file and don't modify the first field, you can later
 import that file back into Anki and Anki will update your notes based on
 your edits, provided you import back into the same note type.
 
@@ -24,7 +24,7 @@ the text is exported with all the HTML formatting embedded in it.
 
 ## Packaged Decks
 
-A 'packaged deck' consists of cards, notes, note types and any sounds or
+A 'packaged deck' consists of cards, notes, note types, and any sounds or
 images bundled up into a file ending with .apkg or .colpkg. You can use
 packaged decks to transfer cards between people, or for backing up parts
 of your collection.
