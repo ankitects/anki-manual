@@ -87,8 +87,8 @@ It is also possible to move all cards back to their home decks at once:
 In the old scheduler, if you create, rebuild, empty or delete a
 filtered deck while cards are still in learning, they will be turned
 back into new cards. In the case of failed reviews in relearning, any
-remaining relearning steps will be skipped. This has been fixed in the
-[new
+remaining relearning steps will be skipped. This was fixed in the
+[v2
 scheduler](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html) so cards
 are no longer reset.
 
@@ -114,8 +114,8 @@ times, and so on. Please see the [searching](searching.md) section of the
 manual for more information on the different possibilities.
 
 Filtered decks cannot pull in cards that are suspended, buried, or already in a
-different filtered deck. And if you are not using the [new
-scheduler](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html), cards in
+different filtered deck. And if you are using the [v1 
+scheduler], cards in
 (re)learning will not be included either. For this reason, a search in the
 browser may reveal cards that don’t end up in the filtered deck.
 
@@ -176,6 +176,14 @@ you’re most in danger of forgetting first.
 Please see the section on [learning](studying.md#learning) as a reminder of how
 steps work.
 
+### Scheduler v1
+In the old scheduler, the **custom steps** option allows you to override the
+home deck’s steps and provide your own steps instead. The provided steps apply to both
+cards being learnt, lapsed reviews, and reviews ahead of time. Please note, however, that
+from the [v2 scheduler](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html)
+filtered decks no longer support custom steps.
+
+### [Scheduler v2](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html)
 By default, Anki will use the steps of a card’s home deck. If a new card
 would normally be reviewed twice when being learnt, the same thing will
 happen when you study it in a filtered deck.
@@ -184,11 +192,11 @@ Cards return to their home deck when (re)learning is complete. Thus if
 you have 3 learning steps, a new card will return to its home deck upon
 three presses of "Good" or a single press of "Easy".
 
-In the old scheduler, the **custom steps** option allows you to override the
-home deck’s steps and provide your own steps instead. The provided steps apply to both
-cards being learnt, lapsed reviews, and reviews ahead of time. Please note, however, that
-in the [new scheduler](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html)
-filtered decks no longer support custom steps.
+### [Scheduler v3](https://faqs.ankiweb.net/the-2021-scheduler.html)
+Filtered decks with rescheduling disabled now show 4 buttons - the provided
+delay applies to the Again button, and Hard/Good will use 1.5x and 2x the 
+provided delay. Easy will remove the card.
+
 
 ## Counts
 
@@ -249,12 +257,12 @@ By default, Anki will return cards to their home decks with altered scheduling,
 based on your performance in the filtered deck. There is a **reschedule
 cards based on my answers** option available which alters this behaviour.
 
-In the [new scheduler](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html),
+From [v2 scheduler](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html),
 when rescheduling is disabled, cards are shown in a simple "preview mode", and
 when they are returned to the original deck, they are returned exactly as they
 started.
 
-In the old scheduler, cards were presented more similarly to how they normally
+In v1 scheduler, cards were presented more similarly to how they normally
 are, but studying cards had side effects, and the original position of new cards
 was lost when you studied them.
 
