@@ -219,8 +219,6 @@ mainly left around for compatibility with older Anki versions.
 
 - **Delete Note**: Deletes the note and all of its cards.
 
-- **Options**: Edit the options for the current deck.
-
 - **Replay Audio**: If the card has audio on the front or back, play it again.
 
 - **Pause Audio**: Pauses the audio if it is playing.
