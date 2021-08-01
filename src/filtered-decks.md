@@ -176,14 +176,7 @@ you’re most in danger of forgetting first.
 Please see the section on [learning](studying.md#learning) as a reminder of how
 steps work.
 
-### Scheduler v1
-In the old scheduler, the **custom steps** option allows you to override the
-home deck’s steps and provide your own steps instead. The provided steps apply to both
-cards being learnt, lapsed reviews, and reviews ahead of time. Please note, however, that
-from the [v2 scheduler](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html)
-filtered decks no longer support custom steps.
-
-### [Scheduler v2](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html)
+### Scheduler v1 and [Scheduler v2](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html)
 By default, Anki will use the steps of a card’s home deck. If a new card
 would normally be reviewed twice when being learnt, the same thing will
 happen when you study it in a filtered deck.
@@ -191,6 +184,12 @@ happen when you study it in a filtered deck.
 Cards return to their home deck when (re)learning is complete. Thus if
 you have 3 learning steps, a new card will return to its home deck upon
 three presses of "Good" or a single press of "Easy".
+
+In the v1 scheduler, the **custom steps** option allows you to override the
+home deck’s steps and provide your own steps instead. The provided steps apply to both
+cards being learnt, lapsed reviews, and reviews ahead of time. Please note, however, that
+from the [v2 scheduler](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html)
+filtered decks no longer support custom steps.
 
 ### [Scheduler v3](https://faqs.ankiweb.net/the-2021-scheduler.html)
 Filtered decks with rescheduling disabled now show 4 buttons - the provided
