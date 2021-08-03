@@ -256,7 +256,7 @@ By default, Anki will return cards to their home decks with altered scheduling,
 based on your performance in the filtered deck. There is a **reschedule
 cards based on my answers** option available which alters this behaviour.
 
-From [v2 scheduler](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html),
+From the [v2 scheduler](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html),
 when rescheduling is disabled, cards are shown in a simple "preview mode", and
 when they are returned to the original deck, they are returned exactly as they
 started.
