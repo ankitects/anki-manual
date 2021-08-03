@@ -187,7 +187,7 @@ turn offer various actions that can be performed in the browser.
 | Select All | Select all rows displayed. |
 | Select Notes | Show only the currently selected notes and select all rows.  |
 | Invert Selection | Select those rows not selected, and deselect the currently selected rows. |
-| Create Filtered Deck | Show the [filtered deck](filtered-decks.md#creating-manually) dialogue and set the current browser search as a filter. Use <kbd>Alt</kbd> / <kbd>Option</kbd> to set the second filter instead (requires scheduler version 2+). |
+| Create Filtered Deck | Show the [filtered deck](filtered-decks.md#creating-manually) dialog and set the current browser search as a filter. Use <kbd>Alt</kbd> / <kbd>Option</kbd> to set the second filter instead (requires scheduler version 2+). |
 
 ### Notes
 
@@ -198,16 +198,16 @@ they can be found in a submenu of the context menu.
 <!-- prettier-ignore -->
 | Name | Action |
 |-|-|
-| Add Notes | Open the [Add](editing.md#adding-cards-and-notes) dialogue. |
-| Export Notes | Open the [Export](exporting.md) dialogue. |
+| Add Notes | Open the [Add](editing.md#adding-cards-and-notes) dialog. |
+| Export Notes | Open the [Export](exporting.md) dialog. |
 | Add Tags | Add provided tags to all selected notes. |
 | Remove Tags | Enter tags and remove them from all selected notes. |
 | Clear Unused Tags | Remove all tags from the sidebar that are not used by any notes. |
 | Toggle Mark | If the current note is marked (i.e., has the *Marked* tag), unmark all selected notes. If the current is not marked, mark all selected notes. |
 | Change Notetype | Convert the selected notes from one type to another. For example, imagine you have a *Russian* notetype and a *Computer* notetype, and you accidentally added some computer-related text into a *Russian* note. You can use this option to fix that mistake. The scheduling of cards is not affected. Changing the type of a note requires a one-way sync. |
-| Find Duplicates | Open the [Duplicates](#finding-duplicates) dialogue. |
-| Find and Replace | Open the [Find and Replace](#find-and-replace) dialogue. |
-| Manage Notetypes | Open the [Notetypes](editing.md#adding-a-note-type) dialogue. |
+| Find Duplicates | Open the [Duplicates](#finding-duplicates) dialog. |
+| Find and Replace | Open the [Find and Replace](#find-and-replace) dialog. |
+| Manage Notetypes | Open the [Notetypes](editing.md#adding-a-note-type) dialog. |
 | Delete | Delete all selected notes and their cards. It is not possible to remove individual cards, as individual cards are controlled by the [templates](templates/intro.md). |
 
 ### Cards
