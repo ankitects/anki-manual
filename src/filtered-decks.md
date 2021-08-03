@@ -176,7 +176,8 @@ you’re most in danger of forgetting first.
 Please see the section on [learning](studying.md#learning) as a reminder of how
 steps work.
 
-### Scheduler v1 and [Scheduler v2](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html)
+**Scheduler v1 and Scheduler v2**
+
 By default, Anki will use the steps of a card’s home deck. If a new card
 would normally be reviewed twice when being learnt, the same thing will
 happen when you study it in a filtered deck.
@@ -191,8 +192,10 @@ cards being learnt, lapsed reviews, and reviews ahead of time. Please note, howe
 from the [v2 scheduler](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html)
 filtered decks no longer support custom steps.
 
-### [Scheduler v3](https://faqs.ankiweb.net/the-2021-scheduler.html)
-Filtered decks with rescheduling disabled now show 4 buttons - the provided
+**Scheduler v3**
+
+Filtered decks with rescheduling disabled show 4 buttons in the 
+[Scheduler v3](https://faqs.ankiweb.net/the-2021-scheduler.html) - the provided
 delay applies to the Again button, and Hard/Good will use 1.5x and 2x the 
 provided delay. Easy will remove the card.
 
