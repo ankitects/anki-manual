@@ -781,9 +781,6 @@ mainly left around for compatibility with older Anki versions.</p>
 <p><strong>Delete Note</strong>: Deletes the note and all of its cards.</p>
 </li>
 <li>
-<p><strong>Options</strong>: Edit the options for the current deck.</p>
-</li>
-<li>
 <p><strong>Replay Audio</strong>: If the card has audio on the front or back, play it again.</p>
 </li>
 <li>
@@ -3147,8 +3144,8 @@ deleted when you delete a filtered deck.</p>
 <p>In the old scheduler, if you create, rebuild, empty or delete a
 filtered deck while cards are still in learning, they will be turned
 back into new cards. In the case of failed reviews in relearning, any
-remaining relearning steps will be skipped. This has been fixed in the
-<a href="https://faqs.ankiweb.net/the-anki-2.1-scheduler.html">new
+remaining relearning steps will be skipped. This was fixed in the
+<a href="https://faqs.ankiweb.net/the-anki-2.1-scheduler.html">v2
 scheduler</a> so cards
 are no longer reset.</p>
 <h2 id="creating-manually"><a class="header" href="#creating-manually">Creating Manually</a></h2>
@@ -3168,8 +3165,8 @@ such as limiting to tags, finding cards forgotten a certain number of
 times, and so on. Please see the <a href="searching.html">searching</a> section of the
 manual for more information on the different possibilities.</p>
 <p>Filtered decks cannot pull in cards that are suspended, buried, or already in a
-different filtered deck. And if you are not using the <a href="https://faqs.ankiweb.net/the-anki-2.1-scheduler.html">new
-scheduler</a>, cards in
+different filtered deck. And if you are using the [v1 
+scheduler], cards in
 (re)learning will not be included either. For this reason, a search in the
 browser may reveal cards that don’t end up in the filtered deck.</p>
 <p>The <strong>limit</strong> option controls how many cards will be gathered into the
@@ -3214,17 +3211,23 @@ you’re most in danger of forgetting first.</p>
 <h2 id="steps--returning"><a class="header" href="#steps--returning">Steps &amp; Returning</a></h2>
 <p>Please see the section on <a href="studying.html#learning">learning</a> as a reminder of how
 steps work.</p>
+<p><strong>Scheduler v1 and Scheduler v2</strong></p>
 <p>By default, Anki will use the steps of a card’s home deck. If a new card
 would normally be reviewed twice when being learnt, the same thing will
 happen when you study it in a filtered deck.</p>
 <p>Cards return to their home deck when (re)learning is complete. Thus if
 you have 3 learning steps, a new card will return to its home deck upon
 three presses of &quot;Good&quot; or a single press of &quot;Easy&quot;.</p>
-<p>In the old scheduler, the <strong>custom steps</strong> option allows you to override the
+<p>In the v1 scheduler, the <strong>custom steps</strong> option allows you to override the
 home deck’s steps and provide your own steps instead. The provided steps apply to both
 cards being learnt, lapsed reviews, and reviews ahead of time. Please note, however, that
-in the <a href="https://faqs.ankiweb.net/the-anki-2.1-scheduler.html">new scheduler</a>
+from the <a href="https://faqs.ankiweb.net/the-anki-2.1-scheduler.html">v2 scheduler</a>
 filtered decks no longer support custom steps.</p>
+<p><strong>Scheduler v3</strong></p>
+<p>Filtered decks with rescheduling disabled show 4 buttons in the 
+<a href="https://faqs.ankiweb.net/the-2021-scheduler.html">v3 scheduler</a> - the provided
+delay applies to the Again button, and Hard/Good will use 1.5x and 2x the 
+provided delay. Easy will remove the card.</p>
 <h2 id="counts"><a class="header" href="#counts">Counts</a></h2>
 <p>In a filtered deck, reviews that were already due are displayed in the
 review count as normal. Learning cards and non-due reviews are counted
@@ -3272,11 +3275,11 @@ delay.</p>
 <p>By default, Anki will return cards to their home decks with altered scheduling,
 based on your performance in the filtered deck. There is a <strong>reschedule
 cards based on my answers</strong> option available which alters this behaviour.</p>
-<p>In the <a href="https://faqs.ankiweb.net/the-anki-2.1-scheduler.html">new scheduler</a>,
+<p>From the <a href="https://faqs.ankiweb.net/the-anki-2.1-scheduler.html">v2 scheduler</a>,
 when rescheduling is disabled, cards are shown in a simple &quot;preview mode&quot;, and
 when they are returned to the original deck, they are returned exactly as they
 started.</p>
-<p>In the old scheduler, cards were presented more similarly to how they normally
+<p>In the v1 scheduler, cards were presented more similarly to how they normally
 are, but studying cards had side effects, and the original position of new cards
 was lost when you studied them.</p>
 <h2 id="catching-up"><a class="header" href="#catching-up">Catching Up</a></h2>
