@@ -261,7 +261,7 @@ when rescheduling is disabled, cards are shown in a simple "preview mode", and
 when they are returned to the original deck, they are returned exactly as they
 started.
 
-In v1 scheduler, cards were presented more similarly to how they normally
+In the v1 scheduler, cards were presented more similarly to how they normally
 are, but studying cards had side effects, and the original position of new cards
 was lost when you studied them.
 
