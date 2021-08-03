@@ -11,7 +11,7 @@ internal structures, and optimizes the file.
 
 When you check the database, your tag list is also rebuilt. When you
 delete individual decks or cards, Anki does not update the list of used
-tags, as it’s inefficient to do so. If you want to clear old tags out
+tags, as it's inefficient to do so. If you want to clear old tags out
 from the list that are no longer in use, checking your database is the
 way to do it.
 
@@ -31,7 +31,7 @@ folder.
 On **Mac** computers, recent Anki versions store all their files in the
 `~/Library/Application Support/Anki2` folder. The Library folder is
 hidden by default, but can be revealed in Finder by holding down the
-option key while clicking on the Go menu. If you’re on an older Anki
+option key while clicking on the Go menu. If you're on an older Anki
 version, your Anki files will be in your `Documents/Anki` folder.
 
 On **Linux**, recent Anki versions store your data in
@@ -200,31 +200,31 @@ To restore from an automatic backup:
     intended. If you wish to try a different backup, return to step 1.
 
 7. Anki has disabled automatic syncing and backups while you check the
-    backup. When you’re happy with the backup you’ve selected, quit Anki
+    backup. When you're happy with the backup you've selected, quit Anki
     and start it again to return to the normal behaviour.
 
 Anki also logs deleted notes to a text file called deleted.txt in your
 profile folder. These notes are in a text format that can be read by
 File&gt;Import, though please note the import feature only supports a
 single note type at one time, so if you have deleted notes from
-different note types, you’ll need to split the file into separate files
+different note types, you'll need to split the file into separate files
 for each note type first.
 
 ## Inaccessible Harddisk
 
-If Anki can’t write to files in the [Anki folder](#file-locations), a message
-will be displayed on startup saying that Anki can’t write to the
-harddisk, and Anki will close. If you’re unsure how to fix the
+If Anki can't write to files in the [Anki folder](#file-locations), a message
+will be displayed on startup saying that Anki can't write to the
+harddisk, and Anki will close. If you're unsure how to fix the
 permissions, please contact someone near you who is knowledgeable about
 computers and can help you out.
 
 ## Permissions of Temp Folder
 
-Anki uses the system’s temporary folder to store temporary data. If the
+Anki uses the system's temporary folder to store temporary data. If the
 permissions of this folder have been changed from the default settings
 by a rogue app or buggy antivirus app, Anki will not function properly.
 
-If you’re on a Windows 7 machine, the general steps to fix the problem
+If you're on a Windows 7 machine, the general steps to fix the problem
 are listed below. As this is somewhat complicated, please ask someone
 knowledgeable about Windows if you are not sure.
 
@@ -236,7 +236,7 @@ knowledgeable about Windows if you are not sure.
 
 3. In the security tab, click on Advanced.
 
-4. Click on the Owner tab. If you’re not listed as the owner, click the
+4. Click on the Owner tab. If you're not listed as the owner, click the
     button to take ownership.
 
 5. On the permissions tab, ensure that you have full control. On a
@@ -246,7 +246,7 @@ knowledgeable about Windows if you are not sure.
 ## Corrupt Collections
 
 Anki uses a file format that is robust against program and computer
-crashes, but it’s still possible for your collection to become corrupt
+crashes, but it's still possible for your collection to become corrupt
 if the files are modified while Anki is open, stored on a network drive,
 or corrupted by a bug.
 
@@ -278,7 +278,7 @@ Then run the following in a terminal:
     cat dump.txt | sqlite3 temp.file
 
 Make sure you use temp.file - do not put collection.anki2 on the right,
-or you will blank out the file. When you’re done, proceed to the final
+or you will blank out the file. When you're done, proceed to the final
 step.
 
 ### Windows
@@ -286,8 +286,8 @@ step.
 Copy the `sqlite3.exe` program and your deck to your desktop. Then go to
 **Start&gt;Run** and type in `cmd.exe`.
 
-If you’re on a recent Windows, the command prompt may not start on your
-desktop. If you don’t see desktop displayed in the command prompt, type
+If you're on a recent Windows, the command prompt may not start on your
+desktop. If you don't see desktop displayed in the command prompt, type
 something like the following, replacing 'administrator' with your login
 name.
 
@@ -305,16 +305,16 @@ Then run the following in a terminal:
     type dump.txt | sqlite3 temp.file
 
 Make sure you use temp.file - do not put collection.anki2 on the right,
-or you will blank out the file. When you’re done, proceed to the final
+or you will blank out the file. When you're done, proceed to the final
 step.
 
 ### Final Step
 
-Check that you didn’t get an error message, and that temp.file is not
-empty. The procedure optimizes the collection in the process, so it’s
+Check that you didn't get an error message, and that temp.file is not
+empty. The procedure optimizes the collection in the process, so it's
 normal for the new file to be somewhat smaller than the old one.
 
-When you’ve confirmed the file is not empty:
+When you've confirmed the file is not empty:
 
 - rename the original collection.anki2 file to something else
 

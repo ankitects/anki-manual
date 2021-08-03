@@ -4,7 +4,7 @@
 
 When you study a regular deck in Anki, only a limited number of cards
 are shown: the cards Anki thinks you are about to forget, and a daily
-limit of new cards. This is generally useful, as it ensures you don’t
+limit of new cards. This is generally useful, as it ensures you don't
 spend more time studying than necessary. But sometimes it can be useful
 to step outside of these normal limits, such as when you need to review
 for a test, focus on particular material, and so on. To make this
@@ -14,7 +14,7 @@ deck'.
 Filtered decks offer a lot of possibilities. They can be used for
 previewing cards, cramming cards before a test, studying particular
 tags, catching up on a backlog with a particular sort order, reviewing
-ahead of schedule, going over the day’s failed cards, and more.
+ahead of schedule, going over the day's failed cards, and more.
 
 ## Custom Study
 
@@ -41,7 +41,7 @@ this option allows you to show more of them. As with the new cards
 option, this modifies the existing deck.
 
 **Review forgotten cards**  
-Show all the cards, for which you’ve answered Again (1) within the number of days
+Show all the cards, for which you've answered Again (1) within the number of days
 you specify.
 
 **Review ahead**  
@@ -137,7 +137,7 @@ of cards that match the filter criteria, Anki will exclude the cards at
 the end of this sorted list first.
 
 **Oldest seen first**  
-Display those cards first, that you haven’t seen in reviews for the longest
+Display those cards first, that you haven't seen in reviews for the longest
 time.
 
 **Random**  
@@ -186,7 +186,7 @@ you have 3 learning steps, a new card will return to its home deck upon
 three presses of "Good" or a single press of "Easy".
 
 In the old scheduler, the **custom steps** option allows you to override the
-home deck’s steps and provide your own steps instead. The provided steps apply to both
+home deck's steps and provide your own steps instead. The provided steps apply to both
 cards being learnt, lapsed reviews, and reviews ahead of time. Please note, however, that
 in the [new scheduler](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html)
 filtered decks no longer support custom steps.

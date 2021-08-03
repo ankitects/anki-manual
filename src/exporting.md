@@ -13,7 +13,7 @@ the resulting file and don't modify the first field, you can later
 import that file back into Anki and Anki will update your notes based on
 your edits, provided you import back into the same note type.
 
-If you find yourself needing to edit the first field as well, you’ll
+If you find yourself needing to edit the first field as well, you'll
 need to change the format of your note type so that the first field is
 an ID number rather than actual text. (You can install
 the [Add note id](https://ankiweb.net/shared/info/1672832404)
