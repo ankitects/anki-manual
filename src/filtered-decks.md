@@ -195,7 +195,7 @@ filtered decks no longer support custom steps.
 **Scheduler v3**
 
 Filtered decks with rescheduling disabled show 4 buttons in the 
-[Scheduler v3](https://faqs.ankiweb.net/the-2021-scheduler.html) - the provided
+[v3 scheduler](https://faqs.ankiweb.net/the-2021-scheduler.html) - the provided
 delay applies to the Again button, and Hard/Good will use 1.5x and 2x the 
 provided delay. Easy will remove the card.
 
