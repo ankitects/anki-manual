@@ -11,7 +11,7 @@ Study in Anki is limited to the currently selected deck as well as any
 subdecks it contains.
 
 On the decks screen, your decks will be displayed in a list. There are
-three number columns, 'due' and 'new'. 'Due' is the count of waiting
+three columns. 'Due' is the count of waiting
 reviews. 'New' is the number of new
 cards that are ready to be learnt that day. The third column shows
 the number of cards currently in learning.
