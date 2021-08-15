@@ -79,9 +79,12 @@ memorize them. Each time is called a 'learning step'. By default there
 are two steps: 1 minute and 10 minutes. You can change the number of
 steps and the delays between them in the [deck options](deck-options.md).
 
-There are three rating buttons when learning:
+There are four rating buttons when learning:
 
 **Again** moves the card back to the first step.
+
+**Hard**  repeats the current step after the first step, and is the average 
+of Again and Good on the first step.
 
 **Good** moves the card to the next step. If the card was on the final
 step, the card is converted into a review card (it 'graduates'). By
@@ -91,9 +94,9 @@ card will be shown again the next day, then at increasingly long delays
 
 **Easy** immediately converts the card into a review card, even if there
 were steps remaining. By default, the card will be shown again 4 days
-later, and then at increasingly long delays. In the old scheduler, the "Easy" button will not be
+later, and then at increasingly long delays. In the v1 scheduler, the "Easy" button will not be
 shown if you are in relearning mode and it would give the same interval
-as “Good.” With the [new scheduler](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html),
+as “Good.” With the [v2 scheduler](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html),
 when cards are in relearning, the "Easy" button boosts the interval by 1 day.
 
 When cards are seen for the first time, they start at step one. This
@@ -137,6 +140,9 @@ should find yourself answering 'Good' instead.
 
 As with learning cards, you can use 1-4 on the keyboard to select an
 answer. Pressing the spacebar will select 'Good'.
+
+See [Deck Options](deck-options.md) and the [FAQ](https://faqs.ankiweb.net/what-spaced-repetition-algorithm.html)
+to learn more about how the algorithm works. 
 
 ## Due Counts
 
