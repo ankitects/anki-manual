@@ -11,9 +11,10 @@ Study in Anki is limited to the currently selected deck as well as any
 subdecks it contains.
 
 On the decks screen, your decks will be displayed in a list. There are
-two number columns, 'due' and 'new'. 'Due' is the count of waiting
-reviews and cards currently in learning. 'New' is the number of new
-cards that are ready to be learnt that day.
+three number columns, 'due' and 'new'. 'Due' is the count of waiting
+reviews. 'New' is the number of new
+cards that are ready to be learnt that day. The third column shows
+the number of cards currently in learning.
 
 When you click on a deck, it will become the 'current deck', and Anki
 will change to the study screen. You can return to the deck list to
@@ -25,11 +26,11 @@ can press the ‘s’ key to study the currently selected deck.)
 You can click the gears button to the right of a deck to rename or
 delete a deck, change its options, or [export](exporting.md) it.
 
-With the old scheduler, when a deck has subdecks, the cards will appear from [each deck in
+With the v1 scheduler, when a deck has subdecks, the cards will appear from [each deck in
 turn](studying.md#display-order).
 
-With the [new scheduler](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html),
-when a deck has subdecks, reviews are now taken from all children decks
+From the [v2 scheduler](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html),
+when a deck has subdecks, reviews are taken from all children decks
 at once. The review limit of the child decks is ignored - only the limit of the
 deck you clicked on applies.
 
