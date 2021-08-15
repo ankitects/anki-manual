@@ -167,7 +167,7 @@ Anki additionally adds a small amount of random variation (Fuzz Factor) to the n
 due times, in order to prevent cards that were introduced together and
 always rated the same from always staying next to each other. From 2.1.45+, 
 this variation is reflected on the answer buttons, instead of only being 
-applied when answering,as in previous versions. 
+applied when answering, as in previous versions. 
 
 ## Editing and More
 
