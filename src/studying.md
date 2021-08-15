@@ -71,9 +71,6 @@ you don’t trust yourself to compare your answer accurately, you can ask
 Anki to [prompt you to type in the answer](templates/fields.md#checking-your-answer) rather than
 just showing it to you.
 
-The number of buttons available for grading depends on whether the card
-is being 'learnt' or 'reviewed'.
-
 ## Learning
 
 When learning new cards, or when relearning cards that you have
