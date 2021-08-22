@@ -170,7 +170,7 @@ estimates, you can disable them in Anki’s [preferences](preferences.md).
 Anki additionally adds a small amount of random variation (Fuzz Factor) to the next
 due times, in order to prevent cards that were introduced together and
 always rated the same from always staying next to each other. From 2.1.45+, 
-this variation is reflected on the answer buttons, instead of only being 
+this variation is reflected on the answer buttons.
 applied when answering, as in previous versions. 
 
 ## Editing and More
