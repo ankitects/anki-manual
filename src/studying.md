@@ -26,13 +26,17 @@ can press the ‘s’ key to study the currently selected deck.)
 You can click the gears button to the right of a deck to rename or
 delete a deck, change its options, or [export](exporting.md) it.
 
-With the v1 scheduler, when a deck has subdecks, the cards will appear from [each deck in
+- With the v1 scheduler, when a deck has subdecks, the cards will appear from [each deck in
 turn](studying.md#display-order).
 
-From the [v2 scheduler](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html),
+- With the [v2 scheduler](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html),
 when a deck has subdecks, reviews are taken from all children decks
 at once. The review limit of the child decks is ignored - only the limit of the
 deck you clicked on applies.
+
+- With the [v3 scheduler](https://faqs.ankiweb.net/the-2021-scheduler.html)
+each child deck's limit is also enforced, and you do not need to see the cards 
+in deck order either. See the [deck options](deck-options.md#review-sort-order) section of the manual. 
 
 ## Study Overview
 
