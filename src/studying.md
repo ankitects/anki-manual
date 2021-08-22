@@ -160,7 +160,7 @@ cards in that queue, not the number of _cards_. If you have multiple
 steps configured for lapsed cards, the number will increase by more than
 one when you fail a card, since that card needs to be shown several times.
 
-From the v2scheduler, the numbers count _cards_, so the number will always
+From the v2 scheduler, the numbers count _cards_, so the number will always
 increase by one regardless of the steps remaining.
 
 When the answer is shown, Anki shows an estimate of the next time a card
