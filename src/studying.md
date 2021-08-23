@@ -167,7 +167,7 @@ When the answer is shown, Anki shows an estimate of the next time a card
 will be shown above each button. If you’d prefer not to see the
 estimates, you can disable them in Anki’s [preferences](preferences.md).
 
-Anki additionally adds a small amount of random variation (Fuzz Factor) to the next
+Anki additionally adds a small amount of random variation ("fuzz") to the next
 due times, in order to prevent cards that were introduced together and
 always rated the same from always staying next to each other. From 2.1.45+, 
 this variation is reflected on the answer buttons.
