@@ -36,7 +36,7 @@ deck you clicked on applies.
 
 - With the [v3 scheduler](https://faqs.ankiweb.net/the-2021-scheduler.html)
 each child deck's limit is also enforced, and you do not need to see the cards 
-in deck order either. See the [deck options](deck-options.md#review-sort-order) section of the manual. 
+in deck order either. See the [deck options](deck-options.md#review-sort-order) section of the manual for more information.
 
 ## Study Overview
 
