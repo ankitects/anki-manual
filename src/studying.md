@@ -99,7 +99,7 @@ card will be shown again the next day, then at increasingly long delays
 **Easy** immediately converts the card into a review card, even if there
 were steps remaining. By default, the card will be shown again 4 days
 later, and then at increasingly long delays. In the v1 scheduler, the "Easy" button will not be
-shown if you are in relearning mode and it would give the same interval
+shown if you are in relearning mode as it would give the same interval
 as “Good.” With the [v2 scheduler+](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html),
 when cards are in relearning, the "Easy" button boosts the interval by 1 day.
 
