@@ -171,7 +171,6 @@ Anki additionally adds a small amount of random variation ("fuzz") to the next
 due times, in order to prevent cards that were introduced together and
 always rated the same from always staying next to each other. In the v3 scheduler, 
 this variation is reflected on the answer buttons.
-applied when answering, as in previous versions. 
 
 ## Editing and More
 
