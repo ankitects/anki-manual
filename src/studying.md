@@ -11,9 +11,10 @@ Study in Anki is limited to the currently selected deck as well as any
 subdecks it contains.
 
 On the decks screen, your decks will be displayed in a list. There are
-two number columns, 'due' and 'new'. 'Due' is the count of waiting
-reviews and cards currently in learning. 'New' is the number of new
-cards that are ready to be learnt that day.
+three columns. 'New' is the number of new
+cards that are ready to be learnt that day. The second column shows
+the number of cards currently in learning. 'Due' is the count of waiting
+reviews. 
 
 When you click on a deck, it will become the 'current deck', and Anki
 will change to the study screen. You can return to the deck list to
@@ -25,13 +26,17 @@ can press the ‘s’ key to study the currently selected deck.)
 You can click the gears button to the right of a deck to rename or
 delete a deck, change its options, or [export](exporting.md) it.
 
-With the old scheduler, when a deck has subdecks, the cards will appear from [each deck in
+- With the v1 scheduler, when a deck has subdecks, the cards will appear from [each deck in
 turn](studying.md#display-order).
 
-With the [new scheduler](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html),
-when a deck has subdecks, reviews are now taken from all children decks
+- With the [v2 scheduler](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html),
+when a deck has subdecks, reviews are taken from all children decks
 at once. The review limit of the child decks is ignored - only the limit of the
 deck you clicked on applies.
+
+- With the [v3 scheduler](https://faqs.ankiweb.net/the-2021-scheduler.html)
+each child deck's limit is also enforced, and you do not need to see the cards 
+in deck order either. See the [deck options](deck-options.md#review-sort-order) section of the manual for more information.
 
 ## Study Overview
 
@@ -70,9 +75,6 @@ you don’t trust yourself to compare your answer accurately, you can ask
 Anki to [prompt you to type in the answer](templates/fields.md#checking-your-answer) rather than
 just showing it to you.
 
-The number of buttons available for grading depends on whether the card
-is being 'learnt' or 'reviewed'.
-
 ## Learning
 
 When learning new cards, or when relearning cards that you have
@@ -81,9 +83,12 @@ memorize them. Each time is called a 'learning step'. By default there
 are two steps: 1 minute and 10 minutes. You can change the number of
 steps and the delays between them in the [deck options](deck-options.md).
 
-There are three rating buttons when learning:
+There are four rating buttons when learning:
 
 **Again** moves the card back to the first step.
+
+**Hard**  repeats the current step after the first step, and is the average 
+of Again and Good on the first step.
 
 **Good** moves the card to the next step. If the card was on the final
 step, the card is converted into a review card (it 'graduates'). By
@@ -93,9 +98,9 @@ card will be shown again the next day, then at increasingly long delays
 
 **Easy** immediately converts the card into a review card, even if there
 were steps remaining. By default, the card will be shown again 4 days
-later, and then at increasingly long delays. In the old scheduler, the "Easy" button will not be
-shown if you are in relearning mode and it would give the same interval
-as “Good.” With the [new scheduler](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html),
+later, and then at increasingly long delays. In the v1 scheduler, the "Easy" button will not be
+shown if you are in relearning mode as it would give the same interval
+as “Good.” With the [v2 scheduler+](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html),
 when cards are in relearning, the "Easy" button boosts the interval by 1 day.
 
 When cards are seen for the first time, they start at step one. This
@@ -140,30 +145,32 @@ should find yourself answering 'Good' instead.
 As with learning cards, you can use 1-4 on the keyboard to select an
 answer. Pressing the spacebar will select 'Good'.
 
-## Due Counts
+See [Deck Options](deck-options.md) and the [FAQ](https://faqs.ankiweb.net/what-spaced-repetition-algorithm.html)
+to learn more about how the algorithm works. 
+
+## Due Counts and Fuzz Factor
 
 When only the question is shown, Anki shows three numbers like 12 + 34 +
 56 at the bottom of the screen. These represent the new cards, cards in
 learning, and cards to review. If you’d prefer not to see the numbers,
 you can turn them off in Anki’s preferences.
 
-In the old scheduler, the numbers count _reviews_ needed to finish all the
+In the v1 scheduler, the numbers count _reviews_ needed to finish all the
 cards in that queue, not the number of _cards_. If you have multiple
 steps configured for lapsed cards, the number will increase by more than
 one when you fail a card, since that card needs to be shown several times.
 
-In the new scheduler, the numbers count _cards_, so the number will always
+From the v2 scheduler, the numbers count _cards_, so the number will always
 increase by one regardless of the steps remaining.
 
 When the answer is shown, Anki shows an estimate of the next time a card
 will be shown above each button. If you’d prefer not to see the
 estimates, you can disable them in Anki’s [preferences](preferences.md).
 
-Anki additionally adds a small amount of random variation to the next
+Anki additionally adds a small amount of random variation ("fuzz") to the next
 due times, in order to prevent cards that were introduced together and
-always rated the same from always staying next to each other. This
-variation is not shown on the time estimates but will be applied after
-selecting the button.
+always rated the same from always staying next to each other. In the v3 scheduler, 
+this variation is reflected on the answer buttons.
 
 ## Editing and More
 
