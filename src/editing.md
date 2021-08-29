@@ -214,8 +214,10 @@ buttons allow you to subscript or superscript text, which is useful for
 chemical compounds like H<sub>2</sub>O or simple mathematical equations like
 x<sup>2</sup>.
 
-The Fx button clears any formatting in the currently selected text — including the colour
+The rubber eraser button clears any formatting in the currently selected text — including the colour
 of the text,  whether the selected text is bold, etc.
+
+Next three buttons allow creating lists, text alignment and text indent.
 
 The next two buttons allow you to change text colour.
 
@@ -231,9 +233,16 @@ about media, please see the [media](media.md) section.
 The microphone icon allows you to record from your computer's microphone
 and attach the recording to the note.
 
-The last button shows more advanced features, such as editing the
-underlying HTML of a field, and shortcuts to add MathJax or
+The Fx button shows shortcuts to add MathJax or
 [LaTeX](math.md) to your notes.
+
+The </> button allows editing the
+underlying HTML of a field.
+
+Anki 2.1.45+ supports Sticky Fields natively. If you click on the pin icon on the right of the fields 
+, Anki will not clear out this field's content after a note is added. 
+If you find yourself entering the same content into multiple notes, you may find this useful.
+Sticky fields can now toggled on/off from the editing screen.
 
 Most of the buttons have shortcut keys. You can hover the mouse cursor
 over a button to see its shortcut.
