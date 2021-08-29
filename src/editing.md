@@ -217,9 +217,8 @@ x<sup>2</sup>.
 The rubber eraser button clears any formatting in the currently selected text — including the colour
 of the text,  whether the selected text is bold, etc.
 
-Next three buttons allow creating lists, text alignment and text indent.
-
-The next two buttons allow you to change text colour.
+The next three buttons allow creating lists, text alignment and text indent.
+Then, there are two buttons to allow you to change text colour.
 
 The \[…​\] button is visible when a cloze note type is selected.
 
@@ -236,8 +235,7 @@ and attach the recording to the note.
 The Fx button shows shortcuts to add MathJax or
 [LaTeX](math.md) to your notes.
 
-The </> button allows editing the
-underlying HTML of a field.
+The </> button allows editing the underlying HTML of a field.
 
 Anki 2.1.45+ supports Sticky Fields natively. If you click on the pin icon on the right of the fields 
 , Anki will not clear out this field's content after a note is added. 
