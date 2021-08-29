@@ -48,6 +48,14 @@ note type (and opens the add window to the last-used note type when you choose
 Add). This may be more convenient if you always use a single note type for each
 deck.
 
+**Default search text**
+It allows to customize the starting search text in the browser (eg, to start 
+with "deck:current").
+
+**User interface size**
+If you find that the interface elements are too small for you, you can 
+try to increase this setting.  
+
 ## Scheduling
 
 **Show next review time above answer buttons**  
