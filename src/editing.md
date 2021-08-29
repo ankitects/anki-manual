@@ -240,7 +240,7 @@ The </> button allows editing the underlying HTML of a field.
 Anki 2.1.45+ supports Sticky Fields natively. If you click on the pin icon on the right of the fields 
 , Anki will not clear out this field's content after a note is added. 
 If you find yourself entering the same content into multiple notes, you may find this useful.
-Sticky fields can now toggled on/off from the editing screen.
+Sticky fields can be toggled on/off from the editing screen.
 
 Most of the buttons have shortcut keys. You can hover the mouse cursor
 over a button to see its shortcut.
