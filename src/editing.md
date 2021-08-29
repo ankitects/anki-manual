@@ -137,10 +137,6 @@ answer](templates/fields.md#checking-your-answer) section.)
 column of the browser. You can use this to sort cards by that field.
 Only one field can be the sort field at once.
 
-When **Remember last input…​** is checked, Anki will not clear out this
-field's content after a note is added. If you find yourself entering the
-same content into multiple notes, you may find this useful.
-
 **Reverse text direction** is useful if you are studying languages that
 display text from right to left (RTL), such as Arabic or Hebrew. This
 setting currently only controls editing; to make sure the text displays
