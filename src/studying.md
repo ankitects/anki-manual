@@ -186,6 +186,7 @@ card or note:
 study, and you can search for flagged cards in the Browse screen. This is useful
 when you want to take some action on the card at a later date, such as looking
 up a word when you get home.
+
 Anki 2.1.45+ allows flags to be renamed. Please, keep in mind that if you rename a flag, 
 the name change will affect to all your profiles. 
 
