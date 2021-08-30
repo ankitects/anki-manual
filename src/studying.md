@@ -187,8 +187,7 @@ study, and you can search for flagged cards in the Browse screen. This is useful
 when you want to take some action on the card at a later date, such as looking
 up a word when you get home.
 
-   If you're using Anki 2.1.45+, you can rename flags from the [browser](browsing.md). Please, keep in mind 
-   that flags names are shared across profiles.
+   If you're using Anki 2.1.45+, you can also rename flags from the [browser](browsing.md).    
 
 - **Bury Card / Note**: Hides a card or all of the note’s cards from review until the next day.
 (If you want to unbury cards before then, you can click the “unbury”
