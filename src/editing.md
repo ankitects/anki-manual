@@ -237,7 +237,7 @@ The Fx button shows shortcuts to add MathJax or
 
 The `</>` button allows editing the underlying HTML of a field.
 
-Anki 2.1.45+ supports Sticky Fields natively. If you click on the pin icon on the right of the fields 
+Anki 2.1.45+ supports Sticky Fields natively. If you click on the pin icon on the right of a field
 , Anki will not clear out this field's content after a note is added. 
 If you find yourself entering the same content into multiple notes, you may find this useful.
 Sticky fields can be toggled on/off from the editing screen.
