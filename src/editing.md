@@ -235,7 +235,7 @@ and attach the recording to the note.
 The Fx button shows shortcuts to add MathJax or
 [LaTeX](math.md) to your notes.
 
-The </> button allows editing the underlying HTML of a field.
+The `</>` button allows editing the underlying HTML of a field.
 
 Anki 2.1.45+ supports Sticky Fields natively. If you click on the pin icon on the right of the fields 
 , Anki will not clear out this field's content after a note is added. 
