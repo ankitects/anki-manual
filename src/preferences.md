@@ -49,7 +49,7 @@ Add). This may be more convenient if you always use a single note type for each
 deck.
 
 **Default search text**
-It allows to customize the starting search text in the browser (eg, to start 
+Allows you to customize the starting search text in the browser (eg, to start 
 with "deck:current").
 
 **User interface size**
