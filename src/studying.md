@@ -185,7 +185,8 @@ card or note:
 - **Flag Card**: Adds a colored marker to the card, or toggles it off. Flags will appear during
 study, and you can search for flagged cards in the Browse screen. This is useful
 when you want to take some action on the card at a later date, such as looking
-up a word when you get home.
+up a word when you get home. If you're using Anki 2.1.45+, you can also rename flags 
+from the [browser](browsing.md).    
 
 - **Bury Card / Note**: Hides a card or all of the note’s cards from review until the next day.
 (If you want to unbury cards before then, you can click the “unbury”

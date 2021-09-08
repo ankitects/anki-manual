@@ -137,10 +137,6 @@ answer](templates/fields.md#checking-your-answer) section.)
 column of the browser. You can use this to sort cards by that field.
 Only one field can be the sort field at once.
 
-When **Remember last input…​** is checked, Anki will not clear out this
-field's content after a note is added. If you find yourself entering the
-same content into multiple notes, you may find this useful.
-
 **Reverse text direction** is useful if you are studying languages that
 display text from right to left (RTL), such as Arabic or Hebrew. This
 setting currently only controls editing; to make sure the text displays
@@ -218,10 +214,11 @@ buttons allow you to subscript or superscript text, which is useful for
 chemical compounds like H<sub>2</sub>O or simple mathematical equations like
 x<sup>2</sup>.
 
-The Fx button clears any formatting in the currently selected text — including the colour
+The rubber eraser button clears any formatting in the currently selected text — including the colour
 of the text,  whether the selected text is bold, etc.
 
-The next two buttons allow you to change text colour.
+The next three buttons allow creating lists, text alignment and text indent.
+Then, there are two buttons to allow you to change text colour.
 
 The \[…​\] button is visible when a cloze note type is selected.
 
@@ -235,9 +232,15 @@ about media, please see the [media](media.md) section.
 The microphone icon allows you to record from your computer's microphone
 and attach the recording to the note.
 
-The last button shows more advanced features, such as editing the
-underlying HTML of a field, and shortcuts to add MathJax or
+The Fx button shows shortcuts to add MathJax or
 [LaTeX](math.md) to your notes.
+
+The `</>` button allows editing the underlying HTML of a field.
+
+Anki 2.1.45+ supports Sticky Fields natively. If you click on the pin icon on the right of a field
+, Anki will not clear out this field's content after a note is added. 
+If you find yourself entering the same content into multiple notes, you may find this useful.
+Sticky fields can be toggled on/off from the editing screen.
 
 Most of the buttons have shortcut keys. You can hover the mouse cursor
 over a button to see its shortcut.

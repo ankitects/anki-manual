@@ -252,6 +252,15 @@ cards with a green flag
 `flag:4`  
 cards with a blue flag
 
+`flag:5`  
+cards with a pink flag
+
+`flag:6`  
+cards with a turquoise flag
+
+`flag:7`  
+cards with a purple flag
+
 ## Card properties
 
 `prop:ivl>=10`  
