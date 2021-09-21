@@ -392,8 +392,8 @@ a minimum of escaping is required to prevent ambiguity:
 `nid:123`  
 all cards of the note with note id 123
 
-`cid:123`  
-the card with card id 123
+`cid:123,456,789`  
+all cards with card ids 123, 456 or 789
 
 Note and card IDs can be found in the [card info](stats.md) dialog in the
 browser. These searches may also be helpful when doing add-on
