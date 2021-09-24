@@ -343,7 +343,7 @@ higher retention.
 
 Controls the easiness that cards start out with. It is
 set when a card graduates from learning for the first time. It defaults
-to 250%, meaning that once you have finished learning a card, answering
+to 2.50, meaning that once you have finished learning a card, answering
 `Good` on subsequent reviews will increase the delay by approximately
 2.5 (e.g. if the last delay was 10 days, the next delay would be around 25
 days). Based upon how you rate the card in subsequent reviews, the
@@ -352,13 +352,14 @@ easiness may increase or decrease from its starting value.
 ### Easy Bonus
 
 An extra multiplier applied to the interval when a review card is answered
-`Easy`. With the default value of 130%, `Easy` will give an interval that is
-1.3 times the `Good` interval.
+`Easy`. With the default value of 1.30, `Easy` will give an interval that is
+1.3 times the `Good` interval (e.g. if the last interval was 10 days, the next 
+interval would be around 13 days).
 
 ### Interval Modifier
 
-An extra multiplier that is applied to all reviews. At its default of 100% it
-does nothing. If you set it to 80%, though, for example, intervals will be generated at
+An extra multiplier that is applied to all reviews. At its default of 1.00 it
+does nothing. If you set it to 0.80, though, for example, intervals will be generated at
 80% of their normal size (so a 10 day interval would become 8 days). You can
 thus use the multiplier to make Anki present cards more or less frequently than
 it would otherwise, trading study time for retention or vice versa.
@@ -408,19 +409,19 @@ learning mode steps, instead of by adjusting this modifier.
 ### Hard Interval
 
 The multiplier used when you use the `Hard` button. The percentage is relative
-to the previous interval: e.g. with a default of 120%, a card with a 10-day interval
+to the previous interval: e.g. with a default of 1.20, a card with a 10-day interval
 will be given 12 days.
 
 ### New Interval
 
 The multiplier used when you use the `Again` button on a review card. The
-default 0% means that a review card's delay is reset to zero when you forget it
+default 0.00 means that a review card's delay is reset to zero when you forget it
 (which then becomes 1 day after the [minimum interval](#minimum-interval) is
 applied).
 
 If changed from the default, it is possible for forgotten cards to preserve part
 of their previous delay. For example, if a card had a 100 day interval, and you set
-the *New Interval* to 20%, the new interval would be 20 days.
+the *New Interval* to 0.20, the new interval would be 20 days.
 
 While preserving part of the interval may seem to make sense, SuperMemo has observed
 that preserving part of the delay can actually [be counter-productive](https://supermemo.guru/wiki/Post-lapse_stability). For this reason, we recommend you leave it on the default setting.
