@@ -81,7 +81,7 @@ When learning new cards, or when relearning cards that you have
 forgotten, Anki will show you the cards one or more times to help you
 memorize them. Each time is called a 'learning step'. By default there
 are two steps: 1 minute and 10 minutes. You can change the number of
-steps and the delays between them in the [deck options](deck-options.md).
+steps and the delays between them in the [deck options](deck-options.md#new-cards).
 
 There are four rating buttons when learning:
 
@@ -90,14 +90,14 @@ There are four rating buttons when learning:
 **Hard**  repeats the current step after the first step, and is the average 
 of Again and Good on the first step.
 
-**Good** moves the card to the next step. If the card was on the final
+**Good** moves the card to the [next step](deck-options.md#learning-steps). If the card was on the final
 step, the card is converted into a review card (it 'graduates'). By
 default, once the card has reached the end of the learning steps, the
 card will be shown again the next day, then at increasingly long delays
 (see the next section).
 
 **Easy** immediately converts the card into a review card, even if there
-were steps remaining. By default, the card will be shown again 4 days
+were steps remaining. [By default](deck-options.md#easy-interval), the card will be shown again 4 days
 later, and then at increasingly long delays. In the v1 scheduler, the "Easy" button will not be
 shown if you are in relearning mode as it would give the same interval
 as “Good.” With the [v2 scheduler+](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html),
@@ -127,17 +127,17 @@ more frequently in the future. The card is said to have 'lapsed'. Please
 see the [lapses](deck-options.md#lapses) section for more information about how lapsed
 reviews are handled.
 
-**Hard** shows the card at a slightly longer delay than last time, and
+**Hard** shows the card at a [slightly longer delay](deck-options.md#hard-interval) than last time, and
 tells Anki to show the card more frequently in the future.
 
 **Good** tells Anki that the last delay was about right, and the card
-easiness doesn’t need to be adjusted down or up. At the default starting
-easiness, the card will be shown again approximately 2 1/2 times longer
+easiness doesn’t need to be adjusted down or up. At the [default starting
+easiness](deck-options.md#starting-ease), the card will be shown again approximately 2 1/2 times longer
 than the previous time, so if you had waited 10 days to see the card
 previously, the next delay would be about 25 days.
 
 **Easy** tells Anki you found the delay too short. The card will be
-scheduled further into the future than 'Good', and Anki will schedule
+scheduled [further into the future than 'Good'](deck-options.md#easy-bonus), and Anki will schedule
 the card less frequently in the future. Because 'Easy' rapidly increases
 the delay, it’s best used for only the easiest of cards. Usually you
 should find yourself answering 'Good' instead.
