@@ -108,8 +108,8 @@ means answering **Good** on a card for the first time will show it one
 more time in 10 minutes, and the initial 1 minute step will be skipped.
 If you push Again, though, the card will come back in 1 minute.
 
-You can use the 1, 2 and 3 keys on your keyboard to select a particular
-button, where 1 is **Again**. Pressing the spacebar will select
+You can use the `1`, `2`, `3` and `4` keys on your keyboard to select a particular
+button, where `1` is **Again**. Pressing the spacebar will select
 **Good**.
 
 If there are no other cards to show you, Anki will show learning cards
@@ -142,8 +142,8 @@ the card less frequently in the future. Because 'Easy' rapidly increases
 the delay, it’s best used for only the easiest of cards. Usually you
 should find yourself answering 'Good' instead.
 
-As with learning cards, you can use 1-4 on the keyboard to select an
-answer. Pressing the spacebar will select 'Good'.
+As with learning cards, you can use `1`, `2`, `3` and `4` on the keyboard to select an
+answer. Pressing the `spacebar` will select 'Good'.
 
 See [Deck Options](deck-options.md) and the [FAQ](https://faqs.ankiweb.net/what-spaced-repetition-algorithm.html)
 to learn more about how the algorithm works. 
