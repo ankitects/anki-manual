@@ -345,7 +345,7 @@ Controls the easiness that cards start out with. It is
 set when a card graduates from learning for the first time. It defaults
 to 2.50, meaning that once you have finished learning a card, answering
 `Good` on subsequent reviews will increase the delay by approximately
-2.5 (e.g. if the last delay was 10 days, the next delay would be around 25
+2.5x (e.g. if the last delay was 10 days, the next delay would be around 25
 days). Based upon how you rate the card in subsequent reviews, the
 easiness may increase or decrease from its starting value.
 
