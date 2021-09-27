@@ -230,18 +230,18 @@ just showing it to you.</p>
 forgotten, Anki will show you the cards one or more times to help you
 memorize them. Each time is called a 'learning step'. By default there
 are two steps: 1 minute and 10 minutes. You can change the number of
-steps and the delays between them in the <a href="deck-options.html">deck options</a>.</p>
+steps and the delays between them in the <a href="deck-options.html#new-cards">deck options</a>.</p>
 <p>There are four rating buttons when learning:</p>
 <p><strong>Again</strong> moves the card back to the first step.</p>
 <p><strong>Hard</strong>  repeats the current step after the first step, and is the average 
 of Again and Good on the first step.</p>
-<p><strong>Good</strong> moves the card to the next step. If the card was on the final
+<p><strong>Good</strong> moves the card to the <a href="deck-options.html#learning-steps">next step</a>. If the card was on the final
 step, the card is converted into a review card (it 'graduates'). By
 default, once the card has reached the end of the learning steps, the
 card will be shown again the next day, then at increasingly long delays
 (see the next section).</p>
 <p><strong>Easy</strong> immediately converts the card into a review card, even if there
-were steps remaining. By default, the card will be shown again 4 days
+were steps remaining. <a href="deck-options.html#easy-interval">By default</a>, the card will be shown again 4 days
 later, and then at increasingly long delays. In the v1 scheduler, the &quot;Easy&quot; button will not be
 shown if you are in relearning mode as it would give the same interval
 as “Good.” With the <a href="https://faqs.ankiweb.net/the-anki-2.1-scheduler.html">v2 scheduler+</a>,
@@ -250,8 +250,8 @@ when cards are in relearning, the &quot;Easy&quot; button boosts the interval by
 means answering <strong>Good</strong> on a card for the first time will show it one
 more time in 10 minutes, and the initial 1 minute step will be skipped.
 If you push Again, though, the card will come back in 1 minute.</p>
-<p>You can use the 1, 2 and 3 keys on your keyboard to select a particular
-button, where 1 is <strong>Again</strong>. Pressing the spacebar will select
+<p>You can use the <code>1</code>, <code>2</code>, <code>3</code> and <code>4</code> keys on your keyboard to select a particular
+button, where <code>1</code> is <strong>Again</strong>. Pressing the spacebar will select
 <strong>Good</strong>.</p>
 <p>If there are no other cards to show you, Anki will show learning cards
 again even if their delay has not elapsed completely. If you’d prefer to
@@ -264,20 +264,20 @@ again, there are four buttons to rate your answer:</p>
 more frequently in the future. The card is said to have 'lapsed'. Please
 see the <a href="deck-options.html#lapses">lapses</a> section for more information about how lapsed
 reviews are handled.</p>
-<p><strong>Hard</strong> shows the card at a slightly longer delay than last time, and
+<p><strong>Hard</strong> shows the card at a <a href="deck-options.html#hard-interval">slightly longer delay</a> than last time, and
 tells Anki to show the card more frequently in the future.</p>
 <p><strong>Good</strong> tells Anki that the last delay was about right, and the card
-easiness doesn’t need to be adjusted down or up. At the default starting
-easiness, the card will be shown again approximately 2 1/2 times longer
+easiness doesn’t need to be adjusted down or up. At the <a href="deck-options.html#starting-ease">default starting
+easiness</a>, the card will be shown again approximately 2 1/2 times longer
 than the previous time, so if you had waited 10 days to see the card
 previously, the next delay would be about 25 days.</p>
 <p><strong>Easy</strong> tells Anki you found the delay too short. The card will be
-scheduled further into the future than 'Good', and Anki will schedule
+scheduled <a href="deck-options.html#easy-bonus">further into the future than 'Good'</a>, and Anki will schedule
 the card less frequently in the future. Because 'Easy' rapidly increases
 the delay, it’s best used for only the easiest of cards. Usually you
 should find yourself answering 'Good' instead.</p>
-<p>As with learning cards, you can use 1-4 on the keyboard to select an
-answer. Pressing the spacebar will select 'Good'.</p>
+<p>As with learning cards, you can use <code>1</code>, <code>2</code>, <code>3</code> and <code>4</code> on the keyboard to select an
+answer. Pressing the <code>spacebar</code> will select 'Good'.</p>
 <p>See <a href="deck-options.html">Deck Options</a> and the <a href="https://faqs.ankiweb.net/what-spaced-repetition-algorithm.html">FAQ</a>
 to learn more about how the algorithm works. </p>
 <h2 id="due-counts-and-fuzz-factor"><a class="header" href="#due-counts-and-fuzz-factor">Due Counts and Fuzz Factor</a></h2>
