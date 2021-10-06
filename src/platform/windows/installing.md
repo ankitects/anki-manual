@@ -36,7 +36,6 @@ data.
 If you wish to downgrade to a previous version, please make sure you
 [downgrade first](http://changes.ankiweb.net).
 
-
 ## Add-on Compatibility
 
 Some add-ons have not been updated to support the latest Anki release yet. If an
@@ -44,6 +43,15 @@ add-on you depend on has not been ported to the latest release yet, you may have
 more luck with 2.1.44 from the [releases
 page](https://github.com/ankitects/anki/releases).
 
+## Older Releases & Change Notes
+
+Anki releases and their associated change notes are available on  
+the [releases
+page](https://github.com/ankitects/anki/releases).
+
+If you're unable to access GitHub, a [download
+mirror](https://apps.ankiweb.net/downloads/archive) and separate [changes
+site](https://changes.ankiweb.net) are also available.
 
 ## Problems
 

@@ -6,7 +6,7 @@ The packaged version requires a recent 64 bit Intel/AMD Linux, and common
 libraries like libwayland-client and systemd. If you are on a different
 architecture, or a barebones Linux distro, you will not be able to use the
 packaged version, but you may be able to use the [Python
-wheels](https://github.com/ankitects/anki/blob/main/docs/development.md#pre-built-python-wheels)
+wheels](https://betas.ankiweb.net/#via-pypipip)
 instead.
 
 On recent Ubuntu installations, please use the following before
@@ -54,6 +54,17 @@ Some add-ons have not been updated to support the latest Anki release yet. If an
 add-on you depend on has not been ported to the latest release yet, you may have
 more luck with 2.1.44 from the [releases
 page](https://github.com/ankitects/anki/releases).
+
+
+## Older Releases & Change Notes
+
+Anki releases and their associated change notes are available on the 
+ [releases
+page](https://github.com/ankitects/anki/releases).
+
+If you're unable to access GitHub, a [download
+mirror](https://apps.ankiweb.net/downloads/archive) and separate [changes
+site](https://changes.ankiweb.net) are also available.
 
 
 ## Problems

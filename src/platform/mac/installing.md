@@ -32,6 +32,17 @@ more luck with 2.1.44 from the [releases
 page](https://github.com/ankitects/anki/releases).
 
 
+## Older Releases & Change Notes
+
+Anki releases and their associated change notes are available on the 
+[releases
+page](https://github.com/ankitects/anki/releases).
+
+If you're unable to access GitHub, a [download
+mirror](https://apps.ankiweb.net/downloads/archive) and separate [changes
+site](https://changes.ankiweb.net) are also available.
+
+
 ## Problems
 
 If you encounter any issues when installing or starting Anki, please see the
