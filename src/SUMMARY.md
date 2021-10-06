@@ -10,6 +10,7 @@
     - [Startup Issues](platform/windows/startup-issues.md)
     - [Display Issues](platform/windows/display-issues.md)
     - [Copy and Paste Issues](platform/windows/copy-and-paste.md)
+    - [Text Size](platform/windows/text-size.md)
     - [Permission Problems](platform/windows/permission-problems.md)
   - [macOS](platform/mac/installing.md)
     - [Install & Upgrade](platform/mac/installing.md)
