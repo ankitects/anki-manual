@@ -4,7 +4,11 @@
 
 ## Installing & Upgrading
 
-Please see the [download site](https://apps.ankiweb.net) for installation and upgrade instructions.
+Please see the instructions for your computer:
+
+- [Windows](./platform/windows/installing.md)
+- [Mac](./platform/mac/installing.md)
+- [Linux](./platform/linux/installing.md)
 
 ## Videos
 

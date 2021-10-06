@@ -21,3 +21,7 @@ additional-css = ["css/kbd.css"]
 optional = true
 warning-policy = "warn"
 follow-web-links = true
+
+[output.html.fold]
+enable = true
+level = 0
