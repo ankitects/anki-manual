@@ -18,7 +18,7 @@ To install Anki:
 1. Download Anki from <https://apps.ankiweb.net>
 2. Save the installer to your desktop or downloads folder.
 3. Double-click on the installer to run it. If you see an error
-message, please see [this page](./windows-installation-issues.md).
+message, please see the links on the left.
 4. Once Anki is installed, double-click on the new star icon on your
 desktop to start Anki.
 

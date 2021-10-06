@@ -29,7 +29,7 @@ On Windows 7/8, you may need to manually install extra updates. Please try:
 
 ## Video driver issues
 
-Please see [display issues](./windows-display-issues.md).
+Please see [display issues](./display-issues.md).
 
 ## Antivirus/firewall software
 
@@ -63,6 +63,6 @@ what is causing the problem.
 If you are unable to start Anki after trying the above workarounds, you have
 two remaining options:
 
-- You can try [running from Python](./running-from-python.md).
+- You can try [running from Python](https://faqs.ankiweb.net/running-from-python.html).
 - You can try an older Anki version built with an older toolkit, such as
   2.1.35-alternate, and 2.1.15.

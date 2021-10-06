@@ -19,4 +19,4 @@ with app installation, please use [Run
 anyway](https://www.tekrevue.com/tip/windows-protected-your-pc-disable-smartscreen/).
 
 Antivirus programs may sometimes also report a [false
-positive](./my-antivirus-program-says-anki-is-infected.md).
+positive](https://faqs.ankiweb.net/my-antivirus-program-says-anki-is-infected.html).
