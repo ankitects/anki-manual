@@ -19,6 +19,7 @@
     - [Install & Upgrade](platform/linux/installing.md)
     - [Missing Libraries](platform/linux/missing-libraries.md)
     - [Display Issues](platform/linux/display-issues.md)
+    - [Fedora/OpenSUSE Blank](platform/linux/blank-window.md)
     - [Linux Distro Packages](platform/linux/distro-packages.md)
     - [Incorrect GTK Theme](platform/linux/gtk-theme.md)
     - [Wayland](platform/linux/wayland.md)
