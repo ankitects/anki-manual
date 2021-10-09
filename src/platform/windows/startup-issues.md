@@ -31,6 +31,12 @@ On Windows 7/8, you may need to manually install extra updates. Please try:
 
 Please see [display issues](./display-issues.md).
 
+## Multiple displays
+
+If you get a *LoadLibrary failed with error 126*, this may be caused by the
+toolkit Anki is built on having trouble with [multiple
+displays](https://forums.ankiweb.net/t/error-126-on-open-anki-desktop/13967)
+
 ## Antivirus/firewall software
 
 Third-party software on your machine may prevent Anki from loading. You can
