@@ -133,9 +133,9 @@ for free, they are quite limited for modern use.
 
 Anki addresses these issues. There are free clients for Anki available
 on many platforms, so struggling students and teachers with budgetary
-constraints are not left out. Anki open source, with an already
+constraints are not left out. Anki is open source, with an already
 flourishing library of add-ons contributed by end-users. It is
-multi-platform, running on Windows, Mac OSX, Linux/FreeBSD, and some
+multi-platform, running on Windows, Mac OS X, Linux/FreeBSD, and some
 mobile devices. And it is considerably easier to use than SuperMemo.
 
 Anki's spaced repetition system is based on an older version of the
