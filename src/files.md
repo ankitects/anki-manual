@@ -105,7 +105,7 @@ On Windows, you can define the environment variable with:
 
     set "ANKI_BASE=C:/path/to/AnkiDataFolder"
 
-On Linux and Mac OS, you can use:
+On Linux and macOS, you can use:
 
     export ANKI_BASE="/path/to/AnkiDataFolder"
 
@@ -263,7 +263,7 @@ installed already. On Windows, download
 Next, create a backup of your collection.anki2 file, in case something
 goes wrong with the steps below.
 
-### Linux/OSX
+### Linux/macOS
 
 Open a terminal, change to the folder your collection is located in, and
 type:
