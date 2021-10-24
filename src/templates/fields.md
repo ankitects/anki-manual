@@ -75,7 +75,7 @@ the following in your card template:
 
     {{tts en_US:Front}}
 
-On Windows, MacOS, and iOS, Anki will use the OS’s built in voices. On
+On Windows, macOS, and iOS, Anki will use the OS’s built in voices. On
 Linux, no voices are built in, but voices can be provided by add-ons,
 such as [this one](https://ankiweb.net/shared/info/391644525).
 
