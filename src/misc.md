@@ -7,8 +7,8 @@
 On Windows/Linux you can hold down the <kbd>Alt</kbd> key and press a highlighted
 letter to activate a particular menu.
 
-OS X doesn’t support this feature, but it does allow you to assign
-shortcuts to specific menu items instead. Please see
+Although macOS doesn’t support this feature, it does allow you instead to assign
+shortcuts to specific menu items. Please see
 <http://lifehacker.com/343328/create-a-keyboard-shortcut-for-any-menu-action-in-any-program>
 for more information.
 
