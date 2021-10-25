@@ -296,6 +296,10 @@ hide cards in learning, as time is of the essence for those cards. On
 the other hand, when you study a learning card, any new/review siblings
 will be buried.
 
+Note: A card cannot be buried and suspended at the same time. Suspending a
+buried card will unbury it. Burying a suspended card does not work on Anki
+2.1.49+, whereas on earlier versions, it will unsuspend the card.
+
 ## Keyboard Shortcuts
 
 Most of the common operations in Anki have keyboard shortcuts. Most of
