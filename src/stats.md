@@ -25,26 +25,25 @@ card with the "Good" button.
 ## Statistics
 
 The statistics window is accessed by clicking on **Stats** button at the
-top of the main window, or by pressing T. The statistics
+top of the main window, or by pressing <kbd>T</kbd>. The statistics
 window will show statistics from the currently selected deck and any
-subdecks. If you click on "collection" on the bottom left, statistics
-will be shown for your entire collection instead. On 2.1.28+, additionally,
-you can display graphs for arbitrary searches by adding filters in the
-search box.
+subdecks. If you select the checkbox "collection" at the top, statistics
+will be shown for your entire collection instead. You can also display graphs
+for arbitrary searches by adding filters in the search box at the top (2.1.28+).
 
-Anki 2.1.28+ introduces redesigned graphs. The old graphs are currently still
-accessible with a <kbd>Shift</kbd>-click on the Stats button.
+(Anki 2.1.28+ introduced redesigned graphs. The old graphs are currently still
+accessible with a <kbd>Shift</kbd>-click on the Stats button.)
 
-For Anki 2.1.28+, by default Anki will show you statistics for the previous year.
+By default, Anki 2.1.28+ will show you statistics for the last 12 months.
 You can change this to all history scope or deck life scope at the top. (The
-"today" section at the top is of course unaffected by this selection.)
+"today" section at the top remains of course unaffected by this selection.)
 
-For older versions of Anki, by default Anki will show you statistics for
+Older versions of Anki will by default show you statistics for
 the previous month. You can change this to a year scope or deck life scope
-at the bottom. (The “today” section at the top is of course unaffected
+at the bottom. (Again, the “today” section at the top is unaffected
 by this selection.)
 
-Clicking on "Save PDF" will save an PDF document of the statistics to a file
+Clicking on "Save PDF" at the bottom will save a PDF document of the statistics to a file
 on your desktop to make it easy to share your statistics with others.
 
 When you delete notes, their review history is maintained in Anki. It
@@ -87,7 +86,7 @@ multiple reviews if it needed to be seen multiple times, and a learning
 card answered also counts as a “review.” A couple of the stats whose
 meaning may not be immediately obvious:
 
-**Again count**  
+**Again Count**  
 This is the number of reviews that you have failed (i.e., pressed Again
 on). The correct percentage listed afterwards is the number of cards you
 did 'not' fail divided by the total number of cards you studied.
@@ -109,7 +108,7 @@ bottom of the window.
 
 ## The Graphs
 
-**Forecast**  
+**Future Due**  
 This graph shows an estimated number of reviews that will be due on a
 given day in the future if you learn no new cards and fail no cards. The
 bars and the left axis show the number of cards due on each day if you
@@ -119,7 +118,7 @@ Note that the forecast graph does not count reviews that are currently
 overdue, so if you have a large backlog, the overdue cards will not be
 displayed.
 
-**Review Count**  
+**Reviews**  
 This graph counts the number of card reviews you have done. The bars may
 correspond to days, weeks, or months, depending on the time period
 you’ve selected at the bottom of the screen. The differently colored
@@ -131,12 +130,19 @@ cumulative total for each type of review as time progresses across the
 graph (so at 0 days, it would display the number for the entire time
 period displayed on the graph).
 
+**Card Counts**  
+This pie chart shows what percentage of your deck or collection consists
+of mature, unseen, young/learn, and suspended cards. If you wish to
+calculate a more precise percentage, the key shows the exact number of
+cards in each section, and the total number of cards is displayed to the
+side.
+
 **Review Time**  
 This graph works exactly like Review Count, except that it deals with
 the amount of time you spent on each card rather than the number of
 cards answered.
 
-**Intervals**  
+**Review Intervals**  
 This graph displays the number of cards that have a given interval (the
 delay between two reviews). The line and the right axis tell you what
 percentage of your cards have an interval of less than or equal to the
@@ -157,13 +163,6 @@ This graph shows how many times you’ve chosen the Again, Hard, Good, or
 Easy button while studying learning/new, young, and
 [mature](stats.md#types-of-cards) cards. Anki also displays the percentage
 of correct reviews for each type of card.
-
-**Cards Types**  
-This pie chart shows what percentage of your deck or collection consists
-of mature, unseen, young/learn, and suspended cards. If you wish to
-calculate a more precise percentage, the key shows the exact number of
-cards in each section, and the total number of cards is displayed to the
-side.
 
 ## Manual Analysis
 
@@ -228,6 +227,6 @@ The amount of time (in milliseconds) you spent on the question and
 answer sides of the card before selecting an ease button.
 
 **type**  
-This is 0 for learning cards, 1 for review cards, 2 for relearn cards,
+This is 0 for learning cards, 1 for review cards, 2 for relearning cards,
 and 3 for early "cram" cards (cards being studied in a filtered deck when they
 are not due).
