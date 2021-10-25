@@ -67,7 +67,7 @@ experience with LaTeX, please consult one of the many guides available
 on the internet. If you are having trouble with markup, please ask on a
 LaTeX forum.
 
-To install LaTeX, on Windows use MiKTeX; on OSX use MacTex, and on Linux
+To install LaTeX, on Windows use MiKTeX; on macOS use MacTex, and on Linux
 use your distro’s package manager. Dvipng must also be installed.
 
 On Windows, go to Settings in MikTek’s maintenance window, and make sure
@@ -76,7 +76,7 @@ first". If you continue to have difficulties, one user reported that
 running Anki as an administrator until all the packages were fetched
 helped.
 
-On OSX, LaTeX has only been tested with MacTex and BasicTex. If you use
+On macOS, LaTeX has only been tested with MacTex and BasicTex. If you use
 BasicTex, you need to install dvipng separately, with the following
 command:
 
@@ -270,7 +270,7 @@ following note text will read `[type] in C++ is a type-safe union`:
 
     {{c1::std:<!-- -->:variant::~type~}} in C++ is a {{c2::type-safe union}}
 
-### Unsafe commands
+### Unsafe Commands
 
 Anki prohibits certain commands like \\input or \\def from being used on
 cards or in templates, because allowing them could allow malicious
