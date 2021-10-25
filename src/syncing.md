@@ -166,7 +166,7 @@ you with.
 ## Proxies
 
 If you need a proxy to access the internet, Anki should automatically
-pick up your system proxy settings if you’re on Windows or OS X, and
+pick up your system proxy settings if you’re on Windows or macOS, and
 will honour the HTTP_PROXY environment variable if you’re on another
 platform.
 
