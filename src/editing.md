@@ -374,9 +374,9 @@ things to consider. Please see [this
 page](http://dotancohen.com/howto/rtl_right_to_left.html) for more
 information.
 
-The toolkit, on which Anki is built, has trouble dealing with a few input
-methods, such as holding down keys to select accented characters on Mac
-OS X, and typing characters by holding down the <kbd>Alt</kbd> key and typing a
+The toolkit on which Anki is built has trouble dealing with a few input
+methods, such as holding down keys to select accented characters on macOS, 
+and typing characters by holding down the <kbd>Alt</kbd> key and typing a
 numeric code on Windows.
 
 ## Unicode Normalization
