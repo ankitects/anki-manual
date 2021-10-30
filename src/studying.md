@@ -172,7 +172,7 @@ estimates, you can disable them in Anki’s [preferences](preferences.md).
 After you select an ease button, Anki also applies a small amount of random “fuzz”
 to prevent cards that were introduced at the same time and given the same ratings
 from sticking together and always coming up for review on the same day. This fuzz
-appear on the interval buttons from 2.1.45+, but not in previous versions, so if
+will appear on the answer buttons when the [v3 scheduler](https://faqs.ankiweb.net/the-2021-scheduler.html) is enabled, so if
 you are using a previous version and you’re noticing a slight discrepancy between
 what you select and the intervals your cards actually get, this is probably the
 cause.
