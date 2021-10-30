@@ -21,7 +21,7 @@ in profile A, until everything is in profile B.
 AnkiDroid does not support profiles.
 
 ## Profiles window
-From the Profiles window, you can:
+From the Profiles window (accessible via File>Switch Profile from the main window), you can:
 - Open / Add / Rename / Delete user profiles. 
 - Quit the program.
 - Restore an [automatic backup.](./files.md#backups)
