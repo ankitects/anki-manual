@@ -24,7 +24,7 @@ AnkiDroid does not support profiles.
 From the Profiles window, you can:
 - Open / Add / Rename / Delete user profiles. 
 - Quit the program.
-- Restore an automatic backup. 
+- Restore an [automatic backup.](./files.md#backups)
 - Downgrade your collection, which is necessary if you want to open it with
 an earlier Anki release. If you skip this step, you may get an error message 
 when opening your collection in an older Anki version, and you will need to 
