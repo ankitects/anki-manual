@@ -75,7 +75,7 @@ you don’t trust yourself to compare your answer accurately, you can ask
 Anki to [prompt you to type in the answer](templates/fields.md#checking-your-answer) rather than
 just showing it to you.
 
-## Learning
+## Learning/Relearning Cards
 
 When learning new cards, or when relearning cards that you have
 forgotten, Anki will show you the cards one or more times to help you
@@ -117,7 +117,7 @@ again even if their delay has not elapsed completely. If you’d prefer to
 wait the full learning delay, you can change this behaviour in the
 [preferences](preferences.md).
 
-## Reviewing
+## Review Cards
 
 When a card has been previously learnt and is ready to be reviewed
 again, there are four buttons to rate your answer:
