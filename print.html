@@ -1067,9 +1067,10 @@ external material, you will probably meet with disappointing results.</p>
 <li><a href="studying.html#decks">Decks</a></li>
 <li><a href="studying.html#study-overview">Study Overview</a></li>
 <li><a href="studying.html#questions">Questions</a></li>
-<li><a href="studying.html#learning">Learning</a></li>
-<li><a href="studying.html#reviewing">Reviewing</a></li>
-<li><a href="studying.html#due-counts-and-fuzz-factor">Due Counts and Fuzz Factor</a></li>
+<li><a href="studying.html#learningrelearning-cards">Learning/Relearning Cards</a></li>
+<li><a href="studying.html#review-cards">Review Cards</a></li>
+<li><a href="studying.html#due-counts">Due Counts</a></li>
+<li><a href="studying.html#fuzz-factor">Fuzz Factor</a></li>
 <li><a href="studying.html#editing-and-more">Editing and More</a></li>
 <li><a href="studying.html#display-order">Display Order</a></li>
 <li><a href="studying.html#siblings-and-burying">Siblings and Burying</a></li>
@@ -1146,7 +1147,7 @@ with the answer which is shown and tell Anki how well you remembered. If
 you don’t trust yourself to compare your answer accurately, you can ask
 Anki to <a href="templates/fields.html#checking-your-answer">prompt you to type in the answer</a> rather than
 just showing it to you.</p>
-<h2 id="learning"><a class="header" href="#learning">Learning</a></h2>
+<h2 id="learningrelearning-cards"><a class="header" href="#learningrelearning-cards">Learning/Relearning Cards</a></h2>
 <p>When learning new cards, or when relearning cards that you have
 forgotten, Anki will show you the cards one or more times to help you
 memorize them. Each time is called a 'learning step'. By default there
@@ -1171,14 +1172,14 @@ when cards are in relearning, the &quot;Easy&quot; button boosts the interval by
 means answering <strong>Good</strong> on a card for the first time will show it one
 more time in 10 minutes, and the initial 1 minute step will be skipped.
 If you push Again, though, the card will come back in 1 minute.</p>
-<p>You can use the <code>1</code>, <code>2</code>, <code>3</code> and <code>4</code> keys on your keyboard to select a particular
-button, where <code>1</code> is <strong>Again</strong>. Pressing the spacebar will select
+<p>You can use the <kbd>1</kbd>, <kbd>2</kbd>, <kbd>3</kbd> and <kbd>4</kbd> keys on your keyboard to select a particular
+button, where <kbd>1</kbd> is <strong>Again</strong>. Pressing the spacebar or <kbd>Enter</kbd> will select
 <strong>Good</strong>.</p>
 <p>If there are no other cards to show you, Anki will show learning cards
 again even if their delay has not elapsed completely. If you’d prefer to
 wait the full learning delay, you can change this behaviour in the
 <a href="preferences.html">preferences</a>.</p>
-<h2 id="reviewing"><a class="header" href="#reviewing">Reviewing</a></h2>
+<h2 id="review-cards"><a class="header" href="#review-cards">Review Cards</a></h2>
 <p>When a card has been previously learnt and is ready to be reviewed
 again, there are four buttons to rate your answer:</p>
 <p><strong>Again</strong> marks your answer as incorrect and asks Anki to show the card
@@ -1197,11 +1198,11 @@ scheduled <a href="deck-options.html#easy-bonus">further into the future than 'G
 the card less frequently in the future. Because 'Easy' rapidly increases
 the delay, it’s best used for only the easiest of cards. Usually you
 should find yourself answering 'Good' instead.</p>
-<p>As with learning cards, you can use <code>1</code>, <code>2</code>, <code>3</code> and <code>4</code> on the keyboard to select an
-answer. Pressing the <code>spacebar</code> will select 'Good'.</p>
+<p>As with learning cards, you can use <kbd>1</kbd>, <kbd>2</kbd>, <kbd>3</kbd> and <kbd>4</kbd> on the keyboard to select an
+answer. Pressing the <kbd>spacebar</kbd> or <kbd>Enter</kbd> will select <strong>Good</strong>.</p>
 <p>See <a href="deck-options.html">Deck Options</a> and the <a href="https://faqs.ankiweb.net/what-spaced-repetition-algorithm.html">FAQ</a>
 to learn more about how the algorithm works. </p>
-<h2 id="due-counts-and-fuzz-factor"><a class="header" href="#due-counts-and-fuzz-factor">Due Counts and Fuzz Factor</a></h2>
+<h2 id="due-counts"><a class="header" href="#due-counts">Due Counts</a></h2>
 <p>When only the question is shown, Anki shows three numbers like 12 + 34 +
 56 at the bottom of the screen. These represent the new cards, cards in
 learning, and cards to review. If you’d prefer not to see the numbers,
@@ -1215,10 +1216,14 @@ increase by one regardless of the steps remaining.</p>
 <p>When the answer is shown, Anki shows an estimate of the next time a card
 will be shown above each button. If you’d prefer not to see the
 estimates, you can disable them in Anki’s <a href="preferences.html">preferences</a>.</p>
-<p>Anki additionally adds a small amount of random variation (&quot;fuzz&quot;) to the next
-due times, in order to prevent cards that were introduced together and
-always rated the same from always staying next to each other. In the v3 scheduler, 
-this variation is reflected on the answer buttons.</p>
+<h2 id="fuzz-factor"><a class="header" href="#fuzz-factor">Fuzz Factor</a></h2>
+<p>After you select an ease button, Anki also applies a small amount of random “fuzz”
+to prevent cards that were introduced at the same time and given the same ratings
+from sticking together and always coming up for review on the same day. This fuzz
+will appear on the answer buttons when the <a href="https://faqs.ankiweb.net/the-2021-scheduler.html">v3 scheduler</a> is enabled, so if
+you are using a previous version and you’re noticing a slight discrepancy between
+what you select and the intervals your cards actually get, this is probably the
+cause.</p>
 <h2 id="editing-and-more"><a class="header" href="#editing-and-more">Editing and More</a></h2>
 <p>You can click the <strong>Edit</strong> button in the bottom left to edit the current
 note. When you finish editing, you’ll be returned to study. The editing
@@ -2691,7 +2696,9 @@ Controls when Anki should start showing the next day’s cards. The default
 setting of 4AM ensures that if you’re studying around midnight, you won’t have
 two days' worth of cards shown to you in one session. If you stay up very late
 or wake up very early, you may want to adjust this to a time you’re usually
-sleeping. Note that the start of the next day is relative to your current timezone.</p>
+sleeping. Note that the start of the next day is relative to your current timezone.
+Also note that any cards that cross a day boundary <a href="./deck-options.html#day-boundaries">will appear at the start of 
+the day they are scheduled for</a>, just like review cards do. </p>
 <p><strong>Learn ahead limit</strong><br />
 Tells Anki how to behave when there is nothing left to study in the current deck
 but cards in learning. The default setting of 20 minutes tells Anki that cards
@@ -2725,7 +2732,11 @@ with an older version that is on AnkiWeb.</li>
 </li>
 <li><a href="deck-options.html#new-cards">New Cards</a>
 <ul>
-<li><a href="deck-options.html#learning-steps">Learning Steps</a></li>
+<li><a href="deck-options.html#learning-steps">Learning Steps</a>
+<ul>
+<li><a href="deck-options.html#day-boundaries">Day Boundaries</a></li>
+</ul>
+</li>
 <li><a href="deck-options.html#graduating-interval">Graduating Interval</a></li>
 <li><a href="deck-options.html#easy-interval">Easy Interval</a></li>
 <li><a href="deck-options.html#insertion-order">Insertion Order</a></li>
@@ -2918,18 +2929,17 @@ become a review card. It will be shown again after the delay configured by the
 <p>If there’s nothing else to study, Anki will show cards up to 20 minutes
 early by default. The amount of time to look ahead is configurable in
 the <a href="preferences.html">preferences</a>.</p>
-<p>Anki treats small steps and steps that cross a day boundary differently.
-With small steps, the cards are shown as soon as the delay has passed,
-in preference to other waiting cards like reviews. This is done so that
-you can answer the card as closely to your requested delay as possible.
-In contrast, cards that cross a day boundary are scheduled on a per-day
-basis like reviews are. By default they are shown after normal reviews;
-this can be customized in the <a href="deck-options.html#display-order">display order</a> section for
-the v3 scheduler, and in the preferences screen for older schedulers.</p>
 <p>Please see the <a href="studying.html#learning">learning</a> section for more info on how
 steps work. Also, check <a href="https://forums.ankiweb.net/t/deck-options-explained/213">this forum's
 post</a> for more
 examples.</p>
+<h4 id="day-boundaries"><a class="header" href="#day-boundaries">Day Boundaries</a></h4>
+<p>Anki treats small steps and steps that <a href="./preferences.html#scheduling">cross a day boundary</a> differently.
+With small steps, the cards are shown as soon as the delay has passed,
+in preference to other waiting cards like reviews. This is done so that
+you can answer the card as closely to your requested delay as possible.
+In contrast, if the interval crosses a day boundary, it is automatically 
+converted to days.</p>
 <h3 id="graduating-interval"><a class="header" href="#graduating-interval">Graduating Interval</a></h3>
 <p>The delay in days between answering &quot;Good&quot; on a learning card with no steps left,
 and seeing the card again as a review card. Please see the example in the
@@ -3299,6 +3309,17 @@ merge them into a single profile. You can do so by exporting one deck from
 profile A, and then importing it into profile B, repeating for any other decks
 in profile A, until everything is in profile B.</p>
 <p>AnkiDroid does not support profiles.</p>
+<h2 id="profiles-window"><a class="header" href="#profiles-window">Profiles window</a></h2>
+<p>From the Profiles window (accessible via File&gt;Switch Profile from the main window), you can:</p>
+<ul>
+<li>Open / Add / Rename / Delete user profiles. </li>
+<li>Quit the program.</li>
+<li>Restore an <a href="./files.html#backups">automatic backup.</a></li>
+<li>Downgrade your collection, which is necessary if you want to open it with
+an earlier Anki release. If you skip this step, you may get an error message 
+when opening your collection in an older Anki version, and you will need to 
+return to this version, downgrade, then try again.</li>
+</ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="browsing"><a class="header" href="#browsing">Browsing</a></h1>
 <ul>
 <li><a href="browsing.html#table-modes">Table Modes</a></li>
@@ -4707,7 +4728,8 @@ collection has been successfully restored.</p>
 </ul>
 <h2 id="card-info"><a class="header" href="#card-info">Card Info</a></h2>
 <p>You can display information about a card by using the Cards&gt;Info menu item,
-or by right-clicking on the card and then selecting <strong>Info</strong>.
+by right-clicking on the card and then selecting <strong>Info</strong>, or by pressing
+<kbd>I</kbd> on the review screen.
 Most of the displayed information should be self-explanatory. A few notes:</p>
 <p><strong>Position</strong><br />
 Only shown when the card is new, it shows the order the card will appear
