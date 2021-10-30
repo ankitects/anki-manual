@@ -6,7 +6,7 @@
 
 You can display information about a card by using the Cards&gt;Info menu item,
 by right-clicking on the card and then selecting **Info**, or by pressing
-`I` on the review screen.
+<kbd>I</kbd> on the review screen.
 Most of the displayed information should be self-explanatory. A few notes:
 
 **Position**  
