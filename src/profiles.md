@@ -19,3 +19,13 @@ profile A, and then importing it into profile B, repeating for any other decks
 in profile A, until everything is in profile B.
 
 AnkiDroid does not support profiles.
+
+## Profiles window
+From the Profiles window (accessible via File>Switch Profile from the main window), you can:
+- Open / Add / Rename / Delete user profiles. 
+- Quit the program.
+- Restore an [automatic backup.](./files.md#backups)
+- Downgrade your collection, which is necessary if you want to open it with
+an earlier Anki release. If you skip this step, you may get an error message 
+when opening your collection in an older Anki version, and you will need to 
+return to this version, downgrade, then try again.

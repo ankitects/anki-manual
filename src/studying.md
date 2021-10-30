@@ -75,7 +75,7 @@ you don’t trust yourself to compare your answer accurately, you can ask
 Anki to [prompt you to type in the answer](templates/fields.md#checking-your-answer) rather than
 just showing it to you.
 
-## Learning
+## Learning/Relearning Cards
 
 When learning new cards, or when relearning cards that you have
 forgotten, Anki will show you the cards one or more times to help you
@@ -108,8 +108,8 @@ means answering **Good** on a card for the first time will show it one
 more time in 10 minutes, and the initial 1 minute step will be skipped.
 If you push Again, though, the card will come back in 1 minute.
 
-You can use the `1`, `2`, `3` and `4` keys on your keyboard to select a particular
-button, where `1` is **Again**. Pressing the spacebar will select
+You can use the <kbd>1</kbd>, <kbd>2</kbd>, <kbd>3</kbd> and <kbd>4</kbd> keys on your keyboard to select a particular
+button, where <kbd>1</kbd> is **Again**. Pressing the spacebar or <kbd>Enter</kbd> will select
 **Good**.
 
 If there are no other cards to show you, Anki will show learning cards
@@ -117,7 +117,7 @@ again even if their delay has not elapsed completely. If you’d prefer to
 wait the full learning delay, you can change this behaviour in the
 [preferences](preferences.md).
 
-## Reviewing
+## Review Cards
 
 When a card has been previously learnt and is ready to be reviewed
 again, there are four buttons to rate your answer:
@@ -142,13 +142,13 @@ the card less frequently in the future. Because 'Easy' rapidly increases
 the delay, it’s best used for only the easiest of cards. Usually you
 should find yourself answering 'Good' instead.
 
-As with learning cards, you can use `1`, `2`, `3` and `4` on the keyboard to select an
-answer. Pressing the `spacebar` will select 'Good'.
+As with learning cards, you can use <kbd>1</kbd>, <kbd>2</kbd>, <kbd>3</kbd> and <kbd>4</kbd> on the keyboard to select an
+answer. Pressing the <kbd>spacebar</kbd> or <kbd>Enter</kbd> will select **Good**.
 
 See [Deck Options](deck-options.md) and the [FAQ](https://faqs.ankiweb.net/what-spaced-repetition-algorithm.html)
 to learn more about how the algorithm works. 
 
-## Due Counts and Fuzz Factor
+## Due Counts 
 
 When only the question is shown, Anki shows three numbers like 12 + 34 +
 56 at the bottom of the screen. These represent the new cards, cards in
@@ -167,10 +167,15 @@ When the answer is shown, Anki shows an estimate of the next time a card
 will be shown above each button. If you’d prefer not to see the
 estimates, you can disable them in Anki’s [preferences](preferences.md).
 
-Anki additionally adds a small amount of random variation ("fuzz") to the next
-due times, in order to prevent cards that were introduced together and
-always rated the same from always staying next to each other. In the v3 scheduler, 
-this variation is reflected on the answer buttons.
+## Fuzz Factor
+
+After you select an ease button, Anki also applies a small amount of random “fuzz”
+to prevent cards that were introduced at the same time and given the same ratings
+from sticking together and always coming up for review on the same day. This fuzz
+will appear on the answer buttons when the [v3 scheduler](https://faqs.ankiweb.net/the-2021-scheduler.html) is enabled, so if
+you are using a previous version and you’re noticing a slight discrepancy between
+what you select and the intervals your cards actually get, this is probably the
+cause.
 
 ## Editing and More
 

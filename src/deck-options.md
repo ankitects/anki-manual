@@ -166,19 +166,18 @@ If there’s nothing else to study, Anki will show cards up to 20 minutes
 early by default. The amount of time to look ahead is configurable in
 the [preferences](preferences.md).
 
-Anki treats small steps and steps that cross a day boundary differently.
-With small steps, the cards are shown as soon as the delay has passed,
-in preference to other waiting cards like reviews. This is done so that
-you can answer the card as closely to your requested delay as possible.
-In contrast, cards that cross a day boundary are scheduled on a per-day
-basis like reviews are. By default they are shown after normal reviews;
-this can be customized in the [display order](#display-order) section for
-the v3 scheduler, and in the preferences screen for older schedulers.
-
 Please see the [learning](studying.md#learning) section for more info on how
 steps work. Also, check [this forum's
 post](https://forums.ankiweb.net/t/deck-options-explained/213) for more
 examples.
+
+#### Day Boundaries
+Anki treats small steps and steps that [cross a day boundary](./preferences.md#scheduling) differently.
+With small steps, the cards are shown as soon as the delay has passed,
+in preference to other waiting cards like reviews. This is done so that
+you can answer the card as closely to your requested delay as possible.
+In contrast, if the interval crosses a day boundary, it is automatically 
+converted to days.
 
 ### Graduating Interval
 
