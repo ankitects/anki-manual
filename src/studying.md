@@ -148,7 +148,7 @@ answer. Pressing the `spacebar` will select 'Good'.
 See [Deck Options](deck-options.md) and the [FAQ](https://faqs.ankiweb.net/what-spaced-repetition-algorithm.html)
 to learn more about how the algorithm works. 
 
-## Due Counts and Fuzz Factor
+## Due Counts 
 
 When only the question is shown, Anki shows three numbers like 12 + 34 +
 56 at the bottom of the screen. These represent the new cards, cards in
@@ -167,10 +167,15 @@ When the answer is shown, Anki shows an estimate of the next time a card
 will be shown above each button. If you’d prefer not to see the
 estimates, you can disable them in Anki’s [preferences](preferences.md).
 
-Anki additionally adds a small amount of random variation ("fuzz") to the next
-due times, in order to prevent cards that were introduced together and
-always rated the same from always staying next to each other. In the v3 scheduler, 
-this variation is reflected on the answer buttons.
+## Fuzz Factor
+
+After you select an ease button, Anki also applies a small amount of random “fuzz”
+to prevent cards that were introduced at the same time and given the same ratings
+from sticking together and always coming up for review on the same day. This fuzz
+appear on the interval buttons from 2.1.45+, but not in previous versions, so if
+you are using a previous version and you’re noticing a slight discrepancy between
+what you select and the intervals your cards actually get, this is probably the
+cause.
 
 ## Editing and More
 
