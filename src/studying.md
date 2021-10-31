@@ -24,7 +24,7 @@ Deck action in the menu to select a new deck from the keyboard, or you
 can press the <kbd>s</kbd> key to study the currently selected deck.)
 
 You can click the gears button to the right of a deck to rename or
-delete a deck, change its options, or [export](exporting.md) it.
+delete a deck, change its [options](deck-options.md), or [export](exporting.md) it.
 
 ## Study Overview
 
