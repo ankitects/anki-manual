@@ -45,7 +45,7 @@ To start a study session, click the **Study Now** button. Anki will
 proceed to show you cards until the cards to be shown for the day have
 run out.
 
-While studying, you can return to the overview by pressing the “s” key
+While studying, you can return to the overview by pressing the <kbd>s</kbd> key
 on your keyboard.
 
 ## Questions
