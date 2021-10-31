@@ -127,8 +127,8 @@ more frequently in the future. The card is said to have 'lapsed'. Please
 see the [lapses](deck-options.md#lapses) section for more information about how lapsed
 reviews are handled.
 
-**Hard** shows the card at a [slightly longer delay](deck-options.md#hard-interval) than last time, and
-tells Anki to show the card more frequently in the future.
+**Hard** by default, shows the card at a [slightly longer delay](deck-options.md#hard-interval) 
+than last time, and tells Anki to show the card more frequently in the future.
 
 **Good** tells Anki that the last delay was about right, and the card
 easiness doesn’t need to be adjusted down or up. At the [default starting
