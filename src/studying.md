@@ -21,7 +21,7 @@ will change to the study screen. You can return to the deck list to
 change the currently selected deck at any time by clicking on “Decks” at
 the top of the main window. (You can also use the Study
 Deck action in the menu to select a new deck from the keyboard, or you
-can press the ‘s’ key to study the currently selected deck.)
+can press the <kbd>s</kbd> key to study the currently selected deck.)
 
 You can click the gears button to the right of a deck to rename or
 delete a deck, change its options, or [export](exporting.md) it.
@@ -109,7 +109,7 @@ more time in 10 minutes, and the initial 1 minute step will be skipped.
 If you push Again, though, the card will come back in 1 minute.
 
 You can use the <kbd>1</kbd>, <kbd>2</kbd>, <kbd>3</kbd> and <kbd>4</kbd> keys on your keyboard to select a particular
-button, where <kbd>1</kbd> is **Again**. Pressing the spacebar or <kbd>Enter</kbd> will select
+button, where <kbd>1</kbd> is **Again**. Pressing the <kbd>spacebar</kbd> or <kbd>Enter</kbd> will select
 **Good**.
 
 If there are no other cards to show you, Anki will show learning cards
