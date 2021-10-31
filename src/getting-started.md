@@ -216,22 +216,22 @@ new users, but in the long run it’s recommended you define your own note
 types for the content you are learning. The standard note types are as
 follows:
 
-Basic  
+**Basic** 
 Has Front and Back fields, and will create one card. Text you enter in
 Front will appear on the front of the card, and text you enter in Back
 will appear on the back of the card.
 
-Basic (and reversed card)  
+**Basic (and reversed card)**  
 Like Basic, but creates two cards for the text you enter: one from
 front→back and one from back→front.
 
-Basic (optional reversed card)  
+**Basic (optional reversed card)** 
 This is a front→back card, and optionally a back→front card. To do this,
 it has a third field called “Add Reverse.” If you enter any text into
 that field, a reverse card will be created. More information about this
 is available in the [Cards and Templates](templates/intro.md) section.
 
-Cloze  
+**Cloze**  
 A note type which makes it easy to select text and turn it into a cloze
 deletion (e.g., “Man landed on the moon in \[…​\]” → “Man landed on the
 moon in 1969”). More information is available in the [cloze
