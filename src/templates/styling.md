@@ -358,7 +358,9 @@ template:
 ## Javascript
 
 As Anki cards are treated like webpages, it is possible to embed some
-Javascript on your cards via the card template.
+Javascript on your cards via the card template. For a good reference
+please read [this post](https://forums.ankiweb.net/t/card-templates-user-input-101-buttons-keyboard-shortcuts-etc-guide/13756)
+in the forums. 
 
 Because Javascript is an advanced feature and so many things can go
 wrong, **Javascript functionality is provided without any support or
