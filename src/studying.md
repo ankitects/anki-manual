@@ -255,7 +255,7 @@ deck you clicked on applies.
 each child deck's limit is also enforced, and you do not need to see the cards 
 in deck order either. See the [deck options](deck-options.md#review-sort-order) section of the manual for more information.
 
-By default, for new cards and reviews, Anki fetches cards from the decks in
+By default, for new cards, Anki fetches cards from the decks in
 alphabetical order. So in the above example, you would get cards first
 from “French”, then “My Textbook”, and finally “Vocab”. You can use this
 to control the order cards appear in, placing high priority cards in
