@@ -24,11 +24,11 @@ desktop to start Anki.
 
 ## Upgrading
 
-If upgrading from Anki 2.1.06+, there is no need to uninstall the previous
+If upgrading from Anki 2.1.6+, there is no need to uninstall the previous
 version first. All you need to do is close Anki if it is open, and then follow
 the installation steps above. Your cards will be preserved when you upgrade.
 
-If upgrading from an Anki version before 2.1.06, or switching from the standard
+If upgrading from an Anki version before 2.1.6, or switching from the standard
 to the alternate version or vice versa, we recommend uninstalling the old
 version first, which will remove Anki's program data, but not delete your card
 data.
