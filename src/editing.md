@@ -40,7 +40,7 @@ card in the [browser](browsing.md).
 For more information on the buttons between the note type and the
 fields, please see the [editor](editing.md) section.
 
-### Duplicate check
+### Duplicate Check
 
 Anki checks the first field for uniqueness, so it will warn you if you
 enter two cards with a Front field of "apple" (for example). The
@@ -53,7 +53,7 @@ Anki does not check for duplicates in other fields automatically for
 efficiency reasons, but the browser has a "Find Duplicates" function,
 which you can run periodically.
 
-###  Effective learning
+###  Effective Learning
 
 Different people like to review in different ways, but there are some
 general concepts to keep in mind. An excellent introduction is [this
