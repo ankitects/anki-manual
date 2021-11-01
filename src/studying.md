@@ -103,7 +103,7 @@ button, where <kbd>1</kbd> is **Again**. Pressing the <kbd>spacebar</kbd> or <kb
 If there are no other cards to show you, Anki will show learning cards
 again even if their delay has not elapsed completely. If you’d prefer to
 wait the full learning delay, you can change this behaviour in 
-[preferences>Scheduling>Learn Ahead Limit](preferences.md).
+[Preferences>Scheduling>Learn Ahead Limit](preferences.md).
 
 ## Review Cards
 
