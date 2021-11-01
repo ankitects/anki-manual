@@ -982,19 +982,19 @@ note types to it. These note types are provided to make Anki easier for
 new users, but in the long run it’s recommended you define your own note
 types for the content you are learning. The standard note types are as
 follows:</p>
-<p>Basic<br />
+<p><strong>Basic</strong> 
 Has Front and Back fields, and will create one card. Text you enter in
 Front will appear on the front of the card, and text you enter in Back
 will appear on the back of the card.</p>
-<p>Basic (and reversed card)<br />
+<p><strong>Basic (and reversed card)</strong><br />
 Like Basic, but creates two cards for the text you enter: one from
 front→back and one from back→front.</p>
-<p>Basic (optional reversed card)<br />
+<p><strong>Basic (optional reversed card)</strong> 
 This is a front→back card, and optionally a back→front card. To do this,
 it has a third field called “Add Reverse.” If you enter any text into
 that field, a reverse card will be created. More information about this
 is available in the <a href="templates/intro.html">Cards and Templates</a> section.</p>
-<p>Cloze<br />
+<p><strong>Cloze</strong><br />
 A note type which makes it easy to select text and turn it into a cloze
 deletion (e.g., “Man landed on the moon in […​]” → “Man landed on the
 moon in 1969”). More information is available in the <a href="editing.html#cloze-deletion">cloze
@@ -1092,26 +1092,9 @@ will change to the study screen. You can return to the deck list to
 change the currently selected deck at any time by clicking on “Decks” at
 the top of the main window. (You can also use the Study
 Deck action in the menu to select a new deck from the keyboard, or you
-can press the ‘s’ key to study the currently selected deck.)</p>
+can press the <kbd>s</kbd> key to study the currently selected deck.)</p>
 <p>You can click the gears button to the right of a deck to rename or
-delete a deck, change its options, or <a href="exporting.html">export</a> it.</p>
-<ul>
-<li>
-<p>With the v1 scheduler, when a deck has subdecks, the cards will appear from <a href="studying.html#display-order">each deck in
-turn</a>.</p>
-</li>
-<li>
-<p>With the <a href="https://faqs.ankiweb.net/the-anki-2.1-scheduler.html">v2 scheduler</a>,
-when a deck has subdecks, reviews are taken from all children decks
-at once. The review limit of the child decks is ignored - only the limit of the
-deck you clicked on applies.</p>
-</li>
-<li>
-<p>With the <a href="https://faqs.ankiweb.net/the-2021-scheduler.html">v3 scheduler</a>
-each child deck's limit is also enforced, and you do not need to see the cards 
-in deck order either. See the <a href="deck-options.html#review-sort-order">deck options</a> section of the manual for more information.</p>
-</li>
-</ul>
+delete a deck, change its <a href="deck-options.html">options</a>, or <a href="exporting.html">export</a> it.</p>
 <h2 id="study-overview"><a class="header" href="#study-overview">Study Overview</a></h2>
 <p>After clicking on a deck to study, you’ll see a screen that shows you
 how many cards are due today. This is called the 'deck overview' screen.
@@ -1133,7 +1116,7 @@ need to be reviewed so you don’t forget them.</p>
 <p>To start a study session, click the <strong>Study Now</strong> button. Anki will
 proceed to show you cards until the cards to be shown for the day have
 run out.</p>
-<p>While studying, you can return to the overview by pressing the “s” key
+<p>While studying, you can return to the overview by pressing the <kbd>s</kbd> key
 on your keyboard.</p>
 <h2 id="questions"><a class="header" href="#questions">Questions</a></h2>
 <p>When a card is shown, only the question is shown at first. After
@@ -1173,12 +1156,12 @@ means answering <strong>Good</strong> on a card for the first time will show it 
 more time in 10 minutes, and the initial 1 minute step will be skipped.
 If you push Again, though, the card will come back in 1 minute.</p>
 <p>You can use the <kbd>1</kbd>, <kbd>2</kbd>, <kbd>3</kbd> and <kbd>4</kbd> keys on your keyboard to select a particular
-button, where <kbd>1</kbd> is <strong>Again</strong>. Pressing the spacebar or <kbd>Enter</kbd> will select
+button, where <kbd>1</kbd> is <strong>Again</strong>. Pressing <kbd>Space</kbd> or <kbd>Enter</kbd> will select
 <strong>Good</strong>.</p>
 <p>If there are no other cards to show you, Anki will show learning cards
 again even if their delay has not elapsed completely. If you’d prefer to
-wait the full learning delay, you can change this behaviour in the
-<a href="preferences.html">preferences</a>.</p>
+wait the full learning delay, you can change this behaviour in 
+<a href="preferences.html">Preferences&gt;Scheduling&gt;Learn Ahead Limit</a>.</p>
 <h2 id="review-cards"><a class="header" href="#review-cards">Review Cards</a></h2>
 <p>When a card has been previously learnt and is ready to be reviewed
 again, there are four buttons to rate your answer:</p>
@@ -1186,8 +1169,8 @@ again, there are four buttons to rate your answer:</p>
 more frequently in the future. The card is said to have 'lapsed'. Please
 see the <a href="deck-options.html#lapses">lapses</a> section for more information about how lapsed
 reviews are handled.</p>
-<p><strong>Hard</strong> shows the card at a <a href="deck-options.html#hard-interval">slightly longer delay</a> than last time, and
-tells Anki to show the card more frequently in the future.</p>
+<p><strong>Hard</strong> by default, shows the card at a <a href="deck-options.html#hard-interval">slightly longer delay</a> 
+than last time, and tells Anki to show the card more frequently in the future.</p>
 <p><strong>Good</strong> tells Anki that the last delay was about right, and the card
 easiness doesn’t need to be adjusted down or up. At the <a href="deck-options.html#starting-ease">default starting
 easiness</a>, the card will be shown again approximately 2 1/2 times longer
@@ -1307,7 +1290,25 @@ the answer).</p>
 contains. Thus, if you select your “French” deck, the subdecks
 “French::Vocab” and “French::My Textbook::Lesson 1” will be shown as
 well.</p>
-<p>For new cards and reviews, Anki fetches cards from the decks in
+<p>The way Anki Anki fetches cards from the decks depends on the algorithm used:</p>
+<ul>
+<li>
+<p>With the v1 scheduler, when a deck has subdecks, the cards will appear from <a href="studying.html#display-order">each deck in
+turn</a>.</p>
+</li>
+<li>
+<p>With the <a href="https://faqs.ankiweb.net/the-anki-2.1-scheduler.html">v2 scheduler</a>,
+when a deck has subdecks, reviews are taken from all children decks
+at once. The review limit of the child decks is ignored - only the limit of the
+deck you clicked on applies.</p>
+</li>
+<li>
+<p>With the <a href="https://faqs.ankiweb.net/the-2021-scheduler.html">v3 scheduler</a>
+each child deck's limit is also enforced, and you do not need to see the cards 
+in deck order either. See the <a href="deck-options.html#review-sort-order">deck options</a> section of the manual for more information.</p>
+</li>
+</ul>
+<p>By default, for new cards, Anki fetches cards from the decks in
 alphabetical order. So in the above example, you would get cards first
 from “French”, then “My Textbook”, and finally “Vocab”. You can use this
 to control the order cards appear in, placing high priority cards in
@@ -1382,7 +1383,12 @@ Please see the section on Anki’s spaced-repetition
 <a href="https://faqs.ankiweb.net/due-times-after-a-break.html">algorithm</a> for more information.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="addingediting"><a class="header" href="#addingediting">Adding/Editing</a></h1>
 <ul>
-<li><a href="editing.html#adding-cards-and-notes">Adding Cards and Notes</a></li>
+<li><a href="editing.html#adding-cards-and-notes">Adding Cards and Notes</a>
+<ul>
+<li><a href="editing.html#duplicate-check">Duplicate Check</a></li>
+<li><a href="editing.html#effective-learning">Effective Learning</a></li>
+</ul>
+</li>
 <li><a href="editing.html#adding-a-note-type">Adding a Note Type</a></li>
 <li><a href="editing.html#customizing-fields">Customizing Fields</a></li>
 <li><a href="editing.html#changing-deck--note-type">Changing Deck / Note Type</a></li>
@@ -1419,6 +1425,9 @@ note to your collection. When you do so, a card will be created as well,
 and placed into the deck you chose. If you would like to edit a card you
 added, you can click the history button to search for a recently added
 card in the <a href="browsing.html">browser</a>.</p>
+<p>For more information on the buttons between the note type and the
+fields, please see the <a href="editing.html">editor</a> section.</p>
+<h3 id="duplicate-check"><a class="header" href="#duplicate-check">Duplicate Check</a></h3>
 <p>Anki checks the first field for uniqueness, so it will warn you if you
 enter two cards with a Front field of &quot;apple&quot; (for example). The
 uniqueness check is limited to the current note type, so if you're
@@ -1428,8 +1437,7 @@ language.</p>
 <p>Anki does not check for duplicates in other fields automatically for
 efficiency reasons, but the browser has a &quot;Find Duplicates&quot; function,
 which you can run periodically.</p>
-<p>For more information on the buttons between the note type and the
-fields, please see the <a href="editing.html">editor</a> section.</p>
+<h3 id="effective-learning"><a class="header" href="#effective-learning">Effective Learning</a></h3>
 <p>Different people like to review in different ways, but there are some
 general concepts to keep in mind. An excellent introduction is <a href="http://www.supermemo.com/articles/20rules.htm">this
 article</a> on the SuperMemo
@@ -2603,7 +2611,9 @@ template:</p>
 <p>100 (milliseconds) is the default; set to 0 to disable fading.</p>
 <h2 id="javascript"><a class="header" href="#javascript">Javascript</a></h2>
 <p>As Anki cards are treated like webpages, it is possible to embed some
-Javascript on your cards via the card template.</p>
+Javascript on your cards via the card template. For a good reference
+please read <a href="https://forums.ankiweb.net/t/card-templates-user-input-101-buttons-keyboard-shortcuts-etc-guide/13756">this post</a>
+in the forums. </p>
 <p>Because Javascript is an advanced feature and so many things can go
 wrong, <strong>Javascript functionality is provided without any support or
 warranty</strong>. We can not provide any assistance with writing Javascript,

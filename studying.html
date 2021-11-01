@@ -171,26 +171,9 @@ will change to the study screen. You can return to the deck list to
 change the currently selected deck at any time by clicking on “Decks” at
 the top of the main window. (You can also use the Study
 Deck action in the menu to select a new deck from the keyboard, or you
-can press the ‘s’ key to study the currently selected deck.)</p>
+can press the <kbd>s</kbd> key to study the currently selected deck.)</p>
 <p>You can click the gears button to the right of a deck to rename or
-delete a deck, change its options, or <a href="exporting.html">export</a> it.</p>
-<ul>
-<li>
-<p>With the v1 scheduler, when a deck has subdecks, the cards will appear from <a href="studying.html#display-order">each deck in
-turn</a>.</p>
-</li>
-<li>
-<p>With the <a href="https://faqs.ankiweb.net/the-anki-2.1-scheduler.html">v2 scheduler</a>,
-when a deck has subdecks, reviews are taken from all children decks
-at once. The review limit of the child decks is ignored - only the limit of the
-deck you clicked on applies.</p>
-</li>
-<li>
-<p>With the <a href="https://faqs.ankiweb.net/the-2021-scheduler.html">v3 scheduler</a>
-each child deck's limit is also enforced, and you do not need to see the cards 
-in deck order either. See the <a href="deck-options.html#review-sort-order">deck options</a> section of the manual for more information.</p>
-</li>
-</ul>
+delete a deck, change its <a href="deck-options.html">options</a>, or <a href="exporting.html">export</a> it.</p>
 <h2 id="study-overview"><a class="header" href="#study-overview">Study Overview</a></h2>
 <p>After clicking on a deck to study, you’ll see a screen that shows you
 how many cards are due today. This is called the 'deck overview' screen.
@@ -212,7 +195,7 @@ need to be reviewed so you don’t forget them.</p>
 <p>To start a study session, click the <strong>Study Now</strong> button. Anki will
 proceed to show you cards until the cards to be shown for the day have
 run out.</p>
-<p>While studying, you can return to the overview by pressing the “s” key
+<p>While studying, you can return to the overview by pressing the <kbd>s</kbd> key
 on your keyboard.</p>
 <h2 id="questions"><a class="header" href="#questions">Questions</a></h2>
 <p>When a card is shown, only the question is shown at first. After
@@ -252,12 +235,12 @@ means answering <strong>Good</strong> on a card for the first time will show it 
 more time in 10 minutes, and the initial 1 minute step will be skipped.
 If you push Again, though, the card will come back in 1 minute.</p>
 <p>You can use the <kbd>1</kbd>, <kbd>2</kbd>, <kbd>3</kbd> and <kbd>4</kbd> keys on your keyboard to select a particular
-button, where <kbd>1</kbd> is <strong>Again</strong>. Pressing the spacebar or <kbd>Enter</kbd> will select
+button, where <kbd>1</kbd> is <strong>Again</strong>. Pressing <kbd>Space</kbd> or <kbd>Enter</kbd> will select
 <strong>Good</strong>.</p>
 <p>If there are no other cards to show you, Anki will show learning cards
 again even if their delay has not elapsed completely. If you’d prefer to
-wait the full learning delay, you can change this behaviour in the
-<a href="preferences.html">preferences</a>.</p>
+wait the full learning delay, you can change this behaviour in 
+<a href="preferences.html">Preferences&gt;Scheduling&gt;Learn Ahead Limit</a>.</p>
 <h2 id="review-cards"><a class="header" href="#review-cards">Review Cards</a></h2>
 <p>When a card has been previously learnt and is ready to be reviewed
 again, there are four buttons to rate your answer:</p>
@@ -265,8 +248,8 @@ again, there are four buttons to rate your answer:</p>
 more frequently in the future. The card is said to have 'lapsed'. Please
 see the <a href="deck-options.html#lapses">lapses</a> section for more information about how lapsed
 reviews are handled.</p>
-<p><strong>Hard</strong> shows the card at a <a href="deck-options.html#hard-interval">slightly longer delay</a> than last time, and
-tells Anki to show the card more frequently in the future.</p>
+<p><strong>Hard</strong> by default, shows the card at a <a href="deck-options.html#hard-interval">slightly longer delay</a> 
+than last time, and tells Anki to show the card more frequently in the future.</p>
 <p><strong>Good</strong> tells Anki that the last delay was about right, and the card
 easiness doesn’t need to be adjusted down or up. At the <a href="deck-options.html#starting-ease">default starting
 easiness</a>, the card will be shown again approximately 2 1/2 times longer
@@ -386,7 +369,25 @@ the answer).</p>
 contains. Thus, if you select your “French” deck, the subdecks
 “French::Vocab” and “French::My Textbook::Lesson 1” will be shown as
 well.</p>
-<p>For new cards and reviews, Anki fetches cards from the decks in
+<p>The way Anki Anki fetches cards from the decks depends on the algorithm used:</p>
+<ul>
+<li>
+<p>With the v1 scheduler, when a deck has subdecks, the cards will appear from <a href="studying.html#display-order">each deck in
+turn</a>.</p>
+</li>
+<li>
+<p>With the <a href="https://faqs.ankiweb.net/the-anki-2.1-scheduler.html">v2 scheduler</a>,
+when a deck has subdecks, reviews are taken from all children decks
+at once. The review limit of the child decks is ignored - only the limit of the
+deck you clicked on applies.</p>
+</li>
+<li>
+<p>With the <a href="https://faqs.ankiweb.net/the-2021-scheduler.html">v3 scheduler</a>
+each child deck's limit is also enforced, and you do not need to see the cards 
+in deck order either. See the <a href="deck-options.html#review-sort-order">deck options</a> section of the manual for more information.</p>
+</li>
+</ul>
+<p>By default, for new cards, Anki fetches cards from the decks in
 alphabetical order. So in the above example, you would get cards first
 from “French”, then “My Textbook”, and finally “Vocab”. You can use this
 to control the order cards appear in, placing high priority cards in
