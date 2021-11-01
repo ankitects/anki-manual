@@ -21,22 +21,10 @@ will change to the study screen. You can return to the deck list to
 change the currently selected deck at any time by clicking on “Decks” at
 the top of the main window. (You can also use the Study
 Deck action in the menu to select a new deck from the keyboard, or you
-can press the ‘s’ key to study the currently selected deck.)
+can press the <kbd>s</kbd> key to study the currently selected deck.)
 
 You can click the gears button to the right of a deck to rename or
-delete a deck, change its options, or [export](exporting.md) it.
-
-- With the v1 scheduler, when a deck has subdecks, the cards will appear from [each deck in
-turn](studying.md#display-order).
-
-- With the [v2 scheduler](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html),
-when a deck has subdecks, reviews are taken from all children decks
-at once. The review limit of the child decks is ignored - only the limit of the
-deck you clicked on applies.
-
-- With the [v3 scheduler](https://faqs.ankiweb.net/the-2021-scheduler.html)
-each child deck's limit is also enforced, and you do not need to see the cards 
-in deck order either. See the [deck options](deck-options.md#review-sort-order) section of the manual for more information.
+delete a deck, change its [options](deck-options.md), or [export](exporting.md) it.
 
 ## Study Overview
 
@@ -57,7 +45,7 @@ To start a study session, click the **Study Now** button. Anki will
 proceed to show you cards until the cards to be shown for the day have
 run out.
 
-While studying, you can return to the overview by pressing the “s” key
+While studying, you can return to the overview by pressing the <kbd>s</kbd> key
 on your keyboard.
 
 ## Questions
@@ -109,13 +97,13 @@ more time in 10 minutes, and the initial 1 minute step will be skipped.
 If you push Again, though, the card will come back in 1 minute.
 
 You can use the <kbd>1</kbd>, <kbd>2</kbd>, <kbd>3</kbd> and <kbd>4</kbd> keys on your keyboard to select a particular
-button, where <kbd>1</kbd> is **Again**. Pressing the spacebar or <kbd>Enter</kbd> will select
+button, where <kbd>1</kbd> is **Again**. Pressing <kbd>Space</kbd> or <kbd>Enter</kbd> will select
 **Good**.
 
 If there are no other cards to show you, Anki will show learning cards
 again even if their delay has not elapsed completely. If you’d prefer to
-wait the full learning delay, you can change this behaviour in the
-[preferences](preferences.md).
+wait the full learning delay, you can change this behaviour in 
+[Preferences>Scheduling>Learn Ahead Limit](preferences.md).
 
 ## Review Cards
 
@@ -127,8 +115,8 @@ more frequently in the future. The card is said to have 'lapsed'. Please
 see the [lapses](deck-options.md#lapses) section for more information about how lapsed
 reviews are handled.
 
-**Hard** shows the card at a [slightly longer delay](deck-options.md#hard-interval) than last time, and
-tells Anki to show the card more frequently in the future.
+**Hard** by default, shows the card at a [slightly longer delay](deck-options.md#hard-interval) 
+than last time, and tells Anki to show the card more frequently in the future.
 
 **Good** tells Anki that the last delay was about right, and the card
 easiness doesn’t need to be adjusted down or up. At the [default starting
@@ -253,7 +241,21 @@ contains. Thus, if you select your “French” deck, the subdecks
 “French::Vocab” and “French::My Textbook::Lesson 1” will be shown as
 well.
 
-For new cards and reviews, Anki fetches cards from the decks in
+The way Anki Anki fetches cards from the decks depends on the algorithm used:
+
+- With the v1 scheduler, when a deck has subdecks, the cards will appear from [each deck in
+turn](studying.md#display-order).
+
+- With the [v2 scheduler](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html),
+when a deck has subdecks, reviews are taken from all children decks
+at once. The review limit of the child decks is ignored - only the limit of the
+deck you clicked on applies.
+
+- With the [v3 scheduler](https://faqs.ankiweb.net/the-2021-scheduler.html)
+each child deck's limit is also enforced, and you do not need to see the cards 
+in deck order either. See the [deck options](deck-options.md#review-sort-order) section of the manual for more information.
+
+By default, for new cards, Anki fetches cards from the decks in
 alphabetical order. So in the above example, you would get cards first
 from “French”, then “My Textbook”, and finally “Vocab”. You can use this
 to control the order cards appear in, placing high priority cards in

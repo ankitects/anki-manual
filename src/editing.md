@@ -37,6 +37,11 @@ and placed into the deck you chose. If you would like to edit a card you
 added, you can click the history button to search for a recently added
 card in the [browser](browsing.md).
 
+For more information on the buttons between the note type and the
+fields, please see the [editor](editing.md) section.
+
+### Duplicate Check
+
 Anki checks the first field for uniqueness, so it will warn you if you
 enter two cards with a Front field of "apple" (for example). The
 uniqueness check is limited to the current note type, so if you're
@@ -48,8 +53,7 @@ Anki does not check for duplicates in other fields automatically for
 efficiency reasons, but the browser has a "Find Duplicates" function,
 which you can run periodically.
 
-For more information on the buttons between the note type and the
-fields, please see the [editor](editing.md) section.
+###  Effective Learning
 
 Different people like to review in different ways, but there are some
 general concepts to keep in mind. An excellent introduction is [this
