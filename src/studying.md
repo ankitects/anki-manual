@@ -97,7 +97,7 @@ more time in 10 minutes, and the initial 1 minute step will be skipped.
 If you push Again, though, the card will come back in 1 minute.
 
 You can use the <kbd>1</kbd>, <kbd>2</kbd>, <kbd>3</kbd> and <kbd>4</kbd> keys on your keyboard to select a particular
-button, where <kbd>1</kbd> is **Again**. Pressing the <kbd>spacebar</kbd> or <kbd>Enter</kbd> will select
+button, where <kbd>1</kbd> is **Again**. Pressing <kbd>Space</kbd> or <kbd>Enter</kbd> will select
 **Good**.
 
 If there are no other cards to show you, Anki will show learning cards
