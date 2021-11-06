@@ -162,7 +162,7 @@ decks or manage your note types.
 
 ### Using Decks Appropriately
 
-Decks are designed to divide your content up into broad categories that
+[Decks](getting-started.md#decks) are designed to divide your content up into broad categories that
 you wish to study separately, such as English, Geography, and so on. You
 may be tempted to create lots of little decks to keep your content
 organized, such as "my geography book chapter 1", or "food verbs", but
@@ -197,14 +197,14 @@ but using tags have a big advantage over decks for that: you can add several
 tags to a single note, but a single note can only belong to one deck. Instead
 of creating a "food verbs" deck, for example, you could add those cards to
 your main language study deck, and tag the cards with "food" and "verb". Since 
-each card can have multiple tags, you can do things like search for
+each card can have multiple tags, you can do things like [search](searching.md#tags-decks-cards-and-notes) for
 all verbs, or all food-related vocabulary, or all verbs that are related
-to food. This allows using advanced filters, and makes tags a more powerful 
+to food. This allows using [filtered decks](filtered-decks.md), and makes tags a more powerful 
 and flexible categorization system than decks in most cases. 
 
-You can add tags from the Edit window and from the Browser, and you can also add,
+You can add tags from the Edit window and from the [Browser](browsing.md), and you can also add,
 delete, rename, or organize tags hierarchically there. Please, note than
-tags work at note level, which means that when you tag a card that has siblings,
+tags work at [note](getting-started.md#notes--fields) level, which means that when you tag a card that has siblings,
 all the siblings will be tagged as well. If you need to tag a single card,
 but not its siblings, you should consider using flags instead.
 
@@ -215,11 +215,11 @@ window, showing a colored flag icon on the upper right area of the screen.
 You can also search for flagged cards in the Browse screen, rename flags 
 from the browser and create filtered decks from flagged cards, but unlike tags, 
 a single card can have only one flag at a time. Another important difference
-is that Flags work at card level, so flagging a card that have siblings 
+is that Flags work at [card](getting-started.md#cards) level, so flagging a card that have siblings 
 won't have any effect on the card's siblings. 
 
-You can flag / unflag cards directly while in review mode /(by pressing 
-CTRL + 1-7) and from the Browser.
+You can flag / unflag cards directly while in review mode (by pressing 
+<kbd>CTRL</kbd> + <kbd>1-7</kbd>) and from the [Browser.](browsing.md)
 
 
 ### Using Marks
@@ -227,7 +227,7 @@ CTRL + 1-7) and from the Browser.
 Marks are a special type of Tags, the only difference are that marked 
 cards will be visible in the review window (showing a yellow star icon on the 
 upper left area of the screen), and can't be renamed from the browser.
-You can mark / unmark cards directly while in review mode (by pressing *=, 
+You can mark / unmark cards directly while in review mode (by pressing <kbd>*</kbd>), 
 and from the Browser. 
 
 Note: Marking is mainly left around for compatibility with older Anki 
