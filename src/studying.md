@@ -157,7 +157,7 @@ estimates, you can disable them in Anki’s [preferences](preferences.md).
 
 ## Fuzz Factor
 
-After you select an ease button, Anki also applies a small amount of random “fuzz”
+When you select an ease button, Anki also applies a small amount of random “fuzz”
 to prevent cards that were introduced at the same time and given the same ratings
 from sticking together and always coming up for review on the same day. This fuzz
 will appear on the answer buttons when the [v3 scheduler](https://faqs.ankiweb.net/the-2021-scheduler.html) is enabled, so if
