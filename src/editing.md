@@ -194,13 +194,15 @@ what will work best for you.
 
 Some people prefer using decks and subdecks to keep their cards organized,
 but using tags have a big advantage over decks for that: you can add several
-tags to a single note, but a single note can only belong to one deck. Instead
-of creating a "food verbs" deck, for example, you could add those cards to
-your main language study deck, and tag the cards with "food" and "verb". Since 
-each card can have multiple tags, you can do things like [search](searching.md#tags-decks-cards-and-notes) for
-all verbs, or all food-related vocabulary, or all verbs that are related
-to food. This allows using [filtered decks](filtered-decks.md), and makes tags a more powerful 
-and flexible categorization system than decks in most cases. 
+tags to a single note, but a single note can only belong to one deck. This 
+allows using [filtered decks](filtered-decks.md), and makes tags a more 
+powerful and flexible categorization system than decks in most cases. 
+
+For example, instead of creating a "food verbs" deck, you could add those 
+cards to your main language study deck, and tag the cards with "food" and
+"verb". Since each card can have multiple tags, you can do things like 
+[search](searching.md#tags-decks-cards-and-notes) for all verbs, or all 
+food-related vocabulary, or all verbs that are related to food. 
 
 You can add tags from the Edit window and from the [Browser](browsing.md), and you can also add,
 delete, rename, or organize tags hierarchically there. Please, note than
