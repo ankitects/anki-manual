@@ -236,7 +236,7 @@ Note: Marking is mainly left around for compatibility with older Anki
 versions, most users will want to use flags instead.
 
 
-### Other Ways To Organize Content
+### Using Fields
 
 For those who like to stay very organized, you can add fields to your
 notes to classify your content, such as "book", "page", and so on. Anki
@@ -244,15 +244,18 @@ supports searching in specific fields, which means you can do a search
 for "book:'my book' page:63" and immediately find what you're looking
 for.
 
-Anki's [custom study and filtered deck](filtered-decks.md) features make this
-especially powerful, as you can create temporary decks out of search
+### Custom Study And Filtered Decks
+
+Using [custom study and filtered deck](filtered-decks.md) you can create 
+temporary decks out of search
 terms. This allows you to review your content mixed together in a single
 deck most of the time (for optimum memory), but also create temporary
 decks when you need to focus on particular material, such as before a
 test. The general rule is that if you always want to be able to study
 some content separately, it should be in a normal deck; if you only
 occasionally need to be able to study it separately (for a test, when
-under a backlog, etc.), then tags, fields, and filtered decks are better.
+under a backlog, etc.), then filtered decks created from tags, flags, 
+marks or fields are better.
 
 ## Editing Features
 
