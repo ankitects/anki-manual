@@ -205,7 +205,7 @@ cards to your main language study deck, and tag the cards with "food" and
 food-related vocabulary, or all verbs that are related to food. 
 
 You can add tags from the Edit window and from the [Browser](browsing.md), and you can also add,
-delete, rename, or organize tags hierarchically there. Please, note than
+delete, rename, or organize tags there. Please note that
 tags work at [note](getting-started.md#notes--fields) level, which means that when you tag a card that has siblings,
 all the siblings will be tagged as well. If you need to tag a single card,
 but not its siblings, you should consider using flags instead.
