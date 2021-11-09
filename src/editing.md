@@ -194,7 +194,7 @@ what will work best for you.
 
 Some people prefer using decks and subdecks to keep their cards organized,
 but using tags have a big advantage over decks for that: you can add several
-tags to a single note, but a single note can only belong to one deck. This 
+tags to a single note, but a single card can only belong to one deck. This 
 allows using [filtered decks](filtered-decks.md), and makes tags a more 
 powerful and flexible categorization system than decks in most cases. 
 
