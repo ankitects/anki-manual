@@ -115,8 +115,7 @@ times, and so on. Please see the [searching](searching.md) section of the
 manual for more information on the different possibilities.
 
 Filtered decks cannot pull in cards that are suspended, buried, or already in a
-different filtered deck. And if you are using the [v1 
-scheduler], cards in
+different filtered deck. And if you are using the v1 scheduler, cards in
 (re)learning will not be included either. For this reason, a search in the
 browser may reveal cards that do not end up in the filtered deck.
 
@@ -174,7 +173,7 @@ first, that you are most in danger of forgetting.
 
 ## Steps & Returning
 
-Please see the section on [learning](studying.md#learning) as a reminder of how
+Please see the section on [learning](studying.md#learningrelearning-cards) as a reminder of how
 steps work.
 
 By default, Anki will use the steps of a card’s home deck. If a new card
