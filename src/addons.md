@@ -15,7 +15,7 @@ Add-ons use and modify arbitrary parts of Anki’s codebase, so in some
 cases, updating Anki can break the compatibility with older add-ons. If 
 one of your add-ons stops working after updating Anki, please consider
 reporting the issue to the add-on author. If you rely on this add-on,
-consider to keep using an older Anki version until the add-on gets 
+you will need to keep using an older Anki version until the add-on gets 
 an update. 
 
 Many add-on authors include their email address in the add-on, so if you
