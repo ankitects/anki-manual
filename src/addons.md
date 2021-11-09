@@ -18,10 +18,10 @@ reporting the issue to the add-on author. If you rely on this add-on,
 you will need to keep using an older Anki version until the add-on gets 
 an update. 
 
-Many add-on authors include their email address in the add-on, so if you
+There is a "Contact Author" button on most add-ons pages on Ankiweb, 
+and many authors include their email address in the add-on, so if you
 need to get in touch with the author, editing the add-on and looking at
-the top of the file (or clicking on the "Contact Author" button on 
-Ankiweb, if available) may help.
+the top of the file may help.
 
 To learn how to write your own add-ons, please see the [add-on writing
 guide](https://addon-docs.ankiweb.net).
