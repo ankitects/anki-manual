@@ -244,7 +244,7 @@ supports searching in specific fields, which means you can do a search
 for "book:'my book' page:63" and immediately find what you're looking
 for.
 
-### Custom Study And Filtered Decks
+### Custom Study and Filtered Decks
 
 Using [custom study and filtered deck](filtered-decks.md) you can create 
 temporary decks out of search
