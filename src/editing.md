@@ -217,7 +217,7 @@ window, showing a colored flag icon on the upper right area of the screen.
 You can also search for flagged cards in the Browse screen, rename flags 
 from the browser and create filtered decks from flagged cards, but unlike tags, 
 a single card can have only one flag at a time. Another important difference
-is that Flags work at [card](getting-started.md#cards) level, so flagging a card that have siblings 
+is that flags work at [card](getting-started.md#cards) level, so flagging a card that have siblings 
 won't have any effect on the card's siblings. 
 
 You can flag / unflag cards directly while in review mode (by pressing 
