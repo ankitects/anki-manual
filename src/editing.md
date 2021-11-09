@@ -226,11 +226,10 @@ You can flag / unflag cards directly while in review mode (by pressing
 
 ### The "Marked" Tag
 
-Marks are a special type of Tags, the only difference are that marked 
-cards will be visible in the review window (showing a yellow star icon on the 
-upper left area of the screen), and can't be renamed from the browser.
-You can mark / unmark cards directly while in review mode (by pressing <kbd>*</kbd>), 
-and from the Browser. 
+Anki treats a tag called "marked" specially. There are options in the review
+screen and browse screen to add and remove the "marked" tag. The review screen 
+will show a star when the current card's note has that tag. And cards are 
+shown in a different color in the browse screen when their note is marked.
 
 Note: Marking is mainly left around for compatibility with older Anki 
 versions; most users will want to use flags instead.
