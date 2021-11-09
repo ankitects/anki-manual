@@ -224,7 +224,7 @@ You can flag / unflag cards directly while in review mode (by pressing
 <kbd>CTRL</kbd> + <kbd>1-7</kbd>) and from the [Browser.](browsing.md)
 
 
-### Using Marks
+### The "Marked" Tag
 
 Marks are a special type of Tags, the only difference are that marked 
 cards will be visible in the review window (showing a yellow star icon on the 
