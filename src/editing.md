@@ -188,7 +188,7 @@ Instead of creating lots of little decks, it's a better idea to use tags
 and/or fields to classify your content. Tags are a useful way to boost 
 search results, find specific content, and keep your collection 
 organized.
-structure. There are many ways of using tags and flags effectively, and
+There are many ways of using tags and flags effectively, and
 thinking in advance about how you want to use them will help you decide
 what will work best for you.
 
