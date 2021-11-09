@@ -221,7 +221,8 @@ is that flags work at [card](getting-started.md#cards) level, so flagging a card
 won't have any effect on the card's siblings. 
 
 You can flag / unflag cards directly while in review mode (by pressing 
-<kbd>CTRL</kbd> + <kbd>1-7</kbd>) and from the [Browser.](browsing.md)
+<kbd>CTRL</kbd> + <kbd>1-7</kbd> on Windows or <kbd>CMD</kbd> + <kbd>1-7</kbd> on Mac) 
+and from the [Browser.](browsing.md)
 
 
 ### The "Marked" Tag
