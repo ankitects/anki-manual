@@ -233,7 +233,7 @@ You can mark / unmark cards directly while in review mode (by pressing <kbd>*</k
 and from the Browser. 
 
 Note: Marking is mainly left around for compatibility with older Anki 
-versions, most users will want to use flags instead.
+versions; most users will want to use flags instead.
 
 
 ### Using Fields
