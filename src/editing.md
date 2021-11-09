@@ -212,7 +212,7 @@ but not its siblings, you should consider using flags instead.
 
 ### Using Flags
 
-Flags are similar to Tags, but they will appear during study in the review 
+Flags are similar to tags, but they will appear during study in the review 
 window, showing a colored flag icon on the upper right area of the screen. 
 You can also search for flagged cards in the Browse screen, rename flags 
 from the browser and create filtered decks from flagged cards, but unlike tags, 
