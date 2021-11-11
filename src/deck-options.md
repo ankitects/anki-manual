@@ -139,9 +139,9 @@ so those learning cards will be subject to the daily limit.
 ## New Cards
 
 The settings in this section only affect new cards and cards in initial
-[learning](https://docs.ankiweb.net/studying.html?#learning) mode. Once a card
+[learning](studying.md#learningrelearning-cards) mode. Once a card
 has graduated (i.e. there are no more learning steps for this card), it  becomes a
-[review card](https://docs.ankiweb.net/studying.html?#reviewing), and the
+[review card](studying.md#review-cards), and the
 settings in this section are no longer applicable.
 
 ### Learning Steps
@@ -166,7 +166,7 @@ If there’s nothing else to study, Anki will show cards up to 20 minutes
 early by default. The amount of time to look ahead is configurable in
 the [preferences](preferences.md).
 
-Please see the [learning](studying.md#learning) section for more info on how
+Please see the [learning](studying.md#learningrelearning-cards) section for more info on how
 steps work. Also, check [this forum's
 post](https://forums.ankiweb.net/t/deck-options-explained/213) for more
 examples.
