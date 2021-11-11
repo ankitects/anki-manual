@@ -152,8 +152,17 @@
 <li><a href="#adding-a-note-type">Adding a Note Type</a></li>
 <li><a href="#customizing-fields">Customizing Fields</a></li>
 <li><a href="#changing-deck--note-type">Changing Deck / Note Type</a></li>
+<li><a href="#organizing-content">Organizing Content</a>
+<ul>
 <li><a href="#using-decks-appropriately">Using Decks Appropriately</a></li>
-<li><a href="#features">Features</a></li>
+<li><a href="#using-tags">Using Tags</a></li>
+<li><a href="#using-flags">Using Flags</a></li>
+<li><a href="#the-marked-tag">The &quot;Marked&quot; Tag</a></li>
+<li><a href="#using-fields">Using Fields</a></li>
+<li><a href="#custom-study-and-filtered-decks">Custom Study and Filtered Decks</a></li>
+</ul>
+</li>
+<li><a href="#editing-features">Editing Features</a></li>
 <li><a href="#cloze-deletion">Cloze Deletion</a></li>
 <li><a href="#inputting-foreign-characters-and-accents">Inputting Foreign Characters and Accents</a></li>
 <li><a href="#unicode-normalization">Unicode Normalization</a></li>
@@ -288,8 +297,9 @@ or back of your cards. For more information on that, please see the
 and the top right button to change deck. The window that opens up will
 not only allow you to select a deck or note type, but also to add new
 decks or manage your note types.</p>
-<h2 id="using-decks-appropriately"><a class="header" href="#using-decks-appropriately">Using Decks Appropriately</a></h2>
-<p>Decks are designed to divide your content up into broad categories that
+<h2 id="organizing-content"><a class="header" href="#organizing-content">Organizing Content</a></h2>
+<h3 id="using-decks-appropriately"><a class="header" href="#using-decks-appropriately">Using Decks Appropriately</a></h3>
+<p><a href="getting-started.html#decks">Decks</a> are designed to divide your content up into broad categories that
 you wish to study separately, such as English, Geography, and so on. You
 may be tempted to create lots of little decks to keep your content
 organized, such as &quot;my geography book chapter 1&quot;, or &quot;food verbs&quot;, but
@@ -312,28 +322,65 @@ trees with thousands of items can actually break the display of
 the deck list in the current implementation.</p>
 </li>
 </ul>
+<h3 id="using-tags"><a class="header" href="#using-tags">Using Tags</a></h3>
 <p>Instead of creating lots of little decks, it's a better idea to use tags
-and/or fields to classify your content. Instead of creating a &quot;food
-verbs&quot; decks for example, you could add those cards to your main
-language study deck, and tag the cards with &quot;food&quot; and &quot;verb&quot;. Each card
-can have multiple tags, which means you can do things like search for
-all verbs, or all food-related vocabulary, or all verbs that are related
-to food.</p>
+and/or fields to classify your content. Tags are a useful way to boost 
+search results, find specific content, and keep your collection 
+organized.
+There are many ways of using tags and flags effectively, and
+thinking in advance about how you want to use them will help you decide
+what will work best for you.</p>
+<p>Some people prefer using decks and subdecks to keep their cards organized,
+but using tags have a big advantage over decks for that: you can add several
+tags to a single note, but a single card can only belong to one deck, which 
+makes tags a more powerful and flexible categorization system than 
+decks in most cases. </p>
+<p>For example, instead of creating a &quot;food verbs&quot; deck, you could add those 
+cards to your main language study deck, and tag the cards with &quot;food&quot; and
+&quot;verb&quot;. Since each card can have multiple tags, you can do things like 
+<a href="searching.html#tags-decks-cards-and-notes">search</a> for all verbs, or all 
+food-related vocabulary, or all verbs that are related to food. </p>
+<p>You can add tags from the Edit window and from the <a href="browsing.html">Browser</a>, and you can also add,
+delete, rename, or organize tags there. Please note that
+tags work at <a href="getting-started.html#notes--fields">note</a> level, which means that when you tag a card that has siblings,
+all the siblings will be tagged as well. If you need to tag a single card,
+but not its siblings, you should consider using flags instead.</p>
+<h3 id="using-flags"><a class="header" href="#using-flags">Using Flags</a></h3>
+<p>Flags are similar to tags, but they will appear during study in the review 
+window, showing a colored flag icon on the upper right area of the screen. 
+You can also search for flagged cards in the Browse screen, rename flags 
+from the browser and create filtered decks from flagged cards, but unlike tags, 
+a single card can have only one flag at a time. Another important difference
+is that flags work at <a href="getting-started.html#cards">card</a> level, so flagging a card that have siblings 
+won't have any effect on the card's siblings. </p>
+<p>You can flag / unflag cards directly while in review mode (by pressing 
+<kbd>CTRL</kbd> + <kbd>1-7</kbd> on Windows or <kbd>CMD</kbd> + <kbd>1-7</kbd> on Mac) 
+and from the <a href="browsing.html">Browser.</a></p>
+<h3 id="the-marked-tag"><a class="header" href="#the-marked-tag">The &quot;Marked&quot; Tag</a></h3>
+<p>Anki treats a tag called &quot;marked&quot; specially. There are options in the review
+screen and browse screen to add and remove the &quot;marked&quot; tag. The review screen 
+will show a star when the current card's note has that tag. And cards are 
+shown in a different color in the browse screen when their note is marked.</p>
+<p>Note: Marking is mainly left around for compatibility with older Anki 
+versions; most users will want to use flags instead.</p>
+<h3 id="using-fields"><a class="header" href="#using-fields">Using Fields</a></h3>
 <p>For those who like to stay very organized, you can add fields to your
 notes to classify your content, such as &quot;book&quot;, &quot;page&quot;, and so on. Anki
 supports searching in specific fields, which means you can do a search
 for &quot;book:'my book' page:63&quot; and immediately find what you're looking
 for.</p>
-<p>Anki's <a href="filtered-decks.html">custom study and filtered deck</a> features make this
-especially powerful, as you can create temporary decks out of search
+<h3 id="custom-study-and-filtered-decks"><a class="header" href="#custom-study-and-filtered-decks">Custom Study and Filtered Decks</a></h3>
+<p>Using <a href="filtered-decks.html">custom study and filtered deck</a> you can create 
+temporary decks out of search
 terms. This allows you to review your content mixed together in a single
 deck most of the time (for optimum memory), but also create temporary
 decks when you need to focus on particular material, such as before a
 test. The general rule is that if you always want to be able to study
 some content separately, it should be in a normal deck; if you only
 occasionally need to be able to study it separately (for a test, when
-under a backlog, etc.), then tags, fields, and filtered decks are better.</p>
-<h2 id="features"><a class="header" href="#features">Features</a></h2>
+under a backlog, etc.), then filtered decks created from tags, flags, 
+marks or fields are better.</p>
+<h2 id="editing-features"><a class="header" href="#editing-features">Editing Features</a></h2>
 <p>The editor is shown when <a href="editing.html">adding notes</a>, <a href="studying.html">editing a
 note</a> during reviews, or <a href="browsing.html">browsing</a>.</p>
 <p>On the top left are two buttons, which open the <a href="editing.html#customizing-fields">fields</a> and
