@@ -175,7 +175,7 @@ At the bottom right of the review screen is a button labeled **More**.
 This button provides some other operations you can do on the current
 card or note:
 
-- [**Flag Card**](editing.md#Using-Flags): Adds a colored marker to the card, or toggles it off. Flags will appear during
+- [**Flag Card**](editing.md#using-flags): Adds a colored marker to the card, or toggles it off. Flags will appear during
 study, and you can search for flagged cards in the Browse screen. This is useful
 when you want to take some action on the card at a later date, such as looking
 up a word when you get home. If you're using Anki 2.1.45+, you can also rename flags 
@@ -212,7 +212,7 @@ cards of the same note.
 
 - **Card Info**: Displays [statistical information](stats.md#card-info) about the card.
 
-- [**Mark Note**](editing.md#Using-Marks): Adds a “marked” tag to the current note, so it can be easily found in the
+- [**Mark Note**](editing.md#the-marked-tag): Adds a “marked” tag to the current note, so it can be easily found in the
 browser. This is similar to flagging individual cards, but works with a tag
 instead, so if the note has multiple cards, all cards will appear in a search
 for the marked tag. Most users will want to use flags instead. 
