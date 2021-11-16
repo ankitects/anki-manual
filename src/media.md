@@ -6,7 +6,12 @@ locations](files.md) section. When you add media within Anki, either by
 using the paperclip icon in the [editor](editing.md) or by pasting it into
 a field, Anki will copy it from its original location into the media
 folder. This makes it easy to back up your collection’s media or move it
-to another computer.
+to another computer. 
+
+When importing a media file, please, please try not to use filenames with 
+blank spaces. Instead of importing the file "my picture.jpg", rename it to
+"my_picture.jpg", otherwise, [problems may arise](https://forums.ankiweb.net/t/new-html-editor-problem-searching-media-files-with-blank-spaces/14857)
+when [searching](searching.md) for media files.   
 
 You can use the Tools&gt;Check Media menu option to scan your notes and
 media folder. It will generate a report of files in the media folder
