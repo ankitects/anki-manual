@@ -85,7 +85,7 @@ Controls how many new cards are introduced each day you open the program. If you
 study fewer than the limit, or miss a day, the next day the counts will be back
 to your limit - they do not accumulate.
 
-In [the v3 scheduler](https://faqs.ankiweb.net/the-2021-scheduler.html), Anki
+In [the v3 scheduler](https://faqs.ankiweb.net/the-2021-scheduler.html#daily-limits), Anki
 uses the limits of the deck you select as an upper limit on the number of cards.
 This means if "French" has a limit of 20 cards and "French::Lesson 1" and
 "French::Lesson 2" both have limits of 15 cards, when you click on "French",
@@ -106,7 +106,7 @@ your review burden decreases. More than one Anki user has excitedly studied
 hundreds of new cards over their first few days of using the program, and then
 become overwhelmed by the reviews required.
 
-If using [the v3 scheduler](https://faqs.ankiweb.net/the-2021-scheduler.html),
+If using [the v3 scheduler](https://faqs.ankiweb.net/the-2021-scheduler.html#daily-limits),
 please keep in mind that the new count is capped by the review count. If your
 review limit is set to 200, and you have 190 reviews waiting, a maximum of 10
 new cards will be introduced. If your review limit has been reached, no new
@@ -126,7 +126,7 @@ heart attack when returning to Anki after a week off. When reviews have been
 hidden due to this option, a message will appear in the congratulations screen,
 suggesting you consider increasing the limit if you have time.
 
-In [the v3 scheduler](https://faqs.ankiweb.net/the-2021-scheduler.html) and
+In [the v3 scheduler](https://faqs.ankiweb.net/the-2021-scheduler.html#daily-limits) and
 v1 schedulers, the counts are affected by parents/selected decks in the same way
 as new cards.
 
