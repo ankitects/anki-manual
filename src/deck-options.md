@@ -54,10 +54,10 @@ deck you select to study, not the deck of the current card.
 
 For example, let's say you have this collection:
 
-- Deck A (Preset 1)
-  - Deck A::Subdeck B (Preset 2)
-    - Card B1
-    - Card B2
+    - Deck A (Preset 1)
+      - Deck A::Subdeck B (Preset 2)
+        - Card B1
+        - Card B2
 
 Preset 1 and 2 are identical, with two exceptions:
 
@@ -94,8 +94,21 @@ you’ll get at most 15 cards from either child deck, and only 20 cards in total
 In the v1 or v2 scheduler, each parent applies its limits to its children. If you
 have decks in a grandparent-parent-child arrangement, both the grandparent and
 parent limits will alter how many cards are shown from the child, even if you
-click directly on the child.
+click directly on the child. In the v3 scheduler, this has been simplified, and 
+now each deck's limit controls how many cards from that specific deck can be used.
+Imagine that you have this collection:
 
+    - Parent deck (New Cards/Day: 20) 
+      - Child deck (New Cards/Day: 7)
+        - Grandchild deck A (New Cards/Day: 5)
+          - Cards 1 to 50
+        - Grandchild deck B (New Cards/Day: 5) 
+          - Cards 51 to 100
+
+- If you click on the Parent deck, you will get 10 new cards (from Grandchild decks A and B).
+- If you click on the Child deck, you will get 7 new cards (from Grandchild decks A and B).
+- If you click on any of the Grandchild decks, you will get 5 new cards.
+  
 Studying new cards will temporarily increase the number of reviews you need to
 do a day, as freshly learnt material needs to be repeated a number of times
 before the delay between repetitions can increase appreciably. If you are
