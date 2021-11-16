@@ -10,3 +10,6 @@ as a series of tweets.
 
 Some medical students have banded together to make a paid-for guide focusing on
 the use of Anki in medical school: <https://courses.ankipalace.com/>
+
+Soren Bjornstad has written [a series of extensive articles](https://controlaltbackspace.org/categories/memory/)
+about memory, SRS and how to use Anki effectively. 
