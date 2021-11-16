@@ -157,13 +157,18 @@ estimates, you can disable them in Anki’s [preferences](preferences.md).
 
 ## Fuzz Factor
 
-When you select an ease button, Anki also applies a small amount of random “fuzz”
+When you select an ease button on a review card, Anki also applies a small amount of random “fuzz”
 to prevent cards that were introduced at the same time and given the same ratings
 from sticking together and always coming up for review on the same day. This fuzz
 will appear on the answer buttons when the [v3 scheduler](https://faqs.ankiweb.net/the-2021-scheduler.html) is enabled, so if
 you are using a previous version and you’re noticing a slight discrepancy between
 what you select and the intervals your cards actually get, this is probably the
 cause.
+
+Learning cards are also given up to 5 minutes of extra delay so that they 
+don’t always appear in the same order, but answer buttons won't reflect that. 
+
+It is not possible to turn this feature off.
 
 ## Editing and More
 
