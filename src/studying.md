@@ -166,9 +166,8 @@ what you select and the intervals your cards actually get, this is probably the
 cause.
 
 Learning cards are also given up to 5 minutes of extra delay so that they 
-don’t always appear in the same order, but answer buttons won't reflect that. 
-
-It is not possible to turn this feature off.
+don’t always appear in the same order, but answer buttons won't reflect that. It 
+is not possible to turn this feature off.
 
 ## Editing and More
 
