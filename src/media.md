@@ -8,10 +8,15 @@ a field, Anki will copy it from its original location into the media
 folder. This makes it easy to back up your collection’s media or move it
 to another computer. 
 
-When importing a media file, please, please try not to use filenames with 
-blank spaces. Instead of importing the file "my picture.jpg", rename it to
-"my_picture.jpg", otherwise, [problems may arise](https://forums.ankiweb.net/t/new-html-editor-problem-searching-media-files-with-blank-spaces/14857)
-when [searching](searching.md) for media files.   
+If your media filenames contain spaces or other special characters such 
+as percentage signs, the way the filenames appear in the HTML editor will 
+differ from the way the filenames appear on disk. For example, a file called 
+`hello 100%.jpg` will appear as `hello%20100%25.jpg` in the HTML editor. 
+Internally, Anki still uses the original filenames, so if you would like to
+[search](searching.md) for the file or modify the filename with [Find&Replace](browsing.md#find-and-replace), you would 
+need to use the name as it appears on disk., not as it appears in the 
+HTML editor. Exporting to a text file is another way to see the underlying 
+representation.
 
 You can use the Tools&gt;Check Media menu option to scan your notes and
 media folder. It will generate a report of files in the media folder
@@ -19,7 +24,7 @@ that are not used by any notes, and media referenced in notes but
 missing from your media folder. It does not scan question or answer
 templates, which is why you can’t place media references to fields in
 the template. If you need a static image or sound on every card, name it
-with a leading \_ (e.g., '\_dog.jpg') to tell Anki to ignore it when
+with a leading \_ (e.g., `\_dog.jpg`) to tell Anki to ignore it when
 checking for media. If you delete media using the unused media check,
 Anki will move it into your operating system’s trash folder, so you can
 recover if you accidentally delete media that shouldn’t have been
