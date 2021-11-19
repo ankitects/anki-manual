@@ -14,7 +14,7 @@ differ from the way the filenames appear on disk. For example, a file called
 `hello 100%.jpg` will appear as `hello%20100%25.jpg` in the HTML editor. 
 Internally, Anki still uses the original filenames, so if you would like to
 [search](searching.md) for the file or modify the filename with [Find&Replace](browsing.md#find-and-replace), you would 
-need to use the name as it appears on disk., not as it appears in the 
+need to use the name as it appears on disk, not as it appears in the 
 HTML editor. Exporting to a text file is another way to see the underlying 
 representation.
 
