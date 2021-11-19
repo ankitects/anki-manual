@@ -54,10 +54,10 @@ deck you select to study, not the deck of the current card.
 
 For example, let's say you have this collection:
 
-- Deck A (Preset 1)
-  - Deck A::Subdeck B (Preset 2)
-    - Card B1
-    - Card B2
+    - Deck A (Preset 1)
+      - Deck A::Subdeck B (Preset 2)
+        - Card B1
+        - Card B2
 
 Preset 1 and 2 are identical, with two exceptions:
 
@@ -85,7 +85,7 @@ Controls how many new cards are introduced each day you open the program. If you
 study fewer than the limit, or miss a day, the next day the counts will be back
 to your limit - they do not accumulate.
 
-In [the v3 scheduler](https://faqs.ankiweb.net/the-2021-scheduler.html), Anki
+In [the v3 scheduler](https://faqs.ankiweb.net/the-2021-scheduler.html#daily-limits), Anki
 uses the limits of the deck you select as an upper limit on the number of cards.
 This means if "French" has a limit of 20 cards and "French::Lesson 1" and
 "French::Lesson 2" both have limits of 15 cards, when you click on "French",
@@ -94,8 +94,21 @@ you’ll get at most 15 cards from either child deck, and only 20 cards in total
 In the v1 or v2 scheduler, each parent applies its limits to its children. If you
 have decks in a grandparent-parent-child arrangement, both the grandparent and
 parent limits will alter how many cards are shown from the child, even if you
-click directly on the child.
+click directly on the child. In the v3 scheduler, this has been simplified, and 
+now each deck's limit controls how many cards from that specific deck can be used.
+Imagine that you have this collection:
 
+    - Parent deck (New Cards/Day: 20) 
+      - Child deck (New Cards/Day: 7)
+        - Grandchild deck A (New Cards/Day: 5)
+          - Cards 1 to 50
+        - Grandchild deck B (New Cards/Day: 5) 
+          - Cards 51 to 100
+
+- If you click on the Parent deck, you will get 10 new cards (from Grandchild decks A and B).
+- If you click on the Child deck, you will get 7 new cards (from Grandchild decks A and B).
+- If you click on any of the Grandchild decks, you will get 5 new cards.
+  
 Studying new cards will temporarily increase the number of reviews you need to
 do a day, as freshly learnt material needs to be repeated a number of times
 before the delay between repetitions can increase appreciably. If you are
@@ -106,7 +119,7 @@ your review burden decreases. More than one Anki user has excitedly studied
 hundreds of new cards over their first few days of using the program, and then
 become overwhelmed by the reviews required.
 
-If using [the v3 scheduler](https://faqs.ankiweb.net/the-2021-scheduler.html),
+If using [the v3 scheduler](https://faqs.ankiweb.net/the-2021-scheduler.html#daily-limits),
 please keep in mind that the new count is capped by the review count. If your
 review limit is set to 200, and you have 190 reviews waiting, a maximum of 10
 new cards will be introduced. If your review limit has been reached, no new
@@ -126,7 +139,7 @@ heart attack when returning to Anki after a week off. When reviews have been
 hidden due to this option, a message will appear in the congratulations screen,
 suggesting you consider increasing the limit if you have time.
 
-In [the v3 scheduler](https://faqs.ankiweb.net/the-2021-scheduler.html) and
+In [the v3 scheduler](https://faqs.ankiweb.net/the-2021-scheduler.html#daily-limits) and
 v1 schedulers, the counts are affected by parents/selected decks in the same way
 as new cards.
 
