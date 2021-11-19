@@ -279,13 +279,16 @@ increase by one regardless of the steps remaining.</p>
 will be shown above each button. If you’d prefer not to see the
 estimates, you can disable them in Anki’s <a href="preferences.html">preferences</a>.</p>
 <h2 id="fuzz-factor"><a class="header" href="#fuzz-factor">Fuzz Factor</a></h2>
-<p>When you select an ease button, Anki also applies a small amount of random “fuzz”
+<p>When you select an ease button on a review card, Anki also applies a small amount of random “fuzz”
 to prevent cards that were introduced at the same time and given the same ratings
 from sticking together and always coming up for review on the same day. This fuzz
 will appear on the answer buttons when the <a href="https://faqs.ankiweb.net/the-2021-scheduler.html">v3 scheduler</a> is enabled, so if
 you are using a previous version and you’re noticing a slight discrepancy between
 what you select and the intervals your cards actually get, this is probably the
 cause.</p>
+<p>Learning cards are also given up to 5 minutes of extra delay so that they 
+don’t always appear in the same order, but answer buttons won't reflect that. It 
+is not possible to turn this feature off.</p>
 <h2 id="editing-and-more"><a class="header" href="#editing-and-more">Editing and More</a></h2>
 <p>You can click the <strong>Edit</strong> button in the bottom left to edit the current
 note. When you finish editing, you’ll be returned to study. The editing

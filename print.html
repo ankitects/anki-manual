@@ -1201,13 +1201,16 @@ increase by one regardless of the steps remaining.</p>
 will be shown above each button. If you’d prefer not to see the
 estimates, you can disable them in Anki’s <a href="preferences.html">preferences</a>.</p>
 <h2 id="fuzz-factor"><a class="header" href="#fuzz-factor">Fuzz Factor</a></h2>
-<p>When you select an ease button, Anki also applies a small amount of random “fuzz”
+<p>When you select an ease button on a review card, Anki also applies a small amount of random “fuzz”
 to prevent cards that were introduced at the same time and given the same ratings
 from sticking together and always coming up for review on the same day. This fuzz
 will appear on the answer buttons when the <a href="https://faqs.ankiweb.net/the-2021-scheduler.html">v3 scheduler</a> is enabled, so if
 you are using a previous version and you’re noticing a slight discrepancy between
 what you select and the intervals your cards actually get, this is probably the
 cause.</p>
+<p>Learning cards are also given up to 5 minutes of extra delay so that they 
+don’t always appear in the same order, but answer buttons won't reflect that. It 
+is not possible to turn this feature off.</p>
 <h2 id="editing-and-more"><a class="header" href="#editing-and-more">Editing and More</a></h2>
 <p>You can click the <strong>Edit</strong> button in the bottom left to edit the current
 note. When you finish editing, you’ll be returned to study. The editing
@@ -2877,18 +2880,11 @@ depending on the scheduler version you have selected.</li>
 deck you select to study, not the deck of the current card.</li>
 </ul>
 <p>For example, let's say you have this collection:</p>
-<ul>
-<li>Deck A (Preset 1)
-<ul>
-<li>Deck A::Subdeck B (Preset 2)
-<ul>
-<li>Card B1</li>
-<li>Card B2</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
+<pre><code>- Deck A (Preset 1)
+  - Deck A::Subdeck B (Preset 2)
+    - Card B1
+    - Card B2
+</code></pre>
 <p>Preset 1 and 2 are identical, with two exceptions:</p>
 <ul>
 <li>Preset 1:
@@ -2919,7 +2915,7 @@ deck you select to study, not the deck of the current card.</li>
 <p>Controls how many new cards are introduced each day you open the program. If you
 study fewer than the limit, or miss a day, the next day the counts will be back
 to your limit - they do not accumulate.</p>
-<p>In <a href="https://faqs.ankiweb.net/the-2021-scheduler.html">the v3 scheduler</a>, Anki
+<p>In <a href="https://faqs.ankiweb.net/the-2021-scheduler.html#daily-limits">the v3 scheduler</a>, Anki
 uses the limits of the deck you select as an upper limit on the number of cards.
 This means if &quot;French&quot; has a limit of 20 cards and &quot;French::Lesson 1&quot; and
 &quot;French::Lesson 2&quot; both have limits of 15 cards, when you click on &quot;French&quot;,
@@ -2927,7 +2923,21 @@ you’ll get at most 15 cards from either child deck, and only 20 cards in total
 <p>In the v1 or v2 scheduler, each parent applies its limits to its children. If you
 have decks in a grandparent-parent-child arrangement, both the grandparent and
 parent limits will alter how many cards are shown from the child, even if you
-click directly on the child.</p>
+click directly on the child. In the v3 scheduler, this has been simplified, and 
+now each deck's limit controls how many cards from that specific deck can be used.
+Imagine that you have this collection:</p>
+<pre><code>- Parent deck (New Cards/Day: 20) 
+  - Child deck (New Cards/Day: 7)
+    - Grandchild deck A (New Cards/Day: 5)
+      - Cards 1 to 50
+    - Grandchild deck B (New Cards/Day: 5) 
+      - Cards 51 to 100
+</code></pre>
+<ul>
+<li>If you click on the Parent deck, you will get 10 new cards (from Grandchild decks A and B).</li>
+<li>If you click on the Child deck, you will get 7 new cards (from Grandchild decks A and B).</li>
+<li>If you click on any of the Grandchild decks, you will get 5 new cards.</li>
+</ul>
 <p>Studying new cards will temporarily increase the number of reviews you need to
 do a day, as freshly learnt material needs to be repeated a number of times
 before the delay between repetitions can increase appreciably. If you are
@@ -2937,7 +2947,7 @@ introducing fewer new cards each day, or by turning off new card display until
 your review burden decreases. More than one Anki user has excitedly studied
 hundreds of new cards over their first few days of using the program, and then
 become overwhelmed by the reviews required.</p>
-<p>If using <a href="https://faqs.ankiweb.net/the-2021-scheduler.html">the v3 scheduler</a>,
+<p>If using <a href="https://faqs.ankiweb.net/the-2021-scheduler.html#daily-limits">the v3 scheduler</a>,
 please keep in mind that the new count is capped by the review count. If your
 review limit is set to 200, and you have 190 reviews waiting, a maximum of 10
 new cards will be introduced. If your review limit has been reached, no new
@@ -2954,7 +2964,7 @@ help to smooth out occasional peaks in due card counts, and can save you from a
 heart attack when returning to Anki after a week off. When reviews have been
 hidden due to this option, a message will appear in the congratulations screen,
 suggesting you consider increasing the limit if you have time.</p>
-<p>In <a href="https://faqs.ankiweb.net/the-2021-scheduler.html">the v3 scheduler</a> and
+<p>In <a href="https://faqs.ankiweb.net/the-2021-scheduler.html#daily-limits">the v3 scheduler</a> and
 v1 schedulers, the counts are affected by parents/selected decks in the same way
 as new cards.</p>
 <p>In the v2 scheduler, the limit is taken solely from the deck you select - any
@@ -3810,7 +3820,7 @@ three presses of &quot;Good&quot; or a single press of &quot;Easy&quot;.</p>
 home deck’s steps and provide your own steps instead. The provided steps apply to both
 cards being learnt, lapsed reviews, and reviews ahead of time. Please note, however, that
 from the <a href="https://faqs.ankiweb.net/the-anki-2.1-scheduler.html">v2 scheduler</a>
-filtered decks no longer support custom steps.</p>
+filtered decks [no longer support custom steps].(https://forums.ankiweb.net/t/filtered-deck-interval-problem/11834/8)</p>
 <p><strong>v3 scheduler</strong></p>
 <p>Filtered decks with rescheduling disabled show 4 buttons in the 
 <a href="https://faqs.ankiweb.net/the-2021-scheduler.html">v3 scheduler</a> - the provided
@@ -4972,14 +4982,23 @@ locations</a> section. When you add media within Anki, either by
 using the paperclip icon in the <a href="editing.html">editor</a> or by pasting it into
 a field, Anki will copy it from its original location into the media
 folder. This makes it easy to back up your collection’s media or move it
-to another computer.</p>
+to another computer. </p>
+<p>If your media filenames contain spaces or other special characters such 
+as percentage signs, the way the filenames appear in the HTML editor will 
+differ from the way the filenames appear on disk. For example, a file called 
+<code>hello 100%.jpg</code> will appear as <code>hello%20100%25.jpg</code> in the HTML editor. 
+Internally, Anki still uses the original filenames, so if you would like to
+<a href="searching.html">search</a> for the file or modify the filename with <a href="browsing.html#find-and-replace">Find&amp;Replace</a>, you will 
+need to use the name as it appears on disk, not as it appears in the 
+HTML editor. Exporting to a text file is another way to see the underlying 
+representation.</p>
 <p>You can use the Tools&gt;Check Media menu option to scan your notes and
 media folder. It will generate a report of files in the media folder
 that are not used by any notes, and media referenced in notes but
 missing from your media folder. It does not scan question or answer
 templates, which is why you can’t place media references to fields in
 the template. If you need a static image or sound on every card, name it
-with a leading _ (e.g., '_dog.jpg') to tell Anki to ignore it when
+with a leading _ (e.g., <code>\_dog.jpg</code>) to tell Anki to ignore it when
 checking for media. If you delete media using the unused media check,
 Anki will move it into your operating system’s trash folder, so you can
 recover if you accidentally delete media that shouldn’t have been
@@ -5398,6 +5417,8 @@ about long term memory and how he uses Anki. He also provides a
 as a series of tweets.</p>
 <p>Some medical students have banded together to make a paid-for guide focusing on
 the use of Anki in medical school: <a href="https://courses.ankipalace.com/">https://courses.ankipalace.com/</a></p>
+<p>Soren Bjornstad has written <a href="https://controlaltbackspace.org/categories/memory/">a series of extensive articles</a>
+about memory, SRS and how to use Anki effectively. </p>
 
                     </main>
 
