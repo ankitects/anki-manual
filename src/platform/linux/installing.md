@@ -29,8 +29,8 @@ To install Anki:
 number as appropriate.
 
 ```shell
-tar xjf Downloads/anki-2.1.48-linux.tar.bz2
-cd anki-2.1.48-linux
+tar xjf Downloads/anki-2.1.49-linux.tar.bz2
+cd anki-2.1.49-linux
 sudo ./install.sh
 ```
 
