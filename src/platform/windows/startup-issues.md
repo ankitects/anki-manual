@@ -50,6 +50,16 @@ on the Anki icon and chose "Run as administrator". Anki stores all of its data i
 your user folder, and should not need administrator privileges, but it's something
 you can try if you've exhausted other options.
 
+## Multiple Anki installations present after updating
+
+If the update process leaves you with multiple Anki installs (such as within
+`C:\Program Files\Anki` and `C:\Program Files (x86)\Anki`), they may be left in a
+non-working state, and Anki may refuse to start without showing an error message.
+
+Try uninstalling all copies - you may be able to do so with the Windows `Apps &
+features` settings menu, or by running `uninstall.exe` in each Anki program
+folder. Afterward, install Anki again.
+
 ## Debugging
 
 Starting Anki from a terminal may reveal a bit more information about some
