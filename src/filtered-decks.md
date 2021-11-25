@@ -190,7 +190,7 @@ In the v1 scheduler, the **custom steps** option allows you to override the
 home deck’s steps and provide your own steps instead. The provided steps apply to both
 cards being learnt, lapsed reviews, and reviews ahead of time. Please note, however, that
 from the [v2 scheduler](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html)
-filtered decks [no longer support custom steps].(https://forums.ankiweb.net/t/filtered-deck-interval-problem/11834/8)
+filtered decks [no longer support custom steps](https://forums.ankiweb.net/t/filtered-deck-interval-problem/11834/8).
 
 **v3 scheduler**
 
