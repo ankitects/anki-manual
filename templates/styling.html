@@ -147,6 +147,7 @@
 <li><a href="#image-resizing">Image Resizing</a></li>
 <li><a href="#field-styling">Field Styling</a></li>
 <li><a href="#audio-replay-buttons">Audio Replay Buttons</a></li>
+<li><a href="#text-direction">Text Direction</a></li>
 <li><a href="#other-html">Other HTML</a></li>
 <li><a href="#browser-appearance">Browser Appearance</a></li>
 <li><a href="#platform-specific-css">Platform-Specific CSS</a></li>
@@ -312,6 +313,19 @@ make them smaller and colored, you could use the following:</p>
   fill: green;
 }
 </code></pre>
+<h2 id="text-direction"><a class="header" href="#text-direction">Text Direction</a></h2>
+<p>If you use a language that is written right-to-left, such as Arabic or Hebrew,
+you can add the CSS <code>direction</code> property to the .card section for correct display during review:</p>
+<pre><code class="language-css">.card {
+  direction: rtl;
+}
+</code></pre>
+<p>This will change the direction of the entire card. You can change the direction
+of only certain fields by wrapping their references in some HTML:</p>
+<pre><code>&lt;div dir=&quot;rtl&quot;&gt;{{Front}}&lt;/div&gt;
+</code></pre>
+<p>To change the direction of fields in the editor, please see
+the <a href="../editing.html#customizing-fields">editing</a> section.</p>
 <h2 id="other-html"><a class="header" href="#other-html">Other HTML</a></h2>
 <p>Your templates can contain arbitrary HTML, which means that all the
 layout possibilities used on internet web pages can also be used on your
