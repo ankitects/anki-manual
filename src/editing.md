@@ -145,7 +145,7 @@ Only one field can be the sort field at once.
 display text from right to left (RTL), such as Arabic or Hebrew. This
 setting currently only controls editing; to make sure the text displays
 correctly during review, you'll need to adjust your
-[template](templates/styling.md).
+[template](templates/styling.md#text-direction).
 
 After you have added fields, you will probably want to add them to the front
 or back of your cards. For more information on that, please see the
