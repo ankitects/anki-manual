@@ -125,9 +125,6 @@ in, and the order they will be reviewed in. If you select "most lapses"
 and a limit of 20 for example, then Anki will show you only the 20 most
 lapsed cards.
 
-For efficiency reasons, if your cram deck contains more than 1000 cards,
-only 1000 cards will be shown as due on the deck list and study screens.
-
 ## Order
 
 The "cards selected by" option controls the order that cards will appear
