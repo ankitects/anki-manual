@@ -162,25 +162,25 @@ decks or manage your note types.
 
 ### Using Decks Appropriately
 
-[Decks](getting-started.md#decks) are designed to divide your content up into broad categories that
-you wish to study separately, such as English, Geography, and so on. You
-may be tempted to create lots of little decks to keep your content
-organized, such as "my geography book chapter 1", or "food verbs", but
+[Decks](getting-started.md#decks) are designed to divide your content up into
+broad categories that you wish to study separately, such as English, Geography,
+and so on. You may be tempted to create lots of little decks to keep your
+content organized, such as "my geography book chapter 1", or "food verbs", but
 this is not recommended, for the following reasons:
 
-- Lots of little decks mean you end up reviewing cards in a
-  recognizable order. Whether it is because you are clicking on each
-  deck in turn (which is slow) or you have added a number of decks under
-  a single parent deck, you will end up seeing all the "chapter 1" or
-  "food verb" cards together. This makes it easier to answer the
+- Lots of little decks may mean you end up seeing cards in a
+  recognizable order. On older scheduler versions, new cards can only
+  be introduced in deck order. And if you were planning to click on each deck
+  in turn (which is slow), you will end up seeing all the "chapter 1" or
+  "food verb" reviews together. This makes it easier to answer the
   cards, as you can guess them from the context, which leads to weaker
   memories. When you need to recall the word or phrase outside Anki,
-  you won't have the luxury of being shown related content first!
+  you won't always have the luxury of being shown related content first!
 
 - While less of a problem than it was in earlier Anki versions,
   adding hundreds of decks may cause slowdowns, and very large deck
   trees with thousands of items can actually break the display of
-  the deck list in the current implementation.
+  the deck list in Anki versions before 2.1.50.
 
 ### Using Tags
 
