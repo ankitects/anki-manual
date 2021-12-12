@@ -119,7 +119,7 @@ find notes in a field starting with "fr". Requires Anki 2.1.24+ or AnkiMobile 2.
 ## Tags, decks, cards and notes
 
 `tag:animal`  
-find notes with the tag "animal"
+find notes with the tag "animal", or subtags like "animal::mammal"
 
 `tag:none`  
 find notes with no tags
