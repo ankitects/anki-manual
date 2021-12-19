@@ -126,8 +126,8 @@ about forgetting".
 
 While there is no denying the huge impact SuperMemo has had on the
 field, it is not without its problems. The program is often criticized
-for being buggy and difficult to navigate. It only runs on Windows
-computers. It is proprietary software, meaning that end-users cannot extend it
+for being buggy and difficult to navigate.
+It is proprietary software, meaning that end-users cannot extend it
 or access the raw data. And while very old versions have been made available
 for free, they are quite limited for modern use.
 
