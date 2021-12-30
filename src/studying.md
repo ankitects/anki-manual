@@ -244,7 +244,7 @@ contains. Thus, if you select your “French” deck, the subdecks
 “French::Vocab” and “French::My Textbook::Lesson 1” will be shown as
 well.
 
-The way Anki Anki fetches cards from the decks depends on the algorithm used:
+The way Anki fetches cards from the decks depends on the algorithm used:
 
 - With the v1 scheduler, when a deck has subdecks, the cards will appear from [each deck in
 turn](studying.md#display-order).
