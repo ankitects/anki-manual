@@ -1,6 +1,6 @@
 # Windows display issues
 
-On Windows, there are three ways of content being displayed on screen. The the
+On Windows, there are three ways of content being displayed on screen. The
 default is *software*, which is slower, but the most compatible. There are two
 other options that are faster: *OpenGL* and *ANGLE*. They are faster, but they
 may not work, or may cause display issues such as missing menubars, blank
