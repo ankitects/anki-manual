@@ -231,6 +231,12 @@ it has a third field called “Add Reverse.” If you enter any text into
 that field, a reverse card will be created. More information about this
 is available in the [Cards and Templates](templates/intro.md) section.
 
+**Basic (type in the answer)** 
+This is essentially Basic, with an extra text box on the front where you
+can type your answer in, after flipping to the back your input would be
+checked and compared with the answer. More information is available in the
+[Checking Your Answer](templates/fields.md#checking-your-answer) section.
+
 **Cloze**  
 A note type which makes it easy to select text and turn it into a cloze
 deletion (e.g., “Man landed on the moon in \[…​\]” → “Man landed on the
