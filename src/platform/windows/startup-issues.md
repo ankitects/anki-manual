@@ -2,6 +2,16 @@
 
 <!-- toc -->
 
+## No error, but app does not display
+
+Recently there have been some reports of Anki failing to appear, without
+any error message showing up. We suspect this was caused by a recent Windows
+update. If you run into this situation, you can either try the Qt6 beta build:
+
+https://betas.ankiweb.net/
+
+Or you can try the old 2.1.35-alternate build.
+
 ## Windows updates
 
 When starting Anki, you may receive a message like the following:
