@@ -70,5 +70,4 @@ Please see <https://translating.ankiweb.net>
 
 Anki's source code is available at <https://github.com/ankitects/anki>
 
-Before contributing, please see the contributing.md file in that
-repo.
+Before contributing, please see [contributing.md](https://github.com/ankitects/anki/blob/main/docs/contributing.md).
