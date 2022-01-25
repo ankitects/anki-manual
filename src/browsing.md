@@ -81,6 +81,8 @@ to append the resulting search to the current search.
 If you regularly search for the same thing,
 you can save the current search by right-clicking the topmost item in the sidebar,
 choosing “Save Current Search” and typing in a name.
+You can also drag and drop any sidebar item onto this area to add an equivalent
+saved search, basically pinning it to the top.
 
 ### Editing Items
 
