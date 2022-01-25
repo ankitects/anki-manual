@@ -17,8 +17,8 @@ of the search area, or pressing <kbd>Alt</kbd>+<kbd>T</kbd>. The switch also
 indicates if **C**ards or **N**otes are currently shown.
 
 **Note**: For the sake of simplicity, this manual generally assumes the Cards
-mode to be the active one. Whenever "cards" is mentioned while selecting, finding, etc.,
-the reader may substitute it for “notes", depending on the active mode.
+mode to be the active one. Whenever selecting/finding/etc. "cards" is mentioned,
+the reader may substitute it for "cards or notes depending on the active mode".
 
 ## Sidebar
 
@@ -46,7 +46,7 @@ cards from either of the decks in the same view.
 You can hold down <kbd>Alt</kbd> (<kbd>Option</kbd> on Mac) in order to reverse the
 search (prepend a `-`): for example, to show all cards in a current deck that
 do _not_ have a certain tag. <kbd>Alt</kbd>/<kbd>Option</kbd> can be combined with
-either <kbd>Ctrl</kbd> or <kbd>Shift</kbd> (e.g. clicking <kbd>Ctrl</kbd>+<kbd>Alt</kbd>
+either <kbd>Ctrl</kbd> or <kbd>Shift</kbd> (e.g. clicking with <kbd>Ctrl</kbd>+<kbd>Alt</kbd>
 will result in adding a new search term that is negated).
 
 On Anki 2.1.39+, you can also hold down both <kbd>Ctrl</kbd> and
@@ -54,15 +54,15 @@ On Anki 2.1.39+, you can also hold down both <kbd>Ctrl</kbd> and
 same kind of search with the new one.
 Let's say you had previously typed in a complicated search expression like
 `deck:Swahili (is:due or tag:important)`
-and now want to perform the same search for your Urdu deck. You can hold
+and now want to perform the same search for your Urdu deck. You can hold down
 <kbd>Ctrl</kbd>+<kbd>Shift</kbd> while clicking the Urdu deck in the sidebar to obtain the
 following search expression:
 `deck:Urdu (is:due or tag:important)`.
 
 ### Selection Tool
 
-The Selection tool allows for selecting multiple items at the same time by holding down <kbd>Ctrl</kbd>-
-and <kbd>Shift</kbd> together, while clicking. It also enables drag-and-drop to reorder decks and
+The Selection tool allows for selecting multiple items at the same time by holding down <kbd>Ctrl</kbd>
+or <kbd>Shift</kbd> while clicking. It also enables drag-and-drop to reorder decks and
 tags.
 
 Here is an example: Say you have the tags `Math`, `Calculus`, and `Algebra`.
@@ -72,7 +72,7 @@ both children of this tag. Behind the scene, Anki has renamed the two tags to
 `Math::Calculus` and `Math::Algebra` respectively and updated your notes accordingly.
 
 Another use case for selecting multiple items is searching: If you right-click on
-a selection of items, you can choose **Search &gt; All/Any Selected Items**. This
+a selection of items, you can choose **Search &gt; All/Any Selected**. This
 can be combined with keyboard modifiers as described in [Search Tool](#search-tool)
 to append the resulting search to the current search.
 
@@ -114,8 +114,9 @@ of the active mode. Therefore in Cards mode, a note is considered to be selected
 if any of its cards is selected, and in Notes mode, a card is considered to be selected
 if its note is selected.
 
-Other operations (like showing card information) only operate on a single card — the so-called
-_current_, card or note, which is usually the one that was last selected or clicked.
+Other operations (like showing card information) only operate on a single card
+or note. This is called the _current_ card or note, which is usually the one that
+was last selected or clicked.
 In Cards Mode, again, the current note is the note of the current card and in Notes
 mode, the current card is the first card of the current note.
 
@@ -183,7 +184,7 @@ turn offer various actions that can be performed in the browser.
 <!-- prettier-ignore -->
 | Name | Action |
 |-|-|
-| Undo | Cancels the most recently performed operation. |
+| Undo | Revert the most recently performed operation. |
 | Select All | Select all rows displayed. |
 | Select Notes | Show only the currently selected notes and select all rows.  |
 | Invert Selection | Select those rows not selected, and deselect the currently selected rows. |
