@@ -171,8 +171,8 @@ more information about cards and notes, see [Getting Started](getting-started.md
 For more information on formatting buttons, see [Editing](editing.md).
 
 You can see a preview of what the currently selected card would look
-like when reviewing by clicking the **Preview** button next to the search
-box. Note that this will not display any type-the-answer fields on your
+like when reviewing by clicking the **Preview** button at the top of the editing area.
+Note that this will not display any type-the-answer fields on your
 cards, which makes it easier to preview the cards quickly.
 In Notes mode, the preview is shown for the first card of the selected note.
 
