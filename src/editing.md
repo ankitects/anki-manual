@@ -242,7 +242,7 @@ versions; most users will want to use flags instead.
 For those who like to stay very organized, you can add fields to your
 notes to classify your content, such as "book", "page", and so on. Anki
 supports searching in specific fields, which means you can do a search
-for "book:'my book' page:63" and immediately find what you're looking
+for `"book:my book" page:63` and immediately find what you're looking
 for.
 
 ### Custom Study and Filtered Decks

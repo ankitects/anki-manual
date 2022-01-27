@@ -287,12 +287,12 @@ The **Optional filter** text box allows you to narrow down where Anki will
 look for duplicates. If you only want to search for duplicates in the
 "French Vocab" and "French Verbs" note types, you would enter:
 
-    note:'french vocab' or note:'french verbs'
+    "note:french vocab" or "note:french verbs"
 
 Or you might want to look only for duplicates in a particular deck, so
 you could use:
 
-    deck:'myDeck'
+    "deck:myDeck"
 
 The search syntax is the same as used when searching in the browser.
 For more information, see [Searching](searching.md).
