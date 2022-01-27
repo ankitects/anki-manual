@@ -223,9 +223,9 @@ they can be found in a submenu of the context menu.
 | Name | Action |
 |-|-|
 | Change Deck | Move currently selected cards to a different deck. |
-| Set Due Date | Turn cards into review cards, and make them due on a certain date. This can be useful for moving cards forward or back a few days when your study schedule is interrupted. Entering a range like `60-90` will give cards an interval between 60 and 90 days, which can be useful when you've imported a bunch of material you already know.
+| Set Due Date | Turn cards into review cards, and make them due on a certain date. This can be useful for moving cards forward or back a few days when your study schedule is interrupted. Entering a range like `60-90` will give new cards an interval between 60 and 90 days, which can be useful when you've imported a bunch of material you already know.
 | Forget | Move currently selected cards to the end of the new queue. The existing review history is preserved. |
-| Reposition | Change the order new cards will appear in. You can find out the existing positions by enabling the _due_ column, as described in the [table](#cardnote-table) section above. If you run the reposition command when multiple cards are selected, it will apply increasing numbers to each card in turn. By default the number increases by one for each card, but this can be adjusted by changing the "step" setting. The **Shift position of existing cards** option allows you to insert cards between currently existing ones, pushing the currently existing ones apart. For instance, if you have five cards and you want to move 3, 4, and 5 between 1 and 2, selecting this setting would cause the cards to end up in the order 1, 3, 4, 5, 2. By contrast, if you turn this option off, 1 and 2 will get the same position number (and it will thus be unpredictable which of the cards with the same number comes up first). Please note that when enabled, any card with a higher position will be modified, and all of those changed cards will need to be sent the next time you sync.  ||
+| Reposition | Change the order new cards will appear in. You can find out the existing positions by enabling the _due_ column, as described in the [table](#cardnote-table) section above. If you run the reposition command when multiple cards are selected, it will apply increasing numbers to each card in turn. By default the number increases by one for each card, but this can be adjusted by changing the "step" setting. The **Shift position of existing cards** option allows you to insert cards between currently existing ones, pushing the currently existing ones apart. For instance, if you have five cards and you want to move 3, 4, and 5 between 1 and 2, selecting this setting would cause the cards to end up in the order 1, 3, 4, 5, 2. By contrast, if you turn this option off, 1 and 2 will get the same position number (and it will thus be unpredictable which of the cards with the same number comes up first). Please note that when enabled, any card with a higher position will be modified, and all of those changed cards will need to be sent the next time you sync. |
 | Toggle Suspend | [Suspend](studying.md#editing-and-more) or unsuspend all selected cards, depending on whether the current card is suspended or not. |
 | Flag | Toggle the flags of all selected cards. Whether a flag is added or removed depends on whether the current card has the chosen flag. |
 | Info | Show various information about the current card, including its review history. For more information, see [Card Info](stats.md#card-info). |
@@ -237,37 +237,38 @@ parts of the browser, and to go up and down the card list.
 
 ## Find and Replace
 
-To replace text in selected notes, you can either:
+This dialog allows for replacing text on notes. As described above, it is available
+from the toolbar and the table's context menu.
 
-- Right click on selected notes in the _card list_, and click **Find and Replace**.
+The first input field is for the text that is going to be replaced, the second
+one for the replacement. Next, there is a dropdown menu that allows you to specify
+where Anki should look for text to replace: in a note's tags (requires Anki 2.1.45+),
+in all fields, or just in a specific field (only fields belonging to a selected
+note will be listed).
 
-- In the **Browser** window, click **Notes** in the menu bar and click **Find and Replace**.
+By default, only selected notes will be affected. If you want to lift that
+restriction, you can untick the first checkbox (requires Anki 2.1.45+).
 
 The regular expression option allows you to perform complex replacements.
-For example, given the following text in a field:
+For example, assume there is the following text in a field:
 
     <img src="pic.jpg" />
 
-Searching for:
+We use these settings:
 
-    <img src="(.+?)" />
+![Find and Replace dialog](media/find_and_replace.png)
 
-and on Anki 2.1.28, replacing with:
+(Note that on Anki versions prior to 2.1.28, you would need to replace `${1}`
+with `\1`.)
 
-    ${1}
-
-on older Anki versions, replacing with:
-
-    \1
-
-Will change the card to:
+Then the assumed field content will change to:
 
     pic.jpg
 
 A full discussion on regular expressions is outside the scope of this document.
 There are a number of syntax guides available on the web:
 
-- For Anki 2.1.28+, see <https://docs.rs/regex/1.3.9/regex/#syntax>.
+- For Anki 2.1.28+, see <https://docs.rs/regex/latest/regex/index.html#syntax>.
 - For older Anki versions, see <http://docs.python.org/library/re.html>.
 
 ## Finding Duplicates
