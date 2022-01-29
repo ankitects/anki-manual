@@ -82,7 +82,7 @@ If you regularly search for the same thing,
 you can save the current search by right-clicking the topmost item in the sidebar,
 choosing “Save Current Search” and typing in a name.
 You can also drag and drop any sidebar item onto this area to add an equivalent
-saved search, basically pinning it to the top.
+saved search, effectively pinning it at the top.
 
 ### Editing Items
 
@@ -247,7 +247,7 @@ in all fields, or just in a specific field (only fields belonging to a selected
 note will be listed).
 
 By default, only selected notes will be affected. If you want to lift that
-restriction, you can untick the first checkbox (requires Anki 2.1.45+).
+restriction, you can untick the "selected notes only" checkbox (requires Anki 2.1.45+).
 
 The regular expression option allows you to perform complex replacements.
 For example, assume there is the following text in a field:
