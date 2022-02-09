@@ -378,7 +378,7 @@ you need to tell Anki not to treat them specially.
 ### Raw input
 
 Text preceded by certain keywords (like `re:`) will be treated as raw input. That is,
-the charcters listed above largely lose their special meaning. In such a context, only
+the characters listed above largely lose their special meaning. In such a context, only
 a minimum of escaping is required to prevent ambiguity:
 
 - `"` must be escaped.
