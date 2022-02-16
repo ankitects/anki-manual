@@ -199,7 +199,7 @@ cards of the same note.
    With the [2.1 scheduler](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html),
    however, burying cards does not reset a card's learning steps.
 
-- **Set Due Card**: Make cards review cards, and [make them due on a certain date.](browsing.md#cards)
+- **Set Due Date**: Put cards in the review queue, and [make them due on a certain date.](browsing.md#cards)
 
 - **Suspend Card / Note**: Hides a card or all of the note’s cards from review until they are
    manually unsuspended (by clicking the suspend button in the browser).
