@@ -450,6 +450,13 @@ So <code>w:e:b</code> is a word boundary search for <code>e:b</code>, <code>w\:e
 <code>w:e:b</code> and <code>w\:e:b</code> searches the field <code>w:e</code> for <code>b</code> (see
 <a href="#limiting-to-a-field">field searches</a>).</p>
 </li>
+<li>
+<p><code>&amp;</code>, <code>&lt;</code>, and <code>&gt;</code><br />
+<code>&amp;</code>, <code>&lt;</code>, and <code>&gt;</code> are treated as HTML when searching in Anki, and as such searches
+containing them don't work as expected. However, you can search for them by using their
+corresponding HTML entity names (<code>&amp;amp;</code> for <code>&amp;</code>, <code>&amp;lt;</code> for <code>&lt;</code>, and <code>&amp;gt;</code> for <code>&gt;</code>).
+For example, searching <code>&amp;lt;&amp;amp;text&amp;gt;</code> searches for a card with <code>&lt;&amp;text&gt;</code> in a field.</p>
+</li>
 </ul>
 <h3 id="raw-input"><a class="header" href="#raw-input">Raw input</a></h3>
 <p>Text preceded by certain keywords (like <code>re:</code>) will be treated as raw input. That is,
