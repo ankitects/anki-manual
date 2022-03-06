@@ -335,11 +335,11 @@ and may lead to weaker memories.
 ## Audio
 
 By default, Anki automatically plays audio on the front and back of
-cards. If you uncheck 'automatically play audio', Anki will not play
+cards. If you check *Don't play audio automatically*, Anki will not play
 audio until you press the replay audio key, `r` or `F5`.
 
-*Always include question side when replaying audio* controls whether audio from
-the question side should be played when replaying the audio while an answer is
+*Skip question when replaying answer* controls whether audio from
+the question side should be skipped when replaying the audio while an answer is
 shown. Please note that it does not control what happens when you show the
 answer; for that please see [this section](templates/fields.md#special-fields).
 
