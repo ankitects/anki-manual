@@ -18,3 +18,9 @@ echo auto > %APPDATA%\Anki2\gldriver
 ```
 
 The default is `software`; the other two drivers you can try are `angle` and `auto`.
+
+## Full screen
+
+Anki 2.1.50+ comes with a full screen mode, but due to various issues it had to
+be disabled while `OpenGL` is used. See the above for how to change to a full
+screen supporting driver.
