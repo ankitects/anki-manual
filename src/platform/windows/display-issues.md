@@ -43,6 +43,7 @@ top of the file anki-console.bat, and run it instead of anki.exe.
 
 ## Full screen
 
-Anki 2.1.50+ comes with a full screen mode, but due to various issues it had to
-be disabled while `OpenGL` is used. See the above for how to change to a full
-screen supporting driver.
+Anki 2.1.50+ comes with a full screen mode, but due to various issues, it had to
+be disabled while `OpenGL` is used. Turning on software rendering as described
+above will allow the full screen option to be used, though please bear in mind
+that rendering performance may suffer.
