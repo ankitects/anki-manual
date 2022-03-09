@@ -142,12 +142,21 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="windows-display-issues"><a class="header" href="#windows-display-issues">Windows display issues</a></h1>
+<ul>
+<li><a href="#qt5">Qt5</a></li>
+<li><a href="#qt6">Qt6</a></li>
+<li><a href="#full-screen">Full screen</a></li>
+</ul>
 <p>On Windows, there are three ways of content being displayed on screen. The
 default is <em>software</em>, which is slower, but the most compatible. There are two
 other options that are faster: <em>OpenGL</em> and <em>ANGLE</em>. They are faster, but they
 may not work, or may cause display issues such as missing menubars, blank
 windows, and so on. Which one works best will depend on your computer.</p>
-<p>The display driver can be adjusted via the Tools&gt;Preferences menu. Make sure
+<p>If and how you can change this display method depends on which Anki version you
+are using, more precisely on the version of the used Qt toolkit.</p>
+<h2 id="qt5"><a class="header" href="#qt5">Qt5</a></h2>
+<p>This toolkit is used by all Anki versions prior to 2.1.50.
+Here, the display driver can be adjusted via the Tools&gt;Preferences menu. Make sure
 you restart Anki after adjusting it.</p>
 <p>If you’re unable to get to Anki’s preferences screen, and restarting Anki a few
 times does not help, you may need to manually adjust the graphics driver. You
@@ -155,6 +164,20 @@ can do this by starting cmd.exe and typing the following:</p>
 <pre><code class="language-bat">echo auto &gt; %APPDATA%\Anki2\gldriver
 </code></pre>
 <p>The default is <code>software</code>; the other two drivers you can try are <code>angle</code> and <code>auto</code>.</p>
+<h2 id="qt6"><a class="header" href="#qt6">Qt6</a></h2>
+<p>Anki 2.1.50+ is available with the more recent Qt6 toolkit. Here, the display
+driver cannot be easily changed, and <code>angle</code> is not supported anymore at all.
+However, it is still possible to use <code>software</code> by running Anki from
+cmd.exe after executing the following line:</p>
+<pre><code class="language-bat">set QT_OPENGL=software
+</code></pre>
+<p>If you want to make this setting permanent, you will have to add this line to the
+top of the file anki-console.bat, and run it instead of anki.exe.</p>
+<h2 id="full-screen"><a class="header" href="#full-screen">Full screen</a></h2>
+<p>Anki 2.1.50+ comes with a full screen mode, but due to various issues, it had to
+be disabled while <code>OpenGL</code> is used. Turning on software rendering as described
+above will allow the full screen option to be used, though please bear in mind
+that rendering performance may suffer.</p>
 
                     </main>
 
