@@ -370,7 +370,7 @@ you need to tell Anki not to treat them specially.
   So `w:e:b` is a word boundary search for `e:b`, `w\:e\:b` searches literally for
   `w:e:b` and `w\:e:b` searches the field `w:e` for `b` (see
   [field searches](#limiting-to-a-field)).
-  
+
 - `&`, `<`, and `>`  
   `&`, `<`, and `>` are treated as HTML when searching in Anki, and as such searches
   containing them don't work as expected. However, you can search for them by using their
@@ -392,7 +392,7 @@ a minimum of escaping is required to prevent ambiguity:
 ## Object IDs
 
 `nid:123`  
-all cards of the note with note id 123
+the note with note id 123
 
 `cid:123,456,789`  
 all cards with card ids 123, 456 or 789
