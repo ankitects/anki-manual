@@ -194,6 +194,14 @@ matches uppercase or lowercase a1, B1 or c1 that occurs anywhere in the "Front" 
 `front:re:^[a-c]1$`  
 like the above, but will not match if any other text falls before or after a1/b1/c1.
 
+Anki 2.1.50 added regex support for tags:
+
+`tag:re:^parent$`
+find notes with the exact tag "parent", disregarding any child tags like "parent::child"
+
+`"tag:re:lesson-(1[7-9]|2[0-5])"`
+find notes with tags "lesson-17" through "lesson-25"
+
 You can learn more about regular expressions here: <https://regexone.com/lesson/introduction_abcs>
 
 Some things to be aware of:
