@@ -89,7 +89,7 @@ Things to note from the above:
 - Standard searches are case insensitive for Latin characters - a-z will
   match A-Z, and vice versa. Other characters such as Cyrillic are case sensitive
   in a standard search, but can be made case insensitive by searching on a word
-  boundary or regular expression (w:, re:).
+  boundary or regular expression (`w:`, `re:`).
 
 ## Limiting to a field
 
@@ -150,7 +150,7 @@ search for Forward cards
 
 `card:1`  
 search for cards by template number - eg, to find the second cloze
-deletion for a note, you’d use card:2
+deletion for a note, you’d use `card:2`
 
 `note:basic`  
 search for cards with a Basic note type
@@ -198,7 +198,7 @@ You can learn more about regular expressions here: <https://regexone.com/lesson/
 
 Some things to be aware of:
 
-- The search is case-insensitive by default; use (?-i) at the start to turn on case sensitivity.
+- The search is case-insensitive by default; use `(?-i)` at the start to turn on case sensitivity.
 - Some text like spaces and newlines may be represented differently in HTML - you can
   use the HTML editor in the editing screen to see the underlying HTML contents.
 - For the specifics of Anki's regex support, please see the regex crate documentation: <https://docs.rs/regex/1.3.9/regex/#syntax>
