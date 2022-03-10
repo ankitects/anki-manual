@@ -408,6 +408,3 @@ all cards with card ids 123, 456 or 789
 Note and card IDs can be found in the [card info](stats.md) dialog in the
 browser. These searches may also be helpful when doing add-on
 development or otherwise working closely with the database.
-
-Object IDs will not work in AnkiMobile, and are not intended to
-be used in filtered decks at the moment.
