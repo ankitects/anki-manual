@@ -284,10 +284,6 @@ cards that have moved into relearning more than 3 times
 `prop:ease!=2.5`  
 cards easier or harder than default
 
-Note that due only matches review cards and learning cards with an
-interval of a day or more: cards in learning with small intervals like
-10 minutes are not included.
-
 ## Recent Events
 
 ### Added
