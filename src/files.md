@@ -166,7 +166,7 @@ correctly.
 ## Backups
 
 Each time your collection is closed (when closing Anki, switching
-profiles, or synchronizing your deck), Anki exports your collection into
+profiles, or doing a full deck synchronization), Anki exports your collection into
 the backups folder. By default Anki will store up to 30 backups; you can
 adjust this in the [preferences](preferences.md).
 
