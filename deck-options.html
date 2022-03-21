@@ -221,7 +221,7 @@ arrow icon in the top right of the Deck Options window. The options are:</p>
 <li><strong>Add</strong>: Add a new preset, with the default options.</li>
 <li><strong>Clone</strong>: Clone your current present, which is useful if you
 just want to modify certain options, keeping the rest as they are.</li>
-<li><strong>Rename</strong>  Changes the name of the current preset.</li>
+<li><strong>Rename</strong> Changes the name of the current preset.</li>
 <li><strong>Delete</strong> Deletes the current preset. This will require that the next sync is
 a one-way sync.</li>
 <li><strong>Save to all subdecks</strong>. Like <em>Save</em>, but also assigns the selected preset to all
@@ -248,18 +248,12 @@ deck you select to study, not the deck of the current card.</li>
 </code></pre>
 <p>Preset 1 and 2 are identical, with two exceptions:</p>
 <ul>
-<li>Preset 1:
-<ul>
+<li>Preset 1:</li>
 <li>New Cards - Learning steps: 1m 10m</li>
 <li>Display Order - New/review priority: Mix with reviews</li>
-</ul>
-</li>
-<li>Preset 2:
-<ul>
+<li>Preset 2:</li>
 <li>New Cards - Learning steps: 20m 2h</li>
 <li>Display Order - New/review priority: Show after reviews</li>
-</ul>
-</li>
 </ul>
 <p>If you choose to study Deck A:</p>
 <ul>
@@ -284,14 +278,14 @@ you’ll get at most 15 cards from either child deck, and only 20 cards in total
 <p>In the v1 or v2 scheduler, each parent applies its limits to its children. If you
 have decks in a grandparent-parent-child arrangement, both the grandparent and
 parent limits will alter how many cards are shown from the child, even if you
-click directly on the child. In the v3 scheduler, this has been simplified, and 
+click directly on the child. In the v3 scheduler, this has been simplified, and
 now each deck's limit controls how many cards from that specific deck can be used.
 Imagine that you have this collection:</p>
-<pre><code>- Parent deck (New Cards/Day: 20) 
+<pre><code>- Parent deck (New Cards/Day: 20)
   - Child deck (New Cards/Day: 7)
     - Grandchild deck A (New Cards/Day: 5)
       - Cards 1 to 50
-    - Grandchild deck B (New Cards/Day: 5) 
+    - Grandchild deck B (New Cards/Day: 5)
       - Cards 51 to 100
 </code></pre>
 <ul>
@@ -335,7 +329,7 @@ so those learning cards will be subject to the daily limit.</p>
 <h2 id="new-cards"><a class="header" href="#new-cards">New Cards</a></h2>
 <p>The settings in this section only affect new cards and cards in initial
 <a href="studying.html#learningrelearning-cards">learning</a> mode. Once a card
-has graduated (i.e. there are no more learning steps for this card), it  becomes a
+has graduated (i.e. there are no more learning steps for this card), it becomes a
 <a href="studying.html#review-cards">review card</a>, and the
 settings in this section are no longer applicable.</p>
 <h3 id="learning-steps"><a class="header" href="#learning-steps">Learning Steps</a></h3>
@@ -366,7 +360,7 @@ examples.</p>
 With small steps, the cards are shown as soon as the delay has passed,
 in preference to other waiting cards like reviews. This is done so that
 you can answer the card as closely to your requested delay as possible.
-In contrast, if the interval crosses a day boundary, it is automatically 
+In contrast, if the interval crosses a day boundary, it is automatically
 converted to days.</p>
 <h3 id="graduating-interval"><a class="header" href="#graduating-interval">Graduating Interval</a></h3>
 <p>The delay in days between answering &quot;Good&quot; on a learning card with no steps left,
@@ -381,7 +375,7 @@ as long as the <em>graduating interval</em>, and typically a few days longer.</p
 <h3 id="insertion-order"><a class="header" href="#insertion-order">Insertion Order</a></h3>
 <p>Controls whether Anki should add new cards into the deck randomly, or in order.
 When you change this option, Anki will re-sort the decks using the current
-Option Group.  Cards with a lower due number will be shown first when studying, by
+Option Group. Cards with a lower due number will be shown first when studying, by
 default. Changing this option will automatically update the existing position of
 new cards.</p>
 <p>One caveat with random order mode: if you review many of your new cards, and then
@@ -475,8 +469,8 @@ and may lead to weaker memories.</p>
 <p>By default, Anki automatically plays audio on the front and back of
 cards. If you check <em>Don't play audio automatically</em>, Anki will not play
 audio until you press the replay audio key, <code>r</code> or <code>F5</code>.</p>
-<p><em>Skip question when replaying answer</em> controls whether audio from
-the question side should be skipped when replaying the audio while an answer is
+<p><em>Always include question side when replaying audio</em> controls whether audio from
+the question side should be played when replaying the audio while an answer is
 shown. Please note that it does not control what happens when you show the
 answer; for that please see <a href="templates/fields.html#special-fields">this section</a>.</p>
 <h2 id="advanced"><a class="header" href="#advanced">Advanced</a></h2>
@@ -496,7 +490,7 @@ easiness may increase or decrease from its starting value.</p>
 <h3 id="easy-bonus"><a class="header" href="#easy-bonus">Easy Bonus</a></h3>
 <p>An extra multiplier applied to the interval when a review card is answered
 <code>Easy</code>. With the default value of 1.30, <code>Easy</code> will give an interval that is
-1.3 times the <code>Good</code> interval (e.g. if the last interval was 10 days, the next 
+1.3 times the <code>Good</code> interval (e.g. if the Good interval was 10 days, the Easy
 interval would be around 13 days).</p>
 <h3 id="interval-modifier"><a class="header" href="#interval-modifier">Interval Modifier</a></h3>
 <p>An extra multiplier that is applied to all reviews. At its default of 1.00 it
