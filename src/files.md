@@ -146,7 +146,7 @@ drive G.
 
 - Create a text file called G:\\anki.bat with the following text:
 
-    g:\anki\anki.exe -b g:\ankidata
+  g:\anki\anki.exe -b g:\ankidata
 
 If you would like to prevent the black command prompt window from
 remaining open, you can instead use:
@@ -165,50 +165,7 @@ correctly.
 
 ## Backups
 
-Each time your collection is closed (when closing Anki, switching
-profiles, or synchronizing your deck), Anki exports your collection into
-the backups folder. By default Anki will store up to 30 backups; you can
-adjust this in the [preferences](preferences.md).
-
-Automatic backups do not protect against disk or computer failure, and
-do not extend to your media. To keep your collections safe, please
-consider making manual backups too.
-
-The easiest way to make a manual backup is to use the File&gt;Export
-menu item to export all decks with scheduling and media information
-included, which will save your data to a .colpkg file.
-
-If you want to back up multiple profiles and your add-ons as well, you
-can make a complete copy of your [Anki folder](#file-locations). Please make sure
-you close Anki first, as backups may be corrupt, if they are run while Anki is
-open.
-
-To restore from an automatic backup:
-
-1. From the File menu, select Switch Profile to show the Profiles
-    window.
-
-2. Select the profile you wish to restore on the left.
-
-3. Click the Open Backup…​ button.
-
-4. Choose Yes and the available backups will appear.
-
-5. Open a backup based on the date you wish to restore to.
-
-6. Check that that the backup that was restored was the one you
-    intended. If you wish to try a different backup, return to step 1.
-
-7. Anki has disabled automatic syncing and backups while you check the
-    backup. When you're happy with the backup you've selected, quit Anki
-    and start it again to return to the normal behaviour.
-
-Anki also logs deleted notes to a text file called deleted.txt in your
-profile folder. These notes are in a text format that can be read by
-File&gt;Import, though please note the import feature only supports a
-single note type at one time, so if you have deleted notes from
-different note types, you'll need to split the file into separate files
-for each note type first.
+Please see [this section](./backups.md).
 
 ## Inaccessible Harddisk
 
@@ -229,19 +186,19 @@ are listed below. As this is somewhat complicated, please ask someone
 knowledgeable about Windows if you are not sure.
 
 1. Click on the start bar, and type in %temp% (including the percents),
-    then hit <kbd>Enter</kbd>.
+   then hit <kbd>Enter</kbd>.
 
 2. Go up one folder, and locate the temp folder. Right click on it, and
-    choose Properties.
+   choose Properties.
 
 3. In the security tab, click on Advanced.
 
 4. Click on the Owner tab. If you're not listed as the owner, click the
-    button to take ownership.
+   button to take ownership.
 
 5. On the permissions tab, ensure that you have full control. On a
-    default W7 install the control will actually be inherited from
-    c:\\users\\your-username.
+   default W7 install the control will actually be inherited from
+   c:\\users\\your-username.
 
 ## Corrupt Collections
 

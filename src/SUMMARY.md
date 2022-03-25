@@ -40,6 +40,7 @@
 - [Searching](searching.md)
 - [Importing](importing.md)
 - [Exporting](exporting.md)
+- [Backups](backups.md)
 - [Managing Files](files.md)
 - [Statistics](stats.md)
 - [Media](media.md)
