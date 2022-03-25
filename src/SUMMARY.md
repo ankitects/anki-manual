@@ -31,6 +31,7 @@
   - [Field Replacements](templates/fields.md)
   - [Card Generation](templates/generation.md)
   - [Styling & HTML](templates/styling.md)
+  - [Checks and Errors](templates/errors.md)
 - [Preferences](preferences.md)
 - [Deck Options](deck-options.md)
 - [Syncing with AnkiWeb](syncing.md)
