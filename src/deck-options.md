@@ -72,7 +72,7 @@ Preset 1 and 2 are identical, with two exceptions:
 
 If you choose to study Deck A:
 
-- Learning steps for all new cards will be 20m 2h (preset 2 applies)
+- Learning steps for all new cards will be 1m 10m (preset 1 applies)
 - All new cards will be mixed with reviews (preset 1 applies)
 
 If you choose to study Subdeck B:
@@ -341,7 +341,7 @@ and may lead to weaker memories.
 ## Audio
 
 By default, Anki automatically plays audio on the front and back of
-cards. If you check *Don't play audio automatically*, Anki will not play
+cards. If you check _Don't play audio automatically_, Anki will not play
 audio until you press the replay audio key, `r` or `F5`.
 
 _Always include question side when replaying audio_ controls whether audio from
