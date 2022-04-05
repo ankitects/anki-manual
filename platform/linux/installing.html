@@ -150,7 +150,7 @@
 <li><a href="#problems">Problems</a></li>
 </ul>
 <h2 id="requirements"><a class="header" href="#requirements">Requirements</a></h2>
-<p>The packaged version requires a recent 64 bit Intel/AMD Linux, and common
+<p>The packaged version requires a recent 64 bit Intel/AMD Linux with glibc, and common
 libraries like libwayland-client and systemd. If you are on a different
 architecture, or a barebones Linux distro, you will not be able to use the
 packaged version, but you may be able to use the <a href="https://betas.ankiweb.net/#via-pypipip">Python
@@ -161,6 +161,7 @@ installing:</p>
 <pre><code class="language-shell">sudo apt install libxcb-xinerama0
 </code></pre>
 <p>If Anki fails to start after installing, you may be <a href="./missing-libraries.html">missing other libraries</a>.</p>
+<p>Anki's build system only supports glibc, so musl-based distros are not currently supported.</p>
 <h2 id="installing"><a class="header" href="#installing">Installing</a></h2>
 <p>To install Anki:</p>
 <ol>
