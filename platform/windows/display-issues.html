@@ -165,14 +165,12 @@ can do this by starting cmd.exe and typing the following:</p>
 </code></pre>
 <p>The default is <code>software</code>; the other two drivers you can try are <code>angle</code> and <code>auto</code>.</p>
 <h2 id="qt6"><a class="header" href="#qt6">Qt6</a></h2>
-<p>Anki 2.1.50+ is available with the more recent Qt6 toolkit. Here, the display
-driver cannot be easily changed, and <code>angle</code> is not supported anymore at all.
-However, it is still possible to use <code>software</code> by running Anki from
-cmd.exe after executing the following line:</p>
-<pre><code class="language-bat">set QT_OPENGL=software
+<p>Anki 2.1.50+ is available with the more recent Qt6 toolkit. The new toolkit
+defaults to having graphics acceleration enabled. If you run into display issues,
+you can try switching to software mode:</p>
+<pre><code class="language-bat">echo software &gt; %APPDATA%\Anki2\gldriver6
 </code></pre>
-<p>If you want to make this setting permanent, you will have to add this line to the
-top of the file anki-console.bat, and run it instead of anki.exe.</p>
+<p>To revert to the default behaviour, change <code>software</code> to <code>auto</code>, or delete that file.</p>
 <h2 id="full-screen"><a class="header" href="#full-screen">Full screen</a></h2>
 <p>Anki 2.1.50+ comes with a full screen mode, but due to various issues, it had to
 be disabled while <code>OpenGL</code> is used. Turning on software rendering as described
