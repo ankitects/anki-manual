@@ -10,6 +10,6 @@ recommend you try both settings, and see which one works best for you.
 
 If you're unable to open Anki, you can adjust the driver in a terminal,
 by writing either `auto` or `software` into
-`~/.local/share/Anki2/gldriver`. Please note that if
+`~/.local/share/Anki2/gldriver` (`gldriver6` on Qt6). Please note that if
 you’re using nouveau, it is known to be buggy, and it only supports
 software mode.

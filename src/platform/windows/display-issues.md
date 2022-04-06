@@ -29,17 +29,15 @@ The default is `software`; the other two drivers you can try are `angle` and `au
 
 ## Qt6
 
-Anki 2.1.50+ is available with the more recent Qt6 toolkit. Here, the display
-driver cannot be easily changed, and `angle` is not supported anymore at all.
-However, it is still possible to use `software` by running Anki from
-cmd.exe after executing the following line:
+Anki 2.1.50+ is available with the more recent Qt6 toolkit. The new toolkit
+defaults to having graphics acceleration enabled. If you run into display issues,
+you can try switching to software mode:
 
 ```bat
-set QT_OPENGL=software
+echo software > %APPDATA%\Anki2\gldriver6
 ```
 
-If you want to make this setting permanent, you will have to add this line to the
-top of the file anki-console.bat, and run it instead of anki.exe.
+To revert to the default behaviour, change `software` to `auto`, or delete that file.
 
 ## Full screen
 
