@@ -120,3 +120,7 @@ The network tab contains options related to syncing with AnkiWeb.
   ask you whether you wish to upload or download. This is useful if
   you have made some changes accidentally, and wish to overwrite them
   with an older version that is on AnkiWeb.
+
+## Backups
+
+Please, see [this](backups.md#automatic-backups) section of the manual
