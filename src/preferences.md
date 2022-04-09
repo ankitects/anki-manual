@@ -16,6 +16,8 @@ black background. Some card templates may need to be modified to work
 properly with this option enabled - please see [night mode
 styling](templates/styling.md#night-mode) for more information.
 
+From 2.1.50+ there is an option to switch to day or night mode automatically. 
+
 **Video driver**  
 Anki's libraries need a video driver to draw content on the screen.
 Due to different hardware and software configurations, the driver that
@@ -23,7 +25,7 @@ works best on your machine may vary. ANGLE and OpenGL will perform better
 than the software option, but they may not function correctly on some
 systems. On Macs, you will almost always want to use the OpenGL option.
 
-Note: In 2.1.50+ (Qt6), please, check [this](./platform/windows/display-issues.md#qt6)
+Note: If you're using 2.1.50+ (Qt6), please, check [this](./platform/windows/display-issues.md#qt6)
 
 **Show play buttons**  
 Whether a clickable (re)play button will be shown in the review screen
