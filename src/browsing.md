@@ -17,8 +17,8 @@ of the search area, or pressing <kbd>Alt</kbd>+<kbd>T</kbd>. The switch also
 indicates if **C**ards or **N**otes are currently shown.
 
 **Note**: For the sake of simplicity, this manual generally assumes the Cards
-mode to be the active one. Whenever "cards" is mentioned while selecting, finding, etc.,
-the reader may substitute it for “notes", depending on the active mode.
+mode to be the active one. Whenever selecting/finding/etc. "cards" is mentioned,
+the reader may substitute it for "cards or notes depending on the active mode".
 
 ## Sidebar
 
@@ -46,7 +46,7 @@ cards from either of the decks in the same view.
 You can hold down <kbd>Alt</kbd> (<kbd>Option</kbd> on Mac) in order to reverse the
 search (prepend a `-`): for example, to show all cards in a current deck that
 do _not_ have a certain tag. <kbd>Alt</kbd>/<kbd>Option</kbd> can be combined with
-either <kbd>Ctrl</kbd> or <kbd>Shift</kbd> (e.g. clicking <kbd>Ctrl</kbd>+<kbd>Alt</kbd>
+either <kbd>Ctrl</kbd> or <kbd>Shift</kbd> (e.g. clicking with <kbd>Ctrl</kbd>+<kbd>Alt</kbd>
 will result in adding a new search term that is negated).
 
 On Anki 2.1.39+, you can also hold down both <kbd>Ctrl</kbd> and
@@ -54,15 +54,15 @@ On Anki 2.1.39+, you can also hold down both <kbd>Ctrl</kbd> and
 same kind of search with the new one.
 Let's say you had previously typed in a complicated search expression like
 `deck:Swahili (is:due or tag:important)`
-and now want to perform the same search for your Urdu deck. You can hold
+and now want to perform the same search for your Urdu deck. You can hold down
 <kbd>Ctrl</kbd>+<kbd>Shift</kbd> while clicking the Urdu deck in the sidebar to obtain the
 following search expression:
 `deck:Urdu (is:due or tag:important)`.
 
 ### Selection Tool
 
-The Selection tool allows for selecting multiple items at the same time by holding down <kbd>Ctrl</kbd>-
-and <kbd>Shift</kbd> together, while clicking. It also enables drag-and-drop to reorder decks and
+The Selection tool allows for selecting multiple items at the same time by holding down <kbd>Ctrl</kbd>
+or <kbd>Shift</kbd> while clicking. It also enables drag-and-drop to reorder decks and
 tags.
 
 Here is an example: Say you have the tags `Math`, `Calculus`, and `Algebra`.
@@ -72,7 +72,7 @@ both children of this tag. Behind the scene, Anki has renamed the two tags to
 `Math::Calculus` and `Math::Algebra` respectively and updated your notes accordingly.
 
 Another use case for selecting multiple items is searching: If you right-click on
-a selection of items, you can choose **Search &gt; All/Any Selected Items**. This
+a selection of items, you can choose **Search &gt; All/Any Selected**. This
 can be combined with keyboard modifiers as described in [Search Tool](#search-tool)
 to append the resulting search to the current search.
 
@@ -81,6 +81,8 @@ to append the resulting search to the current search.
 If you regularly search for the same thing,
 you can save the current search by right-clicking the topmost item in the sidebar,
 choosing “Save Current Search” and typing in a name.
+You can also drag and drop any sidebar item onto this area to add an equivalent
+saved search, effectively pinning it at the top.
 
 ### Editing Items
 
@@ -114,8 +116,9 @@ of the active mode. Therefore in Cards mode, a note is considered to be selected
 if any of its cards is selected, and in Notes mode, a card is considered to be selected
 if its note is selected.
 
-Other operations (like showing card information) only operate on a single card — the so-called
-_current_, card or note, which is usually the one that was last selected or clicked.
+Other operations (like showing card information) only operate on a single card
+or note. This is called the _current_ card or note, which is usually the one that
+was last selected or clicked.
 In Cards Mode, again, the current note is the note of the current card and in Notes
 mode, the current card is the first card of the current note.
 
@@ -168,8 +171,8 @@ more information about cards and notes, see [Getting Started](getting-started.md
 For more information on formatting buttons, see [Editing](editing.md).
 
 You can see a preview of what the currently selected card would look
-like when reviewing by clicking the **Preview** button next to the search
-box. Note that this will not display any type-the-answer fields on your
+like when reviewing by clicking the **Preview** button at the top of the editing area.
+Note that this will not display any type-the-answer fields on your
 cards, which makes it easier to preview the cards quickly.
 In Notes mode, the preview is shown for the first card of the selected note.
 
@@ -183,7 +186,7 @@ turn offer various actions that can be performed in the browser.
 <!-- prettier-ignore -->
 | Name | Action |
 |-|-|
-| Undo | Cancels the most recently performed operation. |
+| Undo | Revert the most recently performed operation. |
 | Select All | Select all rows displayed. |
 | Select Notes | Show only the currently selected notes and select all rows.  |
 | Invert Selection | Select those rows not selected, and deselect the currently selected rows. |
@@ -220,9 +223,9 @@ they can be found in a submenu of the context menu.
 | Name | Action |
 |-|-|
 | Change Deck | Move currently selected cards to a different deck. |
-| Set Due Date | Turn cards into review cards, and make them due on a certain date. This can be useful for moving cards forward or back a few days when your study schedule is interrupted. Entering a range like `60-90` will give cards an interval between 60 and 90 days, which can be useful when you've imported a bunch of material you already know.
+| Set Due Date | Turn cards into review cards, and make them due on a certain date. This can be useful for moving cards forward or back a few days when your study schedule is interrupted. Entering a range like `60-90` will make the selected cards due between 60 and 90 days from now. New cards will have their interval set to the same delay, but reviews will be rescheduled without changing their current interval, unless '!' is included at the end of the range.
 | Forget | Move currently selected cards to the end of the new queue. The existing review history is preserved. |
-| Reposition | Change the order new cards will appear in. You can find out the existing positions by enabling the _due_ column, as described in the [table](#cardnote-table) section above. If you run the reposition command when multiple cards are selected, it will apply increasing numbers to each card in turn. By default the number increases by one for each card, but this can be adjusted by changing the "step" setting. The **Shift position of existing cards** option allows you to insert cards between currently existing ones, pushing the currently existing ones apart. For instance, if you have five cards and you want to move 3, 4, and 5 between 1 and 2, selecting this setting would cause the cards to end up in the order 1, 3, 4, 5, 2. By contrast, if you turn this option off, 1 and 2 will get the same position number (and it will thus be unpredictable which of the cards with the same number comes up first). Please note that when enabled, any card with a higher position will be modified, and all of those changed cards will need to be sent the next time you sync.  ||
+| Reposition | Change the order new cards will appear in. You can find out the existing positions by enabling the _due_ column, as described in the [table](#cardnote-table) section above. If you run the reposition command when multiple cards are selected, it will apply increasing numbers to each card in turn. By default the number increases by one for each card, but this can be adjusted by changing the "step" setting. The **Shift position of existing cards** option allows you to insert cards between currently existing ones, pushing the currently existing ones apart. For instance, if you have five cards and you want to move 3, 4, and 5 between 1 and 2, selecting this setting would cause the cards to end up in the order 1, 3, 4, 5, 2. By contrast, if you turn this option off, 1 and 2 will get the same position number (and it will thus be unpredictable which of the cards with the same number comes up first). Please note that when enabled, any card with a higher position will be modified, and all of those changed cards will need to be sent the next time you sync. |
 | Toggle Suspend | [Suspend](studying.md#editing-and-more) or unsuspend all selected cards, depending on whether the current card is suspended or not. |
 | Flag | Toggle the flags of all selected cards. Whether a flag is added or removed depends on whether the current card has the chosen flag. |
 | Info | Show various information about the current card, including its review history. For more information, see [Card Info](stats.md#card-info). |
@@ -234,37 +237,38 @@ parts of the browser, and to go up and down the card list.
 
 ## Find and Replace
 
-To replace text in selected notes, you can either:
+This dialog allows for replacing text on notes. As described above, it is available
+from the toolbar and the table's context menu.
 
-- Right click on selected notes in the _card list_, and click **Find and Replace**.
+The first input field is for the text that is going to be replaced, the second
+one for the replacement. Next, there is a dropdown menu that allows you to specify
+where Anki should look for text to replace: in a note's tags (requires Anki 2.1.45+),
+in all fields, or just in a specific field (only fields belonging to a selected
+note will be listed).
 
-- In the **Browser** window, click **Notes** in the menu bar and click **Find and Replace**.
+By default, only selected notes will be affected. If you want to lift that
+restriction, you can untick the "selected notes only" checkbox (requires Anki 2.1.45+).
 
 The regular expression option allows you to perform complex replacements.
-For example, given the following text in a field:
+For example, assume there is the following text in a field:
 
     <img src="pic.jpg" />
 
-Searching for:
+We use these settings:
 
-    <img src="(.+?)" />
+![Find and Replace dialog](media/find_and_replace.png)
 
-and on Anki 2.1.28, replacing with:
+(Note that on Anki versions prior to 2.1.28, you would need to replace `${1}`
+with `\1`.)
 
-    ${1}
-
-on older Anki versions, replacing with:
-
-    \1
-
-Will change the card to:
+Then the assumed field content will change to:
 
     pic.jpg
 
 A full discussion on regular expressions is outside the scope of this document.
 There are a number of syntax guides available on the web:
 
-- For Anki 2.1.28+, see <https://docs.rs/regex/1.3.9/regex/#syntax>.
+- For Anki 2.1.28+, see <https://docs.rs/regex/latest/regex/index.html#syntax>.
 - For older Anki versions, see <http://docs.python.org/library/re.html>.
 
 ## Finding Duplicates
@@ -283,12 +287,12 @@ The **Optional filter** text box allows you to narrow down where Anki will
 look for duplicates. If you only want to search for duplicates in the
 "French Vocab" and "French Verbs" note types, you would enter:
 
-    note:'french vocab' or note:'french verbs'
+    "note:french vocab" or "note:french verbs"
 
 Or you might want to look only for duplicates in a particular deck, so
 you could use:
 
-    deck:'myDeck'
+    "deck:myDeck"
 
 The search syntax is the same as used when searching in the browser.
 For more information, see [Searching](searching.md).

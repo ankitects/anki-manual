@@ -2,6 +2,15 @@
 
 <!-- toc -->
 
+## No error, but app does not appear
+
+Recently there have been some reports of Anki failing to appear, without
+any error message showing up. If you run into this situation, you can either:
+
+- Install the [latest windows-qt6 beta](https://apps.ankiweb.net/downloads/beta/?C=N&O=D) (try qt5 if you have add-on compatibility issues).
+- Or you can try [adjusting your decimal separator](https://forums.ankiweb.net/t/windows-update-broke-anki/1822/75) if it is not a period.
+- Or you can try the old 2.1.35-alternate build of Anki.
+
 ## Windows updates
 
 When starting Anki, you may receive a message like the following:
@@ -49,6 +58,16 @@ Some users have reported that Anki did not run for them until they right-clicked
 on the Anki icon and chose "Run as administrator". Anki stores all of its data in
 your user folder, and should not need administrator privileges, but it's something
 you can try if you've exhausted other options.
+
+## Multiple Anki installations present after updating
+
+If the update process leaves you with multiple Anki installs (such as within
+`C:\Program Files\Anki` and `C:\Program Files (x86)\Anki`), they may be left in a
+non-working state, and Anki may refuse to start without showing an error message.
+
+Try uninstalling all copies - you may be able to do so with the Windows `Apps &
+features` settings menu, or by running `uninstall.exe` in each Anki program
+folder. Afterward, install Anki again.
 
 ## Debugging
 

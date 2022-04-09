@@ -18,7 +18,11 @@ When updating a deck, AnkiWeb expects the deck to be at the same
 location as before. If you shared a deck when it was called "Korean
 Verbs" for example, and then renamed it to "Korean::Korean Verbs",
 resharing will not be able to update the existing copy. If you have
-forgotten the original name, please contact support.
+forgotten the original name, you can guess it by downloading the
+deck on ankiweb and importing it (File > Import) in a new profile
+(File > Switch profile > Add). Then you can copy the exact name of the
+deck when it was first shared. If this doesn't work, please contact 
+support.
 
 When you update a shared deck, users who downloaded the deck previously
 will not automatically receive updates. If they download the deck again
@@ -66,5 +70,4 @@ Please see <https://translating.ankiweb.net>
 
 Anki's source code is available at <https://github.com/ankitects/anki>
 
-Before contributing, please see the README.contributing file in that
-repo.
+Before contributing, please see [contributing.md](https://github.com/ankitects/anki/blob/main/docs/contributing.md).

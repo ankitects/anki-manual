@@ -4,7 +4,7 @@
 
 ## Requirements
 
-The packaged version requires a recent 64 bit Intel/AMD Linux, and common
+The packaged version requires a recent 64 bit Intel/AMD Linux with glibc, and common
 libraries like libwayland-client and systemd. If you are on a different
 architecture, or a barebones Linux distro, you will not be able to use the
 packaged version, but you may be able to use the [Python
@@ -20,22 +20,24 @@ sudo apt install libxcb-xinerama0
 
 If Anki fails to start after installing, you may be [missing other libraries](./missing-libraries.md).
 
+Anki's build system only supports glibc, so musl-based distros are not currently supported.
+
 ## Installing
 
 To install Anki:
 
 1. Download Anki from <https://apps.ankiweb.net> to your Downloads folder.
 2. Open a terminal and run the following commands, replacing the version
-number as appropriate.
+   number as appropriate.
 
 ```shell
-tar xjf Downloads/anki-2.1.48-linux.tar.bz2
-cd anki-2.1.48-linux
+tar xjf Downloads/anki-2.1.XX-linux.tar.bz2
+cd anki-2.1.XX-linux
 sudo ./install.sh
 ```
 
 3. You can then start Anki by typing 'anki' and hitting enter. If you encounter
-any issues, please see the links on the left.
+   any issues, please see the links on the left.
 
 ## Upgrading
 
@@ -56,7 +58,6 @@ Some add-ons have not been updated to support the latest Anki release yet. If an
 add-on you depend on has not been ported to the latest release yet, you may have
 more luck with 2.1.44 from the [releases
 page](https://github.com/ankitects/anki/releases).
-
 
 ## Problems
 

@@ -145,7 +145,7 @@ Only one field can be the sort field at once.
 display text from right to left (RTL), such as Arabic or Hebrew. This
 setting currently only controls editing; to make sure the text displays
 correctly during review, you'll need to adjust your
-[template](templates/styling.md).
+[template](templates/styling.md#text-direction).
 
 After you have added fields, you will probably want to add them to the front
 or back of your cards. For more information on that, please see the
@@ -162,25 +162,25 @@ decks or manage your note types.
 
 ### Using Decks Appropriately
 
-[Decks](getting-started.md#decks) are designed to divide your content up into broad categories that
-you wish to study separately, such as English, Geography, and so on. You
-may be tempted to create lots of little decks to keep your content
-organized, such as "my geography book chapter 1", or "food verbs", but
+[Decks](getting-started.md#decks) are designed to divide your content up into
+broad categories that you wish to study separately, such as English, Geography,
+and so on. You may be tempted to create lots of little decks to keep your
+content organized, such as "my geography book chapter 1", or "food verbs", but
 this is not recommended, for the following reasons:
 
-- Lots of little decks mean you end up reviewing cards in a
-  recognizable order. Whether it is because you are clicking on each
-  deck in turn (which is slow) or you have added a number of decks under
-  a single parent deck, you will end up seeing all the "chapter 1" or
-  "food verb" cards together. This makes it easier to answer the
+- Lots of little decks may mean you end up seeing cards in a
+  recognizable order. On older scheduler versions, new cards can only
+  be introduced in deck order. And if you were planning to click on each deck
+  in turn (which is slow), you will end up seeing all the "chapter 1" or
+  "food verb" reviews together. This makes it easier to answer the
   cards, as you can guess them from the context, which leads to weaker
   memories. When you need to recall the word or phrase outside Anki,
-  you won't have the luxury of being shown related content first!
+  you won't always have the luxury of being shown related content first!
 
 - While less of a problem than it was in earlier Anki versions,
   adding hundreds of decks may cause slowdowns, and very large deck
   trees with thousands of items can actually break the display of
-  the deck list in the current implementation.
+  the deck list in Anki versions before 2.1.50.
 
 ### Using Tags
 
@@ -196,7 +196,8 @@ Some people prefer using decks and subdecks to keep their cards organized,
 but using tags have a big advantage over decks for that: you can add several
 tags to a single note, but a single card can only belong to one deck, which 
 makes tags a more powerful and flexible categorization system than 
-decks in most cases. 
+decks in most cases. You can also organize tags in trees [in the same way
+as you can do for decks](getting-started.md#decks).
 
 For example, instead of creating a "food verbs" deck, you could add those 
 cards to your main language study deck, and tag the cards with "food" and
@@ -241,7 +242,7 @@ versions; most users will want to use flags instead.
 For those who like to stay very organized, you can add fields to your
 notes to classify your content, such as "book", "page", and so on. Anki
 supports searching in specific fields, which means you can do a search
-for "book:'my book' page:63" and immediately find what you're looking
+for `"book:my book" page:63` and immediately find what you're looking
 for.
 
 ### Custom Study and Filtered Decks

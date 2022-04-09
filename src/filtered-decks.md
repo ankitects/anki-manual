@@ -125,9 +125,6 @@ in, and the order they will be reviewed in. If you select "most lapses"
 and a limit of 20 for example, then Anki will show you only the 20 most
 lapsed cards.
 
-For efficiency reasons, if your cram deck contains more than 1000 cards,
-only 1000 cards will be shown as due on the deck list and study screens.
-
 ## Order
 
 The "cards selected by" option controls the order that cards will appear
@@ -190,7 +187,7 @@ In the v1 scheduler, the **custom steps** option allows you to override the
 home deck’s steps and provide your own steps instead. The provided steps apply to both
 cards being learnt, lapsed reviews, and reviews ahead of time. Please note, however, that
 from the [v2 scheduler](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html)
-filtered decks [no longer support custom steps].(https://forums.ankiweb.net/t/filtered-deck-interval-problem/11834/8)
+filtered decks [no longer support custom steps](https://forums.ankiweb.net/t/filtered-deck-interval-problem/11834/8).
 
 **v3 scheduler**
 

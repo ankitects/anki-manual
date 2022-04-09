@@ -151,12 +151,11 @@ content, so everything will be in one place.
 
 ## Firewalls
 
-Anki needs to be able to make outbound HTTPS connections to sync. At a
-minimum it must be able to connect to ankiweb.net, sync.ankiweb.net and
-syncN.ankiweb.net, where N is number between 2 and 6. These domains may
-change over time, and the IP addresses they point to may also change, so
-we recommend you allow wildcard access to \*.ankiweb.net to reduce the
-chance of the firewall rules needing to be updated in the future.
+Anki needs to be able to make outbound HTTPS connections to sync. It must be
+able to connect to ankiweb.net, sync.ankiweb.net, sync2.ankiweb.net, and so on.
+These domains may change over time, and the IP addresses they point to may also
+change, so we recommend you allow wildcard access to \*.ankiweb.net to reduce
+the chance of the firewall rules needing to be updated in the future.
 
 If you have a firewall on your machine, you should add an exception for
 Anki. If you are on a work or school network, please contact your

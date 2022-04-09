@@ -89,7 +89,7 @@ Things to note from the above:
 - Standard searches are case insensitive for Latin characters - a-z will
   match A-Z, and vice versa. Other characters such as Cyrillic are case sensitive
   in a standard search, but can be made case insensitive by searching on a word
-  boundary or regular expression (w:, re:).
+  boundary or regular expression (`w:`, `re:`).
 
 ## Limiting to a field
 
@@ -119,7 +119,7 @@ find notes in a field starting with "fr". Requires Anki 2.1.24+ or AnkiMobile 2.
 ## Tags, decks, cards and notes
 
 `tag:animal`  
-find notes with the tag "animal"
+find notes with the tag "animal", or subtags like "animal::mammal"
 
 `tag:none`  
 find notes with no tags
@@ -150,7 +150,7 @@ search for Forward cards
 
 `card:1`  
 search for cards by template number - eg, to find the second cloze
-deletion for a note, you’d use card:2
+deletion for a note, you’d use `card:2`
 
 `note:basic`  
 search for cards with a Basic note type
@@ -194,11 +194,19 @@ matches uppercase or lowercase a1, B1 or c1 that occurs anywhere in the "Front" 
 `front:re:^[a-c]1$`  
 like the above, but will not match if any other text falls before or after a1/b1/c1.
 
+Anki 2.1.50 added regex support for tags:
+
+`tag:re:^parent$`  
+find notes with the exact tag "parent", disregarding any child tags like "parent::child"
+
+`"tag:re:lesson-(1[7-9]|2[0-5])"`  
+find notes with tags "lesson-17" through "lesson-25"
+
 You can learn more about regular expressions here: <https://regexone.com/lesson/introduction_abcs>
 
 Some things to be aware of:
 
-- The search is case-insensitive by default; use (?-i) at the start to turn on case sensitivity.
+- The search is case-insensitive by default; use `(?-i)` at the start to turn on case sensitivity.
 - Some text like spaces and newlines may be represented differently in HTML - you can
   use the HTML editor in the editing screen to see the underlying HTML contents.
 - For the specifics of Anki's regex support, please see the regex crate documentation: <https://docs.rs/regex/1.3.9/regex/#syntax>
@@ -283,10 +291,6 @@ cards that have moved into relearning more than 3 times
 
 `prop:ease!=2.5`  
 cards easier or harder than default
-
-Note that due only matches review cards and learning cards with an
-interval of a day or more: cards in learning with small intervals like
-10 minutes are not included.
 
 ## Recent Events
 
@@ -375,10 +379,16 @@ you need to tell Anki not to treat them specially.
   `w:e:b` and `w\:e:b` searches the field `w:e` for `b` (see
   [field searches](#limiting-to-a-field)).
 
+- `&`, `<`, and `>`  
+  `&`, `<`, and `>` are treated as HTML when searching in Anki, and as such searches
+  containing them don't work as expected. However, you can search for them by using their
+  corresponding HTML entity names (`&amp;` for `&`, `&lt;` for `<`, and `&gt;` for `>`).
+  For example, searching `&lt;&amp;text&gt;` searches for a card with `<&text>` in a field.
+
 ### Raw input
 
 Text preceded by certain keywords (like `re:`) will be treated as raw input. That is,
-the charcters listed above largely lose their special meaning. In such a context, only
+the characters listed above largely lose their special meaning. In such a context, only
 a minimum of escaping is required to prevent ambiguity:
 
 - `"` must be escaped.
@@ -390,7 +400,7 @@ a minimum of escaping is required to prevent ambiguity:
 ## Object IDs
 
 `nid:123`  
-all cards of the note with note id 123
+the note with note id 123
 
 `cid:123,456,789`  
 all cards with card ids 123, 456 or 789
@@ -398,6 +408,3 @@ all cards with card ids 123, 456 or 789
 Note and card IDs can be found in the [card info](stats.md) dialog in the
 browser. These searches may also be helpful when doing add-on
 development or otherwise working closely with the database.
-
-Object IDs will not work in the mobile clients, and are not intended to
-be used in filtered decks at the moment.
