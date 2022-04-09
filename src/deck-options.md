@@ -19,6 +19,10 @@ This page describes the options shown in Anki 2.1.45+, when you have the v2 or
 v3 scheduler enabled. On older versions, some options will not be available, or
 will appear in a different section.
 
+For more info on deck options, please check:
+- [Deck Options Explained](https://forums.ankiweb.net/t/deck-options-explained/213)
+- [Deck options in a Mental Map](https://forums.ankiweb.net/t/deck-options-in-a-mental-map/15757)
+
 ## Presets
 
 Anki allows you to share options between different decks, to make
@@ -183,9 +187,7 @@ early by default. The amount of time to look ahead is configurable in
 the [preferences](preferences.md).
 
 Please see the [learning](studying.md#learningrelearning-cards) section for more info on how
-steps work. Also, check [this forum's
-post](https://forums.ankiweb.net/t/deck-options-explained/213) for more
-examples.
+steps work. 
 
 #### Day Boundaries
 
