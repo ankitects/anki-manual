@@ -17,7 +17,9 @@ Deck options are accessed by:
 
 This page describes the options shown in Anki 2.1.45+, when you have the v2 or
 v3 scheduler enabled. On older versions, some options will not be available, or
-will appear in a different section.
+will appear in a different section. Please, keep in mind that the V1 scheduler 
+is no longer supported in Anki 2.1.50+. If you have not yet updated to V2 or V3,
+you will be prompted to update when you attempt to review cards in 2.1.50+
 
 For more info on deck options, please check:
 - [Deck Options Explained](https://forums.ankiweb.net/t/deck-options-explained/213)
@@ -42,6 +44,7 @@ arrow icon in the top right of the Deck Options window. The options are:
   a one-way sync.
 - **Save to all subdecks**. Like _Save_, but also assigns the selected preset to all
   subdecks of the currently selected deck.
+hidden due to this option, a message will appear in the congratulations screen,
 
 Deck Options are not retroactive. For example, if you change an option that
 controls the delay after failing a card, cards that you failed prior to
@@ -92,29 +95,17 @@ Controls how many new cards are introduced each day you open the program. If you
 study fewer than the limit, or miss a day, the next day the counts will be back
 to your limit - they do not accumulate.
 
-In [the v3 scheduler](https://faqs.ankiweb.net/the-2021-scheduler.html#daily-limits), Anki
-uses the limits of the deck you select as an upper limit on the number of cards.
-This means if "French" has a limit of 20 cards and "French::Lesson 1" and
-"French::Lesson 2" both have limits of 15 cards, when you click on "French",
-you’ll get at most 15 cards from either child deck, and only 20 cards in total.
+Each parent applies its limits to its children, but schedulers 1, 2 and 3 behave differently: 
+- In the v1 and v2 schedulers, if you
+have decks in a parent-child-grandchild arrangement, both the parent and
+child limits will alter how many cards are shown from the grandchild, **even if you
+click directly on the grandchild.**
 
-In the v1 or v2 scheduler, each parent applies its limits to its children. If you
-have decks in a grandparent-parent-child arrangement, both the grandparent and
-parent limits will alter how many cards are shown from the child, even if you
-click directly on the child. In the v3 scheduler, this has been simplified, and
-now each deck's limit controls how many cards from that specific deck can be used.
-Imagine that you have this collection:
-
-    - Parent deck (New Cards/Day: 20)
-      - Child deck (New Cards/Day: 7)
-        - Grandchild deck A (New Cards/Day: 5)
-          - Cards 1 to 50
-        - Grandchild deck B (New Cards/Day: 5)
-          - Cards 51 to 100
-
-- If you click on the Parent deck, you will get 10 new cards (from Grandchild decks A and B).
-- If you click on the Child deck, you will get 7 new cards (from Grandchild decks A and B).
-- If you click on any of the Grandchild decks, you will get 5 new cards.
+- In the v3 scheduler, intermediate deck limits
+also affect their children, but if you click directly on the grandchild deck, 
+child and parent limits will be ignored. Please see the 
+[the v3 scheduler](https://faqs.ankiweb.net/the-2021-scheduler.html#daily-limits)
+page for more info.
 
 Studying new cards will temporarily increase the number of reviews you need to
 do a day, as freshly learnt material needs to be repeated a number of times
