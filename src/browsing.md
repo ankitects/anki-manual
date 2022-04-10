@@ -202,6 +202,7 @@ they can be found in a submenu of the context menu.
 | Name | Action |
 |-|-|
 | Add Notes | Open the [Add](editing.md#adding-cards-and-notes) dialog. |
+| Create Copy | Open a [duplicate](browsing.md#finding-duplicates) of the current note in the [editor](editing.md#adding-cards-and-notes), which can be slightly modified to easily obtain variations of your cards. By default, the duplicate card will be created in the same deck that the original. |
 | Export Notes | Open the [Export](exporting.md) dialog. |
 | Add Tags | Add provided tags to all selected notes. |
 | Remove Tags | Enter tags and remove them from all selected notes. |
