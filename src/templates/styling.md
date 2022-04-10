@@ -97,6 +97,8 @@ You can explore the styling of cards interactively by using Chrome:
 
 <https://addon-docs.ankiweb.net/porting2.0.html#webview-changes>
 
+Anki 2.1.50+ supports image resizing within the editor natively.
+
 ## Field Styling
 
 The default styling applies to the whole card. You can also make certain
