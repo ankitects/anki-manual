@@ -44,7 +44,6 @@ arrow icon in the top right of the Deck Options window. The options are:
   a one-way sync.
 - **Save to all subdecks**. Like _Save_, but also assigns the selected preset to all
   subdecks of the currently selected deck.
-hidden due to this option, a message will appear in the congratulations screen,
 
 Deck Options are not retroactive. For example, if you change an option that
 controls the delay after failing a card, cards that you failed prior to
