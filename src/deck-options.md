@@ -94,17 +94,16 @@ Controls how many new cards are introduced each day you open the program. If you
 study fewer than the limit, or miss a day, the next day the counts will be back
 to your limit - they do not accumulate.
 
-Each parent applies its limits to its children, but schedulers 1, 2 and 3 behave differently: 
-- In the v1 and v2 schedulers, if you
-have decks in a parent-child-grandchild arrangement, both the parent and
-child limits will alter how many cards are shown from the grandchild, **even if you
-click directly on the grandchild.**
+When decks are nested (eg Parent, Parent::Child, Parent::Child::Grandchild), 
+the way the limits are applied depends on the scheduler version.
 
-- In the v3 scheduler, intermediate deck limits
-also affect their children, but if you click directly on the grandchild deck, 
-child and parent limits will be ignored. Please see the 
-[the v3 scheduler](https://faqs.ankiweb.net/the-2021-scheduler.html#daily-limits)
-page for more info.
+- V1 applies parent limits to children, regardless of which deck you click on
+- V2 behaves similarly to V1 for new cards. For reviews, only the limits of 
+the deck you click on are honored.
+- V3 honors the limits of the deck you click on, and any decks inside it. 
+Limits from parents above the deck you clicked on are ignored.
+
+For more information, please see the the [v3 scheduler](https://faqs.ankiweb.net/the-2021-scheduler.html#daily-limits) page.
 
 Studying new cards will temporarily increase the number of reviews you need to
 do a day, as freshly learnt material needs to be repeated a number of times
