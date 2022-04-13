@@ -208,7 +208,14 @@ at the bottom of the screen.</li>
 </ul>
 <p>This page describes the options shown in Anki 2.1.45+, when you have the v2 or
 v3 scheduler enabled. On older versions, some options will not be available, or
-will appear in a different section.</p>
+will appear in a different section. Please keep in mind that the V1 scheduler 
+is no longer supported in Anki 2.1.50+. If you have not yet updated to V2 or V3,
+you will be prompted to update when you attempt to review cards in 2.1.50+.</p>
+<p>For more info on deck options, please check:</p>
+<ul>
+<li><a href="https://forums.ankiweb.net/t/deck-options-explained/213">Deck Options Explained</a></li>
+<li><a href="https://forums.ankiweb.net/t/deck-options-in-a-mental-map/15757">Deck options in a Mental Map</a></li>
+</ul>
 <h2 id="presets"><a class="header" href="#presets">Presets</a></h2>
 <p>Anki allows you to share options between different decks, to make
 updating options in many decks at once easy. To do this, options are
@@ -270,29 +277,16 @@ deck you select to study, not the deck of the current card.</li>
 <p>Controls how many new cards are introduced each day you open the program. If you
 study fewer than the limit, or miss a day, the next day the counts will be back
 to your limit - they do not accumulate.</p>
-<p>In <a href="https://faqs.ankiweb.net/the-2021-scheduler.html#daily-limits">the v3 scheduler</a>, Anki
-uses the limits of the deck you select as an upper limit on the number of cards.
-This means if &quot;French&quot; has a limit of 20 cards and &quot;French::Lesson 1&quot; and
-&quot;French::Lesson 2&quot; both have limits of 15 cards, when you click on &quot;French&quot;,
-you’ll get at most 15 cards from either child deck, and only 20 cards in total.</p>
-<p>In the v1 or v2 scheduler, each parent applies its limits to its children. If you
-have decks in a grandparent-parent-child arrangement, both the grandparent and
-parent limits will alter how many cards are shown from the child, even if you
-click directly on the child. In the v3 scheduler, this has been simplified, and
-now each deck's limit controls how many cards from that specific deck can be used.
-Imagine that you have this collection:</p>
-<pre><code>- Parent deck (New Cards/Day: 20)
-  - Child deck (New Cards/Day: 7)
-    - Grandchild deck A (New Cards/Day: 5)
-      - Cards 1 to 50
-    - Grandchild deck B (New Cards/Day: 5)
-      - Cards 51 to 100
-</code></pre>
+<p>When decks are nested (eg Parent, Parent::Child, Parent::Child::Grandchild), 
+the way the limits are applied depends on the scheduler version.</p>
 <ul>
-<li>If you click on the Parent deck, you will get 10 new cards (from Grandchild decks A and B).</li>
-<li>If you click on the Child deck, you will get 7 new cards (from Grandchild decks A and B).</li>
-<li>If you click on any of the Grandchild decks, you will get 5 new cards.</li>
+<li>V1 applies parent limits to children, regardless of which deck you click on</li>
+<li>V2 behaves similarly to V1 for new cards. For reviews, only the limits of 
+the deck you click on are honored.</li>
+<li>V3 honors the limits of the deck you click on, and any decks inside it. 
+Limits from parents above the deck you clicked on are ignored.</li>
 </ul>
+<p>For more information, please see the the <a href="https://faqs.ankiweb.net/the-2021-scheduler.html#daily-limits">v3 scheduler</a> page.</p>
 <p>Studying new cards will temporarily increase the number of reviews you need to
 do a day, as freshly learnt material needs to be repeated a number of times
 before the delay between repetitions can increase appreciably. If you are
@@ -352,9 +346,7 @@ become a review card. It will be shown again after the delay configured by the
 early by default. The amount of time to look ahead is configurable in
 the <a href="preferences.html">preferences</a>.</p>
 <p>Please see the <a href="studying.html#learningrelearning-cards">learning</a> section for more info on how
-steps work. Also, check <a href="https://forums.ankiweb.net/t/deck-options-explained/213">this forum's
-post</a> for more
-examples.</p>
+steps work. </p>
 <h4 id="day-boundaries"><a class="header" href="#day-boundaries">Day Boundaries</a></h4>
 <p>Anki treats small steps and steps that <a href="./preferences.html#scheduling">cross a day boundary</a> differently.
 With small steps, the cards are shown as soon as the delay has passed,

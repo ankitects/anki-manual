@@ -146,16 +146,26 @@
 <li><a href="#basic">Basic</a></li>
 <li><a href="#scheduling">Scheduling</a></li>
 <li><a href="#network">Network</a></li>
+<li><a href="#backups">Backups</a></li>
 </ul>
 <p>The preferences are available from the Tools menu on Windows/Linux, or
 the Anki menu on a Mac.</p>
 <h2 id="basic"><a class="header" href="#basic">Basic</a></h2>
+<p><strong>Language</strong><br />
+Change your display language. You can help to improve translations <a href="https://translating.ankiweb.net/">here</a></p>
+<p><strong>Theme</strong><br />
+Dark (night) mode will make Anki's interface dark, and will cause cards to be shown as white text on a
+black background. Some card templates may need to be modified to work
+properly with this option enabled - please see <a href="templates/styling.html#night-mode">night mode
+styling</a> for more information.</p>
+<p>From 2.1.50+ there is an option to switch to day or night mode automatically. </p>
 <p><strong>Video driver</strong><br />
 Anki's libraries need a video driver to draw content on the screen.
 Due to different hardware and software configurations, the driver that
 works best on your machine may vary. ANGLE and OpenGL will perform better
 than the software option, but they may not function correctly on some
 systems. On Macs, you will almost always want to use the OpenGL option.</p>
+<p>Note: If you're using 2.1.50+ (Qt6), please, check <a href="./platform/windows/display-issues.html#qt6">this page</a>.</p>
 <p><strong>Show play buttons</strong><br />
 Whether a clickable (re)play button will be shown in the review screen
 for cards with audio.</p>
@@ -170,11 +180,8 @@ file sizes.</p>
 <p><strong>Paste without Shift strips formatting</strong><br />
 By default, formatting like bold and colors are kept when pasting,
 unless the <kbd>Shift</kbd> key is held down. This option reverses the behaviour.</p>
-<p><strong>Night mode</strong><br />
-Night mode will cause Anki to show cards as white text on a
-black background. Some card templates may need to be modified to work
-properly with this option enabled - please see <a href="templates/styling.html#night-mode">night mode
-styling</a> for more information.</p>
+<p><strong>Ignore accents in search</strong></p>
+<p>When enabled, simple text searches automatically <a href="./searching.html#ignoring-accentscombining-characters">ignore accents</a>.</p>
 <p><strong>When adding, default to current deck</strong><br />
 Controls how note types and decks interact. The default of &quot;When adding, default
 to current deck&quot; means that Anki saves the last-used note type for each deck and
@@ -237,6 +244,8 @@ ask you whether you wish to upload or download. This is useful if
 you have made some changes accidentally, and wish to overwrite them
 with an older version that is on AnkiWeb.</li>
 </ul>
+<h2 id="backups"><a class="header" href="#backups">Backups</a></h2>
+<p>Please see <a href="backups.html#automatic-backups">this</a> section of the manual.</p>
 
                     </main>
 

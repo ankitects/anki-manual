@@ -1291,6 +1291,9 @@ buried.</p>
 however, burying cards does not reset a card's learning steps.</p>
 </li>
 <li>
+<p><strong>Forget card</strong>: Move current card to <a href="browsing.html#cards">the end of the new queue</a>.</p>
+</li>
+<li>
 <p><strong>Set Due Date</strong>: Put cards in the review queue, and <a href="browsing.html#cards">make them due on a certain date.</a></p>
 </li>
 <li>
@@ -1311,10 +1314,18 @@ however, suspending cards does not reset a card's learning steps.</p>
 <p><strong>Card Info</strong>: Displays <a href="stats.html#card-info">statistical information</a> about the card.</p>
 </li>
 <li>
+<p><strong>Previous Card Info</strong>: Displays <a href="stats.html#card-info">statistical information</a> about the previous card.</p>
+</li>
+<li>
 <p><a href="editing.html#the-marked-tag"><strong>Mark Note</strong></a>: Adds a “marked” tag to the current note, so it can be easily found in the
 browser. This is similar to flagging individual cards, but works with a tag
 instead, so if the note has multiple cards, all cards will appear in a search
 for the marked tag. Most users will want to use flags instead. </p>
+</li>
+<li>
+<p><strong>Create Copy</strong>: Opens a <a href="browsing.html#finding-duplicates">duplicate</a> of the current 
+note in the editor, which can be slightly modified to easily obtain variations of your cards. 
+By default, the duplicate card will be created in the same deck as the original. </p>
 </li>
 <li>
 <p><strong>Delete Note</strong>: Deletes the note and all of its cards.</p>
@@ -2505,6 +2516,7 @@ large), you can target it with the following:</p>
 </code></pre>
 <p>You can explore the styling of cards interactively by using Chrome:</p>
 <p><a href="https://addon-docs.ankiweb.net/porting2.0.html#webview-changes">https://addon-docs.ankiweb.net/porting2.0.html#webview-changes</a></p>
+<p>Anki 2.1.50+ supports image resizing within the editor natively.</p>
 <h2 id="field-styling"><a class="header" href="#field-styling">Field Styling</a></h2>
 <p>The default styling applies to the whole card. You can also make certain
 fields or part of the card use a different font, color, and so on. This
@@ -2818,16 +2830,26 @@ correctly.</p>
 <li><a href="preferences.html#basic">Basic</a></li>
 <li><a href="preferences.html#scheduling">Scheduling</a></li>
 <li><a href="preferences.html#network">Network</a></li>
+<li><a href="preferences.html#backups">Backups</a></li>
 </ul>
 <p>The preferences are available from the Tools menu on Windows/Linux, or
 the Anki menu on a Mac.</p>
 <h2 id="basic"><a class="header" href="#basic">Basic</a></h2>
+<p><strong>Language</strong><br />
+Change your display language. You can help to improve translations <a href="https://translating.ankiweb.net/">here</a></p>
+<p><strong>Theme</strong><br />
+Dark (night) mode will make Anki's interface dark, and will cause cards to be shown as white text on a
+black background. Some card templates may need to be modified to work
+properly with this option enabled - please see <a href="templates/styling.html#night-mode">night mode
+styling</a> for more information.</p>
+<p>From 2.1.50+ there is an option to switch to day or night mode automatically. </p>
 <p><strong>Video driver</strong><br />
 Anki's libraries need a video driver to draw content on the screen.
 Due to different hardware and software configurations, the driver that
 works best on your machine may vary. ANGLE and OpenGL will perform better
 than the software option, but they may not function correctly on some
 systems. On Macs, you will almost always want to use the OpenGL option.</p>
+<p>Note: If you're using 2.1.50+ (Qt6), please, check <a href="./platform/windows/display-issues.html#qt6">this page</a>.</p>
 <p><strong>Show play buttons</strong><br />
 Whether a clickable (re)play button will be shown in the review screen
 for cards with audio.</p>
@@ -2842,11 +2864,8 @@ file sizes.</p>
 <p><strong>Paste without Shift strips formatting</strong><br />
 By default, formatting like bold and colors are kept when pasting,
 unless the <kbd>Shift</kbd> key is held down. This option reverses the behaviour.</p>
-<p><strong>Night mode</strong><br />
-Night mode will cause Anki to show cards as white text on a
-black background. Some card templates may need to be modified to work
-properly with this option enabled - please see <a href="templates/styling.html#night-mode">night mode
-styling</a> for more information.</p>
+<p><strong>Ignore accents in search</strong></p>
+<p>When enabled, simple text searches automatically <a href="./searching.html#ignoring-accentscombining-characters">ignore accents</a>.</p>
 <p><strong>When adding, default to current deck</strong><br />
 Controls how note types and decks interact. The default of &quot;When adding, default
 to current deck&quot; means that Anki saves the last-used note type for each deck and
@@ -2909,6 +2928,8 @@ ask you whether you wish to upload or download. This is useful if
 you have made some changes accidentally, and wish to overwrite them
 with an older version that is on AnkiWeb.</li>
 </ul>
+<h2 id="backups"><a class="header" href="#backups">Backups</a></h2>
+<p>Please see <a href="backups.html#automatic-backups">this</a> section of the manual.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="deck-options"><a class="header" href="#deck-options">Deck Options</a></h1>
 <ul>
 <li><a href="deck-options.html#presets">Presets</a></li>
@@ -2976,7 +2997,14 @@ at the bottom of the screen.</li>
 </ul>
 <p>This page describes the options shown in Anki 2.1.45+, when you have the v2 or
 v3 scheduler enabled. On older versions, some options will not be available, or
-will appear in a different section.</p>
+will appear in a different section. Please keep in mind that the V1 scheduler 
+is no longer supported in Anki 2.1.50+. If you have not yet updated to V2 or V3,
+you will be prompted to update when you attempt to review cards in 2.1.50+.</p>
+<p>For more info on deck options, please check:</p>
+<ul>
+<li><a href="https://forums.ankiweb.net/t/deck-options-explained/213">Deck Options Explained</a></li>
+<li><a href="https://forums.ankiweb.net/t/deck-options-in-a-mental-map/15757">Deck options in a Mental Map</a></li>
+</ul>
 <h2 id="presets"><a class="header" href="#presets">Presets</a></h2>
 <p>Anki allows you to share options between different decks, to make
 updating options in many decks at once easy. To do this, options are
@@ -3038,29 +3066,16 @@ deck you select to study, not the deck of the current card.</li>
 <p>Controls how many new cards are introduced each day you open the program. If you
 study fewer than the limit, or miss a day, the next day the counts will be back
 to your limit - they do not accumulate.</p>
-<p>In <a href="https://faqs.ankiweb.net/the-2021-scheduler.html#daily-limits">the v3 scheduler</a>, Anki
-uses the limits of the deck you select as an upper limit on the number of cards.
-This means if &quot;French&quot; has a limit of 20 cards and &quot;French::Lesson 1&quot; and
-&quot;French::Lesson 2&quot; both have limits of 15 cards, when you click on &quot;French&quot;,
-you’ll get at most 15 cards from either child deck, and only 20 cards in total.</p>
-<p>In the v1 or v2 scheduler, each parent applies its limits to its children. If you
-have decks in a grandparent-parent-child arrangement, both the grandparent and
-parent limits will alter how many cards are shown from the child, even if you
-click directly on the child. In the v3 scheduler, this has been simplified, and
-now each deck's limit controls how many cards from that specific deck can be used.
-Imagine that you have this collection:</p>
-<pre><code>- Parent deck (New Cards/Day: 20)
-  - Child deck (New Cards/Day: 7)
-    - Grandchild deck A (New Cards/Day: 5)
-      - Cards 1 to 50
-    - Grandchild deck B (New Cards/Day: 5)
-      - Cards 51 to 100
-</code></pre>
+<p>When decks are nested (eg Parent, Parent::Child, Parent::Child::Grandchild), 
+the way the limits are applied depends on the scheduler version.</p>
 <ul>
-<li>If you click on the Parent deck, you will get 10 new cards (from Grandchild decks A and B).</li>
-<li>If you click on the Child deck, you will get 7 new cards (from Grandchild decks A and B).</li>
-<li>If you click on any of the Grandchild decks, you will get 5 new cards.</li>
+<li>V1 applies parent limits to children, regardless of which deck you click on</li>
+<li>V2 behaves similarly to V1 for new cards. For reviews, only the limits of 
+the deck you click on are honored.</li>
+<li>V3 honors the limits of the deck you click on, and any decks inside it. 
+Limits from parents above the deck you clicked on are ignored.</li>
 </ul>
+<p>For more information, please see the the <a href="https://faqs.ankiweb.net/the-2021-scheduler.html#daily-limits">v3 scheduler</a> page.</p>
 <p>Studying new cards will temporarily increase the number of reviews you need to
 do a day, as freshly learnt material needs to be repeated a number of times
 before the delay between repetitions can increase appreciably. If you are
@@ -3120,9 +3135,7 @@ become a review card. It will be shown again after the delay configured by the
 early by default. The amount of time to look ahead is configurable in
 the <a href="preferences.html">preferences</a>.</p>
 <p>Please see the <a href="studying.html#learningrelearning-cards">learning</a> section for more info on how
-steps work. Also, check <a href="https://forums.ankiweb.net/t/deck-options-explained/213">this forum's
-post</a> for more
-examples.</p>
+steps work. </p>
 <h4 id="day-boundaries"><a class="header" href="#day-boundaries">Day Boundaries</a></h4>
 <p>Anki treats small steps and steps that <a href="./preferences.html#scheduling">cross a day boundary</a> differently.
 With small steps, the cards are shown as soon as the delay has passed,
@@ -3696,6 +3709,7 @@ they can be found in a submenu of the context menu.</p>
 <!-- prettier-ignore -->
 <table><thead><tr><th>Name</th><th>Action</th></tr></thead><tbody>
 <tr><td>Add Notes</td><td>Open the <a href="editing.html#adding-cards-and-notes">Add</a> dialog.</td></tr>
+<tr><td>Create Copy</td><td>Open a <a href="browsing.html#finding-duplicates">duplicate</a> of the current note in the <a href="editing.html#adding-cards-and-notes">editor</a>, which can be slightly modified to easily obtain variations of your cards. By default, the duplicate card will be created in the same deck as the original.</td></tr>
 <tr><td>Export Notes</td><td>Open the <a href="exporting.html">Export</a> dialog.</td></tr>
 <tr><td>Add Tags</td><td>Add provided tags to all selected notes.</td></tr>
 <tr><td>Remove Tags</td><td>Enter tags and remove them from all selected notes.</td></tr>
@@ -3715,7 +3729,7 @@ they can be found in a submenu of the context menu.</p>
 <table><thead><tr><th>Name</th><th>Action</th></tr></thead><tbody>
 <tr><td>Change Deck</td><td>Move currently selected cards to a different deck.</td></tr>
 <tr><td>Set Due Date</td><td>Turn cards into review cards, and make them due on a certain date. This can be useful for moving cards forward or back a few days when your study schedule is interrupted. Entering a range like <code>60-90</code> will make the selected cards due between 60 and 90 days from now. New cards will have their interval set to the same delay, but reviews will be rescheduled without changing their current interval, unless '!' is included at the end of the range.</td></tr>
-<tr><td>Forget</td><td>Move currently selected cards to the end of the new queue. The existing review history is preserved.</td></tr>
+<tr><td>Forget</td><td>Move currently selected cards to the end of the new queue. The existing review history is preserved. In 2.1.50+, there are options to restore the original card position, and to reset the card's lapse and repetition counters.</td></tr>
 <tr><td>Reposition</td><td>Change the order new cards will appear in. You can find out the existing positions by enabling the <em>due</em> column, as described in the <a href="browsing.html#cardnote-table">table</a> section above. If you run the reposition command when multiple cards are selected, it will apply increasing numbers to each card in turn. By default the number increases by one for each card, but this can be adjusted by changing the &quot;step&quot; setting. The <strong>Shift position of existing cards</strong> option allows you to insert cards between currently existing ones, pushing the currently existing ones apart. For instance, if you have five cards and you want to move 3, 4, and 5 between 1 and 2, selecting this setting would cause the cards to end up in the order 1, 3, 4, 5, 2. By contrast, if you turn this option off, 1 and 2 will get the same position number (and it will thus be unpredictable which of the cards with the same number comes up first). Please note that when enabled, any card with a higher position will be modified, and all of those changed cards will need to be sent the next time you sync.</td></tr>
 <tr><td>Toggle Suspend</td><td><a href="studying.html#editing-and-more">Suspend</a> or unsuspend all selected cards, depending on whether the current card is suspended or not.</td></tr>
 <tr><td>Flag</td><td>Toggle the flags of all selected cards. Whether a flag is added or removed depends on whether the current card has the chosen flag.</td></tr>
@@ -4581,6 +4595,9 @@ file. This is useful for copying your collection back and forth between
 devices.</p>
 <p>Existing media in your collection is not deleted when you import a
 collection package. To delete unused media, use Tools&gt;Check Media.</p>
+<p>If you choose Anki 2.1.50+ Collection Package format, imports and exports 
+will be faster, and media files will be compressed, but the resulting 
+.colpkg file will not be readable by older Anki clients.</p>
 <h3 id="deck-apkg"><a class="header" href="#deck-apkg">Deck (.apkg)</a></h3>
 <p>Deck packages contain a single deck (and any child decks it may have).
 They have a filename ending with .apkg, but a filename other than
@@ -4595,7 +4612,7 @@ your collection will be kept.</p>
 <p>If you choose not to include scheduling information, Anki will assume
 that you are sharing the deck with other people, and will remove marked
 and leech tags so that they will have a clean copy of it.</p>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="backups"><a class="header" href="#backups">Backups</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="backups-1"><a class="header" href="#backups-1">Backups</a></h1>
 <ul>
 <li><a href="backups.html#automatic-backups">Automatic backups</a>
 <ul>
@@ -4643,6 +4660,7 @@ elapsed yet:</p>
 </ul>
 <p>After backups are two days old, Anki will start removing some of the older ones.
 You can control how many daily, weekly and monthly backups you'd like to keep.</p>
+<p>Backups created with 2.1.50 will not be importable into older Anki versions.</p>
 <h3 id="older-anki-versions"><a class="header" href="#older-anki-versions">Older Anki versions</a></h3>
 <p>Each time your collection is closed (when closing Anki, switching
 profiles, or doing a full sync download), Anki creates a backup. By default
@@ -4834,7 +4852,7 @@ stored in G:\ankidata.</li>
 <p>Media syncing with AnkiWeb may not work if your flash drive is formatted
 as FAT32. Please format the drive as NTFS to ensure media syncs
 correctly.</p>
-<h2 id="backups-1"><a class="header" href="#backups-1">Backups</a></h2>
+<h2 id="backups-2"><a class="header" href="#backups-2">Backups</a></h2>
 <p>Please see <a href="./backups.html">this section</a>.</p>
 <h2 id="inaccessible-harddisk"><a class="header" href="#inaccessible-harddisk">Inaccessible Harddisk</a></h2>
 <p>If Anki can't write to files in the <a href="files.html#file-locations">Anki folder</a>, a message
