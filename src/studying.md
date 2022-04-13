@@ -199,7 +199,7 @@ cards of the same note.
    With the [2.1 scheduler](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html),
    however, burying cards does not reset a card's learning steps.
    
-- **Forget card**: Move current card to [the end of the new queue.](browsing.md#cards)
+- **Forget card**: Move current card to [the end of the new queue](browsing.md#cards).
 
 - **Set Due Date**: Put cards in the review queue, and [make them due on a certain date.](browsing.md#cards)
 
