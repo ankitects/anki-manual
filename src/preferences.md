@@ -25,7 +25,7 @@ works best on your machine may vary. ANGLE and OpenGL will perform better
 than the software option, but they may not function correctly on some
 systems. On Macs, you will almost always want to use the OpenGL option.
 
-Note: If you're using 2.1.50+ (Qt6), please, check [this](./platform/windows/display-issues.md#qt6)
+Note: If you're using 2.1.50+ (Qt6), please, check [this page](./platform/windows/display-issues.md#qt6).
 
 **Show play buttons**  
 Whether a clickable (re)play button will be shown in the review screen
@@ -47,7 +47,7 @@ unless the <kbd>Shift</kbd> key is held down. This option reverses the behaviour
 
 **Ignore accents in search**
 
-Simple text searches automatically [ignore accents](./searching.md#ignoring-accentscombining-characters).
+When enabled, simple text searches automatically [ignore accents](./searching.md#ignoring-accentscombining-characters).
 
 **When adding, default to current deck**  
 Controls how note types and decks interact. The default of "When adding, default
