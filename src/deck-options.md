@@ -17,7 +17,7 @@ Deck options are accessed by:
 
 This page describes the options shown in Anki 2.1.45+, when you have the v2 or
 v3 scheduler enabled. On older versions, some options will not be available, or
-will appear in a different section. Please, keep in mind that the V1 scheduler 
+will appear in a different section. Please keep in mind that the V1 scheduler 
 is no longer supported in Anki 2.1.50+. If you have not yet updated to V2 or V3,
 you will be prompted to update when you attempt to review cards in 2.1.50+.
 
