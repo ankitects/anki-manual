@@ -6,7 +6,7 @@ There are two ways to work around this:
 
 1. Install the latest Qt6 version of Anki, which uses an updated toolkit:
 
-<https://betas.ankiweb.net>
+<https://apps.ankiweb.net>
 
 2. Use one of the workarounds posted on the following threads:
 
