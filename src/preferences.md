@@ -11,7 +11,7 @@ the Anki menu on a Mac.
 Change your display language. You can help to iomprove translations [here](https://translating.ankiweb.net/)
 
 **Theme**  
-Dark (night) mode will cause Anki to show cards as white text on a
+Dark (night) mode will make Anki's interface dark, and will cause cards to be shown as white text on a
 black background. Some card templates may need to be modified to work
 properly with this option enabled - please see [night mode
 styling](templates/styling.md#night-mode) for more information.
