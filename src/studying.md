@@ -198,6 +198,8 @@ cards of the same note.
 
    With the [2.1 scheduler](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html),
    however, burying cards does not reset a card's learning steps.
+   
+- **Forget card**: Move current card to [the end of the new queue](browsing.md#cards).
 
 - **Set Due Date**: Put cards in the review queue, and [make them due on a certain date.](browsing.md#cards)
 
@@ -216,10 +218,16 @@ cards of the same note.
 
 - **Card Info**: Displays [statistical information](stats.md#card-info) about the card.
 
+- **Previous Card Info**: Displays [statistical information](stats.md#card-info) about the previous card.
+
 - [**Mark Note**](editing.md#the-marked-tag): Adds a “marked” tag to the current note, so it can be easily found in the
 browser. This is similar to flagging individual cards, but works with a tag
 instead, so if the note has multiple cards, all cards will appear in a search
 for the marked tag. Most users will want to use flags instead. 
+
+- **Create Copy**: Opens a [duplicate](browsing.md#finding-duplicates) of the current 
+note in the editor, which can be slightly modified to easily obtain variations of your cards. 
+By default, the duplicate card will be created in the same deck as the original. 
 
 - **Delete Note**: Deletes the note and all of its cards.
 

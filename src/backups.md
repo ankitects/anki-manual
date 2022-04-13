@@ -41,6 +41,8 @@ elapsed yet:
 After backups are two days old, Anki will start removing some of the older ones.
 You can control how many daily, weekly and monthly backups you'd like to keep.
 
+Backups created with 2.1.50 will not be importable into older Anki versions.
+
 ### Older Anki versions
 
 Each time your collection is closed (when closing Anki, switching

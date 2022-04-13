@@ -7,12 +7,25 @@ the Anki menu on a Mac.
 
 ## Basic
 
+**Language**  
+Change your display language. You can help to improve translations [here](https://translating.ankiweb.net/)
+
+**Theme**  
+Dark (night) mode will make Anki's interface dark, and will cause cards to be shown as white text on a
+black background. Some card templates may need to be modified to work
+properly with this option enabled - please see [night mode
+styling](templates/styling.md#night-mode) for more information.
+
+From 2.1.50+ there is an option to switch to day or night mode automatically. 
+
 **Video driver**  
 Anki's libraries need a video driver to draw content on the screen.
 Due to different hardware and software configurations, the driver that
 works best on your machine may vary. ANGLE and OpenGL will perform better
 than the software option, but they may not function correctly on some
 systems. On Macs, you will almost always want to use the OpenGL option.
+
+Note: If you're using 2.1.50+ (Qt6), please, check [this page](./platform/windows/display-issues.md#qt6).
 
 **Show play buttons**  
 Whether a clickable (re)play button will be shown in the review screen
@@ -32,11 +45,9 @@ file sizes.
 By default, formatting like bold and colors are kept when pasting,
 unless the <kbd>Shift</kbd> key is held down. This option reverses the behaviour.
 
-**Night mode**  
-Night mode will cause Anki to show cards as white text on a
-black background. Some card templates may need to be modified to work
-properly with this option enabled - please see [night mode
-styling](templates/styling.md#night-mode) for more information.
+**Ignore accents in search**
+
+When enabled, simple text searches automatically [ignore accents](./searching.md#ignoring-accentscombining-characters).
 
 **When adding, default to current deck**  
 Controls how note types and decks interact. The default of "When adding, default
@@ -113,3 +124,7 @@ The network tab contains options related to syncing with AnkiWeb.
   ask you whether you wish to upload or download. This is useful if
   you have made some changes accidentally, and wish to overwrite them
   with an older version that is on AnkiWeb.
+
+## Backups
+
+Please see [this](backups.md#automatic-backups) section of the manual.
