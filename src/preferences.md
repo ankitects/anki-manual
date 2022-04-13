@@ -127,4 +127,4 @@ The network tab contains options related to syncing with AnkiWeb.
 
 ## Backups
 
-Please, see [this](backups.md#automatic-backups) section of the manual
+Please see [this](backups.md#automatic-backups) section of the manual.
