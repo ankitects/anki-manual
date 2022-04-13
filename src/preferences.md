@@ -47,6 +47,8 @@ unless the <kbd>Shift</kbd> key is held down. This option reverses the behaviour
 
 **Ignore accents in search**
 
+Simple text searches automatically [ignore accents](./searching.md#ignoring-accentscombining-characters).
+
 **When adding, default to current deck**  
 Controls how note types and decks interact. The default of "When adding, default
 to current deck" means that Anki saves the last-used note type for each deck and
