@@ -8,7 +8,7 @@ the Anki menu on a Mac.
 ## Basic
 
 **Language**  
-Change your display language. You can help to iomprove translations [here](https://translating.ankiweb.net/)
+Change your display language. You can help to improve translations [here](https://translating.ankiweb.net/)
 
 **Theme**  
 Dark (night) mode will make Anki's interface dark, and will cause cards to be shown as white text on a
