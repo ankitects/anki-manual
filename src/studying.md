@@ -227,7 +227,7 @@ for the marked tag. Most users will want to use flags instead.
 
 - **Create Copy**: Opens a [duplicate](browsing.md#finding-duplicates) of the current 
 note in the editor, which can be slightly modified to easily obtain variations of your cards. 
-By default, the duplicate card will be created in the same deck that the original. 
+By default, the duplicate card will be created in the same deck as the original. 
 
 - **Delete Note**: Deletes the note and all of its cards.
 
