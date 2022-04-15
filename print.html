@@ -756,17 +756,24 @@ following command line, which should reveal a missing library:</p>
 <p>After installing the library with apt-get or similar, repeat the process. You
 may need to do this a few times before all required libraries are installed.</p>
 <div style="break-before: page; page-break-before: always;"></div><h2 id="display-issues-on-linux"><a class="header" href="#display-issues-on-linux">Display Issues on Linux</a></h2>
-<p>Hardware acceleration defaults to off on Linux. Enabling it
-in the preferences screen and restarting Anki may make Anki’s interface
-more responsive, but some users may experience missing menubars, blank
-windows or crashes when it is enabled.</p>
+<h3 id="qt5-1"><a class="header" href="#qt5-1">Qt5</a></h3>
+<p>Hardware acceleration defaults to off. Enabling it in the preferences screen and
+restarting Anki may make Anki’s interface more responsive, but some users may
+experience missing menubars, blank windows or crashes when it is enabled.
+(Blank windows may also be caused by <a href="platform/linux/./blank-window.html">this problem</a>).</p>
 <p>You can adjust the display driver in Anki's Preferences screen. We
 recommend you try both settings, and see which one works best for you.</p>
-<p>If you're unable to open Anki, you can adjust the driver in a terminal,
-by writing either <code>auto</code> or <code>software</code> into
-<code>~/.local/share/Anki2/gldriver</code> (<code>gldriver6</code> on Qt6). Please note that if
-you’re using nouveau, it is known to be buggy, and it only supports
+<p>If you're unable to open Anki, you can adjust the driver in a terminal, by
+writing either <code>auto</code> or <code>software</code> into <code>~/.local/share/Anki2/gldriver</code>. Please
+note that if you’re using nouveau, it is known to be buggy, and it only supports
 software mode.</p>
+<h3 id="qt6-1"><a class="header" href="#qt6-1">Qt6</a></h3>
+<p>Hardware acceleration defaults to on. If you experience blank screens
+or display issues, you can try enabling software rendering using the terminal:</p>
+<pre><code>echo software &gt; ~/.local/share/Anki2/gldriver6
+</code></pre>
+<p>If you wish to switch back to the default, change <code>software</code> to <code>auto</code>, or
+remove that file.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="blank-main-window"><a class="header" href="#blank-main-window">Blank Main Window</a></h1>
 <p>Some Linux distos have recently updated glibc. Recent versions break the web toolkit that Anki is built on, causing Anki's main window to appear blank.</p>
 <p>There are two ways to work around this:</p>
