@@ -10,7 +10,7 @@ image files.
 
 Automatic backups can be useful to recover from mistakes, but you should not
 rely solely on them. Because they are stored on your local device, they will not
-protect you if you device breaks or is stolen. We recommend you combine them with
+protect you if your device breaks or is stolen. We recommend you combine them with
 [manual backups](#manual-backups).
 
 ### Restoring
