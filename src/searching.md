@@ -50,7 +50,9 @@ etc.
 
 `w:dog`  
 search for "dog" on a word boundary - will match "dog", but not "doggy"
-or "underdog". Requires Anki 2.1.24+ or AnkiMobile 2.1.61+.
+or "underdog". Requires Anki 2.1.24+ or AnkiMobile 2.1.61+. Note that
+formatting changes may be interpreted as word boundaries e.g. searching 
+for `w:exam` will match **exam**ple. 
 
 `w:dog*`  
 will match "dog" and "doggy", but not "underdog".
