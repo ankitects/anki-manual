@@ -4103,7 +4103,9 @@ finds notes with d, &lt;zero or more letters&gt;, g, like dg, dog, dung,
 etc.</p>
 <p><code>w:dog</code><br />
 search for &quot;dog&quot; on a word boundary - will match &quot;dog&quot;, but not &quot;doggy&quot;
-or &quot;underdog&quot;. Requires Anki 2.1.24+ or AnkiMobile 2.1.61+.</p>
+or &quot;underdog&quot;. Requires Anki 2.1.24+ or AnkiMobile 2.1.61+. Note that
+formatting changes may be interpreted as word boundaries e.g. searching 
+for <code>w:exam</code> will match <strong>exam</strong>ple. </p>
 <p><code>w:dog*</code><br />
 will match &quot;dog&quot; and &quot;doggy&quot;, but not &quot;underdog&quot;.</p>
 <p><code>w:*dog</code><br />
