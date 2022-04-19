@@ -1,6 +1,6 @@
 # Blank Main Window
 
-Some Linux distos have recently updated glibc. Recent versions break the web toolkit that Anki is built on, causing Anki's main window to appear blank.
+Some Linux distros have recently updated glibc. Recent versions break the web toolkit that Anki is built on, causing Anki's main window to appear blank.
 
 There are two ways to work around this:
 
