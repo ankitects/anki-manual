@@ -103,6 +103,10 @@ match' by default.
 find notes with a Front field of exactly "dog". A field that says "a
 dog" will not match.
 
+`"animal front:a dog"`  
+find notes where the "Animal Front" field is exactly "a dog". The double quotes are
+mandatory, see [below](#matching-special-characters).
+
 `front:*dog*`  
 find notes with Front field containing dog somewhere
 
@@ -115,7 +119,7 @@ find notes that have a non-empty Front field
 `front:*`  
 find notes that have a Front field, empty or not
 
-`fr*:text`
+`fr*:text`  
 find notes in a field starting with "fr". Requires Anki 2.1.24+ or AnkiMobile 2.1.60+.
 
 ## Tags, decks, cards and notes
@@ -353,7 +357,7 @@ you need to tell Anki not to treat them specially.
 - _Space_  
   To match something including spaces, enclose the `"entire term"` in double
   quotes. If it is a colon search, you also have the option to only quote the
-  `part:"after the colon"`.
+  `part:"after the colon"` (unless there are spaces before the colon as well).
 
 - `"`, `*` and `_`  
   Add a backslash before these characters to treat them literally. For example,
