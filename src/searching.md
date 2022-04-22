@@ -104,7 +104,7 @@ find notes with a Front field of exactly "dog". A field that says "a
 dog" will not match.
 
 `"animal front:a dog"`  
-find notes with an Animal Front field of exactly "a dog". The double quotes are
+find notes where the "Animal Front" field is exactly "a dog". The double quotes are
 mandatory, see [below](#matching-special-characters).
 
 `front:*dog*`  
