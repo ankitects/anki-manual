@@ -254,6 +254,9 @@ match' by default.</p>
 <p><code>front:dog</code><br />
 find notes with a Front field of exactly &quot;dog&quot;. A field that says &quot;a
 dog&quot; will not match.</p>
+<p><code>&quot;animal front:a dog&quot;</code><br />
+find notes where the &quot;Animal Front&quot; field is exactly &quot;a dog&quot;. The double quotes are
+mandatory, see <a href="#matching-special-characters">below</a>.</p>
 <p><code>front:*dog*</code><br />
 find notes with Front field containing dog somewhere</p>
 <p><code>front:</code><br />
@@ -262,7 +265,7 @@ find notes that have an empty Front field</p>
 find notes that have a non-empty Front field</p>
 <p><code>front:*</code><br />
 find notes that have a Front field, empty or not</p>
-<p><code>fr*:text</code>
+<p><code>fr*:text</code><br />
 find notes in a field starting with &quot;fr&quot;. Requires Anki 2.1.24+ or AnkiMobile 2.1.60+.</p>
 <h2 id="tags-decks-cards-and-notes"><a class="header" href="#tags-decks-cards-and-notes">Tags, decks, cards and notes</a></h2>
 <p><code>tag:animal</code><br />
@@ -421,7 +424,7 @@ you need to tell Anki not to treat them specially.</p>
 <p><em>Space</em><br />
 To match something including spaces, enclose the <code>&quot;entire term&quot;</code> in double
 quotes. If it is a colon search, you also have the option to only quote the
-<code>part:&quot;after the colon&quot;</code>.</p>
+<code>part:&quot;after the colon&quot;</code> (unless there are spaces before the colon as well).</p>
 </li>
 <li>
 <p><code>&quot;</code>, <code>*</code> and <code>_</code><br />
