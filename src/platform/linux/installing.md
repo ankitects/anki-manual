@@ -28,7 +28,8 @@ To install Anki:
 
 1. Download Anki from <https://apps.ankiweb.net> to your Downloads folder. See the next section
    for how to choose between -qt5 and -qt6.
-2. Open a terminal and run the following commands, replacing the filename as appropriate.
+2. If zstd is not already installed on your system, you'll need to install it (eg `sudo apt install zstd`).
+3. Open a terminal and run the following commands, replacing the filename as appropriate.
 
 ```shell
 tar xaf Downloads/anki-2.1.XX-linux-qt6.tar.zst
@@ -36,7 +37,7 @@ cd anki-2.1.XX-linux
 sudo ./install.sh
 ```
 
-3. You can then start Anki by typing 'anki' and hitting enter. If you encounter
+4. You can then start Anki by typing 'anki' and hitting enter. If you encounter
    any issues, please see the links on the left.
 
 ## Qt5 vs. Qt6
