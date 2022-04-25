@@ -26,7 +26,8 @@ Anki's build system only supports glibc, so musl-based distros are not currently
 
 To install Anki:
 
-1. Download Anki from <https://apps.ankiweb.net> to your Downloads folder.
+1. Download Anki from <https://apps.ankiweb.net> to your Downloads folder. See the next section
+   for how to choose between -qt5 and -qt6.
 2. Open a terminal and run the following commands, replacing the version
    number as appropriate.
 
@@ -38,6 +39,23 @@ sudo ./install.sh
 
 3. You can then start Anki by typing 'anki' and hitting enter. If you encounter
    any issues, please see the links on the left.
+
+## Qt5 vs. Qt6
+
+Recent Anki versions come in separate Qt5 and Qt6 variants. Each version
+has some advantages and disadvantages.
+
+Advantages of the Qt6 version:
+
+- Compatibility with recent glibc versions (fixes blank screens on recent distros).
+- Better HiDPI support.
+- Better Wayland support.
+- Various bugfixes, including things like better support for less common languages.
+
+Disadvantages of the Qt6 version include:
+
+- Some add-ons currently only work with the Qt5 version.
+- Very large images currently load more slowly (fix coming in Anki 2.1.52).
 
 ## Upgrading
 

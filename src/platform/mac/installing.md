@@ -13,10 +13,29 @@ page](https://github.com/ankitects/anki/releases).
 
 ## Installing
 
-1. Download Anki from <https://apps.ankiweb.net>
+1. Download Anki from <https://apps.ankiweb.net>. See the next section
+   for how to choose between -qt5 and -qt6.
 2. Save the file to your desktop or downloads folder.
 3. Open it, and drag Anki to your Applications folder or desktop.
 4. Double-click on Anki in the location you placed it.
+
+## Qt5 vs. Qt6
+
+Recent Anki versions come in separate Qt5 and Qt6 variants. Each version
+has some advantages and disadvantages.
+
+Advantages of the Qt6 version:
+
+- Native support for recent Apple Silicon Macs (faster, better battery life).
+- Various bugfixes, including things like better support for less common languages.
+
+Disadvantages of the Qt6 version:
+
+- Complex language input (eg Chinese, Hindi, etc) is currently buggy on macOS (fix
+  hopefully coming in Anki 2.1.52 or 53).
+- Very large images currently load more slowly (fix coming in Anki 2.1.52).
+- Tabbed windows (eg in full screen) are no longer possible.
+- Some add-ons currently only work with the Qt5 version.
 
 ## Upgrading
 
@@ -31,9 +50,7 @@ add-on you depend on has not been ported to the latest release yet, you may have
 more luck with 2.1.44 from the [releases
 page](https://github.com/ankitects/anki/releases).
 
-
 ## Problems
 
 If you encounter any issues when installing or starting Anki, please see the
 following links on the left.
-
