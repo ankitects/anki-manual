@@ -145,6 +145,7 @@
 <ul>
 <li><a href="#requirements">Requirements</a></li>
 <li><a href="#installing">Installing</a></li>
+<li><a href="#qt5-vs-qt6">Qt5 vs. Qt6</a></li>
 <li><a href="#upgrading">Upgrading</a></li>
 <li><a href="#add-on-compatibility">Add-on Compatibility</a></li>
 <li><a href="#problems">Problems</a></li>
@@ -165,7 +166,8 @@ installing:</p>
 <h2 id="installing"><a class="header" href="#installing">Installing</a></h2>
 <p>To install Anki:</p>
 <ol>
-<li>Download Anki from <a href="https://apps.ankiweb.net">https://apps.ankiweb.net</a> to your Downloads folder.</li>
+<li>Download Anki from <a href="https://apps.ankiweb.net">https://apps.ankiweb.net</a> to your Downloads folder. See the next section
+for how to choose between -qt5 and -qt6.</li>
 <li>Open a terminal and run the following commands, replacing the version
 number as appropriate.</li>
 </ol>
@@ -177,6 +179,21 @@ sudo ./install.sh
 <li>You can then start Anki by typing 'anki' and hitting enter. If you encounter
 any issues, please see the links on the left.</li>
 </ol>
+<h2 id="qt5-vs-qt6"><a class="header" href="#qt5-vs-qt6">Qt5 vs. Qt6</a></h2>
+<p>Recent Anki versions come in separate Qt5 and Qt6 variants. Each version
+has some advantages and disadvantages.</p>
+<p>Advantages of the Qt6 version:</p>
+<ul>
+<li>Compatibility with recent glibc versions (fixes blank screens on recent distros).</li>
+<li>Better HiDPI support.</li>
+<li>Better Wayland support.</li>
+<li>Various bugfixes, including things like better support for less common languages.</li>
+</ul>
+<p>Disadvantages of the Qt6 version include:</p>
+<ul>
+<li>Some add-ons currently only work with the Qt5 version.</li>
+<li>Very large images currently load more slowly (fix coming in Anki 2.1.52).</li>
+</ul>
 <h2 id="upgrading"><a class="header" href="#upgrading">Upgrading</a></h2>
 <p>If you were running Anki from a .deb/.rpm/etc in the past, please make
 sure to remove the system version before installing the package

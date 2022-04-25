@@ -145,26 +145,45 @@
 <ul>
 <li><a href="#requirements">Requirements</a></li>
 <li><a href="#installing">Installing</a></li>
+<li><a href="#qt5-vs-qt6">Qt5 vs. Qt6</a></li>
 <li><a href="#upgrading">Upgrading</a></li>
 <li><a href="#add-on-compatibility">Add-on Compatibility</a></li>
 <li><a href="#problems">Problems</a></li>
 </ul>
 <h2 id="requirements"><a class="header" href="#requirements">Requirements</a></h2>
 <p>Recent Anki releases require a computer running the 64 bit version of Windows
-7, 8, 10 or 11.</p>
-<p>The last Anki release that supported 32 bit Windows was Anki 2.1.35-alternate.
-If you're on an old machine, you can obtain the old release from the <a href="https://github.com/ankitects/anki/releases">releases
+10 or 11.</p>
+<ul>
+<li>The last Anki release that supported Windows 7 and 8.1 was Anki 2.1.49.</li>
+<li>The last Anki release that supported 32 bit Windows was Anki 2.1.35-alternate.</li>
+</ul>
+<p>If you're on an old machine, you can obtain old releases from the <a href="https://github.com/ankitects/anki/releases">releases
 page</a>.</p>
 <h2 id="installing"><a class="header" href="#installing">Installing</a></h2>
 <p>To install Anki:</p>
 <ol>
-<li>Download Anki from <a href="https://apps.ankiweb.net">https://apps.ankiweb.net</a></li>
+<li>Download Anki from <a href="https://apps.ankiweb.net">https://apps.ankiweb.net</a>. See the next section
+for how to choose between -qt5 and -qt6.</li>
 <li>Save the installer to your desktop or downloads folder.</li>
 <li>Double-click on the installer to run it. If you see an error
 message, please see the links on the left.</li>
 <li>Once Anki is installed, double-click on the new star icon on your
 desktop to start Anki.</li>
 </ol>
+<h2 id="qt5-vs-qt6"><a class="header" href="#qt5-vs-qt6">Qt5 vs. Qt6</a></h2>
+<p>Recent Anki versions come in separate Qt5 and Qt6 variants. Each version
+has some advantages and disadvantages.</p>
+<p>Advantages of the Qt6 version:</p>
+<ul>
+<li>Various bugfixes, including things like better support for less common languages.</li>
+</ul>
+<p>Disadvantages of the Qt6 version:</p>
+<ul>
+<li>Some add-ons currently only work with the Qt5 version.</li>
+<li>Very large images may display more slowly than the Qt5 version. If you're affected
+by this, we recommend you remain on Anki 2.1.49 until 2.1.52 comes out, as the Windows
+Qt5 build of 2.1.50/51 displays large images more slowly than 2.1.49 did.</li>
+</ul>
 <h2 id="upgrading"><a class="header" href="#upgrading">Upgrading</a></h2>
 <p>If upgrading from Anki 2.1.6+, there is no need to uninstall the previous
 version first. All you need to do is close Anki if it is open, and then follow

@@ -145,6 +145,7 @@
 <ul>
 <li><a href="#requirements">Requirements</a></li>
 <li><a href="#installing">Installing</a></li>
+<li><a href="#qt5-vs-qt6">Qt5 vs. Qt6</a></li>
 <li><a href="#upgrading">Upgrading</a></li>
 <li><a href="#add-on-compatibility">Add-on Compatibility</a></li>
 <li><a href="#problems">Problems</a></li>
@@ -157,11 +158,28 @@ version from the <a href="https://github.com/ankitects/anki/releases">releases
 page</a>.</p>
 <h2 id="installing"><a class="header" href="#installing">Installing</a></h2>
 <ol>
-<li>Download Anki from <a href="https://apps.ankiweb.net">https://apps.ankiweb.net</a></li>
+<li>Download Anki from <a href="https://apps.ankiweb.net">https://apps.ankiweb.net</a>. See the next section
+for how to choose between -qt5 and -qt6.</li>
 <li>Save the file to your desktop or downloads folder.</li>
 <li>Open it, and drag Anki to your Applications folder or desktop.</li>
 <li>Double-click on Anki in the location you placed it.</li>
 </ol>
+<h2 id="qt5-vs-qt6"><a class="header" href="#qt5-vs-qt6">Qt5 vs. Qt6</a></h2>
+<p>Recent Anki versions come in separate Qt5 and Qt6 variants. Each version
+has some advantages and disadvantages.</p>
+<p>Advantages of the Qt6 version:</p>
+<ul>
+<li>Native support for recent Apple Silicon Macs (faster, better battery life).</li>
+<li>Various bugfixes, including things like better support for less common languages.</li>
+</ul>
+<p>Disadvantages of the Qt6 version:</p>
+<ul>
+<li>Complex language input (eg Chinese, Hindi, etc) is currently buggy on macOS (fix
+hopefully coming in Anki 2.1.52 or 53).</li>
+<li>Very large images currently load more slowly (fix coming in Anki 2.1.52).</li>
+<li>Tabbed windows (eg in full screen) are no longer possible.</li>
+<li>Some add-ons currently only work with the Qt5 version.</li>
+</ul>
 <h2 id="upgrading"><a class="header" href="#upgrading">Upgrading</a></h2>
 <p>To upgrade, close Anki if it is open, and then follow the steps above. Drag
 the Anki icon into the same location you previously stored it, and when prompted,
