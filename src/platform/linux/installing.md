@@ -28,11 +28,10 @@ To install Anki:
 
 1. Download Anki from <https://apps.ankiweb.net> to your Downloads folder. See the next section
    for how to choose between -qt5 and -qt6.
-2. Open a terminal and run the following commands, replacing the version
-   number as appropriate.
+2. Open a terminal and run the following commands, replacing the filename as appropriate.
 
 ```shell
-tar xjf Downloads/anki-2.1.XX-linux.tar.bz2
+tar xaf Downloads/anki-2.1.XX-linux-qt6.tar.zst
 cd anki-2.1.XX-linux
 sudo ./install.sh
 ```
