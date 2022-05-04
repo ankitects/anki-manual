@@ -47,7 +47,7 @@ has some advantages and disadvantages.
 
 Advantages of the Qt6 version:
 
-- Compatibility with recent glibc versions (fixes blank screens on recent distros).
+- Compatibility with recent glibc versions (fixes [blank screens on recent distros](./blank-window.md)).
 - Better HiDPI support.
 - Better Wayland support.
 - Various bugfixes, including things like better support for less common languages.
