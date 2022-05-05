@@ -4,6 +4,10 @@
 
 In a hurry? Jump straight to [Getting Started](getting-started.md).
 
+## Getting Help
+
+Looking for help? Please see [Getting Help](https://faqs.ankiweb.net/getting-help.html).
+
 ## Translations
 
 Volunteers have contributed translations of this manual. The
