@@ -214,6 +214,7 @@ make them smaller and colored, you could use the following:
 
 If you use a language that is written right-to-left, such as Arabic or Hebrew,
 you can add the CSS `direction` property to the .card section for correct display during review:
+
 ```css
 .card {
   direction: rtl;
@@ -257,27 +258,42 @@ styling for different platforms. The example below shows how to vary the
 font depending on where you’re reviewing:
 
 ```css
-.win .jp {
-  font-family: "MS Mincho";
+/* Windows */
+.win .example {
+  font-family: "Example1";
 }
-.mac .jp {
-  font-family: "Hiragino Mincho Pro";
+/* macOS */
+.mac .example {
+  font-family: "Example2";
 }
-.linux .jp {
-  font-family: "Kochi Mincho";
+/* Linux desktops */
+.linux:not(.android) .example {
+  font-family: "Example3";
 }
-.mobile .jp {
-  font-family: "Hiragino Mincho ProN";
+/* both Linux desktops, and Android devices */
+.linux .example {
+  font-family: "Example4";
+}
+/* both Android and iOS */
+.mobile .example {
+  font-family: "Example5";
+}
+/* iOS */
+.iphone .example,
+.ipad .example {
+  font-family: "Example6";
+}
+/* Android */
+.android .example {
+  font-family: "Example7";
 }
 ```
 
 And in the template:
 
 ```html
-<div class=jp>{{Field}}</div>
+<div class="example">{{Field}}</div>
 ```
-
-For different iOS devices, you can use '.iphone' and '.ipad'.
 
 You can also use properties like .gecko, .opera, and .ie to select
 particular browsers when using AnkiWeb. Please see
@@ -294,27 +310,27 @@ have a filename ending in .ttf, such as "Arial.ttf". Once you’ve located
 a TrueType font, we’ll need to add it to the media folder:
 
 1. Rename the file, adding an underscore at the start, so it becomes
-    like "\_arial.ttf". Adding an underscore will tell Anki that this
-    file will be used on a template, and should not be deleted when
-    checking for unused media.
+   like "\_arial.ttf". Adding an underscore will tell Anki that this
+   file will be used on a template, and should not be deleted when
+   checking for unused media.
 
 2. In your computer’s file browser, go to your [Anki Folder](../files.md),
-    and then a folder called "User 1" (or your profile name if you’ve
-    renamed/added profiles).
+   and then a folder called "User 1" (or your profile name if you’ve
+   renamed/added profiles).
 
 3. Inside the folder, you should see a folder called collection.media.
-    Drag the renamed file to that folder.
+   Drag the renamed file to that folder.
 
 After that, we need to update the template:
 
 1. Click **Add** at the top of the main screen, and then select the
-    note type you want to change with the top left button.
+   note type you want to change with the top left button.
 
 2. Click **Cards**.
 
 3. In the styling section, add the following text to the bottom (after
-    the last "}" character), replacing "\_arial.ttf" with the name of
-    the file you copied into your media folder:
+   the last "}" character), replacing "\_arial.ttf" with the name of
+   the file you copied into your media folder:
 
 ```css
 @font-face {
@@ -370,7 +386,10 @@ this delay, you can place the following at the top of your front card
 template:
 
 ```html
-    <script>qFade=100; if (typeof anki !== 'undefined') anki.qFade=qFade;</script>
+<script>
+  qFade = 100;
+  if (typeof anki !== "undefined") anki.qFade = qFade;
+</script>
 ```
 
 100 (milliseconds) is the default; set to 0 to disable fading.
@@ -380,7 +399,7 @@ template:
 As Anki cards are treated like webpages, it is possible to embed some
 Javascript on your cards via the card template. For a good reference
 please read [this post](https://forums.ankiweb.net/t/card-templates-user-input-101-buttons-keyboard-shortcuts-etc-guide/13756)
-in the forums. 
+in the forums.
 
 Because Javascript is an advanced feature and so many things can go
 wrong, **Javascript functionality is provided without any support or
