@@ -2755,23 +2755,39 @@ the same as in standard card templates.</p>
 <p>Anki defines some special CSS classes that allow you to define different
 styling for different platforms. The example below shows how to vary the
 font depending on where you’re reviewing:</p>
-<pre><code class="language-css">.win .jp {
-  font-family: &quot;MS Mincho&quot;;
+<pre><code class="language-css">/* Windows */
+.win .example {
+  font-family: &quot;Example1&quot;;
 }
-.mac .jp {
-  font-family: &quot;Hiragino Mincho Pro&quot;;
+/* macOS */
+.mac .example {
+  font-family: &quot;Example2&quot;;
 }
-.linux .jp {
-  font-family: &quot;Kochi Mincho&quot;;
+/* Linux desktops */
+.linux:not(.android) .example {
+  font-family: &quot;Example3&quot;;
 }
-.mobile .jp {
-  font-family: &quot;Hiragino Mincho ProN&quot;;
+/* both Linux desktops, and Android devices */
+.linux .example {
+  font-family: &quot;Example4&quot;;
+}
+/* both Android and iOS */
+.mobile .example {
+  font-family: &quot;Example5&quot;;
+}
+/* iOS */
+.iphone .example,
+.ipad .example {
+  font-family: &quot;Example6&quot;;
+}
+/* Android */
+.android .example {
+  font-family: &quot;Example7&quot;;
 }
 </code></pre>
 <p>And in the template:</p>
-<pre><code class="language-html">&lt;div class=jp&gt;{{Field}}&lt;/div&gt;
+<pre><code class="language-html">&lt;div class=&quot;example&quot;&gt;{{Field}}&lt;/div&gt;
 </code></pre>
-<p>For different iOS devices, you can use '.iphone' and '.ipad'.</p>
 <p>You can also use properties like .gecko, .opera, and .ie to select
 particular browsers when using AnkiWeb. Please see
 <a href="http://rafael.adm.br/css_browser_selector/">http://rafael.adm.br/css_browser_selector/</a> for a full list of options.</p>
@@ -2851,14 +2867,17 @@ id=answer to turn off scrolling.</p>
 <p>The question side of a card fades in by default. If you wish to adjust
 this delay, you can place the following at the top of your front card
 template:</p>
-<pre><code class="language-html">    &lt;script&gt;qFade=100; if (typeof anki !== 'undefined') anki.qFade=qFade;&lt;/script&gt;
+<pre><code class="language-html">&lt;script&gt;
+  qFade = 100;
+  if (typeof anki !== &quot;undefined&quot;) anki.qFade = qFade;
+&lt;/script&gt;
 </code></pre>
 <p>100 (milliseconds) is the default; set to 0 to disable fading.</p>
 <h2 id="javascript"><a class="header" href="#javascript">Javascript</a></h2>
 <p>As Anki cards are treated like webpages, it is possible to embed some
 Javascript on your cards via the card template. For a good reference
 please read <a href="https://forums.ankiweb.net/t/card-templates-user-input-101-buttons-keyboard-shortcuts-etc-guide/13756">this post</a>
-in the forums. </p>
+in the forums.</p>
 <p>Because Javascript is an advanced feature and so many things can go
 wrong, <strong>Javascript functionality is provided without any support or
 warranty</strong>. We can not provide any assistance with writing Javascript,
