@@ -55,7 +55,6 @@ Advantages of the Qt6 version:
 Disadvantages of the Qt6 version include:
 
 - Some add-ons currently only work with the Qt5 version.
-- Very large images currently load more slowly (fix coming in Anki 2.1.52).
 
 ## Upgrading
 

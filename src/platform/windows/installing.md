@@ -33,13 +33,11 @@ has some advantages and disadvantages.
 Advantages of the Qt6 version:
 
 - Various bugfixes, including things like better support for less common languages.
+- Very large images load faster than the Qt5 version.
 
 Disadvantages of the Qt6 version:
 
 - Some add-ons currently only work with the Qt5 version.
-- Very large images may display more slowly than the Qt5 version. If you're affected
-  by this, we recommend you remain on Anki 2.1.49 until 2.1.52 comes out, as the Windows
-  Qt5 build of 2.1.50/51 displays large images more slowly than 2.1.49 did.
 
 ## Upgrading
 
