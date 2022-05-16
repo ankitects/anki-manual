@@ -32,8 +32,8 @@ Advantages of the Qt6 version:
 Disadvantages of the Qt6 version:
 
 - Complex language input (eg Chinese, Hindi, etc) is currently buggy on macOS (fix
-  hopefully coming in Anki 2.1.53).
-- Very large images currently load more slowly (fix coming in Anki 2.1.52).
+  hopefully coming in Anki 2.1.53; in the mean time either use the Qt5 version, or
+  switch to a different app and then back into Anki to temporarily fix the issue).
 - Tabbed windows (eg in full screen) are no longer possible.
 - Some add-ons currently only work with the Qt5 version.
 
