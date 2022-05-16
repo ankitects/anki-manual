@@ -639,8 +639,8 @@ has some advantages and disadvantages.</p>
 <p>Disadvantages of the Qt6 version:</p>
 <ul>
 <li>Complex language input (eg Chinese, Hindi, etc) is currently buggy on macOS (fix
-hopefully coming in Anki 2.1.53).</li>
-<li>Very large images currently load more slowly (fix coming in Anki 2.1.52).</li>
+hopefully coming in Anki 2.1.53; in the mean time either use the Qt5 version, or
+switch to a different app and then back into Anki to temporarily fix the issue).</li>
 <li>Tabbed windows (eg in full screen) are no longer possible.</li>
 <li>Some add-ons currently only work with the Qt5 version.</li>
 </ul>
@@ -690,8 +690,8 @@ has some advantages and disadvantages.</p>
 <p>Disadvantages of the Qt6 version:</p>
 <ul>
 <li>Complex language input (eg Chinese, Hindi, etc) is currently buggy on macOS (fix
-hopefully coming in Anki 2.1.53).</li>
-<li>Very large images currently load more slowly (fix coming in Anki 2.1.52).</li>
+hopefully coming in Anki 2.1.53; in the mean time either use the Qt5 version, or
+switch to a different app and then back into Anki to temporarily fix the issue).</li>
 <li>Tabbed windows (eg in full screen) are no longer possible.</li>
 <li>Some add-ons currently only work with the Qt5 version.</li>
 </ul>
@@ -708,6 +708,14 @@ page</a>.</p>
 <p>If you encounter any issues when installing or starting Anki, please see the
 following links on the left.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="display-issues-on-macos"><a class="header" href="#display-issues-on-macos">Display Issues on macOS</a></h1>
+<h3 id="qt6-video-driver"><a class="header" href="#qt6-video-driver">Qt6 Video Driver</a></h3>
+<p>Hardware acceleration defaults to on. This should be fine for most Macs, but if you
+are experiencing crashes or display issues, you can try enabling software rendering.</p>
+<p>Open Terminal.app, then paste the following and hit enter:</p>
+<pre><code>echo software &gt; ~/Library/Application\ Support/Anki2/gldriver6
+</code></pre>
+<p>If you wish to switch back to the default, change <code>software</code> to <code>auto</code>, or
+remove that file.</p>
 <h2 id="egpus"><a class="header" href="#egpus">eGPUs</a></h2>
 <p>If you experience blank screens when using an external graphics card on a Mac, you can ctrl+click on the Anki app, click &quot;Get Info&quot;, and enable the &quot;prefer eGPU&quot; option.</p>
 <h2 id="monitors-with-different-resolutions"><a class="header" href="#monitors-with-different-resolutions">Monitors with different resolutions</a></h2>
