@@ -165,7 +165,7 @@ subdecks it contains.</p>
 three columns. 'New' is the number of new
 cards that are ready to be learnt that day. The second column shows
 the number of cards currently in learning. 'Due' is the count of waiting
-reviews. </p>
+reviews.</p>
 <p>When you click on a deck, it will become the 'current deck', and Anki
 will change to the study screen. You can return to the deck list to
 change the currently selected deck at any time by clicking on “Decks” at
@@ -217,7 +217,7 @@ are two steps: 1 minute and 10 minutes. You can change the number of
 steps and the delays between them in the <a href="deck-options.html#new-cards">deck options</a>.</p>
 <p>There are four rating buttons when learning:</p>
 <p><strong>Again</strong> moves the card back to the first step.</p>
-<p><strong>Hard</strong>  repeats the current step after the first step, and is the average 
+<p><strong>Hard</strong> repeats the current step after the first step, and is the average
 of Again and Good on the first step.</p>
 <p><strong>Good</strong> moves the card to the <a href="deck-options.html#learning-steps">next step</a>. If the card was on the final
 step, the card is converted into a review card (it 'graduates'). By
@@ -239,7 +239,7 @@ button, where <kbd>1</kbd> is <strong>Again</strong>. Pressing <kbd>Space</kbd> 
 <strong>Good</strong>.</p>
 <p>If there are no other cards to show you, Anki will show learning cards
 again even if their delay has not elapsed completely. If you’d prefer to
-wait the full learning delay, you can change this behaviour in 
+wait the full learning delay, you can change this behaviour in
 <a href="preferences.html">Preferences&gt;Scheduling&gt;Learn Ahead Limit</a>.</p>
 <h2 id="review-cards"><a class="header" href="#review-cards">Review Cards</a></h2>
 <p>When a card has been previously learnt and is ready to be reviewed
@@ -248,7 +248,7 @@ again, there are four buttons to rate your answer:</p>
 more frequently in the future. The card is said to have 'lapsed'. Please
 see the <a href="deck-options.html#lapses">lapses</a> section for more information about how lapsed
 reviews are handled.</p>
-<p><strong>Hard</strong> by default, shows the card at a <a href="deck-options.html#hard-interval">slightly longer delay</a> 
+<p><strong>Hard</strong> by default, shows the card at a <a href="deck-options.html#hard-interval">slightly longer delay</a>
 than last time, and tells Anki to show the card more frequently in the future.</p>
 <p><strong>Good</strong> tells Anki that the last delay was about right, and the card
 easiness doesn’t need to be adjusted down or up. At the <a href="deck-options.html#starting-ease">default starting
@@ -263,7 +263,7 @@ should find yourself answering 'Good' instead.</p>
 <p>As with learning cards, you can use <kbd>1</kbd>, <kbd>2</kbd>, <kbd>3</kbd> and <kbd>4</kbd> on the keyboard to select an
 answer. Pressing the <kbd>spacebar</kbd> or <kbd>Enter</kbd> will select <strong>Good</strong>.</p>
 <p>See <a href="deck-options.html">Deck Options</a> and the <a href="https://faqs.ankiweb.net/what-spaced-repetition-algorithm.html">FAQ</a>
-to learn more about how the algorithm works. </p>
+to learn more about how the algorithm works.</p>
 <h2 id="due-counts"><a class="header" href="#due-counts">Due Counts</a></h2>
 <p>When only the question is shown, Anki shows three numbers like 12 + 34 +
 56 at the bottom of the screen. These represent the new cards, cards in
@@ -286,8 +286,8 @@ will appear on the answer buttons when the <a href="https://faqs.ankiweb.net/the
 you are using a previous version and you’re noticing a slight discrepancy between
 what you select and the intervals your cards actually get, this is probably the
 cause.</p>
-<p>Learning cards are also given up to 5 minutes of extra delay so that they 
-don’t always appear in the same order, but answer buttons won't reflect that. It 
+<p>Learning cards are also given up to 5 minutes of extra delay so that they
+don’t always appear in the same order, but answer buttons won't reflect that. It
 is not possible to turn this feature off.</p>
 <h2 id="editing-and-more"><a class="header" href="#editing-and-more">Editing and More</a></h2>
 <p>You can click the <strong>Edit</strong> button in the bottom left to edit the current
@@ -301,7 +301,7 @@ card or note:</p>
 <p><a href="editing.html#using-flags"><strong>Flag Card</strong></a>: Adds a colored marker to the card, or toggles it off. Flags will appear during
 study, and you can search for flagged cards in the Browse screen. This is useful
 when you want to take some action on the card at a later date, such as looking
-up a word when you get home. If you're using Anki 2.1.45+, you can also rename flags 
+up a word when you get home. If you're using Anki 2.1.45+, you can also rename flags
 from the <a href="browsing.html">browser</a>.</p>
 </li>
 <li>
@@ -320,6 +320,14 @@ however, burying cards does not reset a card's learning steps.</p>
 <li>
 <p><strong>Forget card</strong>: Move current card to <a href="browsing.html#cards">the end of the new queue</a>.</p>
 </li>
+</ul>
+<p>From Anki 2.1.50+, Anki will remember the original order of a new card when it is first studied
+with the V3 scheduler. The &quot;Restore original position&quot; option allows you to reset the card back
+to its original position when you forget it.</p>
+<p>The &quot;Reset repetition and lapse count&quot; option, if enabled, will set the review and failure counters
+for the card back to zero. It does not remove the review history that is shown at the bottom of the
+card info screen.</p>
+<ul>
 <li>
 <p><strong>Set Due Date</strong>: Put cards in the review queue, and <a href="browsing.html#cards">make them due on a certain date.</a></p>
 </li>
@@ -347,12 +355,12 @@ however, suspending cards does not reset a card's learning steps.</p>
 <p><a href="editing.html#the-marked-tag"><strong>Mark Note</strong></a>: Adds a “marked” tag to the current note, so it can be easily found in the
 browser. This is similar to flagging individual cards, but works with a tag
 instead, so if the note has multiple cards, all cards will appear in a search
-for the marked tag. Most users will want to use flags instead. </p>
+for the marked tag. Most users will want to use flags instead.</p>
 </li>
 <li>
-<p><strong>Create Copy</strong>: Opens a <a href="browsing.html#finding-duplicates">duplicate</a> of the current 
-note in the editor, which can be slightly modified to easily obtain variations of your cards. 
-By default, the duplicate card will be created in the same deck as the original. </p>
+<p><strong>Create Copy</strong>: Opens a <a href="browsing.html#finding-duplicates">duplicate</a> of the current
+note in the editor, which can be slightly modified to easily obtain variations of your cards.
+By default, the duplicate card will be created in the same deck as the original.</p>
 </li>
 <li>
 <p><strong>Delete Note</strong>: Deletes the note and all of its cards.</p>
@@ -396,7 +404,7 @@ deck you clicked on applies.</p>
 </li>
 <li>
 <p>With the <a href="https://faqs.ankiweb.net/the-2021-scheduler.html">v3 scheduler</a>
-each child deck's limit is also enforced, and you do not need to see the cards 
+each child deck's limit is also enforced, and you do not need to see the cards
 in deck order either. See the <a href="deck-options.html#review-sort-order">deck options</a> section of the manual for more information.</p>
 </li>
 </ul>
