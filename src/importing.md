@@ -13,18 +13,18 @@ semicolons or tabs can be imported into Anki, provided some conditions
 are met.
 
 - The files must be plain text (myfile.txt). Other formats like
-    myfile.xls, myfile.rtf, myfile.doc must be saved as a plain text
-    file first.
+  myfile.xls, myfile.rtf, myfile.doc must be saved as a plain text
+  file first.
 
 - The files must be in UTF-8 format (see below).
 
 - Anki determines the number of fields in the file by looking at the
-    first (non-commented) line. Any lines in the file which have a
-    different number of fields will be ignored.
+  first (non-commented) line. Any lines in the file which have a
+  different number of fields will be ignored.
 
 - The first line also defines the separating character – if Anki finds
-    a ';' on the first line it will use that, if it finds a comma it’ll
-    use that, etc.
+  a ';' on the first line it will use that, if it finds a comma it’ll
+  use that, etc.
 
 Fields in your text file can be mapped to any field in your notes,
 including the tags field. You can choose which field in the text file
@@ -112,10 +112,10 @@ If you wish to use HTML for formatting your file but also wish to
 include angle brackets or ampersands, you may use the following replacements:
 
 | Character | Replacement |
-|-|-|
-| &lt; | `&lt;` |
-| &gt; | `&gt;` |
-| &amp; | `&amp;` |
+| --------- | ----------- |
+| &lt;      | `&lt;`      |
+| &gt;      | `&gt;`      |
+| &amp;     | `&amp;`     |
 
 ### Importing Media
 
