@@ -192,3 +192,58 @@ scheduling information on all their cards will be preserved.
 
 For info on how duplicates are handled in .apkg files, please see the
 [Deck Packages](exporting.md#packaged-decks) section.
+
+### File Headers
+
+Anki 2.1.54+ supports certain headers that can be included in the text file to
+make importing more powerful or convenient. They consist of `#key:value` pairs
+and must be listed at the top of the file, though the [tags line](#adding-tags)
+may precede them. Since header lines start with the comment character `#`, earlier
+Anki clients will just ignore them.
+
+<!-- prettier-ignore -->
+| Key | Allowed Values | Behaviour |
+| - | - | - |
+| `separator` | `Comma`, `Semicolon`, `Tab`, `Space`, `Pipe`, `Colon`, or the according literal characters | Determines the field separator. |
+| `html` | `true`, `false` | Determines whether the file is treated as HTML. |
+| `tags` | List of tags, separated by spaces | Same as [the old syntax](#adding-tags). |
+| `columns` | List of names, separated by the previously set separator | Determines the number of columns and shows their given names when importing. |
+| `notetype` | Notetype name or id | Presets the notetype, if it exists. |
+| `deck` | Deck name or id | Presets the deck, if it exists. |
+| `notetype column` | `1`, `2`, `3`, ... | Determines which column contains the notetype name or id of each note, see [Notetype Column](#notetype-column). |
+| `deck column` | `1`, `2`, `3`, ... | Determines which column contains the deck name or id of each note, see [Deck Column](#deck-column). |
+| `tags column` | `1`, `2`, `3`, ... | Determines which column contains the tags of each note. |
+| `guid column` | `1`, `2`, `3`, ... | Determines which column contains the GUID of each note, see [GUID Column](#guid-column). |
+
+Some headers have further implications.
+
+#### Notetype Column
+
+Usually, all notes from a file will be mapped to a single notetype, and you may
+choose which column should be mapped to which field of that notetype.
+
+That changes, if there is a column with notetype names or ids. This allows to
+import notes with different notetypes, and their fields will be mapped implicitly:
+The first regular column is used for the first field of any note regardless of
+its notetype, the second regular column for the second field, and so on.
+A 'regular column' here being a column that does not contain special information
+like decks, tags, notetypes or GUIDs.
+
+#### Deck Column
+
+Usually, any new cards created as a result of importing a text file will be placed
+in a single deck of your choice. If the file contains a deck column, however, new
+cards of a note will be placed in its specified deck instead.
+
+#### GUID Column
+
+GUID stands for _Globally Unique Identifier_ and is supposed to not only distinguish
+a note from other notes in your collection, but even from other users' notes.
+
+[Remember](#duplicates-and-updating) that Anki looks out for duplicates by comparing
+the first field of a note. This may lead to a note being updated with another note
+which you would consider to be distinct, or a new note being created although it's
+already in your collection, just because you've modified its first field.
+
+If a file contains GUIDs, Anki will look for existing notes with these first, and
+only compare the first field, if a GUID did not match any existing ones.
