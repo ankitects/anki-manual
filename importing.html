@@ -151,6 +151,13 @@
 <li><a href="#bulk-media">Bulk Media</a></li>
 <li><a href="#adding-tags">Adding Tags</a></li>
 <li><a href="#duplicates-and-updating">Duplicates and Updating</a></li>
+<li><a href="#file-headers">File Headers</a>
+<ul>
+<li><a href="#notetype-column">Notetype Column</a></li>
+<li><a href="#deck-column">Deck Column</a></li>
+<li><a href="#guid-column">GUID Column</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -312,6 +319,48 @@ set in the import dialog. If notes are updated in place, the existing
 scheduling information on all their cards will be preserved.</p>
 <p>For info on how duplicates are handled in .apkg files, please see the
 <a href="exporting.html#packaged-decks">Deck Packages</a> section.</p>
+<h3 id="file-headers"><a class="header" href="#file-headers">File Headers</a></h3>
+<p>Anki 2.1.54+ supports certain headers that can be included in the text file to
+make importing more powerful or convenient. They consist of <code>#key:value</code> pairs
+and must be listed at the top of the file, though the <a href="#adding-tags">tags line</a>
+may precede them. Since header lines start with the comment character <code>#</code>, earlier
+Anki clients will just ignore them.</p>
+<!-- prettier-ignore -->
+<table><thead><tr><th>Key</th><th>Allowed Values</th><th>Behaviour</th></tr></thead><tbody>
+<tr><td><code>separator</code></td><td><code>Comma</code>, <code>Semicolon</code>, <code>Tab</code>, <code>Space</code>, <code>Pipe</code>, <code>Colon</code>, or the according literal characters</td><td>Determines the field separator.</td></tr>
+<tr><td><code>html</code></td><td><code>true</code>, <code>false</code></td><td>Determines whether the file is treated as HTML.</td></tr>
+<tr><td><code>tags</code></td><td>List of tags, separated by spaces</td><td>Same as <a href="#adding-tags">the old syntax</a>.</td></tr>
+<tr><td><code>columns</code></td><td>List of names, separated by the previously set separator</td><td>Determines the number of columns and shows their given names when importing.</td></tr>
+<tr><td><code>notetype</code></td><td>Notetype name or id</td><td>Presets the notetype, if it exists.</td></tr>
+<tr><td><code>deck</code></td><td>Deck name or id</td><td>Presets the deck, if it exists.</td></tr>
+<tr><td><code>notetype column</code></td><td><code>1</code>, <code>2</code>, <code>3</code>, ...</td><td>Determines which column contains the notetype name or id of each note, see <a href="#notetype-column">Notetype Column</a>.</td></tr>
+<tr><td><code>deck column</code></td><td><code>1</code>, <code>2</code>, <code>3</code>, ...</td><td>Determines which column contains the deck name or id of each note, see <a href="#deck-column">Deck Column</a>.</td></tr>
+<tr><td><code>tags column</code></td><td><code>1</code>, <code>2</code>, <code>3</code>, ...</td><td>Determines which column contains the tags of each note.</td></tr>
+<tr><td><code>guid column</code></td><td><code>1</code>, <code>2</code>, <code>3</code>, ...</td><td>Determines which column contains the GUID of each note, see <a href="#guid-column">GUID Column</a>.</td></tr>
+</tbody></table>
+<p>Some headers have further implications.</p>
+<h4 id="notetype-column"><a class="header" href="#notetype-column">Notetype Column</a></h4>
+<p>Usually, all notes from a file will be mapped to a single notetype, and you may
+choose which column should be mapped to which field of that notetype.</p>
+<p>That changes, if there is a column with notetype names or ids. This allows to
+import notes with different notetypes, and their fields will be mapped implicitly:
+The first regular column is used for the first field of any note regardless of
+its notetype, the second regular column for the second field, and so on.
+A 'regular column' here being a column that does not contain special information
+like decks, tags, notetypes or GUIDs.</p>
+<h4 id="deck-column"><a class="header" href="#deck-column">Deck Column</a></h4>
+<p>Usually, any new cards created as a result of importing a text file will be placed
+in a single deck of your choice. If the file contains a deck column, however, new
+cards of a note will be placed in its specified deck instead.</p>
+<h4 id="guid-column"><a class="header" href="#guid-column">GUID Column</a></h4>
+<p>GUID stands for <em>Globally Unique Identifier</em> and is supposed to not only distinguish
+a note from other notes in your collection, but even from other users' notes.</p>
+<p><a href="#duplicates-and-updating">Remember</a> that Anki looks out for duplicates by comparing
+the first field of a note. This may lead to a note being updated with another note
+which you would consider to be distinct, or a new note being created although it's
+already in your collection, just because you've modified its first field.</p>
+<p>If a file contains GUIDs, Anki will look for existing notes with these first, and
+only compare the first field, if a GUID did not match any existing ones.</p>
 
                     </main>
 
