@@ -259,6 +259,18 @@ using the <code>cloze-only</code> filter, like so:</p>
 <pre><code>{{tts en_US:cloze-only:Text}}
 </code></pre>
 <p>The cloze-only filter is supported in Anki 2.1.29+ and AnkiMobile 2.0.65+.</p>
+<p>You can enable Anki's TTS feature on supported platforms while falling back to <a href="https://docs.ankidroid.org/#_workarounds">AnkiDroid's
+own method</a> by placing something like this in your templates:</p>
+<pre><code class="language-html">&lt;span class=&quot;ankidroidtts&quot;&gt;&lt;tts service=&quot;android&quot; voice=&quot;en_US&quot;&gt;{{Front}}&lt;/tts&gt;&lt;/span&gt;&lt;span class=&quot;ankitts&quot;&gt;{{tts en_US:Front}}&lt;/span&gt;
+</code></pre>
+<p>Then in the styling section:</p>
+<pre><code class="language-css">.android .ankitts {
+  display: none;
+}
+:not(.android) .ankidroidtts {
+  display: none;
+}
+</code></pre>
 <h2 id="special-fields"><a class="header" href="#special-fields">Special Fields</a></h2>
 <p>There are some special fields you can include in your templates:</p>
 <pre><code>The note's tags: {{Tags}}
