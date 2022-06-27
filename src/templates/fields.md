@@ -124,6 +124,24 @@ using the `cloze-only` filter, like so:
 
 The cloze-only filter is supported in Anki 2.1.29+ and AnkiMobile 2.0.65+.
 
+You can enable Anki's TTS feature on supported platforms while falling back to [AnkiDroid's
+own method](https://docs.ankidroid.org/#_workarounds) by placing something like this in your templates:
+
+```html
+<span class="ankidroidtts"><tts service="android" voice="en_US">{{Front}}</tts></span><span class="ankitts">{{tts en_US:Front}}</span>
+```
+
+Then in the styling section:
+
+```css
+.android .ankitts {
+  display: none;
+}
+:not(.android) .ankidroidtts {
+  display: none;
+}
+```
+
 ## Special Fields
 
 There are some special fields you can include in your templates:
