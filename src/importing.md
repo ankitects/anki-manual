@@ -201,6 +201,9 @@ and must be listed at the top of the file, though the [tags line](#adding-tags)
 may precede them. Since header lines start with the comment character `#`, earlier
 Anki clients will just ignore them.
 
+You must enable the new importing option in the preferences screen to use this on
+2.1.54. On 2.1.55, the new importing path is the default.
+
 <!-- prettier-ignore -->
 | Key | Allowed Values | Behaviour |
 | - | - | - |
