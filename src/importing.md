@@ -197,7 +197,7 @@ For info on how duplicates are handled in .apkg files, please see the
 
 Anki 2.1.54+ supports certain headers that can be included in the text file to
 make importing more powerful or convenient. They consist of `#key:value` pairs
-and must be listed at the top of the file, though the [tags line](#adding-tags)
+and must be listed in separate lines at the top of the file, though the [tags line](#adding-tags)
 may precede them. Since header lines start with the comment character `#`, earlier
 Anki clients will just ignore them.
 
