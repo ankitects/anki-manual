@@ -33,7 +33,7 @@ To install Anki:
 
 ```shell
 tar xaf Downloads/anki-2.1.XX-linux-qt6.tar.zst
-cd anki-2.1.XX-linux
+cd anki-2.1.XX-linux-qt6
 sudo ./install.sh
 ```
 
