@@ -25,7 +25,7 @@ To try it out:
 
         \(\sqrt{x}\)
 
-4.  If you click the Cards…​ button, you’ll see a preview of how the
+4.  If you click the Cards… button, you’ll see a preview of how the
     equation will appear when the card is reviewed.
 
 Anki’s MathJax support expects content in TeX format. If you’re not
@@ -70,8 +70,8 @@ LaTeX forum.
 To install LaTeX, on Windows use MiKTeX; on macOS use MacTex, and on Linux
 use your distro’s package manager. Dvipng must also be installed.
 
-On Windows, go to Settings in MikTek’s maintenance window, and make sure
-"Install missing packages on the fly" is set to "No", not to "Ask me
+On Windows, go to Settings in MikTeX’s maintenance window, and make sure
+"Install missing packages on the fly" is set to "Always", not to "Ask me
 first". If you continue to have difficulties, one user reported that
 running Anki as an administrator until all the packages were fetched
 helped.
