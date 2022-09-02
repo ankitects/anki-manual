@@ -248,5 +248,5 @@ the first field of a note. This may lead to a note being updated with another no
 which you would consider to be distinct, or a new note being created although it's
 already in your collection, just because you've modified its first field.
 
-If a file contains GUIDs, Anki will look for existing notes with these first, and
-only compare the first field, if a GUID did not match any existing ones.
+You can specify a GUID to have Anki use this instead when looking for duplicates.
+If no are found and a new note is created, it is assigned the provided GUID.
