@@ -236,7 +236,8 @@ like decks, tags, notetypes or GUIDs.
 
 Usually, any new cards created as a result of importing a text file will be placed
 in a single deck of your choice. If the file contains a deck column, however, new
-cards of a note will be placed in its specified deck instead.
+cards of a note will be placed in its specified deck instead. If the deck does not
+exist, a deck with the given name will be created.
 
 #### GUID Column
 
