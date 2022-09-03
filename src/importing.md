@@ -250,4 +250,4 @@ which you would consider to be distinct, or a new note being created although it
 already in your collection, just because you've modified its first field.
 
 You can specify a GUID to have Anki use this instead when looking for duplicates.
-If no are found and a new note is created, it is assigned the provided GUID.
+If an existing note with the provided GUID is not found, and a new note is created with the provided GUID.
