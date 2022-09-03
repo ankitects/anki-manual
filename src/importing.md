@@ -236,7 +236,8 @@ like decks, tags, notetypes or GUIDs.
 
 Usually, any new cards created as a result of importing a text file will be placed
 in a single deck of your choice. If the file contains a deck column, however, new
-cards of a note will be placed in its specified deck instead.
+cards of a note will be placed in its specified deck instead. If the deck does not
+exist, a deck with the given name will be created.
 
 #### GUID Column
 
@@ -248,5 +249,5 @@ the first field of a note. This may lead to a note being updated with another no
 which you would consider to be distinct, or a new note being created although it's
 already in your collection, just because you've modified its first field.
 
-If a file contains GUIDs, Anki will look for existing notes with these first, and
-only compare the first field, if a GUID did not match any existing ones.
+You can specify a GUID to have Anki use this instead when looking for duplicates.
+If an existing note with the provided GUID is not found, and a new note is created with the provided GUID.
