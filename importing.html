@@ -353,7 +353,8 @@ like decks, tags, notetypes or GUIDs.</p>
 <h4 id="deck-column"><a class="header" href="#deck-column">Deck Column</a></h4>
 <p>Usually, any new cards created as a result of importing a text file will be placed
 in a single deck of your choice. If the file contains a deck column, however, new
-cards of a note will be placed in its specified deck instead.</p>
+cards of a note will be placed in its specified deck instead. If the deck does not
+exist, a deck with the given name will be created.</p>
 <h4 id="guid-column"><a class="header" href="#guid-column">GUID Column</a></h4>
 <p>GUID stands for <em>Globally Unique Identifier</em> and is supposed to not only distinguish
 a note from other notes in your collection, but even from other users' notes.</p>
@@ -361,8 +362,8 @@ a note from other notes in your collection, but even from other users' notes.</p
 the first field of a note. This may lead to a note being updated with another note
 which you would consider to be distinct, or a new note being created although it's
 already in your collection, just because you've modified its first field.</p>
-<p>If a file contains GUIDs, Anki will look for existing notes with these first, and
-only compare the first field, if a GUID did not match any existing ones.</p>
+<p>You can specify a GUID to have Anki use this instead when looking for duplicates.
+If an existing note with the provided GUID is not found, and a new note is created with the provided GUID.</p>
 
                     </main>
 
