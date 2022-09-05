@@ -5,7 +5,7 @@
 Hardware acceleration defaults to off. Enabling it in the preferences screen and
 restarting Anki may make Anki’s interface more responsive, but some users may
 experience missing menubars, blank windows or crashes when it is enabled.
-(Blank windows may also be caused by [this problem](./blank-window.md)).
+(Blank windows may also be caused by [this problem](./blank-window.md).)
 
 You can adjust the display driver in Anki's Preferences screen. We
 recommend you try both settings, and see which one works best for you.

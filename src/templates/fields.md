@@ -335,7 +335,7 @@ up to you to decide how well you remembered or not.
 Only one typing comparison can be used on a card. If you add the above
 text multiple times, it will not work. It also only supports a single
 line, so it is not useful for comparing against a field that is
-comprised on multiple lines.
+comprised of multiple lines.
 
 Anki uses a monospaced font for the answer comparison so that the
 “provided” and “correct” sections line up. If you wish to override the

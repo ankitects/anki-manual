@@ -103,7 +103,7 @@ the deck you click on are honored.
 - V3 honors the limits of the deck you click on, and any decks inside it. 
 Limits from parents above the deck you clicked on are ignored.
 
-For more information, please see the the [v3 scheduler](https://faqs.ankiweb.net/the-2021-scheduler.html#daily-limits) page.
+For more information, please see the [v3 scheduler](https://faqs.ankiweb.net/the-2021-scheduler.html#daily-limits) page.
 
 Studying new cards will temporarily increase the number of reviews you need to
 do a day, as freshly learnt material needs to be repeated a number of times
