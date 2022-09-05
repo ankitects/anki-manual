@@ -487,7 +487,7 @@ If any needed to be installed, please restart your device after installing.</p>
 <h2 id="multiple-displays"><a class="header" href="#multiple-displays">Multiple displays</a></h2>
 <p>If you get a <em>LoadLibrary failed with error 126</em>, this may be caused by the
 toolkit Anki is built on having trouble with <a href="https://forums.ankiweb.net/t/error-126-on-open-anki-desktop/13967">multiple
-displays</a></p>
+displays</a>.</p>
 <h2 id="antivirusfirewall-software"><a class="header" href="#antivirusfirewall-software">Antivirus/firewall software</a></h2>
 <p>Third-party software on your machine may prevent Anki from loading. You can
 try adding an exception to Anki, or temporarily disabling your antivirus/firewall
@@ -866,7 +866,7 @@ may need to do this a few times before all required libraries are installed.</p>
 <p>Hardware acceleration defaults to off. Enabling it in the preferences screen and
 restarting Anki may make Anki’s interface more responsive, but some users may
 experience missing menubars, blank windows or crashes when it is enabled.
-(Blank windows may also be caused by <a href="platform/linux/./blank-window.html">this problem</a>).</p>
+(Blank windows may also be caused by <a href="platform/linux/./blank-window.html">this problem</a>.)</p>
 <p>You can adjust the display driver in Anki's Preferences screen. We
 recommend you try both settings, and see which one works best for you.</p>
 <p>If you're unable to open Anki, you can adjust the driver in a terminal, by
@@ -927,7 +927,7 @@ echo &quot;export GTK2_RC_FILES=$HOME/.gtkrc-2.0&quot; &gt;&gt; ~/.profile
 before starting Anki. Wayland may give you better rendering across multiple
 displays, but it is currently off by default, due to the following issues:</p>
 <ul>
-<li>On some distros, Windows are rendered without borders.</li>
+<li>On some distros, windows are rendered without borders.</li>
 <li>Bringing windows to the front is not possible, so for example, clicking on Add
 to reveal an existing Add Cards window will not work.</li>
 </ul>
@@ -1778,7 +1778,7 @@ window, showing a colored flag icon on the upper right area of the screen.
 You can also search for flagged cards in the Browse screen, rename flags 
 from the browser and create filtered decks from flagged cards, but unlike tags, 
 a single card can have only one flag at a time. Another important difference
-is that flags work at <a href="getting-started.html#cards">card</a> level, so flagging a card that have siblings 
+is that flags work at <a href="getting-started.html#cards">card</a> level, so flagging a card that has siblings 
 won't have any effect on the card's siblings. </p>
 <p>You can flag / unflag cards directly while in review mode (by pressing 
 <kbd>CTRL</kbd> + <kbd>1-7</kbd> on Windows or <kbd>CMD</kbd> + <kbd>1-7</kbd> on Mac) 
@@ -1925,7 +1925,7 @@ recommend is by using a keyboard layout for the language you want to learn.</p>
 <p>Languages with a separate script like Japanese, Chinese, Thai, and so on,
 have their own layouts specific to that language.</p>
 <p>European languages that use accents may have their own layout, but can
-often by typed on a generic &quot;international keyboard&quot; layout. These work
+often be typed on a generic &quot;international keyboard&quot; layout. These work
 by typing the accent, then the character you want accented - e.g. an
 apostrophe (') then the letter a (a) gives á.</p>
 <p>To add the international keyboard on Windows machines, please see
@@ -2308,7 +2308,7 @@ up to you to decide how well you remembered or not.</p>
 <p>Only one typing comparison can be used on a card. If you add the above
 text multiple times, it will not work. It also only supports a single
 line, so it is not useful for comparing against a field that is
-comprised on multiple lines.</p>
+comprised of multiple lines.</p>
 <p>Anki uses a monospaced font for the answer comparison so that the
 “provided” and “correct” sections line up. If you wish to override the
 font for the answer comparison, you can put the following at the bottom
@@ -3227,7 +3227,7 @@ the deck you click on are honored.</li>
 <li>V3 honors the limits of the deck you click on, and any decks inside it. 
 Limits from parents above the deck you clicked on are ignored.</li>
 </ul>
-<p>For more information, please see the the <a href="https://faqs.ankiweb.net/the-2021-scheduler.html#daily-limits">v3 scheduler</a> page.</p>
+<p>For more information, please see the <a href="https://faqs.ankiweb.net/the-2021-scheduler.html#daily-limits">v3 scheduler</a> page.</p>
 <p>Studying new cards will temporarily increase the number of reviews you need to
 do a day, as freshly learnt material needs to be repeated a number of times
 before the delay between repetitions can increase appreciably. If you are
@@ -5475,15 +5475,15 @@ use LaTeX already, and that you have it installed. If you have no
 experience with LaTeX, please consult one of the many guides available
 on the internet. If you are having trouble with markup, please ask on a
 LaTeX forum.</p>
-<p>To install LaTeX, on Windows use MiKTeX; on macOS use MacTex, and on Linux
+<p>To install LaTeX, on Windows use MiKTeX; on macOS use MacTeX, and on Linux
 use your distro’s package manager. Dvipng must also be installed.</p>
 <p>On Windows, go to Settings in MikTeX’s maintenance window, and make sure
 &quot;Install missing packages on the fly&quot; is set to &quot;Always&quot;, not to &quot;Ask me
 first&quot;. If you continue to have difficulties, one user reported that
 running Anki as an administrator until all the packages were fetched
 helped.</p>
-<p>On macOS, LaTeX has only been tested with MacTex and BasicTex. If you use
-BasicTex, you need to install dvipng separately, with the following
+<p>On macOS, LaTeX has only been tested with MacTeX and BasicTeX. If you use
+BasicTeX, you need to install dvipng separately, with the following
 command:</p>
 <pre><code>sudo tlmgr update --self; sudo tlmgr install dvipng
 </code></pre>
@@ -5566,7 +5566,7 @@ an example file for chemtex on the internet:</p>
 
 \end{document}
 </code></pre>
-<p>Firstly, follow the documentation of the package and MiKTeX/MacTex in
+<p>Firstly, follow the documentation of the package and MiKTeX/MacTeX in
 order to install the package. To check the package is working, you’ll
 want to put code like the above into a .latex file and test if you can
 compile it from the command line. Once you’ve confirmed that the package
