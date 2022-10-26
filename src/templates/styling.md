@@ -9,9 +9,10 @@ cards](http://www.youtube.com/watch?v=F1j1Zx0mXME&yt:cc=on) on YouTube.
 The video shows Anki 2.0’s interface, but the concepts are largely the
 same.
 
-In between the front and back template in the Cards screen is the card
-styling area. In that section, you can change the background color of
-the card, the default font, the text alignment, and so on.
+The styling section of the Cards screen can accessed by clicking the 
+"Styling" button next to the "Back Template" button. In that section, 
+you can change the background color of the card, the default font, the 
+text alignment, and so on.
 
 The standard options available to you are:
 
