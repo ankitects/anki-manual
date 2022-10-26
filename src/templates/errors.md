@@ -51,7 +51,7 @@ and click the Add Field button to add one or more fields to the front.
 
 ### Cloze Filter Outside Cloze Notetype
 
-The [cloze](../editing.md/#cloze-deletion) filter (as in `{{cloze:Some Field}}`)
+The [cloze](../editing.md#cloze-deletion) filter (as in `{{cloze:Some Field}}`)
 may only be used on the cloze notetype, and on those created by cloning it.
 
 If you get this error, you can remove the cloze filter from the template.
@@ -67,6 +67,6 @@ like the Closet add-on provides some alternatives.
 
 ### No Cloze Filter on Cloze Notetype
 
-A Cloze notetype's front and back templates should have a [cloze](../editing.md/#cloze-deletion)
+A Cloze notetype's front and back templates should have a [cloze](../editing.md#cloze-deletion)
 filter. If one is missing, you will need to add it back so that Anki can create cloze cards
 correctly.
