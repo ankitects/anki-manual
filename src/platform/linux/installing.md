@@ -37,6 +37,8 @@ cd anki-2.1.XX-linux-qt6
 sudo ./install.sh
 ```
 
+On some Linux systems, you may need to use `tar xaf --use-compress-program=unzstd`.
+
 4. You can then start Anki by typing 'anki' and hitting enter. If you encounter
    any issues, please see the links on the left.
 
