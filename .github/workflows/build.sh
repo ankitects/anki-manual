@@ -1,8 +1,10 @@
 #!/bin/bash
 
-(cd && git clone https://github.com/ankitects/mdbook-binaries.git)
-export PATH="$HOME/mdbook-binaries:$PATH"
+(cd && \
+  curl -LO https://github.com/ankitects/mdbook-linkcheck/releases/download/anki-2022-11-17/mdbook.tar.zst && \
+  tar xaf mdbook.tar.zst)
+export PATH="$HOME:$PATH"
 if [ "$CHECK" = "" ]; then
-    rm $HOME/mdbook-binaries/mdbook-linkcheck
+    rm $HOME/mdbook-linkcheck
 fi    
 mdbook build
