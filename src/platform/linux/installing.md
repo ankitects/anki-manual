@@ -44,8 +44,8 @@ On some Linux systems, you may need to use `tar xaf --use-compress-program=unzst
 
 ## Qt5 vs. Qt6
 
-Recent Anki versions come in separate Qt5 and Qt6 variants. Each version
-has some advantages and disadvantages.
+Recent Anki versions come in separate Qt5 and Qt6 variants. The Qt6 version
+is recommended for most users.
 
 Advantages of the Qt6 version:
 
@@ -53,6 +53,8 @@ Advantages of the Qt6 version:
 - Better HiDPI support.
 - Better Wayland support.
 - Various bugfixes, including things like better support for less common languages.
+- Security updates. Support for the Qt5 library was discontinued in Nov 2020,
+meaning that any security flaws discovered since then will remain unfixed.
 
 Disadvantages of the Qt6 version include:
 
