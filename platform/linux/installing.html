@@ -186,14 +186,16 @@ sudo ./install.sh
 any issues, please see the links on the left.</li>
 </ol>
 <h2 id="qt5-vs-qt6"><a class="header" href="#qt5-vs-qt6">Qt5 vs. Qt6</a></h2>
-<p>Recent Anki versions come in separate Qt5 and Qt6 variants. Each version
-has some advantages and disadvantages.</p>
+<p>Recent Anki versions come in separate Qt5 and Qt6 variants. The Qt6 version
+is recommended for most users.</p>
 <p>Advantages of the Qt6 version:</p>
 <ul>
 <li>Compatibility with recent glibc versions (fixes <a href="./blank-window.html">blank screens on recent distros</a>).</li>
 <li>Better HiDPI support.</li>
 <li>Better Wayland support.</li>
 <li>Various bugfixes, including things like better support for less common languages.</li>
+<li>Security updates. Support for the Qt5 library was discontinued in Nov 2020,
+meaning that any security flaws discovered since then will remain unfixed.</li>
 </ul>
 <p>Disadvantages of the Qt6 version include:</p>
 <ul>
