@@ -154,6 +154,8 @@ There are some special fields you can include in your templates:
 
     The card's subdeck: {{Subdeck}}
 
+    The card's flag: {{CardFlag}}
+
     The type of card ("Forward", etc): {{Card}}
 
     The content of the front template
