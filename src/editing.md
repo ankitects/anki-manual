@@ -417,7 +417,7 @@ by typing the accent, then the character you want accented - e.g. an
 apostrophe (') then the letter a (a) gives á.
 
 To add the international keyboard on Windows machines, please see
-<http://www.techlanguage.com/tips/us_international.html>
+<https://thegeekpage.com/how-to-add-us-international-keyboard-in-windows-10/>
 
 To add it on Macs, please see
 <http://www.macworld.com/article/1147039/os-x/accentinput.html>
