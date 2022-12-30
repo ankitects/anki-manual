@@ -156,6 +156,11 @@
 <li><a href="#dictionary-links">Dictionary Links</a></li>
 <li><a href="#html-stripping">HTML Stripping</a></li>
 <li><a href="#right-to-left-text">Right To Left Text</a></li>
+<li><a href="#ruby-characters">Ruby Characters</a>
+<ul>
+<li><a href="#additional-ruby-character-filters">Additional Ruby Character Filters</a></li>
+</ul>
+</li>
 <li><a href="#media--latex">Media &amp; LaTeX</a>
 <ul>
 <li><a href="#static-soundsimages">Static Sounds/Images</a></li>
@@ -371,6 +376,49 @@ formatted text would be:</p>
 to adjust the template like so:</p>
 <pre><code>&lt;div dir=rtl&gt;{{FieldThatHasRTLTextInIt}}&lt;/div&gt;
 </code></pre>
+<h2 id="ruby-characters"><a class="header" href="#ruby-characters">Ruby Characters</a></h2>
+<p>Some languages commonly use annotations above the text to display the
+pronunciation of characters. These annotations are known as
+<a href="https://en.wikipedia.org/wiki/Ruby_character">ruby characters</a>.
+In Japanese, these are known as <a href="https://en.wikipedia.org/wiki/Furigana">furigana</a>.</p>
+<p>In Anki, you can display ruby characters by using the following syntax:</p>
+<pre><code>Text[Ruby]
+</code></pre>
+<p>Suppose the text above is written in MyField. By default, if you simply use
+<code>{{Myfield}}</code>, the field will be displayed as is. To properly position the
+ruby characters above the text, use the <code>furigana</code> filter in the templates
+like so:</p>
+<pre><code>{{furigana:MyField}}
+</code></pre>
+<p>Here are some examples:</p>
+<!-- prettier-ignore -->
+<div class="table-wrapper"><table><thead><tr><th>Raw Text</th><th>Rendered Text</th></tr></thead><tbody>
+<tr><td><code>Text[Ruby]</code></td><td><ruby><rb>Text</rb><rt>Ruby</rt></ruby></td></tr>
+<tr><td><code>日本語[にほんご]</code></td><td><ruby><rb>日本語</rb><rt>にほんご</rt></ruby></td></tr>
+<tr><td><code>世[よ]の 中[なか]</code></td><td><ruby><rb>世</rb><rt>よ</rt></ruby>の<ruby><rb>中</rb><rt>なか</rt></ruby></td></tr>
+<tr><td><code>世[よ]の中[なか]</code></td><td><ruby><rb>世</rb><rt>よ</rt></ruby><ruby><rb>の中</rb><rt>なか</rt></ruby>  <em>(incorrect!)</em></td></tr>
+</tbody></table>
+</div>
+<p>Notice how the third example has a space before the 中 character. This is
+necessary to specify that the ruby text applies only to that character.
+If there was no space, the ruby text will be misplaced above the の character,
+as shown in the fourth example.</p>
+<h3 id="additional-ruby-character-filters"><a class="header" href="#additional-ruby-character-filters">Additional Ruby Character Filters</a></h3>
+<p>In addition to the <code>furigana</code> filter, you can also only show certain parts
+of the ruby text, with the <code>kana</code> and <code>kanji</code> filters. The <code>kana</code> filter will
+only show the ruby text, while the <code>kanji</code> filter removes the ruby text
+entirely.</p>
+<!-- prettier-ignore -->
+<div class="table-wrapper"><table><thead><tr><th>Raw Text</th><th>Field Filter</th><th>Rendered Text</th></tr></thead><tbody>
+<tr><td><code>日本語[にほんご]</code></td><td><code>{{furigana:MyField}}</code></td><td><ruby><rb>日本語</rb><rt>にほんご</rt></ruby></td></tr>
+<tr><td><code>日本語[にほんご]</code></td><td><code>{{kana:MyField}}</code></td><td>にほんご</td></tr>
+<tr><td><code>日本語[にほんご]</code></td><td><code>{{kanji:MyField}}</code></td><td>日本語</td></tr>
+</tbody></table>
+</div>
+<p>These names are again, borrowed from Japanese.
+The term <a href="https://en.wikipedia.org/wiki/Kana">kana</a> represents the phonetic
+system used to describe how words are pronounced, whereas the term
+<a href="https://en.wikipedia.org/wiki/Kanji">kanji</a> represents its Chinese characters.</p>
 <h2 id="media--latex"><a class="header" href="#media--latex">Media &amp; LaTeX</a></h2>
 <p>Anki does not scan templates for media references, because it is slow to
 do so. This has implications for including media on the template.</p>
