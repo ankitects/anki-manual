@@ -134,7 +134,7 @@ following in our templates:
 ```html
 <tts service="android" voice="en_US">{{Front}}</tts>
 
-<span class="ankitts">Anki tts:{{tts en_US:Front}}</span>
+<span class="ankitts">{{tts en_US:Front}}</span>
 
 <button class="ankidroidTtsButton" onclick="
 AnkiDroidJS.ankiTtsSpeak('{{Front}}');">Play TTS</button>
