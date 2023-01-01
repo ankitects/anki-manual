@@ -270,16 +270,29 @@ using the <code>cloze-only</code> filter, like so:</p>
 </code></pre>
 <p>The cloze-only filter is supported in Anki 2.1.29+ and AnkiMobile 2.0.65+.</p>
 <p>You can enable Anki's TTS feature on supported platforms while falling back to <a href="https://docs.ankidroid.org/#_workarounds">AnkiDroid's
-own method</a> by placing something like this in your templates:</p>
-<pre><code class="language-html">&lt;span class=&quot;ankidroidtts&quot;&gt;&lt;tts service=&quot;android&quot; voice=&quot;en_US&quot;&gt;{{Front}}&lt;/tts&gt;&lt;/span&gt;&lt;span class=&quot;ankitts&quot;&gt;{{tts en_US:Front}}&lt;/span&gt;
+own method</a>. Until AnkiDroid 
+supports the {{tts:FieldName}} syntax, it will render these fields as 
+text, while other platforms will render a (re)play audio button. In order 
+to temporarily fix this discrepancy between platforms, we can use the 
+following in our templates:</p>
+<pre><code class="language-html">&lt;tts service=&quot;android&quot; voice=&quot;en_US&quot;&gt;{{Front}}&lt;/tts&gt;
+
+&lt;span class=&quot;ankitts&quot;&gt;{{tts en_US:Front}}&lt;/span&gt;
+
+&lt;button class=&quot;ankidroidTtsButton&quot; onclick=&quot;
+AnkiDroidJS.ankiTtsSpeak('{{Front}}');&quot;&gt;Play TTS&lt;/button&gt;
 </code></pre>
 <p>Then in the styling section:</p>
-<pre><code class="language-css">.android .ankitts {
+<pre><code class="language-css">/*Anki (desktop) TTS needs to be hidden because AnkiDroid currently renders it as text instead of a play button like desktop.*/
+.android .ankitts {
   display: none;
 }
-html:not(.android) .ankidroidtts {
+
+/*The AnkiDroid tts button won't work on other platforms because it uses the JS API, therefore it should be hidden*/
+html:not(.android) .ankidroidTtsButton { 
   display: none;
-}
+} 
+
 </code></pre>
 <h2 id="special-fields"><a class="header" href="#special-fields">Special Fields</a></h2>
 <p>There are some special fields you can include in your templates:</p>
