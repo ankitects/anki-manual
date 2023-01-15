@@ -91,6 +91,14 @@ If you have HTML5 media in both your front and back cards,
 you should include the `ankimedia` script in both of your templates,
 setting the "front"/"back" value accordingly.
 
+**Important**: Your back template should have an element on its top,
+with the id `answer`, such as `<hr id=answer>`.
+This element will cause Anki to scroll the answer page down to the question.
+If you do not like this behavior, you can rename the `<hr id=answer>` to something like `<hr id=answer-audio>`.
+With this, Anki will stop scrolling down the page, but the `ankimedia` object will keep working correctly.
+The element `<hr id=answer>` is used internally by `ankimedia` object not to play the question
+audio on the answer or the answer audio on the question.
+
 ### Basic example:
 
 Given the following fields:
