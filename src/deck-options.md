@@ -256,14 +256,15 @@ section for more information.
 
 ## Timer
 
-Anki monitors how long it takes you to answer each question, so that it
+Anki monitors how long it takes you to answer each card, so that it
 can show you how long was spent studying each day. The time taken does
 not influence scheduling. The default limit is 60 seconds. If you take
 longer than that, Anki assumes you have walked away from your computer
 or have been distracted, and limits the recorded time to 60 seconds, so
 that you don’t end up with inaccurate statistics. If you consistently
-take longer than 60 seconds to answer a card, you may want to either
-consider raising this limit, or ideally, making your cards simpler.
+take longer than 60 seconds to answer a card (from when question is shown
+until you press an answer button), you may want to either consider raising
+this limit, or ideally, making your cards simpler.
 
 ## Burying
 
