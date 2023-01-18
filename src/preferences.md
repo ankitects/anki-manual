@@ -115,7 +115,7 @@ as a 30 minute study session) into smaller blocks. If you set the timebox time
 limit to a non-zero number of minutes, Anki will periodically show you how many
 cards you’ve managed to study during the prescribed time limit.
 
-## Network
+## Syncing/Network
 
 The network tab contains options related to syncing with AnkiWeb.
 
@@ -124,6 +124,7 @@ The network tab contains options related to syncing with AnkiWeb.
   ask you whether you wish to upload or download. This is useful if
   you have made some changes accidentally, and wish to overwrite them
   with an older version that is on AnkiWeb.
+- For info on the custom sync server option, see [this section](./sync-server.md).
 
 ## Backups
 

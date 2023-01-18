@@ -48,6 +48,7 @@
 - [Math & Symbols](math.md)
 - [Leeches](leeches.md)
 - [Add-ons](addons.md)
+- [Sync Server](sync-server.md)
 - [Miscellaneous](misc.md)
 
 [Contributing](contrib.md)
