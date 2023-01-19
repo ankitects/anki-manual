@@ -25,6 +25,8 @@ can do this by starting cmd.exe and typing the following:
 echo auto > %APPDATA%\Anki2\gldriver
 ```
 
+It will not print anything. You can then start Anki again.
+
 The default is `software`; the other two drivers you can try are `angle` and `auto`.
 
 ## Qt6
@@ -36,6 +38,8 @@ you can try switching to software mode:
 ```bat
 echo software > %APPDATA%\Anki2\gldriver6
 ```
+
+It will not print anything. You can then start Anki again.
 
 To revert to the default behaviour, change `software` to `auto`, or delete that file.
 

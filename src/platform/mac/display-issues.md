@@ -11,6 +11,8 @@ Open Terminal.app, then paste the following and hit enter:
 echo software > ~/Library/Application\ Support/Anki2/gldriver6
 ```
 
+It will not print anything. You can then start Anki again.
+
 If you wish to switch back to the default, change `software` to `auto`, or
 remove that file.
 
