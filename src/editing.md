@@ -379,12 +379,18 @@ When the card comes up for review, it will appear as:
 For information on testing your ability to type in a cloze deletion
 correctly, please see the section on [typing answers](templates/fields.md#checking-your-answer).
 
-Please note that overlapping clozes are not supported. For example, the
-following field is invalid:
+From version 2.1.56, nested cloze deletions are supported. For example, the following is valid:
 
     {{c1::Canberra was {{c2::founded}}}} in 1913
+    
+The inner cloze is entirely nested within the outer. There is no support for partial overlaps, such as:
 
-If you need to create clozes from overlapping text, add another Text
+    \[...\] founded in 1913 -> Canberra was
+    Canberra \[...\] in 1913 -> was founded
+    
+with the word "was" appearing in both deletions.
+    
+Prior to version 2.1.56, if you need to create clozes from overlapping text, add another Text
 field to your cloze, add it to the [template](templates/intro.md), and then when
 creating notes, paste the text into two separate fields, like so:
 
