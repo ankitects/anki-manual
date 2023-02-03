@@ -478,11 +478,15 @@ treat the text after the two colons as a hint, changing the text into:</p>
 </code></pre>
 <p>For information on testing your ability to type in a cloze deletion
 correctly, please see the section on <a href="templates/fields.html#checking-your-answer">typing answers</a>.</p>
-<p>Please note that overlapping clozes are not supported. For example, the
-following field is invalid:</p>
+<p>From version 2.1.56, nested cloze deletions are supported. For example, the following is valid:</p>
 <pre><code>{{c1::Canberra was {{c2::founded}}}} in 1913
 </code></pre>
-<p>If you need to create clozes from overlapping text, add another Text
+<p>The inner cloze is entirely nested within the outer. There is no support for partial overlaps, such as:</p>
+<pre><code>\[...\] founded in 1913 -&gt; Canberra was
+Canberra \[...\] in 1913 -&gt; was founded
+</code></pre>
+<p>with the word &quot;was&quot; appearing in both deletions.</p>
+<p>Prior to version 2.1.56, if you need to create clozes from overlapping text, add another Text
 field to your cloze, add it to the <a href="templates/intro.html">template</a>, and then when
 creating notes, paste the text into two separate fields, like so:</p>
 <pre><code>Text1 field: {{c1::Canberra was founded}} in 1913
