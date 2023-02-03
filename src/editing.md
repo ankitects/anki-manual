@@ -385,8 +385,8 @@ From version 2.1.56, nested cloze deletions are supported. For example, the foll
     
 The inner cloze is entirely nested within the outer. There is no support for partial overlaps, such as:
 
-    \[...\] founded in 1913 -> Canberra was
-    Canberra \[...\] in 1913 -> was founded
+    [...] founded in 1913 -> Canberra was
+    Canberra [...] in 1913 -> was founded
     
 with the word "was" appearing in both deletions.
     
