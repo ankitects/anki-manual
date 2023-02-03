@@ -482,8 +482,8 @@ correctly, please see the section on <a href="templates/fields.html#checking-you
 <pre><code>{{c1::Canberra was {{c2::founded}}}} in 1913
 </code></pre>
 <p>The inner cloze is entirely nested within the outer. There is no support for partial overlaps, such as:</p>
-<pre><code>\[...\] founded in 1913 -&gt; Canberra was
-Canberra \[...\] in 1913 -&gt; was founded
+<pre><code>[...] founded in 1913 -&gt; Canberra was
+Canberra [...] in 1913 -&gt; was founded
 </code></pre>
 <p>with the word &quot;was&quot; appearing in both deletions.</p>
 <p>Prior to version 2.1.56, if you need to create clozes from overlapping text, add another Text
