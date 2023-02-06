@@ -88,7 +88,7 @@ requires separate configuration for the two endpoints.
 ## Large Requests
 
 The standard AnkiWeb limit on uploads is applied by default. You can optionally
-set MAX_SYNC_UPLOAD_MEGS to something greater than 100 if you wish to increase
+set MAX_SYNC_PAYLOAD_MEGS to something greater than 100 if you wish to increase
 the limit. Bear in mind that if you're using a reverse proxy, you may need to
 adjust the limit there as well.
 
