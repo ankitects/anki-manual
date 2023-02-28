@@ -147,7 +147,7 @@ so those learning cards will be subject to the daily limit.
 
 ### Per Deck Daily Limits
 
-Fom version 5 it is possible to use the same preset for different decks / subdecks, with customized 
+From version 5 it is possible to use the same preset for different decks / subdecks, with customized 
 limits for each one of them. This eliminates the need to create cloned presets just for that 
 purpose, and makes it easier to set custom limits on sub-decks when you have many nested decks. 
 
@@ -336,7 +336,7 @@ longer, and it's the recomended option when you are up to date, or when you only
 backlog. If you have taken an extended break or have fallen behind in your reviews, 
 you may want to consider changing the sort order temporarily.
 - Due date, then deck. This also prioritizes cards that have been waiting 
-longer, and then 
+longer, and then will show reviews for each subdeck in turn. 
 - Deck, then due date: This option will ensure reviews are shown for each
 subdeck in turn. This is generally not recommended, as having material appear
 consistently in the same order makes it easier to guess the answer based on context,
