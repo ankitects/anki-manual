@@ -5,7 +5,7 @@
 The preferences are available from the Tools menu on Windows/Linux, or
 the Anki menu on a Mac.
 
-## Basic
+## Appearance
 
 **Language**  
 Change your display language. You can help to improve translations [here](https://translating.ankiweb.net/)
@@ -18,6 +18,10 @@ styling](templates/styling.md#night-mode) for more information.
 
 From 2.1.50+ there is an option to switch to day or night mode automatically. 
 
+**User interface size**
+If you find that the interface elements are too small for you, you can 
+try to increase this setting.  
+
 **Video driver**  
 Anki's libraries need a video driver to draw content on the screen.
 Due to different hardware and software configurations, the driver that
@@ -26,6 +30,13 @@ than the software option, but they may not function correctly on some
 systems. On Macs, you will almost always want to use the OpenGL option.
 
 Note: If you're using 2.1.50+ (Qt6), please, check [this page](./platform/windows/display-issues.md#qt6).
+
+**Distractions**  
+These options allow you to remove some unnecessary elements from the screen during reviews. You can:
+- Hide the top and bottom bar during reviews.
+- Enable the "minimalist" mode, making the interface more compact/less fancy.
+- Reduce motion, to globally disabling transitions/animations.
+- Switching between native styling and the Anki theme (only on Mac/Linux).
 
 **Show play buttons**  
 Whether a clickable (re)play button will be shown in the review screen
@@ -62,10 +73,6 @@ deck.
 **Default search text**
 Allows you to customize the starting search text in the browser (eg, to start 
 with "deck:current").
-
-**User interface size**
-If you find that the interface elements are too small for you, you can 
-try to increase this setting.  
 
 ## Scheduling
 
