@@ -80,6 +80,10 @@ You'll need to determine your computer's network IP address, and then
 point each of your Anki clients to the address, eg something like
 `http://192.168.1.200:8080/`. The URL can be configured in the preferences.
 
+If you're using AnkiMobile and are unable to connect to a server on your local
+network, please go into the iOS settings, locate Anki near the bottom, and
+toggle "Allow Anki to access local network" off and then on again.
+
 Older desktop clients required you to define SYNC_ENDPOINT and SYNC_ENDPOINT_MEDIA.
 If using an older client, you'd put it as e.g. `http://192.168.1.200:8080/sync/`
 and `http://192.168.1.200:8080/msync/` respectively. AnkiDroid also currently
