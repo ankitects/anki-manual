@@ -147,7 +147,7 @@ so those learning cards will be subject to the daily limit.
 
 ### Per Deck Daily Limits
 
-From version 5 it is possible to use the same preset for different decks / subdecks, with customized 
+From version 2.1.55 it is possible to use the same preset for different decks / subdecks, with customized 
 limits for each one of them. This eliminates the need to create cloned presets just for that 
 purpose, and makes it easier to set custom limits on sub-decks when you have many nested decks. 
 
