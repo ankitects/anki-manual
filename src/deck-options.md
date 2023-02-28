@@ -145,6 +145,18 @@ limits on its parents or child decks are ignored.
 The v3 scheduler includes learning cards with a 1+ day delay in the review count,
 so those learning cards will be subject to the daily limit.
 
+### Per Deck Daily Limits
+
+Fom version 5 it is possible to use the same preset for different decks / subdecks, with customized 
+limits for each one of them. This eliminates the need to create cloned presets just for that 
+purpose, and makes it easier to set custom limits on sub-decks when you have many nested decks. 
+
+The options are:
+
+- Preset: The limit is shared with all decks using this preset.
+- This deck: The limit is specific to this deck.
+- Today only: Make a temporary change to this deck's limit.
+
 ## New Cards
 
 The settings in this section only affect new cards and cards in initial
