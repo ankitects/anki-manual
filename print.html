@@ -3069,22 +3069,51 @@ filter. If one is missing, you will need to add it back so that Anki can create 
 correctly.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="preferences"><a class="header" href="#preferences">Preferences</a></h1>
 <ul>
-<li><a href="preferences.html#basic">Basic</a></li>
-<li><a href="preferences.html#scheduling">Scheduling</a></li>
-<li><a href="preferences.html#syncingnetwork">Syncing/Network</a></li>
+<li><a href="preferences.html#appearance">Appearance</a>
+<ul>
+<li><a href="preferences.html#general">General</a></li>
+<li><a href="preferences.html#user-interface">User Interface</a></li>
+<li><a href="preferences.html#distractions">Distractions</a></li>
+</ul>
+</li>
+<li><a href="preferences.html#review">Review</a>
+<ul>
+<li><a href="preferences.html#scheduler">Scheduler</a></li>
+<li><a href="preferences.html#review-1">Review</a></li>
+</ul>
+</li>
+<li><a href="preferences.html#editing">Editing</a>
+<ul>
+<li><a href="preferences.html#editing-1">Editing</a></li>
+<li><a href="preferences.html#browsing">Browsing</a></li>
+<li><a href="preferences.html#importexport">Import/Export</a></li>
+</ul>
+</li>
+<li><a href="preferences.html#syncing">Syncing</a>
+<ul>
+<li><a href="preferences.html#synchronisation">Synchronisation</a></li>
+<li><a href="preferences.html#ankiweb-account">Ankiweb Account</a></li>
+<li><a href="preferences.html#self-hosted-sync-server">Self-hosted sync server</a></li>
+</ul>
+</li>
 <li><a href="preferences.html#backups">Backups</a></li>
 </ul>
 <p>The preferences are available from the Tools menu on Windows/Linux, or
 the Anki menu on a Mac.</p>
-<h2 id="basic"><a class="header" href="#basic">Basic</a></h2>
+<h2 id="appearance"><a class="header" href="#appearance">Appearance</a></h2>
+<h3 id="general"><a class="header" href="#general">General</a></h3>
 <p><strong>Language</strong><br />
 Change your display language. You can help to improve translations <a href="https://translating.ankiweb.net/">here</a></p>
+<h3 id="user-interface"><a class="header" href="#user-interface">User Interface</a></h3>
 <p><strong>Theme</strong><br />
 Dark (night) mode will make Anki's interface dark, and will cause cards to be shown as white text on a
 black background. Some card templates may need to be modified to work
 properly with this option enabled - please see <a href="templates/styling.html#night-mode">night mode
 styling</a> for more information.</p>
 <p>From 2.1.50+ there is an option to switch to day or night mode automatically. </p>
+<p><strong>User interface size</strong>
+If you find that the interface elements are too small for you, you can 
+try to increase this setting.</p>
 <p><strong>Video driver</strong><br />
 Anki's libraries need a video driver to draw content on the screen.
 Due to different hardware and software configurations, the driver that
@@ -3092,42 +3121,19 @@ works best on your machine may vary. ANGLE and OpenGL will perform better
 than the software option, but they may not function correctly on some
 systems. On Macs, you will almost always want to use the OpenGL option.</p>
 <p>Note: If you're using 2.1.50+ (Qt6), please, check <a href="./platform/windows/display-issues.html#qt6">this page</a>.</p>
-<p><strong>Show play buttons</strong><br />
-Whether a clickable (re)play button will be shown in the review screen
-for cards with audio.</p>
-<p><strong>Interrupt current audio</strong><br />
-Whether a currently playing audio file should be stopped when answering
-a card.</p>
-<p><strong>Paste clipboard images as PNG</strong><br />
-By default Anki pastes images on the clipboard as JPG files, to save disk space.
-You can use the option to paste as PNG images instead. PNG images support
-transparent backgrounds and are lossless, but they usually result in much larger
-file sizes.</p>
-<p><strong>Paste without Shift strips formatting</strong><br />
-By default, formatting like bold and colors are kept when pasting,
-unless the <kbd>Shift</kbd> key is held down. This option reverses the behaviour.</p>
-<p><strong>Ignore accents in search</strong></p>
-<p>When enabled, simple text searches automatically <a href="./searching.html#ignoring-accentscombining-characters">ignore accents</a>.</p>
-<p><strong>When adding, default to current deck</strong><br />
-Controls how note types and decks interact. The default of &quot;When adding, default
-to current deck&quot; means that Anki saves the last-used note type for each deck and
-selects it again then next time you choose the deck (and, in addition, will
-start with the current deck selected when choosing Add from anywhere). The other
-option, &quot;Change deck depending on note type,&quot; saves the last-used deck for each
-note type (and opens the add window to the last-used note type when you choose
-Add). This may be more convenient if you always use a single note type for each
-deck.</p>
-<p><strong>Default search text</strong>
-Allows you to customize the starting search text in the browser (eg, to start 
-with &quot;deck:current&quot;).</p>
-<p><strong>User interface size</strong>
-If you find that the interface elements are too small for you, you can 
-try to increase this setting.</p>
-<h2 id="scheduling"><a class="header" href="#scheduling">Scheduling</a></h2>
-<p><strong>Show next review time above answer buttons</strong><br />
-Useful to know how far in the future your cards are being pushed.</p>
-<p><strong>Show remaining card count during review</strong><br />
-Disable this option to hide the card count at the bottom of the screen.</p>
+<h3 id="distractions"><a class="header" href="#distractions">Distractions</a></h3>
+<p>These options allow you to remove some unnecessary elements from the screen during reviews. You can:</p>
+<ul>
+<li>Hide the top and bottom bar during reviews.</li>
+<li>Enable the &quot;minimalist&quot; mode, making the interface more compact/less fancy.</li>
+<li>Reduce motion, to disable some transitions/animations.</li>
+<li>Switching between native styling and the Anki theme (only on Mac/Linux).</li>
+</ul>
+<h2 id="review"><a class="header" href="#review">Review</a></h2>
+<h3 id="scheduler"><a class="header" href="#scheduler">Scheduler</a></h3>
+<p><strong>V3 Scheduler</strong><br />
+Using the Anki V3 scheduler is recommended if you don't use AnkiDroid. It's documented here:<br />
+<a href="https://faqs.ankiweb.net/the-2021-scheduler.html">https://faqs.ankiweb.net/the-2021-scheduler.html</a></p>
 <p><strong>Show learning cards with larger steps before</strong><br />
 Only shown when the 2.1 scheduler is enabled. Normally learning cards with a 1+
 day delay are shown after normal reviews. If checked, Anki will show them before
@@ -3135,12 +3141,6 @@ normal reviews instead.</p>
 <p><strong>Legacy timezone handling</strong><br />
 Please see here:
 <a href="https://faqs.ankiweb.net/timezone-handling-changes.html">https://faqs.ankiweb.net/timezone-handling-changes.html</a></p>
-<p><strong>V3 Scheduler</strong><br />
-The Anki V3 scheduler is documented here:<br />
-<a href="https://faqs.ankiweb.net/the-2021-scheduler.html">https://faqs.ankiweb.net/the-2021-scheduler.html</a></p>
-<p><strong>Mix new cards and reviews</strong>:
-Only shown when the v1/v2 schedulers are enabled. This drop-down box controls when
-new cards are shown: either mixed with, before, or after all reviews.</p>
 <p><strong>Next day starts at</strong><br />
 Controls when Anki should start showing the next day’s cards. The default
 setting of 4AM ensures that if you’re studying around midnight, you won’t have
@@ -3161,18 +3161,68 @@ Timeboxing is a technique to help you focus by dividing a longer activity (such
 as a 30 minute study session) into smaller blocks. If you set the timebox time
 limit to a non-zero number of minutes, Anki will periodically show you how many
 cards you’ve managed to study during the prescribed time limit.</p>
-<h2 id="syncingnetwork"><a class="header" href="#syncingnetwork">Syncing/Network</a></h2>
-<p>The network tab contains options related to syncing with AnkiWeb.</p>
-<ul>
-<li>When logged in, the <strong>deauthorize</strong> button will log you out.</li>
-<li>When the 'force changes' option is enabled, the next sync will
+<p><strong>Mix new cards and reviews</strong>:
+Only shown when the v1/v2 schedulers are enabled. This drop-down box controls when
+new cards are shown: either mixed with, before, or after all reviews.</p>
+<h3 id="review-1"><a class="header" href="#review-1">Review</a></h3>
+<p><strong>Show play buttons on cards with audio</strong><br />
+Whether a clickable (re)play button will be shown in the review screen
+for cards with audio.</p>
+<p><strong>Interrupt current audio when answering</strong><br />
+Whether a currently playing audio file should be stopped when answering
+a card.</p>
+<p><strong>Show remaining card count</strong><br />
+Disable this option to hide the card count at the bottom of the screen.</p>
+<p><strong>Show next review time above answer buttons</strong><br />
+Useful to know how far in the future your cards are being pushed.</p>
+<h2 id="editing"><a class="header" href="#editing">Editing</a></h2>
+<h3 id="editing-1"><a class="header" href="#editing-1">Editing</a></h3>
+<p><strong>Paste clipboard images as PNG</strong><br />
+By default Anki pastes images on the clipboard as JPG files, to save disk space.
+You can use the option to paste as PNG images instead. PNG images support
+transparent backgrounds and are lossless, but they usually result in much larger
+file sizes.</p>
+<p><strong>Paste without Shift strips formatting</strong><br />
+By default, formatting like bold and colors are kept when pasting,
+unless the <kbd>Shift</kbd> key is held down. This option reverses the behaviour.</p>
+<p><strong>Default deck</strong>
+Controls how note types and decks interact. The default of &quot;When adding, default
+to current deck&quot; means that Anki saves the last-used note type for each deck and
+selects it again then next time you choose the deck (and, in addition, will
+start with the current deck selected when choosing Add from anywhere). The other
+option, &quot;Change deck depending on note type,&quot; saves the last-used deck for each
+note type (and opens the add window to the last-used note type when you choose
+Add). This may be more convenient if you always use a single note type for each
+deck.</p>
+<h3 id="browsing"><a class="header" href="#browsing">Browsing</a></h3>
+<p><strong>Default search text</strong>
+Allows you to customize the starting search text in the browser (eg, to start 
+with &quot;deck:current&quot;).</p>
+<p><strong>Ignore accents in search (slower)</strong>
+When enabled, simple text searches automatically <a href="./searching.html#ignoring-accentscombining-characters">ignore accents</a>.</p>
+<h3 id="importexport"><a class="header" href="#importexport">Import/Export</a></h3>
+<p><strong>Legacy import/export handling</strong>
+If enabled, legacy (pre 2.1.55) import / export code will be used. It is recommended to deactivate this option. </p>
+<h2 id="syncing"><a class="header" href="#syncing">Syncing</a></h2>
+<p>This tab contains options related to syncing with AnkiWeb.</p>
+<h3 id="synchronisation"><a class="header" href="#synchronisation">Synchronisation</a></h3>
+<p><strong>Synchronize audio and images too</strong>
+When enabled, media will also be synced with Ankiweb.</p>
+<p><strong>Automatically sync on profile open/close</strong>
+Disable this if you don't want an automatic sync with Ankiweb when opening / closing a <a href="./profiles.html">profile</a>]. </p>
+<p><strong>Periodically sync media</strong></p>
+<p><strong>On next sync, force changes on one direction</strong>
+When this option is enabled, the next sync will
 ask you whether you wish to upload or download. This is useful if
 you have made some changes accidentally, and wish to overwrite them
-with an older version that is on AnkiWeb.</li>
-<li>For info on the custom sync server option, see <a href="./sync-server.html">this section</a>.</li>
-</ul>
+with an older version that is on AnkiWeb.</p>
+<h3 id="ankiweb-account"><a class="header" href="#ankiweb-account">Ankiweb Account</a></h3>
+<p>When logged in, clicking on Log Out will log you out.</p>
+<h3 id="self-hosted-sync-server"><a class="header" href="#self-hosted-sync-server">Self-hosted sync server</a></h3>
+<p>For info on the custom sync server option, see <a href="./sync-server.html">this section</a>.</p>
 <h2 id="backups"><a class="header" href="#backups">Backups</a></h2>
 <p>Please see <a href="backups.html#automatic-backups">this</a> section of the manual.</p>
+<hr />
 <div style="break-before: page; page-break-before: always;"></div><h1 id="deck-options"><a class="header" href="#deck-options">Deck Options</a></h1>
 <ul>
 <li><a href="deck-options.html#presets">Presets</a></li>
@@ -3181,6 +3231,7 @@ with an older version that is on AnkiWeb.</li>
 <ul>
 <li><a href="deck-options.html#new-cardsday">New Cards/Day</a></li>
 <li><a href="deck-options.html#maximum-reviewsday">Maximum Reviews/Day</a></li>
+<li><a href="deck-options.html#per-deck-daily-limits">Per-Deck Daily Limits</a></li>
 </ul>
 </li>
 <li><a href="deck-options.html#new-cards">New Cards</a>
@@ -3202,17 +3253,17 @@ with an older version that is on AnkiWeb.</li>
 <li><a href="deck-options.html#leeches">Leeches</a></li>
 </ul>
 </li>
-<li><a href="deck-options.html#timer">Timer</a></li>
-<li><a href="deck-options.html#burying">Burying</a></li>
 <li><a href="deck-options.html#display-order">Display Order</a>
 <ul>
-<li><a href="deck-options.html#new-card-gather-priority">New Card Gather Priority</a></li>
+<li><a href="deck-options.html#new-card-gather-order">New Card Gather Order</a></li>
 <li><a href="deck-options.html#new-card-sort-order">New Card Sort Order</a></li>
 <li><a href="deck-options.html#newreview-priority">New/Review Priority</a></li>
 <li><a href="deck-options.html#interday-learningreview-priority">Interday Learning/Review Priority</a></li>
 <li><a href="deck-options.html#review-sort-order">Review Sort Order</a></li>
 </ul>
 </li>
+<li><a href="deck-options.html#timer">Timer</a></li>
+<li><a href="deck-options.html#burying">Burying</a></li>
 <li><a href="deck-options.html#audio">Audio</a></li>
 <li><a href="deck-options.html#advanced">Advanced</a>
 <ul>
@@ -3352,6 +3403,16 @@ as new cards.</p>
 limits on its parents or child decks are ignored.</p>
 <p>The v3 scheduler includes learning cards with a 1+ day delay in the review count,
 so those learning cards will be subject to the daily limit.</p>
+<h3 id="per-deck-daily-limits"><a class="header" href="#per-deck-daily-limits">Per-Deck Daily Limits</a></h3>
+<p>From version 2.1.55 it is possible to use the same preset for different decks / subdecks, with customized 
+limits for each one of them. This eliminates the need to create cloned presets just for that 
+purpose, and makes it easier to set custom limits on sub-decks when you have many nested decks. </p>
+<p>The options are:</p>
+<ul>
+<li>Preset: The limit is shared with all decks using this preset.</li>
+<li>This deck: The limit is specific to this deck.</li>
+<li>Today only: Make a temporary change to this deck's limit.</li>
+</ul>
 <h2 id="new-cards"><a class="header" href="#new-cards">New Cards</a></h2>
 <p>The settings in this section only affect new cards and cards in initial
 <a href="studying.html#learningrelearning-cards">learning</a> mode. Once a card
@@ -3435,18 +3496,6 @@ the next day.</p>
 <h3 id="leeches"><a class="header" href="#leeches">Leeches</a></h3>
 <p>Control the way Anki handles leeches. Please see the <a href="leeches.html">leeches</a>
 section for more information.</p>
-<h2 id="timer"><a class="header" href="#timer">Timer</a></h2>
-<p>Anki monitors how long it takes you to answer each card, so that it
-can show you how long was spent studying each day. The time taken does
-not influence scheduling. The default limit is 60 seconds. If you take
-longer than that, Anki assumes you have walked away from your computer
-or have been distracted, and limits the recorded time to 60 seconds, so
-that you don’t end up with inaccurate statistics. If you consistently
-take longer than 60 seconds to answer a card (from when question is shown
-until you press an answer button), you may want to either consider raising
-this limit, or ideally, making your cards simpler.</p>
-<h2 id="burying"><a class="header" href="#burying">Burying</a></h2>
-<p>Please see <a href="./studying.html#siblings-and-burying">this section</a> for more information.</p>
 <h2 id="display-order-1"><a class="header" href="#display-order-1">Display Order</a></h2>
 <p>The options in this section are taken from the deck you select to study, not
 the deck of the currently displayed card.</p>
@@ -3454,8 +3503,25 @@ the deck of the currently displayed card.</p>
 scheduler</a> enabled.</p>
 <p>Some further information about display order is available in the <a href="studying.html#display-order">studying
 section</a>.</p>
-<h3 id="new-card-gather-priority"><a class="header" href="#new-card-gather-priority">New Card Gather Priority</a></h3>
-<p>Controls how Anki gathers cards from each subdeck.</p>
+<h3 id="new-card-gather-order"><a class="header" href="#new-card-gather-order">New Card Gather Order</a></h3>
+<p>Controls how Anki gathers cards from each subdeck. The options are:</p>
+<ul>
+<li>
+<p>Deck: gathers cards from each deck in order, starting from the top. Cards from each deck are gathered in ascending position. If the daily limit of the selected deck is reached, gathering may stop before all decks have been checked. This order is fastest in large collections, and allows you to prioritize subdecks that are closer to the top.</p>
+</li>
+<li>
+<p>Ascending position: gathers cards by ascending position (due #), which is typically the oldest-added first.</p>
+</li>
+<li>
+<p>Descending position: gathers cards by descending position (due #), which is typically the latest-added first.</p>
+</li>
+<li>
+<p>Random notes: gathers cards of randomly selected notes. When sibling burying is disabled, this allows all cards of a note to be seen in a session (eg. both a front-&gt;back and back-&gt;front card)</p>
+</li>
+<li>
+<p>Random cards: gathers cards completely randomly.</p>
+</li>
+</ul>
 <p>With the default <code>Deck</code> ordering, cards are gathered from each subdeck in order,
 stopping when the limit of the selected deck has been exceeded. This is faster,
 and allows you to priorize subdecks that are closer to the top. Decks / subdecks
@@ -3467,11 +3533,24 @@ above, you can manually
 <a href="https://docs.ankiweb.net/browsing.html#cards">reposition</a> cards in different
 ways.</p>
 <h3 id="new-card-sort-order"><a class="header" href="#new-card-sort-order">New Card Sort Order</a></h3>
-<p>Controls how cards are sorted <strong>after they have been gathered</strong>.
-By default, Anki sorts by template first, to avoid multiple cards of the
-same note from being shown in succession. This results in cards appearing
-in the order they have been added, with the first card template (eg front-&gt;back)
-appearing before later card templates (eg back-&gt;front).</p>
+<p>Controls how new cards are sorted <strong>after they have been gathered</strong>. The options are:</p>
+<ul>
+<li>
+<p>Card type: Displays cards in order of card type number. If you have sibling burying disabled, this will ensure all front→back cards are seen before any back→front cards. This is useful to have all cards of the same note shown in the same session, but not too close to one another.</p>
+</li>
+<li>
+<p>Order gathered: Shows cards exactly as they were gathered. If sibling burying is disabled, this will typically result in all cards of a note being seen one after the other.</p>
+</li>
+<li>
+<p>Card type, then random: Like Card type, but shuffles the cards of each card type number. If you use Ascending position to gather the oldest cards, you could use this setting to see those cards in a random order, but still ensure cards of the same note do not end up too close to one another.</p>
+</li>
+<li>
+<p>Random note, then card type: Picks notes at random, then shows all of their siblings in order.</p>
+</li>
+<li>
+<p>Random: Fully shuffles the gathered cards.</p>
+</li>
+</ul>
 <h3 id="newreview-priority"><a class="header" href="#newreview-priority">New/Review Priority</a></h3>
 <p>Whether new cards should be mixed in with reviews, or shown before or after them.</p>
 <h3 id="interday-learningreview-priority"><a class="header" href="#interday-learningreview-priority">Interday Learning/Review Priority</a></h3>
@@ -3480,16 +3559,43 @@ shown before or after them. Because learning cards tend to be harder than
 reviews, some users prefer to see them at the end (getting the easy stuff done
 first), or at the start (allowing more time to review forgotten ones).</p>
 <h3 id="review-sort-order"><a class="header" href="#review-sort-order">Review Sort Order</a></h3>
-<p>The default order prioritizes cards that have been waiting longer, which works
-well when you are up to date, or when you only have a small backlog. If you have taken an
-extended break or have fallen behind in your reviews, you may want to consider
-changing the sort order temporarily. Sorting by ascending intervals will ensure
-cards with shorter delays are shown first, and by descending intervals will allow
-you to work through the easier material first.</p>
-<p>Choosing the <em>Deck, then due date</em> option will ensure reviews are shown for each
+<p>Controls how review cards are sorted while reviewing. The options are:</p>
+<ul>
+<li>Due date, then random: The default option prioritizes cards that have been waiting 
+longer, and it's the recomended option when you are up to date, or when you only have a small 
+backlog. If you have taken an extended break or have fallen behind in your reviews, 
+you may want to consider changing the sort order temporarily.</li>
+<li>Due date, then deck. This also prioritizes cards that have been waiting 
+longer, and then will show reviews for each subdeck in turn. </li>
+<li>Deck, then due date: This option will ensure reviews are shown for each
 subdeck in turn. This is generally not recommended, as having material appear
 consistently in the same order makes it easier to guess the answer based on context,
-and may lead to weaker memories.</p>
+and may lead to weaker memories.</li>
+<li>Ascending intervals: This will ensure cards with shorter intervals are shown first.</li>
+<li>Descending intervals: This will ensure cards with larger intervals are shown first.</li>
+<li>Ascending ease: This will show most difficult cards first. </li>
+<li>Descending ease: This will allow you to work through the easier material first.</li>
+<li>Relative overdueness: Display those cards first, that are <a href="./filtered-decks.html#order">most overdue in relation 
+to their current interval</a>.</li>
+</ul>
+<h2 id="timer"><a class="header" href="#timer">Timer</a></h2>
+<p>Anki monitors how long it takes you to answer each card, so that it
+can show you how long was spent studying each day. The time taken does
+not influence scheduling. </p>
+<p>The options are:</p>
+<ul>
+<li>Maximum answer seconds: The default limit is 60 seconds. If you take
+longer than that, Anki assumes you have walked away from your computer
+or have been distracted, and limits the recorded time to 60 seconds, so
+that you don’t end up with inaccurate statistics. If you consistently
+take longer than 60 seconds to answer a card (from when question is shown
+until you press an answer button), you may want to either consider raising
+this limit, or ideally, making your cards simpler.</li>
+<li>Show answer timer: In the review screen, show a timer that counts the number 
+of seconds you're taking to review each card.</li>
+</ul>
+<h2 id="burying"><a class="header" href="#burying">Burying</a></h2>
+<p>Please see <a href="./studying.html#siblings-and-burying">this section</a> for more information.</p>
 <h2 id="audio"><a class="header" href="#audio">Audio</a></h2>
 <p>By default, Anki automatically plays audio on the front and back of
 cards. If you check <em>Don't play audio automatically</em>, Anki will not play
@@ -3766,7 +3872,7 @@ an earlier Anki release. If you skip this step, you may get an error message
 when opening your collection in an older Anki version, and you will need to 
 return to this version, downgrade, then try again.</li>
 </ul>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="browsing"><a class="header" href="#browsing">Browsing</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="browsing-1"><a class="header" href="#browsing-1">Browsing</a></h1>
 <ul>
 <li><a href="browsing.html#table-modes">Table Modes</a></li>
 <li><a href="browsing.html#sidebar">Sidebar</a>
@@ -5778,7 +5884,7 @@ material you’re struggling with is important enough to make it worth
 your while. By selectively deleting difficult and obscure items, you can
 dedicate more time to learning other material, and studying becomes a
 lot more fun.</p>
-<h2 id="editing"><a class="header" href="#editing">Editing</a></h2>
+<h2 id="editing-2"><a class="header" href="#editing-2">Editing</a></h2>
 <p>Another approach is to change the way the information is presented.
 Perhaps the cards you have created have too much information on them, or
 perhaps you’re trying to memorize something without fully understanding
@@ -5806,7 +5912,7 @@ need to get in touch with the author, editing the add-on and looking at
 the top of the file may help.</p>
 <p>To learn how to write your own add-ons, please see the <a href="https://addon-docs.ankiweb.net">add-on writing
 guide</a>.</p>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="self-hosted-sync-server"><a class="header" href="#self-hosted-sync-server">Self-Hosted Sync Server</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="self-hosted-sync-server-1"><a class="header" href="#self-hosted-sync-server-1">Self-Hosted Sync Server</a></h1>
 <p>Anki 2.1.57+ includes a built-in sync server. Advanced users who cannot or do
 not wish to use AnkiWeb can use this sync server instead of AnkiWeb.</p>
 <p>Things to be aware of:</p>

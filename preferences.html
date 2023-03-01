@@ -148,22 +148,51 @@
                     <main>
                         <h1 id="preferences"><a class="header" href="#preferences">Preferences</a></h1>
 <ul>
-<li><a href="#basic">Basic</a></li>
-<li><a href="#scheduling">Scheduling</a></li>
-<li><a href="#syncingnetwork">Syncing/Network</a></li>
+<li><a href="#appearance">Appearance</a>
+<ul>
+<li><a href="#general">General</a></li>
+<li><a href="#user-interface">User Interface</a></li>
+<li><a href="#distractions">Distractions</a></li>
+</ul>
+</li>
+<li><a href="#review">Review</a>
+<ul>
+<li><a href="#scheduler">Scheduler</a></li>
+<li><a href="#review-1">Review</a></li>
+</ul>
+</li>
+<li><a href="#editing">Editing</a>
+<ul>
+<li><a href="#editing-1">Editing</a></li>
+<li><a href="#browsing">Browsing</a></li>
+<li><a href="#importexport">Import/Export</a></li>
+</ul>
+</li>
+<li><a href="#syncing">Syncing</a>
+<ul>
+<li><a href="#synchronisation">Synchronisation</a></li>
+<li><a href="#ankiweb-account">Ankiweb Account</a></li>
+<li><a href="#self-hosted-sync-server">Self-hosted sync server</a></li>
+</ul>
+</li>
 <li><a href="#backups">Backups</a></li>
 </ul>
 <p>The preferences are available from the Tools menu on Windows/Linux, or
 the Anki menu on a Mac.</p>
-<h2 id="basic"><a class="header" href="#basic">Basic</a></h2>
+<h2 id="appearance"><a class="header" href="#appearance">Appearance</a></h2>
+<h3 id="general"><a class="header" href="#general">General</a></h3>
 <p><strong>Language</strong><br />
 Change your display language. You can help to improve translations <a href="https://translating.ankiweb.net/">here</a></p>
+<h3 id="user-interface"><a class="header" href="#user-interface">User Interface</a></h3>
 <p><strong>Theme</strong><br />
 Dark (night) mode will make Anki's interface dark, and will cause cards to be shown as white text on a
 black background. Some card templates may need to be modified to work
 properly with this option enabled - please see <a href="templates/styling.html#night-mode">night mode
 styling</a> for more information.</p>
 <p>From 2.1.50+ there is an option to switch to day or night mode automatically. </p>
+<p><strong>User interface size</strong>
+If you find that the interface elements are too small for you, you can 
+try to increase this setting.</p>
 <p><strong>Video driver</strong><br />
 Anki's libraries need a video driver to draw content on the screen.
 Due to different hardware and software configurations, the driver that
@@ -171,42 +200,19 @@ works best on your machine may vary. ANGLE and OpenGL will perform better
 than the software option, but they may not function correctly on some
 systems. On Macs, you will almost always want to use the OpenGL option.</p>
 <p>Note: If you're using 2.1.50+ (Qt6), please, check <a href="./platform/windows/display-issues.html#qt6">this page</a>.</p>
-<p><strong>Show play buttons</strong><br />
-Whether a clickable (re)play button will be shown in the review screen
-for cards with audio.</p>
-<p><strong>Interrupt current audio</strong><br />
-Whether a currently playing audio file should be stopped when answering
-a card.</p>
-<p><strong>Paste clipboard images as PNG</strong><br />
-By default Anki pastes images on the clipboard as JPG files, to save disk space.
-You can use the option to paste as PNG images instead. PNG images support
-transparent backgrounds and are lossless, but they usually result in much larger
-file sizes.</p>
-<p><strong>Paste without Shift strips formatting</strong><br />
-By default, formatting like bold and colors are kept when pasting,
-unless the <kbd>Shift</kbd> key is held down. This option reverses the behaviour.</p>
-<p><strong>Ignore accents in search</strong></p>
-<p>When enabled, simple text searches automatically <a href="./searching.html#ignoring-accentscombining-characters">ignore accents</a>.</p>
-<p><strong>When adding, default to current deck</strong><br />
-Controls how note types and decks interact. The default of &quot;When adding, default
-to current deck&quot; means that Anki saves the last-used note type for each deck and
-selects it again then next time you choose the deck (and, in addition, will
-start with the current deck selected when choosing Add from anywhere). The other
-option, &quot;Change deck depending on note type,&quot; saves the last-used deck for each
-note type (and opens the add window to the last-used note type when you choose
-Add). This may be more convenient if you always use a single note type for each
-deck.</p>
-<p><strong>Default search text</strong>
-Allows you to customize the starting search text in the browser (eg, to start 
-with &quot;deck:current&quot;).</p>
-<p><strong>User interface size</strong>
-If you find that the interface elements are too small for you, you can 
-try to increase this setting.</p>
-<h2 id="scheduling"><a class="header" href="#scheduling">Scheduling</a></h2>
-<p><strong>Show next review time above answer buttons</strong><br />
-Useful to know how far in the future your cards are being pushed.</p>
-<p><strong>Show remaining card count during review</strong><br />
-Disable this option to hide the card count at the bottom of the screen.</p>
+<h3 id="distractions"><a class="header" href="#distractions">Distractions</a></h3>
+<p>These options allow you to remove some unnecessary elements from the screen during reviews. You can:</p>
+<ul>
+<li>Hide the top and bottom bar during reviews.</li>
+<li>Enable the &quot;minimalist&quot; mode, making the interface more compact/less fancy.</li>
+<li>Reduce motion, to disable some transitions/animations.</li>
+<li>Switching between native styling and the Anki theme (only on Mac/Linux).</li>
+</ul>
+<h2 id="review"><a class="header" href="#review">Review</a></h2>
+<h3 id="scheduler"><a class="header" href="#scheduler">Scheduler</a></h3>
+<p><strong>V3 Scheduler</strong><br />
+Using the Anki V3 scheduler is recommended if you don't use AnkiDroid. It's documented here:<br />
+<a href="https://faqs.ankiweb.net/the-2021-scheduler.html">https://faqs.ankiweb.net/the-2021-scheduler.html</a></p>
 <p><strong>Show learning cards with larger steps before</strong><br />
 Only shown when the 2.1 scheduler is enabled. Normally learning cards with a 1+
 day delay are shown after normal reviews. If checked, Anki will show them before
@@ -214,12 +220,6 @@ normal reviews instead.</p>
 <p><strong>Legacy timezone handling</strong><br />
 Please see here:
 <a href="https://faqs.ankiweb.net/timezone-handling-changes.html">https://faqs.ankiweb.net/timezone-handling-changes.html</a></p>
-<p><strong>V3 Scheduler</strong><br />
-The Anki V3 scheduler is documented here:<br />
-<a href="https://faqs.ankiweb.net/the-2021-scheduler.html">https://faqs.ankiweb.net/the-2021-scheduler.html</a></p>
-<p><strong>Mix new cards and reviews</strong>:
-Only shown when the v1/v2 schedulers are enabled. This drop-down box controls when
-new cards are shown: either mixed with, before, or after all reviews.</p>
 <p><strong>Next day starts at</strong><br />
 Controls when Anki should start showing the next day’s cards. The default
 setting of 4AM ensures that if you’re studying around midnight, you won’t have
@@ -240,18 +240,68 @@ Timeboxing is a technique to help you focus by dividing a longer activity (such
 as a 30 minute study session) into smaller blocks. If you set the timebox time
 limit to a non-zero number of minutes, Anki will periodically show you how many
 cards you’ve managed to study during the prescribed time limit.</p>
-<h2 id="syncingnetwork"><a class="header" href="#syncingnetwork">Syncing/Network</a></h2>
-<p>The network tab contains options related to syncing with AnkiWeb.</p>
-<ul>
-<li>When logged in, the <strong>deauthorize</strong> button will log you out.</li>
-<li>When the 'force changes' option is enabled, the next sync will
+<p><strong>Mix new cards and reviews</strong>:
+Only shown when the v1/v2 schedulers are enabled. This drop-down box controls when
+new cards are shown: either mixed with, before, or after all reviews.</p>
+<h3 id="review-1"><a class="header" href="#review-1">Review</a></h3>
+<p><strong>Show play buttons on cards with audio</strong><br />
+Whether a clickable (re)play button will be shown in the review screen
+for cards with audio.</p>
+<p><strong>Interrupt current audio when answering</strong><br />
+Whether a currently playing audio file should be stopped when answering
+a card.</p>
+<p><strong>Show remaining card count</strong><br />
+Disable this option to hide the card count at the bottom of the screen.</p>
+<p><strong>Show next review time above answer buttons</strong><br />
+Useful to know how far in the future your cards are being pushed.</p>
+<h2 id="editing"><a class="header" href="#editing">Editing</a></h2>
+<h3 id="editing-1"><a class="header" href="#editing-1">Editing</a></h3>
+<p><strong>Paste clipboard images as PNG</strong><br />
+By default Anki pastes images on the clipboard as JPG files, to save disk space.
+You can use the option to paste as PNG images instead. PNG images support
+transparent backgrounds and are lossless, but they usually result in much larger
+file sizes.</p>
+<p><strong>Paste without Shift strips formatting</strong><br />
+By default, formatting like bold and colors are kept when pasting,
+unless the <kbd>Shift</kbd> key is held down. This option reverses the behaviour.</p>
+<p><strong>Default deck</strong>
+Controls how note types and decks interact. The default of &quot;When adding, default
+to current deck&quot; means that Anki saves the last-used note type for each deck and
+selects it again then next time you choose the deck (and, in addition, will
+start with the current deck selected when choosing Add from anywhere). The other
+option, &quot;Change deck depending on note type,&quot; saves the last-used deck for each
+note type (and opens the add window to the last-used note type when you choose
+Add). This may be more convenient if you always use a single note type for each
+deck.</p>
+<h3 id="browsing"><a class="header" href="#browsing">Browsing</a></h3>
+<p><strong>Default search text</strong>
+Allows you to customize the starting search text in the browser (eg, to start 
+with &quot;deck:current&quot;).</p>
+<p><strong>Ignore accents in search (slower)</strong>
+When enabled, simple text searches automatically <a href="./searching.html#ignoring-accentscombining-characters">ignore accents</a>.</p>
+<h3 id="importexport"><a class="header" href="#importexport">Import/Export</a></h3>
+<p><strong>Legacy import/export handling</strong>
+If enabled, legacy (pre 2.1.55) import / export code will be used. It is recommended to deactivate this option. </p>
+<h2 id="syncing"><a class="header" href="#syncing">Syncing</a></h2>
+<p>This tab contains options related to syncing with AnkiWeb.</p>
+<h3 id="synchronisation"><a class="header" href="#synchronisation">Synchronisation</a></h3>
+<p><strong>Synchronize audio and images too</strong>
+When enabled, media will also be synced with Ankiweb.</p>
+<p><strong>Automatically sync on profile open/close</strong>
+Disable this if you don't want an automatic sync with Ankiweb when opening / closing a <a href="./profiles.html">profile</a>]. </p>
+<p><strong>Periodically sync media</strong></p>
+<p><strong>On next sync, force changes on one direction</strong>
+When this option is enabled, the next sync will
 ask you whether you wish to upload or download. This is useful if
 you have made some changes accidentally, and wish to overwrite them
-with an older version that is on AnkiWeb.</li>
-<li>For info on the custom sync server option, see <a href="./sync-server.html">this section</a>.</li>
-</ul>
+with an older version that is on AnkiWeb.</p>
+<h3 id="ankiweb-account"><a class="header" href="#ankiweb-account">Ankiweb Account</a></h3>
+<p>When logged in, clicking on Log Out will log you out.</p>
+<h3 id="self-hosted-sync-server"><a class="header" href="#self-hosted-sync-server">Self-hosted sync server</a></h3>
+<p>For info on the custom sync server option, see <a href="./sync-server.html">this section</a>.</p>
 <h2 id="backups"><a class="header" href="#backups">Backups</a></h2>
 <p>Please see <a href="backups.html#automatic-backups">this</a> section of the manual.</p>
+<hr />
 
                     </main>
 
