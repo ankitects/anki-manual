@@ -145,7 +145,7 @@ limits on its parents or child decks are ignored.
 The v3 scheduler includes learning cards with a 1+ day delay in the review count,
 so those learning cards will be subject to the daily limit.
 
-### Per Deck Daily Limits
+### Per-Deck Daily Limits
 
 From version 2.1.55 it is possible to use the same preset for different decks / subdecks, with customized 
 limits for each one of them. This eliminates the need to create cloned presets just for that 
