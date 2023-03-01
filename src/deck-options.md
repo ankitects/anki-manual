@@ -192,7 +192,7 @@ steps work.
 
 #### Day Boundaries
 
-Anki treats small steps and steps that [cross a day boundary](./preferences.md#scheduling) differently.
+Anki treats small steps and steps that [cross a day boundary](./preferences.md#review) differently.
 With small steps, the cards are shown as soon as the delay has passed,
 in preference to other waiting cards like reviews. This is done so that
 you can answer the card as closely to your requested delay as possible.
