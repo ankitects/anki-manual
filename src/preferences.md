@@ -37,7 +37,7 @@ Note: If you're using 2.1.50+ (Qt6), please, check [this page](./platform/window
 These options allow you to remove some unnecessary elements from the screen during reviews. You can:
 - Hide the top and bottom bar during reviews.
 - Enable the "minimalist" mode, making the interface more compact/less fancy.
-- Reduce motion, to globally disabling transitions/animations.
+- Reduce motion, to disable some transitions/animations.
 - Switching between native styling and the Anki theme (only on Mac/Linux).
 
 
