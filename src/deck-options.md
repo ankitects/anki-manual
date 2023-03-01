@@ -145,6 +145,18 @@ limits on its parents or child decks are ignored.
 The v3 scheduler includes learning cards with a 1+ day delay in the review count,
 so those learning cards will be subject to the daily limit.
 
+### Per-Deck Daily Limits
+
+From version 2.1.55 it is possible to use the same preset for different decks / subdecks, with customized 
+limits for each one of them. This eliminates the need to create cloned presets just for that 
+purpose, and makes it easier to set custom limits on sub-decks when you have many nested decks. 
+
+The options are:
+
+- Preset: The limit is shared with all decks using this preset.
+- This deck: The limit is specific to this deck.
+- Today only: Make a temporary change to this deck's limit.
+
 ## New Cards
 
 The settings in this section only affect new cards and cards in initial
@@ -254,22 +266,6 @@ the next day.
 Control the way Anki handles leeches. Please see the [leeches](leeches.md)
 section for more information.
 
-## Timer
-
-Anki monitors how long it takes you to answer each card, so that it
-can show you how long was spent studying each day. The time taken does
-not influence scheduling. The default limit is 60 seconds. If you take
-longer than that, Anki assumes you have walked away from your computer
-or have been distracted, and limits the recorded time to 60 seconds, so
-that you don’t end up with inaccurate statistics. If you consistently
-take longer than 60 seconds to answer a card (from when question is shown
-until you press an answer button), you may want to either consider raising
-this limit, or ideally, making your cards simpler.
-
-## Burying
-
-Please see [this section](./studying.md#siblings-and-burying) for more information.
-
 ## Display Order
 
 The options in this section are taken from the deck you select to study, not
@@ -281,9 +277,19 @@ scheduler](https://faqs.ankiweb.net/the-2021-scheduler.html) enabled.
 Some further information about display order is available in the [studying
 section](studying.md#display-order).
 
-### New Card Gather Priority
+### New Card Gather Order
 
-Controls how Anki gathers cards from each subdeck.
+Controls how Anki gathers cards from each subdeck. The options are:
+
+- Deck: gathers cards from each deck in order, starting from the top. Cards from each deck are gathered in ascending position. If the daily limit of the selected deck is reached, gathering may stop before all decks have been checked. This order is fastest in large collections, and allows you to prioritize subdecks that are closer to the top.
+
+- Ascending position: gathers cards by ascending position (due #), which is typically the oldest-added first.
+
+- Descending position: gathers cards by descending position (due #), which is typically the latest-added first.
+
+- Random notes: gathers cards of randomly selected notes. When sibling burying is disabled, this allows all cards of a note to be seen in a session (eg. both a front->back and back->front card)
+
+- Random cards: gathers cards completely randomly.
 
 With the default `Deck` ordering, cards are gathered from each subdeck in order,
 stopping when the limit of the selected deck has been exceeded. This is faster,
@@ -299,11 +305,17 @@ ways.
 
 ### New Card Sort Order
 
-Controls how cards are sorted **after they have been gathered**.
-By default, Anki sorts by template first, to avoid multiple cards of the
-same note from being shown in succession. This results in cards appearing
-in the order they have been added, with the first card template (eg front->back)
-appearing before later card templates (eg back->front).
+Controls how new cards are sorted **after they have been gathered**. The options are:
+
+- Card type: Displays cards in order of card type number. If you have sibling burying disabled, this will ensure all front→back cards are seen before any back→front cards. This is useful to have all cards of the same note shown in the same session, but not too close to one another.
+
+- Order gathered: Shows cards exactly as they were gathered. If sibling burying is disabled, this will typically result in all cards of a note being seen one after the other.
+
+- Card type, then random: Like Card type, but shuffles the cards of each card type number. If you use Ascending position to gather the oldest cards, you could use this setting to see those cards in a random order, but still ensure cards of the same note do not end up too close to one another.
+
+- Random note, then card type: Picks notes at random, then shows all of their siblings in order.
+
+- Random: Fully shuffles the gathered cards.
 
 ### New/Review Priority
 
@@ -317,18 +329,46 @@ reviews, some users prefer to see them at the end (getting the easy stuff done
 first), or at the start (allowing more time to review forgotten ones).
 
 ### Review Sort Order
+Controls how review cards are sorted while reviewing. The options are:
 
-The default order prioritizes cards that have been waiting longer, which works
-well when you are up to date, or when you only have a small backlog. If you have taken an
-extended break or have fallen behind in your reviews, you may want to consider
-changing the sort order temporarily. Sorting by ascending intervals will ensure
-cards with shorter delays are shown first, and by descending intervals will allow
-you to work through the easier material first.
-
-Choosing the _Deck, then due date_ option will ensure reviews are shown for each
+- Due date, then random: The default option prioritizes cards that have been waiting 
+longer, and it's the recomended option when you are up to date, or when you only have a small 
+backlog. If you have taken an extended break or have fallen behind in your reviews, 
+you may want to consider changing the sort order temporarily.
+- Due date, then deck. This also prioritizes cards that have been waiting 
+longer, and then will show reviews for each subdeck in turn. 
+- Deck, then due date: This option will ensure reviews are shown for each
 subdeck in turn. This is generally not recommended, as having material appear
 consistently in the same order makes it easier to guess the answer based on context,
 and may lead to weaker memories.
+- Ascending intervals: This will ensure cards with shorter intervals are shown first.
+- Descending intervals: This will ensure cards with larger intervals are shown first.
+- Ascending ease: This will show most difficult cards first. 
+- Descending ease: This will allow you to work through the easier material first.
+- Relative overdueness: Display those cards first, that are [most overdue in relation 
+to their current interval](./filtered-decks.html#order).
+
+## Timer
+
+Anki monitors how long it takes you to answer each card, so that it
+can show you how long was spent studying each day. The time taken does
+not influence scheduling. 
+
+The options are:
+- Maximum answer seconds: The default limit is 60 seconds. If you take
+longer than that, Anki assumes you have walked away from your computer
+or have been distracted, and limits the recorded time to 60 seconds, so
+that you don’t end up with inaccurate statistics. If you consistently
+take longer than 60 seconds to answer a card (from when question is shown
+until you press an answer button), you may want to either consider raising
+this limit, or ideally, making your cards simpler.
+- Show answer timer: In the review screen, show a timer that counts the number 
+of seconds you're taking to review each card.
+
+## Burying
+
+Please see [this section](./studying.md#siblings-and-burying) for more information.
+
 
 ## Audio
 
