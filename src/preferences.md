@@ -157,7 +157,7 @@ you have made some changes accidentally, and wish to overwrite them
 with an older version that is on AnkiWeb.
 
 ### Ankiweb Account
-When logged in, clicking on this button will log you out.
+When logged in, clicking on Log Out will log you out.
 
 ### Self-hosted sync server
 For info on the custom sync server option, see [this section](./sync-server.md).
