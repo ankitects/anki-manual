@@ -278,8 +278,6 @@ of the text,  whether the selected text is bold, etc.
 The next three buttons allow creating lists, text alignment and text indent.
 Then, there are two buttons to allow you to change text colour.
 
-The \[…​\] button is visible when a cloze note type is selected.
-
 You can use the paper-clip button to select audio, images, and videos from
 your computer's hard drive and attach them to your notes. Alternatively, you
 can copy the media onto your computer's clipboard (for instance, by
@@ -292,6 +290,10 @@ and attach the recording to the note.
 
 The Fx button shows shortcuts to add MathJax or
 [LaTeX](math.md) to your notes.
+![Editor icons](media/editor_icons.png)
+
+The \[…​\] buttons are visible when a cloze note type is selected.
+![Cloze icons](media/cloze_icons.png)
 
 The `</>` button allows editing the underlying HTML of a field.
 
@@ -300,6 +302,8 @@ If you click on the pin icon on the right of a field, Anki will not clear out
 the field's content after a note is added. If you find yourself entering the
 same content into multiple notes, you may find this useful. On previous Anki
 versions, sticky fields were toggled from the Fields screen.
+
+![Pin icon](media/Pin_icon.png)
 
 Most of the buttons have shortcut keys. You can hover the mouse cursor
 over a button to see its shortcut.
