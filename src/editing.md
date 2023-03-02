@@ -270,13 +270,13 @@ On the right are buttons that control formatting. Bold, italic and
 underline work like they do in a word processing program. The next two
 buttons allow you to subscript or superscript text, which is useful for
 chemical compounds like H<sub>2</sub>O or simple mathematical equations like
-x<sup>2</sup>.
+x<sup>2</sup>. Then, there are two buttons to allow you to change text colour.
 
 The rubber eraser button clears any formatting in the currently selected text — including the colour
-of the text,  whether the selected text is bold, etc.
+of the text, whether the selected text is bold, etc. The next three buttons allow creating lists, text alignment and text indent.
 
-The next three buttons allow creating lists, text alignment and text indent.
-Then, there are two buttons to allow you to change text colour.
+
+
 
 You can use the paper-clip button to select audio, images, and videos from
 your computer's hard drive and attach them to your notes. Alternatively, you
