@@ -23,7 +23,9 @@ representation.
 You can use the Tools&gt;Check Media menu option to scan your notes and
 media folder. It will generate a report of files in the media folder
 that are not used by any notes, and media referenced in notes but
-missing from your media folder. It does not scan question or answer
+missing from your media folder, allowing you to tag the latter automatically. 
+
+It does not scan question or answer
 templates, which is why you can’t place media references to fields in
 the template. If you need a static image or sound on every card, name it
 with a leading \_ (e.g., `\_dog.jpg`) to tell Anki to ignore it when
