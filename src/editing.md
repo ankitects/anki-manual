@@ -296,6 +296,8 @@ The \[…​\] buttons are visible when a cloze note type is selected.
 ![Cloze icons](media/cloze_icons.png)
 
 The `</>` button allows editing the underlying HTML of a field.
+![HTML icon](media/html_icon.png)
+
 
 Anki 2.1.45+ supports adjusting sticky fields directly from the editing screen.
 If you click on the pin icon on the right of a field, Anki will not clear out
