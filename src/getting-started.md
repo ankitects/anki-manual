@@ -54,6 +54,25 @@ show answer button, and Anki shows you:
 After confirming that you are correct, you can tell Anki how well you
 remembered, and Anki will choose a next time to show you again.
 
+#### Types of Cards:
+
+**New:** A new card is one that has been added to your collection but has not
+yet entered learning mode. New cards are sometimes referred to as
+"unseen" cards.
+
+**Learn:** A learning card is one that is still in learning mode (using whatever
+steps may be defined in the deck’s options).
+
+**Relearn:** A relearning card is a card that you have failed in review mode, thus
+returning it to learning mode to be relearned.
+
+**Review:** A review card is a card that was previously learnt, and now need to be 
+reviewed so you don’t forget them. There are two types of review cards:
+- **Young:** A young card is one that has an interval of less than 21 days, but is
+not in learning.
+- **Mature:** A mature card is one that has an interval of 21 days or greater.
+
+
 ### Decks
 
 A 'deck' is a group of cards. You can place cards in different decks to
