@@ -56,21 +56,21 @@ remembered, and Anki will choose a next time to show you again.
 
 #### Types of Cards:
 
-**New:** A new card is one that has been added to your collection but has not
+- **New:** A new card is one that has been added to your collection but has not
 yet entered learning mode. New cards are sometimes referred to as
 "unseen" cards.
 
-**Learn:** A learning card is one that is still in learning mode (using whatever
+- **Learn:** A learning card is one that is still in learning mode (using whatever
 steps may be defined in the deck’s options).
 
-**Relearn:** A relearning card is a card that you have failed in review mode, thus
+- **Relearn:** A relearning card is a card that you have failed in review mode, thus
 returning it to learning mode to be relearned.
 
-**Review:** A review card is a card that was previously learnt, and now need to be 
+- **Review:** A review card is a card that was previously learnt, and now need to be 
 reviewed so you don’t forget them. There are two types of review cards:
-- **Young:** A young card is one that has an interval of less than 21 days, but is
+  - **Young:** A young card is one that has an interval of less than 21 days, but is
 not in learning.
-- **Mature:** A mature card is one that has an interval of 21 days or greater.
+  - **Mature:** A mature card is one that has an interval of 21 days or greater.
 
 
 ### Decks
@@ -235,28 +235,28 @@ new users, but in the long run it’s recommended you define your own note
 types for the content you are learning. The standard note types are as
 follows:
 
-**Basic** 
+- **Basic** 
 Has Front and Back fields, and will create one card. Text you enter in
 Front will appear on the front of the card, and text you enter in Back
 will appear on the back of the card.
 
-**Basic (and reversed card)**  
+- **Basic (and reversed card)**  
 Like Basic, but creates two cards for the text you enter: one from
 front→back and one from back→front.
 
-**Basic (optional reversed card)** 
+- **Basic (optional reversed card)** 
 This is a front→back card, and optionally a back→front card. To do this,
 it has a third field called “Add Reverse.” If you enter any text into
 that field, a reverse card will be created. More information about this
 is available in the [Cards and Templates](templates/intro.md) section.
 
-**Basic (type in the answer)** 
+- **Basic (type in the answer)** 
 This is essentially Basic, with an extra text box on the front where you
 can type your answer in, after flipping to the back your input would be
 checked and compared with the answer. More information is available in the
 [Checking Your Answer](templates/fields.md#checking-your-answer) section.
 
-**Cloze**  
+- **Cloze**  
 A note type which makes it easy to select text and turn it into a cloze
 deletion (e.g., “Man landed on the moon in \[…​\]” → “Man landed on the
 moon in 1969”). More information is available in the [cloze
