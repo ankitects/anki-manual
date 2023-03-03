@@ -430,7 +430,18 @@ section</a>.</p>
 <p>Controls how Anki gathers cards from each subdeck. The options are:</p>
 <ul>
 <li>
-<p>Deck: gathers cards from each deck in order, starting from the top. Cards from each deck are gathered in ascending position. If the daily limit of the selected deck is reached, gathering may stop before all decks have been checked. This order is fastest in large collections, and allows you to prioritize subdecks that are closer to the top.</p>
+<p>Deck: gathers cards from each deck in order, starting from the top. Cards from 
+each deck are gathered in ascending position. If the daily limit of the selected 
+deck is reached, gathering may stop before all decks have been checked. This 
+order is fastest in large collections, and allows you to prioritize subdecks that 
+are closer to the top.</p>
+<p>Decks / subdecks are always ordered alphabetically, so you can give them a numeric prefix like
+001 to control the order they are shown. You can also use <code>_</code> and <code>~</code> as a
+prefix to place items at the top or bottom.</p>
+<p>Although position order depends initially on the 'Insertion Order' setting
+above, you can manually
+<a href="https://docs.ankiweb.net/browsing.html#cards">reposition</a> cards in different
+ways.</p>
 </li>
 <li>
 <p>Ascending position: gathers cards by ascending position (due #), which is typically the oldest-added first.</p>
@@ -445,16 +456,6 @@ section</a>.</p>
 <p>Random cards: gathers cards completely randomly.</p>
 </li>
 </ul>
-<p>With the default <code>Deck</code> ordering, cards are gathered from each subdeck in order,
-stopping when the limit of the selected deck has been exceeded. This is faster,
-and allows you to priorize subdecks that are closer to the top. Decks / subdecks
-are always ordered alphabetically, so you can give them a numeric prefix like
-001 to control the order they are shown. You can also use <code>_</code> and <code>~</code> as a
-prefix to place items at the top or bottom.</p>
-<p>Although position order depends initially on the 'Insertion Order' setting
-above, you can manually
-<a href="https://docs.ankiweb.net/browsing.html#cards">reposition</a> cards in different
-ways.</p>
 <h3 id="new-card-sort-order"><a class="header" href="#new-card-sort-order">New Card Sort Order</a></h3>
 <p>Controls how new cards are sorted <strong>after they have been gathered</strong>. The options are:</p>
 <ul>

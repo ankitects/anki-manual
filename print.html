@@ -1838,12 +1838,9 @@ note</a> during reviews, or <a href="browsing.html">browsing</a>.</p>
 underline work like they do in a word processing program. The next two
 buttons allow you to subscript or superscript text, which is useful for
 chemical compounds like H<sub>2</sub>O or simple mathematical equations like
-x<sup>2</sup>.</p>
+x<sup>2</sup>. Then, there are two buttons to allow you to change text colour.</p>
 <p>The rubber eraser button clears any formatting in the currently selected text — including the colour
-of the text,  whether the selected text is bold, etc.</p>
-<p>The next three buttons allow creating lists, text alignment and text indent.
-Then, there are two buttons to allow you to change text colour.</p>
-<p>The […​] button is visible when a cloze note type is selected.</p>
+of the text, whether the selected text is bold, etc. The next three buttons allow creating lists, text alignment and text indent.</p>
 <p>You can use the paper-clip button to select audio, images, and videos from
 your computer's hard drive and attach them to your notes. Alternatively, you
 can copy the media onto your computer's clipboard (for instance, by
@@ -1853,13 +1850,18 @@ about media, please see the <a href="media.html">media</a> section.</p>
 <p>The microphone icon allows you to record from your computer's microphone
 and attach the recording to the note.</p>
 <p>The Fx button shows shortcuts to add MathJax or
-<a href="math.html">LaTeX</a> to your notes.</p>
-<p>The <code>&lt;/&gt;</code> button allows editing the underlying HTML of a field.</p>
+<a href="math.html">LaTeX</a> to your notes.
+<img src="media/editor_icons.png" alt="Editor icons" /></p>
+<p>The […​] buttons are visible when a cloze note type is selected.
+<img src="media/cloze_icons.png" alt="Cloze icons" /></p>
+<p>The <code>&lt;/&gt;</code> button allows editing the underlying HTML of a field.
+<img src="media/html_icon.png" alt="HTML icon" /></p>
 <p>Anki 2.1.45+ supports adjusting sticky fields directly from the editing screen.
 If you click on the pin icon on the right of a field, Anki will not clear out
 the field's content after a note is added. If you find yourself entering the
 same content into multiple notes, you may find this useful. On previous Anki
 versions, sticky fields were toggled from the Fields screen.</p>
+<p><img src="media/Pin_icon.png" alt="Pin icon" /></p>
 <p>Most of the buttons have shortcut keys. You can hover the mouse cursor
 over a button to see its shortcut.</p>
 <p>When pasting text, Anki will keep most formatting by default. If you
@@ -3507,7 +3509,18 @@ section</a>.</p>
 <p>Controls how Anki gathers cards from each subdeck. The options are:</p>
 <ul>
 <li>
-<p>Deck: gathers cards from each deck in order, starting from the top. Cards from each deck are gathered in ascending position. If the daily limit of the selected deck is reached, gathering may stop before all decks have been checked. This order is fastest in large collections, and allows you to prioritize subdecks that are closer to the top.</p>
+<p>Deck: gathers cards from each deck in order, starting from the top. Cards from 
+each deck are gathered in ascending position. If the daily limit of the selected 
+deck is reached, gathering may stop before all decks have been checked. This 
+order is fastest in large collections, and allows you to prioritize subdecks that 
+are closer to the top.</p>
+<p>Decks / subdecks are always ordered alphabetically, so you can give them a numeric prefix like
+001 to control the order they are shown. You can also use <code>_</code> and <code>~</code> as a
+prefix to place items at the top or bottom.</p>
+<p>Although position order depends initially on the 'Insertion Order' setting
+above, you can manually
+<a href="https://docs.ankiweb.net/browsing.html#cards">reposition</a> cards in different
+ways.</p>
 </li>
 <li>
 <p>Ascending position: gathers cards by ascending position (due #), which is typically the oldest-added first.</p>
@@ -3522,16 +3535,6 @@ section</a>.</p>
 <p>Random cards: gathers cards completely randomly.</p>
 </li>
 </ul>
-<p>With the default <code>Deck</code> ordering, cards are gathered from each subdeck in order,
-stopping when the limit of the selected deck has been exceeded. This is faster,
-and allows you to priorize subdecks that are closer to the top. Decks / subdecks
-are always ordered alphabetically, so you can give them a numeric prefix like
-001 to control the order they are shown. You can also use <code>_</code> and <code>~</code> as a
-prefix to place items at the top or bottom.</p>
-<p>Although position order depends initially on the 'Insertion Order' setting
-above, you can manually
-<a href="https://docs.ankiweb.net/browsing.html#cards">reposition</a> cards in different
-ways.</p>
 <h3 id="new-card-sort-order"><a class="header" href="#new-card-sort-order">New Card Sort Order</a></h3>
 <p>Controls how new cards are sorted <strong>after they have been gathered</strong>. The options are:</p>
 <ul>
@@ -5565,7 +5568,7 @@ and 3 for early &quot;cram&quot; cards (cards being studied in a filtered deck w
 are not due).</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="media-1"><a class="header" href="#media-1">Media</a></h1>
 <p>Anki stores the sounds and images used in your notes in a folder next to
-the collection. For more on the folder location, please see the <a href="files.html">file
+the collection. For more on the folder location, please see the <a href="files.html#file-locations">file
 locations</a> section. When you add media within Anki, either by
 using the paperclip icon in the <a href="editing.html">editor</a> or by pasting it into
 a field, Anki will copy it from its original location into the media
@@ -5584,7 +5587,14 @@ representation.</p>
 <p>You can use the Tools&gt;Check Media menu option to scan your notes and
 media folder. It will generate a report of files in the media folder
 that are not used by any notes, and media referenced in notes but
-missing from your media folder. It does not scan question or answer
+missing from your media folder. It also allows you:</p>
+<ul>
+<li>To delete unused media files. </li>
+<li>To tag notes that refer to missing media files. </li>
+<li>To empty your trash folder. </li>
+<li>To restore the deleted files back to your media folder. </li>
+</ul>
+<p>This tool does not scan question or answer
 templates, which is why you can’t place media references to fields in
 the template. If you need a static image or sound on every card, name it
 with a leading _ (e.g., <code>\_dog.jpg</code>) to tell Anki to ignore it when
