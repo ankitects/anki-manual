@@ -2,7 +2,7 @@
 
 Anki stores the sounds and images used in your notes in a folder next to
 the collection. For more on the folder location, please see the [file
-locations](files.md) section. When you add media within Anki, either by
+locations](files.md#file-locations) section. When you add media within Anki, either by
 using the paperclip icon in the [editor](editing.md) or by pasting it into
 a field, Anki will copy it from its original location into the media
 folder. This makes it easy to back up your collection’s media or move it
@@ -23,7 +23,14 @@ representation.
 You can use the Tools&gt;Check Media menu option to scan your notes and
 media folder. It will generate a report of files in the media folder
 that are not used by any notes, and media referenced in notes but
-missing from your media folder. It does not scan question or answer
+missing from your media folder. It also allows you:
+
+- To delete unused media files. 
+- To tag notes that refer to missing media files. 
+- To empty your trash folder. 
+- To restore the deleted files back to your media folder. 
+
+This tool does not scan question or answer
 templates, which is why you can’t place media references to fields in
 the template. If you need a static image or sound on every card, name it
 with a leading \_ (e.g., `\_dog.jpg`) to tell Anki to ignore it when

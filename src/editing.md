@@ -270,15 +270,13 @@ On the right are buttons that control formatting. Bold, italic and
 underline work like they do in a word processing program. The next two
 buttons allow you to subscript or superscript text, which is useful for
 chemical compounds like H<sub>2</sub>O or simple mathematical equations like
-x<sup>2</sup>.
+x<sup>2</sup>. Then, there are two buttons to allow you to change text colour.
 
 The rubber eraser button clears any formatting in the currently selected text — including the colour
-of the text,  whether the selected text is bold, etc.
+of the text, whether the selected text is bold, etc. The next three buttons allow creating lists, text alignment and text indent.
 
-The next three buttons allow creating lists, text alignment and text indent.
-Then, there are two buttons to allow you to change text colour.
 
-The \[…​\] button is visible when a cloze note type is selected.
+
 
 You can use the paper-clip button to select audio, images, and videos from
 your computer's hard drive and attach them to your notes. Alternatively, you
@@ -292,14 +290,22 @@ and attach the recording to the note.
 
 The Fx button shows shortcuts to add MathJax or
 [LaTeX](math.md) to your notes.
+![Editor icons](media/editor_icons.png)
+
+The \[…​\] buttons are visible when a cloze note type is selected.
+![Cloze icons](media/cloze_icons.png)
 
 The `</>` button allows editing the underlying HTML of a field.
+![HTML icon](media/html_icon.png)
+
 
 Anki 2.1.45+ supports adjusting sticky fields directly from the editing screen.
 If you click on the pin icon on the right of a field, Anki will not clear out
 the field's content after a note is added. If you find yourself entering the
 same content into multiple notes, you may find this useful. On previous Anki
 versions, sticky fields were toggled from the Fields screen.
+
+![Pin icon](media/Pin_icon.png)
 
 Most of the buttons have shortcut keys. You can hover the mouse cursor
 over a button to see its shortcut.

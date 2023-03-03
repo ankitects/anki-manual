@@ -281,7 +281,20 @@ section](studying.md#display-order).
 
 Controls how Anki gathers cards from each subdeck. The options are:
 
-- Deck: gathers cards from each deck in order, starting from the top. Cards from each deck are gathered in ascending position. If the daily limit of the selected deck is reached, gathering may stop before all decks have been checked. This order is fastest in large collections, and allows you to prioritize subdecks that are closer to the top.
+- Deck: gathers cards from each deck in order, starting from the top. Cards from 
+each deck are gathered in ascending position. If the daily limit of the selected 
+deck is reached, gathering may stop before all decks have been checked. This 
+order is fastest in large collections, and allows you to prioritize subdecks that 
+are closer to the top.
+
+   Decks / subdecks are always ordered alphabetically, so you can give them a numeric prefix like
+001 to control the order they are shown. You can also use `_` and `~` as a
+prefix to place items at the top or bottom.
+
+   Although position order depends initially on the 'Insertion Order' setting
+above, you can manually
+[reposition](https://docs.ankiweb.net/browsing.html#cards) cards in different
+ways.
 
 - Ascending position: gathers cards by ascending position (due #), which is typically the oldest-added first.
 
@@ -291,17 +304,7 @@ Controls how Anki gathers cards from each subdeck. The options are:
 
 - Random cards: gathers cards completely randomly.
 
-With the default `Deck` ordering, cards are gathered from each subdeck in order,
-stopping when the limit of the selected deck has been exceeded. This is faster,
-and allows you to priorize subdecks that are closer to the top. Decks / subdecks
-are always ordered alphabetically, so you can give them a numeric prefix like
-001 to control the order they are shown. You can also use `_` and `~` as a
-prefix to place items at the top or bottom.
 
-Although position order depends initially on the 'Insertion Order' setting
-above, you can manually
-[reposition](https://docs.ankiweb.net/browsing.html#cards) cards in different
-ways.
 
 ### New Card Sort Order
 
