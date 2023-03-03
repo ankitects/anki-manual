@@ -62,6 +62,7 @@ following search expression:
 
 ### Selection Tool
 ![Selection Tool](media/browser_selection_tool2.png)
+
 The Selection tool allows for selecting multiple items at the same time by holding down <kbd>Ctrl</kbd>
 or <kbd>Shift</kbd> while clicking. It also enables drag-and-drop to reorder decks and
 tags.
@@ -126,9 +127,9 @@ mode, the current card is the first card of the current note.
 The background colour will change depending on the card and note. In Cards mode,
 the first match will be used:
 
-1. if the card is flagged, use the flag colour,
-2. if the card is suspended, yellow,
-3. if the card's note is marked, purple.
+1. if the card is **flagged**, use the flag colour,
+2. if the card is **suspended**, yellow,
+3. if the card's note is **marked**, purple.
 
 In Notes mode, colour is only applied to marked notes.  
 For more information about marked notes and suspended cards, see [Editing and
