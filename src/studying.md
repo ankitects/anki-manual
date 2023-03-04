@@ -36,7 +36,11 @@ how many cards are due today. This is called the 'deck overview' screen:
 
 ![Study overview](media/study_overview.png)
 
-The cards are split into [three types:](getting-started.md#types-of-cards) New, Learning an To Review
+The cards are split into [three types:](getting-started.md#types-of-cards) New, Learning an To Review. 
+If you have [Bury siblings](#siblings-and-burying) activated in your deck options, you 
+may see how many cards will be buried in grey:
+
+![Study overview (Buried Cards)](media/study_overview_buried_cards.png)
 
 To start a study session, click the **Study Now** button. Anki will
 proceed to show you cards until the cards to be shown for the day have
