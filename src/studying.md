@@ -76,8 +76,9 @@ There are four rating buttons when learning:
 
 - **Again** moves the card back to the first step.
 
-- **Hard** repeats the current step after the first step, and is the average
-of Again and Good on the first step.
+- **Hard** repeats the current step. 
+  - If the card is on the first step, the delay will be he average of Again and Good.
+  - After the first step, Hard repeats the previous delay.
 
 - **Good** moves the card to the [next step](deck-options.md#learning-steps). If the card was on the final
 step, the card is converted into a review card (it 'graduates'). By
@@ -139,7 +140,7 @@ to learn more about how the algorithm works.
 
 ## Due Counts
 
-When only the question is shown, Anki shows three numbers like 3 + 5 + 42
+When only the question is shown, Anki shows three numbers like 6 + 9 + 59
 at the bottom of the screen. These represent the new cards (blue), cards in
 learning (orange), and cards to review (green). If you’d prefer not to see the numbers,
 you can turn them off in Anki’s [preferences.](preferences.md)
