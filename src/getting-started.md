@@ -56,7 +56,7 @@ remembered, and Anki will choose a next time to show you again.
 
 #### Types of Cards:
 
-- **New:** A new card is one that you have downloaded or entered in, but have never been studied before.
+- **New:** A new card is one that you have downloaded or entered in, but have never studied before.
 
 - **Learning:** Cards that were seen for the first time recently, and are still being learnt.
 
