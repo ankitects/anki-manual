@@ -36,7 +36,7 @@ how many cards are due today. This is called the 'deck overview' screen:
 
 ![Study overview](media/study_overview.png)
 
-The cards are split into [three types:](getting-started.md#types-of-cards) New, Learning an To Review. 
+The cards are split into [three types](getting-started.md#types-of-cards): New, Learning, and To Review. 
 If you have [Bury siblings](#siblings-and-burying) activated in your deck options, you 
 may see how many cards will be buried in grey:
 
