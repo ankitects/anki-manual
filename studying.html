@@ -166,9 +166,10 @@ to start studying.</p>
 <h2 id="decks"><a class="header" href="#decks">Decks</a></h2>
 <p>Study in Anki is limited to the currently selected deck as well as any
 subdecks it contains.</p>
-<p>On the decks screen, your decks will be displayed in a list. There are
-three columns. 'New' is the number of new
-cards that are ready to be learnt that day. The second column shows
+<p>On the decks screen, your decks and subdecks will be displayed in a list:</p>
+<p><img src="media/decks_screen.png" alt="Decks screen" /></p>
+<p>There are three columns. 'New' is the number of new
+cards that are ready to be learnt that day. 'Learn' shows
 the number of cards currently in learning. 'Due' is the count of waiting
 reviews.</p>
 <p>When you click on a deck, it will become the 'current deck', and Anki
@@ -181,22 +182,12 @@ can press the <kbd>s</kbd> key to study the currently selected deck.)</p>
 delete a deck, change its <a href="deck-options.html">options</a>, or <a href="exporting.html">export</a> it.</p>
 <h2 id="study-overview"><a class="header" href="#study-overview">Study Overview</a></h2>
 <p>After clicking on a deck to study, you’ll see a screen that shows you
-how many cards are due today. This is called the 'deck overview' screen.
-The cards are split into three types:</p>
-<ul>
-<li>
-<p><strong>New</strong> refers to cards that you have downloaded or entered in, but
-have never been studied before.</p>
-</li>
-<li>
-<p><strong>Learning</strong> refers to cards that were seen for the first time
-recently, and are still being learnt.</p>
-</li>
-<li>
-<p><strong>To Review</strong> refers to cards that were previously learnt, and now
-need to be reviewed so you don’t forget them.</p>
-</li>
-</ul>
+how many cards are due today. This is called the 'deck overview' screen:</p>
+<p><img src="media/study_overview.png" alt="Study overview" /></p>
+<p>The cards are split into <a href="getting-started.html#types-of-cards">three types</a>: New, Learning, and To Review. 
+If you have <a href="#siblings-and-burying">Bury siblings</a> activated in your deck options, you 
+may see how many cards will be buried in grey:</p>
+<p><img src="media/study_overview_buried_cards.png" alt="Study overview (Buried Cards)" /></p>
 <p>To start a study session, click the <strong>Study Now</strong> button. Anki will
 proceed to show you cards until the cards to be shown for the day have
 run out.</p>
@@ -221,20 +212,33 @@ memorize them. Each time is called a 'learning step'. By default there
 are two steps: 1 minute and 10 minutes. You can change the number of
 steps and the delays between them in the <a href="deck-options.html#new-cards">deck options</a>.</p>
 <p>There are four rating buttons when learning:</p>
+<ul>
+<li>
 <p><strong>Again</strong> moves the card back to the first step.</p>
-<p><strong>Hard</strong> repeats the current step after the first step, and is the average
-of Again and Good on the first step.</p>
+</li>
+<li>
+<p><strong>Hard</strong> repeats the current step. </p>
+<ul>
+<li>If the card is on the first step, the delay will be the average of Again and Good.</li>
+<li>After the first step, Hard repeats the previous delay.</li>
+</ul>
+</li>
+<li>
 <p><strong>Good</strong> moves the card to the <a href="deck-options.html#learning-steps">next step</a>. If the card was on the final
 step, the card is converted into a review card (it 'graduates'). By
 default, once the card has reached the end of the learning steps, the
 card will be shown again the next day, then at increasingly long delays
 (see the next section).</p>
+</li>
+<li>
 <p><strong>Easy</strong> immediately converts the card into a review card, even if there
 were steps remaining. <a href="deck-options.html#easy-interval">By default</a>, the card will be shown again 4 days
 later, and then at increasingly long delays. In the v1 scheduler, the &quot;Easy&quot; button will not be
 shown if you are in relearning mode as it would give the same interval
 as “Good.” With the <a href="https://faqs.ankiweb.net/the-anki-2.1-scheduler.html">v2 scheduler+</a>,
 when cards are in relearning, the &quot;Easy&quot; button boosts the interval by 1 day.</p>
+</li>
+</ul>
 <p>When cards are seen for the first time, they start at step one. This
 means answering <strong>Good</strong> on a card for the first time will show it one
 more time in 10 minutes, and the initial 1 minute step will be skipped.
@@ -249,31 +253,42 @@ wait the full learning delay, you can change this behaviour in
 <h2 id="review-cards"><a class="header" href="#review-cards">Review Cards</a></h2>
 <p>When a card has been previously learnt and is ready to be reviewed
 again, there are four buttons to rate your answer:</p>
+<ul>
+<li>
 <p><strong>Again</strong> marks your answer as incorrect and asks Anki to show the card
 more frequently in the future. The card is said to have 'lapsed'. Please
 see the <a href="deck-options.html#lapses">lapses</a> section for more information about how lapsed
 reviews are handled.</p>
+</li>
+<li>
 <p><strong>Hard</strong> by default, shows the card at a <a href="deck-options.html#hard-interval">slightly longer delay</a>
 than last time, and tells Anki to show the card more frequently in the future.</p>
+</li>
+<li>
 <p><strong>Good</strong> tells Anki that the last delay was about right, and the card
 easiness doesn’t need to be adjusted down or up. At the <a href="deck-options.html#starting-ease">default starting
 easiness</a>, the card will be shown again approximately 2 1/2 times longer
 than the previous time, so if you had waited 10 days to see the card
 previously, the next delay would be about 25 days.</p>
+</li>
+<li>
 <p><strong>Easy</strong> tells Anki you found the delay too short. The card will be
 scheduled <a href="deck-options.html#easy-bonus">further into the future than 'Good'</a>, and Anki will schedule
 the card less frequently in the future. Because 'Easy' rapidly increases
 the delay, it’s best used for only the easiest of cards. Usually you
 should find yourself answering 'Good' instead.</p>
+</li>
+</ul>
 <p>As with learning cards, you can use <kbd>1</kbd>, <kbd>2</kbd>, <kbd>3</kbd> and <kbd>4</kbd> on the keyboard to select an
 answer. Pressing the <kbd>spacebar</kbd> or <kbd>Enter</kbd> will select <strong>Good</strong>.</p>
 <p>See <a href="deck-options.html">Deck Options</a> and the <a href="https://faqs.ankiweb.net/what-spaced-repetition-algorithm.html">FAQ</a>
 to learn more about how the algorithm works.</p>
 <h2 id="due-counts"><a class="header" href="#due-counts">Due Counts</a></h2>
-<p>When only the question is shown, Anki shows three numbers like 12 + 34 +
-56 at the bottom of the screen. These represent the new cards, cards in
-learning, and cards to review. If you’d prefer not to see the numbers,
-you can turn them off in Anki’s preferences.</p>
+<p>When only the question is shown, Anki shows three numbers like 6 + 9 + 59
+at the bottom of the screen. These represent the new cards (blue), cards in
+learning (orange), and cards to review (green). If you’d prefer not to see the numbers,
+you can turn them off in Anki’s <a href="preferences.html">preferences.</a></p>
+<p><img src="media/due_counts.png" alt="Due Counts" /></p>
 <p>In the v1 scheduler, the numbers count <em>reviews</em> needed to finish all the
 cards in that queue, not the number of <em>cards</em>. If you have multiple
 steps configured for lapsed cards, the number will increase by more than
@@ -324,15 +339,13 @@ however, burying cards does not reset a card's learning steps.</p>
 </li>
 <li>
 <p><strong>Forget card</strong>: Move current card to <a href="browsing.html#cards">the end of the new queue</a>.</p>
-</li>
-</ul>
 <p>From Anki 2.1.50+, Anki will remember the original order of a new card when it is first studied
 with the V3 scheduler. The &quot;Restore original position&quot; option allows you to reset the card back
 to its original position when you forget it.</p>
 <p>The &quot;Reset repetition and lapse count&quot; option, if enabled, will set the review and failure counters
 for the card back to zero. It does not remove the review history that is shown at the bottom of the
 card info screen.</p>
-<ul>
+</li>
 <li>
 <p><strong>Set Due Date</strong>: Put cards in the review queue, and <a href="browsing.html#cards">make them due on a certain date.</a></p>
 </li>

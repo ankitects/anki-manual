@@ -152,7 +152,11 @@
 <li><a href="#videos">Videos</a></li>
 <li><a href="#key-concepts">Key Concepts</a>
 <ul>
-<li><a href="#cards">Cards</a></li>
+<li><a href="#cards">Cards</a>
+<ul>
+<li><a href="#types-of-cards">Types of Cards:</a></li>
+</ul>
+</li>
 <li><a href="#decks">Decks</a></li>
 <li><a href="#notes--fields">Notes &amp; Fields</a></li>
 <li><a href="#card-types">Card Types</a></li>
@@ -212,6 +216,28 @@ A: O
 </code></pre>
 <p>After confirming that you are correct, you can tell Anki how well you
 remembered, and Anki will choose a next time to show you again.</p>
+<h4 id="types-of-cards"><a class="header" href="#types-of-cards">Types of Cards:</a></h4>
+<ul>
+<li>
+<p><strong>New:</strong> A new card is one that you have downloaded or entered in, but have never studied before.</p>
+</li>
+<li>
+<p><strong>Learning:</strong> Cards that were seen for the first time recently, and are still being learnt.</p>
+</li>
+<li>
+<p><strong>Review:</strong> Cards that were previously learnt, and now need to be reviewed so you don’t forget them.
+There are two types of review cards:</p>
+<ul>
+<li><strong>Young:</strong> A young card is one that has an interval of less than 21 days, but is
+not in learning.</li>
+<li><strong>Mature:</strong> A mature card is one that has an interval of 21 days or greater.</li>
+</ul>
+</li>
+<li>
+<p><strong>Relearn:</strong> A relearning card is a card that you have failed in review mode, thus
+returning it to learning mode to be relearned.</p>
+</li>
+</ul>
 <h3 id="decks"><a class="header" href="#decks">Decks</a></h3>
 <p>A 'deck' is a group of cards. You can place cards in different decks to
 study parts of your card collection instead of studying everything at
@@ -350,28 +376,40 @@ note types to it. These note types are provided to make Anki easier for
 new users, but in the long run it’s recommended you define your own note
 types for the content you are learning. The standard note types are as
 follows:</p>
+<ul>
+<li>
 <p><strong>Basic</strong> 
 Has Front and Back fields, and will create one card. Text you enter in
 Front will appear on the front of the card, and text you enter in Back
 will appear on the back of the card.</p>
+</li>
+<li>
 <p><strong>Basic (and reversed card)</strong><br />
 Like Basic, but creates two cards for the text you enter: one from
 front→back and one from back→front.</p>
+</li>
+<li>
 <p><strong>Basic (optional reversed card)</strong> 
 This is a front→back card, and optionally a back→front card. To do this,
 it has a third field called “Add Reverse.” If you enter any text into
 that field, a reverse card will be created. More information about this
 is available in the <a href="templates/intro.html">Cards and Templates</a> section.</p>
+</li>
+<li>
 <p><strong>Basic (type in the answer)</strong> 
 This is essentially Basic, with an extra text box on the front where you
 can type your answer in, after flipping to the back your input would be
 checked and compared with the answer. More information is available in the
 <a href="templates/fields.html#checking-your-answer">Checking Your Answer</a> section.</p>
+</li>
+<li>
 <p><strong>Cloze</strong><br />
 A note type which makes it easy to select text and turn it into a cloze
 deletion (e.g., “Man landed on the moon in […​]” → “Man landed on the
 moon in 1969”). More information is available in the <a href="editing.html#cloze-deletion">cloze
 deletion</a> section.</p>
+</li>
+</ul>
 <p>To add your own note types and modify existing ones, you can use Tools →
 Manage Note Types from the main Anki window.</p>
 <p>Notes and note types are common to your whole collection rather than
