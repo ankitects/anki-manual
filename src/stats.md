@@ -53,31 +53,6 @@ Anki has no way of knowing which deck the deleted cards belonged to),
 but will be included when you look at statistics for the whole
 collection.
 
-## Types of Cards
-
-The stats window uses some terms that you may not be familiar with:
-
-**Mature**  
-A mature card is one that has an interval of 21 days or greater.
-
-**Young**  
-A young card is one that has an interval of less than 21 days, but is
-not in learning.
-
-**Learn**  
-A learning card is one that is still in learning mode (using whatever
-steps may be defined in the deck’s options).
-
-**Relearn**  
-A relearning card is a card that you have failed in review mode, thus
-returning it to learning mode to be relearned.
-
-**Unseen**  
-An unseen card is one that has been added to your collection but has not
-yet entered learning mode. Unseen cards are sometimes referred to as
-"new" cards, especially when they are in the "new" queue to be shown for
-the first time.
-
 ## Today
 
 At the top of the statistics window is a brief list of textual

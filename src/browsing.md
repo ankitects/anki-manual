@@ -10,6 +10,7 @@ right. By positioning the mouse between two sections, it is possible to click
 and drag to expand one section and shrink the other.
 
 ## Table Modes
+![Table Modes](media/browser_table_modes.png)
 
 Anki 2.1.45+ offers two modes: either cards or notes are shown in the data table.
 You can change the current mode by clicking the switch at the top, to the left
@@ -21,7 +22,6 @@ mode to be the active one. Whenever selecting/finding/etc. "cards" is mentioned,
 the reader may substitute it for "cards or notes depending on the active mode".
 
 ## Sidebar
-
 The _sidebar_ on the left allows quick access to common search terms. On Anki
 2.1.45+, it also provides a searchbar, facilities to edit tags and decks, and a
 choice of two different tools, which are discussed in the following sections.
@@ -29,6 +29,7 @@ You can switch tools using the toolbar at the top of the sidebar or the shortcut
 <kbd>Alt</kbd>+<kbd>1</kbd>/<kbd>2</kbd>.
 
 ### Search Tool
+![Search Tool](media/browser_search_tool.png)
 
 With this tool, the sidebar behaves as in previous versions: Clicking on an item
 will search for it.
@@ -60,6 +61,7 @@ following search expression:
 `deck:Urdu (is:due or tag:important)`.
 
 ### Selection Tool
+![Selection Tool](media/browser_selection_tool2.png)
 
 The Selection tool allows for selecting multiple items at the same time by holding down <kbd>Ctrl</kbd>
 or <kbd>Shift</kbd> while clicking. It also enables drag-and-drop to reorder decks and
@@ -125,9 +127,9 @@ mode, the current card is the first card of the current note.
 The background colour will change depending on the card and note. In Cards mode,
 the first match will be used:
 
-1. if the card is flagged, use the flag colour,
-2. if the card is suspended, yellow,
-3. if the card's note is marked, purple.
+1. if the card is **flagged**, use the flag colour,
+2. if the card is **suspended**, yellow,
+3. if the card's note is **marked**, purple.
 
 In Notes mode, colour is only applied to marked notes.  
 For more information about marked notes and suspended cards, see [Editing and

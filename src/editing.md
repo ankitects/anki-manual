@@ -5,23 +5,25 @@
 ## Adding Cards and Notes
 
 Recall from the [basics](getting-started.md) that in Anki we add notes rather than
-cards, and Anki creates cards for us. Click 'Add' in the main window,
+cards, and Anki creates cards for us. Click 'Add' in the [main window](studying.md#decks),
 and the Add Notes window will appear.
 
-The top left of the window shows us the current note type. If it does
+![Add Screen](media/add_screen.png)
+
+The top left of the window shows us the current [note type](getting-started.md#note-types). If it does
 not say "Basic," then you may have added some note types when you
 downloaded a shared deck. The text below assumes that "Basic" is
 selected.
 
-The top right of the window shows us the deck cards will be added to. If
+The top right of the window shows us the [deck](getting-started.md#decks) cards will be added to. If
 you would like to add cards to a new deck, you can click on the deck name
 button and then click "Add".
 
 Below the note type, you'll see some buttons, and an area labelled
-"Front" and "Back". Front and Back are called 'fields', and you can add,
+"Front" and "Back". Front and Back are called [fields](getting-started.md#notes--fields), and you can add,
 remove, and rename them by clicking the "Fields…​" button above.
 
-Below the fields is another area labelled "Tags". Tags are labels that
+Below the fields is another area labelled "**tags**". Tags are labels that
 you can attach to your notes, to make organizing and finding notes
 easier. You can leave the tags blank if you wish, or add one or more of
 them. Tags are separated by a space. If the tags area says
@@ -111,6 +113,8 @@ To customize fields, click the "Fields…​" button when adding or editing
 a note, or while the note type is selected in the Manage Note Types
 window.
 
+![Fields](media/fields.png)
+
 You can add, remove, or rename fields by clicking the appropriate
 buttons. To change the order in which the fields appear in this dialog
 and the add notes dialog, you can use the reposition button, which asks
@@ -126,7 +130,7 @@ properties of the fields to be used when adding and editing the cards.
 This is _not_ where you customize what appears on your cards when
 reviewing; for that, please see [templates](templates/intro.md).
 
-**Editing Font** allows you to customize the font and size used when
+- **Editing Font** allows you to customize the font and size used when
 editing notes. This is useful if you want to make unimportant
 information smaller, or increase the size of foreign characters which
 are hard to read. The changes you make here do not affect how cards
@@ -137,15 +141,21 @@ defined here. (For information about how to change the actual font face
 when typing the answer, please see the [checking your
 answer](templates/fields.md#checking-your-answer) section.)
 
-**Sort by this field…​** tells Anki to show this field in the Sort Field
+- **Sort by this field…​** tells Anki to show this field in the Sort Field
 column of the browser. You can use this to sort cards by that field.
 Only one field can be the sort field at once.
 
-**Reverse text direction** is useful if you are studying languages that
+- **Reverse text direction** is useful if you are studying languages that
 display text from right to left (RTL), such as Arabic or Hebrew. This
 setting currently only controls editing; to make sure the text displays
 correctly during review, you'll need to adjust your
 [template](templates/styling.md#text-direction).
+
+- **Use HTML editor by default** is useful if you prefer to edit the fields
+directly in HTML. 
+
+- **Collapse by default**. Fields can be collapsed/expanded. 
+The animation can be disabled in the [preferences.](preferences.md)
 
 After you have added fields, you will probably want to add them to the front
 or back of your cards. For more information on that, please see the
@@ -263,6 +273,8 @@ marks or fields are better.
 The editor is shown when [adding notes](editing.md), [editing a
 note](studying.md) during reviews, or [browsing](browsing.md).
 
+![Editor icons](media/editor_icons.png)
+
 On the top left are two buttons, which open the [fields](editing.md#customizing-fields) and
 [cards](templates/intro.md) windows.
 
@@ -274,9 +286,6 @@ x<sup>2</sup>. Then, there are two buttons to allow you to change text colour.
 
 The rubber eraser button clears any formatting in the currently selected text — including the colour
 of the text, whether the selected text is bold, etc. The next three buttons allow creating lists, text alignment and text indent.
-
-
-
 
 You can use the paper-clip button to select audio, images, and videos from
 your computer's hard drive and attach them to your notes. Alternatively, you
@@ -290,7 +299,6 @@ and attach the recording to the note.
 
 The Fx button shows shortcuts to add MathJax or
 [LaTeX](math.md) to your notes.
-![Editor icons](media/editor_icons.png)
 
 The \[…​\] buttons are visible when a cloze note type is selected.
 ![Cloze icons](media/cloze_icons.png)

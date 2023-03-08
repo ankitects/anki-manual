@@ -15,7 +15,7 @@ For a quick introduction to syncing, please check out the
 ## Setup
 
 To start syncing your collection across devices, click the sync button
-(the top right one on the main screen), or press 'y' on your keyboard.
+(the top right one on the [main screen](studying.md#decks), or press 'y' on your keyboard.
 You’ll be prompted for your AnkiWeb ID and password, which you created
 in the signup process.
 
@@ -40,7 +40,7 @@ with a single AnkiWeb account, you will lose data.
 
 Once syncing is enabled, Anki will automatically sync each time your
 collection is closed or opened. If you would prefer to synchronize
-manually, you can disable automatic syncing in Anki’s preferences.
+manually, you can disable automatic syncing in Anki’s [preferences.](preferences.md#syncing)
 
 ## Button Color
 
@@ -52,12 +52,12 @@ and red when a full sync is required.
 Related video: <https://www.youtube.com/watch?v=phP9GGG-PxY>
 
 Anki will synchronize any sounds and images used by your notes. It will
-notice when media has been added or removed from your media folder, but
+notice when media has been added or removed from your [media folder](files.md#file-locations), but
 will not notice if you have edited some existing files without adding or
 removing any. To get your edits noticed, you need to add or remove a
 file as well.
 
-If you’re running Anki off a USB flash drive, you should use an NTFS
+If you’re running Anki off a [USB flash drive](files.md#running-from-a-flash-drive), you should use an NTFS
 file system, as Anki may not be able to detect media changes on a FAT32
 filesystem.
 
