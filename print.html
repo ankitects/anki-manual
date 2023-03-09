@@ -4868,16 +4868,17 @@ corresponds to which field in the note when you import.</p>
 in. Keep in mind that if you have the deck override option set for one
 or more of your templates, the cards will go to that deck rather than
 the one you’ve selected.</p>
-<p>This is an example of a valid file:</p>
-<pre><code>foo bar; bar baz; baz quux
-apple; banana; grape
+<p>This is an example of a valid file with three fields:</p>
+<pre><code>apple;banana;grape
+some text;other text;yet more text
 </code></pre>
-<p>There are two ways to include newlines in fields.</p>
-<p><strong>Escape the multi-lines by placing the contents of the field in
+<p>There are two ways to include newlines or the field separator in fields.</p>
+<p><strong>Escape the characters by placing the contents of the field in
 quotation marks</strong>:</p>
-<pre><code>hello; &quot;this is
+<pre><code>hello;&quot;this is
 a two line answer&quot;
-two; this is a one line one
+two;this is a one line field
+&quot;this includes a ; (semicolon)&quot;;another field
 </code></pre>
 <p>Because quotes are used to mark where a field begins and ends, if you
 wish to include them inside your field, you need to replace a single
@@ -4898,12 +4899,12 @@ deletions that span multiple lines. In this case, please use HTML
 newlines instead.</p>
 <p>You can also include tags in another field and select it as a tags field
 in the import dialog:</p>
-<pre><code>first field; second field; tags
+<pre><code>first field;second field;tags
 </code></pre>
 <p>This is an example of a valid file where the first line is ignored (#):</p>
 <pre><code># this is a comment and is ignored
-foo bar; bar baz; baz quux
-field1; field2; field3
+foo bar;bar baz;baz quux
+field1;field2;field3
 </code></pre>
 <h3 id="spreadsheets-and-utf-8"><a class="header" href="#spreadsheets-and-utf-8">Spreadsheets and UTF-8</a></h3>
 <p>If you have non-Latin characters in your file (such as accents, Japanese
