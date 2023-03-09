@@ -35,19 +35,20 @@ in. Keep in mind that if you have the deck override option set for one
 or more of your templates, the cards will go to that deck rather than
 the one you’ve selected.
 
-This is an example of a valid file:
+This is an example of a valid file with three fields:
 
-    foo bar; bar baz; baz quux
-    apple; banana; grape
+    apple;banana;grape
+    some text;other text;yet more text
 
-There are two ways to include newlines in fields.
+There are two ways to include newlines or the field separator in fields.
 
-**Escape the multi-lines by placing the contents of the field in
+**Escape the characters by placing the contents of the field in
 quotation marks**:
 
-    hello; "this is
+    hello;"this is
     a two line answer"
-    two; this is a one line one
+    two;this is a one line field
+    "this includes a ; (semicolon)";another field
 
 Because quotes are used to mark where a field begins and ends, if you
 wish to include them inside your field, you need to replace a single
@@ -74,13 +75,13 @@ newlines instead.
 You can also include tags in another field and select it as a tags field
 in the import dialog:
 
-    first field; second field; tags
+    first field;second field;tags
 
 This is an example of a valid file where the first line is ignored (\#):
 
     # this is a comment and is ignored
-    foo bar; bar baz; baz quux
-    field1; field2; field3
+    foo bar;bar baz;baz quux
+    field1;field2;field3
 
 ### Spreadsheets and UTF-8
 
