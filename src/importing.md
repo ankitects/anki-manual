@@ -242,13 +242,15 @@ exist, a deck with the given name will be created.
 
 #### GUID Column
 
-GUID stands for _Globally Unique Identifier_ and is supposed to not only distinguish
-a note from other notes in your collection, but even from other users' notes.
+GUID stands for _Globally Unique Identifier_. When you create notes in Anki, Anki
+assigns each note a unique ID, which can be used for duplicate checking. If you
+export your notes with the GUID included, you can make changes to the notes, and
+as long as you do not modify the GUID field, you'll be able to import the notes back
+in to update the existing notes.
 
-[Remember](#duplicates-and-updating) that Anki looks out for duplicates by comparing
-the first field of a note. This may lead to a note being updated with another note
-which you would consider to be distinct, or a new note being created although it's
-already in your collection, just because you've modified its first field.
+Please note that the GUID is intended to be created by Anki. If you are creating
+your own IDs, such as MYNOTE0001, then it's recommended that you place the IDs
+in the first field, instead of assigning them to Anki's internal GUID. When importing,
+Anki is able to use the first field for duplicate checking as well, so you do not
+need to make IDs a GUID in order to be able to update your notes.
 
-You can specify a GUID to have Anki use this instead when looking for duplicates.
-If an existing note with the provided GUID is not found, and a new note is created with the provided GUID.
