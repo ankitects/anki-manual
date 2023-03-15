@@ -5032,14 +5032,16 @@ in a single deck of your choice. If the file contains a deck column, however, ne
 cards of a note will be placed in its specified deck instead. If the deck does not
 exist, a deck with the given name will be created.</p>
 <h4 id="guid-column"><a class="header" href="#guid-column">GUID Column</a></h4>
-<p>GUID stands for <em>Globally Unique Identifier</em> and is supposed to not only distinguish
-a note from other notes in your collection, but even from other users' notes.</p>
-<p><a href="importing.html#duplicates-and-updating">Remember</a> that Anki looks out for duplicates by comparing
-the first field of a note. This may lead to a note being updated with another note
-which you would consider to be distinct, or a new note being created although it's
-already in your collection, just because you've modified its first field.</p>
-<p>You can specify a GUID to have Anki use this instead when looking for duplicates.
-If an existing note with the provided GUID is not found, and a new note is created with the provided GUID.</p>
+<p>GUID stands for <em>Globally Unique Identifier</em>. When you create notes in Anki, Anki
+assigns each note a unique ID, which can be used for duplicate checking. If you
+export your notes with the GUID included, you can make changes to the notes, and
+as long as you do not modify the GUID field, you'll be able to import the notes back
+in to update the existing notes.</p>
+<p>Please note that the GUID is intended to be created by Anki. If you are creating
+your own IDs, such as MYNOTE0001, then it's recommended that you place the IDs
+in the first field, instead of assigning them to Anki's internal GUID. When importing,
+Anki is able to use the first field for duplicate checking as well, so you do not
+need to make IDs a GUID in order to be able to update your notes.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="exporting"><a class="header" href="#exporting">Exporting</a></h1>
 <ul>
 <li><a href="exporting.html#text-files">Text Files</a></li>
