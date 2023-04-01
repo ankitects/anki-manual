@@ -1,4 +1,4 @@
-# Graphs and Statistics
+# Card iGraphs and Statistics
 
 <!-- toc -->
 
@@ -26,14 +26,20 @@ card with the "Good" button.
 ## Statistics
 
 The statistics window is accessed by clicking on **Stats** button at the
-top of the main window, or by pressing <kbd>T</kbd>. The statistics
-window will show statistics from the currently selected deck and any
-subdecks. If you select the checkbox "collection" at the top, statistics
-will be shown for your entire collection instead. You can also display graphs
+top of the main window, or by pressing <kbd>T</kbd>. 
+
+![Statistics screen](media/Statistics.png)
+
+### Deck. 
+By default, the statistics window will show statistics from the currently selected deck and any
+subdecks, but you can select any other deck using the search text box at the top of the 
+screen, or (from Anki 2.1.61) by clicking on the **Deck** button at the bottom of the screen.
+
+### Collection
+If you select this checkbox,  statistics will be shown for your entire collection. You can also display graphs
 for arbitrary searches by adding filters in the search box at the top (2.1.28+).
 
-(Anki 2.1.28+ introduced redesigned graphs. The old graphs are currently still
-accessible with a <kbd>Shift</kbd>-click on the Stats button.)
+### History
 
 By default, Anki 2.1.28+ will show you statistics for the last 12 months.
 You can change this to all history scope or deck life scope at the top. (The
@@ -44,14 +50,18 @@ the previous month. You can change this to a year scope or deck life scope
 at the bottom. (Again, the “today” section at the top is unaffected
 by this selection.)
 
-Clicking on "Save PDF" at the bottom will save a PDF document of the statistics to a file
+### More
+- Clicking on "Save PDF" at the bottom will save a PDF document of the statistics to a file
 on your desktop to make it easy to share your statistics with others.
 
-When you delete notes, their review history is maintained in Anki. It
+- When you delete notes, their review history is maintained in Anki. It
 will not be included when looking at statistics for a specific deck (as
 Anki has no way of knowing which deck the deleted cards belonged to),
 but will be included when you look at statistics for the whole
 collection.
+
+- Anki 2.1.28+ introduced redesigned graphs. The old graphs are still
+accessible with a <kbd>Shift</kbd>-click on the Stats button.
 
 ## Today
 
