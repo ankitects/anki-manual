@@ -115,16 +115,6 @@ your review burden decreases. More than one Anki user has excitedly studied
 hundreds of new cards over their first few days of using the program, and then
 become overwhelmed by the reviews required.
 
-If using [the v3 scheduler](https://faqs.ankiweb.net/the-2021-scheduler.html#daily-limits),
-please keep in mind that the new count is capped by the review count. If your
-review limit is set to 200, and you have 190 reviews waiting, a maximum of 10
-new cards will be introduced. If your review limit has been reached, no new
-cards will be shown. If you have a backlog of reviews and still want to
-introduce new cards, you can do so by suspending the reviews, or increasing your
-review limit. That said, it is recommended you hold off on new cards until you
-catch up instead, as introducing more new cards when you're behind will only
-make the backlog worse.
-
 ### Maximum Reviews/Day
 
 Allows you to set an upper limit on the number of reviews to show each day.
@@ -144,6 +134,22 @@ limits on its parents or child decks are ignored.
 
 The v3 scheduler includes learning cards with a 1+ day delay in the review count,
 so those learning cards will be subject to the daily limit.
+
+### New cards ignore review limit
+
+If using [the v3 scheduler](https://faqs.ankiweb.net/the-2021-scheduler.html#daily-limits),
+please keep in mind that the new count is capped by the review count by default. If your
+review limit is set to 200, and you have 190 reviews waiting, a maximum of 10
+new cards will be introduced. If your review limit has been reached, no new
+cards will be shown. If you have a backlog of reviews and still want to
+introduce new cards, you can do so by suspending the reviews, or increasing your
+review limit. That said, it is recommended you hold off on new cards until you
+catch up instead, as introducing more new cards when you're behind will only
+make the backlog worse.
+
+From Anki 2.1.61 this feature is optional, and can be deactivated globally from the 
+deck options screen. 
+
 
 ### Per-Deck Daily Limits
 
