@@ -376,8 +376,32 @@ of seconds you're taking to review each card.
 
 ## Burying
 
-Please see [this section](./studying.md#siblings-and-burying) for more information.
+### Bury new siblings
+Whether other new cards of the same note (eg reverse cards, adjacent cloze deletions) will be delayed until the next day.
 
+When Anki gathers cards, it first gathers intraday learning cards, then interday learning cards, then reviews, and finally new cards. This affects how burying works:
+
+- If you have all burying options enabled, the sibling that comes earliest in that list will be shown. For example, a review card will be shown in preference to a new card.
+- Siblings later in the list can not bury earlier card types. For example, if you disable burying of new cards, and study a new card, it will not bury any interday learning or review cards, and you may see both a review sibling and new sibling in the same session.
+
+### Bury review siblings
+Whether other review cards of the same note will be delayed until the next day.
+
+When Anki gathers cards, it first gathers intraday learning cards, then interday learning cards, then reviews, and finally new cards. This affects how burying works:
+
+- If you have all burying options enabled, the sibling that comes earliest in that list will be shown. For example, a review card will be shown in preference to a new card.
+- Siblings later in the list can not bury earlier card types. For example, if you disable burying of new cards, and study a new card, it will not bury any interday learning or review cards, and you may see both a review sibling and new sibling in the same session.
+
+### Bury interday learning siblings
+Whether other learning cards of the same note with intervals > 1 day will be delayed until the next day.
+
+When Anki gathers cards, it first gathers intraday learning cards, then interday learning cards, then reviews, and finally new cards. This affects how burying works:
+
+- If you have all burying options enabled, the sibling that comes earliest in that list will be shown. For example, a review card will be shown in preference to a new card.
+
+- Siblings later in the list can not bury earlier card types. For example, if you disable burying of new cards, and study a new card, it will not bury any interday learning or review cards, and you may see both a review sibling and new sibling in the same session.
+
+For more info about burying cards, please see [this section](./studying.md#siblings-and-burying) of the manual.
 
 ## Audio
 
