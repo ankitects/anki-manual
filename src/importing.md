@@ -35,19 +35,20 @@ in. Keep in mind that if you have the deck override option set for one
 or more of your templates, the cards will go to that deck rather than
 the one you’ve selected.
 
-This is an example of a valid file:
+This is an example of a valid file with three fields:
 
-    foo bar; bar baz; baz quux
-    apple; banana; grape
+    apple;banana;grape
+    some text;other text;yet more text
 
-There are two ways to include newlines in fields.
+There are two ways to include newlines or the field separator in fields.
 
-**Escape the multi-lines by placing the contents of the field in
+**Escape the characters by placing the contents of the field in
 quotation marks**:
 
-    hello; "this is
+    hello;"this is
     a two line answer"
-    two; this is a one line one
+    two;this is a one line field
+    "this includes a ; (semicolon)";another field
 
 Because quotes are used to mark where a field begins and ends, if you
 wish to include them inside your field, you need to replace a single
@@ -74,13 +75,13 @@ newlines instead.
 You can also include tags in another field and select it as a tags field
 in the import dialog:
 
-    first field; second field; tags
+    first field;second field;tags
 
 This is an example of a valid file where the first line is ignored (\#):
 
     # this is a comment and is ignored
-    foo bar; bar baz; baz quux
-    field1; field2; field3
+    foo bar;bar baz;baz quux
+    field1;field2;field3
 
 ### Spreadsheets and UTF-8
 
@@ -241,13 +242,15 @@ exist, a deck with the given name will be created.
 
 #### GUID Column
 
-GUID stands for _Globally Unique Identifier_ and is supposed to not only distinguish
-a note from other notes in your collection, but even from other users' notes.
+GUID stands for _Globally Unique Identifier_. When you create notes in Anki, Anki
+assigns each note a unique ID, which can be used for duplicate checking. If you
+export your notes with the GUID included, you can make changes to the notes, and
+as long as you do not modify the GUID field, you'll be able to import the notes back
+in to update the existing notes.
 
-[Remember](#duplicates-and-updating) that Anki looks out for duplicates by comparing
-the first field of a note. This may lead to a note being updated with another note
-which you would consider to be distinct, or a new note being created although it's
-already in your collection, just because you've modified its first field.
+Please note that the GUID is intended to be created by Anki. If you are creating
+your own IDs, such as MYNOTE0001, then it's recommended that you place the IDs
+in the first field, instead of assigning them to Anki's internal GUID. When importing,
+Anki is able to use the first field for duplicate checking as well, so you do not
+need to make IDs a GUID in order to be able to update your notes.
 
-You can specify a GUID to have Anki use this instead when looking for duplicates.
-If an existing note with the provided GUID is not found, and a new note is created with the provided GUID.
