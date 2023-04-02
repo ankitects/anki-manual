@@ -24,6 +24,9 @@ From 2.1.50+ there is an option to switch to day or night mode automatically.
 If you find that the interface elements are too small for you, you can 
 try to increase this setting.  
 
+**Reset Windows Sizes**
+This will reset all windows sizes and locations to the default settings. 
+
 **Video driver**  
 Anki's libraries need a video driver to draw content on the screen.
 Due to different hardware and software configurations, the driver that
