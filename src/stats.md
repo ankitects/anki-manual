@@ -1,4 +1,4 @@
-# Card iGraphs and Statistics
+# Card Info, Graphs and Statistics
 
 <!-- toc -->
 
@@ -7,6 +7,9 @@
 You can display information about a card by using the Cards&gt;Info menu item,
 by right-clicking on the card and then selecting **Info**, or by pressing
 <kbd>I</kbd> on the review screen.
+
+![Card Info](media/card_info.png)
+
 Most of the displayed information should be self-explanatory. A few notes:
 
 **Position**  
@@ -30,13 +33,15 @@ top of the main window, or by pressing <kbd>T</kbd>.
 
 ![Statistics screen](media/Statistics.png)
 
+## Deck / Collection selector
+
 ### Deck. 
 By default, the statistics window will show statistics from the currently selected deck and any
-subdecks, but you can select any other deck using the search text box at the top of the 
-screen, or (from Anki 2.1.61) by clicking on the **Deck** button at the bottom of the screen.
+subdecks it may contain, but can select any deck from your collection by typing its name in the 
+text box at the top of the screen or (from Anki 2.1.61) by using the deck selector at the bottom. 
 
 ### Collection
-If you select this checkbox,  statistics will be shown for your entire collection. You can also display graphs
+If you select this checkbox, statistics will be shown for your entire collection. You can also display graphs
 for arbitrary searches by adding filters in the search box at the top (2.1.28+).
 
 ### History
@@ -104,6 +109,8 @@ Note that the forecast graph does not count reviews that are currently
 overdue, so if you have a large backlog, the overdue cards will not be
 displayed.
 
+**Calendar**
+
 **Reviews**  
 This graph counts the number of card reviews you have done. The bars may
 correspond to days, weeks, or months, depending on the time period
@@ -136,6 +143,8 @@ time below that point. The time scope has a different effect on this
 graph than other graphs: rather than changing which cards or period of
 studying is included, it limits how far out the intervals are displayed
 to (so 14-month intervals are not displayed at all on a 1-year graph).
+
+**Card Ease**
 
 **Hourly Breakdown**  
 This graph shows what percentage of total reviews you have passed (i.e.,
