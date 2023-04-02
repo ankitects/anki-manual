@@ -33,12 +33,12 @@ top of the main window, or by pressing <kbd>T</kbd>.
 
 ![Statistics screen](media/Statistics.png)
 
-## Deck / Collection selector
+## Selecting Decks / Collection
 
 ### Deck. 
 By default, the statistics window will show statistics from the currently selected deck and any
-subdecks it may contain, but can select any deck from your collection by typing its name in the 
-text box at the top of the screen or (from Anki 2.1.61) by using the deck selector at the bottom. 
+subdecks it may contain, but you can select any deck from your collection by typing its name in the 
+text box at the top of the screen or (from Anki 2.1.61), by using the deck selector at the bottom. 
 
 ### Collection
 If you select this checkbox, statistics will be shown for your entire collection. You can also display graphs
@@ -110,6 +110,8 @@ overdue, so if you have a large backlog, the overdue cards will not be
 displayed.
 
 **Calendar**
+This graph shows past card review activity. Hovering the mouse over a specific item
+allows you to view the number of revisions made that day. 
 
 **Reviews**  
 This graph counts the number of card reviews you have done. The bars may
@@ -145,6 +147,8 @@ studying is included, it limits how far out the intervals are displayed
 to (so 14-month intervals are not displayed at all on a 1-year graph).
 
 **Card Ease**
+This graph shows the number of cards that have a specific ease factor. 
+Average ease of the selected deck / collection is also displayed here. 
 
 **Hourly Breakdown**  
 This graph shows what percentage of total reviews you have passed (i.e.,
