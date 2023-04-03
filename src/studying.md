@@ -10,8 +10,8 @@ to start studying.
 Study in Anki is limited to the currently selected deck as well as any
 subdecks it contains.
 
-On the decks screen, your decks and subdecks will be displayed in a list, with the number
-of [New, Learn and Due (To Review)](getting-started.md#types-of-cards) cards for each of them 
+On the decks screen, your decks and subdecks will be displayed in a list. [New, Learn and Due (To Review)](getting-started.md#types-of-cards) 
+cards for that day will be also displayed here. 
 
 ![Decks screen](media/decks_screen.png)
 
