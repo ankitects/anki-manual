@@ -10,14 +10,10 @@ to start studying.
 Study in Anki is limited to the currently selected deck as well as any
 subdecks it contains.
 
-On the decks screen, your decks and subdecks will be displayed in a list:
+On the decks screen, your decks and subdecks will be displayed in a list. [New, Learn and Due (To Review)](getting-started.md#types-of-cards) 
+cards for that day will be also displayed here. 
 
 ![Decks screen](media/decks_screen.png)
-
-There are three columns. 'New' is the number of new
-cards that are ready to be learnt that day. 'Learn' shows
-the number of cards currently in learning. 'Due' is the count of waiting
-reviews.
 
 When you click on a deck, it will become the 'current deck', and Anki
 will change to the study screen. You can return to the deck list to

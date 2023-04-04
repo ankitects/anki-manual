@@ -115,16 +115,6 @@ your review burden decreases. More than one Anki user has excitedly studied
 hundreds of new cards over their first few days of using the program, and then
 become overwhelmed by the reviews required.
 
-If using [the v3 scheduler](https://faqs.ankiweb.net/the-2021-scheduler.html#daily-limits),
-please keep in mind that the new count is capped by the review count. If your
-review limit is set to 200, and you have 190 reviews waiting, a maximum of 10
-new cards will be introduced. If your review limit has been reached, no new
-cards will be shown. If you have a backlog of reviews and still want to
-introduce new cards, you can do so by suspending the reviews, or increasing your
-review limit. That said, it is recommended you hold off on new cards until you
-catch up instead, as introducing more new cards when you're behind will only
-make the backlog worse.
-
 ### Maximum Reviews/Day
 
 Allows you to set an upper limit on the number of reviews to show each day.
@@ -144,6 +134,22 @@ limits on its parents or child decks are ignored.
 
 The v3 scheduler includes learning cards with a 1+ day delay in the review count,
 so those learning cards will be subject to the daily limit.
+
+### New cards ignore review limit
+
+If using [the v3 scheduler](https://faqs.ankiweb.net/the-2021-scheduler.html#daily-limits),
+please keep in mind that the new count is capped by the review count by default. If your
+review limit is set to 200, and you have 190 reviews waiting, a maximum of 10
+new cards will be introduced. If your review limit has been reached, no new
+cards will be shown. If you have a backlog of reviews and still want to
+introduce new cards, you can do so by suspending the reviews, or increasing your
+review limit. That said, it is recommended you hold off on new cards until you
+catch up instead, as introducing more new cards when you're behind will only
+make the backlog worse.
+
+From Anki 2.1.61 this feature is optional, and can be deactivated globally from the 
+deck options screen. 
+
 
 ### Per-Deck Daily Limits
 
@@ -370,8 +376,32 @@ of seconds you're taking to review each card.
 
 ## Burying
 
-Please see [this section](./studying.md#siblings-and-burying) for more information.
+### Bury new siblings
+Whether other new cards of the same note (eg reverse cards, adjacent cloze deletions) will be delayed until the next day.
 
+When Anki gathers cards, it first gathers intraday learning cards, then interday learning cards, then reviews, and finally new cards. This affects how burying works:
+
+- If you have all burying options enabled, the sibling that comes earliest in that list will be shown. For example, a review card will be shown in preference to a new card.
+- Siblings later in the list can not bury earlier card types. For example, if you disable burying of new cards, and study a new card, it will not bury any interday learning or review cards, and you may see both a review sibling and new sibling in the same session.
+
+### Bury review siblings
+Whether other review cards of the same note will be delayed until the next day.
+
+When Anki gathers cards, it first gathers intraday learning cards, then interday learning cards, then reviews, and finally new cards. This affects how burying works:
+
+- If you have all burying options enabled, the sibling that comes earliest in that list will be shown. For example, a review card will be shown in preference to a new card.
+- Siblings later in the list can not bury earlier card types. For example, if you disable burying of new cards, and study a new card, it will not bury any interday learning or review cards, and you may see both a review sibling and new sibling in the same session.
+
+### Bury interday learning siblings
+Whether other learning cards of the same note with intervals > 1 day will be delayed until the next day.
+
+When Anki gathers cards, it first gathers intraday learning cards, then interday learning cards, then reviews, and finally new cards. This affects how burying works:
+
+- If you have all burying options enabled, the sibling that comes earliest in that list will be shown. For example, a review card will be shown in preference to a new card.
+
+- Siblings later in the list can not bury earlier card types. For example, if you disable burying of new cards, and study a new card, it will not bury any interday learning or review cards, and you may see both a review sibling and new sibling in the same session.
+
+For more info about burying cards, please see [this section](./studying.md#siblings-and-burying) of the manual.
 
 ## Audio
 

@@ -157,6 +157,10 @@ directly in HTML.
 - **Collapse by default**. Fields can be collapsed/expanded. 
 The animation can be disabled in the [preferences.](preferences.md)
 
+- **Exclude from unqualified searches (slower)** can be used if you want 
+the content of a certain field not to appear in unqualified [(not limited to a specific field)](searching.md#limiting-to-a-field)
+searches.  
+
 After you have added fields, you will probably want to add them to the front
 or back of your cards. For more information on that, please see the
 [templates](templates/intro.md) section.
