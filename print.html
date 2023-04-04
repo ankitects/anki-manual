@@ -1307,12 +1307,9 @@ to start studying.</p>
 <h2 id="decks-1"><a class="header" href="#decks-1">Decks</a></h2>
 <p>Study in Anki is limited to the currently selected deck as well as any
 subdecks it contains.</p>
-<p>On the decks screen, your decks and subdecks will be displayed in a list:</p>
+<p>On the decks screen, your decks and subdecks will be displayed in a list. <a href="getting-started.html#types-of-cards">New, Learn and Due (To Review)</a> 
+cards for that day will be also displayed here. </p>
 <p><img src="media/decks_screen.png" alt="Decks screen" /></p>
-<p>There are three columns. 'New' is the number of new
-cards that are ready to be learnt that day. 'Learn' shows
-the number of cards currently in learning. 'Due' is the count of waiting
-reviews.</p>
 <p>When you click on a deck, it will become the 'current deck', and Anki
 will change to the study screen. You can return to the deck list to
 change the currently selected deck at any time by clicking on “Decks” at
@@ -1804,6 +1801,11 @@ directly in HTML. </p>
 <li>
 <p><strong>Collapse by default</strong>. Fields can be collapsed/expanded. 
 The animation can be disabled in the <a href="preferences.html">preferences.</a></p>
+</li>
+<li>
+<p><strong>Exclude from unqualified searches (slower)</strong> can be used if you want 
+the content of a certain field not to appear in unqualified <a href="searching.html#limiting-to-a-field">(not limited to a specific field)</a>
+searches.</p>
 </li>
 </ul>
 <p>After you have added fields, you will probably want to add them to the front
@@ -3185,6 +3187,8 @@ styling</a> for more information.</p>
 <p><strong>User interface size</strong>
 If you find that the interface elements are too small for you, you can 
 try to increase this setting.</p>
+<p><strong>Reset Windows Sizes</strong>
+This will reset all windows sizes and locations to the default settings. </p>
 <p><strong>Video driver</strong><br />
 Anki's libraries need a video driver to draw content on the screen.
 Due to different hardware and software configurations, the driver that
@@ -3302,6 +3306,7 @@ with an older version that is on AnkiWeb.</p>
 <ul>
 <li><a href="deck-options.html#new-cardsday">New Cards/Day</a></li>
 <li><a href="deck-options.html#maximum-reviewsday">Maximum Reviews/Day</a></li>
+<li><a href="deck-options.html#new-cards-ignore-review-limit">New cards ignore review limit</a></li>
 <li><a href="deck-options.html#per-deck-daily-limits">Per-Deck Daily Limits</a></li>
 </ul>
 </li>
@@ -3334,7 +3339,13 @@ with an older version that is on AnkiWeb.</p>
 </ul>
 </li>
 <li><a href="deck-options.html#timer">Timer</a></li>
-<li><a href="deck-options.html#burying">Burying</a></li>
+<li><a href="deck-options.html#burying">Burying</a>
+<ul>
+<li><a href="deck-options.html#bury-new-siblings">Bury new siblings</a></li>
+<li><a href="deck-options.html#bury-review-siblings">Bury review siblings</a></li>
+<li><a href="deck-options.html#bury-interday-learning-siblings">Bury interday learning siblings</a></li>
+</ul>
+</li>
 <li><a href="deck-options.html#audio">Audio</a></li>
 <li><a href="deck-options.html#advanced">Advanced</a>
 <ul>
@@ -3450,15 +3461,6 @@ introducing fewer new cards each day, or by turning off new card display until
 your review burden decreases. More than one Anki user has excitedly studied
 hundreds of new cards over their first few days of using the program, and then
 become overwhelmed by the reviews required.</p>
-<p>If using <a href="https://faqs.ankiweb.net/the-2021-scheduler.html#daily-limits">the v3 scheduler</a>,
-please keep in mind that the new count is capped by the review count. If your
-review limit is set to 200, and you have 190 reviews waiting, a maximum of 10
-new cards will be introduced. If your review limit has been reached, no new
-cards will be shown. If you have a backlog of reviews and still want to
-introduce new cards, you can do so by suspending the reviews, or increasing your
-review limit. That said, it is recommended you hold off on new cards until you
-catch up instead, as introducing more new cards when you're behind will only
-make the backlog worse.</p>
 <h3 id="maximum-reviewsday"><a class="header" href="#maximum-reviewsday">Maximum Reviews/Day</a></h3>
 <p>Allows you to set an upper limit on the number of reviews to show each day.
 When this limit is reached, Anki will not show any more review cards for the
@@ -3474,6 +3476,18 @@ as new cards.</p>
 limits on its parents or child decks are ignored.</p>
 <p>The v3 scheduler includes learning cards with a 1+ day delay in the review count,
 so those learning cards will be subject to the daily limit.</p>
+<h3 id="new-cards-ignore-review-limit"><a class="header" href="#new-cards-ignore-review-limit">New cards ignore review limit</a></h3>
+<p>If using <a href="https://faqs.ankiweb.net/the-2021-scheduler.html#daily-limits">the v3 scheduler</a>,
+please keep in mind that the new count is capped by the review count by default. If your
+review limit is set to 200, and you have 190 reviews waiting, a maximum of 10
+new cards will be introduced. If your review limit has been reached, no new
+cards will be shown. If you have a backlog of reviews and still want to
+introduce new cards, you can do so by suspending the reviews, or increasing your
+review limit. That said, it is recommended you hold off on new cards until you
+catch up instead, as introducing more new cards when you're behind will only
+make the backlog worse.</p>
+<p>From Anki 2.1.61 this feature is optional, and can be deactivated globally from the 
+deck options screen. </p>
 <h3 id="per-deck-daily-limits"><a class="header" href="#per-deck-daily-limits">Per-Deck Daily Limits</a></h3>
 <p>From version 2.1.55 it is possible to use the same preset for different decks / subdecks, with customized 
 limits for each one of them. This eliminates the need to create cloned presets just for that 
@@ -3667,7 +3681,32 @@ this limit, or ideally, making your cards simpler.</li>
 of seconds you're taking to review each card.</li>
 </ul>
 <h2 id="burying"><a class="header" href="#burying">Burying</a></h2>
-<p>Please see <a href="./studying.html#siblings-and-burying">this section</a> for more information.</p>
+<h3 id="bury-new-siblings"><a class="header" href="#bury-new-siblings">Bury new siblings</a></h3>
+<p>Whether other new cards of the same note (eg reverse cards, adjacent cloze deletions) will be delayed until the next day.</p>
+<p>When Anki gathers cards, it first gathers intraday learning cards, then interday learning cards, then reviews, and finally new cards. This affects how burying works:</p>
+<ul>
+<li>If you have all burying options enabled, the sibling that comes earliest in that list will be shown. For example, a review card will be shown in preference to a new card.</li>
+<li>Siblings later in the list can not bury earlier card types. For example, if you disable burying of new cards, and study a new card, it will not bury any interday learning or review cards, and you may see both a review sibling and new sibling in the same session.</li>
+</ul>
+<h3 id="bury-review-siblings"><a class="header" href="#bury-review-siblings">Bury review siblings</a></h3>
+<p>Whether other review cards of the same note will be delayed until the next day.</p>
+<p>When Anki gathers cards, it first gathers intraday learning cards, then interday learning cards, then reviews, and finally new cards. This affects how burying works:</p>
+<ul>
+<li>If you have all burying options enabled, the sibling that comes earliest in that list will be shown. For example, a review card will be shown in preference to a new card.</li>
+<li>Siblings later in the list can not bury earlier card types. For example, if you disable burying of new cards, and study a new card, it will not bury any interday learning or review cards, and you may see both a review sibling and new sibling in the same session.</li>
+</ul>
+<h3 id="bury-interday-learning-siblings"><a class="header" href="#bury-interday-learning-siblings">Bury interday learning siblings</a></h3>
+<p>Whether other learning cards of the same note with intervals &gt; 1 day will be delayed until the next day.</p>
+<p>When Anki gathers cards, it first gathers intraday learning cards, then interday learning cards, then reviews, and finally new cards. This affects how burying works:</p>
+<ul>
+<li>
+<p>If you have all burying options enabled, the sibling that comes earliest in that list will be shown. For example, a review card will be shown in preference to a new card.</p>
+</li>
+<li>
+<p>Siblings later in the list can not bury earlier card types. For example, if you disable burying of new cards, and study a new card, it will not bury any interday learning or review cards, and you may see both a review sibling and new sibling in the same session.</p>
+</li>
+</ul>
+<p>For more info about burying cards, please see <a href="./studying.html#siblings-and-burying">this section</a> of the manual.</p>
 <h2 id="audio"><a class="header" href="#audio">Audio</a></h2>
 <p>By default, Anki automatically plays audio on the front and back of
 cards. If you check <em>Don't play audio automatically</em>, Anki will not play
@@ -5449,10 +5488,18 @@ the old version</p>
 collection has been successfully restored.</p>
 </li>
 </ul>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="graphs-and-statistics"><a class="header" href="#graphs-and-statistics">Graphs and Statistics</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="card-info-graphs-and-statistics"><a class="header" href="#card-info-graphs-and-statistics">Card Info, Graphs and Statistics</a></h1>
 <ul>
 <li><a href="stats.html#card-info">Card Info</a></li>
 <li><a href="stats.html#statistics">Statistics</a></li>
+<li><a href="stats.html#selecting-decks--collection">Selecting Decks / Collection</a>
+<ul>
+<li><a href="stats.html#deck">Deck.</a></li>
+<li><a href="stats.html#collection">Collection</a></li>
+<li><a href="stats.html#history">History</a></li>
+<li><a href="stats.html#more">More</a></li>
+</ul>
+</li>
 <li><a href="stats.html#today">Today</a></li>
 <li><a href="stats.html#the-graphs">The Graphs</a></li>
 <li><a href="stats.html#manual-analysis">Manual Analysis</a></li>
@@ -5460,8 +5507,9 @@ collection has been successfully restored.</p>
 <h2 id="card-info"><a class="header" href="#card-info">Card Info</a></h2>
 <p>You can display information about a card by using the Cards&gt;Info menu item,
 by right-clicking on the card and then selecting <strong>Info</strong>, or by pressing
-<kbd>I</kbd> on the review screen.
-Most of the displayed information should be self-explanatory. A few notes:</p>
+<kbd>I</kbd> on the review screen.</p>
+<p><img src="media/card_info.png" alt="Card Info" /></p>
+<p>Most of the displayed information should be self-explanatory. A few notes:</p>
 <p><strong>Position</strong><br />
 Only shown when the card is new, it shows the order the card will appear
 in relative to other new cards. The position can be changed in the
@@ -5475,13 +5523,17 @@ The approximate amount the interval will grow when you answer a review
 card with the &quot;Good&quot; button.</p>
 <h2 id="statistics"><a class="header" href="#statistics">Statistics</a></h2>
 <p>The statistics window is accessed by clicking on <strong>Stats</strong> button at the
-top of the main window, or by pressing <kbd>T</kbd>. The statistics
-window will show statistics from the currently selected deck and any
-subdecks. If you select the checkbox &quot;collection&quot; at the top, statistics
-will be shown for your entire collection instead. You can also display graphs
+top of the main window, or by pressing <kbd>T</kbd>. </p>
+<p><img src="media/Statistics.png" alt="Statistics screen" /></p>
+<h2 id="selecting-decks--collection"><a class="header" href="#selecting-decks--collection">Selecting Decks / Collection</a></h2>
+<h3 id="deck"><a class="header" href="#deck">Deck.</a></h3>
+<p>By default, the statistics window will show statistics from the currently selected deck and any
+subdecks it may contain, but you can select any deck from your collection by typing its name in the 
+text box at the top of the screen or (from Anki 2.1.61), by using the deck selector at the bottom. </p>
+<h3 id="collection-1"><a class="header" href="#collection-1">Collection</a></h3>
+<p>If you select this checkbox, statistics will be shown for your entire collection. You can also display graphs
 for arbitrary searches by adding filters in the search box at the top (2.1.28+).</p>
-<p>(Anki 2.1.28+ introduced redesigned graphs. The old graphs are currently still
-accessible with a <kbd>Shift</kbd>-click on the Stats button.)</p>
+<h3 id="history"><a class="header" href="#history">History</a></h3>
 <p>By default, Anki 2.1.28+ will show you statistics for the last 12 months.
 You can change this to all history scope or deck life scope at the top. (The
 &quot;today&quot; section at the top remains of course unaffected by this selection.)</p>
@@ -5489,13 +5541,24 @@ You can change this to all history scope or deck life scope at the top. (The
 the previous month. You can change this to a year scope or deck life scope
 at the bottom. (Again, the “today” section at the top is unaffected
 by this selection.)</p>
+<h3 id="more"><a class="header" href="#more">More</a></h3>
+<ul>
+<li>
 <p>Clicking on &quot;Save PDF&quot; at the bottom will save a PDF document of the statistics to a file
 on your desktop to make it easy to share your statistics with others.</p>
+</li>
+<li>
 <p>When you delete notes, their review history is maintained in Anki. It
 will not be included when looking at statistics for a specific deck (as
 Anki has no way of knowing which deck the deleted cards belonged to),
 but will be included when you look at statistics for the whole
 collection.</p>
+</li>
+<li>
+<p>Anki 2.1.28+ introduced redesigned graphs. The old graphs are still
+accessible with a <kbd>Shift</kbd>-click on the Stats button.</p>
+</li>
+</ul>
 <h2 id="today"><a class="header" href="#today">Today</a></h2>
 <p>At the top of the statistics window is a brief list of textual
 statistics about the reviews that you have completed today. A “review”
@@ -5529,6 +5592,9 @@ number of cards due on that day if you don’t study at all until then.
 Note that the forecast graph does not count reviews that are currently
 overdue, so if you have a large backlog, the overdue cards will not be
 displayed.</p>
+<p><strong>Calendar</strong>
+This graph shows past card review activity. Hovering the mouse over a specific item
+allows you to view the number of revisions made that day. </p>
 <p><strong>Reviews</strong><br />
 This graph counts the number of card reviews you have done. The bars may
 correspond to days, weeks, or months, depending on the time period
@@ -5558,6 +5624,9 @@ time below that point. The time scope has a different effect on this
 graph than other graphs: rather than changing which cards or period of
 studying is included, it limits how far out the intervals are displayed
 to (so 14-month intervals are not displayed at all on a 1-year graph).</p>
+<p><strong>Card Ease</strong>
+This graph shows the number of cards that have a specific ease factor. 
+Average ease of the selected deck / collection is also displayed here. </p>
 <p><strong>Hourly Breakdown</strong><br />
 This graph shows what percentage of total reviews you have passed (i.e.,
 not pressed Again on) during given hours. The larger, darker bars and

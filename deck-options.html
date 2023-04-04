@@ -154,6 +154,7 @@
 <ul>
 <li><a href="#new-cardsday">New Cards/Day</a></li>
 <li><a href="#maximum-reviewsday">Maximum Reviews/Day</a></li>
+<li><a href="#new-cards-ignore-review-limit">New cards ignore review limit</a></li>
 <li><a href="#per-deck-daily-limits">Per-Deck Daily Limits</a></li>
 </ul>
 </li>
@@ -186,7 +187,13 @@
 </ul>
 </li>
 <li><a href="#timer">Timer</a></li>
-<li><a href="#burying">Burying</a></li>
+<li><a href="#burying">Burying</a>
+<ul>
+<li><a href="#bury-new-siblings">Bury new siblings</a></li>
+<li><a href="#bury-review-siblings">Bury review siblings</a></li>
+<li><a href="#bury-interday-learning-siblings">Bury interday learning siblings</a></li>
+</ul>
+</li>
 <li><a href="#audio">Audio</a></li>
 <li><a href="#advanced">Advanced</a>
 <ul>
@@ -302,15 +309,6 @@ introducing fewer new cards each day, or by turning off new card display until
 your review burden decreases. More than one Anki user has excitedly studied
 hundreds of new cards over their first few days of using the program, and then
 become overwhelmed by the reviews required.</p>
-<p>If using <a href="https://faqs.ankiweb.net/the-2021-scheduler.html#daily-limits">the v3 scheduler</a>,
-please keep in mind that the new count is capped by the review count. If your
-review limit is set to 200, and you have 190 reviews waiting, a maximum of 10
-new cards will be introduced. If your review limit has been reached, no new
-cards will be shown. If you have a backlog of reviews and still want to
-introduce new cards, you can do so by suspending the reviews, or increasing your
-review limit. That said, it is recommended you hold off on new cards until you
-catch up instead, as introducing more new cards when you're behind will only
-make the backlog worse.</p>
 <h3 id="maximum-reviewsday"><a class="header" href="#maximum-reviewsday">Maximum Reviews/Day</a></h3>
 <p>Allows you to set an upper limit on the number of reviews to show each day.
 When this limit is reached, Anki will not show any more review cards for the
@@ -326,6 +324,18 @@ as new cards.</p>
 limits on its parents or child decks are ignored.</p>
 <p>The v3 scheduler includes learning cards with a 1+ day delay in the review count,
 so those learning cards will be subject to the daily limit.</p>
+<h3 id="new-cards-ignore-review-limit"><a class="header" href="#new-cards-ignore-review-limit">New cards ignore review limit</a></h3>
+<p>If using <a href="https://faqs.ankiweb.net/the-2021-scheduler.html#daily-limits">the v3 scheduler</a>,
+please keep in mind that the new count is capped by the review count by default. If your
+review limit is set to 200, and you have 190 reviews waiting, a maximum of 10
+new cards will be introduced. If your review limit has been reached, no new
+cards will be shown. If you have a backlog of reviews and still want to
+introduce new cards, you can do so by suspending the reviews, or increasing your
+review limit. That said, it is recommended you hold off on new cards until you
+catch up instead, as introducing more new cards when you're behind will only
+make the backlog worse.</p>
+<p>From Anki 2.1.61 this feature is optional, and can be deactivated globally from the 
+deck options screen. </p>
 <h3 id="per-deck-daily-limits"><a class="header" href="#per-deck-daily-limits">Per-Deck Daily Limits</a></h3>
 <p>From version 2.1.55 it is possible to use the same preset for different decks / subdecks, with customized 
 limits for each one of them. This eliminates the need to create cloned presets just for that 
@@ -519,7 +529,32 @@ this limit, or ideally, making your cards simpler.</li>
 of seconds you're taking to review each card.</li>
 </ul>
 <h2 id="burying"><a class="header" href="#burying">Burying</a></h2>
-<p>Please see <a href="./studying.html#siblings-and-burying">this section</a> for more information.</p>
+<h3 id="bury-new-siblings"><a class="header" href="#bury-new-siblings">Bury new siblings</a></h3>
+<p>Whether other new cards of the same note (eg reverse cards, adjacent cloze deletions) will be delayed until the next day.</p>
+<p>When Anki gathers cards, it first gathers intraday learning cards, then interday learning cards, then reviews, and finally new cards. This affects how burying works:</p>
+<ul>
+<li>If you have all burying options enabled, the sibling that comes earliest in that list will be shown. For example, a review card will be shown in preference to a new card.</li>
+<li>Siblings later in the list can not bury earlier card types. For example, if you disable burying of new cards, and study a new card, it will not bury any interday learning or review cards, and you may see both a review sibling and new sibling in the same session.</li>
+</ul>
+<h3 id="bury-review-siblings"><a class="header" href="#bury-review-siblings">Bury review siblings</a></h3>
+<p>Whether other review cards of the same note will be delayed until the next day.</p>
+<p>When Anki gathers cards, it first gathers intraday learning cards, then interday learning cards, then reviews, and finally new cards. This affects how burying works:</p>
+<ul>
+<li>If you have all burying options enabled, the sibling that comes earliest in that list will be shown. For example, a review card will be shown in preference to a new card.</li>
+<li>Siblings later in the list can not bury earlier card types. For example, if you disable burying of new cards, and study a new card, it will not bury any interday learning or review cards, and you may see both a review sibling and new sibling in the same session.</li>
+</ul>
+<h3 id="bury-interday-learning-siblings"><a class="header" href="#bury-interday-learning-siblings">Bury interday learning siblings</a></h3>
+<p>Whether other learning cards of the same note with intervals &gt; 1 day will be delayed until the next day.</p>
+<p>When Anki gathers cards, it first gathers intraday learning cards, then interday learning cards, then reviews, and finally new cards. This affects how burying works:</p>
+<ul>
+<li>
+<p>If you have all burying options enabled, the sibling that comes earliest in that list will be shown. For example, a review card will be shown in preference to a new card.</p>
+</li>
+<li>
+<p>Siblings later in the list can not bury earlier card types. For example, if you disable burying of new cards, and study a new card, it will not bury any interday learning or review cards, and you may see both a review sibling and new sibling in the same session.</p>
+</li>
+</ul>
+<p>For more info about burying cards, please see <a href="./studying.html#siblings-and-burying">this section</a> of the manual.</p>
 <h2 id="audio"><a class="header" href="#audio">Audio</a></h2>
 <p>By default, Anki automatically plays audio on the front and back of
 cards. If you check <em>Don't play audio automatically</em>, Anki will not play
