@@ -1,1 +1,10 @@
 book
+
+# MacOS temp file
+.DS_Store
+
+# Editors
+.idea
+.vscode
+*.sw?
+*~
