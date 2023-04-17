@@ -32,7 +32,7 @@ Understanding how they work will make you a more effective learner.
 ## Active Recall Testing
 
 _Active recall testing_ is a powerful study technique that involves retrieving 
-information from memory through back and forth being asked questions and providing answers. 
+information from memory through reciprocating questions being asked and providing answers. 
 This is in contrast to _passive study_, where we read, watch, or listen to something 
 without pausing to consider if we know the answer. Research has shown that active recall
 testing is far more effective at building strong memories than passive study. 
@@ -82,11 +82,6 @@ if you only have 30 of them to review, but as the number grows to 300 or
 3000, it quickly becomes unwieldy.
 
 ## Spaced Repetition
-
-The idea behind _spaced repetition_ is that the brain needs time to process and consolidate 
-information, but it also needs regular reminders to keep the information fresh in memory. 
-By spacing out reviews, the brain is forced to work harder to recall the information, 
-strengthening the neural connections that facilitate memory.
 
 The _spacing effect_ was reported by a German psychologist Hermann Ebbinghaus in 1885. He
 observed that we tend to remember things more effectively, if we spread
