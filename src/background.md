@@ -31,12 +31,12 @@ Understanding how they work will make you a more effective learner.
 
 ## Active Recall Testing
 
-_Active recall testing_ means being asked a question and trying to
-remember the answer. This is in contrast to _passive study_, where we
-read, watch, or listen to something without pausing to consider if we
-know the answer. Research has shown that active recall testing is far
-more effective at building strong memories than passive study. There are
-two reasons for this:
+_Active recall testing_ is a powerful study technique that involves retrieving 
+information from memory through back and forth being asked questions and providing answers. 
+This is in contrast to _passive study_, where we read, watch, or listen to something 
+without pausing to consider if we know the answer. Research has shown that active recall
+testing is far more effective at building strong memories than passive study. 
+There are two reasons for this:
 
 - The act of recalling something _strengthens_ the memory, increasing
     the chances we’ll be able to remember it again.
