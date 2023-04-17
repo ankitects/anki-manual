@@ -83,6 +83,11 @@ if you only have 30 of them to review, but as the number grows to 300 or
 
 ## Spaced Repetition
 
+The idea behind _spaced repetition_ is that the brain needs time to process and consolidate 
+information, but it also needs regular reminders to keep the information fresh in memory. 
+By spacing out reviews, the brain is forced to work harder to recall the information, 
+strengthening the neural connections that facilitate memory.
+
 The _spacing effect_ was reported by a German psychologist Hermann Ebbinghaus in 1885. He
 observed that we tend to remember things more effectively, if we spread
 reviews out over time, instead of studying multiple times in one
@@ -91,13 +96,11 @@ utilizing the spacing effect to improve learning, in what has come to be
 called _spaced repetition_.
 
 One example was in 1972, when a German scientist called Sebastian Leitner
-popularized a method of spaced repetition with paper flashcards. By
-separating the paper cards into a series of boxes, and moving the
-cards to a different box on each successful or unsuccessful review, it
-was possible to see at a glance a rough estimate of how well a card was
-known and when it should be reviewed again. This was a great improvement
-over a single box of cards, and it has been widely adopted by
-computerized flashcard software. It is a rather rough approach however,
+popularized a method of spaced repetition with paper flashcards. The system 
+involves organizing flashcards into boxes based on how well the user knows 
+the information, with more challenging cards being reviewed more frequently.
+This was a great improvement over a single box of cards, and it has been widely 
+adopted by computerized flashcard software. It is a rather rough approach however,
 as it cannot give you an exact date on which you should review something
 again, and it does not cope very well with material of varying
 difficulty.
