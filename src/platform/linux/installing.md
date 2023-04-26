@@ -7,8 +7,7 @@
 The packaged version requires a recent 64 bit Intel/AMD Linux with glibc, and common
 libraries like libwayland-client and systemd. If you are on a different
 architecture, or a barebones Linux distro, you will not be able to use the
-packaged version, but you may be able to use the [Python
-wheels](https://betas.ankiweb.net/#via-pypipip)
+packaged version, but you may be able to use the [Python wheels](https://betas.ankiweb.net/#via-pypipip)
 instead.
 
 On recent Ubuntu installations, please use the following before
@@ -54,7 +53,7 @@ Advantages of the Qt6 version:
 - Better Wayland support.
 - Various bugfixes, including things like better support for less common languages.
 - Security updates. Support for the Qt5 library was discontinued in Nov 2020,
-meaning that any security flaws discovered since then will remain unfixed.
+  meaning that any security flaws discovered since then will remain unfixed.
 
 Disadvantages of the Qt6 version include:
 

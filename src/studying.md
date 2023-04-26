@@ -10,8 +10,8 @@ to start studying.
 Study in Anki is limited to the currently selected deck as well as any
 subdecks it contains.
 
-On the decks screen, your decks and subdecks will be displayed in a list. [New, Learn and Due (To Review)](getting-started.md#types-of-cards) 
-cards for that day will be also displayed here. 
+On the decks screen, your decks and subdecks will be displayed in a list. [New, Learn and Due (To Review)](getting-started.md#types-of-cards)
+cards for that day will be also displayed here.
 
 ![Decks screen](media/decks_screen.png)
 
@@ -32,8 +32,8 @@ how many cards are due today. This is called the 'deck overview' screen:
 
 ![Study overview](media/study_overview.png)
 
-The cards are split into [three types](getting-started.md#types-of-cards): New, Learning, and To Review. 
-If you have [Bury siblings](#siblings-and-burying) activated in your deck options, you 
+The cards are split into [three types](getting-started.md#types-of-cards): New, Learning, and To Review.
+If you have [Bury siblings](#siblings-and-burying) activated in your deck options, you
 may see how many cards will be buried in grey:
 
 ![Study overview (Buried Cards)](media/study_overview_buried_cards.png)
@@ -72,22 +72,22 @@ There are four rating buttons when learning:
 
 - **Again** moves the card back to the first step.
 
-- **Hard** repeats the current step. 
+- **Hard** repeats the current step.
   - If the card is on the first step, the delay will be the average of Again and Good.
   - After the first step, Hard repeats the previous delay.
 
 - **Good** moves the card to the [next step](deck-options.md#learning-steps). If the card was on the final
-step, the card is converted into a review card (it 'graduates'). By
-default, once the card has reached the end of the learning steps, the
-card will be shown again the next day, then at increasingly long delays
-(see the next section).
+  step, the card is converted into a review card (it 'graduates'). By
+  default, once the card has reached the end of the learning steps, the
+  card will be shown again the next day, then at increasingly long delays
+  (see the next section).
 
 - **Easy** immediately converts the card into a review card, even if there
-were steps remaining. [By default](deck-options.md#easy-interval), the card will be shown again 4 days
-later, and then at increasingly long delays. In the v1 scheduler, the "Easy" button will not be
-shown if you are in relearning mode as it would give the same interval
-as “Good.” With the [v2 scheduler+](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html),
-when cards are in relearning, the "Easy" button boosts the interval by 1 day.
+  were steps remaining. [By default](deck-options.md#easy-interval), the card will be shown again 4 days
+  later, and then at increasingly long delays. In the v1 scheduler, the "Easy" button will not be
+  shown if you are in relearning mode as it would give the same interval
+  as “Good.” With the [v2 scheduler+](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html),
+  when cards are in relearning, the "Easy" button boosts the interval by 1 day.
 
 When cards are seen for the first time, they start at step one. This
 means answering **Good** on a card for the first time will show it one
@@ -109,24 +109,23 @@ When a card has been previously learnt and is ready to be reviewed
 again, there are four buttons to rate your answer:
 
 - **Again** marks your answer as incorrect and asks Anki to show the card
-more frequently in the future. The card is said to have 'lapsed'. Please
-see the [lapses](deck-options.md#lapses) section for more information about how lapsed
-reviews are handled.
+  more frequently in the future. The card is said to have 'lapsed'. Please
+  see the [lapses](deck-options.md#lapses) section for more information about how lapsed
+  reviews are handled.
 
 - **Hard** by default, shows the card at a [slightly longer delay](deck-options.md#hard-interval)
-than last time, and tells Anki to show the card more frequently in the future.
+  than last time, and tells Anki to show the card more frequently in the future.
 
 - **Good** tells Anki that the last delay was about right, and the card
-easiness doesn’t need to be adjusted down or up. At the [default starting
-easiness](deck-options.md#starting-ease), the card will be shown again approximately 2 1/2 times longer
-than the previous time, so if you had waited 10 days to see the card
-previously, the next delay would be about 25 days.
+  easiness doesn’t need to be adjusted down or up. At the [default starting easiness](deck-options.md#starting-ease), the card will be shown again approximately 2 1/2 times longer
+  than the previous time, so if you had waited 10 days to see the card
+  previously, the next delay would be about 25 days.
 
 - **Easy** tells Anki you found the delay too short. The card will be
-scheduled [further into the future than 'Good'](deck-options.md#easy-bonus), and Anki will schedule
-the card less frequently in the future. Because 'Easy' rapidly increases
-the delay, it’s best used for only the easiest of cards. Usually you
-should find yourself answering 'Good' instead.
+  scheduled [further into the future than 'Good'](deck-options.md#easy-bonus), and Anki will schedule
+  the card less frequently in the future. Because 'Easy' rapidly increases
+  the delay, it’s best used for only the easiest of cards. Usually you
+  should find yourself answering 'Good' instead.
 
 As with learning cards, you can use <kbd>1</kbd>, <kbd>2</kbd>, <kbd>3</kbd> and <kbd>4</kbd> on the keyboard to select an
 answer. Pressing the <kbd>spacebar</kbd> or <kbd>Enter</kbd> will select **Good**.
@@ -202,12 +201,12 @@ card or note:
 - **Forget card**: Move current card to [the end of the new queue](browsing.md#cards).
 
   From Anki 2.1.50+, Anki will remember the original order of a new card when it is first studied
-with the V3 scheduler. The "Restore original position" option allows you to reset the card back
-to its original position when you forget it.
+  with the V3 scheduler. The "Restore original position" option allows you to reset the card back
+  to its original position when you forget it.
 
   The "Reset repetition and lapse count" option, if enabled, will set the review and failure counters
-for the card back to zero. It does not remove the review history that is shown at the bottom of the
-card info screen.
+  for the card back to zero. It does not remove the review history that is shown at the bottom of the
+  card info screen.
 
 - **Set Due Date**: Put cards in the review queue, and [make them due on a certain date.](browsing.md#cards)
 
@@ -262,8 +261,7 @@ well.
 
 The way Anki fetches cards from the decks depends on the algorithm used:
 
-- With the v1 scheduler, when a deck has subdecks, the cards will appear from [each deck in
-  turn](studying.md#display-order).
+- With the v1 scheduler, when a deck has subdecks, the cards will appear from [each deck in turn](studying.md#display-order).
 
 - With the [v2 scheduler](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html),
   when a deck has subdecks, reviews are taken from all children decks
@@ -295,8 +293,7 @@ Since cards in learning are somewhat time-critical, they are fetched
 from all decks at once and shown in the order they are due.
 
 To control the order reviews from a given deck appear in, or change new
-cards from ordered to random order, please see the [deck
-options](deck-options.md). For more fine-grained ordering of new cards, you
+cards from ordered to random order, please see the [deck options](deck-options.md). For more fine-grained ordering of new cards, you
 can change the order in the [browser](browsing.md).
 
 ## Siblings and Burying

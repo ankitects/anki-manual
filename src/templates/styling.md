@@ -4,38 +4,37 @@
 
 ## Card Styling
 
-You can watch [a video about styling
-cards](http://www.youtube.com/watch?v=F1j1Zx0mXME&yt:cc=on) on YouTube.
+You can watch [a video about styling cards](http://www.youtube.com/watch?v=F1j1Zx0mXME&yt:cc=on) on YouTube.
 The video shows Anki 2.0’s interface, but the concepts are largely the
 same.
 
-The styling section of the Cards screen can accessed by clicking the 
-"Styling" button next to the "Back Template" button. In that section, 
-you can change the background color of the card, the default font, the 
+The styling section of the Cards screen can accessed by clicking the
+"Styling" button next to the "Back Template" button. In that section,
+you can change the background color of the card, the default font, the
 text alignment, and so on.
 
 The standard options available to you are:
 
-**font-family**  
+**font-family**\
 The name of the font to use on the card. If your font has spaces in it
 like "MS Unicode", then you need to surround the font name in double
 quotes as in this sentence. It is also possible to use multiple fonts on
 one card; for information on that, please see below.
 
-**font-size**  
+**font-size**\
 The size of the font in pixels. When changing it, make sure you leave px
 at the end.
 
-**text-align**  
+**text-align**\
 Whether the text should be aligned in the center, left, or right.
 
-**color**  
+**color**\
 The color of the text. Simple color names like 'blue', 'lightyellow',
 and so on will work, or you can use HTML color codes to select arbitrary
 colors. Please see [this webpage](https://htmlcolorcodes.com/) for more
 information.
 
-**background-color**  
+**background-color**\
 The color of the card background.
 
 Any CSS can be placed in the styling section – advanced users may wish
@@ -246,8 +245,7 @@ web if you’d like to learn more.
 ## Browser Appearance
 
 If your card templates are complex, it may be difficult to read the
-question and answer columns (called "Front" and "Back") in the [card
-list](../browsing.md#cardnote-table). The "browser appearance" option allows you to define a
+question and answer columns (called "Front" and "Back") in the [card list](../browsing.md#cardnote-table). The "browser appearance" option allows you to define a
 custom template to be used only in the browser, so you can include only
 the important fields and change the order if you desire. The syntax is
 the same as in standard card templates.

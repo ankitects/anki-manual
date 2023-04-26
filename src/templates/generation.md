@@ -4,8 +4,7 @@
 
 ## Reverse Cards
 
-You can watch [a video about reversing
-cards](http://www.youtube.com/watch?v=DnbKwHEQ1mA&yt:cc=on) on YouTube.
+You can watch [a video about reversing cards](http://www.youtube.com/watch?v=DnbKwHEQ1mA&yt:cc=on) on YouTube.
 
 If you want to create cards that go in both directions (e.g., both
 “ookii”→“big” and “big”→“ookii”), you have several options. The simplest

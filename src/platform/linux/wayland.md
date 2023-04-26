@@ -6,4 +6,4 @@ displays, but it is currently off by default, due to the following issues:
 
 - On some distros, windows are rendered without borders.
 - Bringing windows to the front is not possible, so for example, clicking on Add
-to reveal an existing Add Cards window will not work.
+  to reveal an existing Add Cards window will not work.

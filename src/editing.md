@@ -55,11 +55,10 @@ Anki does not check for duplicates in other fields automatically for
 efficiency reasons, but the browser has a "Find Duplicates" function,
 which you can run periodically.
 
-###  Effective Learning
+### Effective Learning
 
 Different people like to review in different ways, but there are some
-general concepts to keep in mind. An excellent introduction is [this
-article](http://www.supermemo.com/articles/20rules.htm) on the SuperMemo
+general concepts to keep in mind. An excellent introduction is [this article](http://www.supermemo.com/articles/20rules.htm) on the SuperMemo
 site. In particular:
 
 - **Keep it simple**: The shorter your cards, the easier they are to
@@ -131,35 +130,34 @@ This is _not_ where you customize what appears on your cards when
 reviewing; for that, please see [templates](templates/intro.md).
 
 - **Editing Font** allows you to customize the font and size used when
-editing notes. This is useful if you want to make unimportant
-information smaller, or increase the size of foreign characters which
-are hard to read. The changes you make here do not affect how cards
-appear when reviewing: to do that, please see the
-[templates](templates/intro.md) section. If you have enabled the "type in the
-answer" function, however, the text you type will use the font size
-defined here. (For information about how to change the actual font face
-when typing the answer, please see the [checking your
-answer](templates/fields.md#checking-your-answer) section.)
+  editing notes. This is useful if you want to make unimportant
+  information smaller, or increase the size of foreign characters which
+  are hard to read. The changes you make here do not affect how cards
+  appear when reviewing: to do that, please see the
+  [templates](templates/intro.md) section. If you have enabled the "type in the
+  answer" function, however, the text you type will use the font size
+  defined here. (For information about how to change the actual font face
+  when typing the answer, please see the [checking your answer](templates/fields.md#checking-your-answer) section.)
 
 - **Sort by this field…​** tells Anki to show this field in the Sort Field
-column of the browser. You can use this to sort cards by that field.
-Only one field can be the sort field at once.
+  column of the browser. You can use this to sort cards by that field.
+  Only one field can be the sort field at once.
 
 - **Reverse text direction** is useful if you are studying languages that
-display text from right to left (RTL), such as Arabic or Hebrew. This
-setting currently only controls editing; to make sure the text displays
-correctly during review, you'll need to adjust your
-[template](templates/styling.md#text-direction).
+  display text from right to left (RTL), such as Arabic or Hebrew. This
+  setting currently only controls editing; to make sure the text displays
+  correctly during review, you'll need to adjust your
+  [template](templates/styling.md#text-direction).
 
 - **Use HTML editor by default** is useful if you prefer to edit the fields
-directly in HTML. 
+  directly in HTML.
 
-- **Collapse by default**. Fields can be collapsed/expanded. 
-The animation can be disabled in the [preferences.](preferences.md)
+- **Collapse by default**. Fields can be collapsed/expanded.
+  The animation can be disabled in the [preferences.](preferences.md)
 
-- **Exclude from unqualified searches (slower)** can be used if you want 
-the content of a certain field not to appear in unqualified [(not limited to a specific field)](searching.md#limiting-to-a-field)
-searches.  
+- **Exclude from unqualified searches (slower)** can be used if you want
+  the content of a certain field not to appear in unqualified [(not limited to a specific field)](searching.md#limiting-to-a-field)
+  searches.
 
 After you have added fields, you will probably want to add them to the front
 or back of your cards. For more information on that, please see the
@@ -199,8 +197,8 @@ this is not recommended, for the following reasons:
 ### Using Tags
 
 Instead of creating lots of little decks, it's a better idea to use tags
-and/or fields to classify your content. Tags are a useful way to boost 
-search results, find specific content, and keep your collection 
+and/or fields to classify your content. Tags are a useful way to boost
+search results, find specific content, and keep your collection
 organized.
 There are many ways of using tags and flags effectively, and
 thinking in advance about how you want to use them will help you decide
@@ -208,16 +206,15 @@ what will work best for you.
 
 Some people prefer using decks and subdecks to keep their cards organized,
 but using tags have a big advantage over decks for that: you can add several
-tags to a single note, but a single card can only belong to one deck, which 
-makes tags a more powerful and flexible categorization system than 
-decks in most cases. You can also organize tags in trees [in the same way
-as you can do for decks](getting-started.md#decks).
+tags to a single note, but a single card can only belong to one deck, which
+makes tags a more powerful and flexible categorization system than
+decks in most cases. You can also organize tags in trees [in the same way as you can do for decks](getting-started.md#decks).
 
-For example, instead of creating a "food verbs" deck, you could add those 
+For example, instead of creating a "food verbs" deck, you could add those
 cards to your main language study deck, and tag the cards with "food" and
-"verb". Since each card can have multiple tags, you can do things like 
-[search](searching.md#tags-decks-cards-and-notes) for all verbs, or all 
-food-related vocabulary, or all verbs that are related to food. 
+"verb". Since each card can have multiple tags, you can do things like
+[search](searching.md#tags-decks-cards-and-notes) for all verbs, or all
+food-related vocabulary, or all verbs that are related to food.
 
 You can add tags from the Edit window and from the [Browser](browsing.md), and you can also add,
 delete, rename, or organize tags there. Please note that
@@ -227,29 +224,27 @@ but not its siblings, you should consider using flags instead.
 
 ### Using Flags
 
-Flags are similar to tags, but they will appear during study in the review 
-window, showing a colored flag icon on the upper right area of the screen. 
-You can also search for flagged cards in the Browse screen, rename flags 
-from the browser and create filtered decks from flagged cards, but unlike tags, 
+Flags are similar to tags, but they will appear during study in the review
+window, showing a colored flag icon on the upper right area of the screen.
+You can also search for flagged cards in the Browse screen, rename flags
+from the browser and create filtered decks from flagged cards, but unlike tags,
 a single card can have only one flag at a time. Another important difference
-is that flags work at [card](getting-started.md#cards) level, so flagging a card that has siblings 
-won't have any effect on the card's siblings. 
+is that flags work at [card](getting-started.md#cards) level, so flagging a card that has siblings
+won't have any effect on the card's siblings.
 
-You can flag / unflag cards directly while in review mode (by pressing 
-<kbd>CTRL</kbd> + <kbd>1-7</kbd> on Windows or <kbd>CMD</kbd> + <kbd>1-7</kbd> on Mac) 
+You can flag / unflag cards directly while in review mode (by pressing
+<kbd>CTRL</kbd> + <kbd>1-7</kbd> on Windows or <kbd>CMD</kbd> + <kbd>1-7</kbd> on Mac)
 and from the [Browser.](browsing.md)
-
 
 ### The "Marked" Tag
 
 Anki treats a tag called "marked" specially. There are options in the review
-screen and browse screen to add and remove the "marked" tag. The review screen 
-will show a star when the current card's note has that tag. And cards are 
+screen and browse screen to add and remove the "marked" tag. The review screen
+will show a star when the current card's note has that tag. And cards are
 shown in a different color in the browse screen when their note is marked.
 
-Note: Marking is mainly left around for compatibility with older Anki 
+Note: Marking is mainly left around for compatibility with older Anki
 versions; most users will want to use flags instead.
-
 
 ### Using Fields
 
@@ -261,7 +256,7 @@ for.
 
 ### Custom Study and Filtered Decks
 
-Using [custom study and filtered deck](filtered-decks.md) you can create 
+Using [custom study and filtered deck](filtered-decks.md) you can create
 temporary decks out of search
 terms. This allows you to review your content mixed together in a single
 deck most of the time (for optimum memory), but also create temporary
@@ -269,13 +264,12 @@ decks when you need to focus on particular material, such as before a
 test. The general rule is that if you always want to be able to study
 some content separately, it should be in a normal deck; if you only
 occasionally need to be able to study it separately (for a test, when
-under a backlog, etc.), then filtered decks created from tags, flags, 
+under a backlog, etc.), then filtered decks created from tags, flags,
 marks or fields are better.
 
 ## Editing Features
 
-The editor is shown when [adding notes](editing.md), [editing a
-note](studying.md) during reviews, or [browsing](browsing.md).
+The editor is shown when [adding notes](editing.md), [editing a note](studying.md) during reviews, or [browsing](browsing.md).
 
 ![Editor icons](media/editor_icons.png)
 
@@ -309,7 +303,6 @@ The \[…​\] buttons are visible when a cloze note type is selected.
 
 The `</>` button allows editing the underlying HTML of a field.
 ![HTML icon](media/html_icon.png)
-
 
 Anki 2.1.45+ supports adjusting sticky fields directly from the editing screen.
 If you click on the pin icon on the right of a field, Anki will not clear out
@@ -400,14 +393,14 @@ correctly, please see the section on [typing answers](templates/fields.md#checki
 From version 2.1.56, nested cloze deletions are supported. For example, the following is valid:
 
     {{c1::Canberra was {{c2::founded}}}} in 1913
-    
+
 The inner cloze is entirely nested within the outer. There is no support for partial overlaps, such as:
 
     [...] founded in 1913 -> Canberra was
     Canberra [...] in 1913 -> was founded
-    
+
 with the word "was" appearing in both deletions.
-    
+
 Prior to version 2.1.56, if you need to create clozes from overlapping text, add another Text
 field to your cloze, add it to the [template](templates/intro.md), and then when
 creating notes, paste the text into two separate fields, like so:
@@ -452,12 +445,11 @@ Google for "input Japanese on a mac", "type Chinese on Windows 10", and
 so on.
 
 If you are learning a right-to-left language, there are lots of other
-things to consider. Please see [this
-page](http://dotancohen.com/howto/rtl_right_to_left.html) for more
+things to consider. Please see [this page](http://dotancohen.com/howto/rtl_right_to_left.html) for more
 information.
 
 The toolkit on which Anki is built has trouble dealing with a few input
-methods, such as holding down keys to select accented characters on macOS, 
+methods, such as holding down keys to select accented characters on macOS,
 and typing characters by holding down the <kbd>Alt</kbd> key and typing a
 numeric code on Windows.
 

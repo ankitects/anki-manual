@@ -15,11 +15,11 @@ any error message showing up. If you run into this situation, you can either:
 
 When starting Anki, you may receive a message like the following:
 
-- *Error loading Python DLL*
-- *The program can't start because api-ms-win.... is missing*
-- *Failed to execute script runanki*
-- *Failed to execute script pyi_rth_multiprocessing*
-- *Failed to execute script pyi_rth_win32comgenpy*
+- _Error loading Python DLL_
+- _The program can't start because api-ms-win.... is missing_
+- _Failed to execute script runanki_
+- _Failed to execute script pyi_rth_multiprocessing_
+- _Failed to execute script pyi_rth_win32comgenpy_
 
 These errors are usually because your computer is missing a Windows update
 or Windows library.
@@ -42,9 +42,8 @@ Please see [display issues](./display-issues.md).
 
 ## Multiple displays
 
-If you get a *LoadLibrary failed with error 126*, this may be caused by the
-toolkit Anki is built on having trouble with [multiple
-displays](https://forums.ankiweb.net/t/error-126-on-open-anki-desktop/13967).
+If you get a _LoadLibrary failed with error 126_, this may be caused by the
+toolkit Anki is built on having trouble with [multiple displays](https://forums.ankiweb.net/t/error-126-on-open-anki-desktop/13967).
 
 ## Antivirus/firewall software
 
@@ -65,8 +64,7 @@ If the update process leaves you with multiple Anki installs (such as within
 `C:\Program Files\Anki` and `C:\Program Files (x86)\Anki`), they may be left in a
 non-working state, and Anki may refuse to start without showing an error message.
 
-Try uninstalling all copies - you may be able to do so with the Windows `Apps &
-features` settings menu, or by running `uninstall.exe` in each Anki program
+Try uninstalling all copies - you may be able to do so with the Windows `Apps & features` settings menu, or by running `uninstall.exe` in each Anki program
 folder. Afterward, install Anki again.
 
 ## Debugging

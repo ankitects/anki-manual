@@ -16,21 +16,17 @@ For a quick way to dive into Anki, please have a look at these intro
 videos. Some were made with a previous Anki version, but the concepts
 are the same.
 
-- [Shared Decks and Review
-  Basics](http://www.youtube.com/watch?v=QS2G-k2hQyg&yt:cc=on)
+- [Shared Decks and Review Basics](http://www.youtube.com/watch?v=QS2G-k2hQyg&yt:cc=on)
 
 - [Syncing](https://www.youtube.com/watch?v=YkiM4DPzSVc&list=PLGgmaKOIHykFoomqkBJAyGiDQ2kyiuTao&yt:cc=on)
 
-- [Switching Card
-  Order](http://www.youtube.com/watch?v=DnbKwHEQ1mA&yt:cc=on)
+- [Switching Card Order](http://www.youtube.com/watch?v=DnbKwHEQ1mA&yt:cc=on)
 
 - [Styling Cards](http://www.youtube.com/watch?v=F1j1Zx0mXME&yt:cc=on)
 
-- [Typing in the
-  Answer](http://www.youtube.com/watch?v=5tYObQ3ocrw&yt:cc=on)
+- [Typing in the Answer](http://www.youtube.com/watch?v=5tYObQ3ocrw&yt:cc=on)
 
-If YouTube is unavailable in your country, you can [download the
-videos](https://apps.ankiweb.net/downloads/archive/screencasts/2.0/)
+If YouTube is unavailable in your country, you can [download the videos](https://apps.ankiweb.net/downloads/archive/screencasts/2.0/)
 instead.
 
 ## Key Concepts
@@ -54,20 +50,20 @@ show answer button, and Anki shows you:
 After confirming that you are correct, you can tell Anki how well you
 remembered, and Anki will choose a next time to show you again.
 
-#### Types of Cards:
+#### Types of Cards
 
 - **New:** A new card is one that you have downloaded or entered in, but have never studied before.
 
 - **Learning:** Cards that were seen for the first time recently, and are still being learnt.
 
 - **Review:** Cards that were previously learnt, and now need to be reviewed so you don’t forget them.
-There are two types of review cards:
-  - **Young:** A young card is one that has an interval of less than 21 days, but is
-not in learning.
-  - **Mature:** A mature card is one that has an interval of 21 days or greater.
+  There are two types of review cards:
+- **Young:** A young card is one that has an interval of less than 21 days, but is
+  not in learning.
+- **Mature:** A mature card is one that has an interval of 21 days or greater.
 
 - **Relearn:** A relearning card is a card that you have failed in review mode, thus
-returning it to learning mode to be relearned.
+  returning it to learning mode to be relearned.
 
 ### Decks
 
@@ -207,8 +203,7 @@ allow you to fix a typing mistake or factual error once and have all the
 related cards updated at once.
 
 To add and edit card types, click the “Cards…​” button while adding or
-editing notes. For more information on card types, please see the [Cards
-and Templates](templates/intro.md) section.
+editing notes. For more information on card types, please see the [Cards and Templates](templates/intro.md) section.
 
 ### Note Types
 
@@ -231,32 +226,31 @@ new users, but in the long run it’s recommended you define your own note
 types for the content you are learning. The standard note types are as
 follows:
 
-- **Basic** 
-Has Front and Back fields, and will create one card. Text you enter in
-Front will appear on the front of the card, and text you enter in Back
-will appear on the back of the card.
+- **Basic**
+  Has Front and Back fields, and will create one card. Text you enter in
+  Front will appear on the front of the card, and text you enter in Back
+  will appear on the back of the card.
 
-- **Basic (and reversed card)**  
-Like Basic, but creates two cards for the text you enter: one from
-front→back and one from back→front.
+- **Basic (and reversed card)**\
+  Like Basic, but creates two cards for the text you enter: one from
+  front→back and one from back→front.
 
-- **Basic (optional reversed card)** 
-This is a front→back card, and optionally a back→front card. To do this,
-it has a third field called “Add Reverse.” If you enter any text into
-that field, a reverse card will be created. More information about this
-is available in the [Cards and Templates](templates/intro.md) section.
+- **Basic (optional reversed card)**
+  This is a front→back card, and optionally a back→front card. To do this,
+  it has a third field called “Add Reverse.” If you enter any text into
+  that field, a reverse card will be created. More information about this
+  is available in the [Cards and Templates](templates/intro.md) section.
 
-- **Basic (type in the answer)** 
-This is essentially Basic, with an extra text box on the front where you
-can type your answer in, after flipping to the back your input would be
-checked and compared with the answer. More information is available in the
-[Checking Your Answer](templates/fields.md#checking-your-answer) section.
+- **Basic (type in the answer)**
+  This is essentially Basic, with an extra text box on the front where you
+  can type your answer in, after flipping to the back your input would be
+  checked and compared with the answer. More information is available in the
+  [Checking Your Answer](templates/fields.md#checking-your-answer) section.
 
-- **Cloze**  
-A note type which makes it easy to select text and turn it into a cloze
-deletion (e.g., “Man landed on the moon in \[…​\]” → “Man landed on the
-moon in 1969”). More information is available in the [cloze
-deletion](editing.md#cloze-deletion) section.
+- **Cloze**\
+  A note type which makes it easy to select text and turn it into a cloze
+  deletion (e.g., “Man landed on the moon in \[…​\]” → “Man landed on the
+  moon in 1969”). More information is available in the [cloze deletion](editing.md#cloze-deletion) section.
 
 To add your own note types and modify existing ones, you can use Tools →
 Manage Note Types from the main Anki window.
@@ -267,8 +261,7 @@ types of notes in a particular deck, or have different cards generated
 from a particular note in different decks. When you add notes using the
 Add window, you can select what note type to use and what deck to use,
 and these choices are completely independent of each other. You can also
-change the note type of some notes [after you’ve already created
-them](browsing.md).
+change the note type of some notes [after you’ve already created them](browsing.md).
 
 ### Collection
 
@@ -286,10 +279,10 @@ someone has shared:
 1. Click the “Get Shared” button at the bottom of the deck list.
 
 2. When you’ve found a deck you’re interested in, click the “Download”
-    button to download a deck package.
+   button to download a deck package.
 
 3. Double-click on the downloaded package to load it into Anki, or
-    File→Import it.
+   File→Import it.
 
 Please note that it’s not currently possible to add shared decks
 directly to your AnkiWeb account. You need to import them with the

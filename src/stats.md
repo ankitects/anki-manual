@@ -12,35 +12,37 @@ by right-clicking on the card and then selecting **Info**, or by pressing
 
 Most of the displayed information should be self-explanatory. A few notes:
 
-**Position**  
+**Position**\
 Only shown when the card is new, it shows the order the card will appear
 in relative to other new cards. The position can be changed in the
 browser.
 
-**Interval**  
+**Interval**\
 The delay from one review to the next. Times are abbreviated; "0s, 1m,
 3h, 4d, 5mo, 6y" refers to seconds, minutes, hours, days, months and
 years respectively.
 
-**Ease**  
+**Ease**\
 The approximate amount the interval will grow when you answer a review
 card with the "Good" button.
 
 ## Statistics
 
 The statistics window is accessed by clicking on **Stats** button at the
-top of the main window, or by pressing <kbd>T</kbd>. 
+top of the main window, or by pressing <kbd>T</kbd>.
 
 ![Statistics screen](media/Statistics.png)
 
 ## Selecting Decks / Collection
 
-### Deck. 
+### Deck.
+
 By default, the statistics window will show statistics from the currently selected deck and any
-subdecks it may contain, but you can select any deck from your collection by typing its name in the 
-text box at the top of the screen or (from Anki 2.1.61), by using the deck selector at the bottom. 
+subdecks it may contain, but you can select any deck from your collection by typing its name in the
+text box at the top of the screen or (from Anki 2.1.61), by using the deck selector at the bottom.
 
 ### Collection
+
 If you select this checkbox, statistics will be shown for your entire collection. You can also display graphs
 for arbitrary searches by adding filters in the search box at the top (2.1.28+).
 
@@ -56,17 +58,18 @@ at the bottom. (Again, the “today” section at the top is unaffected
 by this selection.)
 
 ### More
+
 - Clicking on "Save PDF" at the bottom will save a PDF document of the statistics to a file
-on your desktop to make it easy to share your statistics with others.
+  on your desktop to make it easy to share your statistics with others.
 
 - When you delete notes, their review history is maintained in Anki. It
-will not be included when looking at statistics for a specific deck (as
-Anki has no way of knowing which deck the deleted cards belonged to),
-but will be included when you look at statistics for the whole
-collection.
+  will not be included when looking at statistics for a specific deck (as
+  Anki has no way of knowing which deck the deleted cards belonged to),
+  but will be included when you look at statistics for the whole
+  collection.
 
 - Anki 2.1.28+ introduced redesigned graphs. The old graphs are still
-accessible with a <kbd>Shift</kbd>-click on the Stats button.
+  accessible with a <kbd>Shift</kbd>-click on the Stats button.
 
 ## Today
 
@@ -77,12 +80,12 @@ multiple reviews if it needed to be seen multiple times, and a learning
 card answered also counts as a “review.” A couple of the stats whose
 meaning may not be immediately obvious:
 
-**Again Count**  
+**Again Count**\
 This is the number of reviews that you have failed (i.e., pressed Again
 on). The correct percentage listed afterwards is the number of cards you
 did 'not' fail divided by the total number of cards you studied.
 
-**Learn, Review, Relearn, Filtered**  
+**Learn, Review, Relearn, Filtered**\
 The number of reviews that were learning cards, review cards, relearning
 cards, or studied in a filtered deck when not due.
 
@@ -99,7 +102,7 @@ bottom of the window.
 
 ## The Graphs
 
-**Future Due**  
+**Future Due**\
 This graph shows an estimated number of reviews that will be due on a
 given day in the future if you learn no new cards and fail no cards. The
 bars and the left axis show the number of cards due on each day if you
@@ -111,9 +114,9 @@ displayed.
 
 **Calendar**
 This graph shows past card review activity. Hovering the mouse over a specific item
-allows you to view the number of revisions made that day. 
+allows you to view the number of revisions made that day.
 
-**Reviews**  
+**Reviews**\
 This graph counts the number of card reviews you have done. The bars may
 correspond to days, weeks, or months, depending on the time period
 you’ve selected at the bottom of the screen. The differently colored
@@ -125,19 +128,19 @@ cumulative total for each type of review as time progresses across the
 graph (so at 0 days, it would display the number for the entire time
 period displayed on the graph).
 
-**Card Counts**  
+**Card Counts**\
 This pie chart shows what percentage of your deck or collection consists
 of mature, unseen, young/learn, and suspended cards. If you wish to
 calculate a more precise percentage, the key shows the exact number of
 cards in each section, and the total number of cards is displayed to the
 side.
 
-**Review Time**  
+**Review Time**\
 This graph works exactly like Review Count, except that it deals with
 the amount of time you spent on each card rather than the number of
 cards answered.
 
-**Review Intervals**  
+**Review Intervals**\
 This graph displays the number of cards that have a given interval (the
 delay between two reviews). The line and the right axis tell you what
 percentage of your cards have an interval of less than or equal to the
@@ -147,17 +150,17 @@ studying is included, it limits how far out the intervals are displayed
 to (so 14-month intervals are not displayed at all on a 1-year graph).
 
 **Card Ease**
-This graph shows the number of cards that have a specific ease factor. 
-Average ease of the selected deck / collection is also displayed here. 
+This graph shows the number of cards that have a specific ease factor.
+Average ease of the selected deck / collection is also displayed here.
 
-**Hourly Breakdown**  
+**Hourly Breakdown**\
 This graph shows what percentage of total reviews you have passed (i.e.,
 not pressed Again on) during given hours. The larger, darker bars and
 left axis show the success rate; the thinner, lighter bars and right
 axis show the number of reviews you’ve made at that hour (so you know
 how significant the results are).
 
-**Answer Buttons**  
+**Answer Buttons**\
 This graph shows how many times you’ve chosen the Again, Hard, Good, or
 Easy button while studying learning/new, young, and
 [mature](getting-started.md#types-of-cards) cards. Anki also displays the percentage
@@ -187,45 +190,45 @@ The most important table for statistics is the 'revlog' table, which
 stores an entry for each review that you conduct. The columns are as
 follows:
 
-**id**  
+**id**\
 The time at which the review was conducted, as the number of
 milliseconds that had passed since midnight UTC on January 1, 1970.
 (This is sometimes known as 'Unix epoch time', especially when in
 straight seconds instead of milliseconds.)
 
-**cid**  
+**cid**\
 The ID of the card that was reviewed. You can look up this value in the
 id field of the 'cards' table to get more information about the card,
 although note that the card could have changed between when the revlog
 entry was recorded and when you are looking it up. It is also the
 millisecond timestamp of the card’s creation time.
 
-**usn**  
+**usn**\
 This column is used to keep track of the sync state of reviews and
 provides no useful information for analysis.
 
-**ease**  
+**ease**\
 Which button you pressed at the end of the review (1 for Again, 4 for
 Easy).
 
-**ivl**  
+**ivl**\
 The new interval that the card was pushed to after the review. Positive
 values are in days; negative values are in seconds (for learning cards).
 
-**lastIvl**  
+**lastIvl**\
 The interval the card had before the review. Cards introduced for the
 first time have a last interval equal to the Again delay.
 
-**factor**  
+**factor**\
 The new ease factor of the card in permille (parts per thousand). If the
 ease factor is 2500, the card’s interval will be multiplied by 2.5 the
 next time you press Good.
 
-**time**  
+**time**\
 The amount of time (in milliseconds) you spent on the question and
 answer sides of the card before selecting an ease button.
 
-**type**  
+**type**\
 This is 0 for learning cards, 1 for review cards, 2 for relearning cards,
 and 3 for early "cram" cards (cards being studied in a filtered deck when they
 are not due).

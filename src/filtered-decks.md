@@ -30,32 +30,32 @@ you can rename it from the deck list.
 
 Here is a summary of each of the options:
 
-**Increase today's new card limit**  
+**Increase today's new card limit**\
 Add more new cards to the deck you are currently studying. Note that
 unlike other options, this does 'not' create a new filtered deck, it
 modifies the existing deck.
 
-**Increase today's review card limit**  
+**Increase today's review card limit**\
 If not all reviews due today were shown because of the daily review limit,
 this option allows you to show more of them. As with the new cards
 option, this modifies the existing deck.
 
-**Review forgotten cards**  
+**Review forgotten cards**\
 Show all the cards, for which you've answered Again (1) within the number of days
 you specify.
 
-**Review ahead**  
+**Review ahead**\
 Show cards that will be due in the near future (the number of days you
 specify). This is useful for working through some of your older cards
 before a vacation, but it will not help with cards you have learnt
 recently. Please see the [reviewing ahead](#reviewing-ahead) section
 below for more info.
 
-**Preview new cards**  
+**Preview new cards**\
 Show cards that you have recently added, without converting them to
 review cards as they are answered.
 
-**Study by card state or tag**  
+**Study by card state or tag**\
 Select a certain number of cards from the current deck to study. You can
 choose to select new cards only, due cards only, or all cards; after you
 click "Choose Tags", you can also limit the selected cards by tags. If
@@ -88,8 +88,7 @@ In the old scheduler, if you create, rebuild, empty, or delete a
 filtered deck while cards are still in learning, they will be turned
 back into new cards. In the case of failed reviews in relearning, any
 remaining relearning steps will be skipped. This was fixed in the
-[v2
-scheduler](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html) so cards
+[v2 scheduler](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html) so cards
 are no longer reset.
 
 ## Creating Manually
@@ -132,35 +131,35 @@ in. If the maximum number of cards you select is lower than the number
 of cards that match the filter criteria, Anki will exclude the cards at
 the end of this sorted list first.
 
-**Oldest seen first**  
+**Oldest seen first**\
 Display those cards first, that you haven't seen in reviews for the longest
 time.
 
-**Random**  
+**Random**\
 Randomize the order of all cards that match the filter criteria (use no
 set order).
 
-**Increasing intervals**  
+**Increasing intervals**\
 Display cards that have the smallest interval first.
 
-**Decreasing intervals**  
+**Decreasing intervals**\
 Display cards that have the largest interval first.
 
-**Most lapses**  
+**Most lapses**\
 Display those cards first, that you have failed the most times.
 
-**Order added**  
+**Order added**\
 Display cards that you added first (i.e. those cards that have the earliest
 creation date).
 
-**Order due**  
+**Order due**\
 Display cards with the earliest due date first.
 
-**Latest added first**  
+**Latest added first**\
 Display those cards first, that you have most recently added to the deck.
 (This is the opposite of 'Order added'.)
 
-**Relative overdueness**  
+**Relative overdueness**\
 Display those cards first, that are most overdue in relation to their current
 interval (for instance, a card with a current interval of 5 days
 overdue by 2 days displays before a card with a current interval of 5
@@ -191,11 +190,10 @@ filtered decks [no longer support custom steps](https://forums.ankiweb.net/t/fil
 
 **v3 scheduler**
 
-Filtered decks with rescheduling disabled show 4 buttons in the 
+Filtered decks with rescheduling disabled show 4 buttons in the
 [v3 scheduler](https://faqs.ankiweb.net/the-2021-scheduler.html) - the provided
-delay applies to the Again button, and Hard/Good will use 1.5x and 2x the 
+delay applies to the Again button, and Hard/Good will use 1.5x and 2x the
 provided delay. Easy will remove the card.
-
 
 ## Counts
 

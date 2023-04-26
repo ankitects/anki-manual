@@ -10,8 +10,7 @@ Recent Anki releases require a computer running the 64 bit version of Windows
 - The last Anki release that supported Windows 7 and 8.1 was Anki 2.1.49.
 - The last Anki release that supported 32 bit Windows was Anki 2.1.35-alternate.
 
-If you're on an old machine, you can obtain old releases from the [releases
-page](https://github.com/ankitects/anki/releases).
+If you're on an old machine, you can obtain old releases from the [releases page](https://github.com/ankitects/anki/releases).
 
 ## Installing
 
@@ -35,7 +34,7 @@ Advantages of the Qt6 version:
 - Various bugfixes, including things like better support for less common languages.
 - Very large images load faster than the Qt5 version.
 - Security updates. Support for the Qt5 library was discontinued in Nov 2020,
-meaning that any security flaws discovered since then will remain unfixed.
+  meaning that any security flaws discovered since then will remain unfixed.
 
 Disadvantages of the Qt6 version:
 

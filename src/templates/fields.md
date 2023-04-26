@@ -124,11 +124,10 @@ using the `cloze-only` filter, like so:
 
 The cloze-only filter is supported in Anki 2.1.29+ and AnkiMobile 2.0.65+.
 
-You can enable Anki's TTS feature on supported platforms while falling back to [AnkiDroid's
-own method](https://docs.ankidroid.org/#_workarounds). Until AnkiDroid 
-supports the {{tts:FieldName}} syntax, it will render these fields as 
-text, while other platforms will render a (re)play audio button. In order 
-to temporarily fix this discrepancy between platforms, we can use the 
+You can enable Anki's TTS feature on supported platforms while falling back to [AnkiDroid's own method](https://docs.ankidroid.org/#_workarounds). Until AnkiDroid
+supports the {{tts:FieldName}} syntax, it will render these fields as
+text, while other platforms will render a (re)play audio button. In order
+to temporarily fix this discrepancy between platforms, we can use the
 following in our templates:
 
 ```html
@@ -151,8 +150,7 @@ Then in the styling section:
 /*The AnkiDroid tts button won't work on other platforms because it uses the JS API, therefore it should be hidden*/
 html:not(.android) .ankidroidTtsButton { 
   display: none;
-} 
-
+}
 ```
 
 ## Special Fields
@@ -294,12 +292,13 @@ like so:
 Here are some examples:
 
 <!-- prettier-ignore -->
-| Raw Text | Rendered Text |
-|-|-|
-| `Text[Ruby]` | <ruby><rb>Text</rb><rt>Ruby</rt></ruby> |
-| `日本語[にほんご]` | <ruby><rb>日本語</rb><rt>にほんご</rt></ruby> |
-| `世[よ]の 中[なか]` | <ruby><rb>世</rb><rt>よ</rt></ruby>の<ruby><rb>中</rb><rt>なか</rt></ruby> |
-| `世[よ]の中[なか]` | <ruby><rb>世</rb><rt>よ</rt></ruby><ruby><rb>の中</rb><rt>なか</rt></ruby>  *(incorrect!)* |
+
+| Raw Text            | Rendered Text                                                                             |
+| ------------------- | ----------------------------------------------------------------------------------------- |
+| `Text[Ruby]`        | <ruby><rb>Text</rb><rt>Ruby</rt></ruby>                                                   |
+| `日本語[にほんご]`  | <ruby><rb>日本語</rb><rt>にほんご</rt></ruby>                                             |
+| `世[よ]の 中[なか]` | <ruby><rb>世</rb><rt>よ</rt></ruby>の<ruby><rb>中</rb><rt>なか</rt></ruby>                |
+| `世[よ]の中[なか]`  | <ruby><rb>世</rb><rt>よ</rt></ruby><ruby><rb>の中</rb><rt>なか</rt></ruby> _(incorrect!)_ |
 
 Notice how the third example has a space before the 中 character. This is
 necessary to specify that the ruby text applies only to that character.
@@ -314,11 +313,12 @@ only show the ruby text, while the `kanji` filter removes the ruby text
 entirely.
 
 <!-- prettier-ignore -->
-| Raw Text | Field Filter | Rendered Text |
-|-|-|-|
+
+| Raw Text           | Field Filter           | Rendered Text                                 |
+| ------------------ | ---------------------- | --------------------------------------------- |
 | `日本語[にほんご]` | `{{furigana:MyField}}` | <ruby><rb>日本語</rb><rt>にほんご</rt></ruby> |
-| `日本語[にほんご]` | `{{kana:MyField}}` | にほんご |
-| `日本語[にほんご]` | `{{kanji:MyField}}` | 日本語 |
+| `日本語[にほんご]` | `{{kana:MyField}}`     | にほんご                                      |
+| `日本語[にほんご]` | `{{kanji:MyField}}`    | 日本語                                        |
 
 These names are again, borrowed from Japanese.
 The term [kana](https://en.wikipedia.org/wiki/Kana) represents the phonetic
@@ -336,8 +336,8 @@ If you wish to include images or sounds on your cards that are the same
 for every card (eg, a company logo at the top of each card):
 
 1. Rename the file so it starts with an underscore, eg "\_logo.jpg".
-    The underscore tells Anki that the file is used by the template and
-    it should be exported when sharing the deck.
+   The underscore tells Anki that the file is used by the template and
+   it should be exported when sharing the deck.
 
 2. Add a reference to the media on your front or back template, like:
 
@@ -362,8 +362,7 @@ see the [importing section](../importing.md#importing-media) for more informatio
 
 ## Checking Your Answer
 
-You can watch [a video about this
-feature](http://www.youtube.com/watch?v=5tYObQ3ocrw&yt:cc=on) on
+You can watch [a video about this feature](http://www.youtube.com/watch?v=5tYObQ3ocrw&yt:cc=on) on
 YouTube.
 
 The easiest way to check your answer is to click "Basic" at the top
@@ -439,6 +438,5 @@ added to both sides on a cloze note type.
 If there are multiple sections elided, you can separate the answers in
 the text box with a comma.
 
-Type answer boxes will not appear in the ["preview"
-dialog](intro.md) in the browser. When you review or look at
+Type answer boxes will not appear in the ["preview" dialog](intro.md) in the browser. When you review or look at
 the preview in the card types window, they will display.

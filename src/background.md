@@ -24,8 +24,8 @@ example:
 
 - even practising guitar chords!
 
-There are two simple concepts behind Anki: __active recall testing__ and
-__spaced repetition__. They are not known to most learners, despite having
+There are two simple concepts behind Anki: **active recall testing** and
+**spaced repetition**. They are not known to most learners, despite having
 been written about in the scientific literature for many years.
 Understanding how they work will make you a more effective learner.
 
@@ -39,10 +39,10 @@ more effective at building strong memories than passive study. There are
 two reasons for this:
 
 - The act of recalling something _strengthens_ the memory, increasing
-    the chances we’ll be able to remember it again.
+  the chances we’ll be able to remember it again.
 
 - When we're unable to answer a question, it tells us we need to
-    return to the material to review or relearn it.
+  return to the material to review or relearn it.
 
 You have probably encountered active recall testing in your school years
 without even realizing it. When good teachers give you a series of

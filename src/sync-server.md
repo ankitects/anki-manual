@@ -10,12 +10,12 @@ Things to be aware of:
   can resolve any setup/network/firewall issues you run into yourself, and
   use of this is entirely at your own risk.
 - Newer clients may depend on changes to the sync protocol, so syncing may
-stop working if you update your Anki clients without also updating the server.
+  stop working if you update your Anki clients without also updating the server.
 - Third-party sync servers also exist. No testing is done against them, and
-they tend to take time to catch up when the sync protocol changes, so they
-are not recommended.
+  they tend to take time to catch up when the sync protocol changes, so they
+  are not recommended.
 - The messages inside Anki will use the term 'AnkiWeb' even if a custom server
-has been configured, (eg "Cannot connect to AnkiWeb" when your server is down).
+  has been configured, (eg "Cannot connect to AnkiWeb" when your server is down).
 
 ## From a Packaged Build
 
