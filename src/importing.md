@@ -90,8 +90,7 @@ and so on), Anki expects files to be saved in a 'UTF-8 encoding'. The
 easiest way to do this is to use the free LibreOffice spreadsheet
 program instead of Excel to edit your file, as it supports UTF-8 easily,
 and also exports multi-line content properly, unlike Excel. If you wish
-to keep using Excel, please see [this forum
-post](https://docs.google.com/document/d/12YE_FS6A9ANLTESJNtPP116ti4nNmCBghyoJBRtno_k/edit?usp=sharing)
+to keep using Excel, please see [this forum post](https://docs.google.com/document/d/12YE_FS6A9ANLTESJNtPP116ti4nNmCBghyoJBRtno_k/edit?usp=sharing)
 for more information.
 
 To save your spreadsheet to a file Anki can read with LibreOffice, go to
@@ -159,8 +158,7 @@ This add-on will automatically create notes for all files in a folder
 you select, with the filenames on the front (minus the file extension,
 so if you have a file named apple.jpg, the front would say 'apple') and
 the images or audio on the back. If you would like a different
-arrangement of media and filenames, you can [change the note
-type](browsing.md) of the created cards afterwards.
+arrangement of media and filenames, you can [change the note type](browsing.md) of the created cards afterwards.
 
 ### Adding Tags
 
@@ -205,19 +203,18 @@ Anki clients will just ignore them.
 You must enable the new importing option in the preferences screen to use this on
 2.1.54. On 2.1.55, the new importing path is the default.
 
-<!-- prettier-ignore -->
-| Key | Allowed Values | Behaviour |
-| - | - | - |
-| `separator` | `Comma`, `Semicolon`, `Tab`, `Space`, `Pipe`, `Colon`, or the according literal characters | Determines the field separator. |
-| `html` | `true`, `false` | Determines whether the file is treated as HTML. |
-| `tags` | List of tags, separated by spaces | Same as [the old syntax](#adding-tags). |
-| `columns` | List of names, separated by the previously set separator | Determines the number of columns and shows their given names when importing. |
-| `notetype` | Notetype name or id | Presets the notetype, if it exists. |
-| `deck` | Deck name or id | Presets the deck, if it exists. |
-| `notetype column` | `1`, `2`, `3`, ... | Determines which column contains the notetype name or id of each note, see [Notetype Column](#notetype-column). |
-| `deck column` | `1`, `2`, `3`, ... | Determines which column contains the deck name or id of each note, see [Deck Column](#deck-column). |
-| `tags column` | `1`, `2`, `3`, ... | Determines which column contains the tags of each note. |
-| `guid column` | `1`, `2`, `3`, ... | Determines which column contains the GUID of each note, see [GUID Column](#guid-column). |
+| Key               | Allowed Values                                                                             | Behaviour                                                                                                       |
+| ----------------- | ------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------- |
+| `separator`       | `Comma`, `Semicolon`, `Tab`, `Space`, `Pipe`, `Colon`, or the according literal characters | Determines the field separator.                                                                                 |
+| `html`            | `true`, `false`                                                                            | Determines whether the file is treated as HTML.                                                                 |
+| `tags`            | List of tags, separated by spaces                                                          | Same as [the old syntax](#adding-tags).                                                                         |
+| `columns`         | List of names, separated by the previously set separator                                   | Determines the number of columns and shows their given names when importing.                                    |
+| `notetype`        | Notetype name or id                                                                        | Presets the notetype, if it exists.                                                                             |
+| `deck`            | Deck name or id                                                                            | Presets the deck, if it exists.                                                                                 |
+| `notetype column` | `1`, `2`, `3`, ...                                                                         | Determines which column contains the notetype name or id of each note, see [Notetype Column](#notetype-column). |
+| `deck column`     | `1`, `2`, `3`, ...                                                                         | Determines which column contains the deck name or id of each note, see [Deck Column](#deck-column).             |
+| `tags column`     | `1`, `2`, `3`, ...                                                                         | Determines which column contains the tags of each note.                                                         |
+| `guid column`     | `1`, `2`, `3`, ...                                                                         | Determines which column contains the GUID of each note, see [GUID Column](#guid-column).                        |
 
 Some headers have further implications.
 
@@ -254,3 +251,50 @@ in the first field, instead of assigning them to Anki's internal GUID. When impo
 Anki is able to use the first field for duplicate checking as well, so you do not
 need to make IDs a GUID in order to be able to update your notes.
 
+## Packaged Decks
+
+### Updating
+
+When you import an .apkg file, Anki will identify any notes in it that are
+already in your collection due to a previous import. If the notes in the file
+are newer than your local copy, the notes will be updated with the contents of
+the file.
+
+This updating process is not possible if the notetype is changed (eg if either
+you or the deck author do things like add an extra field to the notetype).
+You will still be able to import any missing notes from the file, but
+notes you have imported previously will not be updated if the deck author
+has made changes.
+
+If you know the deck author has made changes and you wish to gain access to
+them, changing the notetype back is possible, but rather difficult. You'll need
+to do the following:
+
+- Create a new profile, and import the .apkg file into it.
+- Locate one of the notes that failed to update in the Browse screen and select it.
+- Use the Fields & Cards buttons to check the field names and card template names,
+  and note them down.
+- Use the [debug console](https://docs.ankiweb.net/misc.html#debug-console) to determine the notetype id.
+  It will be the number on the last line.
+
+```
+nt = bcard().note().note_type()
+print("notetype", nt["name"], "has id", nt["id"])
+```
+
+- Return to your normal profile, locate the same card, and select it. Run the following
+  in the debug console, replacing `xxx` with the ID you got above:
+
+```
+nt = bcard().note().note_type()
+print("current:", nt["name"], "has id", nt["id"])
+nt = mw.col.models.get(xxx)
+print("desired:", nt["name"], "has id", nt["id"])
+```
+
+- If it prints two different notetype names, you will need to use the Change Notetype
+  action to change the notetype of your existing notes to the desired one.
+
+- You then need to use the Fields and Cards buttons to check the field and template
+  names match the one in your test profile. They must match exactly - there should be no
+  more or less, and the spelling should be identical.
