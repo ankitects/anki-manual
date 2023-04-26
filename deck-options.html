@@ -221,7 +221,7 @@ at the bottom of the screen.</li>
 </ul>
 <p>This page describes the options shown in Anki 2.1.45+, when you have the v2 or
 v3 scheduler enabled. On older versions, some options will not be available, or
-will appear in a different section. Please keep in mind that the V1 scheduler 
+will appear in a different section. Please keep in mind that the V1 scheduler
 is no longer supported in Anki 2.1.50+. If you have not yet updated to V2 or V3,
 you will be prompted to update when you attempt to review cards in 2.1.50+.</p>
 <p>For more info on deck options, please check:</p>
@@ -290,13 +290,13 @@ deck you select to study, not the deck of the current card.</li>
 <p>Controls how many new cards are introduced each day you open the program. If you
 study fewer than the limit, or miss a day, the next day the counts will be back
 to your limit - they do not accumulate.</p>
-<p>When decks are nested (eg Parent, Parent::Child, Parent::Child::Grandchild), 
+<p>When decks are nested (eg Parent, Parent::Child, Parent::Child::Grandchild),
 the way the limits are applied depends on the scheduler version.</p>
 <ul>
 <li>V1 applies parent limits to children, regardless of which deck you click on</li>
-<li>V2 behaves similarly to V1 for new cards. For reviews, only the limits of 
+<li>V2 behaves similarly to V1 for new cards. For reviews, only the limits of
 the deck you click on are honored.</li>
-<li>V3 honors the limits of the deck you click on, and any decks inside it. 
+<li>V3 honors the limits of the deck you click on, and any decks inside it.
 Limits from parents above the deck you clicked on are ignored.</li>
 </ul>
 <p>For more information, please see the <a href="https://faqs.ankiweb.net/the-2021-scheduler.html#daily-limits">v3 scheduler</a> page.</p>
@@ -334,12 +334,12 @@ introduce new cards, you can do so by suspending the reviews, or increasing your
 review limit. That said, it is recommended you hold off on new cards until you
 catch up instead, as introducing more new cards when you're behind will only
 make the backlog worse.</p>
-<p>From Anki 2.1.61 this feature is optional, and can be deactivated globally from the 
-deck options screen. </p>
+<p>From Anki 2.1.61 this feature is optional, and can be deactivated globally from the
+deck options screen.</p>
 <h3 id="per-deck-daily-limits"><a class="header" href="#per-deck-daily-limits">Per-Deck Daily Limits</a></h3>
-<p>From version 2.1.55 it is possible to use the same preset for different decks / subdecks, with customized 
-limits for each one of them. This eliminates the need to create cloned presets just for that 
-purpose, and makes it easier to set custom limits on sub-decks when you have many nested decks. </p>
+<p>From version 2.1.55 it is possible to use the same preset for different decks / subdecks, with customized
+limits for each one of them. This eliminates the need to create cloned presets just for that
+purpose, and makes it easier to set custom limits on sub-decks when you have many nested decks.</p>
 <p>The options are:</p>
 <ul>
 <li>Preset: The limit is shared with all decks using this preset.</li>
@@ -372,7 +372,7 @@ become a review card. It will be shown again after the delay configured by the
 early by default. The amount of time to look ahead is configurable in
 the <a href="preferences.html">preferences</a>.</p>
 <p>Please see the <a href="studying.html#learningrelearning-cards">learning</a> section for more info on how
-steps work. </p>
+steps work.</p>
 <h4 id="day-boundaries"><a class="header" href="#day-boundaries">Day Boundaries</a></h4>
 <p>Anki treats small steps and steps that <a href="./preferences.html#review">cross a day boundary</a> differently.
 With small steps, the cards are shown as soon as the delay has passed,
@@ -432,18 +432,16 @@ section for more information.</p>
 <h2 id="display-order"><a class="header" href="#display-order">Display Order</a></h2>
 <p>The options in this section are taken from the deck you select to study, not
 the deck of the currently displayed card.</p>
-<p>This section is only available when you have <a href="https://faqs.ankiweb.net/the-2021-scheduler.html">the v3
-scheduler</a> enabled.</p>
-<p>Some further information about display order is available in the <a href="studying.html#display-order">studying
-section</a>.</p>
+<p>This section is only available when you have <a href="https://faqs.ankiweb.net/the-2021-scheduler.html">the v3 scheduler</a> enabled.</p>
+<p>Some further information about display order is available in the <a href="studying.html#display-order">studying section</a>.</p>
 <h3 id="new-card-gather-order"><a class="header" href="#new-card-gather-order">New Card Gather Order</a></h3>
 <p>Controls how Anki gathers cards from each subdeck. The options are:</p>
 <ul>
 <li>
-<p>Deck: gathers cards from each deck in order, starting from the top. Cards from 
-each deck are gathered in ascending position. If the daily limit of the selected 
-deck is reached, gathering may stop before all decks have been checked. This 
-order is fastest in large collections, and allows you to prioritize subdecks that 
+<p>Deck: gathers cards from each deck in order, starting from the top. Cards from
+each deck are gathered in ascending position. If the daily limit of the selected
+deck is reached, gathering may stop before all decks have been checked. This
+order is fastest in large collections, and allows you to prioritize subdecks that
 are closer to the top.</p>
 <p>Decks / subdecks are always ordered alphabetically, so you can give them a numeric prefix like
 001 to control the order they are shown. You can also use <code>_</code> and <code>~</code> as a
@@ -495,27 +493,27 @@ first), or at the start (allowing more time to review forgotten ones).</p>
 <h3 id="review-sort-order"><a class="header" href="#review-sort-order">Review Sort Order</a></h3>
 <p>Controls how review cards are sorted while reviewing. The options are:</p>
 <ul>
-<li>Due date, then random: The default option prioritizes cards that have been waiting 
-longer, and it's the recomended option when you are up to date, or when you only have a small 
-backlog. If you have taken an extended break or have fallen behind in your reviews, 
+<li>Due date, then random: The default option prioritizes cards that have been waiting
+longer, and it's the recomended option when you are up to date, or when you only have a small
+backlog. If you have taken an extended break or have fallen behind in your reviews,
 you may want to consider changing the sort order temporarily.</li>
-<li>Due date, then deck. This also prioritizes cards that have been waiting 
-longer, and then will show reviews for each subdeck in turn. </li>
+<li>Due date, then deck. This also prioritizes cards that have been waiting
+longer, and then will show reviews for each subdeck in turn.</li>
 <li>Deck, then due date: This option will ensure reviews are shown for each
 subdeck in turn. This is generally not recommended, as having material appear
 consistently in the same order makes it easier to guess the answer based on context,
 and may lead to weaker memories.</li>
 <li>Ascending intervals: This will ensure cards with shorter intervals are shown first.</li>
 <li>Descending intervals: This will ensure cards with larger intervals are shown first.</li>
-<li>Ascending ease: This will show most difficult cards first. </li>
+<li>Ascending ease: This will show most difficult cards first.</li>
 <li>Descending ease: This will allow you to work through the easier material first.</li>
-<li>Relative overdueness: Display those cards first, that are <a href="./filtered-decks.html#order">most overdue in relation 
+<li>Relative overdueness: Display those cards first, that are <a href="./filtered-decks.html#order">most overdue in relation
 to their current interval</a>.</li>
 </ul>
 <h2 id="timer"><a class="header" href="#timer">Timer</a></h2>
 <p>Anki monitors how long it takes you to answer each card, so that it
 can show you how long was spent studying each day. The time taken does
-not influence scheduling. </p>
+not influence scheduling.</p>
 <p>The options are:</p>
 <ul>
 <li>Maximum answer seconds: The default limit is 60 seconds. If you take
@@ -525,7 +523,7 @@ that you don’t end up with inaccurate statistics. If you consistently
 take longer than 60 seconds to answer a card (from when question is shown
 until you press an answer button), you may want to either consider raising
 this limit, or ideally, making your cards simpler.</li>
-<li>Show answer timer: In the review screen, show a timer that counts the number 
+<li>Show answer timer: In the review screen, show a timer that counts the number
 of seconds you're taking to review each card.</li>
 </ul>
 <h2 id="burying"><a class="header" href="#burying">Burying</a></h2>
@@ -605,8 +603,7 @@ multiplier for a desired retention rate. Their formula boils down to:</p>
 it to 90%. We’d calculate the modifier as:</p>
 <pre><code>log(90%) / log(85%) = 0.65
 </code></pre>
-<p>You can use Google to <a href="https://www.google.com/search?q=log(90%25)+%2F+log(85%25)">calculate
-it</a> for you.</p>
+<p>You can use Google to <a href="https://www.google.com/search?q=log(90%25)+%2F+log(85%25)">calculate it</a> for you.</p>
 <p>If you plug the resulting 65% into the interval modifier, you should
 find over time that your retention moves closer to your desired
 retention.</p>

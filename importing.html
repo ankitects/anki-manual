@@ -165,6 +165,11 @@
 </li>
 </ul>
 </li>
+<li><a href="#packaged-decks">Packaged Decks</a>
+<ul>
+<li><a href="#updating">Updating</a></li>
+</ul>
+</li>
 </ul>
 <p>Anki can import text files, packaged Anki decks created by the export
 feature, Mnemosyne 2.0 .db files, and SuperMemo .xml files. To import a
@@ -244,8 +249,7 @@ and so on), Anki expects files to be saved in a 'UTF-8 encoding'. The
 easiest way to do this is to use the free LibreOffice spreadsheet
 program instead of Excel to edit your file, as it supports UTF-8 easily,
 and also exports multi-line content properly, unlike Excel. If you wish
-to keep using Excel, please see <a href="https://docs.google.com/document/d/12YE_FS6A9ANLTESJNtPP116ti4nNmCBghyoJBRtno_k/edit?usp=sharing">this forum
-post</a>
+to keep using Excel, please see <a href="https://docs.google.com/document/d/12YE_FS6A9ANLTESJNtPP116ti4nNmCBghyoJBRtno_k/edit?usp=sharing">this forum post</a>
 for more information.</p>
 <p>To save your spreadsheet to a file Anki can read with LibreOffice, go to
 File&gt;Save As, and then select CSV for the type of file. After
@@ -299,8 +303,7 @@ This add-on will automatically create notes for all files in a folder
 you select, with the filenames on the front (minus the file extension,
 so if you have a file named apple.jpg, the front would say 'apple') and
 the images or audio on the back. If you would like a different
-arrangement of media and filenames, you can <a href="browsing.html">change the note
-type</a> of the created cards afterwards.</p>
+arrangement of media and filenames, you can <a href="browsing.html">change the note type</a> of the created cards afterwards.</p>
 <h3 id="adding-tags"><a class="header" href="#adding-tags">Adding Tags</a></h3>
 <p>If you want to add 'tag1' and 'tag2' to every line you’re importing, add
 the following to the top of the text file:</p>
@@ -334,7 +337,6 @@ may precede them. Since header lines start with the comment character <code>#</c
 Anki clients will just ignore them.</p>
 <p>You must enable the new importing option in the preferences screen to use this on
 2.1.54. On 2.1.55, the new importing path is the default.</p>
-<!-- prettier-ignore -->
 <div class="table-wrapper"><table><thead><tr><th>Key</th><th>Allowed Values</th><th>Behaviour</th></tr></thead><tbody>
 <tr><td><code>separator</code></td><td><code>Comma</code>, <code>Semicolon</code>, <code>Tab</code>, <code>Space</code>, <code>Pipe</code>, <code>Colon</code>, or the according literal characters</td><td>Determines the field separator.</td></tr>
 <tr><td><code>html</code></td><td><code>true</code>, <code>false</code></td><td>Determines whether the file is treated as HTML.</td></tr>
@@ -374,6 +376,51 @@ your own IDs, such as MYNOTE0001, then it's recommended that you place the IDs
 in the first field, instead of assigning them to Anki's internal GUID. When importing,
 Anki is able to use the first field for duplicate checking as well, so you do not
 need to make IDs a GUID in order to be able to update your notes.</p>
+<h2 id="packaged-decks"><a class="header" href="#packaged-decks">Packaged Decks</a></h2>
+<h3 id="updating"><a class="header" href="#updating">Updating</a></h3>
+<p>When you import an .apkg file, Anki will identify any notes in it that are
+already in your collection due to a previous import. If the notes in the file
+are newer than your local copy, the notes will be updated with the contents of
+the file.</p>
+<p>This updating process is not possible if the notetype is changed (eg if either
+you or the deck author do things like add an extra field to the notetype).
+You will still be able to import any missing notes from the file, but
+notes you have imported previously will not be updated if the deck author
+has made changes.</p>
+<p>If you know the deck author has made changes and you wish to gain access to
+them, changing the notetype back is possible, but rather difficult. You'll need
+to do the following:</p>
+<ul>
+<li>Create a new profile, and import the .apkg file into it.</li>
+<li>Locate one of the notes that failed to update in the Browse screen and select it.</li>
+<li>Use the Fields &amp; Cards buttons to check the field names and card template names,
+and note them down.</li>
+<li>Use the <a href="https://docs.ankiweb.net/misc.html#debug-console">debug console</a> to determine the notetype id.
+It will be the number on the last line.</li>
+</ul>
+<pre><code>nt = bcard().note().note_type()
+print(&quot;notetype&quot;, nt[&quot;name&quot;], &quot;has id&quot;, nt[&quot;id&quot;])
+</code></pre>
+<ul>
+<li>Return to your normal profile, locate the same card, and select it. Run the following
+in the debug console, replacing <code>xxx</code> with the ID you got above:</li>
+</ul>
+<pre><code>nt = bcard().note().note_type()
+print(&quot;current:&quot;, nt[&quot;name&quot;], &quot;has id&quot;, nt[&quot;id&quot;])
+nt = mw.col.models.get(xxx)
+print(&quot;desired:&quot;, nt[&quot;name&quot;], &quot;has id&quot;, nt[&quot;id&quot;])
+</code></pre>
+<ul>
+<li>
+<p>If it prints two different notetype names, you will need to use the Change Notetype
+action to change the notetype of your existing notes to the desired one.</p>
+</li>
+<li>
+<p>You then need to use the Fields and Cards buttons to check the field and template
+names match the one in your test profile. They must match exactly - there should be no
+more or less, and the spelling should be identical.</p>
+</li>
+</ul>
 
                     </main>
 

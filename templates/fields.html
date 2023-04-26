@@ -269,11 +269,10 @@ using the <code>cloze-only</code> filter, like so:</p>
 <pre><code>{{tts en_US:cloze-only:Text}}
 </code></pre>
 <p>The cloze-only filter is supported in Anki 2.1.29+ and AnkiMobile 2.0.65+.</p>
-<p>You can enable Anki's TTS feature on supported platforms while falling back to <a href="https://docs.ankidroid.org/#_workarounds">AnkiDroid's
-own method</a>. Until AnkiDroid 
-supports the {{tts:FieldName}} syntax, it will render these fields as 
-text, while other platforms will render a (re)play audio button. In order 
-to temporarily fix this discrepancy between platforms, we can use the 
+<p>You can enable Anki's TTS feature on supported platforms while falling back to <a href="https://docs.ankidroid.org/#_workarounds">AnkiDroid's own method</a>. Until AnkiDroid
+supports the {{tts:FieldName}} syntax, it will render these fields as
+text, while other platforms will render a (re)play audio button. In order
+to temporarily fix this discrepancy between platforms, we can use the
 following in our templates:</p>
 <pre><code class="language-html">&lt;tts service=&quot;android&quot; voice=&quot;en_US&quot;&gt;{{Front}}&lt;/tts&gt;
 
@@ -291,8 +290,7 @@ AnkiDroidJS.ankiTtsSpeak('{{Front}}');&quot;&gt;Play TTS&lt;/button&gt;
 /*The AnkiDroid tts button won't work on other platforms because it uses the JS API, therefore it should be hidden*/
 html:not(.android) .ankidroidTtsButton { 
   display: none;
-} 
-
+}
 </code></pre>
 <h2 id="special-fields"><a class="header" href="#special-fields">Special Fields</a></h2>
 <p>There are some special fields you can include in your templates:</p>
@@ -409,7 +407,7 @@ like so:</p>
 <tr><td><code>Text[Ruby]</code></td><td><ruby><rb>Text</rb><rt>Ruby</rt></ruby></td></tr>
 <tr><td><code>日本語[にほんご]</code></td><td><ruby><rb>日本語</rb><rt>にほんご</rt></ruby></td></tr>
 <tr><td><code>世[よ]の 中[なか]</code></td><td><ruby><rb>世</rb><rt>よ</rt></ruby>の<ruby><rb>中</rb><rt>なか</rt></ruby></td></tr>
-<tr><td><code>世[よ]の中[なか]</code></td><td><ruby><rb>世</rb><rt>よ</rt></ruby><ruby><rb>の中</rb><rt>なか</rt></ruby>  <em>(incorrect!)</em></td></tr>
+<tr><td><code>世[よ]の中[なか]</code></td><td><ruby><rb>世</rb><rt>よ</rt></ruby><ruby><rb>の中</rb><rt>なか</rt></ruby> <em>(incorrect!)</em></td></tr>
 </tbody></table>
 </div>
 <p>Notice how the third example has a space before the 中 character. This is
@@ -464,8 +462,7 @@ importing/exporting, and so on. Examples that won’t work:</p>
 <p>Instead, you should include the media references in the field. Please
 see the <a href="../importing.html#importing-media">importing section</a> for more information.</p>
 <h2 id="checking-your-answer"><a class="header" href="#checking-your-answer">Checking Your Answer</a></h2>
-<p>You can watch <a href="http://www.youtube.com/watch?v=5tYObQ3ocrw&amp;yt:cc=on">a video about this
-feature</a> on
+<p>You can watch <a href="http://www.youtube.com/watch?v=5tYObQ3ocrw&amp;yt:cc=on">a video about this feature</a> on
 YouTube.</p>
 <p>The easiest way to check your answer is to click &quot;Basic&quot; at the top
 left of the card adding screen, and select &quot;Basic (type in the answer)&quot;.</p>
@@ -526,8 +523,7 @@ template, so the back looks something like this:</p>
 added to both sides on a cloze note type.</p>
 <p>If there are multiple sections elided, you can separate the answers in
 the text box with a comma.</p>
-<p>Type answer boxes will not appear in the <a href="intro.html">&quot;preview&quot;
-dialog</a> in the browser. When you review or look at
+<p>Type answer boxes will not appear in the <a href="intro.html">&quot;preview&quot; dialog</a> in the browser. When you review or look at
 the preview in the card types window, they will display.</p>
 
                     </main>
