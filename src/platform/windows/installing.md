@@ -38,6 +38,8 @@ Advantages of the Qt6 version:
 
 Disadvantages of the Qt6 version:
 
+- Some users experience freezes when using [a custom shortcut key to switch input languages](https://github.com/ankitects/anki/issues/1105). This issue can be worked around in the
+  Qt5 version by switching the video driver to ANGLE, but ANGLE is not available in Qt6.
 - Some add-ons currently only work with the Qt5 version.
 
 ## Upgrading
