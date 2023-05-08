@@ -6116,6 +6116,11 @@ toggle &quot;Allow Anki to access local network&quot; off and then on again.</p>
 If using an older client, you'd put it as e.g. <code>http://192.168.1.200:8080/sync/</code>
 and <code>http://192.168.1.200:8080/msync/</code> respectively. AnkiDroid also currently
 requires separate configuration for the two endpoints.</p>
+<h2 id="reverse-proxies"><a class="header" href="#reverse-proxies">Reverse Proxies</a></h2>
+<p>If using a reverse proxy to provide HTTPS access (e.g. nginx), and binding to a subpath
+(e.g. <code>http://example.com/custom/</code> -&gt; <code>http://localhost:8080/</code>), you must make sure to
+including a trailing slash when configuring Anki. If you put <code>http://example.com/custom</code>
+instead, it will not work.</p>
 <h2 id="large-requests"><a class="header" href="#large-requests">Large Requests</a></h2>
 <p>The standard AnkiWeb limit on uploads is applied by default. You can optionally
 set MAX_SYNC_PAYLOAD_MEGS to something greater than 100 if you wish to increase
