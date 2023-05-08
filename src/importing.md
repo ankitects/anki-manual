@@ -18,13 +18,14 @@ are met.
 
 - The files must be in UTF-8 format (see below).
 
-- Anki determines the number of fields in the file by looking at the
-  first (non-commented) line. Any lines in the file which have a
-  different number of fields will be ignored.
-
 - The first line also defines the separating character – if Anki finds
   a ';' on the first line it will use that, if it finds a comma it’ll
   use that, etc.
+
+- Anki determines the number of fields in the file by looking at the first
+  (non-commented) line. If some of the later records in the file contain fewer
+  fields, Anki will treat the missing fields as if they were blank. If some of your
+  records contain extra fields, the extra content will not be imported.
 
 Fields in your text file can be mapped to any field in your notes,
 including the tags field. You can choose which field in the text file
