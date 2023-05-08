@@ -89,6 +89,13 @@ If using an older client, you'd put it as e.g. `http://192.168.1.200:8080/sync/`
 and `http://192.168.1.200:8080/msync/` respectively. AnkiDroid also currently
 requires separate configuration for the two endpoints.
 
+## Reverse Proxies
+
+If using a reverse proxy to provide HTTPS access (e.g. nginx), and binding to a subpath
+(e.g. `http://example.com/custom/` -> `http://localhost:8080/`), you must make sure to
+including a trailing slash when configuring Anki. If you put `http://example.com/custom`
+instead, it will not work.
+
 ## Large Requests
 
 The standard AnkiWeb limit on uploads is applied by default. You can optionally
