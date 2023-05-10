@@ -33,6 +33,8 @@ Advantages of the Qt6 version:
 Disadvantages of the Qt6 version:
 
 - Tabbed windows (eg in full screen) are no longer possible.
+- Some Macbook Air M1 users have reported that the Qt5 version ran faster for
+  them.
 - Some add-ons currently only work with the Qt5 version.
 
 ## Upgrading
