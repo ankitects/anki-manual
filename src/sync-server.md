@@ -23,7 +23,7 @@ On Windows in a cmd.exe session:
 
 ```
 set SYNC_USER1=user:pass
-"\program files\anki\anki-console.exe" --syncserver
+"\Program Files\anki\anki.exe" --syncserver
 ```
 
 Or MacOS, in Terminal.app:
