@@ -15,8 +15,9 @@ and drag to expand one section and shrink the other.
 
 Anki 2.1.45+ offers two modes: either cards or notes are shown in the data table.
 You can change the current mode by clicking the switch at the top, to the left
-of the search area, or pressing <kbd>Alt</kbd>+<kbd>T</kbd>. The switch also
-indicates if **C**ards or **N**otes are currently shown.
+of the search area, or pressing <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>T</kbd> or
+<kbd>Cmd</kbd>+<kbd>Opt</kbd>+<kbd>T</kbd>. The switch also indicates if **C**ards
+or **N**otes are currently shown.
 
 **Note**: For the sake of simplicity, this manual generally assumes the Cards
 mode to be the active one. Whenever selecting/finding/etc. "cards" is mentioned,
