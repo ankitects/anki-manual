@@ -179,10 +179,11 @@ imported file. A drop-down box in the import screen allows you to change
 this behaviour, to either ignore duplicates completely, or import them
 as new notes instead of updating existing ones.
 
-The duplicate check is done for your 'entire collection', not just in
-the current deck. If Anki is indicating that notes have not changed when
-you expected them to be imported, please check that the notes are not
-already in your collection somewhere.
+The 'match scope' setting controls how duplicates are identified. When
+'notetype' is selected, Anki will identify a duplicate if another note
+with the same notetype has the same first field. When set to 'notetype and deck',
+a duplicate will only be flagged if the existing note also happens to be
+in the deck you are importing into.
 
 If you have updating turned on and older versions of the notes you’re
 importing are already in your collection, they will be updated in place
