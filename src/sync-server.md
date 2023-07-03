@@ -17,7 +17,11 @@ Things to be aware of:
 - The messages inside Anki will use the term 'AnkiWeb' even if a custom server
   has been configured, (eg "Cannot connect to AnkiWeb" when your server is down).
 
-## From a Packaged Build
+## Installing/Running
+
+There are various ways you can install and run the server.
+
+### From a Packaged Build
 
 On Windows in a cmd.exe session:
 
@@ -38,15 +42,44 @@ Or Linux:
 SYNC_USER1=user:pass anki --syncserver
 ```
 
-## Without GUI dependencies
+### With Pip
 
-You can run the server without installing the GUI portion of Anki
-provided you have a copy of Python3.9+ installed.
+If you have Python 3.9+ installed, you can run from PyPI without downloading
+all Anki's GUI dependencies.
 
 ```
 python3 -m venv ~/syncserver
 ~/syncserver/bin/pip install anki
 SYNC_USER1=user:pass ~/syncserver/bin/python -m anki.syncserver
+```
+
+### With Cargo
+
+If you have Rustup installed, from Anki 2.1.66+, you can build a standalone sync
+server that doesn't require Python, using the following:
+
+```
+cargo install --git https://github.com/ankitects/anki.git --tag 2.1.66 anki-sync-server
+```
+
+Protobuf (protoc) will need to be installed.
+
+After running that, you can run it with
+
+```
+SYNC_USER1=user:pass anki-sync-server 
+```
+
+Until 2.1.66 is released, you can replace `--tag 2.1.66` with `--branch main` to
+build from the current development code.
+
+### From a source checkout
+
+If you've cloned the Anki repo from GitHub, you can install from there:
+
+```
+./ninja extract:protoc
+cargo install --path rslib/sync
 ```
 
 ## Multiple Users
