@@ -6081,7 +6081,9 @@ are not recommended.</li>
 <li>The messages inside Anki will use the term 'AnkiWeb' even if a custom server
 has been configured, (eg &quot;Cannot connect to AnkiWeb&quot; when your server is down).</li>
 </ul>
-<h2 id="from-a-packaged-build"><a class="header" href="#from-a-packaged-build">From a Packaged Build</a></h2>
+<h2 id="installingrunning"><a class="header" href="#installingrunning">Installing/Running</a></h2>
+<p>There are various ways you can install and run the server.</p>
+<h3 id="from-a-packaged-build"><a class="header" href="#from-a-packaged-build">From a Packaged Build</a></h3>
 <p>On Windows in a cmd.exe session:</p>
 <pre><code>set SYNC_USER1=user:pass
 &quot;\Program Files\anki\anki.exe&quot; --syncserver
@@ -6092,12 +6094,28 @@ has been configured, (eg &quot;Cannot connect to AnkiWeb&quot; when your server 
 <p>Or Linux:</p>
 <pre><code>SYNC_USER1=user:pass anki --syncserver
 </code></pre>
-<h2 id="without-gui-dependencies"><a class="header" href="#without-gui-dependencies">Without GUI dependencies</a></h2>
-<p>You can run the server without installing the GUI portion of Anki
-provided you have a copy of Python3.9+ installed.</p>
+<h3 id="with-pip"><a class="header" href="#with-pip">With Pip</a></h3>
+<p>If you have Python 3.9+ installed, you can run from PyPI without downloading
+all Anki's GUI dependencies.</p>
 <pre><code>python3 -m venv ~/syncserver
 ~/syncserver/bin/pip install anki
 SYNC_USER1=user:pass ~/syncserver/bin/python -m anki.syncserver
+</code></pre>
+<h3 id="with-cargo"><a class="header" href="#with-cargo">With Cargo</a></h3>
+<p>If you have Rustup installed, from Anki 2.1.66+, you can build a standalone sync
+server that doesn't require Python, using the following:</p>
+<pre><code>cargo install --git https://github.com/ankitects/anki.git --tag 2.1.66 anki-sync-server
+</code></pre>
+<p>Protobuf (protoc) will need to be installed.</p>
+<p>After running that, you can run it with</p>
+<pre><code>SYNC_USER1=user:pass anki-sync-server 
+</code></pre>
+<p>Until 2.1.66 is released, you can replace <code>--tag 2.1.66</code> with <code>--branch main</code> to
+build from the current development code.</p>
+<h3 id="from-a-source-checkout"><a class="header" href="#from-a-source-checkout">From a source checkout</a></h3>
+<p>If you've cloned the Anki repo from GitHub, you can install from there:</p>
+<pre><code>./ninja extract:protoc
+cargo install --path rslib/sync
 </code></pre>
 <h2 id="multiple-users"><a class="header" href="#multiple-users">Multiple Users</a></h2>
 <p>SYNC_USER1 declares the first user and password, and must be set.
