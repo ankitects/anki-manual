@@ -57,6 +57,13 @@ will not notice if you have edited some existing files without adding or
 removing any. To get your edits noticed, you need to add or remove a
 file as well.
 
+One-way syncs (where you're prompted to upload or download) have no influence over how media
+syncs - media changes are always merged.
+
+To prevent accidental data loss, deletions will only sync to other devices if they are made after
+media is fully in sync. If you delete files before your device is fully in sync, and the deleted
+files are already on AnkiWeb, they will be downloaded the next time you sync.
+
 If you’re running Anki off a [USB flash drive](files.md#running-from-a-flash-drive), you should use an NTFS
 file system, as Anki may not be able to detect media changes on a FAT32
 filesystem.
