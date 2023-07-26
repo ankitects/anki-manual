@@ -41,7 +41,7 @@ echo software > %APPDATA%\Anki2\gldriver6
 
 Or you can do it via PowerShell:
 
-```
+```powershell
 echo software > $env:APPDATA\Anki2\gldriver6
 ```
 
