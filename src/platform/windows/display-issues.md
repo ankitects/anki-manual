@@ -33,10 +33,16 @@ The default is `software`; the other two drivers you can try are `angle` and `au
 
 Anki 2.1.50+ is available with the more recent Qt6 toolkit. The new toolkit
 defaults to having graphics acceleration enabled. If you run into display issues,
-you can try switching to software mode:
+you can try switching to software mode via cmd:
 
 ```bat
 echo software > %APPDATA%\Anki2\gldriver6
+```
+
+Or you can do it via PowerShell:
+
+```
+echo software > $env:APPDATA\Anki2\gldriver6
 ```
 
 It will not print anything. You can then start Anki again.
