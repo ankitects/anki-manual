@@ -553,8 +553,11 @@ can do this by starting cmd.exe and typing the following:</p>
 <h2 id="qt6"><a class="header" href="#qt6">Qt6</a></h2>
 <p>Anki 2.1.50+ is available with the more recent Qt6 toolkit. The new toolkit
 defaults to having graphics acceleration enabled. If you run into display issues,
-you can try switching to software mode:</p>
+you can try switching to software mode via cmd:</p>
 <pre><code class="language-bat">echo software &gt; %APPDATA%\Anki2\gldriver6
+</code></pre>
+<p>Or you can do it via PowerShell:</p>
+<pre><code class="language-powershell">echo software &gt; $env:APPDATA\Anki2\gldriver6
 </code></pre>
 <p>It will not print anything. You can then start Anki again.</p>
 <p>To revert to the default behaviour, change <code>software</code> to <code>auto</code>, or delete that file.</p>
