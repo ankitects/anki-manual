@@ -119,8 +119,8 @@ toggle "Allow Anki to access local network" off and then on again.
 
 Older desktop clients required you to define SYNC_ENDPOINT and SYNC_ENDPOINT_MEDIA.
 If using an older client, you'd put it as e.g. `http://192.168.1.200:8080/sync/`
-and `http://192.168.1.200:8080/msync/` respectively. AnkiDroid also currently
-requires separate configuration for the two endpoints.
+and `http://192.168.1.200:8080/msync/` respectively. AnkiDroid clients before 2.16
+require separate configuration for the two endpoints.
 
 ## Reverse Proxies
 
