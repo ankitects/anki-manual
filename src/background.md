@@ -22,7 +22,7 @@ example:
 
 - mastering long poems
 
-- even practising guitar chords!
+- even practicing guitar chords!
 
 There are two simple concepts behind Anki: **active recall testing** and
 **spaced repetition**. They are not known to most learners, despite having
