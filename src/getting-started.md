@@ -93,7 +93,7 @@ Alternatively, you may rename this deck and use it for other cards.
 Decks are displayed in the deck list alphabetically. This can result in
 a surprising order if your decks contain numbers - for example, "My Deck 10"
 will come before "My Deck 9", as 1 comes before 9. If you wish to number your
-decks, you can add a "0" in front of single-digit numbers, eg "Deck 01",
+decks, you can add a "0" in front of single-digit numbers, e.g. "Deck 01",
 "Deck 02" .. "Deck 10".
 
 Decks are best used to hold broad categories of cards, rather than
