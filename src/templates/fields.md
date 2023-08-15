@@ -440,3 +440,5 @@ the text box with a comma.
 
 Type answer boxes will not appear in the ["preview" dialog](intro.md) in the browser. When you review or look at
 the preview in the card types window, they will display.
+
+Type answer boxes will not be displayed, when you review your cards on [ankiweb.net](../syncing.md).
