@@ -27,7 +27,7 @@ To install Anki:
 
 1. Download Anki from <https://apps.ankiweb.net> to your Downloads folder. See the next section
    for how to choose between -qt5 and -qt6.
-2. If zstd is not already installed on your system, you'll need to install it (eg `sudo apt install zstd`).
+2. If zstd is not already installed on your system, you'll need to install it (e.g `sudo apt install zstd`).
 3. Open a terminal and run the following commands, replacing the filename as appropriate.
 
 ```shell

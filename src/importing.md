@@ -262,7 +262,7 @@ already in your collection due to a previous import. If the notes in the file
 are newer than your local copy, the notes will be updated with the contents of
 the file.
 
-This updating process is not possible if the notetype is changed (eg if either
+This updating process is not possible if the notetype is changed (e.g if either
 you or the deck author do things like add an extra field to the notetype).
 You will still be able to import any missing notes from the file, but
 notes you have imported previously will not be updated if the deck author

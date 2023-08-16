@@ -82,7 +82,7 @@ command:
     sudo tlmgr update --self; sudo tlmgr install dvipng
 
 The command may not be on the path, so you may need to provide the full
-path, eg /usr/local/texlive/2014basic/bin/x86_64-darwin/tlmgr.
+path, e.g /usr/local/texlive/2014basic/bin/x86_64-darwin/tlmgr.
 
 If you are not using the above LaTeX packages, you will need to use the
 [edit LaTeX](https://ankiweb.net/shared/info/937148547) add-on to specify

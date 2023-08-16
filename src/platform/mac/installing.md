@@ -32,7 +32,7 @@ Advantages of the Qt6 version:
 
 Disadvantages of the Qt6 version:
 
-- Tabbed windows (eg in full screen) are no longer possible.
+- Tabbed windows (e.g in full screen) are no longer possible.
 - Some Mac users have reported that the Intel Qt5 version was faster and
   more reliable for them.
 - Some add-ons currently only work with the Qt5 version.

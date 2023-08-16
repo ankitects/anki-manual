@@ -95,7 +95,7 @@ Controls how many new cards are introduced each day you open the program. If you
 study fewer than the limit, or miss a day, the next day the counts will be back
 to your limit - they do not accumulate.
 
-When decks are nested (eg Parent, Parent::Child, Parent::Child::Grandchild),
+When decks are nested (e.g Parent, Parent::Child, Parent::Child::Grandchild),
 the way the limits are applied depends on the scheduler version.
 
 - V1 applies parent limits to children, regardless of which deck you click on
@@ -376,7 +376,7 @@ The options are:
 
 ### Bury new siblings
 
-Whether other new cards of the same note (eg reverse cards, adjacent cloze deletions) will be delayed until the next day.
+Whether other new cards of the same note (e.g reverse cards, adjacent cloze deletions) will be delayed until the next day.
 
 When Anki gathers cards, it first gathers intraday learning cards, then interday learning cards, then reviews, and finally new cards. This affects how burying works:
 
