@@ -116,7 +116,7 @@ the option to choose which side you want to use.)
 Forcing a one way sync only affects card syncing - media is synced as
 normal. If you have files that you want to remove from AnkiWeb, please
 ensure your client is fully in sync first. After syncing is up to date,
-any files you remove (eg via the Check Media function) will be removed
+any files you remove (e.g via the Check Media function) will be removed
 from AnkiWeb on the following sync.
 
 ## Merging Conflicts
@@ -186,7 +186,7 @@ variable that points to the proxy server. It will look like:
 
     http://user:pass@proxy.company.com:8080
 
-If your username or password contains an @ (eg `user@workdomain.com`),
+If your username or password contains an @ (e.g `user@workdomain.com`),
 you need to change it to %40, like so:
 
     http://user%40workdomain.com:pass@proxy.company.com:8080

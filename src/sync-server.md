@@ -15,7 +15,7 @@ Things to be aware of:
   they tend to take time to catch up when the sync protocol changes, so they
   are not recommended.
 - The messages inside Anki will use the term 'AnkiWeb' even if a custom server
-  has been configured, (eg "Cannot connect to AnkiWeb" when your server is down).
+  has been configured, (e.g "Cannot connect to AnkiWeb" when your server is down).
 
 ## Installing/Running
 
@@ -110,7 +110,7 @@ that the server binds to.
 ## Client Setup
 
 You'll need to determine your computer's network IP address, and then
-point each of your Anki clients to the address, eg something like
+point each of your Anki clients to the address, e.g something like
 `http://192.168.1.200:8080/`. The URL can be configured in the preferences.
 
 If you're using AnkiMobile and are unable to connect to a server on your local

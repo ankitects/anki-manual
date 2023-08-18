@@ -335,7 +335,7 @@ do so. This has implications for including media on the template.
 If you wish to include images or sounds on your cards that are the same
 for every card (eg, a company logo at the top of each card):
 
-1. Rename the file so it starts with an underscore, eg "\_logo.jpg".
+1. Rename the file so it starts with an underscore, e.g "\_logo.jpg".
    The underscore tells Anki that the file is used by the template and
    it should be exported when sharing the deck.
 
