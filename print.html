@@ -650,7 +650,7 @@ meaning that any security flaws discovered since then will remain unfixed.</li>
 </ul>
 <p>Disadvantages of the Qt6 version:</p>
 <ul>
-<li>Tabbed windows (eg in full screen) are no longer possible.</li>
+<li>Tabbed windows (e.g in full screen) are no longer possible.</li>
 <li>Some Mac users have reported that the Intel Qt5 version was faster and
 more reliable for them.</li>
 <li>Some add-ons currently only work with the Qt5 version.</li>
@@ -700,7 +700,7 @@ meaning that any security flaws discovered since then will remain unfixed.</li>
 </ul>
 <p>Disadvantages of the Qt6 version:</p>
 <ul>
-<li>Tabbed windows (eg in full screen) are no longer possible.</li>
+<li>Tabbed windows (e.g in full screen) are no longer possible.</li>
 <li>Some Mac users have reported that the Intel Qt5 version was faster and
 more reliable for them.</li>
 <li>Some add-ons currently only work with the Qt5 version.</li>
@@ -756,7 +756,7 @@ installing:</p>
 <ol>
 <li>Download Anki from <a href="https://apps.ankiweb.net">https://apps.ankiweb.net</a> to your Downloads folder. See the next section
 for how to choose between -qt5 and -qt6.</li>
-<li>If zstd is not already installed on your system, you'll need to install it (eg <code>sudo apt install zstd</code>).</li>
+<li>If zstd is not already installed on your system, you'll need to install it (e.g <code>sudo apt install zstd</code>).</li>
 <li>Open a terminal and run the following commands, replacing the filename as appropriate.</li>
 </ol>
 <pre><code class="language-shell">tar xaf Downloads/anki-2.1.XX-linux-qt6.tar.zst
@@ -826,7 +826,7 @@ installing:</p>
 <ol>
 <li>Download Anki from <a href="https://apps.ankiweb.net">https://apps.ankiweb.net</a> to your Downloads folder. See the next section
 for how to choose between -qt5 and -qt6.</li>
-<li>If zstd is not already installed on your system, you'll need to install it (eg <code>sudo apt install zstd</code>).</li>
+<li>If zstd is not already installed on your system, you'll need to install it (e.g <code>sudo apt install zstd</code>).</li>
 <li>Open a terminal and run the following commands, replacing the filename as appropriate.</li>
 </ol>
 <pre><code class="language-shell">tar xaf Downloads/anki-2.1.XX-linux-qt6.tar.zst
@@ -1069,7 +1069,7 @@ Alternatively, you may rename this deck and use it for other cards.</p>
 <p>Decks are displayed in the deck list alphabetically. This can result in
 a surprising order if your decks contain numbers - for example, &quot;My Deck 10&quot;
 will come before &quot;My Deck 9&quot;, as 1 comes before 9. If you wish to number your
-decks, you can add a &quot;0&quot; in front of single-digit numbers, eg &quot;Deck 01&quot;,
+decks, you can add a &quot;0&quot; in front of single-digit numbers, e.g. &quot;Deck 01&quot;,
 &quot;Deck 02&quot; .. &quot;Deck 10&quot;.</p>
 <p>Decks are best used to hold broad categories of cards, rather than
 specific topics such as “food verbs” or “lesson 1”. For more info on
@@ -2399,7 +2399,7 @@ do so. This has implications for including media on the template.</p>
 for every card (eg, a company logo at the top of each card):</p>
 <ol>
 <li>
-<p>Rename the file so it starts with an underscore, eg &quot;_logo.jpg&quot;.
+<p>Rename the file so it starts with an underscore, e.g &quot;_logo.jpg&quot;.
 The underscore tells Anki that the file is used by the template and
 it should be exported when sharing the deck.</p>
 </li>
@@ -3423,7 +3423,7 @@ deck you select to study, not the deck of the current card.</li>
 <p>Controls how many new cards are introduced each day you open the program. If you
 study fewer than the limit, or miss a day, the next day the counts will be back
 to your limit - they do not accumulate.</p>
-<p>When decks are nested (eg Parent, Parent::Child, Parent::Child::Grandchild),
+<p>When decks are nested (e.g Parent, Parent::Child, Parent::Child::Grandchild),
 the way the limits are applied depends on the scheduler version.</p>
 <ul>
 <li>V1 applies parent limits to children, regardless of which deck you click on</li>
@@ -3661,7 +3661,7 @@ of seconds you're taking to review each card.</li>
 </ul>
 <h2 id="burying"><a class="header" href="#burying">Burying</a></h2>
 <h3 id="bury-new-siblings"><a class="header" href="#bury-new-siblings">Bury new siblings</a></h3>
-<p>Whether other new cards of the same note (eg reverse cards, adjacent cloze deletions) will be delayed until the next day.</p>
+<p>Whether other new cards of the same note (e.g reverse cards, adjacent cloze deletions) will be delayed until the next day.</p>
 <p>When Anki gathers cards, it first gathers intraday learning cards, then interday learning cards, then reviews, and finally new cards. This affects how burying works:</p>
 <ul>
 <li>If you have all burying options enabled, the sibling that comes earliest in that list will be shown. For example, a review card will be shown in preference to a new card.</li>
@@ -3867,7 +3867,7 @@ the option to choose which side you want to use.)</p>
 <p>Forcing a one way sync only affects card syncing - media is synced as
 normal. If you have files that you want to remove from AnkiWeb, please
 ensure your client is fully in sync first. After syncing is up to date,
-any files you remove (eg via the Check Media function) will be removed
+any files you remove (e.g via the Check Media function) will be removed
 from AnkiWeb on the following sync.</p>
 <h2 id="merging-conflicts"><a class="header" href="#merging-conflicts">Merging Conflicts</a></h2>
 <p>Because the <a href="syncing.html#setup">first sync</a> can only sync changes in one
@@ -3921,7 +3921,7 @@ password, you will need to manually tell Anki the proxy configuration.</p>
 variable that points to the proxy server. It will look like:</p>
 <pre><code>http://user:pass@proxy.company.com:8080
 </code></pre>
-<p>If your username or password contains an @ (eg <code>user@workdomain.com</code>),
+<p>If your username or password contains an @ (e.g <code>user@workdomain.com</code>),
 you need to change it to %40, like so:</p>
 <pre><code>http://user%40workdomain.com:pass@proxy.company.com:8080
 </code></pre>
@@ -5072,7 +5072,7 @@ need to make IDs a GUID in order to be able to update your notes.</p>
 already in your collection due to a previous import. If the notes in the file
 are newer than your local copy, the notes will be updated with the contents of
 the file.</p>
-<p>This updating process is not possible if the notetype is changed (eg if either
+<p>This updating process is not possible if the notetype is changed (e.g if either
 you or the deck author do things like add an extra field to the notetype).
 You will still be able to import any missing notes from the file, but
 notes you have imported previously will not be updated if the deck author
@@ -5855,7 +5855,7 @@ command:</p>
 <pre><code>sudo tlmgr update --self; sudo tlmgr install dvipng
 </code></pre>
 <p>The command may not be on the path, so you may need to provide the full
-path, eg /usr/local/texlive/2014basic/bin/x86_64-darwin/tlmgr.</p>
+path, e.g /usr/local/texlive/2014basic/bin/x86_64-darwin/tlmgr.</p>
 <p>If you are not using the above LaTeX packages, you will need to use the
 <a href="https://ankiweb.net/shared/info/937148547">edit LaTeX</a> add-on to specify
 the full path to latex and dvipng.</p>
@@ -6089,7 +6089,7 @@ stop working if you update your Anki clients without also updating the server.</
 they tend to take time to catch up when the sync protocol changes, so they
 are not recommended.</li>
 <li>The messages inside Anki will use the term 'AnkiWeb' even if a custom server
-has been configured, (eg &quot;Cannot connect to AnkiWeb&quot; when your server is down).</li>
+has been configured, (e.g &quot;Cannot connect to AnkiWeb&quot; when your server is down).</li>
 </ul>
 <h2 id="installingrunning"><a class="header" href="#installingrunning">Installing/Running</a></h2>
 <p>There are various ways you can install and run the server.</p>
@@ -6147,7 +6147,7 @@ reverse proxy.</p>
 that the server binds to.</p>
 <h2 id="client-setup"><a class="header" href="#client-setup">Client Setup</a></h2>
 <p>You'll need to determine your computer's network IP address, and then
-point each of your Anki clients to the address, eg something like
+point each of your Anki clients to the address, e.g something like
 <code>http://192.168.1.200:8080/</code>. The URL can be configured in the preferences.</p>
 <p>If you're using AnkiMobile and are unable to connect to a server on your local
 network, please go into the iOS settings, locate Anki near the bottom, and
