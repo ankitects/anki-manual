@@ -154,7 +154,7 @@ This tab contains options related to syncing with AnkiWeb.
 When enabled, media will also be synced with Ankiweb.
 
 **Automatically sync on profile open/close**
-Disable this if you don't want an automatic sync with Ankiweb when opening / closing a [profile](./profiles.md)].
+Disable this if you don't want an automatic sync with Ankiweb when opening / closing a [profile](./profiles.md).
 
 **Periodically sync media**
 
