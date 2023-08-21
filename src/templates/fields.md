@@ -135,8 +135,13 @@ following in our templates:
 
 <span class="ankitts">{{tts en_US:Front}}</span>
 
-<button class="ankidroidTtsButton" onclick="
-AnkiDroidJS.ankiTtsSpeak('{{Front}}');">Play TTS</button>
+<button
+  class="ankidroidTtsButton"
+  onclick="
+AnkiDroidJS.ankiTtsSpeak('{{Front}}');"
+>
+  Play TTS
+</button>
 ```
 
 Then in the styling section:
@@ -148,7 +153,7 @@ Then in the styling section:
 }
 
 /*The AnkiDroid tts button won't work on other platforms because it uses the JS API, therefore it should be hidden*/
-html:not(.android) .ankidroidTtsButton { 
+html:not(.android) .ankidroidTtsButton {
   display: none;
 }
 ```
@@ -292,7 +297,6 @@ like so:
 Here are some examples:
 
 <!-- prettier-ignore -->
-
 | Raw Text            | Rendered Text                                                                             |
 | ------------------- | ----------------------------------------------------------------------------------------- |
 | `Text[Ruby]`        | <ruby><rb>Text</rb><rt>Ruby</rt></ruby>                                                   |
@@ -313,7 +317,6 @@ only show the ruby text, while the `kanji` filter removes the ruby text
 entirely.
 
 <!-- prettier-ignore -->
-
 | Raw Text           | Field Filter           | Rendered Text                                 |
 | ------------------ | ---------------------- | --------------------------------------------- |
 | `日本語[にほんご]` | `{{furigana:MyField}}` | <ruby><rb>日本語</rb><rt>にほんご</rt></ruby> |
@@ -358,7 +361,7 @@ importing/exporting, and so on. Examples that won’t work:
     [latex]{{Field 1}}[/latex]
 
 Instead, you should include the media references in the field. Please
-see the [importing section](../importing.md#importing-media) for more information.
+see the [importing section](../importing/text-files.md#importing-media) for more information.
 
 ## Checking Your Answer
 
