@@ -18,7 +18,7 @@ reporting the issue to the add-on author. If you rely on this add-on,
 you will need to keep using an older Anki version until the add-on gets
 an update.
 
-There is a "Contact Author" button on most add-ons pages on Ankiweb,
+There is a "Contact Author" button on most add-ons pages on AnkiWeb,
 and many authors include their email address in the add-on, so if you
 need to get in touch with the author, editing the add-on and looking at
 the top of the file may help.
