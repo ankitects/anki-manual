@@ -151,10 +151,10 @@ This tab contains options related to syncing with AnkiWeb.
 ### Synchronisation
 
 **Synchronize audio and images too**
-When enabled, media will also be synced with Ankiweb.
+When enabled, media will also be synced with AnkiWeb.
 
 **Automatically sync on profile open/close**
-Disable this if you don't want an automatic sync with Ankiweb when opening / closing a [profile](./profiles.md).
+Disable this if you don't want an automatic sync with AnkiWeb when opening / closing a [profile](./profiles.md).
 
 **Periodically sync media**
 
@@ -164,7 +164,7 @@ ask you whether you wish to upload or download. This is useful if
 you have made some changes accidentally, and wish to overwrite them
 with an older version that is on AnkiWeb.
 
-### Ankiweb Account
+### AnkiWeb Account
 
 When logged in, clicking on Log Out will log you out.
 
