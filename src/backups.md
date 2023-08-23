@@ -17,7 +17,7 @@ protect you if your device breaks or is stolen. We recommend you combine them wi
 
 To restore from an automatic backup:
 
-- Open Anki, and choose Switch Profile from the File menu.
+- Open Anki and choose Switch Profile from the File menu.
 - Click on the "Open Backup" button.
 - Select the backup you wish to restore from.
 
@@ -58,7 +58,7 @@ You can restore from a manual backup by using File>Import.
 ### Creating
 
 In Anki 2.1.50+, you can use File>Create Backup to trigger an immediate backup. This
-functions like regular automatic backups, and does not include media files.
+functions like regular automatic backups and does not include media files.
 
 To create a backup that includes your sounds and images:
 
