@@ -62,6 +62,8 @@ server that doesn't require Python, using the following:
 cargo install --git https://github.com/ankitects/anki.git --tag 2.1.66 anki-sync-server
 ```
 
+Replace 2.1.66 with whatever the latest Anki version is.
+
 Protobuf (protoc) will need to be installed.
 
 After running that, you can run it with
@@ -69,9 +71,6 @@ After running that, you can run it with
 ```
 SYNC_USER1=user:pass anki-sync-server 
 ```
-
-Until 2.1.66 is released, you can replace `--tag 2.1.66` with `--branch main` to
-build from the current development code.
 
 ### From a source checkout
 
