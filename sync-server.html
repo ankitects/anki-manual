@@ -188,12 +188,11 @@ SYNC_USER1=user:pass ~/syncserver/bin/python -m anki.syncserver
 server that doesn't require Python, using the following:</p>
 <pre><code>cargo install --git https://github.com/ankitects/anki.git --tag 2.1.66 anki-sync-server
 </code></pre>
+<p>Replace 2.1.66 with whatever the latest Anki version is.</p>
 <p>Protobuf (protoc) will need to be installed.</p>
 <p>After running that, you can run it with</p>
 <pre><code>SYNC_USER1=user:pass anki-sync-server 
 </code></pre>
-<p>Until 2.1.66 is released, you can replace <code>--tag 2.1.66</code> with <code>--branch main</code> to
-build from the current development code.</p>
 <h3 id="from-a-source-checkout"><a class="header" href="#from-a-source-checkout">From a source checkout</a></h3>
 <p>If you've cloned the Anki repo from GitHub, you can install from there:</p>
 <pre><code>./ninja extract:protoc
