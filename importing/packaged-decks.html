@@ -1,0 +1,283 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Packaged Decks - Anki Manual</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../css/kbd.css">
+
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item affix "><a href="../intro.html">Introduction</a></li><li class="chapter-item "><a href="../background.html"><strong aria-hidden="true">1.</strong> Background</a></li><li class="chapter-item "><a href="../platform/intro.html"><strong aria-hidden="true">2.</strong> Platform Notes</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../platform/windows/installing.html"><strong aria-hidden="true">2.1.</strong> Windows</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../platform/windows/installing.html"><strong aria-hidden="true">2.1.1.</strong> Install & Upgrade</a></li><li class="chapter-item "><a href="../platform/windows/installation-issues.html"><strong aria-hidden="true">2.1.2.</strong> Installation Issues</a></li><li class="chapter-item "><a href="../platform/windows/startup-issues.html"><strong aria-hidden="true">2.1.3.</strong> Startup Issues</a></li><li class="chapter-item "><a href="../platform/windows/display-issues.html"><strong aria-hidden="true">2.1.4.</strong> Display Issues</a></li><li class="chapter-item "><a href="../platform/windows/copy-and-paste.html"><strong aria-hidden="true">2.1.5.</strong> Copy and Paste Issues</a></li><li class="chapter-item "><a href="../platform/windows/text-size.html"><strong aria-hidden="true">2.1.6.</strong> Text Size</a></li><li class="chapter-item "><a href="../platform/windows/permission-problems.html"><strong aria-hidden="true">2.1.7.</strong> Permission Problems</a></li></ol></li><li class="chapter-item "><a href="../platform/mac/installing.html"><strong aria-hidden="true">2.2.</strong> macOS</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../platform/mac/installing.html"><strong aria-hidden="true">2.2.1.</strong> Install & Upgrade</a></li><li class="chapter-item "><a href="../platform/mac/display-issues.html"><strong aria-hidden="true">2.2.2.</strong> Display Issues</a></li></ol></li><li class="chapter-item "><a href="../platform/linux/installing.html"><strong aria-hidden="true">2.3.</strong> Linux</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../platform/linux/installing.html"><strong aria-hidden="true">2.3.1.</strong> Install & Upgrade</a></li><li class="chapter-item "><a href="../platform/linux/missing-libraries.html"><strong aria-hidden="true">2.3.2.</strong> Missing Libraries</a></li><li class="chapter-item "><a href="../platform/linux/display-issues.html"><strong aria-hidden="true">2.3.3.</strong> Display Issues</a></li><li class="chapter-item "><a href="../platform/linux/blank-window.html"><strong aria-hidden="true">2.3.4.</strong> Blank Main Window</a></li><li class="chapter-item "><a href="../platform/linux/distro-packages.html"><strong aria-hidden="true">2.3.5.</strong> Linux Distro Packages</a></li><li class="chapter-item "><a href="../platform/linux/gtk-theme.html"><strong aria-hidden="true">2.3.6.</strong> Incorrect GTK Theme</a></li><li class="chapter-item "><a href="../platform/linux/wayland.html"><strong aria-hidden="true">2.3.7.</strong> Wayland</a></li><li class="chapter-item "><a href="../platform/linux/input-methods.html"><strong aria-hidden="true">2.3.8.</strong> Input Methods</a></li></ol></li></ol></li><li class="chapter-item "><a href="../getting-started.html"><strong aria-hidden="true">3.</strong> Getting Started</a></li><li class="chapter-item "><a href="../studying.html"><strong aria-hidden="true">4.</strong> Studying</a></li><li class="chapter-item "><a href="../editing.html"><strong aria-hidden="true">5.</strong> Adding/Editing</a></li><li class="chapter-item "><a href="../templates/intro.html"><strong aria-hidden="true">6.</strong> Card Templates</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../templates/fields.html"><strong aria-hidden="true">6.1.</strong> Field Replacements</a></li><li class="chapter-item "><a href="../templates/generation.html"><strong aria-hidden="true">6.2.</strong> Card Generation</a></li><li class="chapter-item "><a href="../templates/styling.html"><strong aria-hidden="true">6.3.</strong> Styling & HTML</a></li><li class="chapter-item "><a href="../templates/errors.html"><strong aria-hidden="true">6.4.</strong> Checks and Errors</a></li></ol></li><li class="chapter-item "><a href="../preferences.html"><strong aria-hidden="true">7.</strong> Preferences</a></li><li class="chapter-item "><a href="../deck-options.html"><strong aria-hidden="true">8.</strong> Deck Options</a></li><li class="chapter-item "><a href="../syncing.html"><strong aria-hidden="true">9.</strong> Syncing with AnkiWeb</a></li><li class="chapter-item "><a href="../profiles.html"><strong aria-hidden="true">10.</strong> Profiles</a></li><li class="chapter-item "><a href="../browsing.html"><strong aria-hidden="true">11.</strong> Browsing</a></li><li class="chapter-item "><a href="../filtered-decks.html"><strong aria-hidden="true">12.</strong> Filtered Decks</a></li><li class="chapter-item "><a href="../searching.html"><strong aria-hidden="true">13.</strong> Searching</a></li><li class="chapter-item expanded "><a href="../importing/intro.html"><strong aria-hidden="true">14.</strong> Importing</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../importing/text-files.html"><strong aria-hidden="true">14.1.</strong> Text Files</a></li><li class="chapter-item expanded "><a href="../importing/packaged-decks.html" class="active"><strong aria-hidden="true">14.2.</strong> Packaged Decks</a></li></ol></li><li class="chapter-item "><a href="../exporting.html"><strong aria-hidden="true">15.</strong> Exporting</a></li><li class="chapter-item "><a href="../backups.html"><strong aria-hidden="true">16.</strong> Backups</a></li><li class="chapter-item "><a href="../files.html"><strong aria-hidden="true">17.</strong> Managing Files</a></li><li class="chapter-item "><a href="../stats.html"><strong aria-hidden="true">18.</strong> Statistics</a></li><li class="chapter-item "><a href="../media.html"><strong aria-hidden="true">19.</strong> Media</a></li><li class="chapter-item "><a href="../math.html"><strong aria-hidden="true">20.</strong> Math & Symbols</a></li><li class="chapter-item "><a href="../leeches.html"><strong aria-hidden="true">21.</strong> Leeches</a></li><li class="chapter-item "><a href="../addons.html"><strong aria-hidden="true">22.</strong> Add-ons</a></li><li class="chapter-item "><a href="../sync-server.html"><strong aria-hidden="true">23.</strong> Sync Server</a></li><li class="chapter-item "><a href="../misc.html"><strong aria-hidden="true">24.</strong> Miscellaneous</a></li><li class="chapter-item affix "><a href="../contrib.html">Contributing</a></li><li class="chapter-item affix "><a href="../faqs.html">FAQs</a></li><li class="chapter-item affix "><a href="../resources.html">Resources</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Anki Manual</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/ankitects/anki-manual/" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="packaged-decks"><a class="header" href="#packaged-decks">Packaged Decks</a></h1>
+<ul>
+<li><a href="#scheduling">Scheduling</a></li>
+<li><a href="#updating">Updating</a>
+<ul>
+<li><a href="#anki-2167-and-later">Anki 2.1.67 and Later</a>
+<ul>
+<li><a href="#note-to-deck-authors">Note to Deck Authors</a></li>
+</ul>
+</li>
+<li><a href="#workaround-for-anki-2166-and-earlier">Workaround for Anki 2.1.66 and Earlier</a></li>
+</ul>
+</li>
+</ul>
+<p>Anki packages (.apkg files) enable you to import decks, notes, notetypes, and cards from
+other users. They are commonly shared on <a href="https://ankiweb.net/shared/decks">AnkiWeb</a>.</p>
+<h2 id="scheduling"><a class="header" href="#scheduling">Scheduling</a></h2>
+<p>Anki packages may also contain scheduling information, which is useful if you want to
+transfer decks between devices or profiles. However, when importing
+a deck shared by someone else, you typically do not want to adopt their card intervals
+or review history.</p>
+<p>If you encounter imported cards with unexpectedly large intevals, the deck author may
+accidentally have included their scheduling information. You can use the
+<a href="../browsing.html#cards">Set Due Date feature</a> to reset the imported cards. On Anki
+2.1.67 and later, you can remove any scheduling information during the import process.</p>
+<h2 id="updating"><a class="header" href="#updating">Updating</a></h2>
+<p>When you import an .apkg file, Anki will identify any notes in it that are
+already in your collection due to a previous import. If the notes in the file
+are newer than your local copy, the notes will be updated with the contents of
+the file by default.</p>
+<p>This updating process is generally not possible if the notetype is changed (e.g if either
+you or the deck author do things like add an extra field to the notetype).
+You will still be able to import any missing notes from the file, but
+notes you have imported previously will not be updated if the deck author
+has made changes.</p>
+<h3 id="anki-2167-and-later"><a class="header" href="#anki-2167-and-later">Anki 2.1.67 and Later</a></h3>
+<p>Anki 2.1.67 introduced more flexibility: You can choose to unconditionally
+update notes and notetypes, always overwriting your modifications,
+or, on the other hand, never update existing objects.</p>
+<p>Also, if both you and the deck author modified the same notetype, you can now decide to
+<em>merge</em> the two versions. This will preserve all templates and fields contained in
+either one, but will require a full sync, and may mark other existing notes as modified.</p>
+<h4 id="note-to-deck-authors"><a class="header" href="#note-to-deck-authors">Note to Deck Authors</a></h4>
+<p>Merging relies on template and field ids, which were introduced in Anki 2.1.67.
+If a template or field lacks an id, because it has been created with an earlier
+release, Anki attempts to find an equivalent by comparing names.</p>
+<p>See this <a href="https://ankiweb.net/shared/info/2063785767">this add-on</a> for why it is
+advantageous to share notetypes with field and template ids, and how to add them to
+existing ones.</p>
+<h3 id="workaround-for-anki-2166-and-earlier"><a class="header" href="#workaround-for-anki-2166-and-earlier">Workaround for Anki 2.1.66 and Earlier</a></h3>
+<p>If you know the deck author has made changes and you wish to gain access to
+them, changing the notetype back is possible, but rather difficult. You'll need
+to do the following:</p>
+<ul>
+<li>Create a new profile, and import the .apkg file into it.</li>
+<li>Locate one of the notes that failed to update in the Browse screen and select it.</li>
+<li>Use the Fields &amp; Cards buttons to check the field names and card template names,
+and note them down.</li>
+<li>Use the <a href="https://docs.ankiweb.net/misc.html#debug-console">debug console</a> to determine the notetype id.
+It will be the number on the last line.</li>
+</ul>
+<pre><code>nt = bcard().note().note_type()
+print(&quot;notetype&quot;, nt[&quot;name&quot;], &quot;has id&quot;, nt[&quot;id&quot;])
+</code></pre>
+<ul>
+<li>Return to your normal profile, locate the same card, and select it. Run the following
+in the debug console, replacing <code>xxx</code> with the ID you got above:</li>
+</ul>
+<pre><code>nt = bcard().note().note_type()
+print(&quot;current:&quot;, nt[&quot;name&quot;], &quot;has id&quot;, nt[&quot;id&quot;])
+nt = mw.col.models.get(xxx)
+print(&quot;desired:&quot;, nt[&quot;name&quot;], &quot;has id&quot;, nt[&quot;id&quot;])
+</code></pre>
+<ul>
+<li>
+<p>If it prints two different notetype names, you will need to use the Change Notetype
+action to change the notetype of your existing notes to the desired one.</p>
+</li>
+<li>
+<p>You then need to use the Fields and Cards buttons to check the field and template
+names match the one in your test profile. They must match exactly - there should be no
+more or less, and the spelling should be identical.</p>
+</li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../importing/text-files.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="../exporting.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../importing/text-files.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="../exporting.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </body>
+</html>
