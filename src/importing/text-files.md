@@ -1,12 +1,6 @@
-# Importing
+# Text Files
 
 <!-- toc -->
-
-Anki can import text files, packaged Anki decks created by the export
-feature, Mnemosyne 2.0 .db files, and SuperMemo .xml files. To import a
-file, click the File menu and then "Import".
-
-## Text Files
 
 Any **plain text** file that contains fields separated by commas,
 semicolons or tabs can be imported into Anki, provided some conditions
@@ -84,7 +78,7 @@ This is an example of a valid file where the first line is ignored (\#):
     foo bar;bar baz;baz quux
     field1;field2;field3
 
-### Spreadsheets and UTF-8
+## Spreadsheets and UTF-8
 
 If you have non-Latin characters in your file (such as accents, Japanese
 and so on), Anki expects files to be saved in a 'UTF-8 encoding'. The
@@ -99,7 +93,7 @@ File&gt;Save As, and then select CSV for the type of file. After
 accepting the default options, LibreOffice will save the file and you
 can then import the saved file into Anki.
 
-### HTML
+## HTML
 
 Anki can treat text imported from text files as HTML (the language used
 for web pages). This means that text with bold, italics and other
@@ -118,10 +112,10 @@ include angle brackets or ampersands, you may use the following replacements:
 | &gt;      | `&gt;`      |
 | &amp;     | `&amp;`     |
 
-### Importing Media
+## Importing Media
 
 If you want to include audio and pictures from a text file import, copy
-the files into the [collection.media folder](files.md). **Do not put
+the files into the [collection.media folder](../files.md). **Do not put
 subdirectories in the media folder, or some features will not work.**
 
 After you’ve copied the files, change one of the fields in your text
@@ -133,7 +127,7 @@ or
 
     [sound:myaudio.mp3]
 
-Alternatively, you can use the [find and replace](browsing.md) feature
+Alternatively, you can use the [find and replace](../browsing.md) feature
 in the browse screen to update all the fields at once. If each field
 contains text like "myaudio", and you wish to make it play a sound,
 you’d search for (.\*) and replace it with "\[sound:\\1.mp3\]", with the
@@ -151,7 +145,7 @@ expensive, as each card has to be rendered, and such functionality isn’t
 obvious to shared deck users. Please use the find & replace technique
 instead.
 
-### Bulk Media
+## Bulk Media
 
 Another option for importing large amounts of media at once is to use
 the [media import add-on](https://ankiweb.net/shared/info/1531997860).
@@ -159,16 +153,16 @@ This add-on will automatically create notes for all files in a folder
 you select, with the filenames on the front (minus the file extension,
 so if you have a file named apple.jpg, the front would say 'apple') and
 the images or audio on the back. If you would like a different
-arrangement of media and filenames, you can [change the note type](browsing.md) of the created cards afterwards.
+arrangement of media and filenames, you can [change the note type](../browsing.md) of the created cards afterwards.
 
-### Adding Tags
+## Adding Tags
 
 If you want to add 'tag1' and 'tag2' to every line you’re importing, add
 the following to the top of the text file:
 
     tags:tag1 tag2
 
-### Duplicates and Updating
+## Duplicates and Updating
 
 When importing text files, Anki uses the first field to determine if a
 note is unique. By default, if the file you are importing has a first
@@ -192,9 +186,9 @@ set in the import dialog. If notes are updated in place, the existing
 scheduling information on all their cards will be preserved.
 
 For info on how duplicates are handled in .apkg files, please see the
-[Deck Packages](exporting.md#packaged-decks) section.
+[Deck Packages](../exporting.md#packaged-decks) section.
 
-### File Headers
+## File Headers
 
 Anki 2.1.54+ supports certain headers that can be included in the text file to
 make importing more powerful or convenient. They consist of `#key:value` pairs
@@ -220,7 +214,7 @@ You must enable the new importing option in the preferences screen to use this o
 
 Some headers have further implications.
 
-#### Notetype Column
+### Notetype Column
 
 Usually, all notes from a file will be mapped to a single notetype, and you may
 choose which column should be mapped to which field of that notetype.
@@ -232,14 +226,14 @@ its notetype, the second regular column for the second field, and so on.
 A 'regular column' here being a column that does not contain special information
 like decks, tags, notetypes or GUIDs.
 
-#### Deck Column
+### Deck Column
 
 Usually, any new cards created as a result of importing a text file will be placed
 in a single deck of your choice. If the file contains a deck column, however, new
 cards of a note will be placed in its specified deck instead. If the deck does not
 exist, a deck with the given name will be created.
 
-#### GUID Column
+### GUID Column
 
 GUID stands for _Globally Unique Identifier_. When you create notes in Anki, Anki
 assigns each note a unique ID, which can be used for duplicate checking. If you
@@ -252,51 +246,3 @@ your own IDs, such as MYNOTE0001, then it's recommended that you place the IDs
 in the first field, instead of assigning them to Anki's internal GUID. When importing,
 Anki is able to use the first field for duplicate checking as well, so you do not
 need to make IDs a GUID in order to be able to update your notes.
-
-## Packaged Decks
-
-### Updating
-
-When you import an .apkg file, Anki will identify any notes in it that are
-already in your collection due to a previous import. If the notes in the file
-are newer than your local copy, the notes will be updated with the contents of
-the file.
-
-This updating process is not possible if the notetype is changed (e.g if either
-you or the deck author do things like add an extra field to the notetype).
-You will still be able to import any missing notes from the file, but
-notes you have imported previously will not be updated if the deck author
-has made changes.
-
-If you know the deck author has made changes and you wish to gain access to
-them, changing the notetype back is possible, but rather difficult. You'll need
-to do the following:
-
-- Create a new profile, and import the .apkg file into it.
-- Locate one of the notes that failed to update in the Browse screen and select it.
-- Use the Fields & Cards buttons to check the field names and card template names,
-  and note them down.
-- Use the [debug console](https://docs.ankiweb.net/misc.html#debug-console) to determine the notetype id.
-  It will be the number on the last line.
-
-```
-nt = bcard().note().note_type()
-print("notetype", nt["name"], "has id", nt["id"])
-```
-
-- Return to your normal profile, locate the same card, and select it. Run the following
-  in the debug console, replacing `xxx` with the ID you got above:
-
-```
-nt = bcard().note().note_type()
-print("current:", nt["name"], "has id", nt["id"])
-nt = mw.col.models.get(xxx)
-print("desired:", nt["name"], "has id", nt["id"])
-```
-
-- If it prints two different notetype names, you will need to use the Change Notetype
-  action to change the notetype of your existing notes to the desired one.
-
-- You then need to use the Fields and Cards buttons to check the field and template
-  names match the one in your test profile. They must match exactly - there should be no
-  more or less, and the spelling should be identical.
