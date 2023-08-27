@@ -37,8 +37,8 @@ update notes and notetypes, always overwriting your modifications,
 or, on the other hand, never update existing objects.
 
 Also, if both you and the deck author modified the same notetype, you can now decide to
-_merge_ the two versions. This will preserve all templates and fields contained by
-either one, but require a full sync and may mark other existing notes as modified.
+_merge_ the two versions. This will preserve all templates and fields contained in
+either one, but will require a full sync, and may mark other existing notes as modified.
 
 #### Note to Deck Authors
 
