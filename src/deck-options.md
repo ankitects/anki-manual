@@ -208,8 +208,9 @@ converted to days.
 ### Graduating Interval
 
 The delay in days between answering "Good" on a learning card with no steps left,
-and seeing the card again as a review card. Please see the example in the
-previous section.
+and seeing the card again as a review card. This means that it is the first interval
+after the learning card becomes a review card. Please see the example
+in the previous section.
 
 ### Easy Interval
 
