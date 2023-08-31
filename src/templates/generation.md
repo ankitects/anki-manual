@@ -26,10 +26,6 @@ Anki will not create cards with empty front sides. Thus if “My Field”
 was empty, and one card’s front template included only that field, the
 card would not be created.
 
-If no cards can be created because all of the cards would have empty
-front sides, then the Add Notes window will warn you and not allow the
-note to be added until at least one card would be generated.
-
 When you edit a previously added note, Anki will automatically create
 extra cards if they were previously blank but no longer are. If your
 edits have made some cards blank when they previously were not, however,
