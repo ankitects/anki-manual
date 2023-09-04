@@ -73,8 +73,9 @@ There are four rating buttons when learning:
 - **Again** moves the card back to the first step.
 
 - **Hard** repeats the current step.
-  - If one or more steps are remaining, the delay will be the average of Again and Good, i.e., the average of the current step and the next step.
-  - If no steps are remaining, the delay is 50% larger than the current step.
+  - If the card is on the first (and the only) step, the delay is 50% larger than the step. But, this delay is at most one day larger than the step.
+  - If the card is on the first step and the you have configured more than one step, the delay will be the average of Again and Good, i.e., the average of the first two steps.
+  - If the card is on any subsequent step, Hard repeats the previous delay.
 
 - **Good** moves the card to the [next step](deck-options.md#learning-steps). If the card was on the final
   step, the card is converted into a review card (it 'graduates'). By
