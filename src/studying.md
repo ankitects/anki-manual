@@ -202,7 +202,7 @@ card or note:
 - **Forget card**: Move current card to [the end of the new queue](browsing.md#cards).
 
   From Anki 2.1.50+, Anki will remember the original order of a new card when it is first studied
-  with the V3 scheduler. The "Restore original position" option allows you to reset the card back
+  with the v3 scheduler. The "Restore original position" option allows you to reset the card back
   to its original position when you forget it.
 
   The "Reset repetition and lapse count" option, if enabled, will set the review and failure counters
