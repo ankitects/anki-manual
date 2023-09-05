@@ -17,8 +17,8 @@ Deck options are accessed by:
 
 This page describes the options shown in Anki 2.1.45+, when you have the v2 or
 v3 scheduler enabled. On older versions, some options will not be available, or
-will appear in a different section. Please keep in mind that the V1 scheduler
-is no longer supported in Anki 2.1.50+. If you have not yet updated to V2 or V3,
+will appear in a different section. Please keep in mind that the v1 scheduler
+is no longer supported in Anki 2.1.50+. If you have not yet updated to v2 or v3,
 you will be prompted to update when you attempt to review cards in 2.1.50+.
 
 For more info on deck options, please check:
@@ -98,10 +98,10 @@ to your limit - they do not accumulate.
 When decks are nested (e.g Parent, Parent::Child, Parent::Child::Grandchild),
 the way the limits are applied depends on the scheduler version.
 
-- V1 applies parent limits to children, regardless of which deck you click on
-- V2 behaves similarly to V1 for new cards. For reviews, only the limits of
+- v1 applies parent limits to children, regardless of which deck you click on
+- v2 behaves similarly to v1 for new cards. For reviews, only the limits of
   the deck you click on are honored.
-- V3 honors the limits of the deck you click on, and any decks inside it.
+- v3 honors the limits of the deck you click on, and any decks inside it.
   Limits from parents above the deck you clicked on are ignored.
 
 For more information, please see the [v3 scheduler](https://faqs.ankiweb.net/the-2021-scheduler.html#daily-limits) page.
