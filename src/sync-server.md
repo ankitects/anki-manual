@@ -69,7 +69,7 @@ Protobuf (protoc) will need to be installed.
 After running that, you can run it with
 
 ```
-SYNC_USER1=user:pass anki-sync-server 
+SYNC_USER1=user:pass anki-sync-server
 ```
 
 ### From a source checkout
