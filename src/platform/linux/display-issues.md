@@ -26,3 +26,5 @@ echo software > ~/.local/share/Anki2/gldriver6
 
 If you wish to switch back to the default, change `software` to `auto`, or
 remove that file.
+
+In Anki 23.09+, you can also change the graphics driver from preferences screen.
