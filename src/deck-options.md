@@ -382,7 +382,7 @@ When Anki gathers cards, it first gathers intraday learning cards, then interday
 
 The options are:
 
-- Bury new siblings: whether other new cards of the same note (e.g reverse cards, adjacent cloze deletions) will be delayed until the next day.
+- Bury new siblings: whether other new cards of the same note (e.g., reverse cards, adjacent cloze deletions) will be delayed until the next day.
 - Bury review siblings: whether other review cards of the same note will be delayed until the next day.
 - Bury interday learning siblings: whether other learning cards of the same note with intervals > 1 day will be delayed until the next day.
 
