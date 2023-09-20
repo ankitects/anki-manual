@@ -58,7 +58,7 @@ which you can run periodically.
 ### Effective Learning
 
 Different people like to review in different ways, but there are some
-general concepts to keep in mind. An excellent introduction is [this article](http://www.supermemo.com/articles/20rules.htm) on the SuperMemo
+general concepts to keep in mind. An excellent introduction is [this article](https://supermemo.guru/wiki/20_rules_of_knowledge_formulation) on the SuperMemo
 site. In particular:
 
 - **Keep it simple**: The shorter your cards, the easier they are to
