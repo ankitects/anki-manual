@@ -193,7 +193,7 @@ adding a hint, please bear in mind that the easier you make it to answer
 a question in Anki, the less likely you are to remember that question
 when you encounter it in real life. Please have a read about the
 'minimum information principle' on
-<http://www.supermemo.com/articles/20rules.htm> before proceeding.
+<https://supermemo.guru/wiki/20_rules_of_knowledge_formulation> before proceeding.
 
 First, you’ll need to add a field to store the hint in if you have not
 already. Please see the [fields](../editing.md#customizing-fields) section if you’re not sure how
