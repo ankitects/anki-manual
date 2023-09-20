@@ -77,6 +77,8 @@ The syntax to specify an alternate folder is as follows:
 
 - If you have multiple profiles, you can pass -p &lt;name&gt; to load
   a specific profile.
+- If you pass -p some-fake-name, Anki will show the profile screen on startup.
+  If no profile is provided, the last-used profile is loaded.
 
 - To change the interface language, use -l &lt;iso 639-1 language
   code&gt;, such as "-l ja" for Japanese.
