@@ -21,7 +21,7 @@ additional-css = ["css/kbd.css"]
 optional = true
 warning-policy = "warn"
 follow-web-links = true
-exclude = ['microsoft.com', 'twitter.com']
+exclude = ['microsoft.com', 'twitter.com', 'stackexchange.com']
 
 [output.html.fold]
 enable = true
