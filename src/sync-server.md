@@ -128,6 +128,9 @@ If using a reverse proxy to provide HTTPS access (e.g. nginx), and binding to a 
 including a trailing slash when configuring Anki. If you put `http://example.com/custom`
 instead, it will not work.
 
+On iOS, TLS 1.3 is not supported, so your reverse proxy will need to have TLS 1.2
+enabled, or you'll get an "error code -9836".
+
 ## Large Requests
 
 The standard AnkiWeb limit on uploads is applied by default. You can optionally
