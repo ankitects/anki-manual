@@ -187,13 +187,7 @@
 </ul>
 </li>
 <li><a href="#timer">Timer</a></li>
-<li><a href="#burying">Burying</a>
-<ul>
-<li><a href="#bury-new-siblings">Bury new siblings</a></li>
-<li><a href="#bury-review-siblings">Bury review siblings</a></li>
-<li><a href="#bury-interday-learning-siblings">Bury interday learning siblings</a></li>
-</ul>
-</li>
+<li><a href="#burying">Burying</a></li>
 <li><a href="#audio">Audio</a></li>
 <li><a href="#advanced">Advanced</a>
 <ul>
@@ -528,30 +522,16 @@ this limit, or ideally, making your cards simpler.</li>
 of seconds you're taking to review each card.</li>
 </ul>
 <h2 id="burying"><a class="header" href="#burying">Burying</a></h2>
-<h3 id="bury-new-siblings"><a class="header" href="#bury-new-siblings">Bury new siblings</a></h3>
-<p>Whether other new cards of the same note (e.g reverse cards, adjacent cloze deletions) will be delayed until the next day.</p>
 <p>When Anki gathers cards, it first gathers intraday learning cards, then interday learning cards, then reviews, and finally new cards. This affects how burying works:</p>
 <ul>
 <li>If you have all burying options enabled, the sibling that comes earliest in that list will be shown. For example, a review card will be shown in preference to a new card.</li>
 <li>Siblings later in the list can not bury earlier card types. For example, if you disable burying of new cards, and study a new card, it will not bury any interday learning or review cards, and you may see both a review sibling and new sibling in the same session.</li>
 </ul>
-<h3 id="bury-review-siblings"><a class="header" href="#bury-review-siblings">Bury review siblings</a></h3>
-<p>Whether other review cards of the same note will be delayed until the next day.</p>
-<p>When Anki gathers cards, it first gathers intraday learning cards, then interday learning cards, then reviews, and finally new cards. This affects how burying works:</p>
+<p>The options are:</p>
 <ul>
-<li>If you have all burying options enabled, the sibling that comes earliest in that list will be shown. For example, a review card will be shown in preference to a new card.</li>
-<li>Siblings later in the list can not bury earlier card types. For example, if you disable burying of new cards, and study a new card, it will not bury any interday learning or review cards, and you may see both a review sibling and new sibling in the same session.</li>
-</ul>
-<h3 id="bury-interday-learning-siblings"><a class="header" href="#bury-interday-learning-siblings">Bury interday learning siblings</a></h3>
-<p>Whether other learning cards of the same note with intervals &gt; 1 day will be delayed until the next day.</p>
-<p>When Anki gathers cards, it first gathers intraday learning cards, then interday learning cards, then reviews, and finally new cards. This affects how burying works:</p>
-<ul>
-<li>
-<p>If you have all burying options enabled, the sibling that comes earliest in that list will be shown. For example, a review card will be shown in preference to a new card.</p>
-</li>
-<li>
-<p>Siblings later in the list can not bury earlier card types. For example, if you disable burying of new cards, and study a new card, it will not bury any interday learning or review cards, and you may see both a review sibling and new sibling in the same session.</p>
-</li>
+<li>Bury new siblings: whether other new cards of the same note (e.g., reverse cards, adjacent cloze deletions) will be delayed until the next day.</li>
+<li>Bury review siblings: whether other review cards of the same note will be delayed until the next day.</li>
+<li>Bury interday learning siblings: whether other learning cards of the same note with intervals &gt;= 1 day will be delayed until the next day.</li>
 </ul>
 <p>For more info about burying cards, please see <a href="./studying.html#siblings-and-burying">this section</a> of the manual.</p>
 <h2 id="audio"><a class="header" href="#audio">Audio</a></h2>
