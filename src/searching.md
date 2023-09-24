@@ -297,6 +297,21 @@ cards that have moved into relearning more than 3 times
 `prop:ease!=2.5`\
 cards easier or harder than default
 
+`prop:cdn:d>5` (Requires Anki 2.1.64+.)\
+cards with the value of `d` in custom data (usually refers to Difficulty in FSRS) greater than 5
+
+`prop:cds:v=reschedule` (Requires Anki 23.10+.)\
+cards with the string `v` in custom data equal to `reschedule`
+
+`prop:s>21` (Requires Anki 23.10+ and FSRS enabled.)\
+cards with stability greater than 21 days
+
+`prop:d>0.3` (Requires Anki 23.10+ and FSRS enabled.)\
+cards with difficulty greater than 0.3
+
+`prop:r<0.9` (Requires Anki 23.10+ and FSRS enabled.)\
+cards with retention less than 0.9
+
 ## Recent Events
 
 ### Added
