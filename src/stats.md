@@ -114,7 +114,8 @@ displayed.
 
 **Calendar**
 This graph shows past card review activity. Hovering the mouse over a specific item
-allows you to view the number of revisions made that day.
+allows you to view the number of revisions made that day. Click on a day of the
+week to make that the starting day.
 
 **Reviews**\
 This graph counts the number of card reviews you have done. The bars may
