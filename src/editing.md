@@ -58,7 +58,7 @@ which you can run periodically.
 ### Effective Learning
 
 Different people like to review in different ways, but there are some
-general concepts to keep in mind. An excellent introduction is [this article](http://super-memory.com/articles/20rules.htm) on the SuperMemo
+general concepts to keep in mind. An excellent introduction is [this article](https://super-memory.com/articles/20rules.htm) on the SuperMemo
 site. In particular:
 
 - **Keep it simple**: The shorter your cards, the easier they are to
@@ -336,7 +336,7 @@ Sometimes sections that have been removed in this fashion are said to be
 'occluded'.
 
 For more information on why you might want to use cloze deletion, see
-Rule 5 [here](http://super-memory.com/articles/20rules.htm).
+Rule 5 [here](https://super-memory.com/articles/20rules.htm).
 
 Anki provides a special cloze deletion type of note, to make creating
 clozes easy. To create a cloze deletion note, select the Cloze note
