@@ -1,7 +1,7 @@
 # Resources
 
 The SuperMemo site has a lot of good information about spaced repetition
-and memory: <http://www.supermemo.com/>
+and memory: <https://supermemo.guru/wiki/SuperMemo_Guru>
 
 Michael Nielsen has written a [thorough piece](http://augmentingcognition.com/ltm.html)
 about long term memory and how he uses Anki. He also provides a
