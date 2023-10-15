@@ -65,7 +65,7 @@ each line, you would use
     {{Field 1}}<br>
     {{Field 2}}
 
-## Text to Speech
+## Text to Speech for individual fields
 
 This feature requires Anki 2.1.20, or AnkiMobile 2.0.56. AnkiDroid does
 not currently support this method.
@@ -156,6 +156,19 @@ Then in the styling section:
 html:not(.android) .ankidroidTtsButton {
   display: none;
 }
+```
+
+## Text to Speech for multiple fields and static text
+
+This feature requires Anki 2.1.50+ or AnkiMobile 2.0.84+ . AnkiDroid does
+not currently support this method.
+
+If you want TTS to read multiple fields or static text included in the template, you can use the following:
+
+```
+[anki:tts lang=en_US] This text should be read. Here is {{Field1}} and {{Field2}}[/anki:tts]
+
+This is other text on the template. It is outside of the tags so it should not be read.
 ```
 
 ## Special Fields
