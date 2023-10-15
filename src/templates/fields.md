@@ -160,7 +160,7 @@ html:not(.android) .ankidroidTtsButton {
 
 ## Text to Speech for multiple fields and static text
 
-This feature requires Anki 2.1.50. AnkiDroid does
+This feature requires Anki 2.1.50+ or AnkiMobile 2.0.84+ . AnkiDroid does
 not currently support this method.
 
 If you want TTS to read multiple fields or static text included in the template, you can use the following:
