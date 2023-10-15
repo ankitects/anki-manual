@@ -2116,7 +2116,8 @@ information.</p>
 <ul>
 <li><a href="templates/fields.html#basic-replacements">Basic Replacements</a></li>
 <li><a href="templates/fields.html#newlines">Newlines</a></li>
-<li><a href="templates/fields.html#text-to-speech">Text to Speech</a></li>
+<li><a href="templates/fields.html#text-to-speech-for-individual-fields">Text to Speech for individual fields</a></li>
+<li><a href="templates/fields.html#text-to-speech-for-multiple-fields-and-static-text">Text to Speech for multiple fields and static text</a></li>
 <li><a href="templates/fields.html#special-fields">Special Fields</a></li>
 <li><a href="templates/fields.html#hint-fields">Hint Fields</a></li>
 <li><a href="templates/fields.html#dictionary-links">Dictionary Links</a></li>
@@ -2184,7 +2185,7 @@ each line, you would use</p>
 <pre><code>{{Field 1}}&lt;br&gt;
 {{Field 2}}
 </code></pre>
-<h2 id="text-to-speech"><a class="header" href="#text-to-speech">Text to Speech</a></h2>
+<h2 id="text-to-speech-for-individual-fields"><a class="header" href="#text-to-speech-for-individual-fields">Text to Speech for individual fields</a></h2>
 <p>This feature requires Anki 2.1.20, or AnkiMobile 2.0.56. AnkiDroid does
 not currently support this method.</p>
 <p>To have Anki read the Front field in a US English voice, you can place
@@ -2262,6 +2263,14 @@ AnkiDroidJS.ankiTtsSpeak('{{Front}}');&quot;
 html:not(.android) .ankidroidTtsButton {
   display: none;
 }
+</code></pre>
+<h2 id="text-to-speech-for-multiple-fields-and-static-text"><a class="header" href="#text-to-speech-for-multiple-fields-and-static-text">Text to Speech for multiple fields and static text</a></h2>
+<p>This feature requires Anki 2.1.50+ or AnkiMobile 2.0.84+ . AnkiDroid does
+not currently support this method.</p>
+<p>If you want TTS to read multiple fields or static text included in the template, you can use the following:</p>
+<pre><code>[anki:tts lang=en_US] This text should be read. Here is {{Field1}} and {{Field2}}[/anki:tts]
+
+This is other text on the template. It is outside of the tags so it should not be read.
 </code></pre>
 <h2 id="special-fields"><a class="header" href="#special-fields">Special Fields</a></h2>
 <p>There are some special fields you can include in your templates:</p>
