@@ -8,7 +8,7 @@ Recent Anki releases require a computer running the 64 bit version of Windows
 10 or 11.
 
 - The last Anki release that supported Windows 7 and 8.1 was Anki 2.1.49.
-- The last Anki release that supported 32 bit Windows was Anki 2.1.35-alternate.
+- The last Anki release that supported 32 bit Windows was [Anki 2.1.35-alternate](https://github.com/ankitects/anki/releases/tag/2.1.35).
 
 If you're on an old machine, you can obtain old releases from the [releases page](https://github.com/ankitects/anki/releases).
 
