@@ -1,6 +1,8 @@
 # Windows permission problems
 
-**Permission Problems**
+<!-- toc -->
+
+## Permission Problems
 
 If you receive "access denied" messages, some of Anki's files may be set to read only mode, meaning Anki is not able to write to them.
 
@@ -19,11 +21,11 @@ icacls Anki2 /grant ____:F /t
 
 That command should fix the permissions on Anki's data folder, and you should now be able to start the program.
 
-**Antivirus/Firewall/Anti-Malware**
+## Antivirus/Firewall/Anti-Malware
 
 Some users have experienced "permission denied" or "readonly" errors that were caused by security software installed on their machine. You may need to add an exception for Anki, or try temporarily disabling the software to rule it out as the cause. Some users have reported that simply turning off their software did not fix the problem, and they either had to add an exception for Anki or uninstall the software.
 
-**Debugging Permission Problems**
+## Debugging Permission Problems
 
 If problems persist after you've ruled out Antivirus and related programs, have performed the steps above to fix permissions, and don't use OneDrive, please run the following commands in cmd.exe, pressing enter after each one.
 
