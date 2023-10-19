@@ -147,7 +147,12 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="windows-permission-problems"><a class="header" href="#windows-permission-problems">Windows permission problems</a></h1>
-<p><strong>Permission Problems</strong></p>
+<ul>
+<li><a href="#permission-problems">Permission Problems</a></li>
+<li><a href="#antivirusfirewallanti-malware">Antivirus/Firewall/Anti-Malware</a></li>
+<li><a href="#debugging-permission-problems">Debugging Permission Problems</a></li>
+</ul>
+<h2 id="permission-problems"><a class="header" href="#permission-problems">Permission Problems</a></h2>
 <p>If you receive &quot;access denied&quot; messages, some of Anki's files may be set to read only mode, meaning Anki is not able to write to them.</p>
 <p>To fix the problem, you can do the following:</p>
 <ul>
@@ -161,9 +166,9 @@
 <p>cd %APPDATA%</p>
 <p>icacls Anki2 /grant ____:F /t</p>
 <p>That command should fix the permissions on Anki's data folder, and you should now be able to start the program.</p>
-<p><strong>Antivirus/Firewall/Anti-Malware</strong></p>
+<h2 id="antivirusfirewallanti-malware"><a class="header" href="#antivirusfirewallanti-malware">Antivirus/Firewall/Anti-Malware</a></h2>
 <p>Some users have experienced &quot;permission denied&quot; or &quot;readonly&quot; errors that were caused by security software installed on their machine. You may need to add an exception for Anki, or try temporarily disabling the software to rule it out as the cause. Some users have reported that simply turning off their software did not fix the problem, and they either had to add an exception for Anki or uninstall the software.</p>
-<p><strong>Debugging Permission Problems</strong></p>
+<h2 id="debugging-permission-problems"><a class="header" href="#debugging-permission-problems">Debugging Permission Problems</a></h2>
 <p>If problems persist after you've ruled out Antivirus and related programs, have performed the steps above to fix permissions, and don't use OneDrive, please run the following commands in cmd.exe, pressing enter after each one.</p>
 <p>whoami</p>
 <p>cd %APPDATA%</p>
