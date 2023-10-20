@@ -6,9 +6,7 @@
 
 Recent Anki releases require a Mac running macOS 10.13.4 or later.
 
-The last Anki release that supported macOS 10.10 to 10.13.3 was
-2.1.35-alternate. If you're on an old machine, you can obtain the old
-version from the [releases page](https://github.com/ankitects/anki/releases).
+The last Anki release that supported macOS 10.10 to 10.13.3 was [Anki 2.1.35-alternate](https://github.com/ankitects/anki/releases/tag/2.1.35). If you're on an old machine, you can obtain the old version from the [releases page](https://github.com/ankitects/anki/releases).
 
 ## Installing
 
