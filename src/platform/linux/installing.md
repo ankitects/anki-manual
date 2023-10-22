@@ -81,4 +81,12 @@ you can download older Anki versions from the [releases page](https://github.com
 ## Problems
 
 If you encounter any issues when installing or starting Anki, please see the
-following links on the left.
+following pages:
+- [Missing Libraries](https://docs.ankiweb.net/platform/linux/missing-libraries.html)
+- [Display Issues](https://docs.ankiweb.net/platform/linux/display-issues.html)
+- [Blank Main Window](https://docs.ankiweb.net/platform/linux/blank-window.html)
+- [Linux Distro Packages](https://docs.ankiweb.net/platform/linux/distro-packages.html)
+- [Incorrect GTK Theme](https://docs.ankiweb.net/platform/linux/gtk-theme.html)
+- [Wayland](https://docs.ankiweb.net/platform/linux/wayland.html)
+- [Input Methods](https://docs.ankiweb.net/platform/linux/input-methods.html)
+
