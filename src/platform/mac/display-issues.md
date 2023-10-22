@@ -1,6 +1,8 @@
 # Display Issues on macOS
 
-### Qt6 Video Driver
+<!-- toc -->
+
+## Qt6 Video Driver
 
 Hardware acceleration defaults to on. This should be fine for most Macs, but if you
 are experiencing crashes or display issues, you can try enabling software rendering.
