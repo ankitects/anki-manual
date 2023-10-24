@@ -58,9 +58,9 @@ remembered, and Anki will choose a next time to show you again.
 
 - **Review:** Cards that were previously learnt, and now need to be reviewed so you don’t forget them.
   There are two types of review cards:
-- **Young:** A young card is one that has an interval of less than 21 days, but is
-  not in learning.
-- **Mature:** A mature card is one that has an interval of 21 days or greater.
+    - **Young:** A young card is one that has an interval of less than 21 days, but is
+   not in learning.
+    - **Mature:** A mature card is one that has an interval of 21 days or greater.
 
 - **Relearn:** A relearning card is a card that you have failed in review mode, thus
   returning it to learning mode to be relearned.
