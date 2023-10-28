@@ -192,8 +192,8 @@ card or note:
   another time. Burying can also [happen automatically](studying.md#siblings-and-burying) for
   cards of the same note.
 
-  With the old scheduler, if cards were in learning when they are buried,
-  they are moved back to the new card queue or review queue prior to being
+  With the old scheduler, if cards were in learning when they were buried,
+  they were moved back to the new card queue or review queue prior to being
   buried.
 
   With the [2.1 scheduler](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html),
