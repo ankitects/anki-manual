@@ -403,7 +403,7 @@ answer; for that please see [this section](templates/fields.md#special-fields).
 
 ## Advanced
 
-## FSRS
+### FSRS
 
 The Free Spaced Repetition Scheduler (FSRS) is an alternative to Anki's legacy
 SuperMemo 2 (SM2) scheduler. By more accurately determining when you are likely
