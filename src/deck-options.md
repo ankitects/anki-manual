@@ -372,6 +372,8 @@ The options are:
   this limit, or ideally, making your cards simpler.
 - Show answer timer: In the review screen, show a timer that counts the number
   of seconds you're taking to review each card.
+- Stop timer on answer: whether the timer should keep running when you show
+  the answer.
 
 ## Burying
 
@@ -400,6 +402,17 @@ shown. Please note that it does not control what happens when you show the
 answer; for that please see [this section](templates/fields.md#special-fields).
 
 ## Advanced
+
+## FSRS
+
+The Free Spaced Repetition Scheduler (FSRS) is an alternative to Anki's legacy
+SuperMemo 2 (SM2) scheduler. By more accurately determining when you are likely
+to forget, it can help you remember more material in the same amount of time.
+This setting is shared by all deck presets.
+
+FSRS is currently in the advanced section, as it was only just integrated into
+Anki in the 23.10 release. When you enable the setting, some new options will
+become available, and SM-2 specific settings will be hidden.
 
 ### Maximum Interval
 
