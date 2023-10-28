@@ -15,7 +15,7 @@ or review history.
 If you encounter imported cards with unexpectedly large intevals, the deck author may
 accidentally have included their scheduling information. You can use the
 [Set Due Date feature](../browsing.md#cards) to reset the imported cards. On Anki
-2.1.67 and later, you can remove any scheduling information during the import process.
+23.10 and later, you can remove any scheduling information during the import process.
 
 ## Updating
 
@@ -30,9 +30,9 @@ You will still be able to import any missing notes from the file, but
 notes you have imported previously will not be updated if the deck author
 has made changes.
 
-### Anki 2.1.67 and Later
+### Anki 23.10 and Later
 
-Anki 2.1.67 introduced more flexibility: You can choose to unconditionally
+Anki 23.10 introduced more flexibility: You can choose to unconditionally
 update notes and notetypes, always overwriting your modifications,
 or, on the other hand, never update existing objects.
 
