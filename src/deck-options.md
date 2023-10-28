@@ -414,6 +414,9 @@ FSRS is currently in the advanced section, as it was only just integrated into
 Anki in the 23.10 release. When you enable the setting, some new options will
 become available, and SM-2 specific settings will be hidden.
 
+If you previously used the 'custom scheduling' version of FSRS, please make
+sure you clear out the custom scheduling section before enabling FSRS.
+
 ### Maximum Interval
 
 Allows you to place an upper limit on the time Anki
