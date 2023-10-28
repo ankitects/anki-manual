@@ -3368,7 +3368,8 @@ with an older version that is on AnkiWeb.</p>
 <li><a href="deck-options.html#timer">Timer</a></li>
 <li><a href="deck-options.html#burying">Burying</a></li>
 <li><a href="deck-options.html#audio">Audio</a></li>
-<li><a href="deck-options.html#advanced">Advanced</a>
+<li><a href="deck-options.html#advanced">Advanced</a></li>
+<li><a href="deck-options.html#fsrs">FSRS</a>
 <ul>
 <li><a href="deck-options.html#maximum-interval">Maximum Interval</a></li>
 <li><a href="deck-options.html#starting-ease">Starting Ease</a></li>
@@ -3699,6 +3700,8 @@ until you press an answer button), you may want to either consider raising
 this limit, or ideally, making your cards simpler.</li>
 <li>Show answer timer: In the review screen, show a timer that counts the number
 of seconds you're taking to review each card.</li>
+<li>Stop timer on answer: whether the timer should keep running when you show
+the answer.</li>
 </ul>
 <h2 id="burying"><a class="header" href="#burying">Burying</a></h2>
 <p>When Anki gathers cards, it first gathers intraday learning cards, then interday learning cards, then reviews, and finally new cards. This affects how burying works:</p>
@@ -3722,6 +3725,14 @@ the question side should be played when replaying the audio while an answer is
 shown. Please note that it does not control what happens when you show the
 answer; for that please see <a href="templates/fields.html#special-fields">this section</a>.</p>
 <h2 id="advanced"><a class="header" href="#advanced">Advanced</a></h2>
+<h2 id="fsrs"><a class="header" href="#fsrs">FSRS</a></h2>
+<p>The Free Spaced Repetition Scheduler (FSRS) is an alternative to Anki's legacy
+SuperMemo 2 (SM2) scheduler. By more accurately determining when you are likely
+to forget, it can help you remember more material in the same amount of time.
+This setting is shared by all deck presets.</p>
+<p>FSRS is currently in the advanced section, as it was only just integrated into
+Anki in the 23.10 release. When you enable the setting, some new options will
+become available, and SM-2 specific settings will be hidden.</p>
 <h3 id="maximum-interval"><a class="header" href="#maximum-interval">Maximum Interval</a></h3>
 <p>Allows you to place an upper limit on the time Anki
 will wait to reshow a card. The default is 100 years; you can decrease
