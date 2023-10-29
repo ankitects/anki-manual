@@ -231,7 +231,7 @@ card or note:
 - [**Mark Note**](editing.md#the-marked-tag): Adds a “marked” tag to the current note, so it can be easily found in the
   browser. This is similar to flagging individual cards, but works with a tag
   instead, so if the note has multiple cards, all cards will appear in a search
-  for the marked tag. Most users will want to use flags instead.
+  for the marked tag. Most users will want to use [flags](https://docs.ankiweb.net/editing.html#using-flags) instead.
 
 - **Create Copy**: Opens a [duplicate](browsing.md#finding-duplicates) of the current
   note in the editor, which can be slightly modified to easily obtain variations of your cards.
