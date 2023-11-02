@@ -269,7 +269,7 @@ marks or fields are better.
 
 ## Editing Features
 
-The editor is shown when [adding notes](editing.md), [editing a note](studying.md) during reviews, or [browsing](browsing.md).
+The editor is shown when [adding notes](editing.md), [editing a note](studying.md#editing-and-more) during reviews, or [browsing](browsing.md).
 
 ![Editor icons](media/editor_icons.png)
 
