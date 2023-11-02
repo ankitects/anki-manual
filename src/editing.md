@@ -244,7 +244,7 @@ will show a star when the current card's note has that tag. And cards are
 shown in a different color in the browse screen when their note is marked.
 
 Note: Marking is mainly left around for compatibility with older Anki
-versions; most users will want to use flags instead.
+versions; most users will want to use [flags](editing.md#using-flags) instead.
 
 ### Using Fields
 
