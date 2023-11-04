@@ -482,7 +482,6 @@ with regular clozed notes.
 allow you to move, resize or delete them simultaneously. Please note that
 two or more single shapes will  create only one card once grouped.  
 - Ungroup selection: Select a group and then click this button to make each shape independent again.
-as shapes will be created again. 
 - Alignment: This tool can be used to align your shapes / text areas as desired. 
 
 While reviewing IO Cards a "Toggle Masks" will appear just below the four rating buttons. 
