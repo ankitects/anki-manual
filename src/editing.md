@@ -421,7 +421,7 @@ extra card templates to the cloze note type.
 
 ## Image Occlusion
 
-Since v. 23.10 Anki supports Image Occlusion cards natively. An Image 
+Anki 23.10+ supports Image Occlusion cards natively. An Image 
 Occlusion (IO) note is a special case of Cloze Deletion based on images
 instead of text, and allows you to create cards that hide some parts 
 of an image, testing your knowledge of that hidden information. 
