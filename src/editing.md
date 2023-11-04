@@ -481,7 +481,7 @@ with regular clozed notes.
 - Group selection: Use this tool to create a cluster of shapes, which will
 allow you to move, resize or delete them simultaneously. Please note that
 two or more single shapes will  create only one card once grouped.  
-- Ungroup selection: When ungrouping a cluster of shapes, as many cards
+- Ungroup selection: Select a group and then click this button to make each shape independent again.
 as shapes will be created again. 
 - Alignment: This tool can be used to align your shapes / text areas as desired. 
 
