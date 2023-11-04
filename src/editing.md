@@ -430,7 +430,7 @@ of an image, testing your knowledge of that hidden information.
 
 ### Adding an image
 
-To add IO cards to your collection, simply add a card, click on "Type"
+To add IO cards to your collection, open the Add screen, click on "Type"
 and choose "Image Occlusion" from the list of built-in note types. 
 Then, click on "Select Image" to load an image file saved on your 
 computer's hard drive, or on "Paste image from clipboard" 
