@@ -434,7 +434,7 @@ To add IO cards to your collection, open the Add screen, click on "Type"
 and choose "Image Occlusion" from the list of built-in note types. 
 Then, click on "Select Image" to load an image file saved on your 
 computer's hard drive, or on "Paste image from clipboard" 
-if you have an image already loaded on the computer's memory. 
+if you have an image copied to the clipboard. 
 
 ### Adding IO cards
 
