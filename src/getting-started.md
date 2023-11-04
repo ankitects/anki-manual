@@ -259,7 +259,7 @@ follows:
   moon in 1969”). More information is available in the [cloze deletion](editing.md#cloze-deletion) section.
 
 - **Image Occlusion**\
-  A special case of Cloze Note Type, that works with images instead of text.
+  Like the cloze notetype, but it works with images instead of text,
   which is especially useful when studying material that heavily relies on images,
   such as anatomy, geography, and more. For details, please see the [Image Occlusion](editing.md#image-occlusion)
   section of the manual. 
