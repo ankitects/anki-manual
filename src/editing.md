@@ -454,7 +454,7 @@ and will be revealed during learning. The other areas will be visible.
 
 ![Image Occlusion Modes](media/io_modes.jpg)
 
-Once you're done, click on the "Add" icon, at the bottom of the screen. 
+Once you're done, click on the "Add" button, at the bottom of the screen. 
 Anki will add so many cards as shapes you've added in the previous step, 
 and you can start reviewing them normally.  
 
