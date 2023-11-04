@@ -260,7 +260,6 @@ follows:
 
 - **Image Occlusion**\
   A special case of Cloze Note Type, that works with images instead of text.
-  This Note type allows you to create cards that hide some parts of an image,
   which is especially useful when studying material that heavily relies on images,
   such as anatomy, geography, and more. For details, please see the [Image Occlusion](editing.md#image-occlusion)
   section of the manual. 
