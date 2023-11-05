@@ -300,6 +300,9 @@ Controls how Anki gathers cards from each subdeck. The options are:
   above, you can manually
   [reposition](https://docs.ankiweb.net/browsing.html#cards) cards in different
   ways.
+  
+- Deck, then random notes: gathers cards from each deck in order, starting from the top.
+  Cards from each deck are gathered randomly.
 
 - Ascending position: gathers cards by ascending position (due #), which is typically the oldest-added first.
 
