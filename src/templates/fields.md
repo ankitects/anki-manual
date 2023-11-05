@@ -336,7 +336,7 @@ entirely.
 | `日本語[にほんご]` | `{{kana:MyField}}`     | にほんご                                      |
 | `日本語[にほんご]` | `{{kanji:MyField}}`    | 日本語                                        |
 
-These names are again, borrowed from Japanese.
+These names are, again, borrowed from Japanese.
 The term [kana](https://en.wikipedia.org/wiki/Kana) represents the phonetic
 system used to describe how words are pronounced, whereas the term
 [kanji](https://en.wikipedia.org/wiki/Kanji) represents its Chinese characters.
