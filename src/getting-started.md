@@ -232,7 +232,7 @@ new users, but in the long run it’s recommended you define your own note
 types for the content you are learning. The standard note types are as
 follows:
 
-- **Basic**
+- **Basic**\
   Has Front and Back fields, and will create one card. Text you enter in
   Front will appear on the front of the card, and text you enter in Back
   will appear on the back of the card.
@@ -241,13 +241,13 @@ follows:
   Like Basic, but creates two cards for the text you enter: one from
   front→back and one from back→front.
 
-- **Basic (optional reversed card)**
+- **Basic (optional reversed card)**\
   This is a front→back card, and optionally a back→front card. To do this,
   it has a third field called “Add Reverse.” If you enter any text into
   that field, a reverse card will be created. More information about this
   is available in the [Cards and Templates](templates/intro.md) section.
 
-- **Basic (type in the answer)**
+- **Basic (type in the answer)**\
   This is essentially Basic, with an extra text box on the front where you
   can type your answer in, after flipping to the back your input would be
   checked and compared with the answer. More information is available in the
@@ -257,6 +257,12 @@ follows:
   A note type which makes it easy to select text and turn it into a cloze
   deletion (e.g., “Man landed on the moon in \[…​\]” → “Man landed on the
   moon in 1969”). More information is available in the [cloze deletion](editing.md#cloze-deletion) section.
+
+- **Image Occlusion**\
+  Like the cloze notetype, but it works with images instead of text,
+  which is especially useful when studying material that heavily relies on images,
+  such as anatomy, geography, and more. For details, please see the [Image Occlusion](editing.md#image-occlusion)
+  section of the manual. 
 
 To add your own note types and modify existing ones, you can use Tools →
 Manage Note Types from the main Anki window.
