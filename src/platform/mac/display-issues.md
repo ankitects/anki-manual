@@ -18,7 +18,7 @@ It will not print anything. You can then start Anki again.
 If you wish to switch back to the default, change `software` to `auto`, or
 remove that file.
 
-In Anki 23.09+, you can also change the graphics driver from preferences screen.
+In Anki 23.10+, you can also change the graphics driver from preferences screen.
 
 ## eGPUs
 
