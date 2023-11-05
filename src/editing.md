@@ -422,7 +422,7 @@ extra card templates to the cloze note type.
 ## Image Occlusion
 
 Anki 23.10+ supports Image Occlusion cards natively. An Image 
-Occlusion (IO) note is a special case of Cloze Deletion based on images
+Occlusion (IO) note is a special case of cloze deletion based on images
 instead of text, and allows you to create cards that hide some parts 
 of an image, testing your knowledge of that hidden information. 
 
@@ -474,13 +474,13 @@ resized or deleted, but no card will be created when you use this tool.
 - Zoom In / Out - Reset zoom.
 - Toggle Translucency: Use this tool to temporarily view the hidden areas. 
 - Delete: Use this tool to delete selected shapes and text areas. Please
-note that deleting a shape won't delete its associated card automatically,
-you will need to use the "Empty Cards" tool afterwards the same you do
-with regular clozed notes. 
+note that deleting a shape won't delete its associated card automatically;
+you will need to use Tools>Empty Cards afterwards, the same as
+with regular cloze deletions.
 - Duplicate. 
 - Group selection: Use this tool to create a cluster of shapes, which will
 allow you to move, resize or delete them simultaneously. Please note that
-two or more single shapes will  create only one card once grouped.  
+two or more single shapes will create only one card once grouped.  
 - Ungroup selection: Select a group and then click this button to make each shape independent again.
 - Alignment: This tool can be used to align your shapes / text areas as desired. 
 
