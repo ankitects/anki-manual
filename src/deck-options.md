@@ -422,17 +422,17 @@ when FSRS is enabled.
 If you previously used the 'custom scheduling' version of FSRS, please make
 sure you clear out the custom scheduling section before enabling FSRS.
 
-#### Settings
 
-**Maximum interval.**
+
+- **Maximum interval.**
 This works in the same way as the default algorithm: it is the maximum number
 of days a review card will wait. For more info, please see [next section](#maximum-interval)
 
-**Desired Retention.**
+- **Desired Retention.**
 The most important setting to configure is the desired retention:this will
 determine the fraction of cards recalled successfully when they are due. 
 
-The permissible range for desired retention is 0.70 to 0.97, values outside
+   The permissible range for desired retention is 0.70 to 0.97, values outside
 this range would make learning inefficient. The default value of 0.9 will
 schedule cards so you have a 90% chance of remembering them when they come 
 up for review again. If you increase this value, Anki will show cards more 
@@ -442,18 +442,18 @@ of them. Be conservative when adjusting this, higher values will greatly
 increase your workload, and lower values can be demoralizing when you forget 
 a lot of material.
 
-**SM-2 retention.**
+- **SM-2 retention.**
 If your actual retention before switching to FSRS was significantly different
 from 0.9, adjusting this value will allow Anki to better estimate your memory
 state when it encounters cards that are missing review logs. Since review 
 logs typically won't be missing unless you explicitly deleted them to free
 up space, most users will not need to adjust this.
 
-**Model parameters.**
+- **Model parameters.**
 Model parameters affect how cards are scheduled. Once you've accumulated 
 1000+ reviews, you can optimize these parameters.
 
-**Reschedule cards on change.**
+- **Reschedule cards on change.**
 This option controls whether the due dates of cards will be changed when you
 enable FSRS, or change the parameters. The default is not to reschedule 
 cards: future reviews will use the new scheduling, but there will be no 
@@ -461,16 +461,16 @@ immediate change to your workload. If rescheduling is enabled, the due dates
 of cards will be changed, often resulting in a large number of cards becoming
 due, so activating this option is not recommended when first switching from SM2.
 
-**Optimize FSRS parameters.**
+- **Optimize FSRS parameters.**
 The FSRS optimizer uses machine learning to learn your memory patterns 
 and find parameters that best fit your review history. So, the optimizer 
 requires several reviews to fine-tune the parameters.
 
-If you have less than 1,000 reviews, you can use the default parameters that
+   If you have less than 1,000 reviews, you can use the default parameters that
 are already entered into the "Model parameters" field. Even with the default
 parameters, FSRS should work well for most users.
 
-Once you've done 1000+ reviews in Anki, you can use the Optimize button to 
+   Once you've done 1000+ reviews in Anki, you can use the Optimize button to 
 analyze your review history, and automatically generate parameters that are
 optimal for your memory and the content you're studying. Parameters are 
 preset-specific, so if you have decks that vary wildly in difficulty, it
@@ -478,29 +478,29 @@ is recommended to assign them separate presets, as the parameters for easy
 decks and hard decks will be different. There is no need to optimize your
 parameters frequently - once every few months is sufficient.
 
-By default, parameters will be calculated from the review history of all
+   By default, parameters will be calculated from the review history of all
 decks using the current preset. You can optionally adjust the search 
 before calculating the parameters, if you'd like to alter which cards 
 are used for optimizing the parameters.
 
-**Evaluate FSRS parameters**
+- **Evaluate FSRS parameters**
 You can use the Evaluate button in the "Optimize FSRS parameters" 
 section to see metrics that show how well the parameters in the 
 "Model parameters" field fit your review history. Smaller numbers 
 indicate a better fit to your review history.
 
-Log-loss doesn't have an intuitive interpretation. RMSE (bins) can be 
+   Log-loss doesn't have an intuitive interpretation. RMSE (bins) can be 
 interpreted as the average difference between the predicted probability 
 of recalling a card (R) and the measured (from the review history) 
 probability. For example, RMSE=0.05 means that, on average, FSRS 
 is off by 5% when predicting R.
 
-Note that log-loss and RMSE (bins) are not perfectly correlated, 
+   Note that log-loss and RMSE (bins) are not perfectly correlated, 
 so two decks may have similar RMSE values but very different log-loss values, 
 and vice-versa.
 
-**Compute optimal retention** 
-This experimental tool assumes you're starting with 0 cards, and will 
+- **Compute optimal retention** 
+   This experimental tool assumes you're starting with 0 cards, and will 
 attempt to calculate the amount of material you'll be able to retain 
 in the given time frame. The estimated retention will greatly depend 
 on your inputs, and if it significantly differs from 0.9, it's a sign 
@@ -509,8 +509,8 @@ for the amount of cards you're trying to learn. This number can be
 useful as a reference, but it is not recommended to copy it into the
 desired retention field.
 
-**Custom Scheduling**
-"Custom scheduling" allows you to introduce new scheduling 
+- **Custom Scheduling**
+   "Custom scheduling" allows you to introduce new scheduling 
 rules on top of FSRS. This feature is only for advanced users and developers.
 
 #### Learning and re-learning steps
