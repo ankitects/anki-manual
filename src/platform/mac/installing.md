@@ -49,5 +49,5 @@ you can download older Anki versions from the [releases page](https://github.com
 
 ## Problems
 
-If you encounter any issues when installing or starting Anki, please see the
-following links on the left.
+If you encounter any issues when installing or starting Anki, please see:
+- [Display Issues](display-issues.md)
