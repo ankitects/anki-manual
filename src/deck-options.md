@@ -416,31 +416,39 @@ This setting is shared by all deck presets.
 FSRS is currently in the advanced section, as it was only just integrated into
 Anki in the 23.10 release. When you enable the setting, some new options will 
 become available, and SM-2 specific settings, such as "Graduating interval", 
-"Easy bonus", etc, will be hidden. This is because these settings are irrelevant
-when FSRS is enabled.
+"Easy bonus", etc, will be hidden. 
 
 If you previously used the 'custom scheduling' version of FSRS, please make
 sure you clear out the custom scheduling section before enabling FSRS.
 
-
-
-- **Maximum interval.**
-This works in the same way as the default algorithm: it is the maximum number
-of days a review card will wait. For more info, please see [next section](#maximum-interval)
-
+#### FSRS Options
 - **Desired Retention.**
-The most important setting to configure is the desired retention:this will
-determine the fraction of cards recalled successfully when they are due. 
+Desired retention controls how likely you are to remember cards when they are reviewed.
+The default value of 0.9 will schedule cards so you have a 90% chance of remembering
+them when they come up for review again.
 
-   The permissible range for desired retention is 0.70 to 0.97, values outside
-this range would make learning inefficient. The default value of 0.9 will
-schedule cards so you have a 90% chance of remembering them when they come 
-up for review again. If you increase this value, Anki will show cards more 
-frequently to increase the chances of you remembering them. If you decrease
-the value, Anki will show cards less frequently, and you will forget more 
-of them. Be conservative when adjusting this, higher values will greatly 
-increase your workload, and lower values can be demoralizing when you forget 
-a lot of material.
+   Here is a graph that shows how adjusting this value will affect your workload:
+<img src="media/FSRS_retention.png" width="600">
+
+   There are two things to notice:
+   
+   - As desired retention approaches 1.0, the frequency that you need to review cards 
+   increases drastically. For example, imagine you have a card that you have a 90% 
+   chance of remembering after 100 days. If your desired retention was 0.95, you'd 
+   need to review it after 47 days instead (approximately twice as frequently). 
+   At 0.97, the delay would be only 27 days (approximately 3.7x as frequently). 
+   At 0.99, you'd be reviewing every 9 days (more than 10x what you'd be doing with 
+   the defaults).
+
+   - As desired retention decreases, you'll forget a greater percentage of your 
+   cards, and those cards will need to be reviewed again. Eventually, you'll 
+   get to a point where the forgotten cards contribute more to your workload
+   than you gain from the longer delays, which is why you see the workload 
+   on the left of the graph increasing. Also, bear in mind that forgetting 
+   material frequently is demotivating.
+
+   For these reasons, we suggest you be conservative when adjusting this 
+   number, and recommend you keep it between 0.85 and 0.95.
 
 - **SM-2 retention.**
 If your actual retention before switching to FSRS was significantly different
@@ -449,8 +457,8 @@ state when it encounters cards that are missing review logs. Since review
 logs typically won't be missing unless you explicitly deleted them to free
 up space, most users will not need to adjust this.
 
-- **Model parameters.**
-Model parameters affect how cards are scheduled. Once you've accumulated 
+- **FSRS parameters.**
+FSRS parameters affect how cards are scheduled. Once you've accumulated 
 1000+ reviews, you can optimize these parameters.
 
 - **Reschedule cards on change.**
@@ -467,21 +475,21 @@ and find parameters that best fit your review history. So, the optimizer
 requires several reviews to fine-tune the parameters.
 
    If you have less than 1,000 reviews, you can use the default parameters that
-are already entered into the "Model parameters" field. Even with the default
-parameters, FSRS should work well for most users.
+  are already entered into the "FSRS parameters" field. Even with the default
+  parameters, FSRS should work well for most users.
 
-   Once you've done 1000+ reviews in Anki, you can use the Optimize button to 
-analyze your review history, and automatically generate parameters that are
-optimal for your memory and the content you're studying. Parameters are 
-preset-specific, so if you have decks that vary wildly in difficulty, it
-is recommended to assign them separate presets, as the parameters for easy
-decks and hard decks will be different. There is no need to optimize your
-parameters frequently - once every few months is sufficient.
+   Once you've done 1000+ reviews in Anki, you can use the Optimize button to
+  analyze your review history, and automatically generate parameters that are
+  optimal for your memory and the content you're studying. Parameters are
+  preset-specific, so if you have decks that vary wildly in difficulty, it
+  is recommended to assign them separate presets, as the parameters for easy
+  decks and hard decks will be different. There is no need to optimize your
+  parameters frequently - once every few months is sufficient.
 
    By default, parameters will be calculated from the review history of all
-decks using the current preset. You can optionally adjust the search 
-before calculating the parameters, if you'd like to alter which cards 
-are used for optimizing the parameters.
+  decks using the current preset. You can optionally adjust the search
+  before calculating the parameters, if you'd like to alter which cards
+  are used for optimizing the parameters.
 
 - **Evaluate FSRS parameters**
 You can use the Evaluate button in the "Optimize FSRS parameters" 
@@ -489,11 +497,11 @@ section to see metrics that show how well the parameters in the
 "Model parameters" field fit your review history. Smaller numbers 
 indicate a better fit to your review history.
 
-   Log-loss doesn't have an intuitive interpretation. RMSE (bins) can be 
-interpreted as the average difference between the predicted probability 
-of recalling a card (R) and the measured (from the review history) 
-probability. For example, RMSE=0.05 means that, on average, FSRS 
-is off by 5% when predicting R.
+   Log-loss doesn't have an intuitive interpretation. RMSE (bins) can be
+  interpreted as the average difference between the predicted probability
+  of recalling a card (R) and the measured (from the review history)
+  probability. For example, RMSE=5% means that, on average, FSRS
+  is off by 5% when predicting R.
 
    Note that log-loss and RMSE (bins) are not perfectly correlated, 
 so two decks may have similar RMSE values but very different log-loss values, 
@@ -514,15 +522,17 @@ desired retention field.
 rules on top of FSRS. This feature is only for advanced users and developers.
 
 #### Learning and re-learning steps
-When FSRS is enabled, the learning and re-learning steps should be chosen 
-in such a way that all the learning steps can be completed on the same day. 
-For most users, this means that steps longer than or equal to 1 day should 
-not be used. The reason is that FSRS can determine more optimal intervals but
-the use of longer (re)learning steps doesn't allow FSRS to schedule the reviews, 
-making the scheduling less optimal. In addition, if longer steps are used, 
-there can be cases where the "Hard" interval exceeds the "Good" interval.
+(Re)learning steps of 1+ days are not recommended when using FSRS. The main 
+reason they were popular with the old SM-2 scheduler is because repeatedly 
+failing a card after learning could reduce its ease a lot, leading to what 
+some people called "ease hell". This is not a problem that FSRS suffers from. 
+By keeping your learning steps under a day, you will allow FSRS to schedule 
+cards at times it has calculated are optimum for your material and memory.
 
-The use of multiple short (re)learning steps is also not recommended when using FSRS.
+We also recommend you keep the number of learning steps to a minimum. Evidence
+shows that repeating a card multiple times in a single day after you've 
+remembered it does not significantly help with memory, so your time is 
+better spent on other cards or a shorter study session
 
 #### Add-On Compatibility
 Some add-ons can cause conflicts with FSRS. As a general rule of thumb, 
