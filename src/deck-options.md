@@ -549,6 +549,9 @@ failing a card after learning could reduce its ease a lot, leading to what
 some people called "ease hell". This is not a problem that FSRS suffers from.
 By keeping your learning steps under a day, you will allow FSRS to schedule
 cards at times it has calculated are optimum for your material and memory.
+Another reason not to use longer learning steps is because FSRS may end up
+scheduling the first review for a shorter time than your last learning step,
+leading to the Hard button showing a longer time than Good.
 
 We also recommend you keep the number of learning steps to a minimum. Evidence
 shows that repeating a card multiple times in a single day after you've
