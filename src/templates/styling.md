@@ -375,7 +375,7 @@ yellow when night mode is enabled:
 
 ## Fading and Scrolling
 
-Anki will automatically scroll to the answer by default. It looks for a
+Anki will automatically scroll to the answer by default. It looks for an
 HTML element with id=answer, and scrolls to that. You can place the id
 on a different element to adjust the scrolling position, or remove the
 id=answer to turn off scrolling.
