@@ -40,7 +40,7 @@ options to rename or reorder the cards, as well as the following two
 options:
 
 - The 'Deck Override' option allows you to change the deck that cards
-  generated from the current card type will be placed into. By
+  generated from the current note type will be placed into. By
   default, cards are placed into the deck you provide in the Add Notes
   window. If you set a deck here, that card type will be placed into
   the deck you specified, instead of the deck listed in the Add Notes
