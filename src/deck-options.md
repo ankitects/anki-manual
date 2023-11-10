@@ -437,6 +437,7 @@ them when they come up for review again.
 Here is a graph that shows how adjusting this value will affect your workload:
 
 <img src="media/FSRS_retention.png" width="600">
+![Workload and retention, again (small)](https://github.com/ankitects/anki-manual/assets/83031600/f70d2573-4aec-49ed-a3a2-bef522ba9c6c)
 
 There are two things to notice:
 
@@ -456,7 +457,7 @@ There are two things to notice:
   material frequently is demotivating.
 
 For these reasons, we suggest you be conservative when adjusting this
-number, and recommend you keep it between 0.85 and 0.95.
+number, and recommend you keep it between 0.85 and 0.95. The lower bound is 0.7, the upper bound is 0.97 in Anki 23.10 and 0.99 in Anki 23.10.1 and newer.
 
 **SM-2 retention**
 
