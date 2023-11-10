@@ -168,7 +168,7 @@ with an older version that is on AnkiWeb.
 
 When logged in, clicking on Log Out will log you out.
 
-### Self-hosted sync server
+### Self-hosted Sync Server
 
 For info on the custom sync server option, see [this section](./sync-server.md).
 
