@@ -21,11 +21,11 @@ properly with this option enabled - please see [night mode styling](templates/st
 
 From 2.1.50+ there is an option to switch to day or night mode automatically.
 
-**User interface size**
+**User interface size**\
 If you find that the interface elements are too small for you, you can
 try to increase this setting.
 
-**Reset Windows Sizes**
+**Reset Windows Sizes**\
 This will reset all windows sizes and locations to the default settings.
 
 **Video driver**\
@@ -120,7 +120,7 @@ file sizes.
 By default, formatting like bold and colors are kept when pasting,
 unless the <kbd>Shift</kbd> key is held down. This option reverses the behaviour.
 
-**Default deck**
+**Default deck**\
 Controls how note types and decks interact. The default of "When adding, default
 to current deck" means that Anki saves the last-used note type for each deck and
 selects it again then next time you choose the deck (and, in addition, will
@@ -132,16 +132,16 @@ deck.
 
 ### Browsing
 
-**Default search text**
+**Default search text**\
 Allows you to customize the starting search text in the browser (eg, to start
 with "deck:current").
 
-**Ignore accents in search (slower)**
+**Ignore accents in search (slower)**\
 When enabled, simple text searches automatically [ignore accents](./searching.md#ignoring-accentscombining-characters).
 
 ### Import/Export
 
-**Legacy import/export handling**
+**Legacy import/export handling**\
 If enabled, legacy (pre 2.1.55) import / export code will be used. It is recommended to deactivate this option.
 
 ## Syncing
@@ -150,15 +150,15 @@ This tab contains options related to syncing with AnkiWeb.
 
 ### Synchronisation
 
-**Synchronize audio and images too**
+**Synchronize audio and images too**\
 When enabled, media will also be synced with AnkiWeb.
 
-**Automatically sync on profile open/close**
+**Automatically sync on profile open/close**\
 Disable this if you don't want an automatic sync with AnkiWeb when opening / closing a [profile](./profiles.md).
 
 **Periodically sync media**
 
-**On next sync, force changes on one direction**
+**On next sync, force changes on one direction**\
 When this option is enabled, the next sync will
 ask you whether you wish to upload or download. This is useful if
 you have made some changes accidentally, and wish to overwrite them
