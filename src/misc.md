@@ -9,7 +9,7 @@ letter to activate a particular menu.
 
 Although macOS doesn’t support this feature, it does allow you instead to assign
 shortcuts to specific menu items. Please see
-<http://lifehacker.com/343328/create-a-keyboard-shortcut-for-any-menu-action-in-any-program>
+<https://support.apple.com/en-au/guide/mac-help/mchlp2271/mac>
 for more information.
 
 ## Debug Console
