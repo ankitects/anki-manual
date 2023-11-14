@@ -35,11 +35,11 @@ Advantages of the Qt6 version:
 - Very large images load faster than the Qt5 version.
 - Security updates. Support for the Qt5 library was discontinued in Nov 2020,
   meaning that any security flaws discovered since then will remain unfixed.
+- Some users experience freezes when using [a custom shortcut key to switch input languages](https://github.com/ankitects/anki/issues/1105)
+  in Qt5.
 
 Disadvantages of the Qt6 version:
 
-- Some users experience freezes when using [a custom shortcut key to switch input languages](https://github.com/ankitects/anki/issues/1105). This issue can be worked around in the
-  Qt5 version by switching the video driver to ANGLE, but ANGLE is not available in Qt6.
 - Some add-ons currently only work with the Qt5 version.
 
 ## Upgrading
