@@ -136,7 +136,7 @@ limits on its parents or child decks are ignored.
 The v3 scheduler includes learning cards with a 1+ day delay in the review count,
 so those learning cards will be subject to the daily limit.
 
-### New cards ignore review limit
+### New Cards Ignore Review Limit
 
 If using [the v3 scheduler](https://faqs.ankiweb.net/the-2021-scheduler.html#daily-limits),
 please keep in mind that the new count is capped by the review count by default. If your
@@ -541,7 +541,7 @@ for the amount of cards you're trying to learn. This number can be
 useful as a reference, but it is not recommended to copy it into the
 desired retention field.
 
-#### Learning and re-learning steps
+#### Learning and Re-learning Steps
 
 (Re)learning steps of 1+ days are not recommended when using FSRS. The main
 reason they were popular with the old SM-2 scheduler is because repeatedly
