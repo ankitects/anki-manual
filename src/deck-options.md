@@ -24,12 +24,12 @@ you will be prompted to update when you attempt to review cards in 2.1.50+.
 For more info on deck options, please check:
 
 - [Deck Options Explained](https://forums.ankiweb.net/t/deck-options-explained/213)
-- [Deck options in a Mental Map](https://forums.ankiweb.net/t/deck-options-in-a-mental-map/15757)
+- [Deck Options in a Mental Map](https://forums.ankiweb.net/t/deck-options-in-a-mental-map/15757)
 
 ## Presets
 
 Anki allows you to share options between different decks, to make
-updating options in many decks at once easy. To do this, options are
+it easy to update options in many decks at once. To do this, options are
 grouped into _presets_. By default, all newly created decks use
 the same preset.
 
