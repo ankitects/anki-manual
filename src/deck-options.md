@@ -408,7 +408,7 @@ answer; for that please see [this section](templates/fields.md#special-fields).
 
 ### FSRS
 
-The Free Spaced Repetition Scheduler (FSRS) is an alternative to Anki's legacy
+The [Free Spaced Repetition Scheduler (FSRS)](https://github.com/open-spaced-repetition/fsrs4anki) is an alternative to Anki's legacy
 SuperMemo 2 (SM2) scheduler. By more accurately determining when you are likely
 to forget, it can help you remember more material in the same amount of time.
 This setting is shared by all deck presets.
