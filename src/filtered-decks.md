@@ -156,16 +156,21 @@ creation date).
 Display cards with the earliest due date first.
 
 **Latest added first**\
-Display those cards first, that you have most recently added to the deck.
+Display cards that you have most recently added to the deck first.
 (This is the opposite of 'Order added'.)
 
 **Relative overdueness**\
-Display those cards first, that are most overdue in relation to their current
-interval (for instance, a card with a current interval of 5 days
-overdue by 2 days displays before a card with a current interval of 5
-years overdue by a week). This is useful if you have a large backlog
-that may take some time to get through and you want to review those cards
-first, that you are most in danger of forgetting.
+Display cards that you're most likely to have forgotten first. This is useful if
+you have a large backlog that may take some time to get through, and you want to
+reduce the chances of forgetting more cards.
+
+When using the SM-2 scheduler, overduessness is determined by comparing how
+overdue cards are, and how long their interval is. For example, a card with a
+current interval of 5 days that is overdue by 2 days, will display before a card
+with a current interval of 10 days that is overdue by 3 days.
+
+When using FSRS, overdueness is calculated based on on each card's retrievability,
+and the desired retention in the deck preset.
 
 ## Steps & Returning
 
