@@ -355,8 +355,17 @@ Controls how review cards are sorted while reviewing. The options are:
 - Descending intervals: This will ensure cards with larger intervals are shown first.
 - Ascending ease: This will show most difficult cards first.
 - Descending ease: This will allow you to work through the easier material first.
-- Relative overdueness: Display those cards first, that are [most overdue in relation
-  to their current interval](./filtered-decks.html#order).
+- Relative overdueness: Display cards that you're most likely to have forgotten first. This is useful if
+  you have a large backlog that may take some time to get through, and you want to
+  reduce the chances of forgetting more cards.
+
+  When using the SM-2 scheduler, overduessness is determined by comparing how
+  overdue cards are, and how long their interval is. For example, a card with a
+  current interval of 5 days that is overdue by 2 days, will display before a card
+  with a current interval of 10 days that is overdue by 3 days.
+
+  When using FSRS, overdueness is calculated based on on each card's retrievability,
+  and the desired retention in the deck preset.
 
 ## Timer
 
