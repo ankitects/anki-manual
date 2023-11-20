@@ -571,6 +571,7 @@ better spent on other cards or a shorter study session
 
 Some add-ons can cause conflicts with FSRS. As a general rule of thumb,
 if an add-on affects a card's intervals, it shouldn't be used with FSRS.
+A list of commonly used add-ons and their FSRS compatibility can be found in [Add-on Compatibility](https://github.com/open-spaced-repetition/fsrs4anki#add-on-compatibility).
 
 #### More
 
