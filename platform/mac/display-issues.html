@@ -153,15 +153,15 @@
 <li><a href="#monitors-with-different-resolutions">Monitors with different resolutions</a></li>
 </ul>
 <h2 id="qt6-video-driver"><a class="header" href="#qt6-video-driver">Qt6 Video Driver</a></h2>
-<p>Hardware acceleration defaults to on. This should be fine for most Macs, but if you
-are experiencing crashes or display issues, you can try enabling software rendering.</p>
-<p>Open Terminal.app, then paste the following and hit enter:</p>
+<p>If you're experiencing display issues or crashes in Anki 23.10+, you can try
+changing the video driver in the preferences screen, then restarting Anki.</p>
+<p>Older Anki versions did not provide an option in the preferences, but allowed
+you to adjust the driver by opening Terminal.app, then pasting the following and hit enter:</p>
 <pre><code>echo software &gt; ~/Library/Application\ Support/Anki2/gldriver6
 </code></pre>
 <p>It will not print anything. You can then start Anki again.</p>
 <p>If you wish to switch back to the default, change <code>software</code> to <code>auto</code>, or
 remove that file.</p>
-<p>In Anki 23.10+, you can also change the graphics driver from preferences screen.</p>
 <h2 id="egpus"><a class="header" href="#egpus">eGPUs</a></h2>
 <p>If you experience blank screens when using an external graphics card on a Mac, you can ctrl+click on the Anki app, click &quot;Get Info&quot;, and enable the &quot;prefer eGPU&quot; option.</p>
 <h2 id="monitors-with-different-resolutions"><a class="header" href="#monitors-with-different-resolutions">Monitors with different resolutions</a></h2>
