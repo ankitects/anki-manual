@@ -21,7 +21,12 @@ additional-css = ["css/kbd.css"]
 optional = true
 warning-policy = "warn"
 follow-web-links = true
-exclude = ['microsoft.com', 'twitter.com', 'stackexchange.com']
+exclude = [
+  'microsoft.com',
+  'twitter.com',
+  'stackexchange.com',
+  'https://github.com/open-spaced-repetition/fsrs4anki#add-on-compatibility',
+]
 
 [output.html.fold]
 enable = true
