@@ -239,7 +239,7 @@ order to Ordered mode and back again to force a re-sort.
 
 When you select random order, Anki will randomize your notes, keeping
 the cards of a given note close together. The cards of a given note are
-shown in the order, in which their card types appear, so that siblings are
+shown in the order in which their card types appear, so that siblings are
 introduced consistently — otherwise you could end up in a state where
 some notes had all their cards introduced and other notes had only one
 or two. Please see the "bury related" and "display order" sections below
@@ -381,7 +381,7 @@ The options are:
   that you don’t end up with inaccurate statistics. If you consistently
   take longer than 60 seconds to answer a card (from when question is shown
   until you press an answer button), you may want to either consider raising
-  this limit, or ideally, making your cards simpler.
+  this limit, or, ideally, making your cards simpler.
 - Show answer timer: In the review screen, show a timer that counts the number
   of seconds you're taking to review each card.
 - Stop timer on answer: whether the timer should keep running when you show
@@ -502,7 +502,7 @@ your workload, there are two ways you can do so:
 **Optimize FSRS parameters**
 
 The FSRS optimizer uses machine learning to learn your memory patterns
-and find parameters that best fit your review history. So, the optimizer
+and find parameters that best fit your review history. To do this, the optimizer
 requires several reviews to fine-tune the parameters.
 
 If you have less than 1,000 reviews, you can use the default parameters that
