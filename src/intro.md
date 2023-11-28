@@ -6,7 +6,7 @@ In a hurry? Jump straight to [Getting Started](getting-started.md).
 
 ## Getting Help
 
-Looking for help? Please see [Getting Help](https://faqs.ankiweb.net/getting-help.html).
+Looking for help? Please see [Getting Help](./getting-help.md).
 
 ## Translations
 

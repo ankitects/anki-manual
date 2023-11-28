@@ -25,6 +25,7 @@
     - [Wayland](platform/linux/wayland.md)
     - [Input Methods](platform/linux/input-methods.md)
 - [Getting Started](getting-started.md)
+- [Getting Help](getting-help.md)
 - [Studying](studying.md)
 - [Adding/Editing](editing.md)
 - [Card Templates](templates/intro.md)
@@ -50,6 +51,7 @@
 - [Math & Symbols](math.md)
 - [Leeches](leeches.md)
 - [Add-ons](addons.md)
+- [Troubleshooting](troubleshooting.md)
 - [Sync Server](sync-server.md)
 - [Miscellaneous](misc.md)
 
