@@ -124,6 +124,10 @@ in, and the order they will be reviewed in. If you select "most lapses"
 and a limit of 20 for example, then Anki will show you only the 20 most
 lapsed cards.
 
+The **enable second filter** option allows you to create a filtered deck
+comprised of two different searches, so that you can, for example, include
+due cards with one order, and a smaller amount of new cards with a different order.
+
 ## Order
 
 The "cards selected by" option controls the order that cards will appear
