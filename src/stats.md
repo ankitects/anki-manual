@@ -13,9 +13,10 @@ by right-clicking on the card and then selecting **Info**, or by pressing
 Most of the displayed information should be self-explanatory. A few notes:
 
 **Position**\
-Only shown when the card is new, it shows the order the card will appear
+It shows the order the card will appear
 in relative to other new cards. The position can be changed in the
-browser.
+browser. Once a card has been studied, the position is not used, unless
+the card is manually reset to new again.
 
 **Interval**\
 The delay from one review to the next. Times are abbreviated; "0s, 1m,
