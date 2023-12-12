@@ -387,6 +387,13 @@ The options are:
 - Stop timer on answer: whether the timer should keep running when you show
   the answer.
 
+## Auto Advance
+
+Requires Anki 23.12 or later. Auto Advance allows you to automatically reveal
+the answer and/or move to the next card. To use it, you must first set a non-zero
+time in "seconds to show question" and/or "seconds to show answer". Then, in the
+review screen, use the Auto Advance action from the More button to start advancing.
+
 ## Burying
 
 When Anki gathers cards, it first gathers intraday learning cards, then interday learning cards, then reviews, and finally new cards. This affects how burying works:
