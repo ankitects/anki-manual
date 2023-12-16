@@ -2114,20 +2114,20 @@ sure to clone the existing Cloze type instead of another type of note.
 Things like formatting can be customized, but it is not possible to add
 extra card templates to the cloze note type.</p>
 <h2 id="image-occlusion"><a class="header" href="#image-occlusion">Image Occlusion</a></h2>
-<p>Anki 23.10+ supports Image Occlusion cards natively. An Image 
+<p>Anki 23.10+ supports Image Occlusion cards natively. An Image
 Occlusion (IO) note is a special case of cloze deletion based on images
-instead of text, and allows you to create cards that hide some parts 
-of an image, testing your knowledge of that hidden information. </p>
+instead of text, and allows you to create cards that hide some parts
+of an image, testing your knowledge of that hidden information.</p>
 <p><img src="media/io.jpg" alt="Image Occlusion" /></p>
 <h3 id="adding-an-image"><a class="header" href="#adding-an-image">Adding an image</a></h3>
 <p>To add IO cards to your collection, open the Add screen, click on &quot;Type&quot;
-and choose &quot;Image Occlusion&quot; from the list of built-in note types. 
-Then, click on &quot;Select Image&quot; to load an image file saved on your 
-computer's hard drive, or on &quot;Paste image from clipboard&quot; 
-if you have an image copied to the clipboard. </p>
+and choose &quot;Image Occlusion&quot; from the list of built-in note types.
+Then, click on &quot;Select Image&quot; to load an image file saved on your
+computer's hard drive, or on &quot;Paste image from clipboard&quot;
+if you have an image copied to the clipboard.</p>
 <h3 id="adding-io-cards"><a class="header" href="#adding-io-cards">Adding IO cards</a></h3>
-<p>After loading an image, the IO editor will open. Click on the 
-icons on the left to add as many areas to your image as you want. 
+<p>After loading an image, the IO editor will open. Click on the
+icons on the left to add as many areas to your image as you want.
 There are three basic shapes to choose from:</p>
 <ul>
 <li>Rectangle</li>
@@ -2142,36 +2142,36 @@ area at a time is revealed while learning.</li>
 and will be revealed during learning. The other areas will be visible.</li>
 </ul>
 <p><img src="media/io_modes.jpg" alt="Image Occlusion Modes" /></p>
-<p>Once you're done, click on the &quot;Add&quot; button, at the bottom of the screen. 
-Anki will add a card for each shape or group of shapes you added in the previous step, 
+<p>Once you're done, click on the &quot;Add&quot; button, at the bottom of the screen.
+Anki will add a card for each shape or group of shapes you added in the previous step,
 and you can start reviewing them normally.</p>
 <h2 id="editing-io-notes"><a class="header" href="#editing-io-notes">Editing IO notes</a></h2>
-<p>You can edit your IO notes by clicking on &quot;Edit&quot; while reviewing, 
-or directly from the browser. There are several tools that you 
-can use, most of them are self-explanatory:</p>
+<p>You can edit your IO notes by clicking on &quot;Edit&quot; while reviewing,
+or directly from the browser. There are several tools that you
+can use. Of note:</p>
 <ul>
 <li>Select: It allows you selecting one or more shapes to move,
-resize, delete or group them. </li>
-<li>Zoom: You can freely move the image and zoom in or out using the mouse wheel. </li>
+resize, delete or group them.</li>
+<li>Zoom: You can freely move the image and zoom in or out using the mouse wheel.</li>
 <li>Shapes (Rectangle, Ellipse or Polygon): Use them to add new shapes / cards.</li>
 <li>Text: It adds text areas to your image. These text areas can be moved,
-resized or deleted, but no card will be created when you use this tool. </li>
+resized or deleted, but no card will be created when you use this tool.</li>
 <li>Undo / Redo.</li>
 <li>Zoom In / Out - Reset zoom.</li>
-<li>Toggle Translucency: Use this tool to temporarily view the hidden areas. </li>
+<li>Toggle Translucency: Use this tool to temporarily view the hidden areas.</li>
 <li>Delete: Use this tool to delete selected shapes and text areas. Please
 note that deleting a shape won't delete its associated card automatically;
 you will need to use Tools&gt;Empty Cards afterwards, the same as
 with regular cloze deletions.</li>
-<li>Duplicate. </li>
+<li>Duplicate.</li>
 <li>Group selection: Use this tool to create a cluster of shapes, which will
 allow you to move, resize or delete them simultaneously. Please note that
 two or more single shapes will create only one card once grouped.</li>
 <li>Ungroup selection: Select a group and then click this button to make each shape independent again.</li>
-<li>Alignment: This tool can be used to align your shapes / text areas as desired. </li>
+<li>Alignment: This tool can be used to align your shapes / text areas as desired.</li>
 </ul>
-<p>While reviewing IO Cards a &quot;Toggle Masks&quot; button will appear just below the image. 
-This button will temporary clear all shapes of the note when using &quot;Hide All, Guess One&quot; mode. </p>
+<p>While reviewing IO Cards a &quot;Toggle Masks&quot; button will appear just below the image.
+This button will temporary clear all shapes of the note when using &quot;Hide All, Guess One&quot; mode.</p>
 <h2 id="inputting-foreign-characters-and-accents"><a class="header" href="#inputting-foreign-characters-and-accents">Inputting Foreign Characters and Accents</a></h2>
 <p>All modern computers have built-in support for typing accents and
 foreign characters, and multiple ways to go about it. The method we
@@ -5926,7 +5926,7 @@ collection has been successfully restored.</p>
 by right-clicking on the card and then selecting <strong>Info</strong>, or by pressing
 <kbd>I</kbd> on the review screen.</p>
 <p><img src="media/card_info.png" alt="Card Info" /></p>
-<p>Most of the displayed information should be self-explanatory. A few notes:</p>
+<p>A few notes:</p>
 <p><strong>Position</strong><br />
 It shows the order the card will appear
 in relative to other new cards. The position can be changed in the
@@ -5939,6 +5939,10 @@ years respectively.</p>
 <p><strong>Ease</strong><br />
 The approximate amount the interval will grow when you answer a review
 card with the &quot;Good&quot; button.</p>
+<p>The bottom section shows the review history for the card. Rating denotes
+the button (1 = Again, 4 = Easy). When cards are manually rescheduled using
+the &quot;reset&quot; or &quot;set due date&quot; actions, the type will be listed as Manual
+and the rating as 0.</p>
 <h2 id="statistics"><a class="header" href="#statistics">Statistics</a></h2>
 <p>The statistics window is accessed by clicking on <strong>Stats</strong> button at the
 top of the main window, or by pressing <kbd>T</kbd>.</p>
