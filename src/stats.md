@@ -10,7 +10,7 @@ by right-clicking on the card and then selecting **Info**, or by pressing
 
 ![Card Info](media/card_info.png)
 
-Most of the displayed information should be self-explanatory. A few notes:
+A few notes:
 
 **Position**\
 It shows the order the card will appear
@@ -26,6 +26,11 @@ years respectively.
 **Ease**\
 The approximate amount the interval will grow when you answer a review
 card with the "Good" button.
+
+The bottom section shows the review history for the card. Rating denotes
+the button (1 = Again, 4 = Easy). When cards are manually rescheduled using
+the "reset" or "set due date" actions, the type will be listed as Manual
+and the rating as 0.
 
 ## Statistics
 
