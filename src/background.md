@@ -139,4 +139,4 @@ multi-platform, running on Windows, macOS, Linux/FreeBSD, and some
 mobile devices. And it is considerably easier to use than SuperMemo.
 
 Anki's spaced repetition system is based on an older version of the
-SuperMemo algorithm called [SM-2](https://faqs.ankiweb.net/what-spaced-repetition-algorithm).
+SuperMemo algorithm called [SM-2](https://faqs.ankiweb.net/what-spaced-repetition-algorithm). Recently, a new algorithm called [FSRS](https://docs.ankiweb.net/deck-options.html?highlight=FSRS#fsrs) has been integrated as an alternative to the legacy SM-2 algorithm.
