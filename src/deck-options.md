@@ -392,7 +392,7 @@ The options are:
 Requires Anki 23.12 or later. Auto Advance allows you to automatically reveal
 the answer and/or move to the next card. To use it, you must first set a non-zero
 time in "seconds to show question" and/or "seconds to show answer". Then, in the
-review screen, use the Auto Advance action from the More button to start advancing.
+review screen, use the Auto Advance action from the `More` button to start advancing.
 
 ## Burying
 
@@ -516,7 +516,7 @@ If you have less than 1,000 reviews, you can use the default parameters that
 are already entered into the "FSRS parameters" field. Even with the default
 parameters, FSRS should work well for most users.
 
-Once you've done 1000+ reviews in Anki, you can use the Optimize button to
+Once you've done 1000+ reviews in Anki, you can use the `Optimize` button to
 analyze your review history, and automatically generate parameters that are
 optimal for your memory and the content you're studying. Parameters are
 preset-specific, so if you have decks that vary wildly in difficulty, it
@@ -531,7 +531,7 @@ are used for optimizing the parameters.
 
 **Evaluate FSRS parameters**
 
-You can use the Evaluate button in the "Optimize FSRS parameters"
+You can use the `Evaluate` button in the "Optimize FSRS parameters"
 section to see metrics that show how well the parameters in the
 "Model parameters" field fit your review history. Smaller numbers
 indicate a better fit to your review history.
@@ -559,15 +559,16 @@ desired retention field.
 
 #### Learning and Re-learning Steps
 
-(Re)learning steps of 1+ days are not recommended when using FSRS. The main
-reason they were popular with the old SM-2 scheduler is because repeatedly
-failing a card after learning could reduce its ease a lot, leading to what
-some people called "ease hell". This is not a problem that FSRS suffers from.
-By keeping your learning steps under a day, you will allow FSRS to schedule
-cards at times it has calculated are optimum for your material and memory.
-Another reason not to use longer learning steps is because FSRS may end up
-scheduling the first review for a shorter time than your last learning step,
-leading to the Hard button showing a longer time than Good.
+(Re)learning steps of 1+ days are not recommended when using FSRS. The main 
+reason they were popular with the old SM-2 scheduler is because repeatedly 
+failing a card after it has graduated from the learning phase could reduce 
+its ease a lot, leading to what some people called "ease hell". This is not 
+a problem that FSRS suffers from.  By keeping your learning steps under a 
+day, you will allow FSRS to schedule cards at times it has calculated are 
+optimum for your material and memory.  Another reason not to use longer 
+learning steps is because FSRS may end up scheduling the first review for a 
+shorter time than your last learning step, leading to the `Hard` button 
+showing a longer time than `Good`.
 
 We also recommend you keep the number of learning steps to a minimum. Evidence
 shows that repeating a card multiple times in a single day after you've
