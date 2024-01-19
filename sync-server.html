@@ -148,8 +148,8 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="self-hosted-sync-server"><a class="header" href="#self-hosted-sync-server">Self-Hosted Sync Server</a></h1>
-<p>Anki 2.1.57+ includes a built-in sync server. Advanced users who cannot or do
-not wish to use AnkiWeb can use this sync server instead of AnkiWeb.</p>
+<p>Advanced users who cannot or do not wish to use AnkiWeb can use a self-hosted
+sync server instead.</p>
 <p>Things to be aware of:</p>
 <ul>
 <li>This is an advanced feature, targeted at users who are comfortable with
@@ -165,8 +165,13 @@ are not recommended.</li>
 has been configured, (e.g &quot;Cannot connect to AnkiWeb&quot; when your server is down).</li>
 </ul>
 <h2 id="installingrunning"><a class="header" href="#installingrunning">Installing/Running</a></h2>
-<p>There are various ways you can install and run the server.</p>
+<p>There are various ways you can install and run the server. You can use either:</p>
+<ul>
+<li>the sync server bundled with the desktop version of Anki</li>
+<li>a separate minimal sync server that doesn't include Anki's GUI dependencies. Python and Rust implementations are available.</li>
+</ul>
 <h3 id="from-a-packaged-build"><a class="header" href="#from-a-packaged-build">From a Packaged Build</a></h3>
+<p>This uses the sync server built into the desktop version of Anki as of version 2.1.57+.</p>
 <p>On Windows in a cmd.exe session:</p>
 <pre><code>set SYNC_USER1=user:pass
 &quot;\Program Files\anki\anki.exe&quot; --syncserver
@@ -178,20 +183,20 @@ has been configured, (e.g &quot;Cannot connect to AnkiWeb&quot; when your server
 <pre><code>SYNC_USER1=user:pass anki --syncserver
 </code></pre>
 <h3 id="with-pip"><a class="header" href="#with-pip">With Pip</a></h3>
-<p>If you have Python 3.9+ installed, you can run from PyPI without downloading
-all Anki's GUI dependencies.</p>
+<p>To avoid downloading desktop Anki's GUI dependencies, you can run a standalone Anki sync server using a Python package downloaded from PyPI instead.
+Make sure you have Python 3.9+ installed.</p>
 <pre><code>python3 -m venv ~/syncserver
 ~/syncserver/bin/pip install anki
 SYNC_USER1=user:pass ~/syncserver/bin/python -m anki.syncserver
 </code></pre>
 <h3 id="with-cargo"><a class="header" href="#with-cargo">With Cargo</a></h3>
-<p>If you have Rustup installed, from Anki 2.1.66+, you can build a standalone sync
-server that doesn't require Python, using the following:</p>
+<p>From Anki 2.1.66+, you can alternatively build a Rust implementation of the standalone sync server using the below command.
+Make sure you have Rustup installed.</p>
 <pre><code>cargo install --git https://github.com/ankitects/anki.git --tag 2.1.66 anki-sync-server
 </code></pre>
 <p>Replace 2.1.66 with whatever the latest Anki version is.</p>
 <p>Protobuf (protoc) will need to be installed.</p>
-<p>After running that, you can run it with</p>
+<p>After building, you can run it with:</p>
 <pre><code>SYNC_USER1=user:pass anki-sync-server
 </code></pre>
 <h3 id="from-a-source-checkout"><a class="header" href="#from-a-source-checkout">From a source checkout</a></h3>
