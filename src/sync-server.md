@@ -1,7 +1,7 @@
 # Self-Hosted Sync Server
 
-Anki 2.1.57+ includes a built-in sync server. Advanced users who cannot or do
-not wish to use AnkiWeb can use this sync server instead of AnkiWeb.
+Advanced users who cannot or do not wish to use AnkiWeb can use a self-hosted
+sync server instead.
 
 Things to be aware of:
 
@@ -19,9 +19,13 @@ Things to be aware of:
 
 ## Installing/Running
 
-There are various ways you can install and run the server.
+There are various ways you can install and run the server. You can use either:
+- the sync server bundled with the desktop version of Anki
+- a separate minimal sync server that doesn't include Anki's GUI dependencies. Python and Rust implementations are available.
 
 ### From a Packaged Build
+
+This uses the sync server built into the desktop version of Anki as of version 2.1.57+.
 
 On Windows in a cmd.exe session:
 
@@ -44,8 +48,8 @@ SYNC_USER1=user:pass anki --syncserver
 
 ### With Pip
 
-If you have Python 3.9+ installed, you can run from PyPI without downloading
-all Anki's GUI dependencies.
+To avoid downloading desktop Anki's GUI dependencies, you can run a standalone Anki sync server using a Python package downloaded from PyPI instead.
+Make sure you have Python 3.9+ installed.
 
 ```
 python3 -m venv ~/syncserver
@@ -55,8 +59,8 @@ SYNC_USER1=user:pass ~/syncserver/bin/python -m anki.syncserver
 
 ### With Cargo
 
-If you have Rustup installed, from Anki 2.1.66+, you can build a standalone sync
-server that doesn't require Python, using the following:
+From Anki 2.1.66+, you can alternatively build a Rust implementation of the standalone sync server using the below command.
+Make sure you have Rustup installed.
 
 ```
 cargo install --git https://github.com/ankitects/anki.git --tag 2.1.66 anki-sync-server
@@ -66,7 +70,7 @@ Replace 2.1.66 with whatever the latest Anki version is.
 
 Protobuf (protoc) will need to be installed.
 
-After running that, you can run it with
+After building, you can run it with:
 
 ```
 SYNC_USER1=user:pass anki-sync-server
