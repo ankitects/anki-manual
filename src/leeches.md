@@ -52,3 +52,5 @@ mind, you can then return to learning the other idea. So in these
 situations, you may want to leave one of the words suspended until you
 have learnt the other one well, and then unsuspend it.
 
+You can also refer to the article "[Dealing with Leeches](https://controlaltbackspace.org/leech/)", 
+written by Soren Bjornstad, for a more detailed discussion.
