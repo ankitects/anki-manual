@@ -34,7 +34,7 @@ down into smallest possible components, and use mnemonic techniques.
 ## Deleting
 
 If the material you’re struggling with isn't important enough to justify 
-time spent, you can simply delete the card. By selectively deleting
+the time spent, you can simply delete the card. By selectively deleting
 difficult and obscure items, you can spend more time learning other 
 material, making studying more enjoyable. If you think the card might be 
 useful for future reference, you can leave it suspended.
