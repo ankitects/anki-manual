@@ -11,7 +11,7 @@ reaches 8, Anki tags the note as a leech and suspends the card. The
 threshold, and whether to suspend or not, can be adjusted in the
 [deck options](deck-options.md).
 
-If you keep reviewing that card, Anki will continue to alert you about the 
+If you keep failing that card, Anki will continue to alert you about the 
 leech periodically. These warnings occur at half the initial leech 
 threshold. For example, if you set the warning at 8 lapses, future 
 warnings will happen every 4 lapses (at 12, 16, and so on).
