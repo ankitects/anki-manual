@@ -3,7 +3,7 @@
 <!-- toc -->
 
 Leeches are cards that you keep forgetting. Because they require so
-many reviews, they take up a lot more of your time as compared to other cards.
+many reviews, they take up a lot more of your time, compared to other cards.
 
 Anki can help you identify leeches. Each time a review card 'lapses' (is 
 failed while it is in review mode), a counter increases. When this counter
