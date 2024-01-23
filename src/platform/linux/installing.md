@@ -14,7 +14,7 @@ On recent Ubuntu installations, please use the following before
 installing:
 
 ```shell
-sudo apt install libxcb-xinerama0 libxcb-cursor0
+sudo apt install libxcb-xinerama0 libxcb-cursor0 libnss3
 ```
 
 If Anki fails to start after installing, you may be [missing other libraries](./missing-libraries.md).
