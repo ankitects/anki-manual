@@ -41,6 +41,13 @@ To upgrade, close Anki if it is open, and then follow the steps above. Drag
 the Anki icon into the same location you previously stored it, and when prompted,
 overwrite the old version. Your card data will be preserved.
 
+## Homebrew
+
+[Homebrew](https://brew.sh/) users can install Anki using
+`brew install --cask anki` in their preferred Terminal application.
+
+Upgrading can be done using `brew upgrade`, and for uninstalling: `brew uninstall --cask anki`
+
 ## Add-on Compatibility
 
 Some add-ons may not always work with the latest Anki release. If you upgrade to
