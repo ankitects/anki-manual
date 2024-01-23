@@ -6,6 +6,8 @@ scheduling, and so on.
 
 To browse the list of available add-ons, access https://ankiweb.net/shared/addons
 
+Alternatively, select  ``Tools`` -> ``Add-ons``, then click on ``Get Add-ons``
+
 If you have downloaded an add-on that is not working properly, or if you
 accidentally made a mistake when editing an add-on, you can use the
 "Delete" option in the menu to remove it.
