@@ -6,11 +6,11 @@
 
 The packaged version requires a recent 64 bit Intel/AMD Linux with glibc, and common
 libraries like libwayland-client and systemd. If you are on a different
-architecture, or a barebones Linux distro, you will not be able to use the
+architecture (e.g ARM/AArch64), or a barebones Linux distro, you will not be able to use the
 packaged version, but you may be able to use the [Python wheels](https://betas.ankiweb.net/#via-pypipip)
 instead.
 
-On recent Ubuntu installations, please use the following before
+Debian and derivatives, such as Ubuntu and [Chromebooks with Linux enabled](https://support.google.com/chromebook/answer/9145439?), please use the following before
 installing:
 
 ```shell
