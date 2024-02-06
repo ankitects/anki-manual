@@ -23,7 +23,7 @@ translations may not always be up to date.
 - [русский язык](https://alexeygorelov.github.io/anki-manual-ru/)
 - [العربية](https://abdnh.github.io/anki-manual/)
 - [فارسى](http://ankidroid.ir/anki.pdf)
-- [日本語](http://wikiwiki.jp/rage2050/?FrontPage)
+- [日本語](http://wikiwiki.jp/rage2050/)
 - [简体中文](http://www.ankichina.net/manual/anki/)
 
 If you would like to help translate the manual into a different language,

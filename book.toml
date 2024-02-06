@@ -27,6 +27,7 @@ exclude = [
   'stackexchange.com',
   'https://github.com/open-spaced-repetition/fsrs4anki#add-on-compatibility',
   'support.google.com',
+  'https://wikiwiki.jp/rage2050/',
 ]
 
 [output.html.fold]
