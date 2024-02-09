@@ -175,5 +175,3 @@ For info on the custom sync server option, see [this section](./sync-server.md).
 ## Backups
 
 Please see [this](backups.md#automatic-backups) section of the manual.
-
----
