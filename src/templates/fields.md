@@ -67,8 +67,7 @@ each line, you would use
 
 ## Text to Speech for individual fields
 
-This feature requires Anki 2.1.20, or AnkiMobile 2.0.56. AnkiDroid does
-not currently support this method.
+This feature requires Anki 2.1.20, AnkiMobile 2.0.56 or AnkiDroid 2.17.
 
 To have Anki read the Front field in a US English voice, you can place
 the following in your card template:
