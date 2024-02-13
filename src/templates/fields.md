@@ -121,7 +121,7 @@ using the `cloze-only` filter, like so:
 
     {{tts en_US:cloze-only:Text}}
 
-The cloze-only filter is supported in Anki 2.1.29+ and AnkiMobile 2.0.65+.
+The cloze-only filter is supported in Anki 2.1.29+, AnkiMobile 2.0.65+, and AnkiDroid 2.17+
 
 You can enable Anki's TTS feature on supported platforms
 
