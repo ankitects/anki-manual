@@ -121,13 +121,11 @@ using the `cloze-only` filter, like so:
 
     {{tts en_US:cloze-only:Text}}
 
-The cloze-only filter is supported in Anki 2.1.29+, AnkiMobile 2.0.65+, and AnkiDroid 2.17+
-
-You can enable Anki's TTS feature on supported platforms
+The cloze-only filter is supported in Anki 2.1.29+, AnkiMobile 2.0.65+, and AnkiDroid 2.17+.
 
 ## Text to Speech for multiple fields and static text
 
-This feature requires Anki 2.1.50+, AnkiMobile 2.0.84+, or AnkiDroid 2.17+
+This feature requires Anki 2.1.50+, AnkiMobile 2.0.84+, or AnkiDroid 2.17+.
 
 If you want TTS to read multiple fields or static text included in the template, you can use the following:
 
