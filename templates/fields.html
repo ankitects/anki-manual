@@ -221,8 +221,7 @@ each line, you would use</p>
 {{Field 2}}
 </code></pre>
 <h2 id="text-to-speech-for-individual-fields"><a class="header" href="#text-to-speech-for-individual-fields">Text to Speech for individual fields</a></h2>
-<p>This feature requires Anki 2.1.20, or AnkiMobile 2.0.56. AnkiDroid does
-not currently support this method.</p>
+<p>This feature requires Anki 2.1.20, AnkiMobile 2.0.56 or AnkiDroid 2.17.</p>
 <p>To have Anki read the Front field in a US English voice, you can place
 the following in your card template:</p>
 <pre><code>{{tts en_US:Front}}
@@ -270,38 +269,9 @@ does not make those voices available to other applications.</p>
 using the <code>cloze-only</code> filter, like so:</p>
 <pre><code>{{tts en_US:cloze-only:Text}}
 </code></pre>
-<p>The cloze-only filter is supported in Anki 2.1.29+ and AnkiMobile 2.0.65+.</p>
-<p>You can enable Anki's TTS feature on supported platforms while falling back to <a href="https://docs.ankidroid.org/#_workarounds">AnkiDroid's own method</a>. Until AnkiDroid
-supports the {{tts:FieldName}} syntax, it will render these fields as
-text, while other platforms will render a (re)play audio button. In order
-to temporarily fix this discrepancy between platforms, we can use the
-following in our templates:</p>
-<pre><code class="language-html">&lt;tts service=&quot;android&quot; voice=&quot;en_US&quot;&gt;{{Front}}&lt;/tts&gt;
-
-&lt;span class=&quot;ankitts&quot;&gt;{{tts en_US:Front}}&lt;/span&gt;
-
-&lt;button
-  class=&quot;ankidroidTtsButton&quot;
-  onclick=&quot;
-AnkiDroidJS.ankiTtsSpeak('{{Front}}');&quot;
-&gt;
-  Play TTS
-&lt;/button&gt;
-</code></pre>
-<p>Then in the styling section:</p>
-<pre><code class="language-css">/*Anki (desktop) TTS needs to be hidden because AnkiDroid currently renders it as text instead of a play button like desktop.*/
-.android .ankitts {
-  display: none;
-}
-
-/*The AnkiDroid tts button won't work on other platforms because it uses the JS API, therefore it should be hidden*/
-html:not(.android) .ankidroidTtsButton {
-  display: none;
-}
-</code></pre>
+<p>The cloze-only filter is supported in Anki 2.1.29+, AnkiMobile 2.0.65+, and AnkiDroid 2.17+.</p>
 <h2 id="text-to-speech-for-multiple-fields-and-static-text"><a class="header" href="#text-to-speech-for-multiple-fields-and-static-text">Text to Speech for multiple fields and static text</a></h2>
-<p>This feature requires Anki 2.1.50+ or AnkiMobile 2.0.84+ . AnkiDroid does
-not currently support this method.</p>
+<p>This feature requires Anki 2.1.50+, AnkiMobile 2.0.84+, or AnkiDroid 2.17+.</p>
 <p>If you want TTS to read multiple fields or static text included in the template, you can use the following:</p>
 <pre><code>[anki:tts lang=en_US] This text should be read. Here is {{Field1}} and {{Field2}}[/anki:tts]
 
