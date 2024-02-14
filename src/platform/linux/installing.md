@@ -19,6 +19,8 @@ sudo apt install libxcb-xinerama0 libxcb-cursor0 libnss3
 
 If Anki fails to start after installing, you may be [missing other libraries](./missing-libraries.md).
 
+If you're on Ubuntu 24.04, please see [this thread](https://forums.ankiweb.net/t/issues-running-on-ubuntu-24-04/40974).
+
 Anki's build system only supports glibc, so musl-based distros are not currently supported.
 
 ## Installing
