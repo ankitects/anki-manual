@@ -130,6 +130,9 @@ note type (and opens the add window to the last-used note type when you choose
 Add). This may be more convenient if you always use a single note type for each
 deck.
 
+The last used deck/notetype is updated when you add a card. If you change the deck
+and close the add window without adding a card, it won't be saved.
+
 ### Browsing
 
 **Default search text**\
