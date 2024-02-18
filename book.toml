@@ -25,6 +25,7 @@ exclude = [
   'microsoft.com',
   'twitter.com',
   'stackexchange.com',
+  'stackoverflow.com',
   'https://github.com/open-spaced-repetition/fsrs4anki#add-on-compatibility',
   'support.google.com',
   'https://wikiwiki.jp/rage2050/',
