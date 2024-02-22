@@ -7,6 +7,7 @@
 Recently there have been some reports of Anki failing to appear, without
 any error message showing up. If you run into this situation, you can either:
 
+- Some users reported that the problems stopped after they disconnected multiple/external displays.
 - Install the [latest Anki version](https://apps.ankiweb.net/) (try both qt6 and qt5)
 - Or you can try [adjusting your decimal separator](https://forums.ankiweb.net/t/windows-update-broke-anki/1822/75) if it is not a period.
 - Or you can try the old 2.1.35-alternate build of Anki.
