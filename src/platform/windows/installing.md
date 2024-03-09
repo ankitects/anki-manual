@@ -68,3 +68,7 @@ If you encounter any issues when installing or starting Anki, please see the
 following pages:
 - [Installation Issues](https://docs.ankiweb.net/platform/windows/installation-issues.html)
 - [Startup Issues](https://docs.ankiweb.net/platform/windows/startup-issues.html)
+- [Display Issues](https://docs.ankiweb.net/platform/windows/display-issues.html)
+- [Copy and Paste Issues](https://docs.ankiweb.net/platform/windows/copy-and-paste.html)
+- [Text Size](https://docs.ankiweb.net/platform/windows/text-size.html)
+- [Permission Problems](https://docs.ankiweb.net/platform/windows/permission-problems.html)
