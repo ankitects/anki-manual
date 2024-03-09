@@ -20,7 +20,7 @@ To install Anki:
    for how to choose between -qt5 and -qt6.
 2. Save the installer to your desktop or downloads folder.
 3. Double-click on the installer to run it. If you see an error
-   message, please see the [installation issues page](https://github.com/ankitects/anki-manual/blob/main/src/platform/windows/installation-issues.md).
+   message, please see the [installation issues page](https://docs.ankiweb.net/platform/windows/installation-issues.html).
 4. Once Anki is installed, double-click on the new star icon on your
    desktop to start Anki.
 
@@ -66,5 +66,5 @@ you can download older Anki versions from the [releases page](https://github.com
 
 If you encounter any issues when installing or starting Anki, please see the
 following pages:
-- [Installation Issues](https://docs.ankiweb.net/platform/windows/installation-issues.html)
-- [Startup Issues](https://docs.ankiweb.net/platform/windows/startup-issues.html)
+- [Installation Issues](installation-issues.md)
+- [Startup Issues](startup-issues.md)
