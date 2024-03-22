@@ -87,8 +87,8 @@ cargo install --path rslib/sync
 
 ## Multiple Users
 
-SYNC_USER1 declares the first user and password, and must be set.
-You can optionally declare SYNC_USER2, SYNC_USER3 and so on, if you
+`SYNC_USER1` declares the first user and password, and must be set.
+You can optionally declare `SYNC_USER2`, `SYNC_USER3` and so on, if you
 wish to set up multiple accounts.
 
 ## Storage Location
@@ -120,10 +120,11 @@ If you're using AnkiMobile and are unable to connect to a server on your local
 network, please go into the iOS settings, locate Anki near the bottom, and
 toggle "Allow Anki to access local network" off and then on again.
 
-Older desktop clients required you to define SYNC_ENDPOINT and SYNC_ENDPOINT_MEDIA.
-If using an older client, you'd put it as e.g. `http://192.168.1.200:8080/sync/`
-and `http://192.168.1.200:8080/msync/` respectively. AnkiDroid clients before 2.16
-require separate configuration for the two endpoints.
+Older desktop clients required you to define `SYNC_ENDPOINT` and
+`SYNC_ENDPOINT_MEDIA`.  If using an older client, you'd put it as e.g.
+`http://192.168.1.200:8080/sync/` and `http://192.168.1.200:8080/msync/`
+respectively. AnkiDroid clients before 2.16 require separate configuration for
+the two endpoints.
 
 ## Reverse Proxies
 
@@ -138,9 +139,9 @@ enabled, or you'll get an "error code -9836".
 ## Large Requests
 
 The standard AnkiWeb limit on uploads is applied by default. You can optionally
-set MAX_SYNC_PAYLOAD_MEGS to something greater than 100 if you wish to increase
-the limit. Bear in mind that if you're using a reverse proxy, you may need to
-adjust the limit there as well.
+set `MAX_SYNC_PAYLOAD_MEGS` to something greater than 100 if you wish to
+increase the limit. Bear in mind that if you're using a reverse proxy, you may
+need to adjust the limit there as well.
 
 ## Contributing Changes
 
