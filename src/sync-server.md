@@ -91,6 +91,18 @@ cargo install --path rslib/sync
 You can optionally declare `SYNC_USER2`, `SYNC_USER3` and so on, if you
 wish to set up multiple accounts.
 
+## Hashed Passwords
+
+Advanced users may wish to use hashed passwords instead of plain text
+passwords. If you wish to do this, you'll need to use a separate tool (such as
+[this one](https://git.sr.ht/~laalsaas/pbkdf2-password-hash)) to generate a
+password hash.  You can then tell the server to expect hashed passwords by
+setting the env var PASSWORDS_HASHED to 1 (or any other value).
+
+When hashed passwords are used, SYNC_USER variables are expected to be in
+username:password_hash format, where password_hash is a hash of the password in
+the PHC Format.
+
 ## Storage Location
 
 The server needs to store a copy of your collection and media in a folder.
