@@ -6555,9 +6555,18 @@ Make sure you have Rustup installed.</p>
 cargo install --path rslib/sync
 </code></pre>
 <h2 id="multiple-users"><a class="header" href="#multiple-users">Multiple Users</a></h2>
-<p>SYNC_USER1 declares the first user and password, and must be set.
-You can optionally declare SYNC_USER2, SYNC_USER3 and so on, if you
+<p><code>SYNC_USER1</code> declares the first user and password, and must be set.
+You can optionally declare <code>SYNC_USER2</code>, <code>SYNC_USER3</code> and so on, if you
 wish to set up multiple accounts.</p>
+<h2 id="hashed-passwords"><a class="header" href="#hashed-passwords">Hashed Passwords</a></h2>
+<p>Advanced users may wish to use hashed passwords instead of plain text
+passwords. If you wish to do this, you'll need to use a separate tool (such as
+<a href="https://git.sr.ht/~laalsaas/pbkdf2-password-hash">this one</a>) to generate a
+password hash.  You can then tell the server to expect hashed passwords by
+setting the env var PASSWORDS_HASHED to 1 (or any other value).</p>
+<p>When hashed passwords are used, SYNC_USER variables are expected to be in
+username:password_hash format, where password_hash is a hash of the password in
+the PHC Format.</p>
 <h2 id="storage-location"><a class="header" href="#storage-location">Storage Location</a></h2>
 <p>The server needs to store a copy of your collection and media in a folder.
 By default it is ~/.syncserver; you can change this by defining
@@ -6579,10 +6588,11 @@ point each of your Anki clients to the address, e.g something like
 <p>If you're using AnkiMobile and are unable to connect to a server on your local
 network, please go into the iOS settings, locate Anki near the bottom, and
 toggle &quot;Allow Anki to access local network&quot; off and then on again.</p>
-<p>Older desktop clients required you to define SYNC_ENDPOINT and SYNC_ENDPOINT_MEDIA.
-If using an older client, you'd put it as e.g. <code>http://192.168.1.200:8080/sync/</code>
-and <code>http://192.168.1.200:8080/msync/</code> respectively. AnkiDroid clients before 2.16
-require separate configuration for the two endpoints.</p>
+<p>Older desktop clients required you to define <code>SYNC_ENDPOINT</code> and
+<code>SYNC_ENDPOINT_MEDIA</code>.  If using an older client, you'd put it as e.g.
+<code>http://192.168.1.200:8080/sync/</code> and <code>http://192.168.1.200:8080/msync/</code>
+respectively. AnkiDroid clients before 2.16 require separate configuration for
+the two endpoints.</p>
 <h2 id="reverse-proxies"><a class="header" href="#reverse-proxies">Reverse Proxies</a></h2>
 <p>If using a reverse proxy to provide HTTPS access (e.g. nginx), and binding to a subpath
 (e.g. <code>http://example.com/custom/</code> -&gt; <code>http://localhost:8080/</code>), you must make sure to
@@ -6592,9 +6602,9 @@ instead, it will not work.</p>
 enabled, or you'll get an &quot;error code -9836&quot;.</p>
 <h2 id="large-requests"><a class="header" href="#large-requests">Large Requests</a></h2>
 <p>The standard AnkiWeb limit on uploads is applied by default. You can optionally
-set MAX_SYNC_PAYLOAD_MEGS to something greater than 100 if you wish to increase
-the limit. Bear in mind that if you're using a reverse proxy, you may need to
-adjust the limit there as well.</p>
+set <code>MAX_SYNC_PAYLOAD_MEGS</code> to something greater than 100 if you wish to
+increase the limit. Bear in mind that if you're using a reverse proxy, you may
+need to adjust the limit there as well.</p>
 <h2 id="contributing-changes"><a class="header" href="#contributing-changes">Contributing Changes</a></h2>
 <p>Because this server is bundled with Anki, simplicity is a design goal - it is
 targeted at individual/family use, and PRs that add things like a REST API or
