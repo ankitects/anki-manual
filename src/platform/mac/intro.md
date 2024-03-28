@@ -7,5 +7,4 @@ For instructions on how to install or upgrade Anki on macOS, please see:
 
 ## Problems
 
-If you encounter any issues when installing or starting Anki, please see:
-- [Display Issues](display-issues.md)
+If you encounter any issues when installing or starting Anki, please see the subsections in the table of contents.
