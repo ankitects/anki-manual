@@ -68,3 +68,9 @@ If you encounter any issues when installing or starting Anki, please see the
 following pages:
 - [Installation Issues](installation-issues.md)
 - [Startup Issues](startup-issues.md)
+- [Display Issues](display-issues.md)
+- [Permission Problems](permission-problems.md)
+
+If you encounter any interface issues when using Anki, please see the following pages:
+- [Copy and Paste Issues](copy-and-paste.md)
+- [Text Size Issues](text-size.md)
