@@ -74,7 +74,7 @@ There are four rating buttons when learning:
 
 - **Hard** repeats the current step.
   - If the card is on the first (and the only) step, the delay is 50% larger than the step. But, this delay is at most one day larger than the step.
-  - If the card is on the first step and the you have configured more than one step, the delay will be the average of Again and Good, i.e., the average of the first two steps.
+  - If the card is on the first step and you have configured more than one step, the delay will be the average of Again and Good, i.e., the average of the first two steps.
   - If the card is on any subsequent step, Hard repeats the previous delay.
 
 - **Good** moves the card to the [next step](deck-options.md#learning-steps). If the card was on the final
@@ -93,7 +93,7 @@ There are four rating buttons when learning:
 When cards are seen for the first time, they start at step one. This
 means answering **Good** on a card for the first time will show it one
 more time in 10 minutes, and the initial 1 minute step will be skipped.
-If you push Again, though, the card will come back in 1 minute.
+If you push **Again**, though, the card will come back in 1 minute.
 
 You can use the <kbd>1</kbd>, <kbd>2</kbd>, <kbd>3</kbd> and <kbd>4</kbd> keys on your keyboard to select a particular
 button, where <kbd>1</kbd> is **Again**. Pressing <kbd>Space</kbd> or <kbd>Enter</kbd> will select

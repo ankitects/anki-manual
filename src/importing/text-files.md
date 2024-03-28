@@ -244,5 +244,9 @@ in to update the existing notes.
 Please note that the GUID is intended to be created by Anki. If you are creating
 your own IDs, such as MYNOTE0001, then it's recommended that you place the IDs
 in the first field, instead of assigning them to Anki's internal GUID. When importing,
-Anki is able to use the first field for duplicate checking as well, so you do not
+Anki is able to use either the first field or the GUID for duplicate checking, so you do not
 need to make IDs a GUID in order to be able to update your notes.
+
+One other thing to note is that the 'duplicate' option will not work for rows that have a
+non-empty GUID. If a GUID is provided, and already exists in the collection, a duplicate will
+not be created.
