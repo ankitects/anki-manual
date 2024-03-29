@@ -64,6 +64,10 @@ To prevent accidental data loss, deletions will only sync to other devices if th
 media is fully in sync. If you delete files before your device is fully in sync, and the deleted
 files are already on AnkiWeb, they will be downloaded the next time you sync.
 
+If you have accidentally deleted media files, and want to restore them, open the preferences
+and log out. The next time you sync, Anki will restore any deleted files, if they are available
+on AnkiWeb still.
+
 If you’re running Anki off a [USB flash drive](files.md#running-from-a-flash-drive), you should use an NTFS
 file system, as Anki may not be able to detect media changes on a FAT32
 filesystem.
