@@ -150,6 +150,10 @@ filtered decks only
 `-deck:filtered`\
 normal decks only
 
+`preset:"Default"`\
+cards in all decks that use the 'Default' deck options preset.
+Requires Anki 23.10+.
+
 `card:forward`\
 search for Forward cards
 
