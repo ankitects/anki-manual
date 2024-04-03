@@ -51,7 +51,7 @@ These options allow you to remove some unnecessary elements from the screen duri
 ### Scheduler
 
 **v3 Scheduler**\
-Using the Anki v3 scheduler is recommended if you don't use AnkiDroid. It's documented here:\
+As of Anki/AnkiMobile 23.10, and AnkiDroid 2.17, the v3 scheduler is the default and only option. It's documented here:\
 <https://faqs.ankiweb.net/the-2021-scheduler.html>
 
 **Show learning cards with larger steps before**\
