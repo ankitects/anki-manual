@@ -50,19 +50,6 @@ These options allow you to remove some unnecessary elements from the screen duri
 
 ### Scheduler
 
-**v3 Scheduler**\
-As of Anki/AnkiMobile 23.10, and AnkiDroid 2.17, the v3 scheduler is the default and only option. It's documented here:\
-<https://faqs.ankiweb.net/the-2021-scheduler.html>
-
-**Show learning cards with larger steps before**\
-Only shown when the 2.1 scheduler is enabled. Normally learning cards with a 1+
-day delay are shown after normal reviews. If checked, Anki will show them before
-normal reviews instead.
-
-**Legacy timezone handling**\
-Please see here:
-<https://faqs.ankiweb.net/timezone-handling-changes.html>
-
 **Next day starts at**\
 Controls when Anki should start showing the next day’s cards. The default
 setting of 4AM ensures that if you’re studying around midnight, you won’t have
@@ -86,10 +73,6 @@ as a 30 minute study session) into smaller blocks. If you set the timebox time
 limit to a non-zero number of minutes, Anki will periodically show you how many
 cards you’ve managed to study during the prescribed time limit.
 
-**Mix new cards and reviews**:
-Only shown when the v1/v2 schedulers are enabled. This drop-down box controls when
-new cards are shown: either mixed with, before, or after all reviews.
-
 ### Review
 
 **Show play buttons on cards with audio**\
@@ -105,6 +88,9 @@ Disable this option to hide the card count at the bottom of the screen.
 
 **Show next review time above answer buttons**\
 Useful to know how far in the future your cards are being pushed.
+
+**Spacebar (or enter) also answers card**\
+Defines whether a press on the space bar (or the enter key) also answers card.
 
 ## Editing
 
