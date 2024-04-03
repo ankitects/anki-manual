@@ -90,7 +90,7 @@ Disable this option to hide the card count at the bottom of the screen.
 Useful to know how far in the future your cards are being pushed.
 
 **Spacebar (or enter) also answers card**\
-Defines whether a press on the space bar (or the enter key) also answers card.
+Defines whether a press on the space bar (or the enter key) also answers cards.
 
 ## Editing
 
