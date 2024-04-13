@@ -429,8 +429,7 @@ SuperMemo 2 (SM2) scheduler. By more accurately determining when you are likely
 to forget, it can help you remember more material in the same amount of time.
 This setting is shared by all deck presets.
 
-FSRS is currently in the advanced section, as it was only just integrated into
-Anki in the 23.10 release. When you enable the setting, some new options will
+When you enable the setting, some new options will
 become available, and SM-2 specific settings, such as "Graduating interval",
 "Easy bonus", etc, will be hidden.
 
@@ -528,6 +527,9 @@ By default, parameters will be calculated from the review history of all
 decks using the current preset. You can optionally adjust the search
 before calculating the parameters, if you'd like to alter which cards
 are used for optimizing the parameters.
+
+You can optimize the parameters for all of your presets at once, by clicking on the
+down arrow in the top right, then choosing "Optimize all presets".
 
 **Evaluate FSRS parameters**
 
