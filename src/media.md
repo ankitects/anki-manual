@@ -32,7 +32,7 @@ missing from your media folder. It also allows you:
 This tool does not scan question or answer
 templates, which is why you can’t place media references to fields in
 the template. If you need a static image or sound on every card, name it
-with a leading \_ (e.g., `\_dog.jpg`) to tell Anki to ignore it when
+with a leading \_ (e.g., `_dog.jpg`) to tell Anki to ignore it when
 checking for media. If you delete media using the unused media check,
 Anki will move it into your operating system’s trash folder, so you can
 recover if you accidentally delete media that shouldn’t have been
