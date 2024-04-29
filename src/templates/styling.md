@@ -417,8 +417,6 @@ document.getElementById() rather than doing things like
 document.write().
 
 Functions like window.alert may not be available. Anki will write
-javascript errors to the terminal, so you'll need to [view the console]
-(https://addon-docs.ankiweb.net/console-output.html#console-output) to
+javascript errors to the terminal, so you'll need to [view the console](https://addon-docs.ankiweb.net/console-output.html#console-output) to
 see them. To debug issues with JavaScript, you can use Chrome's
 [inspector](https://addon-docs.ankiweb.net/debugging.html#webviews).
-
