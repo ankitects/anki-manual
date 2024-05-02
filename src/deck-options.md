@@ -144,7 +144,7 @@ please keep in mind that the new count is capped by the review count by default.
 review limit is set to 200, and you have 190 reviews waiting, a maximum of 10
 new cards will be introduced. If your review limit has been reached, no new
 cards will be shown. If you have a backlog of reviews and still want to
-introduce new cards, you can do so by suspending the reviews,or increasing your
+introduce new cards, you can do so by suspending the reviews, or increasing your
 review limit. That said, it is recommended you hold off on new cards until you
 catch up instead, as introducing more new cards when you're behind will only
 make the backlog worse.
