@@ -108,7 +108,7 @@ the way the limits are applied depends on the scheduler version.
 For more information, please see the [v3 scheduler](https://faqs.ankiweb.net/the-2021-scheduler.html#daily-limits) page.
 
 Studying new cards will temporarily increase the number of reviews you need to
-do a day, as freshly learned material needs to be repeated a number of times
+do a day, as freshly learnt material needs to be repeated a number of times
 before the delay between repetitions can increase appreciably. If you are
 consistently learning 20 new cards a day, you can expect your daily reviews to
 be roughly about 200 cards/day. You can decrease the reviews required by
@@ -122,7 +122,7 @@ become overwhelmed by the reviews required.
 Allows you to set an upper limit on the number of reviews to show each day.
 When this limit is reached, Anki will not show any more review cards for the
 day, even if there are some waiting. If you study consistently, this setting can
-help to smooth out occasional peaks in due card counts and can save you from a
+help to smooth out occasional peaks in due card counts, and can save you from a
 heart attack when returning to Anki after a week off. When reviews have been
 hidden due to this option, a message will appear in the congratulations screen,
 suggesting you consider increasing the limit if you have time.
@@ -144,12 +144,12 @@ please keep in mind that the new count is capped by the review count by default.
 review limit is set to 200, and you have 190 reviews waiting, a maximum of 10
 new cards will be introduced. If your review limit has been reached, no new
 cards will be shown. If you have a backlog of reviews and still want to
-introduce new cards, you can do so by suspending the reviews or increasing your
+introduce new cards, you can do so by suspending the reviews,or increasing your
 review limit. That said, it is recommended you hold off on new cards until you
 catch up instead, as introducing more new cards when you're behind will only
 make the backlog worse.
 
-From Anki 2.1.61 this feature is optional and can be deactivated globally from the
+From Anki 2.1.61 this feature is optional, and can be deactivated globally from the
 deck options screen.
 
 ### Per-Deck Daily Limits
@@ -305,11 +305,11 @@ Controls how Anki gathers cards from each subdeck. The options are:
 - Deck, then random notes: gather cards from each deck in order, starting from the top.
   Cards from each deck are gathered randomly.
 
-- Ascending position: gathers cards by ascending position (due #), which is typically the oldest-added first.
+- Ascending position: gather cards by ascending position (due #), which is typically the oldest-added first.
 
-- Descending position: gathers cards by descending position (due #), which is typically the latest-added first.
+- Descending position: gather cards by descending position (due #), which is typically the latest-added first.
 
-- Random notes: gathers cards of randomly selected notes. When sibling burying is disabled, this allows all cards of a note to be seen in a session (eg. both a front->back and back->front card)
+- Random notes: gather cards of randomly selected notes. When sibling burying is disabled, this allows all cards of a note to be seen in a session (eg. both a front->back and back->front card)
 
 - Random cards: gathers cards completely randomly.
 
