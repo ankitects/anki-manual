@@ -3362,10 +3362,10 @@ just want to modify certain options, keeping the rest as they are.</li>
 a one-way sync.</li>
 <li><strong>Save to all subdecks</strong>. Like <em>Save</em>, but also assigns the selected preset to all
 subdecks of the currently selected deck.</li>
-<li><strong>Optimize all presets</strong>. When FSRS is enabled, this allows you to optimize parameters of all presets at once.</li>
+<li><strong>Optimize all presets</strong>. When FSRS is enabled, this allows you to optimize the parameters of all presets at once.</li>
 </ul>
 <p>Deck Options are not retroactive. For example, if you change an option that
-controls the delay after failing a card, cards that you failed prior to
+controls the delay after failing a card, cards that you failed before 
 changing the option will have the old delay, not the new one.</p>
 <h2 id="subdecks"><a class="header" href="#subdecks">Subdecks</a></h2>
 <p>If your deck has subdecks, each deck can optionally be assigned a different preset.
@@ -3383,7 +3383,7 @@ deck you select to study, not the deck of the current card.</li>
     - Card B1
     - Card B2
 </code></pre>
-<p>Preset 1 and 2 are identical, with two exceptions:</p>
+<p>Presets 1 and 2 are identical, with two exceptions:</p>
 <ul>
 <li>Preset 1:</li>
 <li>New Cards - Learning steps: 1m 10m</li>
@@ -3475,7 +3475,7 @@ between them. One or more delays, separated by spaces must be entered.
 Each time you press <code>Good</code> during review, the card moves to the next step.</p>
 <p>For example, let's say that your learning steps are <strong>1m 10m 1d</strong>.</p>
 <ul>
-<li>When you press <code>Again</code>, the card goes back to first step, and will be shown
+<li>When you press <code>Again</code>, the card goes back to the first step, and will be shown
 again approximately 1 minute later.</li>
 <li>When you press <code>Good</code> on a new card, or a card answered <code>Again</code>, it will move
 to the next step, and be shown again in approximately 10 minutes.</li>
@@ -3536,7 +3536,7 @@ in 10 minutes. This behaviour can be customized with the options listed below.</
 <h3 id="relearning-steps"><a class="header" href="#relearning-steps">Relearning Steps</a></h3>
 <p>The same as 'learning steps', but for forgotten reviews. When you fail a card
 (press <code>Again</code>), the card enters the relearning phase, and before it becomes a
-review card again, you will have to pass all the relearning steps — or, alternatively, press
+review card again, you will have to pass all the relearning steps — or, press
 <code>Easy</code> on the card.</p>
 <p>If you leave the steps blank, the card will skip relearning, and will be assigned
 a new review delay.</p>
@@ -3570,20 +3570,20 @@ above, you can manually
 ways.</p>
 </li>
 <li>
-<p>Deck, then random notes: gathers cards from each deck in order, starting from the top.
+<p>Deck, then random notes: gather cards from each deck in order, starting from the top.
 Cards from each deck are gathered randomly.</p>
 </li>
 <li>
-<p>Ascending position: gathers cards by ascending position (due #), which is typically the oldest-added first.</p>
+<p>Ascending position: gather cards by ascending position (due #), which is typically the oldest-added first.</p>
 </li>
 <li>
-<p>Descending position: gathers cards by descending position (due #), which is typically the latest-added first.</p>
+<p>Descending position: gather cards by descending position (due #), which is typically the latest-added first.</p>
 </li>
 <li>
-<p>Random notes: gathers cards of randomly selected notes. When sibling burying is disabled, this allows all cards of a note to be seen in a session (eg. both a front-&gt;back and back-&gt;front card)</p>
+<p>Random notes: gather cards of randomly selected notes. When sibling burying is disabled, this allows all cards of a note to be seen in a session (eg. both a front-&gt;back and back-&gt;front card)</p>
 </li>
 <li>
-<p>Random cards: gathers cards completely randomly.</p>
+<p>Random cards: gather cards completely randomly.</p>
 </li>
 </ul>
 <h3 id="new-card-sort-order"><a class="header" href="#new-card-sort-order">New Card Sort Order</a></h3>
@@ -3617,7 +3617,7 @@ first), or at the start (allowing more time to review forgotten ones).</p>
 <ul>
 <li>
 <p>Due date, then random: The default option prioritizes cards that have been waiting
-longer, and it's the recomended option when you are up to date, or when you only have a small
+longer, and it's the recommended option when you are up to date, or when you only have a small
 backlog. If you have taken an extended break or have fallen behind in your reviews,
 you may want to consider changing the sort order temporarily.</p>
 </li>
