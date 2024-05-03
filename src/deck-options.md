@@ -45,10 +45,10 @@ arrow icon in the top right of the Deck Options window. The options are:
   a one-way sync.
 - **Save to all subdecks**. Like _Save_, but also assigns the selected preset to all
   subdecks of the currently selected deck.
-- **Optimize all presets**. When FSRS is enabled, this allows you to optimize parameters of all presets at once.
+- **Optimize all presets**. When FSRS is enabled, this allows you to optimize the parameters of all presets at once.
 
 Deck Options are not retroactive. For example, if you change an option that
-controls the delay after failing a card, cards that you failed prior to
+controls the delay after failing a card, cards that you failed before 
 changing the option will have the old delay, not the new one.
 
 ## Subdecks
@@ -69,7 +69,7 @@ For example, let's say you have this collection:
         - Card B1
         - Card B2
 
-Preset 1 and 2 are identical, with two exceptions:
+Presets 1 and 2 are identical, with two exceptions:
 
 - Preset 1:
 - New Cards - Learning steps: 1m 10m
@@ -180,7 +180,7 @@ Each time you press `Good` during review, the card moves to the next step.
 
 For example, let's say that your learning steps are **1m 10m 1d**.
 
-- When you press `Again`, the card goes back to first step, and will be shown
+- When you press `Again`, the card goes back to the first step, and will be shown
   again approximately 1 minute later.
 - When you press `Good` on a new card, or a card answered `Again`, it will move
   to the next step, and be shown again in approximately 10 minutes.
@@ -257,7 +257,7 @@ in 10 minutes. This behaviour can be customized with the options listed below.
 
 The same as 'learning steps', but for forgotten reviews. When you fail a card
 (press `Again`), the card enters the relearning phase, and before it becomes a
-review card again, you will have to pass all the relearning steps — or, alternatively, press
+review card again, you will have to pass all the relearning steps — or, press
 `Easy` on the card.
 
 If you leave the steps blank, the card will skip relearning, and will be assigned
@@ -302,16 +302,16 @@ Controls how Anki gathers cards from each subdeck. The options are:
   [reposition](https://docs.ankiweb.net/browsing.html#cards) cards in different
   ways.
 
-- Deck, then random notes: gathers cards from each deck in order, starting from the top.
+- Deck, then random notes: gather cards from each deck in order, starting from the top.
   Cards from each deck are gathered randomly.
 
-- Ascending position: gathers cards by ascending position (due #), which is typically the oldest-added first.
+- Ascending position: gather cards by ascending position (due #), which is typically the oldest-added first.
 
-- Descending position: gathers cards by descending position (due #), which is typically the latest-added first.
+- Descending position: gather cards by descending position (due #), which is typically the latest-added first.
 
-- Random notes: gathers cards of randomly selected notes. When sibling burying is disabled, this allows all cards of a note to be seen in a session (eg. both a front->back and back->front card)
+- Random notes: gather cards of randomly selected notes. When sibling burying is disabled, this allows all cards of a note to be seen in a session (eg. both a front->back and back->front card)
 
-- Random cards: gathers cards completely randomly.
+- Random cards: gather cards completely randomly.
 
 ### New Card Sort Order
 
@@ -343,7 +343,7 @@ first), or at the start (allowing more time to review forgotten ones).
 Controls how review cards are sorted while reviewing. The options are:
 
 - Due date, then random: The default option prioritizes cards that have been waiting
-  longer, and it's the recomended option when you are up to date, or when you only have a small
+  longer, and it's the recommended option when you are up to date, or when you only have a small
   backlog. If you have taken an extended break or have fallen behind in your reviews,
   you may want to consider changing the sort order temporarily.
 - Due date, then deck. This also prioritizes cards that have been waiting
