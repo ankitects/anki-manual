@@ -311,7 +311,7 @@ Controls how Anki gathers cards from each subdeck. The options are:
 
 - Random notes: gather cards of randomly selected notes. When sibling burying is disabled, this allows all cards of a note to be seen in a session (eg. both a front->back and back->front card)
 
-- Random cards: gathers cards completely randomly.
+- Random cards: gather cards completely randomly.
 
 ### New Card Sort Order
 
