@@ -11,7 +11,7 @@ and the Add Notes window will appear.
 ![Add Screen](media/add_screen.png)
 
 The top left of the window shows us the current [note type](getting-started.md#note-types). If it does
-not say "Basic," then you may have added some note types when you
+not say "Basic", then you may have added some note types when you
 downloaded a shared deck. The text below assumes that "Basic" is
 selected.
 
