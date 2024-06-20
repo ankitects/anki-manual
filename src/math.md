@@ -33,6 +33,14 @@ familiar with TeX formatting, please see [this cheatsheet](https://math.meta.sta
 Please note that point 2 does not apply in Anki - Anki uses `\(` and
 `\)` for inline equations, and `\[` and `\]` for display equations.
 
+Also note, when creating cloze deletions within a MathJax expression,
+it is crucial how curly braces are used (this is not 
+explained in the Stack Exchange cheatsheet). Successive curly braces
+`}}` will be read as being part of the cloze deletion syntax. If 
+your MathJax expression needs succesive curly braces, add a space in-
+between them `} }`. This will prevent your expression from breaking
+when trying to create clozes.
+
 If you want to use newlines in a MathJax expression, please use
 <kbd>Shift</kbd>+<kbd>Enter</kbd> instead of just <kbd>Enter</kbd>, as a normal newline will prevent
 MathJax from working correctly.
