@@ -64,7 +64,7 @@ LaTeX code can contain malicious commands that can read or write non-Anki
 data on your computer. For this reason, recent Anki versions will refuse to
 generate LaTeX images by default.
 
-If you wish to use LaTeX on your own cards, you will need to enable the 'Render LaTeX' option in the preferences screen, to tell Anki to generate the images.
+If you wish to use LaTeX on your own cards, you will need to enable the 'Generate LaTeX images' option in the preferences screen.
 
 **We strongly recommend you do not enable this option if you use shared decks, or think
 you will import shared decks in the future, as you are potentially giving any shared
