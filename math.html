@@ -152,6 +152,7 @@
 <li><a href="#mathjax">MathJax</a></li>
 <li><a href="#latex">LaTeX</a>
 <ul>
+<li><a href="#security-warning">Security Warning</a></li>
 <li><a href="#assumed-knowledge">Assumed Knowledge</a></li>
 <li><a href="#webmobile">Web/Mobile</a></li>
 <li><a href="#example">Example</a></li>
@@ -213,6 +214,17 @@ computer version of Anki - though once generated, the images can be
 displayed by mobile clients. Because of the extra complexity LaTeX
 brings, it is only recommended for users that need more features than
 MathJax provides.</p>
+<h3 id="security-warning"><a class="header" href="#security-warning">Security Warning</a></h3>
+<p>LaTeX code can contain malicious commands that can read or write non-Anki
+data on your computer. For this reason, recent Anki versions will refuse to
+generate LaTeX images by default.</p>
+<p>If you wish to use LaTeX on your own cards, you will need to enable the 'Render LaTeX' option in the preferences screen, to tell Anki to generate the images.</p>
+<p><strong>We strongly recommend you do not enable this option if you use shared decks, or think
+you will import shared decks in the future, as you are potentially giving any shared
+deck author access to your computer</strong>.</p>
+<p>You do not need to enable this option for shared decks. If a shared deck author has
+correctly generated all the images prior to them sharing the deck, the images should
+already be available.</p>
 <h3 id="assumed-knowledge"><a class="header" href="#assumed-knowledge">Assumed Knowledge</a></h3>
 <p>Anki’s LaTeX support is not turn-key: it is assumed that you know how to
 use LaTeX already, and that you have it installed. If you have no
