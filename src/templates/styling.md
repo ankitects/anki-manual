@@ -250,6 +250,8 @@ custom template to be used only in the browser, so you can include only
 the important fields and change the order if you desire. The syntax is
 the same as in standard card templates.
 
+While using this option, if the text in the question column is repeated in the beginning of the answer column, Anki will only show the text in the question column. For example, if the question is "People in Ladakh speak", and the answer is "People in Ladakh speak Ladakhi", the answer column will only show you the word "Ladakhi" and leave out the rest.
+
 ## Platform-Specific CSS
 
 Anki defines some special CSS classes that allow you to define different
