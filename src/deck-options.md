@@ -426,7 +426,7 @@ answer; for that please see [this section](templates/fields.md#special-fields).
 ### FSRS
 
 The [Free Spaced Repetition Scheduler (FSRS)](https://github.com/open-spaced-repetition/fsrs4anki) is an alternative to Anki's legacy
-SuperMemo 2 (SM2) scheduler. By more accurately determining when you are likely
+SuperMemo 2 (SM-2) scheduler. By more accurately determining when you are likely
 to forget, it can help you remember more material in the same amount of time.
 This setting is shared by all deck presets.
 
@@ -500,7 +500,7 @@ enable FSRS, or change the parameters. The default is not to reschedule
 cards: future reviews will use the new scheduling, but there will be no
 immediate change to your workload. If rescheduling is enabled, the due dates
 of cards will be changed, often resulting in a large number of cards becoming
-due, so **activating this option is not recommended** when first switching from SM2.
+due, so **activating this option is not recommended** when first switching from SM-2.
 
 If you wish to visualize how FSRS would change your schedule without altering
 your workload, there are two ways you can do so:
