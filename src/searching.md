@@ -167,13 +167,13 @@ searches for cards with a note type named "Basic".
 
 Requires Anki 2.1.24+ or AnkiMobile 2.0.60+.
 
-You can use `nc:` to remove combining characters ("no combining"). For example:
+You can use `nc:` (nc stands for no combining) to make Anki ignore combining characters. For example:
 
 `nc:uber`\
 matches notes with "uber", "über", "Über" and so on.
 
 `nc:は`\
-matches "は", "ば", and "ぱ"
+matches "は", "ば", and "ぱ".
 
 Searches that ignore combining characters are slower than regular searches.
 
@@ -182,65 +182,66 @@ Searches that ignore combining characters are slower than regular searches.
 Anki 2.1.24+, AnkiMobile 2.0.60+ and AnkiDroid 2.17+ support searching in notes with "regular expressions",
 a standard and powerful way of searching in text.
 
-Start a search with `re:` to search by regular expression. To make things easier, Anki will
+Start a search with `re:` to search using regular expression. To make things easier, Anki will
 treat the following as [raw input](#raw-input), so bear in mind the rules listed there.
 
 Some examples:
 
 `"re:(some|another).*thing"`\
-find notes that have "some" or "another" on them, followed by 0 or more characters, and then "thing"
+finds notes that have "some" or "another" on them, followed by 0 or more characters, and then "thing".
 
 `re:\d{3}`\
-find notes that have 3 digits in a row
+finds notes that have 3 digits in a row.
 
 Regular expressions can also be limited to a specific field. Please note that unlike the normal searches
-in a specific field, regular expressions in fields don't require an exact match. Eg:
+in a specific field, regular expressions in fields don't require an exact match:
 
 `front:re:[a-c]1`\
-matches uppercase or lowercase a1, B1 or c1 that occurs anywhere in the "Front" field
+matches uppercase or lowercase a1, B1 or c1 that occurs anywhere in the "Front" field.
 
 `front:re:^[a-c]1$`\
-like the above, but will not match if any other text falls before or after a1/b1/c1.
+same as previous, but will not match if any other text falls before or after a1/b1/c1.
 
-Anki 2.1.50 added regex support for tags:
+Anki 2.1.50+ supports regular expressions for tags:
 
 `tag:re:^parent$`\
-find notes with the exact tag "parent", disregarding any child tags like "parent::child"
+finds notes with the exact tag "parent", disregarding any child tags like "parent::child".
 
 `"tag:re:lesson-(1[7-9]|2[0-5])"`\
-find notes with tags "lesson-17" through "lesson-25"
+finds notes with tags "lesson-17" through "lesson-25".
 
-You can learn more about regular expressions here: <https://regexone.com/lesson/introduction_abcs>
+For more information on regular expressions, see [this website](<https://regexone.com/lesson/introduction_abcs>).
 
 Some things to be aware of:
 
 - The search is case-insensitive by default; use `(?-i)` at the start to turn on case sensitivity.
 - Some text like spaces and newlines may be represented differently in HTML - you can
   use the HTML editor in the editing screen to see the underlying HTML contents.
-- For the specifics of Anki's regex support, please see the regex crate documentation: <https://docs.rs/regex/1.3.9/regex/#syntax>
+- For the specifics of Anki's regex support, see the [regex crate documentation]
+(<https://docs.rs/regex/1.3.9/regex/#syntax>)
 
 ## Card state
 
 `is:due`\
-review cards and learning cards waiting to be studied
+review cards and learning cards waiting to be studied.
 
 `is:new`\
-new cards
+new cards.
 
 `is:learn`\
-cards in learning
+cards in learning.
 
 `is:review`\
-reviews (both due and not due) and lapsed cards
+reviews (both due and not due) and lapsed cards.
 
 `is:suspended`\
-cards that have been manually suspended
+cards that have been automatically or manually suspended.
 
 `is:buried`\
 cards that have been buried, either [automatically](studying.md#siblings-and-burying) or
-manually
+manually.
 
-Note that with the [new scheduler](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html),
+Note that with the [v2 scheduler](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html),
 Anki now distinguishes between manually and automatically buried cards so you can
 unbury one set without the other.
 
@@ -248,57 +249,57 @@ Cards that have lapsed fall into several of these categories, so it may
 be useful to combine them to get more precise results:
 
 `is:learn is:review`\
-cards that have lapsed and are awaiting relearning
+cards that have lapsed and are awaiting relearning.
 
 `-is:learn is:review`\
-review cards, not including lapsed cards
+review cards, not including lapsed cards.
 
 `is:learn -is:review`\
-cards that are in learning for the first time
+cards that are in learning for the first time.
 
 `flag:1`\
-cards with a red flag
+cards with a red flag.
 
 `flag:2`\
-cards with an orange flag
+cards with an orange flag.
 
 `flag:3`\
-cards with a green flag
+cards with a green flag.
 
 `flag:4`\
-cards with a blue flag
+cards with a blue flag.
 
 `flag:5`\
-cards with a pink flag
+cards with a pink flag.
 
 `flag:6`\
-cards with a turquoise flag
+cards with a turquoise flag.
 
 `flag:7`\
-cards with a purple flag
+cards with a purple flag.
 
 ## Card properties
 
 `prop:ivl>=10`\
-cards with interval of 10 days or more
+cards with interval of 10 days or more.
 
 `prop:due=1`\
-cards due tomorrow
+cards due tomorrow.
 
 `prop:due=-1`\
-cards due yesterday that haven’t been answered yet
+cards due yesterday that haven’t been answered yet.
 
 `prop:due>-1 prop:due<1`\
-cards due between yesterday and tomorrow
+cards due between yesterday and tomorrow.
 
 `prop:reps<10`\
-cards that have been answered less than 10 times
+cards that have been answered less than 10 times.
 
 `prop:lapses>3`\
-cards that have moved into relearning more than 3 times
+cards that have moved into relearning more than 3 times.
 
 `prop:ease!=2.5`\
-cards easier or harder than default
+cards easier or harder than default.
 
 `prop:cdn:d>5` (Requires Anki 2.1.64+.)\
 cards with the value of `d` in custom data (usually refers to Difficulty in FSRS) greater than 5
