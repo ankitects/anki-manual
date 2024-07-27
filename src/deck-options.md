@@ -508,7 +508,7 @@ requires several reviews to fine-tune the parameters.
 You can use the `Optimize` button to analyze your review history, and 
 automatically generate parameters that are optimal for your memory and 
 the content you're studying. Parameters are preset-specific, so if you have decks 
-that vary wildly in difficulty, it is recommended to assign them separate presets, 
+that vary wildly in subjective difficulty, it is recommended to assign them separate presets, 
 as the parameters for easy decks and hard decks will be different. There is no need 
 to optimize your parameters frequently - once every few months is sufficient.
 
@@ -537,7 +537,7 @@ Note that log-loss and RMSE (bins) are not perfectly correlated,
 so two decks may have similar RMSE values but very different log-loss values,
 and vice-versa.
 
-**Compute minimum recommended retention**
+**Compute minimum recommended retention (experimental)**
 
 This tool will attempt to find the desired retention value that will lead to 
 the most material learnt, in the least amount of time. The calculated number 
@@ -683,8 +683,7 @@ state when it encounters cards that are missing review logs. Since review
 logs typically won't be missing unless you explicitly deleted them to free
 up space, most users will not need to adjust this.
 
-This setting was called "SM-2 retention" before Anki 24.04, and it was
-under "FSRS".
+This setting was previously called "SM-2 retention".
 
 ### Ignore cards reviewed before
 
@@ -696,7 +695,7 @@ If you have reviewed all of your cards before the selected date and do not plan 
 add new cards, it is not recommended to use this feature, as the optimizer 
 will have no data to work with.
 
-This setting was previously under "FSRS".
+This setting was previously called "Ignore reviews before".
 
 ### Custom Scheduling
 
