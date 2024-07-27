@@ -683,7 +683,7 @@ state when it encounters cards that are missing review logs. Since review
 logs typically won't be missing unless you explicitly deleted them to free
 up space, most users will not need to adjust this.
 
-This setting was called "SM-2 retention" before Anki 24.04,and it was
+This setting was called "SM-2 retention" before Anki 24.04, and it was
 under "FSRS".
 
 ### Ignore cards reviewed before
