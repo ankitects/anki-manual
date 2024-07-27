@@ -475,16 +475,6 @@ number, and recommend you keep it between 0.85 and 0.95. You can use
 "Compute minimum recommended retention (experimental)" to find a value
 that strikes the best balance of retention and workload.
 
-**Historical retention**
-
-If your actual retention before switching to FSRS was significantly different
-from 0.9, adjusting this value will allow Anki to better estimate your memory
-state when it encounters cards that are missing review logs. Since review
-logs typically won't be missing unless you explicitly deleted them to free
-up space, most users will not need to adjust this.
-
-This setting was called "SM-2 retention" before Anki 24.04.
-
 **FSRS parameters**
 
 FSRS parameters affect how cards are scheduled. They are not intended to be
@@ -558,16 +548,6 @@ lower than the minimum is not recommended, as it will lead to a higher workload,
 because of the high forgetting rate.
 
 This feature is still under development and may change in the future.
-
-**Ignore cards reviewed before**
-
-If set, cards reviewed before the provided date will be ignored when optimizing 
-FSRS parameters. This can be useful if you imported someone else's scheduling data, 
-or have changed the way you use the answer buttons.
-
-If you have reviewed all of your cards before the selected date and do not plan to 
-add new cards, it is not recommended to use this feature, as the optimizer 
-will have no data to work with.
 
 #### Learning and Re-learning Steps
 
@@ -694,6 +674,29 @@ the _New Interval_ to 0.20, the new interval would be 20 days.
 
 While preserving part of the interval may seem to make sense, SuperMemo has observed
 that preserving part of the delay can actually [be counter-productive](https://supermemo.guru/wiki/Post-lapse_stability). For this reason, we recommend you leave it on the default setting.
+
+### Historical retention
+
+If your actual retention before switching to FSRS was significantly different
+from 0.9, adjusting this value will allow Anki to better estimate your memory
+state when it encounters cards that are missing review logs. Since review
+logs typically won't be missing unless you explicitly deleted them to free
+up space, most users will not need to adjust this.
+
+This setting was called "SM-2 retention" before Anki 24.04,and it was
+under "FSRS".
+
+### Ignore cards reviewed before
+
+This is If set, cards reviewed before the provided date will be ignored when optimizing 
+FSRS parameters. This can be useful if you imported someone else's scheduling data, 
+or have changed the way you use the answer buttons.
+
+If you have reviewed all of your cards before the selected date and do not plan to 
+add new cards, it is not recommended to use this feature, as the optimizer 
+will have no data to work with.
+
+This setting was previously under "FSRS".
 
 ### Custom Scheduling
 
