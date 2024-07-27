@@ -3,17 +3,16 @@
 <!-- toc -->
 
 Anki's Browse screen and the Filtered Deck feature use a common method
-of searching for specific cards/notes.
+of searching for specific cards/notes. This is also used in the search bar below "FSRS parameters" field.
 
 ## Simple searches
 
 When you type some text into the search box, Anki finds matching notes
 and displays their cards. Anki searches in all fields of the notes, but
-does not search for tags (see later in this section for how to search
-for tags). Some examples:
+does not search for tags (For information on how to search for tags, see [this section](##tags,-decks,-cards-and-notes) of the page). Some examples:
 
 `dog`\
-search for "dog" - will match words like "doggy" and "underdog" too.
+searches for "dog" - will match words like "doggy" and "underdog" too.
 
 `dog cat`\
 finds notes that have both "dog" and "cat" on them, such as "raining
@@ -23,10 +22,10 @@ cats and dogs".
 finds notes with either "dog" or "cat".
 
 `dog (cat or mouse)`\
-finds notes with dog and cat, or dog and mouse.
+finds notes with "dog" and "cat", or "dog" and "mouse".
 
 `-cat`\
-finds notes without the word "cat".
+finds notes without "cat".
 
 `-cat -mouse`\
 finds notes with neither "cat" nor "mouse".
@@ -35,24 +34,24 @@ finds notes with neither "cat" nor "mouse".
 same as the above.
 
 `"a dog"`\
-finds notes with the exact sequence of characters "a dog" on them, such
+finds notes with the exact sequence of characters "a dog" in them, such
 as "atta dog", but not "dog a" or "adog".
 
 `-"a dog"`\
-finds notes without the exact phrase "a dog"
+finds notes without the following sequence of characters: "a dog".
 
 `d_g`\
-finds notes with d, &lt;a letter&gt;, g, like dog, dig, dug, and so on.
+finds notes with d, &lt;one character&gt;, g, like dog, dig, dug, and so on.
 
 `d*g`\
-finds notes with d, &lt;zero or more letters&gt;, g, like dg, dog, dung,
+finds notes with d, &lt;zero or more characters&gt;, g, like dg, dog, dung,
 etc.
 
 `w:dog`\
-search for "dog" on a word boundary - will match "dog", but not "doggy"
-or "underdog". Requires Anki 2.1.24+ or AnkiMobile 2.1.61+. Note that
-formatting changes may be interpreted as word boundaries e.g. searching
-for `w:exam` will match **exam**ple.
+searches for the word "dog" as opposed to a sequence of characters - will match "dog", but not "doggy"
+or "underdog". Requires Anki 2.1.24+, AnkiMobile 2.1.61+, or AnkiDroid 2.17+. Note that
+formatting changes may be interpreted as word boundaries, e.g. searching
+for `w:exam` will match **exam**ple, as the "exam" part of example is in bold format.
 
 `w:dog*`\
 will match "dog" and "doggy", but not "underdog".
@@ -66,23 +65,23 @@ Things to note from the above:
 
 - When multiple search terms are provided, Anki looks for notes that
   match all of the terms - an implicit 'and' is inserted between each
-  term. On Anki 2.1.24+ and AnkiMobile 2.0.60+ you can be explicit
+  term. On Anki 2.1.24+, AnkiMobile 2.0.60+, and AnkiDroid 2.17+ you can be explicit
   if you like ("dog and cat" is the same as "dog cat"), but older
   Anki versions will treat "and" as just another word to search for.
 
 - You can use "or" if you only need one of the terms to match.
 
 - You can prepend a minus sign to a term to find notes that don’t
-  match.
+  match the term.
 
 - You can group search terms by placing them in parentheses, as in the
-  **dog (cat or mouse)** example. This becomes important when
+  "dog (cat or mouse)" example. This becomes important when
   combining OR and AND searches — in the example, with the
   parentheses, it matches either 'dog cat' or 'dog mouse', whereas
   without them it would match either 'dog and cat' or 'mouse'.
 
 - Anki is only able to search within formatting in the [sort field](editing.md#customizing-fields) you’ve configured. For example, if you add
-  "**exa**mple" to one of your fields, this will not be matched when
+  "**exa**mple" to one of your fields, with the "exa" part in bold, this will not be matched when
   searching for "example" unless that field is the sort field. If a
   word is not formatted, or the formatting does not change in the
   middle of the word, then Anki will be able to find it in any field.
