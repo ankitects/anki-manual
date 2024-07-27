@@ -421,9 +421,7 @@ the question side should be played when replaying the audio while an answer is
 shown. Please note that it does not control what happens when you show the
 answer; for that please see [this section](templates/fields.md#special-fields).
 
-## Advanced
-
-### FSRS
+## FSRS
 
 The [Free Spaced Repetition Scheduler (FSRS)](https://github.com/open-spaced-repetition/fsrs4anki) is an alternative to Anki's legacy
 SuperMemo 2 (SM-2) scheduler. By more accurately determining when you are likely
@@ -602,6 +600,8 @@ For more info on FSRS, please check:
 - [FSRS4Anki Wiki](https://github.com/open-spaced-repetition/fsrs4anki/wiki)
 - [FSRS4Anki on Github](https://github.com/open-spaced-repetition/fsrs4anki)
 
+## Advanced
+
 ### Maximum Interval
 
 Allows you to place an upper limit on the time Anki
@@ -695,6 +695,6 @@ the _New Interval_ to 0.20, the new interval would be 20 days.
 While preserving part of the interval may seem to make sense, SuperMemo has observed
 that preserving part of the delay can actually [be counter-productive](https://supermemo.guru/wiki/Post-lapse_stability). For this reason, we recommend you leave it on the default setting.
 
-## Custom Scheduling
+### Custom Scheduling
 
 Please see [this page](https://faqs.ankiweb.net/the-2021-scheduler.html#add-ons-and-custom-scheduling).
