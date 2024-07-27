@@ -3,13 +3,13 @@
 <!-- toc -->
 
 Anki's Browse screen and the Filtered Deck feature use a common method
-of searching for specific cards/notes. This is also used in the search bar below "FSRS parameters" field.
+of searching for specific cards/notes. This method is also used in the search bar below "FSRS parameters" field.
 
 ## Simple searches
 
 When you type some text into the search box, Anki finds matching notes
 and displays their cards. Anki searches in all fields of the notes, but
-does not search for tags (For information on how to search for tags, see [this section](##tags,-decks,-cards-and-notes) of the page). Some examples:
+does not search for tags (For information on how to search for tags, see [this section](##tags-decks-cards-and-notes) of the page). Some examples:
 
 `dog`\
 searches for "dog" - will match words like "doggy" and "underdog" too.
@@ -94,74 +94,74 @@ Things to note from the above:
 ## Limiting to a field
 
 You can also ask Anki to match only if a particular field contains some
-text. Unlike the searches above, searching on fields requires an 'exact
-match' by default.
+text. Unlike the previous search examples, searching in fields requires an exact
+match by default.
 
 `front:dog`\
-find notes with a Front field of exactly "dog". A field that says "a
+finds notes with a Front field of exactly "dog". A field that says "a
 dog" will not match.
 
 `"animal front:a dog"`\
-find notes where the "Animal Front" field is exactly "a dog". The double quotes are
-mandatory, see [below](#matching-special-characters).
+finds notes where the "Animal Front" field is exactly "a dog". The double quotes are
+mandatory, see [this section](#matching-special-characters) of the page.
 
 `front:*dog*`\
-find notes with Front field containing dog somewhere
+finds notes where the Front field contains dog somewhere.
 
 `front:`\
-find notes that have an empty Front field
+finds notes that have an empty Front field.
 
 `front:_*`\
-find notes that have a non-empty Front field
+findd notes that have a non-empty Front field.
 
 `front:*`\
-find notes that have a Front field, empty or not
+finds notes that have a Front field, empty or not.
 
 `fr*:text`\
-find notes in a field starting with "fr". Requires Anki 2.1.24+ or AnkiMobile 2.1.60+.
+finds notes in a field starting with "fr". Requires Anki 2.1.24+, AnkiMobile 2.1.60+, or AnkiDroid 2.17+.
 
 ## Tags, decks, cards and notes
 
 `tag:animal`\
-find notes with the tag "animal", or subtags like "animal::mammal"
+finds notes with the tag "animal", or subtags like "animal::mammal".
 
 `tag:none`\
-find notes with no tags
+finds notes with no tags.
 
 `tag:ani*`\
-find notes with tags starting with ani
+finds notes with tags starting with ani.
 
 `deck:french`\
-find cards in a French deck, or subdecks like French::Vocab
+find cards in a deck called "French", or its subdecks like French::Vocab.
 
 `deck:french -deck:french::*`\
-find cards in French, but not subdecks
+finds cards in French, but not subdecks.
 
 `deck:"french vocab"`\
-searching when a deck has a space
+searching when the deck name has a space.
 
 `"deck:french vocab"`\
-also ok
+same as earlier.
 
 `deck:filtered`\
-filtered decks only
+filtered decks only.
 
 `-deck:filtered`\
-normal decks only
+normal decks only.
 
 `preset:"Default"`\
 cards in all decks that use the 'Default' deck options preset.
-Requires Anki 23.10+.
+Requires Anki(Mobile) 23.10+, or AnkiDroid 2.17+.
 
 `card:forward`\
-search for Forward cards
+searches for cards with card type named "Forward".
 
 `card:1`\
-search for cards by template number - eg, to find the second cloze
+searches for cards by card type number, e.g. to find the second cloze
 deletion for a note, you’d use `card:2`
 
 `note:basic`\
-search for cards with a Basic note type
+searches for cards with a note type named "Basic".
 
 ## Ignoring accents/combining characters
 
