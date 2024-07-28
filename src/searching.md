@@ -132,7 +132,7 @@ finds notes with no tags.
 finds notes with tags starting with "ani".
 
 `deck:french`\
-find cards in a deck called "French", or its subdecks like French::Vocab.
+find cards in a deck called "French", or its subdecks like "French::Vocab".
 
 `deck:french -deck:french::*`\
 finds cards in French, but not subdecks.
