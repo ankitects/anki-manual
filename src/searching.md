@@ -129,7 +129,7 @@ finds notes with the tag "animal", or subtags like "animal::mammal".
 finds notes with no tags.
 
 `tag:ani*`\
-finds notes with tags starting with ani.
+finds notes with tags starting with "ani".
 
 `deck:french`\
 find cards in a deck called "French", or its subdecks like French::Vocab.
