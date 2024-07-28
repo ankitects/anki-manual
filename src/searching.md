@@ -301,30 +301,32 @@ cards that have moved into relearning more than 3 times.
 `prop:ease!=2.5`\
 cards easier or harder than default.
 
-`prop:cdn:d>5` (Requires Anki 2.1.64+.)\
-cards with the value of `d` in custom data (usually refers to Difficulty in FSRS) greater than 5
+`prop:cdn:d>5`\
+cards with the value of `d` in custom data (usually refers to difficulty in FSRS) greater than 5 (requires Anki 2.1.64+).
 
-`prop:cds:v=reschedule` (Requires Anki 23.10+.)\
-cards with the string `v` in custom data equal to `reschedule`
+`prop:cds:v=reschedule`\
+cards with the string `v` in custom data equal to `reschedule` (requires Anki 23.10+).
 
-`prop:s>21` (Requires Anki 23.10+ and FSRS enabled.)\
-cards with stability greater than 21 days
+The following searches require Anki 23.10+ and FSRS enabled:
 
-`prop:d>0.3` (Requires Anki 23.10+ and FSRS enabled.)\
-cards with difficulty greater than 0.3
+`prop:s>21`\
+cards with stability greater than 21 days.
 
-`prop:r<0.9` (Requires Anki 23.10+ and FSRS enabled.)\
-cards with retention less than 0.9
+`prop:d>0.3`\
+cards with difficulty greater than 0.3.
+
+`prop:r<0.9`\
+cards with retrievability less than 0.9.
 
 ## Recent Events
 
 ### Added
 
 `added:1`\
-cards added today
+cards added today.
 
 `added:7`\
-cards added in last week
+cards added in the last 7 days.
 
 The check is made against card creation time rather than note creation
 time, so cards that were generated within the time frame will be
@@ -335,47 +337,46 @@ included even if their notes were added a long time ago.
 `edited:n`\
 cards where the note text was added/edited in the last n days.
 
-This requires Anki 2.1.28+ / AnkiMobile 2.0.64+.
+This requires Anki 2.1.28+ or AnkiMobile 2.0.64+.
 
 ### Answered
 
 `rated:1`\
-cards answered today
+cards answered today.
 
 `rated:1:2`\
-cards answered Hard (2) today
+cards answered Hard (2) today.
 
 `rated:7:1`\
-cards answered Again (1) over the last 7 days
+cards answered Again (1) in the last 7 days.
 
 `rated:31:4`\
-cards answered Easy (4) in the last month
+cards answered Easy (4) in the last 31 days.
 
-Rating searches had been limited to 31 days before version 2.1.39.
+Anki 2.1.39+ supports rating searches over 31 days.
 
 ### First Answered
 
-On version 2.1.45+, you can also search for the very first review only:
+Requires Anki 2.1.45+.
 
 `introduced:1`\
-cards answered for the first time today
+cards answered for the first time today.
 
 `introduced:365`\
-cards answered for the first time within the last 365 days
+cards answered for the first time within the last 365 days.
 
 ## Matching special characters
 
-This section was written for Anki 2.1.36+ - earlier versions did not support escaping
-characters in certain situations.
+If you're using a version earlier than Anki 2.1.36 the following searches may not work.
 
 As shown in the previous section, some characters like `*`, `_` and `"` have a
-special meaning in Anki. If you need to locate those characters in a search,
-you need to tell Anki not to treat them specially.
+special meaning in search. If you need to locate those characters in a search,
+you need to tell Anki not to treat them specially. This is called escaping a character and is primarily done by using double quotes and backslashes.
 
 - _Space_\
-  To match something including spaces, enclose the `"entire term"` in double
+  To match something that includes spaces, enclose the `"entire term"` in double
   quotes. If it is a colon search, you also have the option to only quote the
-  `part:"after the colon"` (unless there are spaces before the colon as well).
+  `part:"after the colon"`.
 
 - `"`, `*` and `_`\
   Add a backslash before these characters to treat them literally. For example,
@@ -387,27 +388,26 @@ you need to tell Anki not to treat them specially.
   use `\\` instead of `\`.
 
 - `(` and `)`\
-  You can search for parentheses either by enclosing the full term in quotes,
-  and/or by using a backslash. That is, `"some(text)"`, `some\(text\)` and
-  `"some\(text\)"` are all equivalent, but `some(text)` is not.
+  You can search for parentheses by enclosing the entire term in quotes,
+   by using a backslash, or both at the same time. For example, `"(text)"`, `\(text\)` and
+  `"\(text\)"` are all equivalent searches, and searches for `(text)`.
 
 - `-`\
   Starting a search term with `-` usually inverts it: `-dog` matches everything
   except dog for example. If you instead wish to include an actual hyphen,
-  you can either use a backslash, or include the text in quotes, such as
-  `\-.-` or `"-.-"`.
+  you can either use a backslash, or include the text in quotes. For example,
+  `\-free` or `"-free"` will match "guilt-free" and "cruelty-free".
 
 - `:`\
-  Colons have to be escaped unless they are preceded by another, unescaped colon.
-  So `w:e:b` is a word boundary search for `e:b`, `w\:e\:b` searches literally for
-  `w:e:b` and `w\:e:b` searches the field `w:e` for `b` (see
-  [field searches](#limiting-to-a-field)).
+  Colons have to be escaped using backslashes unless they are preceded by another, unescaped colon.
+  For example, `w:3:30` searches for 3:30 on word boundary and doesn't require you to use a backslash.
+  However, if you don't use a colon search, the colons need to escaped like this: `3\:30`.
 
 - `&`, `<`, and `>`\
-  `&`, `<`, and `>` are treated as HTML when searching in Anki, and as such searches
+  `&`, `<`, and `>` are treated as HTML when searching in Anki, and as such, searches
   containing them don't work as expected. However, you can search for them by using their
   corresponding HTML entity names (`&amp;` for `&`, `&lt;` for `<`, and `&gt;` for `>`).
-  For example, searching `&lt;&amp;text&gt;` searches for a card with `<&text>` in a field.
+  For example, searching `&amp;text` searches for a note with `&text` in a field.
 
 ### Raw input
 
