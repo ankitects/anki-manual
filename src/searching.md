@@ -135,7 +135,7 @@ finds notes with tags starting with "ani".
 find cards in a deck called "French", or its subdecks like "French::Vocab".
 
 `deck:french -deck:french::*`\
-finds cards in French, but not subdecks.
+finds cards in "French", but not its subdecks.
 
 `deck:"french vocab"`\
 searching when the deck name has a space.
