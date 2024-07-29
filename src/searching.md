@@ -390,7 +390,7 @@ you need to tell Anki not to treat them specially. This is called escaping a cha
 - `(` and `)`\
   You can search for parentheses by enclosing the entire term in quotes,
    by using a backslash, or both at the same time. For example, `"(text)"`, `\(text\)` and
-  `"\(text\)"` are all equivalent searches, and searches for `(text)`.
+  `"\(text\)"` are all equivalent searches, and search for `(text)`.
 
 - `-`\
   Starting a search term with `-` usually inverts it: `-dog` matches everything
