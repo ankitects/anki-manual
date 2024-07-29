@@ -9,7 +9,7 @@ of searching for specific cards/notes. This method is also used in the search ba
 
 When you type some text into the search box, Anki finds matching notes
 and displays their cards. Anki searches in all fields of the notes, but
-does not search for tags (For information on how to search for tags, see [this section](##tags-decks-cards-and-notes) of the page). Some examples:
+does not search for tags (see [later in this section](#tags-decks-cards-and-notes) to search for tags). Some examples:
 
 `dog`\
 searches for "dog" - will match words like "doggy" and "underdog" too.
