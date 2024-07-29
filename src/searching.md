@@ -371,7 +371,7 @@ If you're using a version earlier than Anki 2.1.36 the following searches may no
 
 As shown in the previous section, some characters like `*`, `_` and `"` have a
 special meaning in search. If you need to locate those characters in a search,
-you need to tell Anki not to treat them specially. This is called escaping a character and is primarily done by using double quotes and backslashes.
+you need to tell Anki not to treat them specially. This is called "escaping a character" and is primarily done by using double quotes and backslashes.
 
 - _Space_\
   To match something that includes spaces, enclose the `"entire term"` in double
