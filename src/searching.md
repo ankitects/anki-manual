@@ -165,7 +165,7 @@ searches for cards with a note type named "Basic".
 
 ## Ignoring accents/combining characters
 
-Requires Anki 2.1.24+ or AnkiMobile 2.0.60+.
+Requires Anki 2.1.24+, AnkiMobile 2.0.60+ or AnkiDroid 2.17+.
 
 You can use `nc:` (nc stands for no combining) to make Anki ignore combining characters. For example:
 
