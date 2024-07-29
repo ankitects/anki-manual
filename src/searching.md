@@ -253,6 +253,8 @@ review cards, not including lapsed cards.
 `is:learn -is:review`\
 cards that are in learning for the first time.
 
+## Flags
+
 `flag:1`\
 cards with a red flag.
 
