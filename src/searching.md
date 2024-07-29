@@ -235,7 +235,7 @@ cards in learning.
 reviews (both due and not due) and lapsed cards.
 
 `is:suspended`\
-cards that have been automatically or manually suspended.
+cards that have been [automatically](leeches.md) or manually suspended.
 
 `is:buried`\
 cards that have been buried, either [automatically](studying.md#siblings-and-burying) or
