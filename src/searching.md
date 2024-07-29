@@ -241,8 +241,8 @@ cards that have been [automatically](leeches.md) or manually suspended.
 cards that have been buried, either [automatically](studying.md#siblings-and-burying) or
 manually.
 
-Cards that have lapsed fall into several of these categories, so it may
-be useful to combine them to get more precise results:
+Cards that have [lapsed](deck-options.md#lapses) fall into several of the previous categories, so it may
+be useful to combine different search terms to get more precise results:
 
 `is:learn is:review`\
 cards that have lapsed and are awaiting relearning.
