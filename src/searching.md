@@ -400,7 +400,7 @@ you need to tell Anki not to treat them specially. This is called escaping a cha
 
 - `:`\
   Colons have to be escaped using backslashes unless they are preceded by another, unescaped colon.
-  For example, `w:3:30` searches for 3:30 on word boundary and doesn't require you to use a backslash.
+  For example, `w:3:30` searches for "3:30" on word boundary and doesn't require you to use a backslash.
   However, if you don't use a colon search, the colons need to escaped like this: `3\:30`.
 
 - `&`, `<`, and `>`\
