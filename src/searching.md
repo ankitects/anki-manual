@@ -287,17 +287,23 @@ cards due tomorrow.
 `prop:due=-1`\
 cards due yesterday that haven’t been answered yet.
 
+`prop:due>1`\
+all cards due in the future, including tomorrow.
+
+`prop:due<-1`\
+all cards due in the past (that haven't been answered yet), including yesterday.
+
 `prop:due>-1 prop:due<1`\
-cards due between yesterday and tomorrow.
+cards due yesterday, today and tomorrow.
 
 `prop:reps<10`\
 cards that have been answered less than 10 times.
 
 `prop:lapses>3`\
-cards that have moved into relearning more than 3 times.
+cards that been lapsed more than 3 times.
 
 `prop:ease!=2.5`\
-cards easier or harder than default.
+cards easier or harder than default ease.
 
 `prop:cdn:d>5`\
 cards with the value of `d` in custom data (usually refers to difficulty in FSRS) greater than 5 (requires Anki 2.1.64+).
