@@ -161,7 +161,7 @@ searches for cards by card type number, e.g. to find the second cloze
 deletion for a note, you’d use `card:2`
 
 `note:basic`\
-searches for cards with a note type named "Basic".
+searches for cards created with a note type named "Basic".
 
 ## Ignoring accents/combining characters
 
