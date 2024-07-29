@@ -182,7 +182,7 @@ Searches that ignore combining characters are slower than regular searches.
 Anki 2.1.24+, AnkiMobile 2.0.60+ and AnkiDroid 2.17+ support searching in notes with "regular expressions",
 a standard and powerful way of searching in text.
 
-Start a search with `re:` to search using regular expression. To make things easier, Anki will
+Start a search with `re:` to search using regular expressions. To make things easier, Anki will
 treat the following as [raw input](#raw-input), so bear in mind the rules listed there.
 
 Some examples:
