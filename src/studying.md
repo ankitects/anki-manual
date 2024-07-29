@@ -319,7 +319,11 @@ hide cards in learning, as time is of the essence for those cards. On
 the other hand, when you study a learning card, any new/review siblings
 will be buried.
 
-Note: A card cannot be buried and suspended at the same time. Suspending a
+Note that starting with the [v2 scheduler](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html),
+Anki now distinguishes between manually and automatically buried cards so you can
+unbury one set without the other.
+
+Also note that a card cannot be buried and suspended at the same time. Suspending a
 buried card will unbury it. Burying a suspended card does not work on Anki
 2.1.49+, whereas on earlier versions, it will unsuspend the card.
 
