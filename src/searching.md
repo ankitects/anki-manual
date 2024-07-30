@@ -38,7 +38,7 @@ finds notes with the exact sequence of characters "a dog" in them, such
 as "atta dog", but not "dog a" or "adog".
 
 `-"a dog"`\
-finds notes without the following sequence of characters: "a dog".
+finds notes without the exact sequence of characters "a dog" in them.
 
 `d_g`\
 finds notes with d, &lt;one character&gt;, g, like dog, dig, dug, and so on.
