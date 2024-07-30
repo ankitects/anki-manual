@@ -22,6 +22,9 @@ cats and dogs".
 `dog or cat`\
 finds notes with either "dog" or "cat".
 
+`dog "or" cat`\
+finds notes with _all_ of the words "dog", "or", and "cat".
+
 `dog (cat or mouse)`\
 finds notes with dog and cat, or dog and mouse.
 
