@@ -21,6 +21,7 @@ translations may not always be up to date.
 - [Polski](https://platynowy.github.io/anki-manual/)
 - [Português Brasileiro](https://mizerablebr.github.io/anki-manual/)
 - [русский язык](https://alexeygorelov.github.io/anki-manual-ru/)
+- [Українська](https://astropsy999.github.io/anki-manual/)
 - [العربية](https://abdnh.github.io/anki-manual/)
 - [فارسى](http://ankidroid.ir/anki.pdf)
 - [日本語](http://wikiwiki.jp/rage2050/)
