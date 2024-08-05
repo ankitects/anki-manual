@@ -151,7 +151,7 @@ normal decks only.
 
 `preset:"Default"`\
 cards in all decks that use the 'Default' deck options preset.
-Requires Anki(Mobile) 23.10+, or AnkiDroid 2.17+.
+Requires Anki 23.10+, AnkiMobile 23.10+ or AnkiDroid 2.17+.
 
 `card:forward`\
 finds cards created by a card type named "Forward".
