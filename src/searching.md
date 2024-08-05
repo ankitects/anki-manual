@@ -103,7 +103,7 @@ dog" will not match.
 
 `"animal front:a dog"`\
 finds notes where the "Animal Front" field is exactly "a dog". The double quotes are
-mandatory, see [later in this section](#matching-special-characters).
+mandatory: see [later in this section](#matching-special-characters).
 
 `front:*dog*`\
 finds notes where the Front field contains dog somewhere.
