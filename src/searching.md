@@ -291,7 +291,7 @@ cards due yesterday that haven’t been answered yet.
 all cards due in the future, including tomorrow.
 
 `prop:due<-1`\
-all cards due in the past (that haven't been answered yet), including yesterday.
+all  overdue cards
 
 `prop:due>-1 prop:due<1`\
 cards due yesterday, today and tomorrow.
