@@ -3,7 +3,7 @@
 <!-- toc -->
 
 Anki's Browse screen and the Filtered Deck feature use a common method
-of searching for specific cards/notes. This method is also used in the search bar below "FSRS parameters" field.
+of searching for specific cards/notes. This method can also be used to adjust the scope of FSRS optimization. 
 
 ## Simple searches
 
