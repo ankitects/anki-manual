@@ -200,7 +200,7 @@ in a specific field, regular expressions in fields don't require an exact match:
 matches uppercase or lowercase a1, B1 or c1 that occurs anywhere in the "Front" field.
 
 `front:re:^[a-c]1$`\
-same as previous, but will not match if any other text falls before or after a1/b1/c1.
+same as the previous example, but will not match if any other text falls before or after a1/b1/c1.
 
 Anki 2.1.50+ supports regular expressions for tags:
 
