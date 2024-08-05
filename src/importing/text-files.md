@@ -148,7 +148,7 @@ instead.
 ## Bulk Media
 
 Another option for importing large amounts of media at once is to use
-the [media import add-on](https://ankiweb.net/shared/info/1531997860).
+the [media import add-on](https://ankiweb.net/shared/info/129299120).
 This add-on will automatically create notes for all files in a folder
 you select, with the filenames on the front (minus the file extension,
 so if you have a file named apple.jpg, the front would say 'apple') and
