@@ -1,6 +1,6 @@
 [book]
 authors = ["Ankitects Pty Ltd and contributors"]
-description = "The official Manual for Anki, the flashcard program that makes learning easier."
+description = "Anki's user manual. Anki is a flashcard program that makes learning easier."
 language = "en"
 multilingual = false
 src = "src"
