@@ -421,12 +421,10 @@ the question side should be played when replaying the audio while an answer is
 shown. Please note that it does not control what happens when you show the
 answer; for that please see [this section](templates/fields.md#special-fields).
 
-## Advanced
-
-### FSRS
+## FSRS
 
 The [Free Spaced Repetition Scheduler (FSRS)](https://github.com/open-spaced-repetition/fsrs4anki) is an alternative to Anki's legacy
-SuperMemo 2 (SM2) scheduler. By more accurately determining when you are likely
+SuperMemo 2 (SM-2) scheduler. By more accurately determining when you are likely
 to forget, it can help you remember more material in the same amount of time.
 This setting is shared by all deck presets.
 
@@ -454,7 +452,8 @@ Here is a graph that shows how adjusting this value will affect your workload:
 
 <img src="media/FSRS_retention.png" width="600">
 
-There are two things to notice:
+The exact shape of the graph is different for every user. However, there are two patterns 
+that hold true for all users:
 
 - As desired retention approaches 1.0, the frequency that you need to review cards
   increases drastically. For example, imagine you have a card that you have a 90%
@@ -472,15 +471,9 @@ There are two things to notice:
   material frequently is demotivating.
 
 For these reasons, we suggest you be conservative when adjusting this
-number, and recommend you keep it between 0.85 and 0.95.
-
-**SM-2 retention**
-
-If your actual retention before switching to FSRS was significantly different
-from 0.9, adjusting this value will allow Anki to better estimate your memory
-state when it encounters cards that are missing review logs. Since review
-logs typically won't be missing unless you explicitly deleted them to free
-up space, most users will not need to adjust this.
+number, and recommend you keep it between 0.85 and 0.95. You can use 
+"Compute minimum recommended retention (experimental)" to find a value
+that strikes the best balance of retention and workload.
 
 **FSRS parameters**
 
@@ -495,7 +488,7 @@ enable FSRS, or change the parameters. The default is not to reschedule
 cards: future reviews will use the new scheduling, but there will be no
 immediate change to your workload. If rescheduling is enabled, the due dates
 of cards will be changed, often resulting in a large number of cards becoming
-due, so **activating this option is not recommended** when first switching from SM2.
+due, so **activating this option is not recommended** when first switching from SM-2.
 
 If you wish to visualize how FSRS would change your schedule without altering
 your workload, there are two ways you can do so:
@@ -512,17 +505,12 @@ The FSRS optimizer uses machine learning to learn your memory patterns
 and find parameters that best fit your review history. To do this, the optimizer
 requires several reviews to fine-tune the parameters.
 
-If you have less than 1,000 reviews, you can use the default parameters that
-are already entered into the "FSRS parameters" field. Even with the default
-parameters, FSRS should work well for most users.
-
-Once you've done 1000+ reviews in Anki, you can use the `Optimize` button to
-analyze your review history, and automatically generate parameters that are
-optimal for your memory and the content you're studying. Parameters are
-preset-specific, so if you have decks that vary wildly in difficulty, it
-is recommended to assign them separate presets, as the parameters for easy
-decks and hard decks will be different. There is no need to optimize your
-parameters frequently - once every few months is sufficient.
+You can use the `Optimize` button to analyze your review history, and 
+automatically generate parameters that are optimal for your memory and 
+the content you're studying. Parameters are preset-specific, so if you have decks 
+that vary wildly in subjective difficulty, it is recommended to assign them separate presets, 
+as the parameters for easy decks and hard decks will be different. There is no need 
+to optimize your parameters frequently - once every few months is sufficient.
 
 By default, parameters will be calculated from the review history of all
 decks using the current preset. You can optionally adjust the search
@@ -536,7 +524,7 @@ down arrow in the top right, then choosing "Optimize all presets".
 
 You can use the `Evaluate` button in the "Optimize FSRS parameters"
 section to see metrics that show how well the parameters in the
-"Model parameters" field fit your review history. Smaller numbers
+"FSRS parameters" field fit your review history. Smaller numbers
 indicate a better fit to your review history.
 
 Log-loss doesn't have an intuitive interpretation. RMSE (bins) can be
@@ -549,16 +537,17 @@ Note that log-loss and RMSE (bins) are not perfectly correlated,
 so two decks may have similar RMSE values but very different log-loss values,
 and vice-versa.
 
-**Compute optimal retention**
+**Compute minimum recommended retention (experimental)**
 
-This experimental tool assumes you're starting with 0 cards, and will
-attempt to calculate the amount of material you'll be able to retain
-in the given time frame. The estimated retention will greatly depend
-on your inputs, and if it significantly differs from 0.9, it's a sign
-that the time you've allocated each day is either too low or too high
-for the amount of cards you're trying to learn. This number can be
-useful as a reference, but it is not recommended to copy it into the
-desired retention field.
+This tool will attempt to find the desired retention value that will lead to 
+the most material learnt, in the least amount of time. The calculated number 
+can serve as a reference when deciding what to set your desired retention to.
+You may wish to choose a higher desired retention, if you’re willing to trade 
+more study time for a greater recall rate. Setting your desired retention 
+lower than the minimum is not recommended, as it will lead to a higher workload, 
+because of the high forgetting rate.
+
+This feature is still under development and may change in the future.
 
 #### Learning and Re-learning Steps
 
@@ -566,17 +555,17 @@ desired retention field.
 reason they were popular with the old SM-2 scheduler is because repeatedly 
 failing a card after it has graduated from the learning phase could reduce 
 its ease a lot, leading to what some people called "ease hell". This is not 
-a problem that FSRS suffers from.  By keeping your learning steps under a 
+a problem that FSRS suffers from. By keeping your learning steps under a 
 day, you will allow FSRS to schedule cards at times it has calculated are 
-optimum for your material and memory.  Another reason not to use longer 
+optimum for your material and memory. Another reason not to use longer 
 learning steps is because FSRS may end up scheduling the first review for a 
 shorter time than your last learning step, leading to the `Hard` button 
 showing a longer time than `Good`.
 
 We also recommend you keep the number of learning steps to a minimum. Evidence
 shows that repeating a card multiple times in a single day after you've
-remembered it does not significantly help with memory, so your time is
-better spent on other cards or a shorter study session
+remembered it does not significantly help to form long-term memories, so your time 
+is better spent on other cards or a shorter study session.
 
 #### Add-On Compatibility
 
@@ -590,6 +579,8 @@ For more info on FSRS, please check:
 
 - [FSRS4Anki Wiki](https://github.com/open-spaced-repetition/fsrs4anki/wiki)
 - [FSRS4Anki on Github](https://github.com/open-spaced-repetition/fsrs4anki)
+
+## Advanced
 
 ### Maximum Interval
 
@@ -684,6 +675,28 @@ the _New Interval_ to 0.20, the new interval would be 20 days.
 While preserving part of the interval may seem to make sense, SuperMemo has observed
 that preserving part of the delay can actually [be counter-productive](https://supermemo.guru/wiki/Post-lapse_stability). For this reason, we recommend you leave it on the default setting.
 
-## Custom Scheduling
+### Historical retention
+
+If your actual retention before switching to FSRS was significantly different
+from 0.9, adjusting this value will allow Anki to better estimate your memory
+state when it encounters cards that are missing review logs. Since review
+logs typically won't be missing unless you explicitly deleted them to free
+up space, most users will not need to adjust this.
+
+This setting was previously called "SM-2 retention".
+
+### Ignore cards reviewed before
+
+This is If set, cards reviewed before the provided date will be ignored when optimizing 
+FSRS parameters. This can be useful if you imported someone else's scheduling data, 
+or have changed the way you use the answer buttons.
+
+If you have reviewed all of your cards before the selected date and do not plan to 
+add new cards, it is not recommended to use this feature, as the optimizer 
+will have no data to work with.
+
+This setting was previously called "Ignore reviews before".
+
+### Custom Scheduling
 
 Please see [this page](https://faqs.ankiweb.net/the-2021-scheduler.html#add-ons-and-custom-scheduling).
