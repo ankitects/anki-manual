@@ -154,7 +154,7 @@ cards in all decks that use the 'Default' deck options preset.
 Requires Anki(Mobile) 23.10+, or AnkiDroid 2.17+.
 
 `card:forward`\
-searches for cards with card type named "Forward".
+finds cards created by a card type named "Forward".
 
 `card:1`\
 searches for cards by card type number, e.g. to find the second cloze
