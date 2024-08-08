@@ -127,18 +127,17 @@ are two major downsides:
 Anki solves these problems by allowing you to split the content of your
 cards up into separate pieces of information. You can then tell Anki
 which pieces of information you want on each card, and Anki will take
-care of creating the cards for you and updating them if you make any
-edits in the future.
+care of creating the cards for you.
 
-Imagine we want to study French vocabulary, and we want to include the
-page number on the back of each card. We want our cards to look like
+Imagine we want to study French vocabulary, and we want to include a
+page number on the back of each card. We want the back of our cards to look like
 this:
 
     Q: Bonjour
     A: Hello
        Page #12
 
-And:
+And this:
 
     Q: Hello
     A: Bonjour
