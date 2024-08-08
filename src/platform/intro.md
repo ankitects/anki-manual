@@ -1,4 +1,9 @@
 # Platform Notes
 
-The way Anki is installed, and the possible problems you may encounter, depend
-on the type of computer you are using.
+This section explains the way Anki is installed, and the possible problems you may encounter, depending on your OS:
+
+- [Windows](./windows/intro.md)
+- [macOS](./mac/intro.md)
+- [Linux](./linux/intro.md)
+
+If you have already installed Anki, you can skip to the [Getting Started](/src/getting-started.md) section.
