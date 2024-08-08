@@ -12,7 +12,7 @@ Please see the instructions for your computer:
 
 ## Videos
 
-For a quick way to dive into Anki, please have a look at these intro
+For a quick way to dive into Anki, have a look at these intro
 videos. Some were made with a previous Anki version, but the concepts
 are the same.
 
@@ -33,33 +33,32 @@ instead.
 
 ### Cards
 
-A question and answer pair is called a 'card'. This is based on a paper
-flashcard with a question on one side and the answer on the back. In
-Anki a card doesn’t actually look like a physical card, and when you
-show the answer the question remains visible by default. For example, if
+A question and answer pair is called a 'card'. This is similar to a paper
+flashcard with a question on front and answer on the back. In
+Anki, a card doesn’t actually look like a physical card, and when you
+look at the answer the question remains visible by default. For example, if
 you’re studying basic chemistry, you might see a question like:
 
     Q: Chemical symbol for oxygen?
 
-After thinking about it, and deciding the answer is O, you click the
-show answer button, and Anki shows you:
+After deciding the answer is O, you click the
+"Show Answer" button, and Anki shows you:
 
     Q: Chemical symbol for oxygen?
     A: O
 
-After confirming that you are correct, you can tell Anki how well you
-remembered, and Anki will choose a next time to show you again.
+After confirming that you are correct, you tell Anki how well you
+remembered the answer, and Anki will choose when to show you the card again. For example, Anki might choose a 30 day interval for the card. After 30 days, Anki will show you the card again.
 
 #### Types of Cards
 
-- **New:** A new card is one that you have downloaded or entered in, but have never studied before.
+- **New:** A new card is one that you have downloaded or created yourself, but have never studied before.
 
 - **Learning:** Cards that were seen for the first time recently, and are still being learnt.
 
-- **Review:** Cards that were previously learnt, and now need to be reviewed so you don’t forget them.
+- **Review:** Cards that were previously learnt, and now need to be timely reviewed so you don’t forget them.
   There are two types of review cards:
-    - **Young:** A young card is one that has an interval of less than 21 days, but is
-   not in learning.
+    - **Young:** A young card is one that has an interval of less than 21 days.
     - **Mature:** A mature card is one that has an interval of 21 days or greater.
 
 - **Relearn:** A relearning card is a card that you have failed in review mode, thus
@@ -73,17 +72,16 @@ once. Each deck can have different settings, such as how many new cards
 to show each day, or how long to wait until cards are shown again.
 
 Decks can contain other decks, which allows you to organize decks into a
-tree. Anki uses “::” to show different levels. A deck called
+tree. Anki uses two colons (“::") to show different levels. A deck called
 “Chinese::Hanzi” refers to a “Hanzi” deck, which is part of a “Chinese”
 deck. If you select “Hanzi” then only the Hanzi cards will be shown; if
-you select “Chinese” then all Chinese cards, including Hanzi cards, will
+you select “Chinese” then all Chinese cards, including the Hanzi cards, will
 be shown.
 
-To place decks into a tree, you can either name them with “::” between
+To place decks into a tree, you can either name them with two colons between
 each level, or drag and drop them from the deck list. Decks that have
-been nested under another deck (that is, that have at least one “::” in
-their names) are often called 'subdecks', and top-level decks are
-sometimes called 'superdecks' or 'parent decks'.
+been placed under a tree are often called "subdecks", and top-level decks are
+sometimes called "super decks" or "parent decks".
 
 Anki starts with a deck called “default”; any cards which have somehow
 become separated from other decks will go here. Anki will hide the
@@ -91,13 +89,11 @@ default deck if it contains no cards and you have added other decks.
 Alternatively, you may rename this deck and use it for other cards.
 
 Decks are displayed in the deck list alphabetically. This can result in
-a surprising order if your decks contain numbers - for example, "My Deck 10"
-will come before "My Deck 9", as 1 comes before 9. If you wish to number your
-decks, you can add a "0" in front of single-digit numbers, e.g. "Deck 01",
-"Deck 02" .. "Deck 10".
+a surprising order if your decks contain numbers. For example, "My Deck 10"
+will come before "My Deck 9", as 1 comes before 9. If you want "My deck 9" to appear earlier, you can rename it to "My deck 09", which appears before "My deck 10".
 
 Decks are best used to hold broad categories of cards, rather than
-specific topics such as “food verbs” or “lesson 1”. For more info on
+specific topics such as “food verbs” or “lesson 1”. For information on
 this, please see the [using decks appropriately](editing.md#using-decks-appropriately) section.
 
 For information on how decks affect the order cards are displayed in,
