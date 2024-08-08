@@ -39,7 +39,7 @@ Anki a card doesn’t actually look like a physical card, and when you
 show the answer the question remains visible by default. For example, if
 you’re studying basic chemistry, you might see a question like:
 
-    Q: Chemical symbol for oxygen?
+![Card Info](media/card_info.png)
 
 After thinking about it, and deciding the answer is O, you click the
 show answer button, and Anki shows you:
