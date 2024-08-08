@@ -54,11 +54,11 @@ the card again.
 
 #### Types of Cards
 
-- **New:** A new card is one that you have downloaded or entered in, but have never studied before. Indicated by a blue number in deck pages and while studying.
+- **New:** A new card is one that you have downloaded or entered in, but have never studied before. A new card is indicated by a blue number in deck pages and while studying.
 
-- **Learning:** Cards that were seen for the first time recently, and are still being learnt. Indicated by a red number in deck pages and while studying.
+- **Learning:** Cards that were seen for the first time recently, and are still being learnt. A learning card is indicated by a red number in deck pages and while studying.
 
-- **Review:** Cards that were previously learnt, and now need to be reviewed so you don’t forget them. Indicated by a green number in deck pages and while studying.
+- **Review:** Cards that were previously learnt, and now need to be reviewed so you don’t forget them. A review card is indicated by a green number in deck pages and while studying.
   There are two types of review cards:
     - **Young:** A young card is one that has an interval of less than 21 days, but is
    not in learning.
