@@ -39,13 +39,12 @@ Anki a card doesn’t actually look like a physical card, and when you
 show the answer the question remains visible by default. For example, if
 you’re studying basic chemistry, you might see a question like:
 
-![Card Info](media/card_info.png)
+![Card Front/Question](media/question.png)
 
 After thinking about it, and deciding the answer is O, you click the
 show answer button, and Anki shows you:
 
-    Q: Chemical symbol for oxygen?
-    A: O
+![Card Back/Answer](media/answer.png)
 
 After confirming that you are correct, you can tell Anki how well you
 remembered, and Anki will choose a next time to show you again.
