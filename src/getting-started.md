@@ -36,8 +36,10 @@ instead.
 A question and answer pair is called a 'card'. This is based on a paper
 flashcard with a question on one side and the answer on the back. In
 Anki a card doesn’t actually look like a physical card, and when you
-show the answer the question remains visible by default. For example, if
-you’re studying basic chemistry, you might see a question like:
+show the answer the question remains visible by default. A question can 
+include many kinds of media files, such as images, or audio files. But in
+its most basic form, a question can simply be written in plain text. For 
+example, if you’re studying basic chemistry, you might see a question like:
 
 ![Card Front/Question](media/question.png)
 
@@ -47,26 +49,8 @@ show answer button, and Anki shows you:
 ![Card Back/Answer](media/answer.png)
 
 After confirming that you are correct, you can tell Anki how well you
-remembered, and Anki will choose a next time to show you again.
-
-### Cards
-
-A question and answer pair is called a 'card'. This is based on a paper
-flashcard with a question on one side and the answer on the back. In
-Anki a card doesn’t actually look like a physical card, and when you
-show the answer the question remains visible by default. For example, if
-you’re studying basic chemistry, you might see a question like:
-
-    Q: Chemical symbol for oxygen?
-
-After thinking about it, and deciding the answer is O, you click the
-show answer button, and Anki shows you:
-
-    Q: Chemical symbol for oxygen?
-    A: O
-
-After confirming that you are correct, you can tell Anki how well you
-remembered, and Anki will choose a next time to show you again.
+you were able to remember the answer, and Anki will choose a next time to show you 
+the card again.
 
 #### Types of Cards
 
