@@ -6,4 +6,4 @@ This section explains the way Anki is installed, and the possible problems you m
 - [macOS](./mac/intro.md)
 - [Linux](./linux/intro.md)
 
-If you have already installed Anki, you can skip to the [Getting Started](/src/getting-started.md) section.
+If you have already installed Anki, you can skip to the [Getting Started](/getting-started.md) section.
