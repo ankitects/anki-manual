@@ -384,7 +384,7 @@ you need to tell Anki not to treat them specially. This is called "escaping a ch
 
 - "or" and "and"
   To search for the words "or" and "and", wrap them with double quotes. For example, `dog "and" cat` searches for "dog", "cat" and the word "and".
-  If you wrap the entire search term with quotes like in the previous example, you do not need to escape an "and" or "or".
+  If you wrap the entire search term with quotes like in the previous example, you do not need to escape "and" or "or".
 
 - `"`, `*` and `_`\
   Add a backslash before these characters to treat them literally. For example,
