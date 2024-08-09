@@ -287,10 +287,10 @@ cards due tomorrow.
 `prop:due=-1`\
 cards due yesterday that haven’t been answered yet.
 
-`prop:due>1`\
+`prop:due>=1`\
 all cards due in the future, including tomorrow.
 
-`prop:due<-1`\
+`prop:due<=-1`\
 all  overdue cards
 
 `prop:due>-1 prop:due<1`\
