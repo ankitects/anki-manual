@@ -14,7 +14,7 @@ Volunteers have contributed translations of this manual. The
 translations may not always be up to date.
 
 - [Bahasa Indonesia](https://apps.ankiweb.net/docs/manual.id.html)
-- [Deutsch](http://www.dennisproksch.de/anki)
+- [Deutsch](https://web.archive.org/web/20240413080739/https://www.dennisproksch.de/anki)
 - [Español](https://apps.ankiweb.net/docs/manual.es.html)
 - [Français](https://apps.ankiweb.net/docs/manual.fr.html)
 - [Italiano](https://web.archive.org/web/20160423223801/http://192.167.9.6/Anki_ITA/Manual_ITA.htm)
