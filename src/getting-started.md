@@ -36,27 +36,29 @@ instead.
 A question and answer pair is called a 'card'. This is based on a paper
 flashcard with a question on one side and the answer on the back. In
 Anki a card doesn’t actually look like a physical card, and when you
-show the answer the question remains visible by default. For example, if
-you’re studying basic chemistry, you might see a question like:
+show the answer the question remains visible by default. A question can 
+include many kinds of media files, such as images, or audio files. But in
+its most basic form, a question can simply be written in plain text. For 
+example, if you’re studying basic chemistry, you might see a question like:
 
-    Q: Chemical symbol for oxygen?
+![Card Front/Question](media/question.png)
 
 After thinking about it, and deciding the answer is O, you click the
 show answer button, and Anki shows you:
 
-    Q: Chemical symbol for oxygen?
-    A: O
+![Card Back/Answer](media/answer.png)
 
 After confirming that you are correct, you can tell Anki how well you
-remembered, and Anki will choose a next time to show you again.
+you were able to remember the answer, and Anki will choose a next time to show you 
+the card again.
 
 #### Types of Cards
 
-- **New:** A new card is one that you have downloaded or entered in, but have never studied before.
+- **New:** A new card is one that you have downloaded or entered in, but have never studied before. New cards to study are indicated by a blue number in anki.
 
-- **Learning:** Cards that were seen for the first time recently, and are still being learnt.
+- **Learning:** Cards that were seen for the first time recently, and are still being learnt. Learning cards are indicated by a red number in anki.
 
-- **Review:** Cards that were previously learnt, and now need to be reviewed so you don’t forget them.
+- **Review:** Cards that were previously learnt, and now need to be reviewed so you don’t forget them. Review cards are indicated by a green number in anki.
   There are two types of review cards:
     - **Young:** A young card is one that has an interval of less than 21 days, but is
    not in learning.
@@ -64,6 +66,8 @@ remembered, and Anki will choose a next time to show you again.
 
 - **Relearn:** A relearning card is a card that you have failed in review mode, thus
   returning it to learning mode to be relearned.
+
+  ![Card Back/Answer](media/card_types.png)
 
 ### Decks
 
