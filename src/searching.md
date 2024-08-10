@@ -64,7 +64,7 @@ Things to note from the above:
 - Search terms are separated by spaces.
 
 - When multiple search terms are provided, Anki looks for notes that
-  match all of the terms - an implicit 'and' is inserted between each
+  match all of the terms - an implicit "and" is inserted between each
   term. On Anki 2.1.24+, AnkiMobile 2.0.60+, and AnkiDroid 2.17+ you can be explicit
   if you like ("dog and cat" is the same as "dog cat"), but older
   Anki versions will treat "and" as just another word to search for.
@@ -77,8 +77,8 @@ Things to note from the above:
 - You can group search terms by placing them in parentheses, as in the
   "dog (cat or mouse)" example. This becomes important when
   combining OR and AND searches — in the example, with the
-  parentheses, it matches either 'dog cat' or 'dog mouse', whereas
-  without them it would match either 'dog and cat' or 'mouse'.
+  parentheses, it matches either "dog cat" or "dog mouse", whereas
+  without them it would match either "dog and cat" or "mouse".
 
 - Anki is only able to search within formatting in the [sort field](editing.md#customizing-fields) you’ve configured. For example, if you add
   "**exa**mple" to one of your fields, with the "exa" part in bold, this will not be matched when
@@ -150,7 +150,7 @@ filtered decks only.
 normal decks only.
 
 `preset:"Default"`\
-cards in all decks that use the 'Default' deck options preset.
+cards in all decks that use the "Default" deck options preset.
 Requires Anki 23.10+, AnkiMobile 23.10+ or AnkiDroid 2.17+.
 
 `card:forward`\
