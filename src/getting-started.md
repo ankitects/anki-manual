@@ -33,11 +33,11 @@ instead.
 
 ### Cards
 
-A question and answer pair is called a 'card'. It's similar to a paper
+A question and answer pair is called a _card_. It's similar to a paper
 flashcard with a question on front and answer on the back. However, in
-Anki, a card doesn’t actually look like a physical card, and when you
+Anki, a card doesn't actually look like a physical card, and when you
 look at the answer the question remains visible by default. For example, if
-you’re studying basic chemistry, you might see a question like:
+you're studying basic chemistry, you might see a question like:
 
     Q: Chemical symbol for oxygen?
 
@@ -66,16 +66,16 @@ remembered the answer, and Anki will choose when to show you the card again. If,
 
 ### Decks
 
-A 'deck' is a group of cards. You can place cards in different decks to
+A _deck_ is a group of cards. You can place cards in different decks to
 study parts of your card collection instead of studying everything at
 once. Each deck can have different settings, such as how many new cards
 to show each day, or how long to wait until cards are shown again.
 
 Decks can contain other decks, which allows you to organize decks into a
-tree. Anki uses two colons (“::") to show different levels. A deck called
-“Chinese::Hanzi” refers to a “Hanzi” deck, which is part of a “Chinese”
-deck. If you select “Hanzi” then only the Hanzi cards will be shown; if
-you select “Chinese” then all Chinese cards, including the Hanzi cards, will
+tree. Anki uses two colons ("::") to show different levels. A deck called
+"Chinese::Hanzi" refers to a "Hanzi" deck, which is part of a "Chinese"
+deck. If you select "Hanzi" then only the Hanzi cards will be shown; if
+you select "Chinese" then all Chinese cards, including the Hanzi cards, will
 be shown.
 
 To place decks into a tree, you can either name them with two colons between
@@ -83,7 +83,7 @@ each level, or drag and drop them from the deck list. Decks that have
 been placed under a tree are often called "subdecks", and top-level decks are
 sometimes called "super decks" or "parent decks".
 
-Anki starts with a deck called “default”; any cards which have somehow
+Anki starts with a deck called "Default"; any cards which have somehow
 become separated from other decks will go here. Anki will hide the
 default deck if it contains no cards and you have added other decks.
 Alternatively, you may rename this deck and use it for other cards.
@@ -93,7 +93,7 @@ a surprising order if your decks contain numbers. For example, "My Deck 10"
 will come before "My Deck 9", as 1 comes before 9. If you want "My deck 9" to appear earlier, you can rename it to "My deck 09", which appears before "My deck 10".
 
 Decks are best used to hold broad categories of cards, rather than
-specific topics such as “food verbs” or “lesson 1”. For information on
+specific topics such as "food verbs" or "lesson 1". For information on
 this, please see the [using decks appropriately](editing.md#using-decks-appropriately) section.
 
 For information on how decks affect the order cards are displayed in,
@@ -103,10 +103,10 @@ please see the [display order](studying.md#display-order) section.
 
 When making flashcards, it’s often desirable to make more than one card
 that relates to some information. For example, if you’re learning
-French, and you learn that the word “bonjour” means “hello”, you may
-wish to create one card that shows you “bonjour” and asks you to
-remember “hello”, and another card that shows you “hello” and asks you
-to remember “bonjour”. One card is testing your ability to recognize the
+French, and you learn that the word _bonjour_ means hello, you may
+wish to create one card that shows you "bonjour" and asks you to
+remember "hello", and another card that shows you "hello" and asks you
+to remember "bonjour". One card is testing your ability to recognize the
 foreign word, and the other card is testing your ability to produce it.
 
 When using paper flashcards, your only option in this case is to write
@@ -151,11 +151,11 @@ they’d look like this:
     English: Hello
     Page: 12
 
-In Anki, this collection of related information is called a 'note', and each piece of
-information is called a 'field'. So we can say that this type of note
+In Anki, this collection of related information is called a _note_, and each piece of
+information is called a _field_. So we can say that this type of note
 has three fields: "French", "English", and "Page".
 
-To add and edit fields, click the “Fields…​” button while adding or
+To add and edit fields, click the "Fields…​" button while adding or
 editing notes. For more information on fields, please see the
 [Customizing Fields](editing.md#customizing-fields) section.
 
@@ -163,11 +163,11 @@ editing notes. For more information on fields, please see the
 
 In order for Anki to create cards based on our notes, we need to give it
 a blueprint that says which fields should be displayed on the front or
-back of each card. This blueprint is called a 'card type'. Each type of
+back of each card. This blueprint is called a _card type_. Each type of
 note can have one or more card types; when you add a note, Anki will
 create one card for each card type.
 
-Each card type has two 'templates', one for the question and one for the
+Each card type has two _templates_, one for the question and one for the
 answer. In the previous French example, we wanted the back of our recognition card to
 look like this:
 
@@ -183,7 +183,7 @@ To do this, we can set the answer template to:
 
 In the templates, field names are wrapped in double curly brackets like `{{French}}`. Anki replaces that with the text the field contains. Anything
 not surrounded by curly brackets remains the same on each card. For
-example, we don’t need to enter “Page \#” in every card; it’s added automatically to every card. &lt;br&gt; is
+example, we don't need to enter "Page \#" in every card; it’s added automatically to every card. &lt;br&gt; is
 a special code that tells Anki to move to the next line; more details
 are available in the [templates](templates/intro.md) section.
 
@@ -197,26 +197,25 @@ After a card type has been created, every time you add a new note, a card
 will be created based on that card type. Card types make it easy to keep
 the formatting of your cards consistent and can greatly reduce the
 amount of effort involved in adding information. They also mean Anki can
-ensure related cards don’t appear too close to each other, and they
+ensure related cards don't appear too close to each other, and they
 allow you to fix a typing mistake or factual error once and have all the
 related cards updated at once.
 
-To add and edit card types, click the “Cards…​” button while adding or
+To add and edit card types, click the "Cards…​" button while adding or
 editing notes. For more information on card types, please see the [Cards and Templates](templates/intro.md) section.
 
 ### Note Types
 
 Anki allows you to create different types of notes for different
 material. Each type of note has its own set of fields and card types.
-It’s a good idea to create a separate note type for each broad topic
+It's a good idea to create a separate note type for each broad topic
 you’re studying. In the previous French example, we might create a note
-type called “French” for that. If we wanted to learn capital cities, we
+type called "French" for that. If we wanted to learn capital cities, we
 could create a separate note type for that as well, with fields such as
-“Country” and “Capital City”.
-
+"Country" and "Capital City".
 Anki comes with some standard
 note types in it. These note types are provided to make Anki easier to use for
-new users, but in the long run it’s recommended you create your own note
+new users, but in the long run it's recommended you create your own note
 types for the content you are learning. The standard note types are as
 follows:
 
@@ -241,8 +240,8 @@ follows:
 
 - **Cloze**\
   A note type which makes it easy to select text and turn it into a cloze
-  deletion (e.g. “Humans landed on the moon in \[…​\]” → “Humans landed on the
-  moon in 1969”). For details, see the [cloze deletion](editing.md#cloze-deletion) section.
+  deletion (e.g. "Humans landed on the moon in \[…​\]" → "Humans landed on the
+  moon in 1969"). For details, see the [cloze deletion](editing.md#cloze-deletion) section.
 
 - **Image Occlusion**\
   Like the cloze notetype, but it works with images instead of text,
@@ -259,11 +258,11 @@ notes types in a particular deck, or have cards generated from the
  same note in different decks. When you add notes using the
 Add window, you can select what note type to use and what deck to use,
 and these choices are completely independent of each other. You can also
-change the note type of some notes [after you’ve already created them](browsing.md).
+change the note type of some notes [after you've already created them](browsing.md).
 
 ### Collection
 
-Your 'collection' is all the material stored in Anki – your cards,
+Your _collection_ is all the material stored in Anki: your cards,
 notes, decks, note types, deck options, and so on.
 
 ## Shared Decks
@@ -274,9 +273,9 @@ Basics](http://www.youtube.com/watch?v=QS2G-k2hQyg&yt:cc=on) on YouTube.
 The easiest way to get started with Anki is to download a deck of cards
 someone has shared:
 
-1. Click the “Get Shared” button at the bottom of the deck list.
+1. Click the "Get Shared" button at the bottom of the deck list.
 
-2. When you’ve found a deck you’re interested in, click the “Download”
+2. When you've found a deck you're interested in, click the "Download"
    button to download a deck package.
 
 3. Double-click on the downloaded package to load it into Anki, or click
