@@ -217,7 +217,7 @@ Some things to be aware of:
 - The search is case-insensitive by default; use `(?-i)` at the start to turn on case sensitivity.
 - Some text like spaces and newlines may be represented differently in HTML - you can
   use the HTML editor in the editing screen to see the underlying HTML contents.
-- For the specifics of Anki's regex support, see the [regex crate documentation](<https://docs.rs/regex/1.3.9/regex/#syntax>)
+- For the specifics of Anki's regex support, see the [regex crate documentation](<https://docs.rs/regex/1.3.9/regex/#syntax>).
 
 ## Card state
 
@@ -290,7 +290,7 @@ cards due yesterday that haven’t been answered yet.
 all cards due in the future, including tomorrow.
 
 `prop:due<=-1`\
-all  overdue cards
+all  overdue cards.
 
 `prop:due>-1 prop:due<1`\
 cards due yesterday, today and tomorrow.
@@ -408,7 +408,7 @@ you need to tell Anki not to treat them specially. This is called "escaping a ch
 - `:`\
   Colons have to be escaped using backslashes unless they are preceded by another, unescaped colon.
   For example, `w:3:30` searches for "3:30" on word boundary and doesn't require you to use a backslash.
-  However, if you don't use a colon search, the colons need to escaped like this: `3\:30`.
+  However, if you don't use a colon search, the colons need to be escaped like this: `3\:30`.
 
 - `&`, `<`, and `>`\
   `&`, `<`, and `>` are treated as HTML when searching in Anki, and as such, searches
@@ -422,7 +422,7 @@ Text preceded by certain keywords (like `re:`) will be treated as raw input. Tha
 the characters listed above largely lose their special meaning. In such a context, only
 a minimum of escaping is required to prevent ambiguity:
 
-- `"` must be escaped.
+- Double quotes (`"`) must be escaped.
 
 - Spaces and unescaped parentheses require the search term to be quoted.
 
@@ -431,10 +431,10 @@ a minimum of escaping is required to prevent ambiguity:
 ## Object IDs
 
 `nid:123`\
-the note with note id 123
+the note with note id 123.
 
 `cid:123,456,789`\
-all cards with card ids 123, 456 or 789
+all cards with card ids 123, 456, or 789.
 
 Note and card IDs can be found in the [card info](stats.md) dialog in the
 browser. These searches may also be helpful when doing add-on
