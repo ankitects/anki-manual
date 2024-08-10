@@ -217,8 +217,7 @@ Some things to be aware of:
 - The search is case-insensitive by default; use `(?-i)` at the start to turn on case sensitivity.
 - Some text like spaces and newlines may be represented differently in HTML - you can
   use the HTML editor in the editing screen to see the underlying HTML contents.
-- For the specifics of Anki's regex support, see the [regex crate documentation]
-(<https://docs.rs/regex/1.3.9/regex/#syntax>)
+- For the specifics of Anki's regex support, see the [regex crate documentation](<https://docs.rs/regex/1.3.9/regex/#syntax>)
 
 ## Card state
 
