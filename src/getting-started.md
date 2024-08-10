@@ -33,8 +33,8 @@ instead.
 
 ### Cards
 
-A question and answer pair is called a 'card'. This is similar to a paper
-flashcard with a question on front and answer on the back. In
+A question and answer pair is called a 'card'. It's similar to a paper
+flashcard with a question on front and answer on the back. However, in
 Anki, a card doesn’t actually look like a physical card, and when you
 look at the answer the question remains visible by default. For example, if
 you’re studying basic chemistry, you might see a question like:
@@ -48,7 +48,7 @@ After deciding the answer is O, you click the
     A: O
 
 After confirming that you are correct, you tell Anki how well you
-remembered the answer, and Anki will choose when to show you the card again. For example, Anki might choose a 30 day interval for the card. After 30 days, Anki will show you the card again.
+remembered the answer, and Anki will choose when to show you the card again. If, for example, Anki decides to show you the card again in 30 days, we say the card has a 30 day interval.
 
 #### Types of Cards
 
@@ -151,9 +151,9 @@ they’d look like this:
     English: Hello
     Page: 12
 
-In Anki, this related information is called a 'note', and each piece of
+In Anki, this collection of related information is called a 'note', and each piece of
 information is called a 'field'. So we can say that this type of note
-has three fields: French, English, and Page.
+has three fields: "French", "English", and "Page".
 
 To add and edit fields, click the “Fields…​” button while adding or
 editing notes. For more information on fields, please see the
@@ -168,14 +168,14 @@ note can have one or more card types; when you add a note, Anki will
 create one card for each card type.
 
 Each card type has two 'templates', one for the question and one for the
-answer. In the above French example, we wanted the recognition card to
+answer. In the previous French example, we wanted the back of our recognition card to
 look like this:
 
     Q: Bonjour
     A: Hello
        Page #12
 
-To do this, we can set the question and answer templates to:
+To do this, we can set the answer template to:
 
     Q: {{French}}
     A: {{English}}<br>
