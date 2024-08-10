@@ -64,25 +64,25 @@ Things to note from the above:
 - Search terms are separated by spaces.
 
 - When multiple search terms are provided, Anki looks for notes that
-  match all of the terms - an implicit "and" is inserted between each
+  match all of the terms - an implicit `and` is inserted between each
   term. On Anki 2.1.24+, AnkiMobile 2.0.60+, and AnkiDroid 2.17+ you can be explicit
-  if you like ("dog and cat" is the same as "dog cat"), but older
-  Anki versions will treat "and" as just another word to search for.
+  if you like (`dog and cat` is the same as `dog cat`), but older
+  Anki versions will treat `and` as just another word to search for.
 
-- You can use "or" if you only need one of the terms to match.
+- You can use `or` if you only need one of the terms to match.
 
-- You can prepend a minus sign to a term to find notes that don’t
+- You can prepend a minus sign (`-`) to a term to find notes that don’t
   match the term.
 
 - You can group search terms by placing them in parentheses, as in the
-  "dog (cat or mouse)" example. This becomes important when
+  `dog (cat or mouse)` example. This becomes important when
   combining OR and AND searches — in the example, with the
   parentheses, it matches either "dog cat" or "dog mouse", whereas
   without them it would match either "dog and cat" or "mouse".
 
 - Anki is only able to search within formatting in the [sort field](editing.md#customizing-fields) you’ve configured. For example, if you add
   "**exa**mple" to one of your fields, with the "exa" part in bold, this will not be matched when
-  searching for "example" unless that field is the sort field. If a
+  searching for `example` unless that field is the sort field. If a
   word is not formatted, or the formatting does not change in the
   middle of the word, then Anki will be able to find it in any field.
 
@@ -382,7 +382,7 @@ you need to tell Anki not to treat them specially. This is called "escaping a ch
   `part:"after the colon"`.
 
 - `And`/`Or`\
-  To search for the words `or` and `and`, wrap them with double quotes. For example, `dog "and" cat` searches for "dog", "cat" and the word "and".
+  To search for the words "or" and "and", wrap them with double quotes. For example, `dog "and" cat` searches for "dog", "cat" and the word "and".
   If you wrap the entire search term with quotes like in the previous example, you do not need to escape `and` or `or`.
 
 - `"`, `*` and `_`\
