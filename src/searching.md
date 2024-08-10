@@ -376,14 +376,15 @@ If you're using a version earlier than Anki 2.1.36 the following searches may no
 As shown in the previous section, some characters like `*`, `_` and `"` have a
 special meaning in search. If you need to locate those characters in a search,
 you need to tell Anki not to treat them specially. This is called "escaping a character" and is primarily done by using double quotes and backslashes.
+
 - _Space_\
   To match something that includes spaces, enclose the `"entire term"` in double
   quotes. If it is a colon search, you also have the option to only quote the
   `part:"after the colon"`.
 
-- "or" and "and"
-  To search for the words "or" and "and", wrap them with double quotes. For example, `dog "and" cat` searches for "dog", "cat" and the word "and".
-  If you wrap the entire search term with quotes like in the previous example, you do not need to escape "and" or "or".
+- `And`/`Or`\
+  To search for the words `or` and `and`, wrap them with double quotes. For example, `dog "and" cat` searches for "dog", "cat" and the word "and".
+  If you wrap the entire search term with quotes like in the previous example, you do not need to escape `and` or `or`.
 
 - `"`, `*` and `_`\
   Add a backslash before these characters to treat them literally. For example,
