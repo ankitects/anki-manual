@@ -4720,7 +4720,7 @@ will match &quot;dog&quot; and &quot;underdog&quot;, but not &quot;doggy&quot;.<
 </li>
 <li>
 <p>When multiple search terms are provided, Anki looks for notes that
-match all of the terms - an implicit 'and' is inserted between each
+match all of the terms - an implicit &quot;and&quot; is inserted between each
 term. On Anki 2.1.24+, AnkiMobile 2.0.60+, and AnkiDroid 2.17+ you can be explicit
 if you like (&quot;dog and cat&quot; is the same as &quot;dog cat&quot;), but older
 Anki versions will treat &quot;and&quot; as just another word to search for.</p>
@@ -4736,8 +4736,8 @@ match the term.</p>
 <p>You can group search terms by placing them in parentheses, as in the
 &quot;dog (cat or mouse)&quot; example. This becomes important when
 combining OR and AND searches — in the example, with the
-parentheses, it matches either 'dog cat' or 'dog mouse', whereas
-without them it would match either 'dog and cat' or 'mouse'.</p>
+parentheses, it matches either &quot;dog cat&quot; or &quot;dog mouse&quot;, whereas
+without them it would match either &quot;dog and cat&quot; or &quot;mouse&quot;.</p>
 </li>
 <li>
 <p>Anki is only able to search within formatting in the <a href="editing.html#customizing-fields">sort field</a> you’ve configured. For example, if you add
@@ -4793,7 +4793,7 @@ filtered decks only.</p>
 <p><code>-deck:filtered</code><br />
 normal decks only.</p>
 <p><code>preset:&quot;Default&quot;</code><br />
-cards in all decks that use the 'Default' deck options preset.
+cards in all decks that use the &quot;Default&quot; deck options preset.
 Requires Anki 23.10+, AnkiMobile 23.10+ or AnkiDroid 2.17+.</p>
 <p><code>card:forward</code><br />
 finds cards created by a card type named &quot;Forward&quot;.</p>
@@ -4837,8 +4837,7 @@ finds notes with tags &quot;lesson-17&quot; through &quot;lesson-25&quot;.</p>
 <li>The search is case-insensitive by default; use <code>(?-i)</code> at the start to turn on case sensitivity.</li>
 <li>Some text like spaces and newlines may be represented differently in HTML - you can
 use the HTML editor in the editing screen to see the underlying HTML contents.</li>
-<li>For the specifics of Anki's regex support, see the [regex crate documentation]
-(<a href="https://docs.rs/regex/1.3.9/regex/#syntax">https://docs.rs/regex/1.3.9/regex/#syntax</a>)</li>
+<li>For the specifics of Anki's regex support, see the <a href="https://docs.rs/regex/1.3.9/regex/#syntax">regex crate documentation</a></li>
 </ul>
 <h2 id="card-state"><a class="header" href="#card-state">Card state</a></h2>
 <p><code>is:due</code><br />
