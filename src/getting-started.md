@@ -254,9 +254,9 @@ To add your own note types and modify existing ones, you can use Tools →
 Manage Note Types from the main Anki window.
 
 Notes and note types are common to your whole collection rather than
-limited to an individual deck. This means you can use many different
-types of notes in a particular deck, or have different cards generated
-from a particular note in different decks. When you add notes using the
+limited to an individual deck. This means you can use different
+notes types in a particular deck, or have cards generated from the
+ same note in different decks. When you add notes using the
 Add window, you can select what note type to use and what deck to use,
 and these choices are completely independent of each other. You can also
 change the note type of some notes [after you’ve already created them](browsing.md).
@@ -279,8 +279,8 @@ someone has shared:
 2. When you’ve found a deck you’re interested in, click the “Download”
    button to download a deck package.
 
-3. Double-click on the downloaded package to load it into Anki, or
-   File→Import it.
+3. Double-click on the downloaded package to load it into Anki, or click
+   File → Import.
 
 Please note that it’s not currently possible to add shared decks
 directly to your AnkiWeb account. You need to import them with the
@@ -303,16 +303,16 @@ exposure to real-world sentences.
     --SuperMemo
 
 Most shared decks are created by people who are learning material
-outside of Anki – from textbooks, classes, TV, etc. They select the
+outside Anki, such as from textbooks, classes, TV, etc. They select the
 interesting points from what they learn and put them into Anki. They
 make no effort to add background information or explanations to the
 cards, because they already understand the material. So when someone
-else downloads their deck and tries to use it, they’ll find it very
+else downloads their deck and tries to use it, they might find it very
 difficult as the background information and explanations are missing.
 
 That is not to say shared decks are useless – simply that for complex
-subjects, they should be used as a 'supplement' to external material,
-not as a 'replacement' for it. If you’re studying textbook ABC and
+subjects, they should be used as a _supplement_ to external material,
+not as a _replacement_ for it. If you’re studying textbook ABC and
 someone has shared a deck of ideas from ABC, that’s a great way to save
 some time. And for simple subjects that are basically a list of facts,
 such as capital city names or pub quiz trivia, you probably don’t need
