@@ -181,21 +181,19 @@ To do this, we can set the answer template to:
     A: {{English}}<br>
        Page #{{Page}}
 
-By surrounding a field name in double curly brackets, we tell Anki to
-replace that section with the actual information in the field. Anything
-not surrounded by curly brackets remains the same on each card. (For
-instance, we don’t have to type “Page \#” into the Page field when
-adding material – it’s added automatically to every card.) &lt;br&gt; is
+In the templates, field names are wrapped in double curly brackets like `{{French}}`. Anki replaces that with the text the field contains. Anything
+not surrounded by curly brackets remains the same on each card. For
+example, we don’t need to enter “Page \#” in every card; it’s added automatically to every card. &lt;br&gt; is
 a special code that tells Anki to move to the next line; more details
 are available in the [templates](templates/intro.md) section.
 
-The production card templates work in a similar way:
+The production card's templates will work in a similar way:
 
     Q: {{English}}
     A: {{French}}<br>
        Page #{{Page}}
 
-Once a card type has been created, every time you add a new note, a card
+After a card type has been created, every time you add a new note, a card
 will be created based on that card type. Card types make it easy to keep
 the formatting of your cards consistent and can greatly reduce the
 amount of effort involved in adding information. They also mean Anki can
