@@ -143,7 +143,7 @@ And this:
     A: Bonjour
        Page #12
 
-In this example, we have three pieces of related information: a French
+In this example, we have three related pieces of information: a French
 word, an English meaning, and a page number. If we put them together,
 they’d look like this:
 
@@ -209,52 +209,45 @@ editing notes. For more information on card types, please see the [Cards and Tem
 Anki allows you to create different types of notes for different
 material. Each type of note has its own set of fields and card types.
 It’s a good idea to create a separate note type for each broad topic
-you’re studying. In the above French example, we might create a note
+you’re studying. In the previous French example, we might create a note
 type called “French” for that. If we wanted to learn capital cities, we
 could create a separate note type for that as well, with fields such as
 “Country” and “Capital City”.
 
-When Anki checks for duplicates, it only compares other notes of the
-same type. Thus if you add a capital city called “Orange” using the
-capital city note type, you won’t see a duplicate message when it comes
-time to learn how to say “orange” in French.
-
-When you create a new collection, Anki automatically adds some standard
-note types to it. These note types are provided to make Anki easier for
-new users, but in the long run it’s recommended you define your own note
+Anki comes with some standard
+note types in it. These note types are provided to make Anki easier to use for
+new users, but in the long run it’s recommended you create your own note
 types for the content you are learning. The standard note types are as
 follows:
 
 - **Basic**\
-  Has Front and Back fields, and will create one card. Text you enter in
-  Front will appear on the front of the card, and text you enter in Back
+  Has "Front" and "Back" fields, and will create one card. Text you enter in
+  "Front" will appear on the front of the card, and text you enter in "Back"
   will appear on the back of the card.
 
 - **Basic (and reversed card)**\
-  Like Basic, but creates two cards for the text you enter: one from
+  Like "Basic", but creates two cards for the text you enter: one from
   front→back and one from back→front.
 
 - **Basic (optional reversed card)**\
-  This is a front→back card, and optionally a back→front card. To do this,
-  it has a third field called “Add Reverse.” If you enter any text into
-  that field, a reverse card will be created. More information about this
-  is available in the [Cards and Templates](templates/intro.md) section.
+  Like "Basic", but has a third field called "Add Reverse". If you enter any text into
+  that field, a reverse card will be created. For details, see the [Cards and Templates](templates/intro.md) section.
 
 - **Basic (type in the answer)**\
-  This is essentially Basic, with an extra text box on the front where you
-  can type your answer in, after flipping to the back your input would be
-  checked and compared with the answer. More information is available in the
+  This is essentially "Basic", with an extra text box on the front where you
+  can type your answer in. After flipping to the back, you can check and
+  compare your input with the answer. For details, see the
   [Checking Your Answer](templates/fields.md#checking-your-answer) section.
 
 - **Cloze**\
   A note type which makes it easy to select text and turn it into a cloze
-  deletion (e.g., “Man landed on the moon in \[…​\]” → “Man landed on the
-  moon in 1969”). More information is available in the [cloze deletion](editing.md#cloze-deletion) section.
+  deletion (e.g. “Humans landed on the moon in \[…​\]” → “Humans landed on the
+  moon in 1969”). For details, see the [cloze deletion](editing.md#cloze-deletion) section.
 
 - **Image Occlusion**\
   Like the cloze notetype, but it works with images instead of text,
   which is especially useful when studying material that heavily relies on images,
-  such as anatomy, geography, and more. For details, please see the [Image Occlusion](editing.md#image-occlusion)
+  such as anatomy and geography. For details, please see the [Image Occlusion](editing.md#image-occlusion)
   section of the manual. 
 
 To add your own note types and modify existing ones, you can use Tools →
