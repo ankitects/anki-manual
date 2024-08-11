@@ -72,24 +72,22 @@ once. Each deck can have different settings, such as how many new cards
 to show each day, or how long to wait until cards are shown again.
 
 Decks can contain other decks, which allows you to organize decks into a
-tree. Anki uses two colons ("::") to show different levels. A deck called
+tree. Anki uses double colons ("::") to show different levels within the deck tree. For example, a deck called
 "Chinese::Hanzi" refers to a "Hanzi" deck, which is part of a "Chinese"
-deck. If you select "Hanzi" then only the Hanzi cards will be shown; if
-you select "Chinese" then all Chinese cards, including the Hanzi cards, will
-be shown.
+deck. If you select "Hanzi", then only the Hanzi cards will be shown; if
+you select "Chinese", then all the Chinese cards will be shown, including the Hanzi cards.
 
-To place decks into a tree, you can either name them with two colons between
-each level, or drag and drop them from the deck list. Decks that have
-been placed under a tree are often called "subdecks", and top-level decks are
-sometimes called "super decks" or "parent decks".
+To place decks under a tree, you can either name them with double colons between
+each level, or drag and drop them within the deck list. Decks that have
+been placed under a tree are often called "subdecks", and top-level decks are called "parent decks".
 
 Anki starts with a deck called "Default"; any cards which have somehow
 become separated from other decks will go here. Anki will hide the
 default deck if it contains no cards and you have added other decks.
 Alternatively, you may rename this deck and use it for other cards.
 
-Decks are displayed in the deck list alphabetically. This can result in
-a surprising order if your decks contain numbers. For example, "My Deck 10"
+Decks in the deck list are sorted alphabetically. This can result in
+a surprising order if your deck names contain numbers. For example, "My Deck 10"
 will come before "My Deck 9", as 1 comes before 9. If you want "My deck 9" to appear earlier, you can rename it to "My deck 09", which appears before "My deck 10".
 
 Decks are best used to hold broad categories of cards, rather than
