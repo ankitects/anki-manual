@@ -178,12 +178,12 @@ To do this, we can set the answer template to:
     A: {{English}}<br>
        Page #{{Page}}
 
-In card templates, field names are wrapped in double curly brackets like `{{French}}` or `{{English}}. Anki replaces those with the actual text the field contain. This is known as ["Field replacement".](/field-replacement.md) Text
-not surrounded by curly brackets remains the same on each card. For
+In card templates, field names are wrapped in double curly brackets like `{{French}}` or `{{English}}`. Anki replaces those with the actual text the field contain. This is known as ["Field replacement"](/field-replacement.md). Text
+not surrounded by curly brackets appears the same on each card. For
 example, we don't need to enter "Page \#" in every card; it’s added automatically to every card. The `&lt;br&gt;` tag is
 a special code that tells Anki to move to the next line. For details, see the [templates](templates/intro.md) section.
 
-The production card's templates will work in a similar way:
+The production card's templates will also work in a similar way:
 
     Q: {{English}}
     A: {{French}}<br>
