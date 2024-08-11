@@ -149,8 +149,7 @@ they’d look like this:
     English: Hello
     Page: 12
 
-In Anki, this collection of related information is called a _note_, and each piece of
-information is called a _field_. So we can say that this type of note
+In Anki, this collection of related information is called a _note_ and each piece of information is contained in a _field_. In this example, the note
 has three fields: "French", "English", and "Page".
 
 To add and edit fields, click the "Fields…​" button while adding or
@@ -165,7 +164,7 @@ back of each card. This blueprint is called a _card type_. Each type of
 note can have one or more card types; when you add a note, Anki will
 create one card for each card type.
 
-Each card type has two _templates_, one for the question and one for the
+All card types have two _templates_, one for the question and one for the
 answer. In the previous French example, we wanted the back of our recognition card to
 look like this:
 
@@ -179,11 +178,10 @@ To do this, we can set the answer template to:
     A: {{English}}<br>
        Page #{{Page}}
 
-In the templates, field names are wrapped in double curly brackets like `{{French}}`. Anki replaces that with the text the field contains. Anything
+In card templates, field names are wrapped in double curly brackets like `{{French}}` or `{{English}}. Anki replaces those with the actual text the field contain. This is known as ["Field replacement".](/field-replacement.md) Text
 not surrounded by curly brackets remains the same on each card. For
-example, we don't need to enter "Page \#" in every card; it’s added automatically to every card. &lt;br&gt; is
-a special code that tells Anki to move to the next line; more details
-are available in the [templates](templates/intro.md) section.
+example, we don't need to enter "Page \#" in every card; it’s added automatically to every card. The `&lt;br&gt;` tag is
+a special code that tells Anki to move to the next line. For details, see the [templates](templates/intro.md) section.
 
 The production card's templates will work in a similar way:
 
@@ -211,6 +209,7 @@ you’re studying. In the previous French example, we might create a note
 type called "French" for that. If we wanted to learn capital cities, we
 could create a separate note type for that as well, with fields such as
 "Country" and "Capital City".
+
 Anki comes with some standard
 note types in it. These note types are provided to make Anki easier to use for
 new users, but in the long run it's recommended you create your own note
@@ -242,7 +241,7 @@ follows:
   moon in 1969"). For details, see the [cloze deletion](editing.md#cloze-deletion) section.
 
 - **Image Occlusion**\
-  Like the cloze notetype, but it works with images instead of text,
+  Like the cloze note type, but it works with images instead of text,
   which is especially useful when studying material that heavily relies on images,
   such as anatomy and geography. For details, please see the [Image Occlusion](editing.md#image-occlusion)
   section of the manual. 
@@ -252,7 +251,7 @@ Manage Note Types from the main Anki window.
 
 Notes and note types are common to your whole collection rather than
 limited to an individual deck. This means you can use different
-notes types in a particular deck, or have cards generated from the
+notes types in a single deck, or have cards generated from the
  same note in different decks. When you add notes using the
 Add window, you can select what note type to use and what deck to use,
 and these choices are completely independent of each other. You can also
