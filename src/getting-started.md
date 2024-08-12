@@ -34,7 +34,7 @@ instead.
 ### Cards
 
 A question and answer pair is called a _card_. It's similar to a paper
-flashcard with a question on the front and an answer on the back. However, in
+flashcard with a question on the front and answer on the back. However, in
 Anki, a card doesn't look like a physical card, and when you
 show the answer the question remains visible by default. For example, if
 you're studying basic chemistry, you might see a question like:
@@ -99,12 +99,12 @@ please see the [display order](studying.md#display-order) section.
 ### Notes & Fields
 
 When making flashcards, it’s often desirable to make more than one card
-that relates to some information. For example, if you’re learning
+that relates to the same information. For example, if you’re learning
 French, and you learn that the word _bonjour_ means hello, you may
 wish to create one card that shows you "bonjour" and asks you to
 remember "hello", and another card that shows you "hello" and asks you
 to remember "bonjour". One card is testing your ability to recognize the
-foreign word, and the other card is testing your ability to produce it.
+French word, and the other card is testing your ability to produce it.
 
 When using paper flashcards, your only option in this case is to write
 out the information twice, once for each card. Some digital flashcard
