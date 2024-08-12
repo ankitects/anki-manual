@@ -90,7 +90,7 @@ a surprising order if your deck names contain numbers. For example, "My Deck 10"
 will come before "My Deck 9", as 1 comes before 9. If you want "My deck 9" to appear earlier, you can rename it to "My deck 09", which appears before "My deck 10".
 
 Decks are best used to hold broad categories of cards, rather than
-specific topics such as "food verbs" or "lesson 1". For information on
+specific topics such as "food verbs" or "lesson 1". For more information about
 this, please see the [using decks appropriately](editing.md#using-decks-appropriately) section.
 
 For information on how decks affect the order cards are displayed in,
