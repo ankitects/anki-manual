@@ -93,7 +93,7 @@ Decks are best used to hold broad categories of cards, rather than
 specific topics such as "food verbs" or "lesson 1". For more information about
 this, please see the [using decks appropriately](editing.md#using-decks-appropriately) section.
 
-For information on how decks affect the order cards are displayed in,
+For information on how the order of decks affects the order cards are studied in,
 please see the [display order](studying.md#display-order) section.
 
 ### Notes & Fields
