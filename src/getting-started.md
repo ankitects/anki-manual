@@ -52,7 +52,7 @@ remembered the answer, and Anki will choose when to show you the card again. If,
 
 #### Types of Cards
 
-- **New:** A new card is one that you have downloaded or created yourself, but have never studied before.
+- **New:** Cards that you have downloaded or created yourself, but have never studied before.
 
 - **Learning:** Cards that were seen for the first time recently, and are still being learnt.
 
