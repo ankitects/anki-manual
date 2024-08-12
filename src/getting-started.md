@@ -140,7 +140,7 @@ And this:
     A: Bonjour
        Page #12
 
-In this example, we have three related pieces of information: a French
+In both cards, we have the same three related pieces of information: a French
 word, an English meaning, and a page number. If we put them together,
 they’d look like this:
 
@@ -204,7 +204,7 @@ editing notes. For more information on card types, please see the [Cards and Tem
 Anki allows you to create different types of notes for different
 material. Each type of note has its own set of fields and card types.
 It's a good idea to create a separate note type for each broad topic
-you’re studying. In the previous French example, we might create a note
+you're studying. In the previous French example, we might create a note
 type called "French" for that. If we wanted to learn capital cities, we
 could create a separate note type for that as well, with fields such as
 "Country" and "Capital City".
@@ -230,11 +230,11 @@ types specifically for the content you are learning. The standard note types are
 - **Basic (type in the answer)**\
   This is essentially "Basic", with an extra text box on the front where you
   can type your answer in. After flipping to the back, you can check and
-  compare your input with the answer. For details, see the
+  compare your input with the actual answer. For details, see the
   [Checking Your Answer](templates/fields.md#checking-your-answer) section.
 
 - **Cloze**\
-  A note type which makes it easy to select text and turn it into a cloze
+  A note type which makes it easier to select text and turn it into a cloze
   deletion (e.g. "Humans landed on the moon in \[…​\]" → "Humans landed on the
   moon in 1969"). For details, see the [cloze deletion](editing.md#cloze-deletion) section.
 
