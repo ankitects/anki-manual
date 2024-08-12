@@ -225,7 +225,7 @@ types specifically for the content you are learning. The standard note types are
 
 - **Basic (optional reversed card)**\
   Like "Basic", but has a third field called "Add Reverse". If you enter any text into
-  that field, a reverse card will be created. For details, see the [Cards and Templates](templates/intro.md) section.
+  that field, a reversed card (back→front) will also be created. For details, see the [Cards and Templates](templates/intro.md) section.
 
 - **Basic (type in the answer)**\
   This is essentially "Basic", with an extra text box on the front where you
