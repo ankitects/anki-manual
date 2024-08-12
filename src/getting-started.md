@@ -61,8 +61,7 @@ remembered the answer, and Anki will choose when to show you the card again. If,
     - **Young:** A young card is one that has an interval of less than 21 days.
     - **Mature:** A mature card is one that has an interval of 21 days or greater.
 
-- **Relearn:** A relearning card is a card that you have failed in review mode, thus
-  returning it to learning mode to be relearned.
+- **Relearn:** Cards that have failed in review mode, and have returned to learning mode to be relearned.
 
 ### Decks
 
