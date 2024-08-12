@@ -277,8 +277,8 @@ someone else has shared:
    File → Import.
 
 Note: It’s not currently possible to add shared decks
-directly to your AnkiWeb account. Please first import them to the
-desktop app, then synchronize to upload the decks to AnkiWeb.
+directly to your AnkiWeb account. You need to first import them to the
+desktop app, AnkiMobile, or AnkiDroid, then synchronize to upload the decks to AnkiWeb.
 
 Creating your own deck is the most effective way to learn a complex
 subject. Subjects like languages and the sciences can’t be understood
