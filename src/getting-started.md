@@ -253,7 +253,7 @@ note types in a single deck, or have cards generated from the
  same note put into different decks. When you add notes using the
 Add window, you can select what note type to use and what deck to use,
 and these choices are completely independent of each other. You can also
-change the note type of some notes [after you've already created them](browsing.md).
+[change the note type of notes](browsing.md#notes) after you've already created them.
 
 ### Collection
 
