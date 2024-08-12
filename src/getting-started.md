@@ -210,10 +210,9 @@ could create a separate note type for that as well, with fields such as
 "Country" and "Capital City".
 
 Anki comes with some standard
-note types in it. These note types are provided to make Anki easier to use for
+note types included. These note types are provided to make Anki easier for
 new users, but in the long run it's recommended you create your own note
-types for the content you are learning. The standard note types are as
-follows:
+types specifically for the content you are learning. The standard note types are:
 
 - **Basic**\
   Has "Front" and "Back" fields, and will create one card. Text you enter in
