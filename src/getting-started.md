@@ -194,7 +194,7 @@ the formatting of your cards consistent and can greatly reduce the
 amount of effort involved in adding information. They also mean Anki can
 ensure related cards don't appear too close to each other, and they
 allow you to fix a typing mistake or factual error once and have all the
-related cards updated at once.
+related cards update at once.
 
 To add and edit card types, click the "Cards…​" button while adding or
 editing notes. For more information on card types, please see the [Cards and Templates](templates/intro.md) section.
