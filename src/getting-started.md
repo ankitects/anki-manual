@@ -249,8 +249,8 @@ Manage Note Types from the main Anki window.
 
 Notes and note types are common to your whole collection rather than
 limited to an individual deck. This means you can use different
-notes types in a single deck, or have cards generated from the
- same note in different decks. When you add notes using the
+note types in a single deck, or have cards generated from the
+ same note put into different decks. When you add notes using the
 Add window, you can select what note type to use and what deck to use,
 and these choices are completely independent of each other. You can also
 change the note type of some notes [after you've already created them](browsing.md).
