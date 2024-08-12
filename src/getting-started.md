@@ -220,8 +220,8 @@ types specifically for the content you are learning. The standard note types are
   will appear on the back of the card.
 
 - **Basic (and reversed card)**\
-  Like "Basic", but creates two cards for the text you enter: one from
-  front→back and one from back→front.
+  Like "Basic", but creates two cards for the text you enter: 
+  front→back and back→front.
 
 - **Basic (optional reversed card)**\
   Like "Basic", but has a third field called "Add Reverse". If you enter any text into
