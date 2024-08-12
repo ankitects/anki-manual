@@ -34,9 +34,9 @@ instead.
 ### Cards
 
 A question and answer pair is called a _card_. It's similar to a paper
-flashcard with a question on front and answer on the back. However, in
-Anki, a card doesn't actually look like a physical card, and when you
-look at the answer the question remains visible by default. For example, if
+flashcard with a question on the front and an answer on the back. However, in
+Anki, a card doesn't look like a physical card, and when you
+show the answer the question remains visible by default. For example, if
 you're studying basic chemistry, you might see a question like:
 
     Q: Chemical symbol for oxygen?
