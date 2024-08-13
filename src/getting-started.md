@@ -233,7 +233,7 @@ types specifically for the content you are learning. The standard note types are
   [Checking Your Answer](templates/fields.md#checking-your-answer) section.
 
 - **Cloze**\
-  A note type which makes it easier to select text and turn it into a cloze
+  A note type that allows you to select text and turn it into a cloze
   deletion (e.g. "Humans landed on the moon in \[…​\]" → "Humans landed on the
   moon in 1969"). For details, see the [cloze deletion](editing.md#cloze-deletion) section.
 
