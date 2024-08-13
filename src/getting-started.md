@@ -290,7 +290,7 @@ understanding.
 If you are a language learner, you may be tempted to download a long
 list of words and their translations, but this won’t teach you a
 language any more than memorizing scientific equations will teach you
-astrophysics. To learn properly, we believe you need textbooks, teachers, or
+astrophysics. To learn properly, you might need textbooks, teachers, or
 exposure to real-world sentences.
 
     Do not learn if you do not understand.
