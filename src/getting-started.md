@@ -76,9 +76,9 @@ tree. Anki uses double colons ("::") to show different levels within the deck tr
 deck. If you select "Hanzi", then only the Hanzi cards will be shown; if
 you select "Chinese", then all the Chinese cards will be shown, including the Hanzi cards.
 
-To place decks under a tree, you can either name them with double colons between
+To place decks within a tree, you can either name them with double colons between
 each level, or drag and drop them within the deck list. Decks that have
-been placed under a tree are often called "subdecks", and top-level decks are called "parent decks".
+been placed inside another deck are often called "subdecks", and top-level decks are called "parent decks".
 
 Anki starts with a deck called "Default"; any cards which have somehow
 become separated from other decks will go here. Anki will hide the
