@@ -229,8 +229,7 @@ types specifically for the content you are learning. The standard note types are
 
 - **Basic (type in the answer)**\
   This is essentially "Basic", with an extra text box on the front where you
-  can type your answer in. After flipping to the back, you can check and
-  compare your input with the actual answer. For details, see the
+  can type your answer in. When you reveal the back, Anki will show you any differences between your input and the actual answer. For details, see the
   [Checking Your Answer](templates/fields.md#checking-your-answer) section.
 
 - **Cloze**\
