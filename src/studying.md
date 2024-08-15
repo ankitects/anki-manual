@@ -208,7 +208,7 @@ card or note:
   for the card back to zero. It does not remove the review history that is shown at the bottom of the
   card info screen.
 
-- **Set Due Date**: Puts cards in the review queue, and [make them due on a certain date.](browsing.md#cards)
+- **Set Due Date**: Puts cards in the review queue, and [makes them due on a certain date.](browsing.md#cards)
 
 - **Suspend Card / Note**: Hides a card or all of the note’s cards from review until they are
   manually unsuspended (by clicking the suspend button in the browser).
