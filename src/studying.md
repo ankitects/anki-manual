@@ -198,7 +198,7 @@ card or note:
   With the [2.1 scheduler](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html),
   however, burying cards does not reset a card's learning steps.
 
-- **Reset card**: Move current card to [the end of the new queue](browsing.md#cards).
+- **Reset card**: Moves the current card to [the end of the new queue](browsing.md#cards).
 
   From Anki 2.1.50+, Anki will remember the original order of a new card when it is first studied
   with the v3 scheduler. The "Restore original position" option allows you to reset the card back to its original position when you reset it.
