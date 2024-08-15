@@ -137,7 +137,7 @@ to learn more about how the algorithm works.
 
 When only the question is shown, Anki shows three numbers like 6 + 9 + 59
 at the bottom of the screen. These represent the new cards (blue), cards in
-learning (orange), and cards to review (green). If you’d prefer not to see the numbers,
+learning (red), and cards to review (green). If you’d prefer not to see the numbers,
 you can turn them off in Anki’s [preferences.](preferences.md)
 
 ![Due Counts](media/due_counts.png)
