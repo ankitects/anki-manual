@@ -64,7 +64,7 @@ syncing in order to use the full sync option without first downloading
 the changes. Similarly, if you are experiencing problems with Anki, you
 might want to (or might be instructed to) disable add-ons temporarily to
 see if one might be causing the problem. You can do both of these things
-by holding down the <kbd>Shift</kbd> key while starting Anki.
+by starting Anki in safe mode, holding down the <kbd>Shift</kbd> key until the on-screen confirmation appears.
 
 It is possible to specify a custom folder location during startup. This
 is an advanced feature that is primarily intended to be used with
