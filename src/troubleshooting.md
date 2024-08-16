@@ -33,7 +33,7 @@ Sometimes restarting your computer may help.
 
 Crashes and display issues can be caused by the video driver. Changing to a
 different video driver in the preferences screen or via the gldriver file may
-help. Make sure you try all three options.
+help. Make sure you try all three options and restart Anki after each change.
 
 - [Windows](https://docs.ankiweb.net/platform/windows/display-issues.html)
 - [Mac](https://docs.ankiweb.net/platform/mac/display-issues.html)
