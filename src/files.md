@@ -62,9 +62,9 @@ If you have made a destructive change on one computer and have an
 undamaged copy on another computer, you may wish to start Anki without
 syncing in order to use the full sync option without first downloading
 the changes. Similarly, if you are experiencing problems with Anki, you
-might want to (or might be instructed to) disable add-ons temporarily to
-see if one might be causing the problem. You can do both of these things
-by starting Anki in safe mode, holding down the <kbd>Shift</kbd> key until the on-screen confirmation appears.
+might need to (or might be instructed to) disable add-ons temporarily to
+see if one might be causing the problem. To do both of these things at the same time, you can 
+open Anki in safe mode by holding down the <kbd>Shift</kbd> key while starting, until the on-screen confirmation appears.
 
 It is possible to specify a custom folder location during startup. This
 is an advanced feature that is primarily intended to be used with
