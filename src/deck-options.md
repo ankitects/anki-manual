@@ -48,40 +48,38 @@ changing this option will still have the old delay, not the new one.
 
 ## Subdecks
 
-If your deck has subdecks, each deck can optionally be assigned a different preset.
+If your deck has subdecks, you can assign each subdeck a different preset.
 When Anki shows a card, it will check which subdeck the card is in, and use the options
 for that deck. There are some exceptions:
 
-- The new cards/day and reviews/day [limits](#daily-limits) behave differently
-  depending on the scheduler version you have selected.
-- The [display order](#display-order) options in the v3 scheduler are taken from the
+- The "New cards/day" and "Maximum reviews/day" [limits](#daily-limits) of a subdeck affects the number of cards gathered from that subdeck. But the amount of cards you see depends on the limits set on the deck you select to study.
+- The [display order](#display-order) options in the are taken from the
   deck you select to study, not the deck of the current card.
 
 For example, let's say you have this collection:
 
     - Deck A (Preset 1)
       - Deck A::Subdeck B (Preset 2)
-        - Card B1
-        - Card B2
 
-Presets 1 and 2 are identical, with two exceptions:
+Preset 1 and Preset 2 are identical, with two exceptions:
 
 - Preset 1:
-- New Cards - Learning steps: 1m 10m
-- Display Order - New/review priority: Mix with reviews
+  - Learning steps: 1m 10m
+  - New/review order: Mix with reviews
 - Preset 2:
-- New Cards - Learning steps: 20m 2h
-- Display Order - New/review priority: Show after reviews
-
-If you choose to study Deck A:
-
-- Learning steps for all new cards will be 1m 10m (preset 1 applies)
-- All new cards will be mixed with reviews (preset 1 applies)
+  - Learning steps: 20m 2h
+  - New/review order: Show after reviews
 
 If you choose to study Subdeck B:
 
-- Learning steps for all new cards will be 20m 2h (preset 2 applies)
-- All new cards will be shown after reviews (preset 2 applies)
+- Learning steps for all new cards will be 20m 2h (Preset 2 applies).
+- All new cards will be shown after reviews (Preset 2 applies).
+
+If you choose to study Deck A:
+
+- Learning steps for new cards in Deck A will be 1m 10m (Preset 1 applies).
+- Learning steps for new cards in Subdeck B will be 20m 2h (Preset 2 applies).
+- All new cards will be mixed with reviews (Preset 1 applies).
 
 ## Daily Limits
 
