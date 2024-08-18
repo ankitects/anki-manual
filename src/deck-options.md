@@ -114,23 +114,19 @@ suggesting you consider increasing the limit if you have time.
 
 When studying a deck that has subdecks inside it, the review limit behaves similar to the new card limit.
 
-Anki includes any learning cards that has crossed the day boundary (interday learning cards) in the review count,
+Anki includes any learning cards that has [crossed the day boundary](https://docs.ankiweb.net/preferences.html#scheduler) (interday learning cards) in the review count,
 so those learning cards will be subject to the review limit.
 
 ### New Cards Ignore Review Limit
 
-If using [the v3 scheduler](https://faqs.ankiweb.net/the-2021-scheduler.html#daily-limits),
-please keep in mind that the new count is capped by the review count by default. If your
-review limit is set to 200, and you have 190 reviews waiting, a maximum of 10
-new cards will be introduced. If your review limit has been reached, no new
-cards will be shown. If you have a backlog of reviews and still want to
-introduce new cards, you can do so by suspending the reviews, or increasing your
-review limit. That said, it is recommended you hold off on new cards until you
-catch up instead, as introducing more new cards when you're behind will only
-make the backlog worse.
+By default, the review limit also applies to new cards, and no new cards will be shown when the review limit has been reached. If this option is enabled, new cards will be shown regardless of the review limit. 
 
-From Anki 2.1.61 this feature is optional, and can be deactivated globally from the
-deck options screen.
+If your review limit is set to 200, and you have 190 review cards waiting, a maximum of 10
+new cards will be introduced. If your review limit has been reached, then Anki won't show you any new cards. This is useful if you have a backlog of review cards.
+
+If you have a backlog, we recommended you hold off on new cards until you
+catch up with your backlog, as introducing more new cards when you're behind will only
+make the backlog worse.
 
 ### Per-Deck Daily Limits
 
