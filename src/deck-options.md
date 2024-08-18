@@ -2,26 +2,20 @@
 
 <!-- toc -->
 
-Deck options primarily control the way Anki schedules cards. It is recommended
+Deck options primarily control the way Anki schedules cards. If you're a new user, it's recommended
 that you spend a few weeks with the defaults to get a feel for how Anki works
 before you start adjusting options. Please make sure you understand the options
 before changing them, as mistakes could reduce Anki's effectiveness.
 
-Deck options are accessed by:
+If you're on the desktop app, do any of the following to access deck options:
 
-- Clicking the gear icon on the `Decks` screen.
-- Selecting a deck on the `Decks` screen, and then clicking `Options`
+- Click the gear icon on the `Decks` screen.
+- Select a deck on the `Decks` screen, and then click `Options`
   at the bottom of the screen.
-- Clicking on `More` > `Options` while in review mode.
-- Pressing `o` while in review mode.
+- Click `More` > `Options` while in review mode.
+- Press <kbd>o</kbd> while in review mode.
 
-This page describes the options shown in Anki 2.1.45+, when you have the v2 or
-v3 scheduler enabled. On older versions, some options will not be available, or
-will appear in a different section. Please keep in mind that the v1 scheduler
-is no longer supported in Anki 2.1.50+. If you have not yet updated to v2 or v3,
-you will be prompted to update when you attempt to review cards in 2.1.50+.
-
-For more info on deck options, please check:
+Here are some community posts about deck options:
 
 - [Deck Options Explained](https://forums.ankiweb.net/t/deck-options-explained/213)
 - [Deck Options in a Mental Map](https://forums.ankiweb.net/t/deck-options-in-a-mental-map/15757)
