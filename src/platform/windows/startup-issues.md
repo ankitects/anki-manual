@@ -5,12 +5,12 @@
 ## No error, but app does not appear
 
 If you start Anki and it fails to appear, without
-any error message, you can try:
+any error message, you can try the following:
 
-- Disconnecting multiple/external displays.
-- Installing the [latest Anki version](https://apps.ankiweb.net/) (try both qt6 and qt5).
+- Disconnect multiple/external displays.
+- Install the [latest Anki version](https://apps.ankiweb.net/) (try both qt6 and qt5).
 - Adjusting [your decimal separator](https://forums.ankiweb.net/t/windows-update-broke-anki/1822/75), if it is not a period.
-- Installing the old [2.1.35-alternate build](https://github.com/ankitects/anki/releases/tag/2.1.35) of Anki.
+- Install the old [2.1.35-alternate build](https://github.com/ankitects/anki/releases/tag/2.1.35) of Anki.
 
 ## Windows updates
 
