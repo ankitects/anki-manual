@@ -9,7 +9,7 @@ any error message, you can try the following:
 
 - Disconnect multiple/external displays.
 - Install the [latest Anki version](https://apps.ankiweb.net/) (try both qt6 and qt5).
-- Adjusting [your decimal separator](https://forums.ankiweb.net/t/windows-update-broke-anki/1822/75), if it is not a period.
+- Adjust [your decimal separator](https://forums.ankiweb.net/t/windows-update-broke-anki/1822/75), if it is not a period.
 - Install the old [2.1.35-alternate build](https://github.com/ankitects/anki/releases/tag/2.1.35) of Anki.
 
 ## Windows updates
@@ -65,7 +65,7 @@ If the update process leaves you with multiple Anki installs (such as within
 `C:\Program Files\Anki` and `C:\Program Files (x86)\Anki`), they may be left in a
 non-working state, and Anki may refuse to start without showing an error message.
 
-Try uninstalling all copies - from Windows Settings > Apps & features (or Apps > Installed apps), or by running `uninstall.exe` in each Anki program
+Try uninstalling all copies of Anki from your computer. To do this, find them in Windows Settings > Apps & features (or Apps > Installed apps) and uninstall, or run `uninstall.exe` in each Anki program
 folder. Afterward, install Anki again.
 
 ## Debugging
