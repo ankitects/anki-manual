@@ -117,6 +117,16 @@ When studying a deck that has subdecks inside it, the review limit behaves simil
 Anki includes any learning cards that has [crossed the day boundary](https://docs.ankiweb.net/preferences.html#scheduler) (interday learning cards) in the review count,
 so those learning cards will be subject to the review limit.
 
+#### Per-Deck Daily Limits
+
+It is possible to use the same preset for different decks, with customized limits for each one of them. This eliminates the need to create cloned presets just for that purpose, and makes it easier to set custom limits on subdecks when you have many of them.
+
+Anki provides three options for daily limits:
+
+- Preset: This limit applies to all the decks using a preset.
+- This deck: This limit is specific to a particular deck.
+- Today only: This allows changing the limit of a deck for a day.
+
 ### New Cards Ignore Review Limit
 
 By default, the review limit also applies to new cards, and no new cards will be shown when the review limit has been reached. If this option is enabled, new cards will be shown regardless of the review limit. 
@@ -128,35 +138,27 @@ If you have a backlog, we recommended you hold off on new cards until you
 catch up with your backlog, as introducing more new cards when you're behind will only
 make the backlog worse.
 
-### Per-Deck Daily Limits
+### Limits Start From The Top
 
-From version 2.1.55 it is possible to use the same preset for different decks / subdecks, with customized
-limits for each one of them. This eliminates the need to create cloned presets just for that
-purpose, and makes it easier to set custom limits on sub-decks when you have many nested decks.
-
-The options are:
-
-- Preset: The limit is shared with all decks using this preset.
-- This deck: The limit is specific to this deck.
-- Today only: Make a temporary change to this deck's limit.
+By default, limits of top-level deck do not apply if you're studying from its subdeck. If this option is enabled, the limits will start from the top-level deck instead, which can be useful if you wish to study individual subdecks, while enforcing a total limit on cards for the deck tree.
 
 ## New Cards
 
-The settings in this section only affect new cards and cards in initial
+The options in this section only affect new cards and cards in initial
 [learning](studying.md#learningrelearning-cards) mode. Once a card
 has graduated (i.e. there are no more learning steps for this card), it becomes a
 [review card](studying.md#review-cards), and the
-settings in this section are no longer applicable.
+settings in this section no longer apply the card.
 
 ### Learning Steps
 
 Controls the number of learning repetitions, and the delay
 between them. One or more delays, separated by spaces must be entered.
-Each time you press `Good` during review, the card moves to the next step.
+Each time you press "Good" during review, the card moves to the next step.
 
-For example, let's say that your learning steps are **1m 10m 1d**.
+For example, let's say that your learning steps are 1m 10m 1d.
 
-- When you press `Again`, the card goes back to the first step, and will be shown
+- When you press "Again", the card goes back to the first step, and will be shown
   again approximately 1 minute later.
 - When you press `Good` on a new card, or a card answered `Again`, it will move
   to the next step, and be shown again in approximately 10 minutes.
