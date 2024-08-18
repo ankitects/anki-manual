@@ -4,7 +4,7 @@
 
 Deck options primarily control the way Anki schedules cards. If you're a new user, it's recommended
 that you spend a few weeks with the defaults to get a feel for how Anki works
-before you start adjusting options. Please make sure you understand the options
+before you start adjusting the options. Please make sure you understand the options
 before changing them, as mistakes could reduce Anki's effectiveness.
 
 If you're on the desktop app, do any of the following to access deck options:
@@ -20,30 +20,31 @@ Here are some community posts about deck options:
 - [Deck Options Explained](https://forums.ankiweb.net/t/deck-options-explained/213)
 - [Deck Options in a Mental Map](https://forums.ankiweb.net/t/deck-options-in-a-mental-map/15757)
 
+Note: both of them were written for the earlier versions of Anki.
+
 ## Presets
 
 Anki allows you to share options between different decks, to make
-it easy to update options in many decks at once. To do this, options are
-grouped into _presets_. By default, all newly created decks use
-the same preset.
+it easier to update options in many decks at once. To do this, options are
+grouped into _presets_. If you change an option in a preset, the change is applied to all decks that use the same preset. All newly created decks use the "Default" preset.
 
-If you’d like to alter the settings on one deck but not other decks, click the
-arrow icon in the top right of the Deck Options window. The options are:
+To change the options in one deck but not other decks, click the
+arrow icon in the top right of the Deck Options window. The following are shown:
 
 - **Save**: Saves all modifications you've made since opening the deck options screen.
 - **Add**: Add a new preset, with the default options.
-- **Clone**: Clone your current present, which is useful if you
+- **Clone**: Clone your current preset, which is useful if you
   just want to modify certain options, keeping the rest as they are.
-- **Rename** Changes the name of the current preset.
-- **Delete** Deletes the current preset. This will require that the next sync is
+- **Rename**: Changes the name of the current preset.
+- **Delete**: Deletes the current preset. This will make your next sync
   a one-way sync.
-- **Save to all subdecks**. Like _Save_, but also assigns the selected preset to all
+- **Save to all subdecks**: Like "Save", but also assigns the selected preset to all
   subdecks of the currently selected deck.
-- **Optimize all presets**. When FSRS is enabled, this allows you to optimize the parameters of all presets at once.
+- **Optimize all presets**: When FSRS is enabled, this allows you to optimize the parameters of all presets at once.
 
-Deck Options are not retroactive. For example, if you change an option that
+Deck options are not retroactive. For example, if you change an option that
 controls the delay after failing a card, cards that you failed before 
-changing the option will have the old delay, not the new one.
+changing this option will still have the old delay, not the new one.
 
 ## Subdecks
 
