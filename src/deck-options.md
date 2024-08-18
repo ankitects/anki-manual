@@ -9,10 +9,10 @@ before changing them, as mistakes could reduce Anki's effectiveness.
 
 If you're on the desktop app, do any of the following to access deck options:
 
-- Click the gear icon on the `Decks` screen.
-- Select a deck on the `Decks` screen, and then click `Options`
+- Click the gear icon on the Decks screen.
+- Select a deck on the Decks screen, and then click "Options"
   at the bottom of the screen.
-- Click `More` > `Options` while in review mode.
+- Click "More" > "Options" while in review mode.
 - Press <kbd>o</kbd> while in review mode.
 
 Here are some community posts about deck options:
@@ -31,10 +31,10 @@ grouped into _presets_. If you change an option in a preset, the change is appli
 To change the options in one deck but not other decks, click the
 arrow icon in the top right of the Deck Options window. The following are shown:
 
-- **Save**: Saves all modifications you've made since opening the deck options screen.
+- **Save**: Saves all modifications you've made after opening the deck options screen.
 - **Add**: Add a new preset, with the default options.
 - **Clone**: Clone your current preset, which is useful if you
-  just want to modify certain options, keeping the rest as they are.
+   want to modify some of the  options but keep the rest as they are.
 - **Rename**: Changes the name of the current preset.
 - **Delete**: Deletes the current preset. This will make your next sync
   a one-way sync.
@@ -85,50 +85,37 @@ If you choose to study Deck A:
 
 ### New Cards/Day
 
-Controls how many new cards are introduced each day you open the program. If you
+This option controls how many new cards can be studied each day you open the program. If you
 study fewer than the limit, or miss a day, the next day the counts will be back
-to your limit - they do not accumulate.
+to their limit: cards do not accumulate.
 
-When decks are nested (e.g Parent, Parent::Child, Parent::Child::Grandchild),
-the way the limits are applied depends on the scheduler version.
+When studying a deck that has subdecks inside it, the limits set on each subdeck control the maximum number of cards drawn from that particular deck. The selected deck's limits control the total cards that will be shown.
 
-- v1 applies parent limits to children, regardless of which deck you click on
-- v2 behaves similarly to v1 for new cards. For reviews, only the limits of
-  the deck you click on are honored.
-- v3 honors the limits of the deck you click on, and any decks inside it.
-  Limits from parents above the deck you clicked on are ignored.
-
-For more information, please see the [v3 scheduler](https://faqs.ankiweb.net/the-2021-scheduler.html#daily-limits) page.
+For earlier versions, see [this FAQ page](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html).
 
 Studying new cards will temporarily increase the number of reviews you need to
-do a day, as freshly learnt material needs to be repeated a number of times
+do a day, as newly learnt material needs to be repeated a number of times
 before the delay between repetitions can increase appreciably. If you are
 consistently learning 20 new cards a day, you can expect your daily reviews to
 be roughly about 200 cards/day. You can decrease the reviews required by
-introducing fewer new cards each day, or by turning off new card display until
-your review burden decreases. More than one Anki user has excitedly studied
-hundreds of new cards over their first few days of using the program, and then
+introducing fewer new cards each day until your review burden decreases. More than one Anki user has excitedly studied
+hundreds of new cards over their first few days of using the program, and then has
 become overwhelmed by the reviews required.
 
 ### Maximum Reviews/Day
 
-Allows you to set an upper limit on the number of reviews to show each day.
+Allows you to set an upper limit on the number of review cards to show each day.
 When this limit is reached, Anki will not show any more review cards for the
-day, even if there are some waiting. If you study consistently, this setting can
+day, even if there are more waiting. If you study consistently, this setting can
 help to smooth out occasional peaks in due card counts, and can save you from a
-heart attack when returning to Anki after a week off. When reviews have been
+heart attack when returning to Anki after taking a week off. When reviews have been
 hidden due to this option, a message will appear in the congratulations screen,
 suggesting you consider increasing the limit if you have time.
 
-In [the v3 scheduler](https://faqs.ankiweb.net/the-2021-scheduler.html#daily-limits) and
-v1 schedulers, the counts are affected by parents/selected decks in the same way
-as new cards.
+When studying a deck that has subdecks inside it, the review limit behaves similar to the new card limit.
 
-In the v2 scheduler, the limit is taken solely from the deck you select - any
-limits on its parents or child decks are ignored.
-
-The v3 scheduler includes learning cards with a 1+ day delay in the review count,
-so those learning cards will be subject to the daily limit.
+Anki includes any learning cards that has crossed the day boundary (interday learning cards) in the review count,
+so those learning cards will be subject to the review limit.
 
 ### New Cards Ignore Review Limit
 
