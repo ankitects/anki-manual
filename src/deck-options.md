@@ -52,6 +52,7 @@ If your deck has subdecks, you can assign each subdeck a different preset.
 When Anki shows a card, it will check which subdeck the card is in, and use the options
 for that deck. There are some exceptions:
 
+
 - The "New cards/day" and "Maximum reviews/day" [limits](#daily-limits) of a subdeck affects the number of cards gathered from that subdeck. But the amount of cards you see depends on the limits set on the deck you select to study.
 - The [display order](#display-order) options in the are taken from the
   deck you select to study, not the deck of the current card.
@@ -72,14 +73,20 @@ Preset 1 and Preset 2 are identical, with two exceptions:
 
 If you choose to study Subdeck B:
 
+
 - Learning steps for all new cards will be 20m 2h (Preset 2 applies).
 - All new cards will be shown after reviews (Preset 2 applies).
+
+
+
 
 If you choose to study Deck A:
 
 - Learning steps for new cards in Deck A will be 1m 10m (Preset 1 applies).
 - Learning steps for new cards in Subdeck B will be 20m 2h (Preset 2 applies).
 - All new cards will be mixed with reviews (Preset 1 applies).
+
+
 
 ## Daily Limits
 
