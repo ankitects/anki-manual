@@ -240,78 +240,79 @@ Some further information about display order is available in the [studying secti
 
 ### New Card Gather Order
 
-Controls how Anki gathers cards from a deck. The options are:
+Controls how Anki gathers new cards from a deck. The options are:
 
-- **Deck**: gathers cards from each subdeck in order, starting from the top. Cards from
+- **Deck**: Gathers cards from each subdeck in order, starting from the top. Cards from
   each subdeck are gathered in ascending position. If the daily limit of the selected
-  deck is reached, gathering may stop before all decks have been checked. This
+  deck is reached, gathering may stop before all subdecks have been checked. This
   order is fastest in large collections, and allows you to prioritize subdecks that
   are closer to the top.
 
-  Decks / subdecks are always ordered alphabetically, so you can give them a numeric prefix like
-  001 to control the order they are shown. You can also use `_` and `~` as a
+  Decks/subdecks are always ordered alphabetically, so you can give them a numeric prefix like
+  001 to control the order they appear in. You can also use `_` and `~` as a
   prefix to place items at the top or bottom.
 
-  Although position order depends initially on the 'Insertion Order' setting
-  above, you can manually
+  Although position order depends initially on the insertion order option, you can manually
   [reposition](https://docs.ankiweb.net/browsing.html#cards) cards in different
   ways.
 
-- **Deck, then random notes**: gather cards from each deck in order, starting from the top.
-  Cards from each deck are gathered randomly.
+- **Deck, then random notes**: Gathers cards from each subdeck in order, starting from the top.
+  Cards from each subdeck are gathered from randomly selected notes.
+  
+- **Ascending position**: Gathers cards by ascending position (due #), which is typically the oldest-added first.
 
-- **Ascending position**: gather cards by ascending position (due #), which is typically the oldest-added first.
+- **Descending position**: Gathers cards by descending position (due #), which is typically the latest-added first.
 
-- **Descending position**: gather cards by descending position (due #), which is typically the latest-added first.
+- **Random notes**: Gathers cards from randomly selected notes.
 
-- **Random notes**: gather cards of randomly selected notes. When sibling burying is disabled, this allows all cards of a note to be seen in a session (eg. both a front->back and back->front card)
-
-- **Random cards**: gather cards completely randomly.
+- **Random cards**: Gathers cards in a random order.
 
 ### New Card Sort Order
 
-Controls how new cards are sorted **after they have been gathered**. The options are:
+Controls how the new cards are sorted **after they have been gathered**. The options are:
 
-- Card type: Displays cards in order of card type number. If you have sibling burying disabled, this will ensure all front→back cards are seen before any back→front cards. This is useful to have all cards of the same note shown in the same session, but not too close to one another.
+- **Card type**: Shows cards in order of card type number. If you have sibling burying disabled, this ensures all front→back cards are seen before any back→front cards. Cards of the same card type number appear in the order they were gathered.
+  This order is useful if you don't want sibling cards to appear too close to each other.
+  
+- **Order gathered**: Shows cards exactly as they were gathered. If sibling burying is disabled, this  typically results in all sibling cards appearing one after the other.
 
-- Order gathered: Shows cards exactly as they were gathered. If sibling burying is disabled, this will typically result in all cards of a note being seen one after the other.
+- **Card type, then random**: Shows cards in order of card type number, but shuffles the cards of each card type number.
+  This order is useful if you don't want sibling cards to appear too close to each other, but still want the cards to appear in a random order.
 
-- Card type, then random: Like Card type, but shuffles the cards of each card type number. If you use Ascending position to gather the oldest cards, you could use this setting to see those cards in a random order, but still ensure cards of the same note do not end up too close to one another.
+- **Random note, then card type**: Picks notes at random, then shows all of their siblings in order.
 
-- Random note, then card type: Picks notes at random, then shows all of their siblings in order.
+- **Random**: Fully shuffles the gathered cards.
 
-- Random: Fully shuffles the gathered cards.
+### New/Review Order
 
-### New/Review Priority
+Whether new cards should be mixed in with review cards, shown before them, or shown after them.
 
-Whether new cards should be mixed in with reviews, or shown before or after them.
+### Interday Learning/Review Order
 
-### Interday Learning/Review Priority
-
-Whether learning cards with a 1+ day delay should be mixed in with reviews, or
-shown before or after them. Because learning cards tend to be harder than
-reviews, some users prefer to see them at the end (getting the easy stuff done
+Whether (re)learning cards that cross a day boundary should be mixed in with review cards,
+shown before them, or shown after them. Because learning cards tend to be harder than
+review cards, some users prefer to see them at the end (getting the easy stuff done
 first), or at the start (allowing more time to review forgotten ones).
 
 ### Review Sort Order
 
-Controls how review cards are sorted while reviewing. The options are:
+Controls how the review cards are sorted. The options are:
 
-- Due date, then random: The default option prioritizes cards that have been waiting
-  longer, and it's the recommended option when you are up to date, or when you only have a small
+- **Due date, then random**: The default order prioritizes cards that have been waiting
+  longer, and it's the recommended order when you are up to date, or when you only have a small
   backlog. If you have taken an extended break or have fallen behind in your reviews,
   you may want to consider changing the sort order temporarily.
-- Due date, then deck. This also prioritizes cards that have been waiting
-  longer, and then will show reviews for each subdeck in turn.
-- Deck, then due date: This option will ensure reviews are shown for each
-  subdeck in turn. This is generally not recommended, as having material appear
+- **Due date, then deck**: This also prioritizes cards that have been waiting
+  longer, and then shows review cards for each subdeck in turn.
+- **Deck, then due date**: Shows review cards for each
+  subdeck in turn. This order is generally not recommended, as having material appear
   consistently in the same order makes it easier to guess the answer based on context,
-  and may lead to weaker memories.
-- Ascending intervals: This will ensure cards with shorter intervals are shown first.
-- Descending intervals: This will ensure cards with larger intervals are shown first.
-- Ascending ease: This will show most difficult cards first.
-- Descending ease: This will allow you to work through the easier material first.
-- Relative overdueness: Display cards that you're most likely to have forgotten first. This is useful if
+  and leads to weaker memories.
+- **Ascending intervals**: Shows cards with shorter intervals first.
+- **Descending intervals**: Shows cards with longer intervals first.
+- **Ascending ease**: Shows more difficult cards first.
+- **Descending ease**: Shows less difficult cards first.
+- **Relative overdueness**: Shows cards that you're most likely to have forgotten first. This is generally recommended if
   you have a large backlog that may take some time to get through, and you want to
   reduce the chances of forgetting more cards.
 
