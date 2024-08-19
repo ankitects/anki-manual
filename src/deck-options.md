@@ -130,9 +130,9 @@ It is possible to use the same preset for different decks, with customized limit
 
 Anki provides three options for daily limits:
 
-- Preset: This limit applies to all the decks using a preset.
-- This deck: This limit is specific to a particular deck.
-- Today only: This allows changing the limit of a deck for a day.
+- **Preset**: This limit applies to all the decks using a preset.
+- **This deck**: This limit is specific to a particular deck.
+- **Today only**: This allows changing the limit of a deck for a day.
 
 ### New Cards Ignore Review Limit
 
@@ -151,7 +151,7 @@ By default, limits of top-level deck do not apply if you're studying from its su
 
 ## New Cards
 
-The options in this section only affect new cards and
+The options here only affect new cards and
 [learning cards](studying.md#learningrelearning-cards). Once a card
 has graduated (that is, gone through all the learning steps), the options in this section no longer apply to the card.
 
@@ -191,7 +191,7 @@ In contrast, if the step crosses a day boundary, the delay is automatically conv
 
 The number of days to wait before showing a card again, after the Good button is used on the final learning step. This means that it is the first interval
 after the learning card graduates. Please see the example
-in the previous section.
+from [earlier in this section](deck-options.md#learning-steps).
 
 ### Easy Interval
 
@@ -210,20 +210,15 @@ If you're not using an outdated Anki version, you don't need to change this opti
 
 ## Lapses
 
-When you forget a review card, it is said to have 'lapsed', and the card must be
-relearnt. The default behaviour for lapsed reviews is to reset the interval to
-1 (i.e. make it due tomorrow), and put it in the learning queue for a refresher
-in 10 minutes. This behaviour can be customized with the options listed below.
+When you click "Again" on a review card, it is called a _lapse_. The options listed here affect such lapsed cards.
 
 ### Relearning Steps
 
-The same as 'learning steps', but for forgotten reviews. When you fail a card
-(press `Again`), the card enters the relearning phase, and before it becomes a
-review card again, you will have to pass all the relearning steps — or, press
-`Easy` on the card.
+The same as learning steps, but for lapsed cards. When you fail a review card
+(press "Again"), the card goes through _relearning steps_, before it becomes a review card again.
 
 If you leave the steps blank, the card will skip relearning, and will be assigned
-a new review delay.
+a new interval of 1 day by default.
 
 ### Minimum Interval
 
@@ -233,24 +228,22 @@ the next day.
 
 ### Leeches
 
-Control the way Anki handles leeches. Please see the [leeches](leeches.md)
-section for more information.
+Control the way Anki handles leeches. For details, see the [leeches](leeches.md)
+section.
 
 ## Display Order
 
 The options in this section are taken from the deck you select to study, not
 the deck of the currently displayed card.
 
-This section is only available when you have [the v3 scheduler](https://faqs.ankiweb.net/the-2021-scheduler.html) enabled.
-
 Some further information about display order is available in the [studying section](studying.md#display-order).
 
 ### New Card Gather Order
 
-Controls how Anki gathers cards from each subdeck. The options are:
+Controls how Anki gathers cards from a deck. The options are:
 
-- Deck: gathers cards from each deck in order, starting from the top. Cards from
-  each deck are gathered in ascending position. If the daily limit of the selected
+- **Deck**: gathers cards from each subdeck in order, starting from the top. Cards from
+  each subdeck are gathered in ascending position. If the daily limit of the selected
   deck is reached, gathering may stop before all decks have been checked. This
   order is fastest in large collections, and allows you to prioritize subdecks that
   are closer to the top.
@@ -264,16 +257,16 @@ Controls how Anki gathers cards from each subdeck. The options are:
   [reposition](https://docs.ankiweb.net/browsing.html#cards) cards in different
   ways.
 
-- Deck, then random notes: gather cards from each deck in order, starting from the top.
+- **Deck, then random notes**: gather cards from each deck in order, starting from the top.
   Cards from each deck are gathered randomly.
 
-- Ascending position: gather cards by ascending position (due #), which is typically the oldest-added first.
+- **Ascending position**: gather cards by ascending position (due #), which is typically the oldest-added first.
 
-- Descending position: gather cards by descending position (due #), which is typically the latest-added first.
+- **Descending position**: gather cards by descending position (due #), which is typically the latest-added first.
 
-- Random notes: gather cards of randomly selected notes. When sibling burying is disabled, this allows all cards of a note to be seen in a session (eg. both a front->back and back->front card)
+- **Random notes**: gather cards of randomly selected notes. When sibling burying is disabled, this allows all cards of a note to be seen in a session (eg. both a front->back and back->front card)
 
-- Random cards: gather cards completely randomly.
+- **Random cards**: gather cards completely randomly.
 
 ### New Card Sort Order
 
