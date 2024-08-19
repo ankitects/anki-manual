@@ -312,7 +312,7 @@ Controls how the review cards are sorted. The options are:
 - **Descending intervals**: Shows cards with longer intervals first.
 - **Ascending ease**: Shows more difficult cards first.
 - **Descending ease**: Shows less difficult cards first.
-- **Relative overdueness**: Shows cards that you're most likely to have forgotten first. This is generally recommended if
+- **Relative overdueness**: Shows cards that you're more likely to have forgotten first. This is generally recommended if
   you have a large backlog that may take some time to get through, and you want to
   reduce the chances of forgetting more cards.
 
@@ -346,35 +346,32 @@ The options are:
 
 ## Auto Advance
 
-Requires Anki 23.12 or later. Auto Advance allows you to automatically reveal
-the answer and/or move to the next card. To use it, you must first set a non-zero
-time in "seconds to show question" and/or "seconds to show answer". Then, in the
+Requires Anki 23.12 or later. Auto Advance allows you to automatically take some actions after a certain amount of time has passed. To use it, you must first set a non-zero
+time in "Seconds to show question for" and/or "Seconds to show answer for". Then, in the
 review screen, use the Auto Advance action from the `More` button to start advancing.
 
 ## Burying
 
-When Anki gathers cards, it first gathers intraday learning cards, then interday learning cards, then reviews, and finally new cards. This affects how burying works:
+When Anki gathers cards, it first gathers intraday learning cards, then interday learning cards, then review cards, and finally new cards. This affects how burying works:
 
 - If you have all burying options enabled, the sibling that comes earliest in that list will be shown. For example, a review card will be shown in preference to a new card.
 - Siblings later in the list can not bury earlier card types. For example, if you disable burying of new cards, and study a new card, it will not bury any interday learning or review cards, and you may see both a review sibling and new sibling in the same session.
 
 The options are:
 
-- Bury new siblings: whether other new cards of the same note (e.g., reverse cards, adjacent cloze deletions) will be delayed until the next day.
-- Bury review siblings: whether other review cards of the same note will be delayed until the next day.
-- Bury interday learning siblings: whether other learning cards of the same note with intervals >= 1 day will be delayed until the next day.
+- **Bury new siblings**: Whether other new cards of the same note (e.g. reverse cards, adjacent cloze deletions) will be delayed until the next day.
+- **Bury review siblings**: Whether other review cards of the same note will be delayed until the next day.
+- **Bury interday learning siblings**: Whether other learning cards of the same note that crossed a day boundary will be delayed until the next day.
 
 For more info about burying cards, please see [this section](./studying.md#siblings-and-burying) of the manual.
 
 ## Audio
 
-By default, Anki automatically plays audio on the front and back of
-cards. If you check _Don't play audio automatically_, Anki will not play
-audio until you press the replay audio key, `r` or `F5`.
+- **Don't play audio automatically**: By default, Anki automatically plays any audio you have on
+cards. If you turn on this option Anki will not play audio until you press the replay audio key, <kbd>r</kbd> or <kbd>F5</kbd>.
 
-_Always include question side when replaying audio_ controls whether audio from
-the question side should be played when replaying the audio while an answer is
-shown. Please note that it does not control what happens when you show the
+- **Skip question when replaying answer**: Controls whether audio from
+the question side should be played when replaying the audio while on answer side. Please note that it does not control what happens when you show the
 answer; for that please see [this section](templates/fields.md#special-fields).
 
 ## Advanced
