@@ -151,85 +151,62 @@ By default, limits of top-level deck do not apply if you're studying from its su
 
 ## New Cards
 
-The options in this section only affect new cards and cards in initial
-[learning](studying.md#learningrelearning-cards) mode. Once a card
-has graduated (i.e. there are no more learning steps for this card), it becomes a
-[review card](studying.md#review-cards), and the
-settings in this section no longer apply the card.
+The options in this section only affect new cards and
+[learning cards](studying.md#learningrelearning-cards). Once a card
+has graduated (that is, gone through all the learning steps), the options in this section no longer apply to the card.
 
 ### Learning Steps
 
 Controls the number of learning repetitions, and the delay
 between them. One or more delays, separated by spaces must be entered.
-Each time you press "Good" during review, the card moves to the next step.
+Each time you click "Good" during review, the card moves to the next step. Each time you click "Again", the card goes back to the first step.
 
 For example, let's say that your learning steps are 1m 10m 1d.
 
-- When you press "Again", the card goes back to the first step, and will be shown
-  again approximately 1 minute later.
-- When you press `Good` on a new card, or a card answered `Again`, it will move
-  to the next step, and be shown again in approximately 10 minutes.
-- When you press `Good` on a card after the 10 minute step, it will be delayed
+- When you click "Again", the card goes through the first step, and is shown
+  again 1 minute later.
+- When you click "Good" on a new card or after the 1 minute step, it moves
+  to the next step, and is shown again in 10 minutes. 
+- When you click "Good" on a card after the 10 minute step, it is delayed
   until the next day.
-- When you press `Good` on the card the next day, it will leave learning (i.e. it will graduate), and
-  become a review card. It will be shown again after the delay configured by the
+- When you click "Good" on the card the next day, it graduates and
+  becomes a review card. The card is shown again after the delay configured by the
   _graduating interval_.
 
 If there’s nothing else to study, Anki will show cards up to 20 minutes
 early by default. The amount of time to look ahead is configurable in
 the [preferences](preferences.md).
 
-Please see the [learning](studying.md#learningrelearning-cards) section for more info on how
-steps work.
+For more info on how the steps work, see the [learning](studying.md#learningrelearning-cards) section.
 
 #### Day Boundaries
 
-Anki treats small steps and steps that [cross a day boundary](./preferences.md#review) differently.
+Anki treats small steps and steps that [cross a day boundary](/preferences.md#review) differently.
 With small steps, the cards are shown as soon as the delay has passed,
-in preference to other waiting cards like reviews. This is done so that
+in preference to review cards. This is done so that
 you can answer the card as closely to your requested delay as possible.
-In contrast, if the interval crosses a day boundary, it is automatically
-converted to days.
+In contrast, if the step crosses a day boundary, the delay is automatically converted to days. For example, if next day starts after 5 hours and the delay is 6 hours, Anki converts the delay to 1 day.
 
 ### Graduating Interval
 
-The delay in days between answering "Good" on a learning card with no steps left,
-and seeing the card again as a review card. This means that it is the first interval
-after the learning card becomes a review card. Please see the example
+The number of days to wait before showing a card again, after the Good button is used on the final learning step. This means that it is the first interval
+after the learning card graduates. Please see the example
 in the previous section.
 
 ### Easy Interval
 
-The delay between answering `Easy` on a learning
-card, and seeing it in review mode for the first time.
+The number of days to wait before showing a card again, after the Easy button is used on it.
 
-The `Easy` button immediately turns a learning card into a review card,
-and assigns it the delay you have configured. It should always be at least
-as long as the _graduating interval_, and typically a few days longer.
+The "Easy" button turns learning cards into a review cards regardless of which step you're on,
+and assigns them the delay you have configured in this option. Easy interval should always be at least
+as long as the graduating interval, and typically a few days longer.
 
 ### Insertion Order
 
-Controls whether Anki should add new cards into the deck randomly, or in order.
-When you change this option, Anki will re-sort the decks using the current
-Option Group. Cards with a lower due number will be shown first when studying, by
-default. Changing this option will automatically update the existing position of
-new cards.
+Controls whether Anki should add new cards into the deck randomly, or sequentially.
+When you change this option, Anki will re-sort the decks in the current preset.
 
-One caveat with random order mode: if you review many of your new cards, and then
-add more new cards, the newly added material is statistically more likely to
-appear than the new cards that were already in the deck. For example, if you have 100 cards
-in random order, then review the first 50, newly added cards are still given
-position 1-100, but as you have already reviewed the first 50, the newly added
-cards are more likely to appear earlier. To correct this, you can change the
-order to Ordered mode and back again to force a re-sort.
-
-When you select random order, Anki will randomize your notes, keeping
-the cards of a given note close together. The cards of a given note are
-shown in the order in which their card types appear, so that siblings are
-introduced consistently — otherwise you could end up in a state where
-some notes had all their cards introduced and other notes had only one
-or two. Please see the "bury related" and "display order" sections below
-for more info.
+If you're not using an outdated Anki version, you don't need to change this option. Instead, see [display order](deck-options.md#display-order) later in this section].
 
 ## Lapses
 
