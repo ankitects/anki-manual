@@ -401,7 +401,7 @@ Here is a graph that shows how adjusting this value will affect your workload:
 
 ![graph showing an exponential increase in workload as desired retention nears one.](media/FSRS_retention.png)
 
-There are two things to notice:
+The exact shape of the graph is different for everyone. However, there are two patterns that hold true for all:
 
 - As desired retention approaches 1.0, the workload increases drastically.
   Imagine you have a card with a 90% chance of remembering it after 100 days. If your desired retention is 0.90, you'll review the card again in 100 days. But if your desired retention is 0.95, you'll need to review it after 46 days instead.
@@ -422,91 +422,80 @@ number, and recommend you keep it lower than 0.95 and higher than the [minimum r
 
 ### FSRS Parameters
 
-FSRS parameters affect how cards are scheduled. Anki will start with default parameters. 
+FSRS parameters affect how cards are scheduled. Do not change the parameters manually or copy them from someone else.
 
-**Optimize FSRS parameters**
+**Optimize FSRS Parameters**
 
-The FSRS optimizer uses machine learning to learn your memory patterns
-and find parameters that best fit your review history. To do this, the optimizer
-requires several reviews to fine-tune the parameters.
+The FSRS optimizer uses machine learning to learn your memory patterns and find parameters that best fit your review history in a preset. To do this, the optimizer requires several reviews to fine-tune the parameters.
 
-If you have less than 1,000 reviews, you can use the default parameters that
-are already entered into the "FSRS parameters" field. Even with the default
-parameters, FSRS should work well for most users.
+When you click the Optimize button, FSRS will analyze your review history, and generate parameters that are optimal for your memory and the content you're studying. If you have decks that vary wildly in subjective difficulty, it
+is recommended to assign them separate presets, as the parameters for easier
+decks will be different from harder decks. There is no need to optimize your
+parameters frequently: once every few months is sufficient.
 
-Once you've done 1000+ reviews in Anki, you can use the `Optimize` button to
-analyze your review history, and automatically generate parameters that are
-optimal for your memory and the content you're studying. Parameters are
-preset-specific, so if you have decks that vary wildly in difficulty, it
-is recommended to assign them separate presets, as the parameters for easy
-decks and hard decks will be different. There is no need to optimize your
-parameters frequently - once every few months is sufficient.
+By default, parameters are calculated from the review history of all 
+decks using the current preset. You can optionally [adjust the search](/searching.md)
+before optimizing the parameters, if you'd like to change which cards
+are used for optimization.
 
-By default, parameters will be calculated from the review history of all
-decks using the current preset. You can optionally adjust the search
-before calculating the parameters, if you'd like to alter which cards
-are used for optimizing the parameters.
-
-You can optimize the parameters for all of your presets at once, by clicking on the
+You can also optimize the parameters for all of your presets at once, by clicking on the
 down arrow in the top right, then choosing "Optimize all presets".
 
-**Evaluate FSRS parameters**
+**Evaluate FSRS Parameters**
 
-You can use the `Evaluate` button in the "Optimize FSRS parameters"
-section to see metrics that show how well the parameters in the
-"Model parameters" field fit your review history. Smaller numbers
+You can use the "Evaluate" button to see metrics that show how well the parameters fit your review history. Smaller numbers
 indicate a better fit to your review history.
 
-Log-loss doesn't have an intuitive interpretation. RMSE (bins) can be
+Log loss doesn't have an intuitive interpretation. RMSE (bins) can be
 interpreted as the average difference between the predicted probability
-of recalling a card (R) and the measured (from the review history)
-probability. For example, RMSE=5% means that, on average, FSRS
+of recalling a card (R) and the actual
+probability measured from your review history. For example, RMSE=5% means that, on average, FSRS
 is off by 5% when predicting R.
 
-Note that log-loss and RMSE (bins) are not perfectly correlated,
-so two decks may have similar RMSE values but very different log-loss values,
-and vice-versa.
+Note that log loss and RMSE (bins) are not perfectly correlated,
+so two decks may have similar RMSE values but very different log-loss values, or the other around.
+
+By default, log loss and RMSE (bins) are calculated from all decks using the current preset. You can optionally [adjust the search](/searching.md) before evaluating the parameters, if you'd like to change which cards are used for evaluation.
+
+### Ignore Reviews Before
+
+If set, cards reviewed before the provided date will be ignored when optimizing FSRS parameters. This can be useful if you imported someone else's scheduling data, or have changed the way you use the answer buttons.
 
 ### Reschedule Cards on Change
 
-This option controls whether the due dates of cards will be changed when you enable FSRS, or change the parameters. The default is not to reschedule cards: future reviews will use the new scheduling, but there will be no immediate change to your workload. If rescheduling is enabled, the due dates of cards will be changed, often resulting in a large number of cards becomingdue, so **activating this option is not recommended** when first switching from SM-2.
+This option controls whether the due dates of cards will be changed when you enable FSRS, change desired retention, or change the parameters. The default is not to reschedule cards: future reviews will use the new scheduling, but there will be no immediate change to your workload. If rescheduling is enabled, the due dates of cards will be changed. Depending on your desired retention, it will often result in a large number of cards becoming due, so **this option is not recommended** when first switching from SM-2.
+
+Use this option sparingly, as it will add a review entry to each of your cards, and increase the size of your collection.
 
 If you wish to visualize how FSRS would change your schedule without altering your workload, there are two ways you can do so:
+
+- Create a backup, enable FSRS with rescheduling, check the future due graph in statistics, and then undo or restore from the backup if necessary.
 
 - Enable FSRS without rescheduling, and compare the interval and stability graphs. The
 interval graph will show the current intervals of cards; the stability graph will show the
 intervals FSRS would give cards if the desired retention is 0.9.
 
-- Create a backup, enable FSRS with rescheduling, check the future due graph, and then undo or restore from the backup if needed.
-
 ### Compute Minimum Recommended Retention
 
-This experimental tool assumes you're starting with 0 cards, and will
-attempt to calculate the amount of material you'll be able to retain
-in the given time frame. The estimated retention will greatly depend
-on your inputs, and if it significantly differs from 0.9, it's a sign
-that the time you've allocated each day is either too low or too high
-for the amount of cards you're trying to learn. This number can be
-useful as a reference, but it is not recommended to copy it into the
-desired retention field.
+attempt to find the desired retention value that leads to the most material learnt, in the least amount of time. To accurately simulate your learning process, this feature requires a minimum of 400+ reviews. The calculated number can serve as a reference when deciding what to set your desired retention to. You may wish to choose a higher desired retention, if you’re willing to trade more study time for a greater recall rate. However, setting your desired retention lower than the minimum is not recommended, as you'll spend more time studying than necessary.
 
 #### Learning and Re-learning Steps
 
 (Re)learning steps of 1+ days are not recommended when using FSRS. The main 
-reason they were popular with the old SM-2 scheduler is because repeatedly 
+reason they were popular with the legacy SM-2 scheduler is because repeatedly 
 failing a card after it has graduated from the learning phase could reduce 
 its ease a lot, leading to what some people called "ease hell". This is not 
 a problem that FSRS suffers from.  By keeping your learning steps under a 
 day, you will allow FSRS to schedule cards at times it has calculated are 
-optimum for your material and memory.  Another reason not to use longer 
+optimum for your material and memory. Another reason not to use longer 
 learning steps is because FSRS may end up scheduling the first review for a 
-shorter time than your last learning step, leading to the `Hard` button 
-showing a longer time than `Good`.
+shorter time than your last learning step, leading to the "Hard" button 
+showing a longer time than "Good".
 
 We also recommend you keep the number of learning steps to a minimum. Evidence
 shows that repeating a card multiple times in a single day after you've
-remembered it does not significantly help with memory, so your time is
-better spent on other cards or a shorter study session
+remembered it does not significantly help in long term retention, so your time is
+better spent on other cards or a shorter study session.
 
 #### Add-On Compatibility
 
@@ -521,7 +510,19 @@ For more info on FSRS, please check:
 - [FSRS4Anki Wiki](https://github.com/open-spaced-repetition/fsrs4anki/wiki)
 - [FSRS4Anki on Github](https://github.com/open-spaced-repetition/fsrs4anki)
 
-## Advanced 
+## Advanced
+
+### Historical Retention
+
+When some of your review history is missing, FSRS needs to fill in the gaps. By default, it will assume that when you did those old reviews, you remembered 90% of the material. If your old retention was appreciably higher or lower than 90%, adjusting this option will allow FSRS to better approximate the missing reviews.
+
+Your review history may be incomplete for two reasons:
+
+- Because you're using the "ignore cards reviewed before" option.
+- Because you previously deleted review logs to free up space, or imported material from a different
+    SRS program.
+
+    The latter is quite rare, so unless you're using the former option, you probably don't need to adjust this setting.
 
 ### Maximum Interval
 
