@@ -375,7 +375,7 @@ the question side is played when you use replay action on the answer side. Note 
 
 ## FSRS
 
-The [Free Spaced Repetition Scheduler (FSRS)](https://github.com/open-spaced-repetition/fsrs4anki) is an alternative to Anki's legacy
+The [Free Spaced Repetition Scheduler (FSRS)](https://github.com/open-spaced-repetition/fsrs4anki/wiki/ABC-of-FSRS) is an alternative to Anki's legacy
 SuperMemo 2 (SM-2) scheduler. By more accurately determining when you are likely
 to forget, it can help you remember more material in the same amount of time.
 
@@ -452,7 +452,7 @@ probability measured from your review history. For example, RMSE=5% means that, 
 is off by 5% when predicting R.
 
 Note that log loss and RMSE (bins) are not perfectly correlated,
-so two decks may have similar RMSE values but very different log-loss values, or the other around.
+so two decks may have similar RMSE values but very different log-loss values, or the other way around.
 
 By default, log loss and RMSE (bins) are calculated from all decks using the current preset. You can optionally [adjust the search](/searching.md) before evaluating the parameters, if you'd like to change which cards are used for evaluation.
 
@@ -466,27 +466,21 @@ This option controls whether the due dates of cards will be changed when you ena
 
 Use this option sparingly, as it will add a review entry to each of your cards, and increase the size of your collection.
 
-If you wish to visualize how FSRS would change your schedule without altering your workload, there are two ways you can do so:
-
-- Create a backup, enable FSRS with rescheduling, check the future due graph in statistics, and then undo or restore from the backup if necessary.
-
-- Enable FSRS without rescheduling, and compare the interval and stability graphs. The
-interval graph will show the current intervals of cards; the stability graph will show the
-intervals FSRS would give cards if the desired retention is 0.9.
+If you're first switching from SM-2 and still wish to use this option, we recommend you first create a backup, enable FSRS with rescheduling, check the future due graph in statistics, and then if needed, you can undo or restore from the backup.
 
 ### Compute Minimum Recommended Retention
 
-Compute minimum recommended retention (CMRR) attempt to find the desired retention value that leads to the most material learnt, in the least amount of time. To accurately simulate your learning process, CMRR requires a minimum of 400+ reviews. The calculated number can serve as a reference when deciding what to set your desired retention to. You may wish to choose a higher desired retention, if you’re willing to trade more study time for a greater recall rate. However, setting your desired retention lower than the minimum is not recommended, as you'll spend more time studying than necessary.
+Compute minimum recommended retention (CMRR) attempts to find the desired retention value that leads to the most material learnt, in the least amount of time. The calculated number can serve as a reference when deciding what to set your desired retention to. You may wish to choose a higher desired retention, if you’re willing to trade more study time for a greater recall rate. However, setting your desired retention lower than the minimum is not recommended, as you'll spend more time studying than necessary.
 
 #### Learning and Relearning Steps
 
-(Re)learning steps of 1+ days are not recommended when using FSRS. The main 
+(Re)learning steps of 1 day or greater are not recommended when using FSRS. The main 
 reason they were popular with the legacy SM-2 scheduler is because repeatedly 
 failing a card after it has graduated from the learning phase could reduce 
 its ease a lot, leading to what some people called "ease hell". This is not 
 a problem that FSRS suffers from.  By keeping your learning steps under a 
 day, you will allow FSRS to schedule cards at times it has calculated are 
-optimum for your material and memory. Another reason not to use longer 
+optimal for your material and memory. Another reason not to use longer 
 learning steps is because FSRS may end up scheduling the first review for a 
 shorter time than your last learning step, leading to the "Hard" button 
 showing a longer time than "Good".
