@@ -477,9 +477,9 @@ intervals FSRS would give cards if the desired retention is 0.9.
 
 ### Compute Minimum Recommended Retention
 
-attempt to find the desired retention value that leads to the most material learnt, in the least amount of time. To accurately simulate your learning process, this feature requires a minimum of 400+ reviews. The calculated number can serve as a reference when deciding what to set your desired retention to. You may wish to choose a higher desired retention, if you’re willing to trade more study time for a greater recall rate. However, setting your desired retention lower than the minimum is not recommended, as you'll spend more time studying than necessary.
+Compute minimum recommended retention (CMRR) attempt to find the desired retention value that leads to the most material learnt, in the least amount of time. To accurately simulate your learning process, CMRR requires a minimum of 400+ reviews. The calculated number can serve as a reference when deciding what to set your desired retention to. You may wish to choose a higher desired retention, if you’re willing to trade more study time for a greater recall rate. However, setting your desired retention lower than the minimum is not recommended, as you'll spend more time studying than necessary.
 
-#### Learning and Re-learning Steps
+#### Learning and Relearning Steps
 
 (Re)learning steps of 1+ days are not recommended when using FSRS. The main 
 reason they were popular with the legacy SM-2 scheduler is because repeatedly 
@@ -512,55 +512,52 @@ For more info on FSRS, please check:
 
 ## Advanced
 
+### Maximum Interval
+
+The maximum number of days a review card will wait before it's shown again. When reviews have reached the limit, "Hard", "Good" and "Easy" will all give the same delay. The shorter you set this, the greater your workload will be. The default is 100 years; you can decrease this to a smaller number if you’re willing to trade extra study time for higher retention.
+
 ### Historical Retention
+
+This setting is hidden unless FSRS is turned on.
 
 When some of your review history is missing, FSRS needs to fill in the gaps. By default, it will assume that when you did those old reviews, you remembered 90% of the material. If your old retention was appreciably higher or lower than 90%, adjusting this option will allow FSRS to better approximate the missing reviews.
 
 Your review history may be incomplete for two reasons:
 
 - Because you're using the "ignore cards reviewed before" option.
-- Because you previously deleted review logs to free up space, or imported material from a different
-    SRS program.
+- Because you previously deleted review logs to free up space, or imported material from a different SRS program.
 
-    The latter is quite rare, so unless you're using the former option, you probably don't need to adjust this setting.
-
-### Maximum Interval
-
-Allows you to place an upper limit on the time Anki
-will wait to reshow a card. The default is 100 years; you can decrease
-this to a smaller number if you’re willing to trade extra study time for
-higher retention.
+The latter is quite rare, so unless you're using the former option, you probably don't need to adjust this setting.
 
 ### Starting Ease
 
-Controls the easiness that cards start out with. It is
+Controls the ease that cards start out with. It is
 set when a card graduates from learning for the first time. It defaults
 to 2.50, meaning that once you have finished learning a card, answering
-`Good` on subsequent reviews will increase the delay by approximately
+"Good" on subsequent reviews will increase the delay by approximately
 2.5x (e.g. if the last delay was 10 days, the next delay would be around 25
 days). Based upon how you rate the card in subsequent reviews, the
-easiness may increase or decrease from its starting value.
+ease may increase or decrease from its starting value.
 
 ### Easy Bonus
 
 An extra multiplier applied to the interval when a review card is answered
-`Easy`. With the default value of 1.30, `Easy` will give an interval that is
-1.3 times the `Good` interval (e.g. if the Good interval was 10 days, the Easy
+"Easy". With the default value of 1.30, "Easy" will give an interval that is
+1.3 times the Good interval (e.g. if the Good interval was 10 days, the Easy
 interval would be around 13 days).
 
 ### Interval Modifier
 
 An extra multiplier that is applied to all reviews. At its default of 1.00 it
-does nothing. If you set it to 0.80, though, for example, intervals will be generated at
+does nothing. If you set it to 0.80, intervals will be generated at
 80% of their normal size (so a 10 day interval would become 8 days). You can
-thus use the multiplier to make Anki present cards more or less frequently than
-it would otherwise, trading study time for retention or vice versa.
+You can thus use the multiplier to to make your reviews less or more frequent.
 
 For moderately difficult material, the average user should find they
-remember approximately 90% of mature cards that come up for review. You
+remember approximately 90% of mature cards when they come up for review. You
 can find out your own performance by opening the graphs/statistics for a
 deck and looking at the Answer Buttons graph - mature retention is the
-correct% on the right side of the graph. If you haven’t been studying
+correct% on the right side of the graph. If you haven’t been studying for
 long, you may not have any mature cards yet. As performance with new
 cards and younger cards can vary considerably, it’s a good idea to wait
 until you have a reasonable amount of mature reviews before you start
@@ -576,9 +573,9 @@ it to 90%. We’d calculate the modifier as:
 
     log(90%) / log(85%) = 0.65
 
-You can use Google to [calculate it](https://www.google.com/search?q=log(90%25)+%2F+log(85%25)) for you.
+You can use [Google to calculate this](https://www.google.com/search?q=log(90%25)+%2F+log(85%25)).
 
-If you plug the resulting 65% into the interval modifier, you should
+If you enter the resulting 65% into the interval modifier, you should
 find over time that your retention moves closer to your desired
 retention.
 
@@ -588,8 +585,7 @@ increase our retention by 5 percentage points, we would have to study 35%
 more frequently. If the material you are learning is very important then
 it may be worth the extra effort – that is, of course, something you will need to
 decide for yourself. If you are simply worried that you are forgetting too
-much, then you may find investing more time at the initial learning stage
-and/or using mnemonics will give you more gain for less effort.
+much, then you may find investing more time at the initial learning stage, or using mnemonics will give you more gain for less effort.
 
 One final thing to note is that Anki forces a new interval to be at
 least 1 day longer than it was previously, so that you do not get stuck
@@ -599,20 +595,20 @@ learning mode steps, instead of by adjusting this modifier.
 
 ### Hard Interval
 
-The multiplier used when you use the `Hard` button. The percentage is relative
-to the previous interval: e.g. with a default of 1.20, a card with a 10-day interval
+The multiplier applied when you use the "Hard" button. The percentage is relative
+to the previous interval, e.g. with a default of 1.20, a card with a 10-day interval
 will be given 12 days.
 
 ### New Interval
 
-The multiplier used when you use the `Again` button on a review card. The
+The multiplier applied when you use the "Again" button on a review card. The
 default 0.00 means that a review card's delay is reset to zero when you forget it
 (which then becomes 1 day after the [minimum interval](#minimum-interval) is
 applied).
 
 If changed from the default, it is possible for forgotten cards to preserve part
 of their previous delay. For example, if a card had a 100 day interval, and you set
-the _New Interval_ to 0.20, the new interval would be 20 days.
+the "New Interval" to 0.20, the new interval would be 20 days.
 
 While preserving part of the interval may seem to make sense, SuperMemo has observed
 that preserving part of the delay can actually [be counter-productive](https://supermemo.guru/wiki/Post-lapse_stability). For this reason, we recommend you leave it on the default setting.
