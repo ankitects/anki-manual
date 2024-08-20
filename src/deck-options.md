@@ -371,37 +371,31 @@ For more info about burying cards, please see [this section](./studying.md#sibli
 cards. If you turn on this option Anki will not play audio until you press the replay audio key, <kbd>r</kbd> or <kbd>F5</kbd>.
 
 - **Skip question when replaying answer**: Controls whether audio from
-the question side should be played when replaying the audio while on answer side. Please note that it does not control what happens when you show the
-answer; for that please see [this section](templates/fields.md#special-fields).
+the question side is played when you use replay action on the answer side. Note that, Anki [does not automatically play]((templates/fields.md#special-fields)) audio from the `{{FrontSide}}` field. This option does not influence the behaviour of automatic play.
 
-## Advanced
-
-### FSRS
+## FSRS
 
 The [Free Spaced Repetition Scheduler (FSRS)](https://github.com/open-spaced-repetition/fsrs4anki) is an alternative to Anki's legacy
-SuperMemo 2 (SM2) scheduler. By more accurately determining when you are likely
+SuperMemo 2 (SM-2) scheduler. By more accurately determining when you are likely
 to forget, it can help you remember more material in the same amount of time.
-This setting is shared by all deck presets.
 
-When you enable the setting, some new options will
-become available, and SM-2 specific settings, such as "Graduating interval",
-"Easy bonus", etc, will be hidden.
+When you turn on FSRS, some new options
+become available, and SM-2 specific options, such as "Graduating interval",
+"Easy bonus", etc. is hidden. This option is shared by all deck presets.
 
 **Before Enabling**
 
 - Please ensure all of your Anki clients support FSRS. Anki 23.10, AnkiMobile 23.10,
-  and AnkiWeb all support it. AnkiDroid supports it in 2.17alpha3+. If
+  and AnkiWeb all support it. AnkiDroid supports it in 2.17+. If
   one of your clients doesn't support it, things will not work correctly.
 - If you previously used the 'custom scheduling' version of FSRS, please make
   sure you clear out the custom scheduling section before enabling FSRS.
 
-#### FSRS Options
+### Desired Retention
 
-**Desired Retention**
-
-Desired retention controls how likely you are to remember cards when they are reviewed.
-The default value of 0.9 will schedule cards so you have a 90% chance of remembering
-them when they come up for review again.
+Desired retention controls how likely you are to remember cards when they are scheduled for a review.
+The default value of 0.90 will schedule cards so you have a 90% chance of remembering
+them when they come up for review again. This should normally translate to remembering around 90% cards when they are reviewed, and only failing around 10%.
 
 Here is a graph that shows how adjusting this value will affect your workload:
 
@@ -409,25 +403,24 @@ Here is a graph that shows how adjusting this value will affect your workload:
 
 There are two things to notice:
 
-- As desired retention approaches 1.0, the frequency that you need to review cards
-  increases drastically. For example, imagine you have a card that you have a 90%
-  chance of remembering after 100 days. If your desired retention was 0.95, you'd
-  need to review it after 47 days instead (approximately twice as frequently).
-  At 0.97, the delay would be only 27 days (approximately 3.7x as frequently).
-  At 0.99, you'd be reviewing every 9 days (more than 10x what you'd be doing with
+- As desired retention approaches 1.0, the workload increases drastically.
+  Imagine you have a card with a 90% chance of remembering it after 100 days. If your desired retention is 0.90, you'll review the card again in 100 days. But if your desired retention is 0.95, you'll need to review it after 46 days instead.
+  This means the intervals of your cards almost halves at 0.95 desired retention and you need be reviewing cards twice as frequently compared to 0.90 desired retention.
+  At 0.97, the delay will be 27 days (you'll be reviewing 3.7x as frequently).
+  At 0.99, the delay will be only 9 days (more than 10x what you'd be doing with
   the defaults).
 
 - As desired retention decreases, you'll forget a greater percentage of your
   cards, and those cards will need to be reviewed again. Eventually, you'll
   get to a point where the forgotten cards contribute more to your workload
   than you gain from the longer delays, which is why you see the workload
-  on the left of the graph increasing. Also, bear in mind that forgetting
+  on the left of the graph increasing. Also, note that forgetting
   material frequently is demotivating.
 
 For these reasons, we suggest you be conservative when adjusting this
 number, and recommend you keep it between 0.85 and 0.95.
 
-**SM-2 retention**
+### Historical Retention
 
 If your actual retention before switching to FSRS was significantly different
 from 0.9, adjusting this value will allow Anki to better estimate your memory
@@ -435,13 +428,13 @@ state when it encounters cards that are missing review logs. Since review
 logs typically won't be missing unless you explicitly deleted them to free
 up space, most users will not need to adjust this.
 
-**FSRS parameters**
+### FSRS Parameters
 
 FSRS parameters affect how cards are scheduled. They are not intended to be
 manually modified. Once you've accumulated 1000+ reviews, you can have Anki
 optimize the parameters for you, based on your review history.
 
-**Reschedule cards on change**
+### Reschedule Cards on Change
 
 This option controls whether the due dates of cards will be changed when you
 enable FSRS, or change the parameters. The default is not to reschedule
@@ -502,7 +495,7 @@ Note that log-loss and RMSE (bins) are not perfectly correlated,
 so two decks may have similar RMSE values but very different log-loss values,
 and vice-versa.
 
-**Compute optimal retention**
+### Compute Minimum Recommended Retention
 
 This experimental tool assumes you're starting with 0 cards, and will
 attempt to calculate the amount of material you'll be able to retain
@@ -543,6 +536,8 @@ For more info on FSRS, please check:
 
 - [FSRS4Anki Wiki](https://github.com/open-spaced-repetition/fsrs4anki/wiki)
 - [FSRS4Anki on Github](https://github.com/open-spaced-repetition/fsrs4anki)
+
+## Advanced 
 
 ### Maximum Interval
 
@@ -637,6 +632,6 @@ the _New Interval_ to 0.20, the new interval would be 20 days.
 While preserving part of the interval may seem to make sense, SuperMemo has observed
 that preserving part of the delay can actually [be counter-productive](https://supermemo.guru/wiki/Post-lapse_stability). For this reason, we recommend you leave it on the default setting.
 
-## Custom Scheduling
+### Custom Scheduling
 
 Please see [this page](https://faqs.ankiweb.net/the-2021-scheduler.html#add-ons-and-custom-scheduling).
