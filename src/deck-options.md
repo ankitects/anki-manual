@@ -399,7 +399,7 @@ them when they come up for review again. This should normally translate to remem
 
 Here is a graph that shows how adjusting this value will affect your workload:
 
-<img src="media/FSRS_retention.png" width="600">
+![graph showing an exponential increase in workload as desired retention nears one.](media/FSRS_retention.png)
 
 There are two things to notice:
 
@@ -418,39 +418,11 @@ There are two things to notice:
   material frequently is demotivating.
 
 For these reasons, we suggest you be conservative when adjusting this
-number, and recommend you keep it between 0.85 and 0.95.
-
-### Historical Retention
-
-If your actual retention before switching to FSRS was significantly different
-from 0.9, adjusting this value will allow Anki to better estimate your memory
-state when it encounters cards that are missing review logs. Since review
-logs typically won't be missing unless you explicitly deleted them to free
-up space, most users will not need to adjust this.
+number, and recommend you keep it lower than 0.95 and higher than the [minimum recommended retention](#compute-minimum-recommended-retention).
 
 ### FSRS Parameters
 
-FSRS parameters affect how cards are scheduled. They are not intended to be
-manually modified. Once you've accumulated 1000+ reviews, you can have Anki
-optimize the parameters for you, based on your review history.
-
-### Reschedule Cards on Change
-
-This option controls whether the due dates of cards will be changed when you
-enable FSRS, or change the parameters. The default is not to reschedule
-cards: future reviews will use the new scheduling, but there will be no
-immediate change to your workload. If rescheduling is enabled, the due dates
-of cards will be changed, often resulting in a large number of cards becoming
-due, so **activating this option is not recommended** when first switching from SM2.
-
-If you wish to visualize how FSRS would change your schedule without altering
-your workload, there are two ways you can do so:
-
-- Enable FSRS without rescheduling, and compare the interval and stability
-  graphs. The interval graph will show the current intervals of cards; the stability
-  graph will show the intervals FSRS would give cards if the desired retention is 0.9.
-- Create a backup, enable FSRS with rescheduling, check the future due graph, and then
-  undo or restore from the backup.
+FSRS parameters affect how cards are scheduled. Anki will start with default parameters. 
 
 **Optimize FSRS parameters**
 
@@ -494,6 +466,18 @@ is off by 5% when predicting R.
 Note that log-loss and RMSE (bins) are not perfectly correlated,
 so two decks may have similar RMSE values but very different log-loss values,
 and vice-versa.
+
+### Reschedule Cards on Change
+
+This option controls whether the due dates of cards will be changed when you enable FSRS, or change the parameters. The default is not to reschedule cards: future reviews will use the new scheduling, but there will be no immediate change to your workload. If rescheduling is enabled, the due dates of cards will be changed, often resulting in a large number of cards becomingdue, so **activating this option is not recommended** when first switching from SM-2.
+
+If you wish to visualize how FSRS would change your schedule without altering your workload, there are two ways you can do so:
+
+- Enable FSRS without rescheduling, and compare the interval and stability graphs. The
+interval graph will show the current intervals of cards; the stability graph will show the
+intervals FSRS would give cards if the desired retention is 0.9.
+
+- Create a backup, enable FSRS with rescheduling, check the future due graph, and then undo or restore from the backup if needed.
 
 ### Compute Minimum Recommended Retention
 
