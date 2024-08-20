@@ -405,10 +405,9 @@ The exact shape of the graph is different for everyone. However, there are two p
 
 - As desired retention approaches 1.0, the workload increases drastically.
   Imagine you have a card with a 90% chance of remembering it after 100 days. If your desired retention is 0.90, you'll review the card again in 100 days. But if your desired retention is 0.95, you'll need to review it after 46 days instead.
-  This means the intervals of your cards almost halves at 0.95 desired retention and you need be reviewing cards twice as frequently compared to 0.90 desired retention.
-  At 0.97, the delay will be 27 days (you'll be reviewing 3.7x as frequently).
-  At 0.99, the delay will be only 9 days (more than 10x what you'd be doing with
-  the defaults).
+  This means that the intervals of your cards almost halve at 0.95 desired retention and you need to review cards twice as frequently compared to 0.90 desired retention.
+  At 0.97, the interval will be 27 days (you'll have to review your cards 3.7x as frequently).
+  At 0.99, the interval will be only 9 days (you'll have to review your cards more than 10x more frequently than with the defaults).
 
 - As desired retention decreases, you'll forget a greater percentage of your
   cards, and those cards will need to be reviewed again. Eventually, you'll
