@@ -50,7 +50,7 @@ After deciding the answer is O, you click the
 After confirming that you are correct, you tell Anki how well you
 remembered the answer, and Anki will choose when to show you the card again. For example, Anki might decide to show you the card again in 3 days. In this case, we say the card now has a 3 day interval.
 
-#### Types of Cards
+#### States of Cards
 
 - **New:** Cards that you have downloaded or created yourself, but have never studied before.
 
@@ -61,7 +61,7 @@ remembered the answer, and Anki will choose when to show you the card again. For
     - **Young:** A young card is one that has an interval of less than 21 days.
     - **Mature:** A mature card is one that has an interval of 21 days or greater.
 
-- **Relearn:** Cards that have failed in review mode, and have returned to learning mode to be relearned.
+- **Relearn:** Cards that have failed in review state, and have returned to learning state to be relearned.
 
 ### Decks
 
