@@ -40,7 +40,7 @@ arrow icon in the top right of the Deck Options window. The following are shown:
   a one-way sync.
 - **Save to All Subdecks**: Like **Save**, but also assigns the selected preset to all
   subdecks of the currently selected deck.
-- **Optimize all presets**: When FSRS is enabled, this allows you to optimize the parameters of all presets at once.
+- **Optimize All Presets**: When FSRS is enabled, this allows you to optimize the parameters of all presets at once.
 
 Deck options are not retroactive. For example, if you change an option that
 controls the delay after failing a card, cards that you failed before 
