@@ -38,7 +38,7 @@ arrow icon in the top right of the Deck Options window. The following are shown:
 - **Rename**: Changes the name of the current preset.
 - **Delete**: Deletes the current preset. This will make your next sync
   a one-way sync.
-- **Save to all subdecks**: Like "Save", but also assigns the selected preset to all
+- **Save to All Subdecks**: Like **Save**, but also assigns the selected preset to all
   subdecks of the currently selected deck.
 - **Optimize all presets**: When FSRS is enabled, this allows you to optimize the parameters of all presets at once.
 
