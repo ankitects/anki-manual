@@ -2,7 +2,7 @@
 
 <!-- toc -->
 
-Deck options primarily control the way Anki schedules cards. If you're a new user, it's recommended
+Deck options primarily control the way Anki schedules cards. It is recommended
 that you spend a few weeks with the defaults to get a feel for how Anki works
 before you start adjusting the options. Please make sure you understand the options
 before changing them, as mistakes could reduce Anki's effectiveness.
