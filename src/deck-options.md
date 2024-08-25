@@ -5,12 +5,12 @@
 Deck options primarily control the way Anki schedules cards. It is recommended
 that you spend a few weeks with the defaults to get a feel for how Anki works
 before you start adjusting the options. Please make sure you understand the options
-before changing them, as mistakes could reduce Anki's effectiveness.
+before changing them, as mistakes can reduce Anki's effectiveness.
 
-If you're on the desktop app, do any of the following to access deck options:
+If you're on the desktop app, do any of the following to open deck options:
 
 - Click the gear icon on the Decks screen.
-- Select a deck on the Decks screen, and then click "Options"
+- Select a deck on the Decks screen, and then click **Options**
   at the bottom of the screen.
 - Click "More" > "Options" while in review mode.
 - Press <kbd>o</kbd> while in review mode.
