@@ -53,8 +53,8 @@ When Anki shows a card, it will check which subdeck the card is in, and use the 
 for that deck. There are some exceptions:
 
 
-- The "New cards/day" and "Maximum reviews/day" [limits](#daily-limits) of a subdeck affects the number of cards gathered from that subdeck. But the amount of cards you see depends on the limits set on the deck you select to study.
-- The [display order](#display-order) options in the are taken from the
+- The "New cards/day" and "Maximum reviews/day" [limits](#daily-limits) of a subdeck affect the number of cards that can be gathered from that subdeck. But the total number of cards you see during your study session is controlled by the limits of the deck you select to study.
+- The [display order](#display-order) options are taken from the
   deck you select to study, not the deck of the current card.
 
 For example, let's say you have this collection:
