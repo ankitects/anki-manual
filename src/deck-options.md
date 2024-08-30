@@ -32,7 +32,7 @@ To change the options in one deck but not other decks, click the
 arrow icon in the top right of the Deck Options window. The following are shown:
 
 - **Save**: Saves all modifications you've made after opening the deck options screen.
-- **Add**: Add a new preset, with the default options.
+- **Add Preset**: Add a new preset for this deck, with the default options.
 - **Clone**: Clone your current preset, which is useful if you
    want to modify some of the  options but keep the rest as they are.
 - **Rename**: Changes the name of the current preset.
