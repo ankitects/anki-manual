@@ -92,7 +92,7 @@ If you choose to study Deck A:
 
 ### New Cards/Day
 
-This option controls how many new cards can be studied each day you open the program. If you
+This option controls how many new cards can be introduced each day you open the program. If you
 study fewer than the limit, or miss a day, the next day the counts will be back
 to their limit: cards do not accumulate.
 
