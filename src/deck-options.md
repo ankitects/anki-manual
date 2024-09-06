@@ -130,9 +130,9 @@ It is possible to use the same preset for different decks, with customized limit
 
 Anki provides three options for daily limits:
 
-- **Preset**: This limit applies to all the decks using a preset.
-- **This deck**: This limit is specific to a particular deck.
-- **Today only**: This allows changing the limit of a deck for a day.
+- **Preset**: applies to all the decks using a preset.
+- **This deck**: specific to a particular deck.
+- **Today only**: specific to a particular deck, and temporary.
 
 ### New Cards Ignore Review Limit
 
