@@ -379,7 +379,7 @@ to forget, it can help you remember more material in the same amount of time.
 
 When you turn on FSRS, some new options
 become available, and SM-2 specific options, such as "Graduating interval",
-"Easy bonus", etc. is hidden. This option is shared by all deck presets.
+"Easy bonus", etc. are hidden. This option is shared by all deck presets.
 
 **Before Enabling**
 
