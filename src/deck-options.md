@@ -121,7 +121,7 @@ suggesting you consider increasing the limit if you have time.
 
 When studying a deck that has subdecks inside it, the review limit behaves similarly to the new card limit.
 
-Anki includes any learning cards that has [crossed the day boundary](https://docs.ankiweb.net/preferences.html#scheduler) (interday learning cards) in the review count,
+Anki includes any learning cards that have [crossed the day boundary](https://docs.ankiweb.net/preferences.html#scheduler) (interday learning cards) in the review count,
 so those learning cards will be subject to the review limit.
 
 #### Per-Deck Daily Limits
