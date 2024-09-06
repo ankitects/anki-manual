@@ -96,7 +96,7 @@ This option controls how many new cards can be introduced each day you open the 
 study fewer than the limit, or miss a day, the next day the counts will be back
 to their limit: the cards do not accumulate.
 
-When studying a deck that has subdecks inside it, the limits set on each subdeck control the maximum number of cards drawn from that particular deck. The selected deck's limits control the total cards that will be shown.
+When studying a deck that has subdecks inside it, the limits set on each subdeck control the maximum number of cards drawn from that particular deck. The selected deck's limits control the total number of cards that will be shown.
 
 For earlier versions, see [this FAQ page](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html).
 
