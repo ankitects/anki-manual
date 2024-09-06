@@ -138,8 +138,6 @@ Anki provides three options for daily limits:
 
 By default, the review limit also applies to new cards, and no new cards will be shown when the review limit has been reached. If this option is enabled, new cards will be shown regardless of the review limit. 
 
-If your review limit is set to 200, and you have 190 review cards waiting, a maximum of 10
-new cards will be introduced. If your review limit has been reached, then Anki won't show you any new cards. This is useful if you have a backlog of review cards.
 
 If you have a backlog, we recommended you hold off on new cards until you
 catch up with your backlog, as introducing more new cards when you're behind will only
