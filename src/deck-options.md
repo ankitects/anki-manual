@@ -126,7 +126,7 @@ so those learning cards will be subject to the review limit.
 
 #### Per-Deck Daily Limits
 
-It is possible to use the same preset for different decks, with customized limits for each one of them. This eliminates the need to create cloned presets just for that purpose, and makes it easier to set custom limits on subdecks when you have many of them.
+It is possible to use the same preset for different decks, with customized limits for each of them. This eliminates the need to create cloned presets just for that purpose, and makes it easier to set custom limits on subdecks.
 
 Anki provides three options for daily limits:
 
