@@ -124,7 +124,7 @@ When studying a deck that has subdecks inside it, the review limit behaves simil
 Anki includes any learning cards that have [crossed the day boundary](https://docs.ankiweb.net/preferences.html#scheduler) (interday learning cards) in the review count,
 so those learning cards will be subject to the review limit.
 
-#### Per-Deck Daily Limits
+### Per-Deck Daily Limits
 
 It is possible to use the same preset for different decks, with customized limits for each of them. This eliminates the need to create cloned presets just for that purpose, and makes it easier to set custom limits on subdecks.
 
