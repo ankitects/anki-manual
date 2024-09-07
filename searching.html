@@ -219,21 +219,21 @@ will match &quot;dog&quot; and &quot;underdog&quot;, but not &quot;doggy&quot;.<
 </li>
 <li>
 <p>When multiple search terms are provided, Anki looks for notes that
-match all of the terms - an implicit &quot;and&quot; is inserted between each
+match all of the terms - an implicit <code>and</code> is inserted between each
 term. On Anki 2.1.24+, AnkiMobile 2.0.60+, and AnkiDroid 2.17+ you can be explicit
-if you like (&quot;dog and cat&quot; is the same as &quot;dog cat&quot;), but older
-Anki versions will treat &quot;and&quot; as just another word to search for.</p>
+if you like (<code>dog and cat</code> is the same as <code>dog cat</code>), but older
+Anki versions will treat <code>and</code> as just another word to search for.</p>
 </li>
 <li>
-<p>You can use &quot;or&quot; if you only need one of the terms to match.</p>
+<p>You can use <code>or</code> if you only need one of the terms to match.</p>
 </li>
 <li>
-<p>You can prepend a minus sign to a term to find notes that don’t
+<p>You can prepend a minus sign (<code>-</code>) to a term to find notes that don’t
 match the term.</p>
 </li>
 <li>
 <p>You can group search terms by placing them in parentheses, as in the
-&quot;dog (cat or mouse)&quot; example. This becomes important when
+<code>dog (cat or mouse)</code> example. This becomes important when
 combining OR and AND searches — in the example, with the
 parentheses, it matches either &quot;dog cat&quot; or &quot;dog mouse&quot;, whereas
 without them it would match either &quot;dog and cat&quot; or &quot;mouse&quot;.</p>
@@ -241,7 +241,7 @@ without them it would match either &quot;dog and cat&quot; or &quot;mouse&quot;.
 <li>
 <p>Anki is only able to search within formatting in the <a href="editing.html#customizing-fields">sort field</a> you’ve configured. For example, if you add
 &quot;<strong>exa</strong>mple&quot; to one of your fields, with the &quot;exa&quot; part in bold, this will not be matched when
-searching for &quot;example&quot; unless that field is the sort field. If a
+searching for <code>example</code> unless that field is the sort field. If a
 word is not formatted, or the formatting does not change in the
 middle of the word, then Anki will be able to find it in any field.</p>
 </li>
@@ -336,7 +336,7 @@ finds notes with tags &quot;lesson-17&quot; through &quot;lesson-25&quot;.</p>
 <li>The search is case-insensitive by default; use <code>(?-i)</code> at the start to turn on case sensitivity.</li>
 <li>Some text like spaces and newlines may be represented differently in HTML - you can
 use the HTML editor in the editing screen to see the underlying HTML contents.</li>
-<li>For the specifics of Anki's regex support, see the <a href="https://docs.rs/regex/1.3.9/regex/#syntax">regex crate documentation</a></li>
+<li>For the specifics of Anki's regex support, see the <a href="https://docs.rs/regex/1.3.9/regex/#syntax">regex crate documentation</a>.</li>
 </ul>
 <h2 id="card-state"><a class="header" href="#card-state">Card state</a></h2>
 <p><code>is:due</code><br />
@@ -385,7 +385,7 @@ cards due yesterday that haven’t been answered yet.</p>
 <p><code>prop:due&gt;=1</code><br />
 all cards due in the future, including tomorrow.</p>
 <p><code>prop:due&lt;=-1</code><br />
-all  overdue cards</p>
+all  overdue cards.</p>
 <p><code>prop:due&gt;-1 prop:due&lt;1</code><br />
 cards due yesterday, today and tomorrow.</p>
 <p><code>prop:reps&lt;10</code><br />
@@ -448,7 +448,7 @@ quotes. If it is a colon search, you also have the option to only quote the
 </li>
 <li>
 <p><code>And</code>/<code>Or</code><br />
-To search for the words <code>or</code> and <code>and</code>, wrap them with double quotes. For example, <code>dog &quot;and&quot; cat</code> searches for &quot;dog&quot;, &quot;cat&quot; and the word &quot;and&quot;.
+To search for these words, wrap them with double quotes. For example, <code>dog &quot;and&quot; cat</code> searches for &quot;dog&quot;, &quot;cat&quot; and the word &quot;and&quot;.
 If you wrap the entire search term with quotes like in the previous example, you do not need to escape <code>and</code> or <code>or</code>.</p>
 </li>
 <li>
@@ -479,7 +479,7 @@ you can either use a backslash, or include the text in quotes. For example,
 <p><code>:</code><br />
 Colons have to be escaped using backslashes unless they are preceded by another, unescaped colon.
 For example, <code>w:3:30</code> searches for &quot;3:30&quot; on word boundary and doesn't require you to use a backslash.
-However, if you don't use a colon search, the colons need to escaped like this: <code>3\:30</code>.</p>
+However, if you don't use a colon search, the colons need to be escaped like this: <code>3\:30</code>.</p>
 </li>
 <li>
 <p><code>&amp;</code>, <code>&lt;</code>, and <code>&gt;</code><br />
@@ -495,7 +495,7 @@ the characters listed above largely lose their special meaning. In such a contex
 a minimum of escaping is required to prevent ambiguity:</p>
 <ul>
 <li>
-<p><code>&quot;</code> must be escaped.</p>
+<p>Double quotes (<code>&quot;</code>) must be escaped.</p>
 </li>
 <li>
 <p>Spaces and unescaped parentheses require the search term to be quoted.</p>
@@ -506,9 +506,9 @@ a minimum of escaping is required to prevent ambiguity:</p>
 </ul>
 <h2 id="object-ids"><a class="header" href="#object-ids">Object IDs</a></h2>
 <p><code>nid:123</code><br />
-the note with note id 123</p>
+the note with note id 123.</p>
 <p><code>cid:123,456,789</code><br />
-all cards with card ids 123, 456 or 789</p>
+all cards with card ids 123, 456, or 789.</p>
 <p>Note and card IDs can be found in the <a href="stats.html">card info</a> dialog in the
 browser. These searches may also be helpful when doing add-on
 development or otherwise working closely with the database.</p>
