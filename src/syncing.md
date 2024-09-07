@@ -204,9 +204,8 @@ If you’re on a Mac, please see
 <http://stackoverflow.com/questions/135688/setting-environment-variables-in-os-x>
 
 Heavily locked down networks that intercept secure connections and
-present their own certificate instead may cause Anki to throw up SSL
-errors. In such environments, you may be able to work around the errors
-with <https://ankiweb.net/shared/info/878367706>
+present their own certificates may cause Anki to throw up SSL
+errors. In such environments, you may be able to work around the errors using [this add-on](https://ankiweb.net/shared/info/1332261690).
 
 An alternative solution is to install a local proxy server, and point
 that proxy server at your normal proxy server. You can then tell Anki to
