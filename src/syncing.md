@@ -52,10 +52,9 @@ and red when a full sync is required.
 Related video: <https://www.youtube.com/watch?v=phP9GGG-PxY>
 
 Anki will synchronize any sounds and images used by your notes. It will
-notice when media has been added or removed from your [media folder](files.md#file-locations), but
-will not notice if you have edited some existing files without adding or
-removing any. To get your edits noticed, you need to add or remove a
-file as well.
+notice when media has been added, removed or replaced in your [media folder](files.md#file-locations), but
+will not notice if you have made edits to existing files. To get your edits synced, you
+need to add, remove or replace a file as well.
 
 One-way syncs (where you're prompted to upload or download) have no influence over how media
 syncs - media changes are always merged.
