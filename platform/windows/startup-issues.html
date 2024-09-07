@@ -161,13 +161,13 @@
 <li><a href="#if-all-else-fails">If all else fails</a></li>
 </ul>
 <h2 id="no-error-but-app-does-not-appear"><a class="header" href="#no-error-but-app-does-not-appear">No error, but app does not appear</a></h2>
-<p>Recently there have been some reports of Anki failing to appear, without
-any error message showing up. If you run into this situation, you can either:</p>
+<p>If you start Anki and it fails to appear, without
+any error message, you can try the following:</p>
 <ul>
-<li>Some users reported that the problems stopped after they disconnected multiple/external displays.</li>
-<li>Install the <a href="https://apps.ankiweb.net/">latest Anki version</a> (try both qt6 and qt5)</li>
-<li>Or you can try <a href="https://forums.ankiweb.net/t/windows-update-broke-anki/1822/75">adjusting your decimal separator</a> if it is not a period.</li>
-<li>Or you can try the old 2.1.35-alternate build of Anki.</li>
+<li>Disconnect multiple/external displays.</li>
+<li>Install the <a href="https://apps.ankiweb.net/">latest Anki version</a> (try both qt6 and qt5).</li>
+<li>Adjust <a href="https://forums.ankiweb.net/t/windows-update-broke-anki/1822/75">your decimal separator</a>, if it is not a period.</li>
+<li>Install the old <a href="https://github.com/ankitects/anki/releases/tag/2.1.35">2.1.35-alternate build</a> of Anki.</li>
 </ul>
 <h2 id="windows-updates"><a class="header" href="#windows-updates">Windows updates</a></h2>
 <p>When starting Anki, you may receive a message like the following:</p>
@@ -197,7 +197,7 @@ If any needed to be installed, please restart your device after installing.</p>
 toolkit Anki is built on having trouble with <a href="https://forums.ankiweb.net/t/error-126-on-open-anki-desktop/13967">multiple displays</a>.</p>
 <h2 id="antivirusfirewall-software"><a class="header" href="#antivirusfirewall-software">Antivirus/firewall software</a></h2>
 <p>Third-party software on your machine may prevent Anki from loading. You can
-try adding an exception to Anki, or temporarily disabling your antivirus/firewall
+try adding an exception for Anki, or temporarily disabling your antivirus/firewall
 to see if it helps.</p>
 <h2 id="admin-access"><a class="header" href="#admin-access">Admin access</a></h2>
 <p>Some users have reported that Anki did not run for them until they right-clicked
@@ -208,16 +208,15 @@ you can try if you've exhausted other options.</p>
 <p>If the update process leaves you with multiple Anki installs (such as within
 <code>C:\Program Files\Anki</code> and <code>C:\Program Files (x86)\Anki</code>), they may be left in a
 non-working state, and Anki may refuse to start without showing an error message.</p>
-<p>Try uninstalling all copies - you may be able to do so with the Windows <code>Apps &amp; features</code> settings menu, or by running <code>uninstall.exe</code> in each Anki program
+<p>Try uninstalling all copies of Anki from your computer. To do this, find them in Windows Settings &gt; Apps &amp; features (or Apps &gt; Installed apps) and uninstall, or run <code>uninstall.exe</code> in each Anki program
 folder. Afterward, install Anki again.</p>
 <h2 id="debugging"><a class="header" href="#debugging">Debugging</a></h2>
 <p>Starting Anki from a terminal may reveal a bit more information about some
 errors. After installing the latest Anki version and ensuring all Windows
-updates are installed, instead of running Anki directly, use Start&gt;Run
-and type cmd.exe. When a console window appears, type</p>
-<pre><code class="language-bat">cd \program files\anki &amp; anki-console
+updates are installed, instead of running Anki directly, press the <kbd>Windows</kbd> key (or open the Start menu), type <code>cmd</code>, and launch Command Prompt. When the terminal window opens, paste the following command, and press <kbd>Enter</kbd>. (The path will be different if Anki is installed in a location that is not the default.)</p>
+<pre><code>%LocalAppData%\Programs\Anki\anki-console.bat
 </code></pre>
-<p>Presumably Anki will fail to open like before, but it may reveal something about
+<p>Presumably Anki will fail to open like before, but the output in the terminal window may reveal something about
 what is causing the problem.</p>
 <h2 id="if-all-else-fails"><a class="header" href="#if-all-else-fails">If all else fails</a></h2>
 <p>If you are unable to start Anki after trying the above workarounds, you have
@@ -225,7 +224,7 @@ two remaining options:</p>
 <ul>
 <li>You can try <a href="https://faqs.ankiweb.net/running-from-python.html">running from Python</a>.</li>
 <li>You can try an older Anki version built with an older toolkit, such as
-2.1.35-alternate, and 2.1.15.</li>
+<a href="https://github.com/ankitects/anki/releases/tag/2.1.35">2.1.35-alternate</a>, or <a href="https://github.com/ankitects/anki/releases/tag/2.1.15">2.1.15</a>.</li>
 </ul>
 
                     </main>
