@@ -7,13 +7,13 @@ that you spend a few weeks with the defaults to get a feel for how Anki works
 before you start adjusting the options. Please make sure you understand the options
 before changing them, as mistakes can reduce Anki's effectiveness.
 
-If you're on the desktop app, do any of the following to open deck options:
+On desktop, do any of the following to open deck options:
 
 - Click the gear icon on the Decks screen.
 - Select a deck on the Decks screen, and then click **Options**
   at the bottom of the screen.
-- Click "More" > "Options" while in review mode.
-- Press <kbd>o</kbd> while in review mode.
+- Click **More > Options** while in review mode.
+- Press <kbd>O</kbd> while in review mode.
 
 Here are some community posts about deck options:
 
@@ -29,15 +29,15 @@ it easier to update options in many decks at once. To do this, options are
 grouped into _presets_. If you change an option in a preset, the change is applied to all decks that use the same preset. All newly created decks use the "Default" preset.
 
 To change the options in one deck but not other decks, click the
-arrow icon in the top right of the Deck Options window. The following are shown:
+arrow icon in the top right of the Deck Options window. You can do the following:
 
-- **Save**: Saves all modifications you've made after opening the deck options screen.
+- **Save**: Save all modifications you've made in deck options.
 - **Add Preset**: Add a new preset for this deck, with the default options.
 - **Clone**: Clone your current preset, which is useful if you
    want to modify some of the  options but keep the rest as they are.
-- **Rename**: Changes the name of the current preset.
-- **Delete**: Deletes the current preset. This will make your next sync
-  a one-way sync.
+- **Rename**: Change the name of the current preset.
+- **Delete**: Delete the current preset. This will make your next sync
+  a [one-way sync.](https://docs.ankiweb.net/syncing.html?highlight=one%20way%20syn#conflicts).
 - **Save to All Subdecks**: Like **Save**, but also assigns the selected preset to all
   subdecks of the currently selected deck.
 - **Optimize All Presets**: When FSRS is enabled, this allows you to optimize the parameters of all presets at once.
