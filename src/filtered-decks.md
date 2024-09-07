@@ -204,15 +204,6 @@ Filtered decks with rescheduling disabled show 4 buttons in the
 delay applies to the Again button, and Hard/Good will use 1.5x and 2x the
 provided delay. Easy will remove the card.
 
-## Counts
-
-In a filtered deck, reviews that were already due are displayed in the
-review count as normal. Learning cards and non-due reviews are counted
-in the new card count, due to how the underlying implementation works.
-Reviews that were not due are not scheduled like new cards however:
-Anki uses a special algorithm that takes into account how close they
-were to their normal due time when reviewed.
-
 ## Due Reviews
 
 If the filtered deck includes cards that were due for review, they will
