@@ -4,13 +4,13 @@
 
 ## No error, but app does not appear
 
-Recently there have been some reports of Anki failing to appear, without
-any error message showing up. If you run into this situation, you can either:
+If you start Anki and it fails to appear, without
+any error message, you can try the following:
 
-- Some users reported that the problems stopped after they disconnected multiple/external displays.
-- Install the [latest Anki version](https://apps.ankiweb.net/) (try both qt6 and qt5)
-- Or you can try [adjusting your decimal separator](https://forums.ankiweb.net/t/windows-update-broke-anki/1822/75) if it is not a period.
-- Or you can try the old 2.1.35-alternate build of Anki.
+- Disconnect multiple/external displays.
+- Install the [latest Anki version](https://apps.ankiweb.net/) (try both qt6 and qt5).
+- Adjust [your decimal separator](https://forums.ankiweb.net/t/windows-update-broke-anki/1822/75), if it is not a period.
+- Install the old [2.1.35-alternate build](https://github.com/ankitects/anki/releases/tag/2.1.35) of Anki.
 
 ## Windows updates
 
@@ -49,7 +49,7 @@ toolkit Anki is built on having trouble with [multiple displays](https://forums.
 ## Antivirus/firewall software
 
 Third-party software on your machine may prevent Anki from loading. You can
-try adding an exception to Anki, or temporarily disabling your antivirus/firewall
+try adding an exception for Anki, or temporarily disabling your antivirus/firewall
 to see if it helps.
 
 ## Admin access
@@ -65,21 +65,20 @@ If the update process leaves you with multiple Anki installs (such as within
 `C:\Program Files\Anki` and `C:\Program Files (x86)\Anki`), they may be left in a
 non-working state, and Anki may refuse to start without showing an error message.
 
-Try uninstalling all copies - you may be able to do so with the Windows `Apps & features` settings menu, or by running `uninstall.exe` in each Anki program
+Try uninstalling all copies of Anki from your computer. To do this, find them in Windows Settings > Apps & features (or Apps > Installed apps) and uninstall, or run `uninstall.exe` in each Anki program
 folder. Afterward, install Anki again.
 
 ## Debugging
 
 Starting Anki from a terminal may reveal a bit more information about some
 errors. After installing the latest Anki version and ensuring all Windows
-updates are installed, instead of running Anki directly, use Start>Run
-and type cmd.exe. When a console window appears, type
+updates are installed, instead of running Anki directly, press the <kbd>Windows</kbd> key (or open the Start menu), type `cmd`, and launch Command Prompt. When the terminal window opens, paste the following command, and press <kbd>Enter</kbd>. (The path will be different if Anki is installed in a location that is not the default.)
 
-```bat
-cd \program files\anki & anki-console
+```
+%LocalAppData%\Programs\Anki\anki-console.bat
 ```
 
-Presumably Anki will fail to open like before, but it may reveal something about
+Presumably Anki will fail to open like before, but the output in the terminal window may reveal something about
 what is causing the problem.
 
 ## If all else fails
@@ -89,4 +88,4 @@ two remaining options:
 
 - You can try [running from Python](https://faqs.ankiweb.net/running-from-python.html).
 - You can try an older Anki version built with an older toolkit, such as
-  2.1.35-alternate, and 2.1.15.
+  [2.1.35-alternate](https://github.com/ankitects/anki/releases/tag/2.1.35), or [2.1.15](https://github.com/ankitects/anki/releases/tag/2.1.15).
