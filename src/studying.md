@@ -198,17 +198,17 @@ card or note:
   With the [2.1 scheduler](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html),
   however, burying cards does not reset a card's learning steps.
 
-- **Forget card**: Move current card to [the end of the new queue](browsing.md#cards).
+- **Reset card**: Moves the current card to [the end of the new queue](browsing.md#cards).
 
   From Anki 2.1.50+, Anki will remember the original order of a new card when it is first studied
-  with the v3 scheduler. The "Restore original position" option allows you to reset the card back
+  with the v3 scheduler. The "Restore original position" option allows you to reset the card back to its original position when you reset it.
   to its original position when you forget it.
 
   The "Reset repetition and lapse count" option, if enabled, will set the review and failure counters
   for the card back to zero. It does not remove the review history that is shown at the bottom of the
   card info screen.
 
-- **Set Due Date**: Put cards in the review queue, and [make them due on a certain date.](browsing.md#cards)
+- **Set Due Date**: Puts cards in the review queue, and [makes them due on a certain date.](browsing.md#cards)
 
 - **Suspend Card / Note**: Hides a card or all of the note’s cards from review until they are
   manually unsuspended (by clicking the suspend button in the browser).
