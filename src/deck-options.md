@@ -101,7 +101,7 @@ When studying a deck that has subdecks inside it, the limits set on each subdeck
 For earlier versions, see [this FAQ page](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html).
 
 Studying new cards will temporarily increase the number of reviews you need to
-do a day, as newly learnt material needs to be repeated a number of times
+do a day, as newly-learnt material needs to be repeated a number of times
 before the delay between repetitions can increase appreciably. If you are
 consistently learning 20 new cards a day, you can expect your daily reviews to
 be roughly about 200 cards/day. You can decrease the reviews required by
