@@ -7,7 +7,7 @@ that you spend a few weeks with the defaults to get a feel for how Anki works
 before you start adjusting the options. Please make sure you understand the options
 before changing them, as mistakes can reduce Anki's effectiveness.
 
-On desktop, do any of the following to open deck options:
+On your computer, do any of the following to open deck options:
 
 - Click the gear icon on the Decks screen.
 - Select a deck on the Decks screen, and then click **Options**
