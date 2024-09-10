@@ -52,14 +52,16 @@ remembered the answer, and Anki will choose when to show you the card again. For
 
 #### Card States
 
+<div id="types-of-cards" />
+
 - **New:** Cards that you have downloaded or created yourself, but have never studied before.
 
 - **Learning:** Cards that were seen for the first time recently, and are still being learnt.
 
 - **Review:** Cards that you have finished learning. These cards will be shown again after their delay (interval) has elapsed.
   There are two types of review cards:
-    - **Young:** A young card is one that has an interval of less than 21 days.
-    - **Mature:** A mature card is one that has an interval of 21 days or greater.
+  - **Young:** A young card is one that has an interval of less than 21 days.
+  - **Mature:** A mature card is one that has an interval of 21 days or greater.
 
 - **Relearn:** Cards that you forgot in the review stage. These cards are returned to the relearning state to be learned again.
 
@@ -218,7 +220,7 @@ types specifically for the content you are learning. The standard note types are
   will appear on the back of the card.
 
 - **Basic (and reversed card)**\
-  Like "Basic", but creates two cards for the text you enter: 
+  Like "Basic", but creates two cards for the text you enter:
   front→back and back→front.
 
 - **Basic (optional reversed card)**\
@@ -239,7 +241,7 @@ types specifically for the content you are learning. The standard note types are
   Like the cloze note type, but it works with images instead of text,
   which is especially useful when studying material that heavily relies on images,
   such as anatomy and geography. For details, please see the [Image Occlusion](editing.md#image-occlusion)
-  section of the manual. 
+  section of the manual.
 
 To add your own note types and modify existing ones, you can use Tools →
 Manage Note Types from the main Anki window.
@@ -247,7 +249,7 @@ Manage Note Types from the main Anki window.
 Notes and note types are common to your whole collection rather than
 limited to an individual deck. This means you can use different
 note types in a single deck, or have cards generated from the
- same note put into different decks. When you add notes using the
+same note put into different decks. When you add notes using the
 Add window, you can select what note type to use and what deck to use,
 and these choices are completely independent of each other. You can also
 [change the note type of notes](browsing.md#notes) after you've already created them.
@@ -259,8 +261,7 @@ notes, decks, note types, deck options, and so on.
 
 ## Shared Decks
 
-You can watch a video about [Shared Decks and Review
-Basics](http://www.youtube.com/watch?v=QS2G-k2hQyg&yt:cc=on) on YouTube.
+You can watch a video about [Shared Decks and Review Basics](http://www.youtube.com/watch?v=QS2G-k2hQyg&yt:cc=on) on YouTube.
 
 The easiest way to get started with Anki is to download a deck of cards
 someone else has shared:
@@ -275,7 +276,7 @@ someone else has shared:
 
 Note: It’s not currently possible to add shared decks
 directly to your AnkiWeb account. You need to first import them to the
-desktop app, AnkiMobile, or AnkiDroid, then [synchronize](/syncing.md) to upload the decks to AnkiWeb.
+desktop app, AnkiMobile, or AnkiDroid, then [synchronize](./syncing.md) to upload the decks to AnkiWeb.
 
 Creating your own deck is the most effective way to learn a complex
 subject. Subjects like languages and the sciences can’t be understood
