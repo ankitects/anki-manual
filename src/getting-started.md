@@ -204,7 +204,7 @@ material. Each type of note has its own set of fields and card types.
 It's a good idea to create a separate note type for each broad topic
 you're studying. In the previous French example, we might create a note
 type called "French" for that. If we wanted to learn capital cities, we
-could create a separate note type for that as well, with fields such as
+could create a note type for that as well, with fields such as
 "Country" and "Capital City".
 
 Anki comes with some standard
