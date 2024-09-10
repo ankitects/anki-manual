@@ -447,16 +447,12 @@ Log loss doesn't have an intuitive interpretation. RMSE (bins) can be
 interpreted as the average difference between the predicted probability
 of recalling a card (R) and the actual
 probability measured from your review history. For example, RMSE=5% means that, on average, FSRS
-is off by 5% when predicting R.
+is off by 5% when predicting R. You don't need to understand these metrics to use FSRS.
 
 Note that log loss and RMSE (bins) are not perfectly correlated,
 so two decks may have similar RMSE values but very different log-loss values, or the other way around.
 
 By default, log loss and RMSE (bins) are calculated from all decks using the current preset. You can optionally [adjust the search](/searching.md) before evaluating the parameters, if you'd like to change which cards are used for evaluation.
-
-### Ignore Reviews Before
-
-If set, cards reviewed before the provided date will be ignored when optimizing FSRS parameters. This can be useful if you imported someone else's scheduling data, or have changed the way you use the answer buttons.
 
 ### Reschedule Cards on Change
 
@@ -519,6 +515,10 @@ Your review history may be incomplete for two reasons:
 - Because you previously deleted review logs to free up space, or imported material from a different SRS program.
 
 The latter is quite rare, so unless you're using the former option, you probably don't need to adjust this setting.
+
+### Ignore Cards Reviews Before
+
+If set, cards reviewed before the provided date will be ignored when optimizing FSRS parameters. This can be useful if you imported someone else's scheduling data, or have changed the way you use the answer buttons.
 
 ### Starting Ease
 
