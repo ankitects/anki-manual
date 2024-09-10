@@ -322,6 +322,29 @@ Controls how the review cards are sorted. The options are:
   When using FSRS, overdueness is calculated based on on each card's retrievability,
   and the desired retention in the deck preset.
 
+## Burying
+
+When Anki gathers cards, it first gathers intraday learning cards, then interday learning cards, then review cards, and finally new cards. This affects how burying works:
+
+- If you have all burying options enabled, the sibling that comes earliest in that list will be shown. For example, a review card will be shown in preference to a new card.
+- Siblings later in the list can not bury earlier card types. For example, if you disable burying of new cards, and study a new card, it will not bury any interday learning or review cards, and you may see both a review sibling and new sibling in the same session.
+
+The options are:
+
+- **Bury new siblings**: Whether other new cards of the same note (e.g. reverse cards, adjacent cloze deletions) will be delayed until the next day.
+- **Bury review siblings**: Whether other review cards of the same note will be delayed until the next day.
+- **Bury interday learning siblings**: Whether other learning cards of the same note that crossed a day boundary will be delayed until the next day.
+
+For more info about burying cards, please see [this section](./studying.md#siblings-and-burying) of the manual.
+
+## Audio
+
+- **Don't play audio automatically**: By default, Anki automatically plays any audio you have on
+cards. If you turn on this option Anki will not play audio until you press the replay audio key, <kbd>r</kbd> or <kbd>F5</kbd>.
+
+- **Skip question when replaying answer**: Controls whether audio from
+the question side is played when you use replay action on the answer side. Note that, Anki [does not automatically play](/templates/fields.md#special-fields)) audio from the `{{FrontSide}}` field. This option does not influence the behaviour of automatic play.
+
 ## Timer
 
 Anki monitors how long it takes you to answer each card, so that it
@@ -347,29 +370,6 @@ The options are:
 Requires Anki 23.12 or later. Auto Advance allows you to automatically take some actions after a certain amount of time has passed. To use it, you must first set a non-zero
 time in "Seconds to show question for" and/or "Seconds to show answer for". Then, in the
 review screen, use the Auto Advance action from the `More` button to start advancing.
-
-## Burying
-
-When Anki gathers cards, it first gathers intraday learning cards, then interday learning cards, then review cards, and finally new cards. This affects how burying works:
-
-- If you have all burying options enabled, the sibling that comes earliest in that list will be shown. For example, a review card will be shown in preference to a new card.
-- Siblings later in the list can not bury earlier card types. For example, if you disable burying of new cards, and study a new card, it will not bury any interday learning or review cards, and you may see both a review sibling and new sibling in the same session.
-
-The options are:
-
-- **Bury new siblings**: Whether other new cards of the same note (e.g. reverse cards, adjacent cloze deletions) will be delayed until the next day.
-- **Bury review siblings**: Whether other review cards of the same note will be delayed until the next day.
-- **Bury interday learning siblings**: Whether other learning cards of the same note that crossed a day boundary will be delayed until the next day.
-
-For more info about burying cards, please see [this section](./studying.md#siblings-and-burying) of the manual.
-
-## Audio
-
-- **Don't play audio automatically**: By default, Anki automatically plays any audio you have on
-cards. If you turn on this option Anki will not play audio until you press the replay audio key, <kbd>r</kbd> or <kbd>F5</kbd>.
-
-- **Skip question when replaying answer**: Controls whether audio from
-the question side is played when you use replay action on the answer side. Note that, Anki [does not automatically play](/templates/fields.md#special-fields)) audio from the `{{FrontSide}}` field. This option does not influence the behaviour of automatic play.
 
 ## FSRS
 
