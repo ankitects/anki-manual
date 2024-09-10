@@ -204,7 +204,7 @@ as long as the graduating interval, and typically a few days longer.
 Controls whether Anki should add new cards into the deck randomly, or sequentially.
 When you change this option, Anki will re-sort the decks in the current preset.
 
-If you're not using an outdated Anki version, you don't need to change this option. Instead, see [display order](deck-options.md#display-order) later in this section].
+On recent Anki versions, you should leave this option set to `sequential`, and adjust the [display order](deck-options.md#display-order) instead.
 
 ## Lapses
 
