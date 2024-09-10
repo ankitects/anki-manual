@@ -123,8 +123,8 @@ are two major downsides:
 
 Anki solves these problems by allowing you to split the content of your
 cards up into separate pieces of information. You can then tell Anki
-which pieces of information you want on each card, and Anki will take
-care of creating the cards for you.
+which pieces of information you want on each card, and Anki takes care of creating the cards for you and updating them if you make any
+edits in the future.
 
 Imagine we want to study French vocabulary, and we want to include a textbook
 page number on the back of each card. We want our cards to look like
