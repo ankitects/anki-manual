@@ -181,7 +181,7 @@ For more info on how the steps work, see the [learning](studying.md#learningrele
 
 Anki treats small steps and steps that [cross a day boundary](/preferences.md#review) differently.
 With small steps, the cards are shown as soon as the delay has passed,
-in preference to review cards. This is done so that
+in preference to review cards and new cards. This is done so that
 you can answer the card as closely to your requested delay as possible.
 In contrast, if the step crosses a day boundary, the delay is automatically converted to days. For example, if next day starts after 5 hours and the delay is 6 hours, Anki converts the delay to 1 day.
 
