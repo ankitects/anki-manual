@@ -13,3 +13,7 @@ the use of Anki in medical school: <https://www.theanking.com/anki-mastery-cours
 
 Soren Bjornstad has written [a series of extensive articles](https://controlaltbackspace.org/categories/memory/)
 about memory, SRS and how to use Anki effectively.
+
+Jarrett Ye, the creator of FSRS, wrote a great article about spaced repetition algorithms: [https://github.com/open-spaced-repetition/fsrs4anki/wiki/Spaced-Repetition-Algorithm:-A-Three%E2%80%90Day-Journey-from-Novice-to-Expert.](https://github.com/open-spaced-repetition/fsrs4anki/wiki/Spaced-Repetition-Algorithm:-A-Three%E2%80%90Day-Journey-from-Novice-to-Expert)
+
+Expertium's blog about spaced repetition, largely focused on FSRS: [https://expertium.github.io/.](https://expertium.github.io/)
