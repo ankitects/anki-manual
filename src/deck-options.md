@@ -94,7 +94,7 @@ If you choose to study Deck A:
 
 This option controls how many new cards can be introduced each day you open the program. If you
 study fewer than the limit, or miss a day, the next day the counts will be back
-to their limit: the cards do not accumulate.
+to their original setting: you won't be given more cards than your limit allows.
 
 When studying a deck that has subdecks inside it, the limits set on each subdeck control the maximum number of cards drawn from that particular deck. The selected deck's limits control the total number of cards that will be shown.
 
