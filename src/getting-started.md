@@ -126,8 +126,8 @@ cards up into separate pieces of information. You can then tell Anki
 which pieces of information you want on each card, and Anki will take
 care of creating the cards for you.
 
-Imagine we want to study French vocabulary, and we want to include a
-page number on the back of each card. We want the back of our cards to look like
+Imagine we want to study French vocabulary, and we want to include a textbook
+page number on the back of each card. We want our cards to look like
 this:
 
     Q: Bonjour
