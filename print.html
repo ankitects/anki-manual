@@ -913,6 +913,7 @@ A: O
 <p>After confirming that you are correct, you tell Anki how well you
 remembered the answer, and Anki will choose when to show you the card again. For example, Anki might decide to show you the card again in 3 days. In this case, we say the card now has a 3 day interval.</p>
 <h4 id="card-states"><a class="header" href="#card-states">Card States</a></h4>
+<div id="types-of-cards" />
 <ul>
 <li>
 <p><strong>New:</strong> Cards that you have downloaded or created yourself, but have never studied before.</p>
@@ -1066,7 +1067,7 @@ will appear on the back of the card.</p>
 </li>
 <li>
 <p><strong>Basic (and reversed card)</strong><br />
-Like &quot;Basic&quot;, but creates two cards for the text you enter: 
+Like &quot;Basic&quot;, but creates two cards for the text you enter:
 front→back and back→front.</p>
 </li>
 <li>
@@ -1091,7 +1092,7 @@ moon in 1969&quot;). For details, see the <a href="editing.html#cloze-deletion">
 Like the cloze note type, but it works with images instead of text,
 which is especially useful when studying material that heavily relies on images,
 such as anatomy and geography. For details, please see the <a href="editing.html#image-occlusion">Image Occlusion</a>
-section of the manual. </p>
+section of the manual.</p>
 </li>
 </ul>
 <p>To add your own note types and modify existing ones, you can use Tools →
@@ -1107,8 +1108,7 @@ and these choices are completely independent of each other. You can also
 <p>Your <em>collection</em> is all the material stored in Anki: your cards,
 notes, decks, note types, deck options, and so on.</p>
 <h2 id="shared-decks"><a class="header" href="#shared-decks">Shared Decks</a></h2>
-<p>You can watch a video about <a href="http://www.youtube.com/watch?v=QS2G-k2hQyg&amp;yt:cc=on">Shared Decks and Review
-Basics</a> on YouTube.</p>
+<p>You can watch a video about <a href="http://www.youtube.com/watch?v=QS2G-k2hQyg&amp;yt:cc=on">Shared Decks and Review Basics</a> on YouTube.</p>
 <p>The easiest way to get started with Anki is to download a deck of cards
 someone else has shared:</p>
 <ol>
@@ -1126,7 +1126,7 @@ File → Import.</p>
 </ol>
 <p>Note: It’s not currently possible to add shared decks
 directly to your AnkiWeb account. You need to first import them to the
-desktop app, AnkiMobile, or AnkiDroid, then <a href="/syncing.html">synchronize</a> to upload the decks to AnkiWeb.</p>
+desktop app, AnkiMobile, or AnkiDroid, then <a href="./syncing.html">synchronize</a> to upload the decks to AnkiWeb.</p>
 <p>Creating your own deck is the most effective way to learn a complex
 subject. Subjects like languages and the sciences can’t be understood
 simply by memorizing facts — you need explanation and context to
@@ -1226,7 +1226,7 @@ to start studying.</p>
 <h2 id="decks-1"><a class="header" href="#decks-1">Decks</a></h2>
 <p>Study in Anki is limited to the currently selected deck as well as any
 subdecks it contains.</p>
-<p>On the decks screen, your decks and subdecks will be displayed in a list. <a href="getting-started.html#types-of-cards">New, Learn, and Due (To Review)</a>
+<p>On the decks screen, your decks and subdecks will be displayed in a list. <a href="getting-started.html#card-states">New, Learn, and Due (To Review)</a>
 cards for that day will be also displayed here.</p>
 <p><img src="media/decks_screen.png" alt="Decks screen" /></p>
 <p>When you click on a deck, it will become the 'current deck', and Anki
@@ -1240,7 +1240,7 @@ delete the deck, change its <a href="deck-options.html">options</a>, or <a href=
 <p>After clicking on a deck to study, you’ll see a screen that shows you
 how many cards are due today. This is called the 'deck overview' screen:</p>
 <p><img src="media/study_overview.png" alt="Study overview" /></p>
-<p>The cards are split into <a href="getting-started.html#types-of-cards">three types</a>: New, Learning, and To Review.
+<p>The cards are split into <a href="getting-started.html#card-states">three types</a>: New, Learning, and To Review.
 If you have <a href="studying.html#siblings-and-burying">Bury siblings</a> activated in your deck options, you
 may see how many cards will be buried in grey:</p>
 <p><img src="media/study_overview_buried_cards.png" alt="Study overview (Buried Cards)" /></p>
@@ -5814,7 +5814,7 @@ This graph counts the number of card reviews you have done. The bars may
 correspond to days, weeks, or months, depending on the time period
 you’ve selected at the bottom of the screen. The differently colored
 blocks show how many of the cards you answered on each day were
-<a href="getting-started.html#types-of-cards">mature</a>, young, relearning, or learning cards.
+<a href="getting-started.html#card-states">mature</a>, young, relearning, or learning cards.
 There is also a separate group for cards answered in a filtered/cram
 deck while they were not due. The line and the right axis shows the
 cumulative total for each type of review as time progresses across the
@@ -5850,7 +5850,7 @@ how significant the results are).</p>
 <p><strong>Answer Buttons</strong><br />
 This graph shows how many times you’ve chosen the Again, Hard, Good, or
 Easy button while studying learning/new, young, and
-<a href="getting-started.html#types-of-cards">mature</a> cards. Anki also displays the percentage
+<a href="getting-started.html#card-states">mature</a> cards. Anki also displays the percentage
 of correct reviews for each type of card.</p>
 <h2 id="manual-analysis"><a class="header" href="#manual-analysis">Manual Analysis</a></h2>
 <p>If you’re interested in getting information from your statistics other
