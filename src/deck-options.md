@@ -314,7 +314,7 @@ Controls how the review cards are sorted. The options are:
   you have a large backlog that may take some time to get through, and you want to
   reduce the chances of forgetting more cards.
 
-  When using the SM-2 scheduler, overdueness is determined by comparing how
+  When using the SM-2 algorithm, overdueness is determined by comparing how
   overdue cards are, and how long their interval is. For example, a card with a
   current interval of 5 days that is overdue by 2 days, will display before a card
   with a current interval of 10 days that is overdue by 3 days.
@@ -374,7 +374,7 @@ review screen, use the Auto Advance action from the `More` button to start advan
 ## FSRS
 
 The [Free Spaced Repetition Scheduler (FSRS)](https://github.com/open-spaced-repetition/fsrs4anki/wiki/ABC-of-FSRS) is an alternative to Anki's legacy
-SuperMemo 2 (SM-2) scheduler. By more accurately determining when you are likely
+SuperMemo 2 (SM-2) algorithm. By more accurately determining how much information you are likely
 to forget, it can help you remember more material in the same amount of time.
 
 When you turn on FSRS, some new options
@@ -397,7 +397,7 @@ them when they come up for review again. This should normally translate to remem
 
 Here is a graph that shows how adjusting this value will affect your workload:
 
-![graph showing an exponential increase in workload as desired retention nears one.](media/FSRS_retention.png)
+![graph showing an exponential increase in workload as desired retention nears one.](/media/FSRS_retention.png)
 
 The exact shape of the graph is different for everyone. However, there are two patterns that hold true for all:
 
@@ -469,7 +469,7 @@ Compute minimum recommended retention (CMRR) attempts to find the desired retent
 #### Learning and Relearning Steps
 
 (Re)learning steps of 1 day or greater are not recommended when using FSRS. The main 
-reason they were popular with the legacy SM-2 scheduler is because repeatedly 
+reason they were popular with the legacy SM-2 algorithm is because repeatedly 
 failing a card after it has graduated from the learning phase could reduce 
 its ease a lot, leading to what some people called "ease hell". This is not 
 a problem that FSRS suffers from.  By keeping your learning steps under a 
