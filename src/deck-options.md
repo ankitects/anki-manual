@@ -423,7 +423,7 @@ FSRS parameters affect how cards are scheduled. Do not change the parameters man
 
 **Optimize FSRS Parameters**
 
-The FSRS optimizer uses machine learning to learn your memory patterns and find parameters that best fit your review history in a preset. To do this, the optimizer requires several reviews to fine-tune the parameters.
+The FSRS optimizer uses machine learning to learn your memory patterns and find parameters that best fit your review history. To do this, the optimizer requires several reviews to fine-tune the parameters.
 
 When you click the Optimize button, FSRS will analyze your review history, and generate parameters that are optimal for your memory and the content you're studying. If you have decks that vary wildly in subjective difficulty, it
 is recommended to assign them separate presets, as the parameters for easier
@@ -436,7 +436,7 @@ before optimizing the parameters, if you'd like to change which cards
 are used for optimization.
 
 You can also optimize the parameters for all of your presets at once, by clicking on the
-down arrow in the top right, then choosing "Optimize all presets".
+down arrow in the top right, then choosing "Optimize All Presets".
 
 **Evaluate FSRS Parameters**
 
@@ -468,7 +468,7 @@ If you're first switching from SM-2 and still wish to use this option, we recomm
 
 ### Compute Minimum Recommended Retention
 
-Compute minimum recommended retention (CMRR) attempts to find the desired retention value that leads to the most material learnt, in the least amount of time. The calculated number can serve as a reference when deciding what to set your desired retention to. You may wish to choose a higher desired retention, if you’re willing to trade more study time for a greater recall rate. However, setting your desired retention lower than the minimum is not recommended, as you'll spend more time studying than necessary.
+Compute minimum recommended retention (CMRR) attempts to find the desired retention value that leads to the most material learnt, in the least amount of time. The calculated number can serve as a reference when deciding what to set your desired retention to. You may wish to choose a higher desired retention, if you’re willing to trade more study time for a greater retention rate. However, setting your desired retention lower than the minimum is not recommended, as you'll spend more time studying than necessary, due to increased forgetting.
 
 #### Learning and Relearning Steps
 
@@ -485,7 +485,7 @@ showing a longer time than "Good".
 
 We also recommend you keep the number of learning steps to a minimum. Evidence
 shows that repeating a card multiple times in a single day after you've
-remembered it does not significantly help in long term retention, so your time is
+remembered it does not significantly help in long-term retention, so your time is
 better spent on other cards or a shorter study session.
 
 #### Add-On Compatibility
