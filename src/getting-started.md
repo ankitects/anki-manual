@@ -56,7 +56,7 @@ remembered the answer, and Anki will choose when to show you the card again. For
 
 - **Learning:** Cards that were seen for the first time recently, and are still being learnt.
 
-- **Review:** Cards that were previously learnt, and now need to be timely reviewed so you don’t forget them.
+- **Review:** Cards that you have finished learning. These cards will be shown again after their delay (interval) has elapsed.
   There are two types of review cards:
     - **Young:** A young card is one that has an interval of less than 21 days.
     - **Mature:** A mature card is one that has an interval of 21 days or greater.
