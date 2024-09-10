@@ -411,7 +411,7 @@ The exact shape of the graph is different for everyone. However, there are two p
   cards, and those cards will need to be reviewed again. Eventually, you'll
   get to a point where the forgotten cards contribute more to your workload
   than you gain from the longer delays, which is why you see the workload
-  on the left of the graph increasing. Also, note that forgetting
+  on the left of the graph increasing. Also, keep in mind that forgetting
   material frequently is demotivating.
 
 For these reasons, we suggest you be conservative when adjusting this
