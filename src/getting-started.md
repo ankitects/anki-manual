@@ -107,7 +107,7 @@ to remember "bonjour". One card is testing your ability to recognize the
 French word, and the other card is testing your ability to produce it.
 
 When using paper flashcards, your only option in this case is to write
-out the information twice, once for each card. Some digital flashcard
+out the information twice, once for each card. Some flashcard
 programs make life easier by providing a feature to flip the front and
 back sides. This is an improvement over the paper situation, but there
 are two major downsides:
