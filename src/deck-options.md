@@ -267,7 +267,7 @@ Controls how Anki gathers new cards from a deck. The options are:
 
 Controls how the new cards are sorted **after they have been gathered**. The options are:
 
-- **Card type**: Shows cards in order of card type number. If you have sibling burying disabled, this ensures all front→back cards are seen before any back→front cards. Cards of the same card type number appear in the order they were gathered.
+- **Card type, then order gathered**: Shows cards in order of card type number. Cards of each card type number are shown in the order they were gathered. If you have sibling burying disabled, this ensures all front→back cards are seen before any back→front cards. Cards of the same card type number appear in the order they were gathered.
   This order is useful if you don't want sibling cards to appear too close to each other.
   
 - **Order gathered**: Shows cards exactly as they were gathered. If sibling burying is disabled, this  typically results in all sibling cards appearing one after the other.
