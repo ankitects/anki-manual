@@ -15,12 +15,10 @@ On your computer, do any of the following to open deck options:
 - Click **More > Options** while in review mode.
 - Press <kbd>O</kbd> while in review mode.
 
-Here are some community posts about deck options:
+Here are some community posts about deck options that have been contributed in the past:
 
 - [Deck Options Explained](https://forums.ankiweb.net/t/deck-options-explained/213)
 - [Deck Options in a Mental Map](https://forums.ankiweb.net/t/deck-options-in-a-mental-map/15757)
-
-Note: both of them were written for the earlier versions of Anki.
 
 ## Presets
 
