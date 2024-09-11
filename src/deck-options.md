@@ -251,7 +251,7 @@ Controls how Anki gathers new cards from a deck. The options are:
   prefix to place items at the top or bottom.
 
   Although position order depends initially on the insertion order option, you can manually
-  [reposition](https://docs.ankiweb.net/browsing.html#cards) cards in different
+  [reposition](./browsing.md#cards) cards in different
   ways.
 
 - **Deck, then random notes**: Gathers cards from each subdeck in order, starting from the top.
@@ -343,7 +343,7 @@ For more info about burying cards, please see [this section](./studying.md#sibli
 cards. If you turn on this option Anki will not play audio until you press the replay audio key, <kbd>r</kbd> or <kbd>F5</kbd>.
 
 - **Skip question when replaying answer**: Controls whether audio from
-the question side is played when you use replay action on the answer side. Note that, Anki [does not automatically play](/templates/fields.md#special-fields)) audio from the `{{FrontSide}}` field. This option does not influence the behaviour of automatic play.
+the question side is played when you use replay action on the answer side. Note that, Anki [does not automatically play](./templates/fields.md#special-fields)) audio from the `{{FrontSide}}` field. This option does not influence the behaviour of automatic play.
 
 ## Timer
 
@@ -397,7 +397,7 @@ them when they come up for review again. This should normally translate to remem
 
 Here is a graph that shows how adjusting this value will affect your workload:
 
-![graph showing an exponential increase in workload as desired retention nears one.](/media/FSRS_retention.png)
+![graph showing an exponential increase in workload as desired retention nears one.](./media/FSRS_retention.png)
 
 The exact shape of the graph is different for everyone. However, there are two patterns that hold true for all:
 
