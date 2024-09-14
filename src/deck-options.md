@@ -35,7 +35,7 @@ arrow icon in the top right of the Deck Options window. You can do the following
    want to modify some of the  options but keep the rest as they are.
 - **Rename**: Change the name of the current preset.
 - **Delete**: Delete the current preset. This will make your next sync
-  a [one-way sync.](https://docs.ankiweb.net/syncing.html?highlight=one%20way%20syn#conflicts).
+  a [one-way sync](./syncing.md#conflicts).
 - **Save to All Subdecks**: Like **Save**, but also assigns the selected preset to all
   subdecks of the currently selected deck.
 - **Optimize All Presets**: When FSRS is enabled, this allows you to optimize the parameters of all presets at once.
