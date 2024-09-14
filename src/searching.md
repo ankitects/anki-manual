@@ -237,8 +237,14 @@ reviews (both due and not due) and lapsed cards.
 cards that have been [automatically](leeches.md) or manually suspended.
 
 `is:buried`\
-cards that have been buried, either [automatically](studying.md#siblings-and-burying) or
-manually.
+cards that have been either [automatically](studying.md#siblings-and-burying) or
+manually buried.
+
+`is:buried-sibling`\
+cards that have been buried automatically.
+
+`is:buried-manually`\
+cards that have been manually buried.
 
 Cards that have [lapsed](deck-options.md#lapses) fall into several of the previous categories, so it may
 be useful to combine different search terms to get more precise results:
@@ -439,3 +445,11 @@ all cards with card ids 123, 456, or 789.
 Note and card IDs can be found in the [card info](stats.md) dialog in the
 browser. These searches may also be helpful when doing add-on
 development or otherwise working closely with the database.
+
+## Other Searches
+
+`prop:due=1 is:learn`\
+interday learning cards due for tommorow.
+
+`prop:due=0 is:learn -introduced:1`
+interday learning cards due today.
