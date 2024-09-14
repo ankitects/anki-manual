@@ -451,5 +451,8 @@ development or otherwise working closely with the database.
 `prop:due=1 is:learn`\
 interday learning cards due for tommorow.
 
-`prop:due=0 is:learn -introduced:1`
+`prop:due=0 is:learn -introduced:1`\
 interday learning cards due today.
+
+`prop:resched=0`\
+cards rescheduled today, either using **Set due date** or **Reschedule cards on change**.
