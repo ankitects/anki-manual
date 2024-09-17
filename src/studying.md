@@ -141,7 +141,7 @@ without thinking about the algorithm.
 - **Again** should be pressed if your answer is incorrect. If your answer is partially correct, you should be strict with yourself: if it would count as
 a fail outside of Anki, then it counts as a fail in Anki as well.
 
-- **Hard** should be pressed if you weren't sure that your answer is correct or if you made a minor mistake. If your answer is 90% correct, press **Hard**.
+- **Hard** should be pressed if your answer is correct, but you had doubts about it or if you made a minor mistake. If your answer is 90% correct, press **Hard**.
 
 - **Good** should be pressed if your answer is correct, but it took some mental effort to recall it.
 
