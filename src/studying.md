@@ -133,6 +133,20 @@ answer. Pressing the <kbd>spacebar</kbd> or <kbd>Enter</kbd> will select **Good*
 See [Deck Options](deck-options.md) and the [FAQ](https://faqs.ankiweb.net/what-spaced-repetition-algorithm.html)
 to learn more about how the algorithm works.
 
+## How to choose the answer button
+
+The sections above explain *what* the answer buttons do, but you may also want to know *how* to choose an answer button intuitively,
+without thinking about the algorithm.
+
+- **Again** should be pressed if your answer is incorrect. If your answer is partially correct, you should be strict with yourself: if it would count as
+a fail outside of Anki, then it counts as a fail in Anki as well.
+
+- **Hard** should be pressed if you hesitated a lot before answering or if you made a minor mistake. If your answer is 90% correct, press **Hard**.
+
+- **Good** should be pressed if your answer is correct, but it took some mental effort to recall it.
+
+- **Easy** should be pressed if your answer is correct and it took no mental effort to recall it.
+
 ## Due Counts
 
 When only the question is shown, Anki shows three numbers like 6 + 9 + 59
