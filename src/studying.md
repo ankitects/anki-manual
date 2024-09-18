@@ -147,6 +147,8 @@ a fail outside of Anki, then it counts as a fail in Anki as well.
 
 - **Easy** should be pressed if your answer is correct and it took no mental effort to recall it.
 
+Simply put, press Again if your answer is completely incorrect, and press Hard, Good, or Easy if your answer is correct.
+
 ## Due Counts
 
 When only the question is shown, Anki shows three numbers like 6 + 9 + 59
