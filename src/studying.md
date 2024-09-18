@@ -143,7 +143,7 @@ a fail outside of Anki, then it counts as a fail in Anki as well.
 
 - **Hard** should be pressed if your answer is correct, but you had doubts about it or if you made a minor mistake. If your answer is 90% correct, press **Hard**.
 
-- **Good** should be pressed if your answer is correct, but it took some mental effort to recall it.
+- **Good** should be pressed if your answer is correct, but it took some mental effort to recall it. When Anki is used properly, this should be the most commonly used button.
 
 - **Easy** should be pressed if your answer is correct and it took no mental effort to recall it.
 
