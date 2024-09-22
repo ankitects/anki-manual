@@ -171,6 +171,7 @@
 </ul>
 </li>
 <li><a href="#object-ids">Object IDs</a></li>
+<li><a href="#other-searches">Other Searches</a></li>
 </ul>
 <p>Anki's Browse screen and the Filtered Deck feature use a common method
 of searching for specific cards/notes. This method can also be used to adjust the scope of FSRS optimization. </p>
@@ -350,8 +351,12 @@ reviews (both due and not due) and lapsed cards.</p>
 <p><code>is:suspended</code><br />
 cards that have been <a href="leeches.html">automatically</a> or manually suspended.</p>
 <p><code>is:buried</code><br />
-cards that have been buried, either <a href="studying.html#siblings-and-burying">automatically</a> or
-manually.</p>
+cards that have been either <a href="studying.html#siblings-and-burying">automatically</a> or
+manually buried.</p>
+<p><code>is:buried-sibling</code><br />
+cards that have been buried automatically.</p>
+<p><code>is:buried-manually</code><br />
+cards that have been manually buried.</p>
 <p>Cards that have <a href="deck-options.html#lapses">lapsed</a> fall into several of the previous categories, so it may
 be useful to combine different search terms to get more precise results:</p>
 <p><code>is:learn is:review</code><br />
@@ -512,6 +517,13 @@ all cards with card ids 123, 456, or 789.</p>
 <p>Note and card IDs can be found in the <a href="stats.html">card info</a> dialog in the
 browser. These searches may also be helpful when doing add-on
 development or otherwise working closely with the database.</p>
+<h2 id="other-searches"><a class="header" href="#other-searches">Other Searches</a></h2>
+<p><code>prop:due=1 is:learn</code><br />
+interday learning cards due for tommorow.</p>
+<p><code>prop:due=0 is:learn -introduced:1</code><br />
+interday learning cards due today.</p>
+<p><code>prop:resched=0</code><br />
+cards rescheduled today, either using <strong>Set due date</strong> or <strong>Reschedule cards on change</strong>.</p>
 
                     </main>
 
