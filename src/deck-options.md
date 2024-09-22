@@ -408,12 +408,11 @@ The exact shape of the graph is different for everyone. However, there are two p
 - As desired retention decreases, you'll forget a greater percentage of your
   cards, and those cards will need to be reviewed again. Eventually, you'll
   get to a point where the forgotten cards contribute more to your workload
-  than you gain from the longer delays, which is why you see the workload
-  on the left of the graph increasing. Also, keep in mind that forgetting
+  than you gain from the longer delays. Also, keep in mind that forgetting
   material frequently is demotivating.
 
 For these reasons, we suggest you be conservative when adjusting this
-number, and recommend you keep it lower than 0.95 and higher than the [minimum recommended retention](#compute-minimum-recommended-retention).
+number, and recommend you keep it lower than 0.97 and higher than the [minimum recommended retention](#compute-minimum-recommended-retention).
 
 ### FSRS Parameters
 
@@ -434,7 +433,7 @@ before optimizing the parameters, if you'd like to change which cards
 are used for optimization.
 
 You can also optimize the parameters for all of your presets at once, by clicking on the
-down arrow in the top right, then choosing "Optimize All Presets".
+down arrow in the top right corner of the deck options window, then choosing "Optimize All Presets".
 
 **Evaluate FSRS Parameters**
 
@@ -458,7 +457,7 @@ This option controls whether the due dates of cards will be changed when you ena
 
 Use this option sparingly, as it will add a review entry to each of your cards, and increase the size of your collection.
 
-If you're first switching from SM-2 and still wish to use this option, we recommend you first create a backup, enable FSRS with rescheduling, check the future due graph in statistics, and then if needed, you can undo or restore from the backup.
+If you're first switching from SM-2 and still wish to use this option, we recommend you first create a backup, enable FSRS with rescheduling, and then if needed, you can undo or restore from the backup.
 
 ### Compute Minimum Recommended Retention
 
@@ -478,8 +477,8 @@ shorter time than your last learning step, leading to the "Hard" button
 showing a longer time than "Good".
 
 We also recommend you keep the number of learning steps to a minimum. Evidence
-shows that repeating a card multiple times in a single day after you've
-remembered it does not significantly help in long-term retention, so your time is
+shows that repeating a card multiple times in a single day does not significantly 
+contribute to long-term memory, so your time is
 better spent on other cards or a shorter study session.
 
 #### Add-On Compatibility
