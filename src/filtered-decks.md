@@ -181,9 +181,7 @@ Cards return to their home deck when (re)learning is complete. Thus if
 you have 3 learning steps, a new card will return to its home deck upon
 three presses of "Good" or a single press of "Easy".
 
-Filtered decks with rescheduling disabled show 4 buttons - the provided
-delay applies to the Again button, and Hard/Good will use 1.5x and 2x the
-provided delay. Easy will remove the card.
+Filtered decks with rescheduling disabled show 4 buttons. **Again**, **Hard**, and **Good** button have configurable delays. **Easy** button removes cards from the filtered deck.
 
 ## Due Reviews
 
@@ -217,17 +215,6 @@ intervals, because you don't know them well enough for them to be
 rescheduled further. If you review ahead again the next day, all you'll
 end up doing is going through those same new cards again, to little
 benefit.
-
-Early reviews are included in the new card count rather than the review
-count, and will be shown according to the number of relearning steps
-defined in the home deck (unless you have provided custom steps). This
-means that if you have customized the number of relearning steps in the
-home deck, the non-due card may be shown more than once.
-
-If you have multiple steps, Anki will only consider the first answer
-when deciding the next delay, and like relearning in normal decks,
-"Good" and "Easy" differ only in the step change and not the resulting
-delay.
 
 ## Rescheduling
 
