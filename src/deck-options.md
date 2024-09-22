@@ -490,7 +490,7 @@ A list of commonly used add-ons and their FSRS compatibility can be found in [Ad
 
 #### More
 
-Several frequently asked questions about FSRS have been answered in [FAQ](https://faqs.ankiweb.net/frequently-asked-questions-about-fsrs.html).
+Several frequently asked questions about FSRS have been answered in [its FAQ](https://faqs.ankiweb.net/frequently-asked-questions-about-fsrs.html).
 
 For more info on FSRS, please check:
 
