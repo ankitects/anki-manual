@@ -135,21 +135,19 @@ to learn more about how the algorithm works.
 
 ## How to choose the answer button
 
-The sections above explain *what* the answer buttons do, but you may also want to know *how* to choose an answer button intuitively,
-without thinking about the algorithm.
+- **Again** should be pressed if your answer is incorrect. If your answer is partially correct, you should be
+strict with yourself: if it would count as a fail in real-life context outside of Anki, then it counts as a fail in Anki as well. 
+You'll typically use this button about 5-15% of the time.
 
-- **Again** should be pressed if your answer is incorrect. If your answer is partially correct, you should be strict with yourself: if it would count as
-a fail outside of Anki, then it counts as a fail in Anki as well.
+- **Hard** should be pressed if your answer is correct, but you had doubts about it or it took a long time to recall.
 
-- **Hard** should be pressed if your answer is correct, but you had doubts about it or if you made a minor mistake. If your answer is 90% correct, press **Hard**.
-
-- **Good** should be pressed if your answer is correct, but it took some mental effort to recall it. When Anki is used properly, this should be the most commonly used button.
+- **Good** should be pressed if your answer is correct, but it took some mental effort to recall it.
+When Anki is used properly, this should be the most commonly used button. You'll typically use this button about 85-95% of the time.
 
 - **Easy** should be pressed if your answer is correct and it took no mental effort to recall it.
 
-Simply put, press Again if your answer is completely incorrect, and press Hard, Good, or Easy if your answer is correct. The **Hard** and **Easy** buttons are useful for cards that are atypically hard or easy.
-
-If you don't feel confident in your ability to decide whether a card is harder/easier than other cards, you can only use Again and Good, which is a perfectly valid way of using Anki.
+Simply put, press Again if your answer was not completely correct, and press Hard, Good, or Easy otherwise. If you don't feel confident 
+in your ability to decide precisely how difficult a card is, you can only use Again and Good, which is a perfectly valid way of using Anki.
 
 ## Due Counts
 
