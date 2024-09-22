@@ -147,7 +147,9 @@ a fail outside of Anki, then it counts as a fail in Anki as well.
 
 - **Easy** should be pressed if your answer is correct and it took no mental effort to recall it.
 
-Simply put, press Again if your answer is completely incorrect, and press Hard, Good, or Easy if your answer is correct.
+Simply put, press Again if your answer is completely incorrect, and press Hard, Good, or Easy if your answer is correct. The **Hard** and **Easy** buttons are useful for cards that are atypically hard or easy.
+
+If you don't feel confident in your ability to decide whether a card is harder/easier than other cards, you can only use Again and Good, which is a perfectly valid way of using Anki.
 
 ## Due Counts
 
