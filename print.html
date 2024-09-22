@@ -3677,13 +3677,12 @@ At 0.99, the interval will be only 9 days (you'll have to review your cards more
 <p>As desired retention decreases, you'll forget a greater percentage of your
 cards, and those cards will need to be reviewed again. Eventually, you'll
 get to a point where the forgotten cards contribute more to your workload
-than you gain from the longer delays, which is why you see the workload
-on the left of the graph increasing. Also, keep in mind that forgetting
+than you gain from the longer delays. Also, keep in mind that forgetting
 material frequently is demotivating.</p>
 </li>
 </ul>
 <p>For these reasons, we suggest you be conservative when adjusting this
-number, and recommend you keep it lower than 0.95 and higher than the <a href="deck-options.html#compute-minimum-recommended-retention">minimum recommended retention</a>.</p>
+number, and recommend you keep it lower than 0.97 and higher than the <a href="deck-options.html#compute-minimum-recommended-retention">minimum recommended retention</a>.</p>
 <h3 id="fsrs-parameters"><a class="header" href="#fsrs-parameters">FSRS Parameters</a></h3>
 <p>FSRS parameters affect how cards are scheduled. Do not change the parameters manually or copy them from someone else.</p>
 <p><strong>Optimize FSRS Parameters</strong></p>
@@ -3697,7 +3696,7 @@ decks using the current preset. You can optionally <a href="/searching.html">adj
 before optimizing the parameters, if you'd like to change which cards
 are used for optimization.</p>
 <p>You can also optimize the parameters for all of your presets at once, by clicking on the
-down arrow in the top right, then choosing &quot;Optimize All Presets&quot;.</p>
+down arrow in the top right corner of the deck options window, then choosing &quot;Optimize All Presets&quot;.</p>
 <p><strong>Evaluate FSRS Parameters</strong></p>
 <p>You can use the &quot;Evaluate&quot; button to see metrics that show how well the parameters fit your review history. Smaller numbers
 indicate a better fit to your review history.</p>
@@ -3712,7 +3711,7 @@ so two decks may have similar RMSE values but very different log-loss values, or
 <h3 id="reschedule-cards-on-change"><a class="header" href="#reschedule-cards-on-change">Reschedule Cards on Change</a></h3>
 <p>This option controls whether the due dates of cards will be changed when you enable FSRS, change desired retention, or change the parameters. The default is not to reschedule cards: future reviews will use the new scheduling, but there will be no immediate change to your workload. If rescheduling is enabled, the due dates of cards will be changed. Depending on your desired retention, it will often result in a large number of cards becoming due, so <strong>this option is not recommended</strong> when first switching from SM-2.</p>
 <p>Use this option sparingly, as it will add a review entry to each of your cards, and increase the size of your collection.</p>
-<p>If you're first switching from SM-2 and still wish to use this option, we recommend you first create a backup, enable FSRS with rescheduling, check the future due graph in statistics, and then if needed, you can undo or restore from the backup.</p>
+<p>If you're first switching from SM-2 and still wish to use this option, we recommend you first create a backup, enable FSRS with rescheduling, and then if needed, you can undo or restore from the backup.</p>
 <h3 id="compute-minimum-recommended-retention"><a class="header" href="#compute-minimum-recommended-retention">Compute Minimum Recommended Retention</a></h3>
 <p>Compute minimum recommended retention (CMRR) attempts to find the desired retention value that leads to the most material learnt, in the least amount of time. The calculated number can serve as a reference when deciding what to set your desired retention to. You may wish to choose a higher desired retention, if you’re willing to trade more study time for a greater retention rate. However, setting your desired retention lower than the minimum is not recommended, as you'll spend more time studying than necessary, due to increased forgetting.</p>
 <h4 id="learning-and-relearning-steps"><a class="header" href="#learning-and-relearning-steps">Learning and Relearning Steps</a></h4>
@@ -3727,8 +3726,8 @@ learning steps is because FSRS may end up scheduling the first review for a
 shorter time than your last learning step, leading to the &quot;Hard&quot; button 
 showing a longer time than &quot;Good&quot;.</p>
 <p>We also recommend you keep the number of learning steps to a minimum. Evidence
-shows that repeating a card multiple times in a single day after you've
-remembered it does not significantly help in long-term retention, so your time is
+shows that repeating a card multiple times in a single day does not significantly 
+contribute to long-term memory, so your time is
 better spent on other cards or a shorter study session.</p>
 <h4 id="add-on-compatibility-3"><a class="header" href="#add-on-compatibility-3">Add-On Compatibility</a></h4>
 <p>Some add-ons can cause conflicts with FSRS. As a general rule of thumb,
