@@ -12,7 +12,9 @@ If the problem does not occur again, you can skip the following steps.
 
 **2. Check add-ons**
 
-Please close Anki, then start it again while holding down the shift key. If the problem goes away, that indicates an add-on is causing the problem. Remove any add-ons you don't need, and disable half of the others. If the problem continues, try the other half. Repeat
+Please close Anki, then open it in safe mode by holding down the <kbd>Shift</kbd> key while starting Anki. Keep holding <kbd>Shift</kbd> down until the on-screen message informs you that Anki has started in safe mode. 
+
+If the problem goes away, that indicates an add-on is causing the problem. Remove any add-ons you don't need, and disable half of the others. If the problem continues, try the other half. Repeat
 the process until you've figured out which add-on is causing the problem. Then please report the issue to the add-on author, using the Copy Debug Info button, and pasting that into the report.
 
 **3. Check your Anki version**
@@ -33,7 +35,7 @@ Sometimes restarting your computer may help.
 
 Crashes and display issues can be caused by the video driver. Changing to a
 different video driver in the preferences screen or via the gldriver file may
-help. Make sure you try all three options.
+help. Make sure you try all three options and restart Anki after each change.
 
 - [Windows](https://docs.ankiweb.net/platform/windows/display-issues.html)
 - [Mac](https://docs.ankiweb.net/platform/mac/display-issues.html)
