@@ -230,12 +230,8 @@ card will be shown again the next day, then at increasingly long delays
 (see the next section).</p>
 </li>
 <li>
-<p><strong>Easy</strong> immediately converts the card into a review card, even if there
-were steps remaining. <a href="deck-options.html#easy-interval">By default</a>, the card will be shown again 4 days
-later, and then at increasingly long delays. In the v1 scheduler, the &quot;Easy&quot; button will not be
-shown if you are in relearning mode as it would give the same interval
-as “Good.” With the <a href="https://faqs.ankiweb.net/the-anki-2.1-scheduler.html">v2 scheduler+</a>,
-when cards are in relearning, the &quot;Easy&quot; button boosts the interval by 1 day.</p>
+<p><strong>Easy</strong> immediately converts the card into a review card. <a href="deck-options.html#easy-interval">By default</a>, the card is shown again 4 days
+later, and then at increasingly long delays.</p>
 </li>
 </ul>
 <p>When cards are seen for the first time, they start at step one. This
@@ -307,23 +303,13 @@ at the bottom of the screen. These represent the new cards (blue), cards in
 learning (red), and cards to review (green). If you’d prefer not to see the numbers,
 you can turn them off in Anki’s <a href="preferences.html">preferences.</a></p>
 <p><img src="media/due_counts.png" alt="Due Counts" /></p>
-<p>In the v1 scheduler, the numbers count <em>reviews</em> needed to finish all the
-cards in that queue, not the number of <em>cards</em>. If you have multiple
-steps configured for lapsed cards, the number will increase by more than
-one when you fail a card, since that card needs to be shown several times.</p>
-<p>From the <a href="https://faqs.ankiweb.net/the-anki-2.1-scheduler.html">v2 scheduler</a>, the numbers count <em>cards</em>, so the number will always
-increase by one regardless of the steps remaining.</p>
 <p>When the answer is shown, Anki shows an estimate of the next time a card
 will be shown above each button. If you’d prefer not to see the
 estimates, you can disable them in Anki’s <a href="preferences.html">preferences</a>.</p>
 <h2 id="fuzz-factor"><a class="header" href="#fuzz-factor">Fuzz Factor</a></h2>
-<p>When you select an ease button on a review card, Anki also applies a small amount of random “fuzz”
+<p>When you select an answer button on a review card, Anki also applies a small amount of random “fuzz”
 to prevent cards that were introduced at the same time and given the same ratings
-from sticking together and always coming up for review on the same day. This fuzz
-will appear on the answer buttons when the <a href="https://faqs.ankiweb.net/the-2021-scheduler.html">v3 scheduler</a> is enabled, so if
-you are using a previous version and you’re noticing a slight discrepancy between
-what you select and the intervals your cards actually get, this is probably the
-cause.</p>
+from sticking together and always coming up for review on the same day.</p>
 <p>Learning cards are also given up to 5 minutes of extra delay so that they
 don’t always appear in the same order, but answer buttons won't reflect that. It
 is not possible to turn this feature off.</p>
@@ -349,17 +335,10 @@ button on the <a href="studying.html#study-overview">deck overview</a> screen.) 
 you cannot answer the card at the moment or you want to come back to it
 another time. Burying can also <a href="studying.html#siblings-and-burying">happen automatically</a> for
 cards of the same note.</p>
-<p>With the old scheduler, if cards were in learning when they were buried,
-they were moved back to the new card queue or review queue prior to being
-buried.</p>
-<p>With the <a href="https://faqs.ankiweb.net/the-anki-2.1-scheduler.html">2.1 scheduler</a>,
-however, burying cards does not reset a card's learning steps.</p>
 </li>
 <li>
 <p><strong>Reset card</strong>: Moves the current card to <a href="browsing.html#cards">the end of the new queue</a>.</p>
-<p>From Anki 2.1.50+, Anki will remember the original order of a new card when it is first studied
-with the v3 scheduler. The &quot;Restore original position&quot; option allows you to reset the card back to its original position when you reset it.
-to its original position when you forget it.</p>
+<p>The &quot;Restore original position&quot; option allows you to reset the card back to its original position when you reset it.</p>
 <p>The &quot;Reset repetition and lapse count&quot; option, if enabled, will set the review and failure counters
 for the card back to zero. It does not remove the review history that is shown at the bottom of the
 card info screen.</p>
@@ -371,12 +350,7 @@ card info screen.</p>
 <p><strong>Suspend Card / Note</strong>: Hides a card or all of the note’s cards from review until they are
 manually unsuspended (by clicking the suspend button in the browser).
 This is useful if you want to avoid reviewing the note for some time,
-but don’t want to delete it.
-With the old scheduler, if cards were in learning when they are
-suspended, they are moved back to the new card queue or review queue
-prior to being suspended.</p>
-<p>With the <a href="https://faqs.ankiweb.net/the-anki-2.1-scheduler.html">2.1 scheduler</a>,
-however, suspending cards does not reset a card's learning steps.</p>
+but don’t want to delete it.</p>
 </li>
 <li>
 <p><strong>Options</strong>: Edit the <a href="deck-options.html">options</a> for the current deck.</p>
@@ -426,24 +400,7 @@ the answer).</p>
 contains. Thus, if you select your “French” deck, the subdecks
 “French::Vocab” and “French::My Textbook::Lesson 1” will be shown as
 well.</p>
-<p>The way Anki fetches cards from the decks depends on the algorithm used:</p>
-<ul>
-<li>
-<p>With the v1 scheduler, when a deck has subdecks, the cards will appear from <a href="studying.html#display-order">each deck in turn</a>.</p>
-</li>
-<li>
-<p>With the <a href="https://faqs.ankiweb.net/the-anki-2.1-scheduler.html">v2 scheduler</a>,
-when a deck has subdecks, reviews are taken from all children decks
-at once. The review limit of the child decks is ignored - only the limit of the
-deck you clicked on applies.</p>
-</li>
-<li>
-<p>With the <a href="https://faqs.ankiweb.net/the-2021-scheduler.html">v3 scheduler</a>
-each child deck's limit is also enforced, and you do not need to see the cards
-in deck order either. See the <a href="deck-options.html#review-sort-order">deck options</a> section of the manual for more information.</p>
-</li>
-</ul>
-<p>By default, for new cards, Anki fetches cards from the decks in
+<p>By default, for new cards, Anki gathers cards from the decks in
 alphabetical order. So in the above example, you would get cards first
 from “French”, then “My Textbook”, and finally “Vocab”. You can use this
 to control the order cards appear in, placing high priority cards in
@@ -452,7 +409,7 @@ alphabetically, the “-” character comes before alphabetical characters,
 and “~” comes after them. So you could call the deck “-Vocab” to make
 them appear first, and you could call the other deck “~My Textbook” to
 force it to appear after everything else.</p>
-<p>New cards and reviews are fetched separately, and Anki won’t wait until
+<p>New cards and reviews are gathered separately, and Anki won’t wait until
 both queues are empty before moving on to the next deck, so it’s
 possible you’ll be exposed to new cards from one deck while seeing
 reviews from another deck, or vice versa. If you don’t want this, click
@@ -460,8 +417,7 @@ directly on the deck you want to study instead of one of the parent
 decks.</p>
 <p>Since cards in learning are somewhat time-critical, they are fetched
 from all decks at once and shown in the order they are due.</p>
-<p>To control the order reviews from a given deck appear in, or change new
-cards from ordered to random order, please see the <a href="deck-options.html">deck options</a>. For more fine-grained ordering of new cards, you
+<p>To control the order cards appear in, see <a href="./deck-options.html#display-order">Display Order</a>. For more fine-grained ordering of new cards, you
 can change the order in the <a href="browsing.html">browser</a>.</p>
 <h2 id="siblings-and-burying"><a class="header" href="#siblings-and-burying">Siblings and Burying</a></h2>
 <p>Recall from <a href="getting-started.html">the basics</a> that Anki can create more than one
@@ -481,9 +437,6 @@ there are separate settings for new cards and reviews.</p>
 hide cards in learning, as time is of the essence for those cards. On
 the other hand, when you study a learning card, any new/review siblings
 will be buried.</p>
-<p>Note that starting with the <a href="https://faqs.ankiweb.net/the-anki-2.1-scheduler.html">v2 scheduler</a>,
-Anki now distinguishes between manually and automatically buried cards so you can
-unbury one set without the other.</p>
 <p>Also note that a card cannot be buried and suspended at the same time. Suspending a
 buried card will unbury it. Burying a suspended card does not work on Anki
 2.1.49+, whereas on earlier versions, it will unsuspend the card.</p>
