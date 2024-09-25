@@ -199,14 +199,11 @@ But the following ("add the card if A **OR** (B **AND** C) are non-empty") will 
 
 ## Adding Empty Notes
 
-When you add a new note in Anki 2.1.28+ and AnkiMobile 2.0.64+, if the card
+When you add a new note in Anki, if the card
 templates and note fields combine to produce no cards, a blank card will be
 created using the first template. This allows you to add material even if it's
 incomplete, and modify it or the template later to make it valid. If you don't
 wish to keep an empty note, you can remove it with the Empty Cards function.
-
-On older Anki versions, Anki refuses to add or import a note if no cards
-would be generated.
 
 ## Cloze Templates
 
