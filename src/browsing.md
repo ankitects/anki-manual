@@ -198,7 +198,7 @@ turn offer various actions that can be performed in the browser.
 | Select All           | Select all rows displayed.                                                                                                                                                                                                    |
 | Select Notes         | Show only the currently selected notes and select all rows.                                                                                                                                                                   |
 | Invert Selection     | Select those rows not selected, and deselect the currently selected rows.                                                                                                                                                     |
-| Create Filtered Deck | Show the [filtered deck](filtered-decks.md#creating-manually) dialog and set the current browser search as a filter. Use <kbd>Alt</kbd> / <kbd>Option</kbd> to set the second filter instead (requires scheduler version 2+). |
+| Create Filtered Deck | Show the [filtered deck](filtered-decks.md#creating-manually) dialog and set the current browser search as a filter. Use <kbd>Alt</kbd> / <kbd>Option</kbd> to set the second filter instead.|
 
 ### Notes
 

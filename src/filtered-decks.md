@@ -84,13 +84,6 @@ It is also possible to move all cards back to their home decks at once:
   also removes the emptied deck from the deck list. No cards are
   deleted when you delete a filtered deck.
 
-In the old scheduler, if you create, rebuild, empty, or delete a
-filtered deck while cards are still in learning, they will be turned
-back into new cards. In the case of failed reviews in relearning, any
-remaining relearning steps will be skipped. This was fixed in the
-[v2 scheduler](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html) so cards
-are no longer reset.
-
 ## Creating Manually
 
 Advanced users can create filtered decks with arbitrary search strings
@@ -114,8 +107,7 @@ times, and so on. Please see the [searching](searching.md) section of the
 manual for more information on the different possibilities.
 
 Filtered decks cannot pull in cards that are suspended, buried, or already in a
-different filtered deck. And if you are using the v1 scheduler, cards in
-(re)learning will not be included either. For this reason, a search in the
+different filtered deck. For this reason, a search in the
 browser may reveal cards that do not end up in the filtered deck.
 
 The **limit** option controls how many cards will be gathered into the
@@ -168,7 +160,7 @@ Display cards that you're most likely to have forgotten first. This is useful if
 you have a large backlog that may take some time to get through, and you want to
 reduce the chances of forgetting more cards.
 
-When using the SM-2 scheduler, overduessness is determined by comparing how
+When using the SM-2 algorithm, overduessness is determined by comparing how
 overdue cards are, and how long their interval is. For example, a card with a
 current interval of 5 days that is overdue by 2 days, will display before a card
 with a current interval of 10 days that is overdue by 3 days.
@@ -189,20 +181,7 @@ Cards return to their home deck when (re)learning is complete. Thus if
 you have 3 learning steps, a new card will return to its home deck upon
 three presses of "Good" or a single press of "Easy".
 
-**v1 and v2 scheduler**
-
-In the v1 scheduler, the **custom steps** option allows you to override the
-home deck’s steps and provide your own steps instead. The provided steps apply to both
-cards being learnt, lapsed reviews, and reviews ahead of time. Please note, however, that
-from the [v2 scheduler](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html)
-filtered decks [no longer support custom steps](https://forums.ankiweb.net/t/filtered-deck-interval-problem/11834/8).
-
-**v3 scheduler**
-
-Filtered decks with rescheduling disabled show 4 buttons in the
-[v3 scheduler](https://faqs.ankiweb.net/the-2021-scheduler.html) - the provided
-delay applies to the Again button, and Hard/Good will use 1.5x and 2x the
-provided delay. Easy will remove the card.
+Filtered decks with rescheduling disabled show 4 buttons. The **Again**, **Hard**, and **Good** buttons have configurable delays. The **Easy** button removes cards from the filtered deck.
 
 ## Due Reviews
 
@@ -237,31 +216,14 @@ rescheduled further. If you review ahead again the next day, all you'll
 end up doing is going through those same new cards again, to little
 benefit.
 
-Early reviews are included in the new card count rather than the review
-count, and will be shown according to the number of relearning steps
-defined in the home deck (unless you have provided custom steps). This
-means that if you have customized the number of relearning steps in the
-home deck, the non-due card may be shown more than once.
-
-If you have multiple steps, Anki will only consider the first answer
-when deciding the next delay, and like relearning in normal decks,
-"Good" and "Easy" differ only in the step change and not the resulting
-delay.
-
 ## Rescheduling
 
 By default, Anki will return cards to their home decks with altered scheduling,
-based on your performance in the filtered deck. There is a **reschedule
-cards based on my answers** option available which alters this behaviour.
+based on your performance in the filtered deck. 
 
-From the [v2 scheduler](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html),
-when rescheduling is disabled, cards are shown in a simple "preview mode", and
-when they are returned to the original deck, they are returned exactly as they
-started.
-
-In the v1 scheduler, cards were presented more similarly to how they normally
-are, but studying cards had side effects, and the original position of new cards
-was lost when you studied them.
+To change this behaviour, turn off **Reschedule
+cards based on my answers**. When this is turned off, cards are shown in a simple "preview mode", and
+when they are returned to their original deck, they are returned exactly as they started.
 
 ## Catching Up
 

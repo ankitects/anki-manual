@@ -82,12 +82,8 @@ There are four rating buttons when learning:
   card will be shown again the next day, then at increasingly long delays
   (see the next section).
 
-- **Easy** immediately converts the card into a review card, even if there
-  were steps remaining. [By default](deck-options.md#easy-interval), the card will be shown again 4 days
-  later, and then at increasingly long delays. In the v1 scheduler, the "Easy" button will not be
-  shown if you are in relearning mode as it would give the same interval
-  as “Good.” With the [v2 scheduler+](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html),
-  when cards are in relearning, the "Easy" button boosts the interval by 1 day.
+- **Easy** immediately converts the card into a review card. [By default](deck-options.md#easy-interval), the card is shown again 4 days
+  later, and then at increasingly long delays.
 
 When cards are seen for the first time, they start at step one. This
 means answering **Good** on a card for the first time will show it one
@@ -158,27 +154,15 @@ you can turn them off in Anki’s [preferences.](preferences.md)
 
 ![Due Counts](media/due_counts.png)
 
-In the v1 scheduler, the numbers count _reviews_ needed to finish all the
-cards in that queue, not the number of _cards_. If you have multiple
-steps configured for lapsed cards, the number will increase by more than
-one when you fail a card, since that card needs to be shown several times.
-
-From the [v2 scheduler](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html), the numbers count _cards_, so the number will always
-increase by one regardless of the steps remaining.
-
 When the answer is shown, Anki shows an estimate of the next time a card
 will be shown above each button. If you’d prefer not to see the
 estimates, you can disable them in Anki’s [preferences](preferences.md).
 
 ## Fuzz Factor
 
-When you select an ease button on a review card, Anki also applies a small amount of random “fuzz”
+When you select an answer button on a review card, Anki also applies a small amount of random “fuzz”
 to prevent cards that were introduced at the same time and given the same ratings
-from sticking together and always coming up for review on the same day. This fuzz
-will appear on the answer buttons when the [v3 scheduler](https://faqs.ankiweb.net/the-2021-scheduler.html) is enabled, so if
-you are using a previous version and you’re noticing a slight discrepancy between
-what you select and the intervals your cards actually get, this is probably the
-cause.
+from sticking together and always coming up for review on the same day.
 
 Learning cards are also given up to 5 minutes of extra delay so that they
 don’t always appear in the same order, but answer buttons won't reflect that. It
@@ -207,18 +191,9 @@ card or note:
   another time. Burying can also [happen automatically](studying.md#siblings-and-burying) for
   cards of the same note.
 
-  With the old scheduler, if cards were in learning when they were buried,
-  they were moved back to the new card queue or review queue prior to being
-  buried.
-
-  With the [2.1 scheduler](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html),
-  however, burying cards does not reset a card's learning steps.
-
 - **Reset card**: Moves the current card to [the end of the new queue](browsing.md#cards).
 
-  From Anki 2.1.50+, Anki will remember the original order of a new card when it is first studied
-  with the v3 scheduler. The "Restore original position" option allows you to reset the card back to its original position when you reset it.
-  to its original position when you forget it.
+  The "Restore original position" option allows you to reset the card back to its original position when you reset it.
 
   The "Reset repetition and lapse count" option, if enabled, will set the review and failure counters
   for the card back to zero. It does not remove the review history that is shown at the bottom of the
@@ -230,12 +205,6 @@ card or note:
   manually unsuspended (by clicking the suspend button in the browser).
   This is useful if you want to avoid reviewing the note for some time,
   but don’t want to delete it.
-  With the old scheduler, if cards were in learning when they are
-  suspended, they are moved back to the new card queue or review queue
-  prior to being suspended.
-
-  With the [2.1 scheduler](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html),
-  however, suspending cards does not reset a card's learning steps.
 
 - **Options**: Edit the [options](deck-options.md) for the current deck.
 
@@ -275,20 +244,7 @@ contains. Thus, if you select your “French” deck, the subdecks
 “French::Vocab” and “French::My Textbook::Lesson 1” will be shown as
 well.
 
-The way Anki fetches cards from the decks depends on the algorithm used:
-
-- With the v1 scheduler, when a deck has subdecks, the cards will appear from [each deck in turn](studying.md#display-order).
-
-- With the [v2 scheduler](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html),
-  when a deck has subdecks, reviews are taken from all children decks
-  at once. The review limit of the child decks is ignored - only the limit of the
-  deck you clicked on applies.
-
-- With the [v3 scheduler](https://faqs.ankiweb.net/the-2021-scheduler.html)
-  each child deck's limit is also enforced, and you do not need to see the cards
-  in deck order either. See the [deck options](deck-options.md#review-sort-order) section of the manual for more information.
-
-By default, for new cards, Anki fetches cards from the decks in
+By default, for new cards, Anki gathers cards from the decks in
 alphabetical order. So in the above example, you would get cards first
 from “French”, then “My Textbook”, and finally “Vocab”. You can use this
 to control the order cards appear in, placing high priority cards in
@@ -298,7 +254,7 @@ and “\~” comes after them. So you could call the deck “-Vocab” to make
 them appear first, and you could call the other deck “\~My Textbook” to
 force it to appear after everything else.
 
-New cards and reviews are fetched separately, and Anki won’t wait until
+New cards and reviews are gathered separately, and Anki won’t wait until
 both queues are empty before moving on to the next deck, so it’s
 possible you’ll be exposed to new cards from one deck while seeing
 reviews from another deck, or vice versa. If you don’t want this, click
@@ -308,8 +264,7 @@ decks.
 Since cards in learning are somewhat time-critical, they are fetched
 from all decks at once and shown in the order they are due.
 
-To control the order reviews from a given deck appear in, or change new
-cards from ordered to random order, please see the [deck options](deck-options.md). For more fine-grained ordering of new cards, you
+To control the order cards appear in, see [Display Order](./deck-options.md#display-order). For more fine-grained ordering of new cards, you
 can change the order in the [browser](browsing.md).
 
 ## Siblings and Burying
@@ -334,10 +289,6 @@ Anki will only bury siblings that are new or review cards. It will not
 hide cards in learning, as time is of the essence for those cards. On
 the other hand, when you study a learning card, any new/review siblings
 will be buried.
-
-Note that starting with the [v2 scheduler](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html),
-Anki now distinguishes between manually and automatically buried cards so you can
-unbury one set without the other.
 
 Also note that a card cannot be buried and suspended at the same time. Suspending a
 buried card will unbury it. Burying a suspended card does not work on Anki
