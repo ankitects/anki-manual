@@ -181,7 +181,7 @@ Cards return to their home deck when (re)learning is complete. Thus if
 you have 3 learning steps, a new card will return to its home deck upon
 three presses of "Good" or a single press of "Easy".
 
-Filtered decks with rescheduling disabled show 4 buttons. **Again**, **Hard**, and **Good** button have configurable delays. **Easy** button removes cards from the filtered deck.
+Filtered decks with rescheduling disabled show 4 buttons. The **Again**, **Hard**, and **Good** buttons have configurable delays. The **Easy** button removes cards from the filtered deck.
 
 ## Due Reviews
 
