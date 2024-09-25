@@ -18,10 +18,8 @@ Card templates are covered in some of the intro videos:
 You can modify card templates by clicking the "Cards..." button inside the
 editing screen.
 
-For older Anki versions, on the top left is the front template, on the bottom left is the back
-template, and in between them is the card styling section. For Anki versions
-2.1.28+ the front, back, and styling are no longer shown at the same time.
-You can switch between them with <kbd>Ctrl</kbd>+<kbd>1</kbd>, <kbd>Ctrl</kbd>+<kbd>2</kbd>, and <kbd>Ctrl</kbd>+<kbd>3</kbd>.
+
+You can switch between **Front template**, **Back template** and **Styling** with <kbd>Ctrl</kbd>+<kbd>1</kbd>, <kbd>Ctrl</kbd>+<kbd>2</kbd>, and <kbd>Ctrl</kbd>+<kbd>3</kbd>.
 
 In Anki, templates are written in HTML, which is the language that web
 pages are written in. The styling section is CSS, which is the language
