@@ -48,10 +48,10 @@ changing this option will still have the old delay, not the new one.
 
 If your deck has subdecks, and you wish one or more subdecks to have different settings to the parent decks, you can assign those subdecks to different presets.
 When Anki shows a card, it will check which subdeck the card is in, and use the options
-for that deck. There are some exceptions:
+for that deck. There are two exceptions:
 
 
-- The "New cards/day" and "Maximum reviews/day" [limits](#daily-limits) of a subdeck affect the number of cards that can be gathered from that subdeck. But the total number of cards you see during your study session is controlled by the limits of the deck you select to study.
+- The **New cards/day** and **Maximum reviews/day** [limits](#daily-limits) of a subdeck affect the number of cards that can be gathered from that subdeck. But the total number of cards you see during your study session is controlled by the limits of the deck you select to study.
 - The [display order](#display-order) options are taken from the
   deck you select to study, not the deck of the current card.
 
@@ -63,16 +63,16 @@ For example, let's say you have this collection:
 Preset 1 and Preset 2 are identical, with two exceptions:
 
 - Preset 1:
-  - Learning steps: 1m 10m
-  - New/review order: Mix with reviews
+  - **Learning steps**: `1m 10m`
+  - **New/review order**: `Mix with reviews`
 - Preset 2:
-  - Learning steps: 20m 2h
-  - New/review order: Show after reviews
+  - **Learning steps**: `20m 2h`
+  - **New/review order**: `Show after reviews`
 
 If you choose to study Subdeck B:
 
 
-- Learning steps for all new cards will be 20m 2h (Preset 2 applies).
+- Learning steps for all new cards will be `20m 2h` (Preset 2 applies).
 - All new cards will be shown after reviews (Preset 2 applies).
 
 
@@ -80,8 +80,8 @@ If you choose to study Subdeck B:
 
 If you choose to study Deck A:
 
-- Learning steps for new cards in Deck A will be 1m 10m (Preset 1 applies).
-- Learning steps for new cards in Subdeck B will be 20m 2h (Preset 2 applies).
+- Learning steps for new cards in Deck A will be `1m 10m` (Preset 1 applies).
+- Learning steps for new cards in Subdeck B will be `20m 2h` (Preset 2 applies).
 - All new cards will be mixed with reviews (Preset 1 applies).
 
 
@@ -155,17 +155,17 @@ has graduated (that is, gone through all the learning steps), the options in thi
 
 Controls the number of learning repetitions, and the delay
 between them. One or more delays, separated by spaces must be entered.
-Each time you click "Good" during review, the card moves to the next step. Each time you click "Again", the card goes back to the first step.
+Each time you click **Good** during review, the card moves to the next step. Each time you click **Again**, the card goes back to the first step.
 
-For example, let's say that your learning steps are 1m 10m 1d.
+For example, let's say that your learning steps are `1m 10m 1d`.
 
-- When you click "Again", the card goes through the first step, and is shown
+- When you click **Again**, the card goes through the first step, and is shown
   again 1 minute later.
-- When you click "Good" on a new card or after the 1 minute step, it moves
+- When you click **Good** on a new card or after the 1 minute step, it moves
   to the next step, and is shown again in 10 minutes. 
-- When you click "Good" on a card after the 10 minute step, it is delayed
+- When you click **Good** on a card after the 10 minute step, it is delayed
   until the next day.
-- When you click "Good" on the card the next day, it graduates and
+- When you click **Good** on the card the next day, it graduates and
   becomes a review card. The card is shown again after the delay configured by the
   _graduating interval_.
 
@@ -193,7 +193,7 @@ from [earlier in this section](deck-options.md#learning-steps).
 
 The number of days to wait before showing a card again, after the Easy button is used on it.
 
-The "Easy" button turns learning cards into a review cards regardless of which step you're on,
+The **Easy** button turns learning cards into a review cards regardless of which step you're on,
 and assigns them the delay you have configured in this option. Easy interval should always be at least
 as long as the graduating interval, and typically a few days longer.
 
@@ -202,16 +202,16 @@ as long as the graduating interval, and typically a few days longer.
 Controls whether Anki should add new cards into the deck randomly, or sequentially.
 When you change this option, Anki will re-sort the decks in the current preset.
 
-On recent Anki versions, you should leave this option set to `sequential`, and adjust the [display order](deck-options.md#display-order) instead.
+On recent Anki versions, you should leave this option set to `Sequential`, and adjust the [display order](deck-options.md#display-order) instead.
 
 ## Lapses
 
-When you click "Again" on a review card, it is called a _lapse_. The options listed here affect such lapsed cards.
+When you click **Again** on a review card, it is called a _lapse_. The options listed here affect such lapsed cards.
 
 ### Relearning Steps
 
 The same as learning steps, but for lapsed cards. When you fail a review card
-(press "Again"), the card goes through _relearning steps_, before it becomes a review card again.
+(press **Again**), the card goes through _relearning steps_, before it becomes a review card again.
 
 If you leave the steps blank, the card will skip relearning, and will be assigned
 a new interval of 1 day by default.
@@ -265,7 +265,7 @@ Controls how Anki gathers new cards from a deck. The options are:
 
 ### New Card Sort Order
 
-Controls how the new cards are sorted **after they have been gathered**. The options are:
+Controls how the new cards are sorted after they have been gathered. The options are:
 
 - **Card type, then order gathered**: Shows cards in order of card type number. Cards of each card type number are shown in the order they were gathered. If you have sibling burying disabled, this ensures all front→back cards are seen before any back→front cards.
   This order is useful if you don't want sibling cards to appear too close to each other.
@@ -338,10 +338,10 @@ For more info about burying cards, please see [this section](./studying.md#sibli
 ## Audio
 
 - **Don't play audio automatically**: By default, Anki automatically plays any audio you have on
-cards. If you turn on this option Anki will not play audio until you press the replay audio key, <kbd>r</kbd> or <kbd>F5</kbd>.
+cards. If you turn on this option Anki will not play audio until you press the replay audio key, <kbd>R</kbd> or <kbd>F5</kbd>.
 
 - **Skip question when replaying answer**: Controls whether audio from
-the question side is played when you use replay action on the answer side. Note that, Anki [does not automatically play](./templates/fields.md#special-fields)) audio from the `{{FrontSide}}` field. This option does not influence the behaviour of automatic play.
+the question side is played when you use replay action on the answer side. Note that, Anki [does not automatically play](./templates/fields.md#special-fields) audio from the `{{FrontSide}}` field. This option does not influence the behaviour of automatic play.
 
 ## Timer
 
@@ -366,8 +366,8 @@ The options are:
 ## Auto Advance
 
 Requires Anki 23.12 or later. Auto Advance allows you to automatically take some actions after a certain amount of time has passed. To use it, you must first set a non-zero
-time in "Seconds to show question for" and/or "Seconds to show answer for". Then, in the
-review screen, use the Auto Advance action from the `More` button to start advancing.
+time in **Seconds to show question for** and/or **Seconds to show answer for**. Then, in the
+review screen, use the Auto Advance action from the **More** button to start advancing.
 
 ## FSRS
 
@@ -376,8 +376,8 @@ SuperMemo 2 (SM-2) algorithm. By more accurately determining how much informatio
 to forget, it can help you remember more material in the same amount of time.
 
 When you turn on FSRS, some new options
-become available, and SM-2 specific options, such as "Graduating interval",
-"Easy bonus", etc. are hidden. This option is shared by all deck presets.
+become available, and SM-2 specific options, such as **Graduating interval**,
+**Easy bonus**, etc. are hidden. This option is shared by all deck presets.
 
 **Before Enabling**
 
@@ -390,7 +390,7 @@ become available, and SM-2 specific options, such as "Graduating interval",
 ### Desired Retention
 
 Desired retention controls how likely you are to remember cards when they are scheduled for a review.
-The default value of 0.90 will schedule cards so you have a 90% chance of remembering
+The default value of `0.90` will schedule cards so you have a 90% chance of remembering
 them when they come up for review again. This should normally translate to remembering around 90% cards when they are reviewed, and only failing around 10%.
 
 Here is a graph that shows how adjusting this value will affect your workload:
@@ -400,10 +400,10 @@ Here is a graph that shows how adjusting this value will affect your workload:
 The exact shape of the graph is different for everyone. However, there are two patterns that hold true for all:
 
 - As desired retention approaches 1.0, the workload increases drastically.
-  Imagine you have a card with a 90% chance of remembering it after 100 days. If your desired retention is 0.90, you'll review the card again in 100 days. But if your desired retention is 0.95, you'll need to review it after 46 days instead.
-  This means that the intervals of your cards almost halve at 0.95 desired retention and you need to review cards twice as frequently compared to 0.90 desired retention.
-  At 0.97, the interval will be 27 days (you'll have to review your cards 3.7x as frequently).
-  At 0.99, the interval will be only 9 days (you'll have to review your cards more than 10x more frequently than with the defaults).
+  Imagine you have a card with a 90% chance of remembering it after 100 days. If your desired retention is `0.90`, you'll review the card again in 100 days. But if your desired retention is `0.95`, you'll need to review it after 46 days instead.
+  This means that the intervals of your cards almost halve at `0.95` desired retention and you need to review cards twice as frequently compared to `0.90` desired retention.
+  At `0.97`, the interval will be 27 days (you'll have to review your cards 3.7x as frequently).
+  At `0.99`, the interval will be only 9 days (you'll have to review your cards more than 10x more frequently than with the defaults).
 
 - As desired retention decreases, you'll forget a greater percentage of your
   cards, and those cards will need to be reviewed again. Eventually, you'll
@@ -412,7 +412,7 @@ The exact shape of the graph is different for everyone. However, there are two p
   material frequently is demotivating.
 
 For these reasons, we suggest you be conservative when adjusting this
-number, and recommend you keep it lower than 0.97 and higher than the [minimum recommended retention](#compute-minimum-recommended-retention).
+number, and recommend you keep it lower than `0.97` and higher than the [minimum recommended retention](#compute-minimum-recommended-retention).
 
 ### FSRS Parameters
 
@@ -433,11 +433,11 @@ before optimizing the parameters, if you'd like to change which cards
 are used for optimization.
 
 You can also optimize the parameters for all of your presets at once, by clicking on the
-down arrow in the top right corner of the deck options window, then choosing "Optimize All Presets".
+down arrow in the top right corner of the deck options window, then choosing **Optimize All Presets**.
 
 **Evaluate FSRS Parameters**
 
-You can use the "Evaluate" button to see metrics that show how well the parameters fit your review history. Smaller numbers
+You can use the **Evaluate** button to see metrics that show how well the parameters fit your review history. Smaller numbers
 indicate a better fit to your review history.
 
 Log loss doesn't have an intuitive interpretation. RMSE (bins) can be
@@ -473,8 +473,8 @@ a problem that FSRS suffers from.  By keeping your learning steps under a
 day, you will allow FSRS to schedule cards at times it has calculated are 
 optimal for your material and memory. Another reason not to use longer 
 learning steps is because FSRS may end up scheduling the first review for a 
-shorter time than your last learning step, leading to the "Hard" button 
-showing a longer time than "Good".
+shorter time than your last learning step, leading to the **Hard** button 
+showing a longer time than **Good**.
 
 We also recommend you keep the number of learning steps to a minimum. Evidence
 shows that repeating a card multiple times in a single day does not significantly 
@@ -500,7 +500,7 @@ For more info on FSRS, please check:
 
 ### Maximum Interval
 
-The maximum number of days a review card will wait before it's shown again. When reviews have reached the limit, "Hard", "Good" and "Easy" will all give the same delay. The shorter you set this, the greater your workload will be. The default is 100 years; you can decrease this to a smaller number if you’re willing to trade extra study time for higher retention.
+The maximum number of days a review card will wait before it's shown again. When reviews have reached the limit, **Hard**, **Good** and **Easy** will all give the same delay. The shorter you set this, the greater your workload will be. The default is 100 years; you can decrease this to a smaller number if you’re willing to trade extra study time for higher retention.
 
 ### Historical Retention
 
@@ -510,7 +510,7 @@ When some of your review history is missing, FSRS needs to fill in the gaps. By 
 
 Your review history may be incomplete for two reasons:
 
-- Because you're using the "ignore cards reviewed before" option.
+- Because you're using the **Ignore cards reviewed before** option.
 - Because you previously deleted review logs to free up space, or imported material from a different SRS program.
 
 The latter is quite rare, so unless you're using the former option, you probably don't need to adjust this setting.
@@ -524,7 +524,7 @@ If set, cards reviewed before the provided date will be ignored when optimizing 
 Controls the ease that cards start out with. It is
 set when a card graduates from learning for the first time. It defaults
 to 2.50, meaning that once you have finished learning a card, answering
-"Good" on subsequent reviews will increase the delay by approximately
+**Good** on subsequent reviews will increase the delay by approximately
 2.5x (e.g. if the last delay was 10 days, the next delay would be around 25
 days). Based upon how you rate the card in subsequent reviews, the
 ease may increase or decrease from its starting value.
@@ -532,7 +532,7 @@ ease may increase or decrease from its starting value.
 ### Easy Bonus
 
 An extra multiplier applied to the interval when a review card is answered
-"Easy". With the default value of 1.30, "Easy" will give an interval that is
+**Easy**. With the default value of 1.30, **Easy** will give an interval that is
 1.3 times the Good interval (e.g. if the Good interval was 10 days, the Easy
 interval would be around 13 days).
 
@@ -585,20 +585,20 @@ learning mode steps, instead of by adjusting this modifier.
 
 ### Hard Interval
 
-The multiplier applied when you use the "Hard" button. The percentage is relative
+The multiplier applied when you use the **Hard** button. The percentage is relative
 to the previous interval, e.g. with a default of 1.20, a card with a 10-day interval
 will be given 12 days.
 
 ### New Interval
 
-The multiplier applied when you use the "Again" button on a review card. The
+The multiplier applied when you use the **Again** button on a review card. The
 default 0.00 means that a review card's delay is reset to zero when you forget it
 (which then becomes 1 day after the [minimum interval](#minimum-interval) is
 applied).
 
 If changed from the default, it is possible for forgotten cards to preserve part
 of their previous delay. For example, if a card had a 100 day interval, and you set
-the "New Interval" to 0.20, the new interval would be 20 days.
+the **New Interval** to 0.20, the new interval would be 20 days.
 
 While preserving part of the interval may seem to make sense, SuperMemo has observed
 that preserving part of the delay can actually [be counter-productive](https://supermemo.guru/wiki/Post-lapse_stability). For this reason, we recommend you leave it on the default setting.
