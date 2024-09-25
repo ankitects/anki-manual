@@ -54,14 +54,9 @@ for arbitrary searches by adding filters in the search box at the top (2.1.28+).
 
 ### History
 
-By default, Anki 2.1.28+ will show you statistics for the last 12 months.
+By default, Anki shows you statistics for the last 12 months.
 You can change this to all history scope or deck life scope at the top. (The
 "today" section at the top remains of course unaffected by this selection.)
-
-Older versions of Anki will by default show you statistics for
-the previous month. You can change this to a year scope or deck life scope
-at the bottom. (Again, the “today” section at the top is unaffected
-by this selection.)
 
 ### More
 
