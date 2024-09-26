@@ -98,7 +98,7 @@ from the right-click menu, or by using a shortcut key (<kbd>Del</kbd> and
 <kbd>F2</kbd> on Windows). Deletion even works for multiple items at once
 (see [Selection Tool](#selection-tool)).
 
-## Finding Items
+### Finding Items
 
 To find a certain item in the sidebar tree, type part of its name into the searchbar
 at the top.
