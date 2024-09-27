@@ -8,6 +8,10 @@ In a hurry? Jump straight to [Getting Started](getting-started.md).
 
 Looking for help? Please see [Getting Help](./getting-help.md).
 
+## Legacy Documentation
+
+Not on the latest version of Anki? Find archives of this manual in [Web archive](https://web.archive.org/web/20240829022941/https://docs.ankiweb.net/). 
+
 ## Translations
 
 Volunteers have contributed translations of this manual. The
