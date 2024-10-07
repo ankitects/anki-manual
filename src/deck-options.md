@@ -387,7 +387,7 @@ become available, and SM-2 specific options, such as **Graduating interval**,
 - If you previously used the 'custom scheduling' version of FSRS, please make
   sure you clear out the custom scheduling section before enabling FSRS.
 
-### Short Summary
+### A Short Guide
 
 - Enable FSRS under the "FSRS" section, at the bottom of the deck options page. FSRS can only be enabled globally; you cannot enable it for some presets and disable it for others.
 - Ensure that all your learning and re-learning steps are shorter than 1d and can be completed on the same day. 23h is not recommended even though it's less than one day because you won't be able to finish this step on the same day as your first review. Steps such as 10m or 30m are good.
