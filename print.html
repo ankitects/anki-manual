@@ -3019,7 +3019,7 @@ syntax.</p>
 <pre><code>{{Field}}
 </code></pre>
 <p><strong>Missing {{/Field}}</strong></p>
-<p>This means Anki found <code>{{#Field}}</code> or <code>{{^Field}}</code> in your card template, without a matching <code>{{/Field}}</code>. Removing  <code>{{#Field}}</code> or <code>{{^Field}}</code> from the template will fix the error.</p>
+<p>This means Anki found <code>{{#Field}}</code> or <code>{{^Field}}</code> in your card template, without a matching <code>{{/Field}}</code>. Removing <code>{{#Field}}</code> or <code>{{^Field}}</code> from the template will fix the error.</p>
 <p><strong>Found {{/One}}, but expected {{/Two}}</strong></p>
 <p>Conditional replacements need to be closed in the same order they are opened. For example, the following template is incorrect:</p>
 <pre><code>{{#One}}
@@ -3052,11 +3052,12 @@ select one of the duplicates at the top. Then use the button on the top right to
 remove the selected card type. This will delete all the duplicate cards/notes that
 were using the card type as well.</p>
 <h3 id="front-of-card-is-blank"><a class="header" href="#front-of-card-is-blank">Front of Card is Blank</a></h3>
+<div id="no-field-replacement-on-front-side" />
 <p>Anki displays cards by combining the fields you've entered with a
 template that says which fields should appear on the front and back of your cards. If you receive a
 message that a card has a blank front, it means either none of the fields included on your front tmplate have any text in them, or you have fields that have text,
 but none are included on the front template.
-You can fix this problem by editing the card on the computer version, clicking on <strong>Cards...</strong>, 
+You can fix this problem by editing the card on the computer version, clicking on <strong>Cards...</strong>,
 and checking to make sure at least one field with some text on it is included on the front template.
 You can add extra fields with the Add Field button.</p>
 <p>If you are using the Cloze note type,
