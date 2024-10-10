@@ -55,7 +55,7 @@ then this needs to be changed to
 
 **Missing {{/Field}}**
 
-This means Anki found `{{#Field}}` or `{{^Field}}` in your card template, without a matching `{{/Field}}`. Removing  `{{#Field}}` or `{{^Field}}` from the template will fix the error.
+This means Anki found `{{#Field}}` or `{{^Field}}` in your card template, without a matching `{{/Field}}`. Removing `{{#Field}}` or `{{^Field}}` from the template will fix the error.
 
 **Found {{/One}}, but expected {{/Two}}**
 
@@ -78,6 +78,7 @@ To fix the problem, the template should be changed like so:
   {{/Two}}
 {{/One}}
 ```
+
 **Found {{/Field}}, but missing '{{#Field}}' or '{{^Field}}'**
 
 Closing tags must be matched by opening tags. For example, the following is invalid, because there is no `{{#Two}}` or `{{^Two}}` at the start:
@@ -106,11 +107,13 @@ were using the card type as well.
 
 ### Front of Card is Blank
 
+<div id="no-field-replacement-on-front-side" />
+
 Anki displays cards by combining the fields you've entered with a
 template that says which fields should appear on the front and back of your cards. If you receive a
 message that a card has a blank front, it means either none of the fields included on your front tmplate have any text in them, or you have fields that have text,
 but none are included on the front template.
-You can fix this problem by editing the card on the computer version, clicking on **Cards...**, 
+You can fix this problem by editing the card on the computer version, clicking on **Cards...**,
 and checking to make sure at least one field with some text on it is included on the front template.
 You can add extra fields with the Add Field button.
 
@@ -118,7 +121,6 @@ If you are using the Cloze note type,
 please make sure you've included one or more cloze deletions in the Text field, e.g. {{c1::some cloze-deleted text}}.
 
 If you're using the type-in-the-answer functionality, please make sure you've included another field on the front side as well.
-
 
 ### Cloze Filter Outside Cloze Notetype
 
@@ -141,7 +143,6 @@ like the Closet add-on provides some alternatives.
 A Cloze notetype's front and back templates should have a [cloze](../editing.md#cloze-deletion)
 filter. If one is missing, you will need to add it back so that Anki can create cloze cards
 correctly.
-
 
 #### Single empty cards
 
