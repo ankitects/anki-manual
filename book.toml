@@ -30,6 +30,7 @@ exclude = [
   'https://github.com/open-spaced-repetition/fsrs4anki#add-on-compatibility',
   'support.google.com',
   'wikiwiki.jp',
+  'web.archive.org',
 ]
 
 [output.html.fold]

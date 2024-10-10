@@ -32,7 +32,7 @@ arrow icon in the top right of the Deck Options window. You can do the following
 - **Save**: Save all modifications you've made in deck options.
 - **Add Preset**: Add a new preset for this deck, with the default options.
 - **Clone**: Clone your current preset, which is useful if you
-   want to modify some of the  options but keep the rest as they are.
+  want to modify some of the options but keep the rest as they are.
 - **Rename**: Change the name of the current preset.
 - **Delete**: Delete the current preset. This will make your next sync
   a [one-way sync](./syncing.md#conflicts).
@@ -41,7 +41,7 @@ arrow icon in the top right of the Deck Options window. You can do the following
 - **Optimize All Presets**: When FSRS is enabled, this allows you to optimize the parameters of all presets at once.
 
 Deck options are not retroactive. For example, if you change an option that
-controls the delay after failing a card, cards that you failed before 
+controls the delay after failing a card, cards that you failed before
 changing this option will still have the old delay, not the new one.
 
 ## Subdecks
@@ -49,7 +49,6 @@ changing this option will still have the old delay, not the new one.
 If your deck has subdecks, and you wish one or more subdecks to have different settings to the parent decks, you can assign those subdecks to different presets.
 When Anki shows a card, it will check which subdeck the card is in, and use the options
 for that deck. There are two exceptions:
-
 
 - The **New cards/day** and **Maximum reviews/day** [limits](#daily-limits) of a subdeck affect the number of cards that can be gathered from that subdeck. But the total number of cards you see during your study session is controlled by the limits of the deck you select to study.
 - The [display order](#display-order) options are taken from the
@@ -71,20 +70,14 @@ Preset 1 and Preset 2 are identical, with two exceptions:
 
 If you choose to study Subdeck B:
 
-
 - Learning steps for all new cards will be `20m 2h` (Preset 2 applies).
 - All new cards will be shown after reviews (Preset 2 applies).
-
-
-
 
 If you choose to study Deck A:
 
 - Learning steps for new cards in Deck A will be `1m 10m` (Preset 1 applies).
 - Learning steps for new cards in Subdeck B will be `20m 2h` (Preset 2 applies).
 - All new cards will be mixed with reviews (Preset 1 applies).
-
-
 
 ## Daily Limits
 
@@ -119,7 +112,7 @@ suggesting you consider increasing the limit if you have time.
 
 When studying a deck that has subdecks inside it, the review limit behaves similarly to the new card limit.
 
-Anki includes any learning cards that have [crossed the day boundary](/preferences.md#scheduler) (interday learning cards) in the review count,
+Anki includes any learning cards that have [crossed the day boundary](./preferences.md#scheduler) (interday learning cards) in the review count,
 so those learning cards will be subject to the review limit.
 
 ### Per-Deck Daily Limits
@@ -134,11 +127,10 @@ Anki provides three options for daily limits:
 
 ### New Cards Ignore Review Limit
 
-By default, the review limit also applies to new cards, and no new cards will be shown when the review limit has been reached. If this option is enabled, new cards will be shown regardless of the review limit. 
-
+By default, the review limit also applies to new cards, and no new cards will be shown when the review limit has been reached. If this option is enabled, new cards will be shown regardless of the review limit.
 
 If you have a backlog of overdue review cards, it is recommended that you stop introducing new cards until you
-catch up with that backlog. Continuing to introduce new cards when you're already behind can 
+catch up with that backlog. Continuing to introduce new cards when you're already behind can
 make the backlog worse.
 
 ### Limits Start From The Top
@@ -162,7 +154,7 @@ For example, let's say that your learning steps are `1m 10m 1d`.
 - When you click **Again**, the card goes through the first step, and is shown
   again 1 minute later.
 - When you click **Good** on a new card or after the 1 minute step, it moves
-  to the next step, and is shown again in 10 minutes. 
+  to the next step, and is shown again in 10 minutes.
 - When you click **Good** on a card after the 10 minute step, it is delayed
   until the next day.
 - When you click **Good** on the card the next day, it graduates and
@@ -177,7 +169,7 @@ For more info on how the steps work, see the [learning](studying.md#learningrele
 
 #### Day Boundaries
 
-Anki treats small steps and steps that [cross a day boundary](/preferences.md#review) differently.
+Anki treats small steps and steps that [cross a day boundary](./preferences.md#review) differently.
 With small steps, the cards are shown as soon as the delay has passed,
 in preference to review cards and new cards. This is done so that
 you can answer the card as closely to your requested delay as possible.
@@ -254,7 +246,7 @@ Controls how Anki gathers new cards from a deck. The options are:
 
 - **Deck, then random notes**: Gathers cards from each subdeck in order, starting from the top.
   Cards from each subdeck are gathered from randomly selected notes.
-  
+
 - **Ascending position**: Gathers cards by ascending position (due #), which is typically the oldest-added first.
 
 - **Descending position**: Gathers cards by descending position (due #), which is typically the latest-added first.
@@ -269,8 +261,8 @@ Controls how the new cards are sorted after they have been gathered. The options
 
 - **Card type, then order gathered**: Shows cards in order of card type number. Cards of each card type number are shown in the order they were gathered. If you have sibling burying disabled, this ensures all front→back cards are seen before any back→front cards.
   This order is useful if you don't want sibling cards to appear too close to each other.
-  
-- **Order gathered**: Shows cards exactly as they were gathered. If sibling burying is disabled, this  typically results in all sibling cards appearing one after the other.
+
+- **Order gathered**: Shows cards exactly as they were gathered. If sibling burying is disabled, this typically results in all sibling cards appearing one after the other.
 
 - **Card type, then random**: Shows cards in order of card type number, but shuffles the cards of each card type number.
   This order is useful if you don't want sibling cards to appear too close to each other, but still want the cards to appear in a random order.
@@ -338,10 +330,10 @@ For more info about burying cards, please see [this section](./studying.md#sibli
 ## Audio
 
 - **Don't play audio automatically**: By default, Anki automatically plays any audio you have on
-cards. If you turn on this option Anki will not play audio until you press the replay audio key, <kbd>R</kbd> or <kbd>F5</kbd>.
+  cards. If you turn on this option Anki will not play audio until you press the replay audio key, <kbd>R</kbd> or <kbd>F5</kbd>.
 
 - **Skip question when replaying answer**: Controls whether audio from
-the question side is played when you use replay action on the answer side. Note that, Anki [does not automatically play](./templates/fields.md#special-fields) audio from the `{{FrontSide}}` field. This option does not influence the behaviour of automatic play.
+  the question side is played when you use replay action on the answer side. Note that, Anki [does not automatically play](./templates/fields.md#special-fields) audio from the `{{FrontSide}}` field. This option does not influence the behaviour of automatic play.
 
 ## Timer
 
@@ -427,8 +419,8 @@ is recommended to assign them separate presets, as the parameters for easier
 decks will be different from harder decks. There is no need to optimize your
 parameters frequently: once every few months is sufficient.
 
-By default, parameters are calculated from the review history of all 
-decks using the current preset. You can optionally [adjust the search](/searching.md)
+By default, parameters are calculated from the review history of all
+decks using the current preset. You can optionally [adjust the search](./searching.md)
 before optimizing the parameters, if you'd like to change which cards
 are used for optimization.
 
@@ -449,7 +441,7 @@ is off by 5% when predicting R. You don't need to understand these metrics to us
 Note that log loss and RMSE (bins) are not perfectly correlated,
 so two decks may have similar RMSE values but very different log-loss values, or the other way around.
 
-By default, log loss and RMSE (bins) are calculated from all decks using the current preset. You can optionally [adjust the search](/searching.md) before evaluating the parameters, if you'd like to change which cards are used for evaluation.
+By default, log loss and RMSE (bins) are calculated from all decks using the current preset. You can optionally [adjust the search](./searching.md) before evaluating the parameters, if you'd like to change which cards are used for evaluation.
 
 ### Reschedule Cards on Change
 
@@ -465,19 +457,19 @@ Compute minimum recommended retention (CMRR) attempts to find the desired retent
 
 #### Learning and Relearning Steps
 
-(Re)learning steps of 1 day or greater are not recommended when using FSRS. The main 
-reason they were popular with the legacy SM-2 algorithm is because repeatedly 
-failing a card after it has graduated from the learning phase could reduce 
-its ease a lot, leading to what some people called "ease hell". This is not 
-a problem that FSRS suffers from.  By keeping your learning steps under a 
-day, you will allow FSRS to schedule cards at times it has calculated are 
-optimal for your material and memory. Another reason not to use longer 
-learning steps is because FSRS may end up scheduling the first review for a 
-shorter time than your last learning step, leading to the **Hard** button 
+(Re)learning steps of 1 day or greater are not recommended when using FSRS. The main
+reason they were popular with the legacy SM-2 algorithm is because repeatedly
+failing a card after it has graduated from the learning phase could reduce
+its ease a lot, leading to what some people called "ease hell". This is not
+a problem that FSRS suffers from. By keeping your learning steps under a
+day, you will allow FSRS to schedule cards at times it has calculated are
+optimal for your material and memory. Another reason not to use longer
+learning steps is because FSRS may end up scheduling the first review for a
+shorter time than your last learning step, leading to the **Hard** button
 showing a longer time than **Good**.
 
 We also recommend you keep the number of learning steps to a minimum. Evidence
-shows that repeating a card multiple times in a single day does not significantly 
+shows that repeating a card multiple times in a single day does not significantly
 contribute to long-term memory, so your time is
 better spent on other cards or a shorter study session.
 
