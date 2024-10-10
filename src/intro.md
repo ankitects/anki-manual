@@ -29,3 +29,9 @@ translations may not always be up to date.
 
 If you would like to help translate the manual into a different language,
 please see the [translation docs](https://translating.ankiweb.net/anki/manual.html).
+
+## Legacy Documentation
+
+Not on the latest version of Anki? Find archives of this manual at the [Internet Archive](https://web.archive.org/web/20240829022941/https://docs.ankiweb.net/).
+
+For information on old scheduler versions, see [this FAQ](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html).
