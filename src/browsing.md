@@ -101,7 +101,7 @@ from the right-click menu, or by using a shortcut key (<kbd>Del</kbd> and
 ### Finding Items
 
 To find a certain item in the sidebar tree, type part of its name into the searchbar
-at the top to temporarily hide all items not matching the search.
+at the top.
 
 ## Search Box
 
