@@ -2973,9 +2973,14 @@ see them. To debug issues with JavaScript, you can use Chrome's
 <ul>
 <li><a href="templates/errors.html#template-syntax-error">Template Syntax Error</a></li>
 <li><a href="templates/errors.html#identical-front-sides">Identical Front Sides</a></li>
-<li><a href="templates/errors.html#no-field-replacement-on-front-side">No Field Replacement on Front Side</a></li>
+<li><a href="templates/errors.html#front-of-card-is-blank">Front of Card is Blank</a></li>
 <li><a href="templates/errors.html#cloze-filter-outside-cloze-notetype">Cloze Filter Outside Cloze Notetype</a></li>
-<li><a href="templates/errors.html#no-cloze-filter-on-cloze-notetype">No Cloze Filter on Cloze Notetype</a></li>
+<li><a href="templates/errors.html#no-cloze-filter-on-cloze-notetype">No Cloze Filter on Cloze Notetype</a>
+<ul>
+<li><a href="templates/errors.html#single-empty-cards">Single empty cards</a></li>
+<li><a href="templates/errors.html#all-cloze-cards-empty">All cloze cards empty</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -2995,10 +3000,49 @@ if necessary.</li>
 <h2 id="specific-issues"><a class="header" href="#specific-issues">Specific Issues</a></h2>
 <h3 id="template-syntax-error"><a class="header" href="#template-syntax-error">Template Syntax Error</a></h3>
 <p>This kind of error indicates an incorrect usage of the <a href="templates/./fields.html">field replacement</a>
-syntax. Visit the <a href="templates/./intro.html#the-templates-screen">templates screen</a> for the
-reported note and card type, and look at the preview area for more information.
-Some <a href="https://faqs.ankiweb.net/card-template-has-a-problem.html">more information</a> about
-template problems is available.</p>
+syntax.</p>
+<p>You can correct mistakes on the template by opening the card templates screen:</p>
+<ul>
+<li>On the computer version, edit a problem card, and then click on the Cards... button</li>
+<li>On AnkiMobile, while viewing a problem card in the review screen, tap the cog/gear, then Card Template.</li>
+</ul>
+<p>When you correct a mistake, it will update all cards of that type - you do not need to make the same change for every card that uses the template.</p>
+<p>What needs changing will depend on the message you are getting.</p>
+<p><strong>Found '{{Field}}', but there is no field called 'Field'</strong></p>
+<p>This indicates your template includes the name of a field that doesn't exist. To fix the problem, locate the
+{{Field}} inside the card template, and remove it.</p>
+<p><strong>Missing }} in {{Field</strong></p>
+<p>This message is shown when {{ is found in the template without a matching }}. For example, if you have</p>
+<pre><code>{{Field
+</code></pre>
+<p>then this needs to be changed to</p>
+<pre><code>{{Field}}
+</code></pre>
+<p><strong>Missing {{/Field}}</strong></p>
+<p>This means Anki found <code>{{#Field}}</code> or <code>{{^Field}}</code> in your card template, without a matching <code>{{/Field}}</code>. Removing  <code>{{#Field}}</code> or <code>{{^Field}}</code> from the template will fix the error.</p>
+<p><strong>Found {{/One}}, but expected {{/Two}}</strong></p>
+<p>Conditional replacements need to be closed in the same order they are opened. For example, the following template is incorrect:</p>
+<pre><code>{{#One}}
+  {{#Two}}
+    {{Three}}
+  {{/One}}
+{{/Two}}
+</code></pre>
+<p>To fix the problem, the template should be changed like so:</p>
+<pre><code>{{#One}}
+  {{#Two}}
+    {{Three}}
+  {{/Two}}
+{{/One}}
+</code></pre>
+<p><strong>Found {{/Field}}, but missing '{{#Field}}' or '{{^Field}}'</strong></p>
+<p>Closing tags must be matched by opening tags. For example, the following is invalid, because there is no <code>{{#Two}}</code> or <code>{{^Two}}</code> at the start:</p>
+<pre><code>  {{Field}}
+{{/Two}}
+</code></pre>
+<p>It can be fixed by removing the closing tag:</p>
+<pre><code>{{Field}}
+</code></pre>
 <h3 id="identical-front-sides"><a class="header" href="#identical-front-sides">Identical Front Sides</a></h3>
 <p>You have Anki configured to create two identical questions for each input. This can
 happen if you add a new card type without making any adjustments to it. Identical
@@ -3007,13 +3051,17 @@ cards double your workload, and make Anki's scheduling less effective.</p>
 select one of the duplicates at the top. Then use the button on the top right to
 remove the selected card type. This will delete all the duplicate cards/notes that
 were using the card type as well.</p>
-<h3 id="no-field-replacement-on-front-side"><a class="header" href="#no-field-replacement-on-front-side">No Field Replacement on Front Side</a></h3>
-<p>If you don't use a <a href="templates/./fields.html">field replacement</a> in the front template of a
-card type, every card created from it will look the same on the question side,
-regardless of its note. It would then be impossible to answer the card, as you
-wouldn't know what answer is expected.</p>
-<p>To resolve the issue, open the <a href="templates/./intro.html#the-templates-screen">templates screen</a>,
-and click the Add Field button to add one or more fields to the front.</p>
+<h3 id="front-of-card-is-blank"><a class="header" href="#front-of-card-is-blank">Front of Card is Blank</a></h3>
+<p>Anki displays cards by combining the fields you've entered with a
+template that says which fields should appear on the front and back of your cards. If you receive a
+message that a card has a blank front, it means either none of the fields included on your front tmplate have any text in them, or you have fields that have text,
+but none are included on the front template.
+You can fix this problem by editing the card on the computer version, clicking on <strong>Cards...</strong>, 
+and checking to make sure at least one field with some text on it is included on the front template.
+You can add extra fields with the Add Field button.</p>
+<p>If you are using the Cloze note type,
+please make sure you've included one or more cloze deletions in the Text field, e.g. {{c1::some cloze-deleted text}}.</p>
+<p>If you're using the type-in-the-answer functionality, please make sure you've included another field on the front side as well.</p>
 <h3 id="cloze-filter-outside-cloze-notetype"><a class="header" href="#cloze-filter-outside-cloze-notetype">Cloze Filter Outside Cloze Notetype</a></h3>
 <p>The <a href="templates/../editing.html#cloze-deletion">cloze</a> filter (as in <code>{{cloze:Some Field}}</code>)
 may only be used on the cloze notetype, and on those created by cloning it.</p>
@@ -3029,6 +3077,33 @@ like the Closet add-on provides some alternatives.</p>
 <p>A Cloze notetype's front and back templates should have a <a href="templates/../editing.html#cloze-deletion">cloze</a>
 filter. If one is missing, you will need to add it back so that Anki can create cloze cards
 correctly.</p>
+<h4 id="single-empty-cards"><a class="header" href="#single-empty-cards">Single empty cards</a></h4>
+<p>When making clozes, each cloze number is turned into a separate card. For example, the following will create three cards:</p>
+<pre><code>{{c1::This}} is a {{c2::sample}} {{c3::sentence}}.
+</code></pre>
+<p>If you you later edit the text, and either remove or change a cloze number, the previously created card may become blank. For example:</p>
+<pre><code>{{c1::This}} is a {{c2::sample}}
+</code></pre>
+<p>and</p>
+<pre><code>{{c1::This}} is a {{c2::sample}} {{c1::sentence}}.
+</code></pre>
+<p>are both changes that would make card 3 blank. When you view card 3, you'll see a message indicating that the card is blank, and can be cleaned up with the Empty Cards function. You can access that function via the Tools menu of the computer version's main window, and use it to remove blank cards. Please check the reported empty cards first, and if in doubt, create a backup with the File&gt;Export menu item before proceeding.</p>
+<h4 id="all-cloze-cards-empty"><a class="header" href="#all-cloze-cards-empty">All cloze cards empty</a></h4>
+<p>If you accidentally modify your card template, it may prevent any cloze deletions from appearing. If that has happened, please edit one such problem card, and note down the name of the first field - it is usually called &quot;Text&quot;. Then, please:</p>
+<ul>
+<li>
+<p>Click on the Cards... button</p>
+</li>
+<li>
+<p>Replace the front text with</p>
+<pre><code>{{cloze:Text}}
+</code></pre>
+</li>
+<li>
+<p>Replace the back text with the same.</p>
+</li>
+</ul>
+<p>If your field was called something other than Text, replace Text with the name of the field.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="preferences"><a class="header" href="#preferences">Preferences</a></h1>
 <ul>
 <li><a href="preferences.html#appearance">Appearance</a>
@@ -3276,7 +3351,7 @@ arrow icon in the top right of the Deck Options window. You can do the following
 <li><strong>Save</strong>: Save all modifications you've made in deck options.</li>
 <li><strong>Add Preset</strong>: Add a new preset for this deck, with the default options.</li>
 <li><strong>Clone</strong>: Clone your current preset, which is useful if you
-want to modify some of the  options but keep the rest as they are.</li>
+want to modify some of the options but keep the rest as they are.</li>
 <li><strong>Rename</strong>: Change the name of the current preset.</li>
 <li><strong>Delete</strong>: Delete the current preset. This will make your next sync
 a <a href="./syncing.html#conflicts">one-way sync</a>.</li>
@@ -3285,7 +3360,7 @@ subdecks of the currently selected deck.</li>
 <li><strong>Optimize All Presets</strong>: When FSRS is enabled, this allows you to optimize the parameters of all presets at once.</li>
 </ul>
 <p>Deck options are not retroactive. For example, if you change an option that
-controls the delay after failing a card, cards that you failed before 
+controls the delay after failing a card, cards that you failed before
 changing this option will still have the old delay, not the new one.</p>
 <h2 id="subdecks"><a class="header" href="#subdecks">Subdecks</a></h2>
 <p>If your deck has subdecks, and you wish one or more subdecks to have different settings to the parent decks, you can assign those subdecks to different presets.
@@ -3350,7 +3425,7 @@ heart attack when returning to Anki after taking a week off. When reviews have b
 hidden due to this option, a message will appear in the congratulations screen,
 suggesting you consider increasing the limit if you have time.</p>
 <p>When studying a deck that has subdecks inside it, the review limit behaves similarly to the new card limit.</p>
-<p>Anki includes any learning cards that have <a href="/preferences.html#scheduler">crossed the day boundary</a> (interday learning cards) in the review count,
+<p>Anki includes any learning cards that have <a href="./preferences.html#scheduler">crossed the day boundary</a> (interday learning cards) in the review count,
 so those learning cards will be subject to the review limit.</p>
 <h3 id="per-deck-daily-limits"><a class="header" href="#per-deck-daily-limits">Per-Deck Daily Limits</a></h3>
 <p>It is possible to use the same preset for different decks, with customized limits for each of them. This eliminates the need to create cloned presets just for that purpose, and makes it easier to set custom limits on subdecks.</p>
@@ -3361,9 +3436,9 @@ so those learning cards will be subject to the review limit.</p>
 <li><strong>Today only</strong>: specific to a particular deck, and temporary.</li>
 </ul>
 <h3 id="new-cards-ignore-review-limit"><a class="header" href="#new-cards-ignore-review-limit">New Cards Ignore Review Limit</a></h3>
-<p>By default, the review limit also applies to new cards, and no new cards will be shown when the review limit has been reached. If this option is enabled, new cards will be shown regardless of the review limit. </p>
+<p>By default, the review limit also applies to new cards, and no new cards will be shown when the review limit has been reached. If this option is enabled, new cards will be shown regardless of the review limit.</p>
 <p>If you have a backlog of overdue review cards, it is recommended that you stop introducing new cards until you
-catch up with that backlog. Continuing to introduce new cards when you're already behind can 
+catch up with that backlog. Continuing to introduce new cards when you're already behind can
 make the backlog worse.</p>
 <h3 id="limits-start-from-the-top"><a class="header" href="#limits-start-from-the-top">Limits Start From The Top</a></h3>
 <p>By default, the daily limits of a higher-level deck do not apply if you're studying from its subdeck. However, if this option is enabled, the limits will start from the top-level decks instead, which can be useful if you wish to study individual subdecks, while enforcing a total limit on cards for the deck tree. Enabling this option for any preset will affect all decks and presets in your collection.</p>
@@ -3380,7 +3455,7 @@ Each time you click <strong>Good</strong> during review, the card moves to the n
 <li>When you click <strong>Again</strong>, the card goes through the first step, and is shown
 again 1 minute later.</li>
 <li>When you click <strong>Good</strong> on a new card or after the 1 minute step, it moves
-to the next step, and is shown again in 10 minutes. </li>
+to the next step, and is shown again in 10 minutes.</li>
 <li>When you click <strong>Good</strong> on a card after the 10 minute step, it is delayed
 until the next day.</li>
 <li>When you click <strong>Good</strong> on the card the next day, it graduates and
@@ -3392,7 +3467,7 @@ early by default. The amount of time to look ahead is configurable in
 the <a href="preferences.html">preferences</a>.</p>
 <p>For more info on how the steps work, see the <a href="studying.html#learningrelearning-cards">learning</a> section.</p>
 <h4 id="day-boundaries"><a class="header" href="#day-boundaries">Day Boundaries</a></h4>
-<p>Anki treats small steps and steps that <a href="/preferences.html#review">cross a day boundary</a> differently.
+<p>Anki treats small steps and steps that <a href="./preferences.html#review">cross a day boundary</a> differently.
 With small steps, the cards are shown as soon as the delay has passed,
 in preference to review cards and new cards. This is done so that
 you can answer the card as closely to your requested delay as possible.
@@ -3469,7 +3544,7 @@ Cards from each subdeck are gathered from randomly selected notes.</p>
 This order is useful if you don't want sibling cards to appear too close to each other.</p>
 </li>
 <li>
-<p><strong>Order gathered</strong>: Shows cards exactly as they were gathered. If sibling burying is disabled, this  typically results in all sibling cards appearing one after the other.</p>
+<p><strong>Order gathered</strong>: Shows cards exactly as they were gathered. If sibling burying is disabled, this typically results in all sibling cards appearing one after the other.</p>
 </li>
 <li>
 <p><strong>Card type, then random</strong>: Shows cards in order of card type number, but shuffles the cards of each card type number.
@@ -3626,8 +3701,8 @@ number, and recommend you keep it lower than <code>0.97</code> and higher than t
 is recommended to assign them separate presets, as the parameters for easier
 decks will be different from harder decks. There is no need to optimize your
 parameters frequently: once every few months is sufficient.</p>
-<p>By default, parameters are calculated from the review history of all 
-decks using the current preset. You can optionally <a href="/searching.html">adjust the search</a>
+<p>By default, parameters are calculated from the review history of all
+decks using the current preset. You can optionally <a href="./searching.html">adjust the search</a>
 before optimizing the parameters, if you'd like to change which cards
 are used for optimization.</p>
 <p>You can also optimize the parameters for all of your presets at once, by clicking on the
@@ -3642,7 +3717,7 @@ probability measured from your review history. For example, RMSE=5% means that, 
 is off by 5% when predicting R. You don't need to understand these metrics to use FSRS.</p>
 <p>Note that log loss and RMSE (bins) are not perfectly correlated,
 so two decks may have similar RMSE values but very different log-loss values, or the other way around.</p>
-<p>By default, log loss and RMSE (bins) are calculated from all decks using the current preset. You can optionally <a href="/searching.html">adjust the search</a> before evaluating the parameters, if you'd like to change which cards are used for evaluation.</p>
+<p>By default, log loss and RMSE (bins) are calculated from all decks using the current preset. You can optionally <a href="./searching.html">adjust the search</a> before evaluating the parameters, if you'd like to change which cards are used for evaluation.</p>
 <h3 id="reschedule-cards-on-change"><a class="header" href="#reschedule-cards-on-change">Reschedule Cards on Change</a></h3>
 <p>This option controls whether the due dates of cards will be changed when you enable FSRS, change desired retention, or change the parameters. The default is not to reschedule cards: future reviews will use the new scheduling, but there will be no immediate change to your workload. If rescheduling is enabled, the due dates of cards will be changed. Depending on your desired retention, it will often result in a large number of cards becoming due, so <strong>this option is not recommended</strong> when first switching from SM-2.</p>
 <p>Use this option sparingly, as it will add a review entry to each of your cards, and increase the size of your collection.</p>
@@ -3650,18 +3725,18 @@ so two decks may have similar RMSE values but very different log-loss values, or
 <h3 id="compute-minimum-recommended-retention"><a class="header" href="#compute-minimum-recommended-retention">Compute Minimum Recommended Retention</a></h3>
 <p>Compute minimum recommended retention (CMRR) attempts to find the desired retention value that leads to the most material learnt, in the least amount of time. The calculated number can serve as a reference when deciding what to set your desired retention to. You may wish to choose a higher desired retention, if you’re willing to trade more study time for a greater retention rate. However, setting your desired retention lower than the minimum is not recommended, as you'll spend more time studying than necessary, due to increased forgetting.</p>
 <h4 id="learning-and-relearning-steps"><a class="header" href="#learning-and-relearning-steps">Learning and Relearning Steps</a></h4>
-<p>(Re)learning steps of 1 day or greater are not recommended when using FSRS. The main 
-reason they were popular with the legacy SM-2 algorithm is because repeatedly 
-failing a card after it has graduated from the learning phase could reduce 
-its ease a lot, leading to what some people called &quot;ease hell&quot;. This is not 
-a problem that FSRS suffers from.  By keeping your learning steps under a 
-day, you will allow FSRS to schedule cards at times it has calculated are 
-optimal for your material and memory. Another reason not to use longer 
-learning steps is because FSRS may end up scheduling the first review for a 
-shorter time than your last learning step, leading to the <strong>Hard</strong> button 
+<p>(Re)learning steps of 1 day or greater are not recommended when using FSRS. The main
+reason they were popular with the legacy SM-2 algorithm is because repeatedly
+failing a card after it has graduated from the learning phase could reduce
+its ease a lot, leading to what some people called &quot;ease hell&quot;. This is not
+a problem that FSRS suffers from. By keeping your learning steps under a
+day, you will allow FSRS to schedule cards at times it has calculated are
+optimal for your material and memory. Another reason not to use longer
+learning steps is because FSRS may end up scheduling the first review for a
+shorter time than your last learning step, leading to the <strong>Hard</strong> button
 showing a longer time than <strong>Good</strong>.</p>
 <p>We also recommend you keep the number of learning steps to a minimum. Evidence
-shows that repeating a card multiple times in a single day does not significantly 
+shows that repeating a card multiple times in a single day does not significantly
 contribute to long-term memory, so your time is
 better spent on other cards or a shorter study session.</p>
 <h4 id="add-on-compatibility-3"><a class="header" href="#add-on-compatibility-3">Add-On Compatibility</a></h4>
