@@ -2,7 +2,7 @@
 
 ## Writings
 
-- [SuperMemo Guru](https://supermemo.guru/wiki/SuperMemo_Guru>): Piotr Wozniak's writings about spaced repetition and memory.
+- [SuperMemo Guru](https://supermemo.guru/wiki/SuperMemo_Guru): Piotr Wozniak's writings about spaced repetition and memory.
 
 - [Augmenting Long-term Cognition](http://augmentingcognition.com/ltm.html): Michael Nielsen's article about long term memory and how he uses Anki. He also provides a [condensed version](https://twitter.com/michael_nielsen/status/957763229454774272) as a series of tweets.
 
@@ -14,4 +14,4 @@
 
 ## Guides
 
-- [Anki Mastery Course](https://www.theanking.com/anki-mastery-course): A paid-for guide focusing on Anki use in  medical schools.
+- [Anki Mastery Course](https://www.theanking.com/anki-mastery-course): A paid-for guide focusing on Anki use in medical schools.
