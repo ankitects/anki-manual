@@ -1497,8 +1497,7 @@ hide cards in learning, as time is of the essence for those cards. On
 the other hand, when you study a learning card, any new/review siblings
 will be buried.</p>
 <p>Also note that a card cannot be buried and suspended at the same time. Suspending a
-buried card will unbury it. Burying a suspended card does not work on Anki
-2.1.49+, whereas on earlier versions, it will unsuspend the card.</p>
+buried card will unbury it. Suspended cards can't be buried.</p>
 <h2 id="keyboard-shortcuts"><a class="header" href="#keyboard-shortcuts">Keyboard Shortcuts</a></h2>
 <p>Most of the common operations in Anki have keyboard shortcuts. Most of
 them are discoverable in the interface: menu items list their shortcuts
@@ -2036,10 +2035,7 @@ cards at once.</p>
 <h2 id="the-templates-screen"><a class="header" href="#the-templates-screen">The Templates Screen</a></h2>
 <p>You can modify card templates by clicking the &quot;Cards...&quot; button inside the
 editing screen.</p>
-<p>For older Anki versions, on the top left is the front template, on the bottom left is the back
-template, and in between them is the card styling section. For Anki versions
-2.1.28+ the front, back, and styling are no longer shown at the same time.
-You can switch between them with <kbd>Ctrl</kbd>+<kbd>1</kbd>, <kbd>Ctrl</kbd>+<kbd>2</kbd>, and <kbd>Ctrl</kbd>+<kbd>3</kbd>.</p>
+<p>You can switch between <strong>Front template</strong>, <strong>Back template</strong> and <strong>Styling</strong> with <kbd>Ctrl</kbd>+<kbd>1</kbd>, <kbd>Ctrl</kbd>+<kbd>2</kbd>, and <kbd>Ctrl</kbd>+<kbd>3</kbd>.</p>
 <p>In Anki, templates are written in HTML, which is the language that web
 pages are written in. The styling section is CSS, which is the language
 used for styling web pages.</p>
@@ -2444,7 +2440,6 @@ the preview in the card types window, they will display.</p>
 <li><a href="templates/generation.html#selective-card-generation">Selective Card Generation</a></li>
 <li><a href="templates/generation.html#conditional-replacement">Conditional Replacement</a></li>
 <li><a href="templates/generation.html#blank-back-sides">Blank Back Sides</a></li>
-<li><a href="templates/generation.html#limitations-in-older-anki-versions">Limitations in Older Anki Versions</a></li>
 <li><a href="templates/generation.html#adding-empty-notes">Adding Empty Notes</a></li>
 <li><a href="templates/generation.html#cloze-templates">Cloze Templates</a></li>
 </ul>
@@ -2576,49 +2571,12 @@ on the front template as a conditional, like so:</p>
 {{/Field 2}}
 </code></pre>
 <p>This will ensure the card is generated only if both Field 2 and Field 1 are non-empty.</p>
-<h2 id="limitations-in-older-anki-versions"><a class="header" href="#limitations-in-older-anki-versions">Limitations in Older Anki Versions</a></h2>
-<p>The following limitations do not apply to Anki 2.1.28+ and AnkiMobile 2.0.64+.</p>
-<p>Older Anki versions cannot use negated conditionals for card generation.
-For example, on Anki 2.1.28, the following would add a card if a field
-called AddIfEmpty is empty, and Front is non-empty:</p>
-<pre><code>{{^AddIfEmpty}}
-    {{Front}}
-{{/AddIfEmpty}}
-</code></pre>
-<p>On earlier Anki versions, the negated conditional is ignored, and card
-generation will depend only on Front being non-empty.</p>
-<p>Mixing <strong>AND</strong> and <strong>OR</strong> conditions can also cause problems on older versions.
-For example, the following (&quot;add the card if A <strong>OR</strong> B <strong>OR</strong> C is non-empty&quot;)
-is fine:</p>
-<pre><code>{{A}}
-{{B}}
-{{C}}
-</code></pre>
-<p>And the following (&quot;add the card if A <strong>AND</strong> B <strong>AND</strong> C are non-empty&quot;) is fine:</p>
-<pre><code>{{#A}}
-    {{#B}}
-        {{#C}}
-            {{A}}
-        {{/C}}
-    {{/B}}
-{{/A}}
-</code></pre>
-<p>But the following (&quot;add the card if A <strong>OR</strong> (B <strong>AND</strong> C) are non-empty&quot;) will not work properly:</p>
-<pre><code>{{A}}
-{{#B}}
-    {{#C}}
-        {{B}}
-    {{/C}}
-{{/B}}
-</code></pre>
 <h2 id="adding-empty-notes"><a class="header" href="#adding-empty-notes">Adding Empty Notes</a></h2>
-<p>When you add a new note in Anki 2.1.28+ and AnkiMobile 2.0.64+, if the card
+<p>When you add a new note in Anki, if the card
 templates and note fields combine to produce no cards, a blank card will be
 created using the first template. This allows you to add material even if it's
 incomplete, and modify it or the template later to make it valid. If you don't
 wish to keep an empty note, you can remove it with the Empty Cards function.</p>
-<p>On older Anki versions, Anki refuses to add or import a note if no cards
-would be generated.</p>
 <h2 id="cloze-templates"><a class="header" href="#cloze-templates">Cloze Templates</a></h2>
 <p>Please see the <a href="templates/../editing.html#cloze-deletion">cloze deletion</a> section for background info.</p>
 <p>The cloze note type functions differently from regular note types.
@@ -5095,7 +5053,6 @@ not be created.</p>
 <li><a href="importing/packaged-decks.html#note-to-deck-authors">Note to Deck Authors</a></li>
 </ul>
 </li>
-<li><a href="importing/packaged-decks.html#workaround-for-anki-2166-and-earlier">Workaround for Anki 2.1.66 and Earlier</a></li>
 </ul>
 </li>
 </ul>
@@ -5136,41 +5093,6 @@ release, Anki attempts to find an equivalent by comparing names.</p>
 <p>See this <a href="https://ankiweb.net/shared/info/2063785767">this add-on</a> for why it is
 advantageous to share notetypes with field and template ids, and how to add them to
 existing ones.</p>
-<h3 id="workaround-for-anki-2166-and-earlier"><a class="header" href="#workaround-for-anki-2166-and-earlier">Workaround for Anki 2.1.66 and Earlier</a></h3>
-<p>If you know the deck author has made changes and you wish to gain access to
-them, changing the notetype back is possible, but rather difficult. You'll need
-to do the following:</p>
-<ul>
-<li>Create a new profile, and import the .apkg file into it.</li>
-<li>Locate one of the notes that failed to update in the Browse screen and select it.</li>
-<li>Use the Fields &amp; Cards buttons to check the field names and card template names,
-and note them down.</li>
-<li>Use the <a href="https://docs.ankiweb.net/misc.html#debug-console">debug console</a> to determine the notetype id.
-It will be the number on the last line.</li>
-</ul>
-<pre><code>nt = bcard().note().note_type()
-print(&quot;notetype&quot;, nt[&quot;name&quot;], &quot;has id&quot;, nt[&quot;id&quot;])
-</code></pre>
-<ul>
-<li>Return to your normal profile, locate the same card, and select it. Run the following
-in the debug console, replacing <code>xxx</code> with the ID you got above:</li>
-</ul>
-<pre><code>nt = bcard().note().note_type()
-print(&quot;current:&quot;, nt[&quot;name&quot;], &quot;has id&quot;, nt[&quot;id&quot;])
-nt = mw.col.models.get(xxx)
-print(&quot;desired:&quot;, nt[&quot;name&quot;], &quot;has id&quot;, nt[&quot;id&quot;])
-</code></pre>
-<ul>
-<li>
-<p>If it prints two different notetype names, you will need to use the Change Notetype
-action to change the notetype of your existing notes to the desired one.</p>
-</li>
-<li>
-<p>You then need to use the Fields and Cards buttons to check the field and template
-names match the one in your test profile. They must match exactly - there should be no
-more or less, and the spelling should be identical.</p>
-</li>
-</ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="exporting"><a class="header" href="#exporting">Exporting</a></h1>
 <ul>
 <li><a href="exporting.html#text-files">Text Files</a></li>
@@ -5237,14 +5159,13 @@ and leech tags so that they will have a clean copy of it.</p>
 <li><a href="backups.html#automatic-backups">Automatic backups</a>
 <ul>
 <li><a href="backups.html#restoring">Restoring</a></li>
-<li><a href="backups.html#anki-2150">Anki 2.1.50+</a></li>
-<li><a href="backups.html#older-anki-versions">Older Anki versions</a></li>
+<li><a href="backups.html#creating">Creating</a></li>
 </ul>
 </li>
 <li><a href="backups.html#manual-colpkg-backups">Manual colpkg backups</a>
 <ul>
 <li><a href="backups.html#restoring-1">Restoring</a></li>
-<li><a href="backups.html#creating">Creating</a></li>
+<li><a href="backups.html#creating-1">Creating</a></li>
 </ul>
 </li>
 <li><a href="backups.html#ankiweb">AnkiWeb</a></li>
@@ -5268,7 +5189,7 @@ protect you if your device breaks or is stolen. We recommend you combine them wi
 <p>When restoring from a backup, any changes made since the backup was created will be lost.</p>
 <p>Anki disables automatic syncing and backups when you restore from a backup. Once you're
 happy that you've restored the correct backup, close and re-open Anki to return to normal.</p>
-<h3 id="anki-2150"><a class="header" href="#anki-2150">Anki 2.1.50+</a></h3>
+<h3 id="creating"><a class="header" href="#creating">Creating</a></h3>
 <p>Backups are created periodically. You can configure the time between backups
 in the <a href="preferences.html">preferences</a> screen. The default is 30 minutes.</p>
 <p>Certain operations will trigger a backup, even if the configured time has not
@@ -5281,14 +5202,10 @@ elapsed yet:</p>
 <p>After backups are two days old, Anki will start removing some of the older ones.
 You can control how many daily, weekly and monthly backups you'd like to keep.</p>
 <p>Backups created with 2.1.50 will not be importable into older Anki versions.</p>
-<h3 id="older-anki-versions"><a class="header" href="#older-anki-versions">Older Anki versions</a></h3>
-<p>Each time your collection is closed (when closing Anki, switching
-profiles, or doing a full sync download), Anki creates a backup. By default
-it will store up to 30 backups; you can adjust this in the <a href="preferences.html">preferences</a>.</p>
 <h2 id="manual-colpkg-backups"><a class="header" href="#manual-colpkg-backups">Manual colpkg backups</a></h2>
 <h3 id="restoring-1"><a class="header" href="#restoring-1">Restoring</a></h3>
 <p>You can restore from a manual backup by using File&gt;Import.</p>
-<h3 id="creating"><a class="header" href="#creating">Creating</a></h3>
+<h3 id="creating-1"><a class="header" href="#creating-1">Creating</a></h3>
 <p>In Anki 2.1.50+, you can use File&gt;Create Backup to trigger an immediate backup. This
 functions like regular automatic backups, and does not include media files.</p>
 <p>To create a backup that includes your sounds and images:</p>
@@ -5633,13 +5550,9 @@ text box at the top of the screen or (from Anki 2.1.61), by using the deck selec
 <p>If you select this checkbox, statistics will be shown for your entire collection. You can also display graphs
 for arbitrary searches by adding filters in the search box at the top (2.1.28+).</p>
 <h3 id="history"><a class="header" href="#history">History</a></h3>
-<p>By default, Anki 2.1.28+ will show you statistics for the last 12 months.
+<p>By default, Anki shows you statistics for the last 12 months.
 You can change this to all history scope or deck life scope at the top. (The
 &quot;today&quot; section at the top remains of course unaffected by this selection.)</p>
-<p>Older versions of Anki will by default show you statistics for
-the previous month. You can change this to a year scope or deck life scope
-at the bottom. (Again, the “today” section at the top is unaffected
-by this selection.)</p>
 <h3 id="more-1"><a class="header" href="#more-1">More</a></h3>
 <ul>
 <li>

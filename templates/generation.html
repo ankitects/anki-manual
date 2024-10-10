@@ -154,7 +154,6 @@
 <li><a href="#selective-card-generation">Selective Card Generation</a></li>
 <li><a href="#conditional-replacement">Conditional Replacement</a></li>
 <li><a href="#blank-back-sides">Blank Back Sides</a></li>
-<li><a href="#limitations-in-older-anki-versions">Limitations in Older Anki Versions</a></li>
 <li><a href="#adding-empty-notes">Adding Empty Notes</a></li>
 <li><a href="#cloze-templates">Cloze Templates</a></li>
 </ul>
@@ -286,49 +285,12 @@ on the front template as a conditional, like so:</p>
 {{/Field 2}}
 </code></pre>
 <p>This will ensure the card is generated only if both Field 2 and Field 1 are non-empty.</p>
-<h2 id="limitations-in-older-anki-versions"><a class="header" href="#limitations-in-older-anki-versions">Limitations in Older Anki Versions</a></h2>
-<p>The following limitations do not apply to Anki 2.1.28+ and AnkiMobile 2.0.64+.</p>
-<p>Older Anki versions cannot use negated conditionals for card generation.
-For example, on Anki 2.1.28, the following would add a card if a field
-called AddIfEmpty is empty, and Front is non-empty:</p>
-<pre><code>{{^AddIfEmpty}}
-    {{Front}}
-{{/AddIfEmpty}}
-</code></pre>
-<p>On earlier Anki versions, the negated conditional is ignored, and card
-generation will depend only on Front being non-empty.</p>
-<p>Mixing <strong>AND</strong> and <strong>OR</strong> conditions can also cause problems on older versions.
-For example, the following (&quot;add the card if A <strong>OR</strong> B <strong>OR</strong> C is non-empty&quot;)
-is fine:</p>
-<pre><code>{{A}}
-{{B}}
-{{C}}
-</code></pre>
-<p>And the following (&quot;add the card if A <strong>AND</strong> B <strong>AND</strong> C are non-empty&quot;) is fine:</p>
-<pre><code>{{#A}}
-    {{#B}}
-        {{#C}}
-            {{A}}
-        {{/C}}
-    {{/B}}
-{{/A}}
-</code></pre>
-<p>But the following (&quot;add the card if A <strong>OR</strong> (B <strong>AND</strong> C) are non-empty&quot;) will not work properly:</p>
-<pre><code>{{A}}
-{{#B}}
-    {{#C}}
-        {{B}}
-    {{/C}}
-{{/B}}
-</code></pre>
 <h2 id="adding-empty-notes"><a class="header" href="#adding-empty-notes">Adding Empty Notes</a></h2>
-<p>When you add a new note in Anki 2.1.28+ and AnkiMobile 2.0.64+, if the card
+<p>When you add a new note in Anki, if the card
 templates and note fields combine to produce no cards, a blank card will be
 created using the first template. This allows you to add material even if it's
 incomplete, and modify it or the template later to make it valid. If you don't
 wish to keep an empty note, you can remove it with the Empty Cards function.</p>
-<p>On older Anki versions, Anki refuses to add or import a note if no cards
-would be generated.</p>
 <h2 id="cloze-templates"><a class="header" href="#cloze-templates">Cloze Templates</a></h2>
 <p>Please see the <a href="../editing.html#cloze-deletion">cloze deletion</a> section for background info.</p>
 <p>The cloze note type functions differently from regular note types.
