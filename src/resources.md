@@ -1,19 +1,17 @@
 # Resources
 
-The SuperMemo site has a lot of good information about spaced repetition
-and memory: <https://supermemo.guru/wiki/SuperMemo_Guru>
+## Writings
 
-Michael Nielsen has written a [thorough piece](http://augmentingcognition.com/ltm.html)
-about long term memory and how he uses Anki. He also provides a
-[condensed version](https://twitter.com/michael_nielsen/status/957763229454774272)
-as a series of tweets.
+- [SuperMemo Guru](https://supermemo.guru/wiki/SuperMemo_Guru>): Piotr Wozniak's writings about spaced repetition and memory.
 
-Some medical students have banded together to make a paid-for guide focusing on
-the use of Anki in medical school: <https://www.theanking.com/anki-mastery-course>
+- [Augmenting Long-term Cognition](http://augmentingcognition.com/ltm.html): Michael Nielsen's article about long term memory and how he uses Anki. He also provides a [condensed version](https://twitter.com/michael_nielsen/status/957763229454774272) as a series of tweets.
 
-Soren Bjornstad has written [a series of extensive articles](https://controlaltbackspace.org/categories/memory/)
-about memory, SRS and how to use Anki effectively.
+- [Control-Alt-Backspace](https://controlaltbackspace.org/categories/memory/): Writings about memory, SRS and how to use Anki effectively from Soren Bjornstad's blog.
 
-Jarrett Ye, the creator of FSRS, wrote a [great article about spaced repetition algorithms.](https://github.com/open-spaced-repetition/fsrs4anki/wiki/Spaced-Repetition-Algorithm:-A-Three%E2%80%90Day-Journey-from-Novice-to-Expert)
+- [Spaced Repetition Algorithm: A Three‐Day Journey from Novice to Expert](https://github.com/open-spaced-repetition/fsrs4anki/wiki/Spaced-Repetition-Algorithm:-A-Three%E2%80%90Day-Journey-from-Novice-to-Expert): An article from Jarrett Ye about spaced repetition algorithms. Jarrett Ye is the creator of FSRS, the algorithm Anki uses.
 
-Expertium's blog about spaced repetition, largely focused on FSRS: [https://expertium.github.io/.](https://expertium.github.io/)
+- [Expertium's Blog](https://expertium.github.io/): Articles related to spaced repetition and FSRS, from one of the contributors to FSRS.
+
+## Guides
+
+- [Anki Mastery Course](https://www.theanking.com/anki-mastery-course): A paid-for guide focusing on Anki use in  medical schools.
