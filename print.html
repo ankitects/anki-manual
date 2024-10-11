@@ -3299,6 +3299,7 @@ with an older version that is on AnkiWeb.</p>
 <li><a href="deck-options.html#auto-advance">Auto Advance</a></li>
 <li><a href="deck-options.html#fsrs">FSRS</a>
 <ul>
+<li><a href="deck-options.html#a-short-guide">A Short Guide</a></li>
 <li><a href="deck-options.html#desired-retention">Desired Retention</a></li>
 <li><a href="deck-options.html#fsrs-parameters">FSRS Parameters</a></li>
 <li><a href="deck-options.html#reschedule-cards-on-change">Reschedule Cards on Change</a></li>
@@ -3669,6 +3670,16 @@ one of your clients doesn't support it, things will not work correctly.</li>
 <li>If you previously used the 'custom scheduling' version of FSRS, please make
 sure you clear out the custom scheduling section before enabling FSRS.</li>
 </ul>
+<h3 id="a-short-guide"><a class="header" href="#a-short-guide">A Short Guide</a></h3>
+<ul>
+<li>Enable FSRS under the &quot;FSRS&quot; section, at the bottom of the deck options page. FSRS can only be enabled globally; you cannot enable it for some presets and disable it for others.</li>
+<li>Ensure that all your learning and re-learning steps are shorter than 1d and can be completed on the same day. 23h is not recommended even though it's less than one day because you won't be able to finish this step on the same day as your first review. Steps such as 10m or 30m are good.</li>
+<li>Click the &quot;Optimize&quot; button under the &quot;FSRS parameters&quot; field. If you see a message that says &quot;The FSRS parameters currently appear to be optimal&quot;, that's fine.</li>
+<li>Choose a value of desired retention: the proportion of cards recalled successfully when they are due. <strong>This is the most important setting in FSRS. Higher retention leads to shorter intervals and more reviews per day.</strong> The default is 90%, which offers a good balance of retention and workload. Above 90% the workload increases very quickly, and above 97% the workload can be overwhelming. You can use <a href="deck-options.html#compute-minimum-recommended-retention">&quot;Compute minimum recommended retention&quot;</a> to help you choose the value of desired retention.
+Parameters and desired retention are preset-specific, you can make multiple presets with different parameters and desired retention.</li>
+</ul>
+<p>FSRS can adapt to almost any habit, except for one: pressing &quot;Hard&quot; instead of &quot;Again&quot; when you forget the information. When you press &quot;Hard&quot;, FSRS assumes you have recalled the information correctly (though with hesitation and a lot of mental effort). If you press &quot;Hard&quot; when you have failed to recall the information, all intervals will be unreasonably high. So, if you have this habit, please change it and use &quot;Again&quot; when you forget the information.</p>
+<p>Regarding add-on compatibility, as a general rule of thumb, if an add-on affects intervals and scheduling in some way, it shouldn't be used with FSRS.</p>
 <h3 id="desired-retention"><a class="header" href="#desired-retention">Desired Retention</a></h3>
 <p>Desired retention controls how likely you are to remember cards when they are scheduled for a review.
 The default value of <code>0.90</code> will schedule cards so you have a 90% chance of remembering
