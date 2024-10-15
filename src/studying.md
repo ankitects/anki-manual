@@ -59,7 +59,7 @@ you don’t trust yourself to compare your answer accurately, you can ask
 Anki to [prompt you to type in the answer](templates/fields.md#checking-your-answer) rather than
 just showing it to you.
 
-## How to choose the answer button
+## Answer Buttons
 
 - **Again** should be pressed if your answer is incorrect. If your answer is partially correct, you should be
 strict with yourself: if it would count as a fail in real-life context outside of Anki, then it counts as a fail in Anki as well. 
