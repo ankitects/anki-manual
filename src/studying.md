@@ -53,27 +53,22 @@ you a little while to recall the answer, but as a general rule if you
 can’t answer within about 10 seconds, it’s probably better to move on
 and show the answer than keep struggling to remember.
 
-When the answer is shown, you should compare the answer you thought of
-with the answer which is shown and tell Anki how well you remembered. If
-you don’t trust yourself to compare your answer accurately, you can ask
-Anki to [prompt you to type in the answer](templates/fields.md#checking-your-answer) rather than
-just showing it to you.
-
 ## Answer Buttons
 
-- **Again** should be pressed if your answer is incorrect. If your answer is partially correct, you should be
-strict with yourself: if it would count as a fail in real-life context outside of Anki, then it counts as a fail in Anki as well. 
-You'll typically use this button about 5-20% of the time.
+After the answer is shown, compare the answer you thought of
+with the answer which is shown and select any of the following button.
 
-- **Hard** should be pressed if your answer is correct, but you had doubts about it or it took a long time to recall.
+- **Again**: Select this when your answer is incorrect or when you couldn't recall the answer. If your answer is partially correct, you should be strict with yourself: if it counts as a fail in real-life context outside of Anki, then it counts as a fail in Anki as well. You'll typically use this button about 5-20% of the time. **Keyboard Shortcut**: <kbd>1</kbd>
 
-- **Good** should be pressed if your answer is correct, but it took some mental effort to recall it.
-When Anki is used properly, this should be the most commonly used button. You'll typically use this button about 80-95% of the time.
+- **Hard**: Select this button when your answer is correct, but you had doubts about it or it took a long time to recall. **Keyboard Shortcut**: <kbd>2</kbd>
 
-- **Easy** should be pressed if your answer is correct and it took no mental effort to recall it.
+- **Good**: Select this when your answer is correct, but it took some mental effort to recall it. When Anki is used properly, this should be the most commonly used button. You'll typically use this button about 80-95% of the time. **Keyboard Shortcut**: <kbd>3</kbd>, <kbd>Space</kbd>, <kbd>Enter</kbd>
 
-Simply put, press Again if your answer was not completely correct, and press Hard, Good, or Easy otherwise. If you don't feel confident 
-in your ability to decide precisely how difficult a card is, you can only use Again and Good, which is a perfectly valid way of using Anki.
+- **Easy**: Select this if your answer is correct and it took no mental effort to recall it. **Keyboard Shortcut**: <kbd>4</kbd>
+
+If you find it hard to use four answer buttons, you can also use only **Again** and **Good** buttons. Use **Again** for incorrect answers and use **Good** for correct answers.
+
+The answer buttons show the next time a card will be reviewed again if you select it. To learn about the settings that control the next review intervals, see the topics [New Cards](deck-options.md#new-cards), [Lapses](deck-options.md#lapses) and [Advanced](deck-options.md#advanced) in the Deck Options section.
 
 ## Due Counts
 
@@ -83,10 +78,6 @@ learning (red), and cards to review (green). If you’d prefer not to see the nu
 you can turn them off in Anki’s [preferences.](preferences.md)
 
 ![Due Counts](media/due_counts.png)
-
-When the answer is shown, Anki shows an estimate of the next time a card
-will be shown above each button. If you’d prefer not to see the
-estimates, you can disable them in Anki’s [preferences](preferences.md).
 
 ## Fuzz Factor
 
