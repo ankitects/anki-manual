@@ -161,11 +161,14 @@ For example, let's say that your learning steps are `1m 10m 1d`.
   becomes a review card. The card is shown again after the delay configured by the
   _graduating interval_.
 
-If there’s nothing else to study, Anki will show cards up to 20 minutes
-early by default. The amount of time to look ahead is configurable in
-the [preferences](preferences.md).
+The **Hard** button works differently depending on which step you're on.
 
-For more info on how the steps work, see the [learning](studying.md#learningrelearning-cards) section.
+- When you're on the first step, the **Hard** button shows a delay of `6m`. The `6m` delay is the average of first two steps: `2m 10m`.
+  - Exception: When there's only one learning step, **Hard** button shows a delay 1.5 times that step. This delay is at most 1 day longer than the learning step.
+- When you're on any other step, the **Hard** button repeats that step.
+
+If there’s nothing else to study, Anki will show learning cards up to 20 minutes
+early by default. To turn this off or change the amount of time to look ahead, see [Preferences](preferences.md).
 
 #### Day Boundaries
 
