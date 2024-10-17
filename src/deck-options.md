@@ -135,7 +135,9 @@ make the backlog worse.
 
 ### Limits Start From The Top
 
-By default, the daily limits of a higher-level deck do not apply if you're studying from its subdeck. However, if this option is enabled, the limits will start from the top-level decks instead, which can be useful if you wish to study individual subdecks, while enforcing a total limit on cards for the deck tree. Enabling this option for any preset will affect all decks and presets in your collection.
+By default, the daily limits of a higher-level deck do not apply if you're studying from its subdecks.
+
+If this option is enabled, the limits start from the top-level decks instead, which can be useful if you wish to study individual subdecks, while enforcing a total limit on cards for the deck tree. Note that the limits set on each subdeck will still apply.
 
 ## New Cards
 
