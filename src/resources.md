@@ -24,4 +24,8 @@
 
 ## Templates
 
-- [Prettify](https://github.com/pranavdeshai/anki-prettify#instructions): Collection of customizable Anki flashcard templates with modern and clean themes.
+- [Prettify by Pranav Deshai](https://github.com/pranavdeshai/anki-prettify#instructions): Collection of customizable Anki flashcard templates with modern and clean themes.
+
+- [Programming Templates from Rob](https://github.com/badlydrawnrob/anki#quick-start): Templates created for learning how to code with Anki.
+
+- [Memrise Templates from Eltaurus](https://github.com/Eltaurus-Lt/Anki-Card-Templates?tab=readme-ov-file#-quick-start): This card template recreates the Memrise interface in Anki.
