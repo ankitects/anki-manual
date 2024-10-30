@@ -36,8 +36,10 @@ version, your Anki files will be in your `Documents/Anki` folder.
 
 On **Linux**, recent Anki versions store your data in
 `~/.local/share/Anki2`, or `$XDG_DATA_HOME/Anki2` if you have set a
-custom data path. Older versions of Anki stored your files in
-`~/Documents/Anki` or `~/Anki`.
+custom data path. If you have the **flatpak** version
+your files will be in `~/.var/app/net.ankiweb.Anki/data/Anki2/`.
+Older versions of Anki stored your files in
+`~/Documents/Anki` or `~/Anki`. 
 
 Within the Anki folder, the program-level and profile-level preferences
 are stored in a file called prefs.db.
