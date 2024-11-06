@@ -113,7 +113,10 @@ Note that the forecast graph does not count reviews that are currently
 overdue, so if you have a large backlog, the overdue cards will not be
 displayed.
 
-Daily load is an estimate of the average number of cards to be reviewed daily (assuming review at the scheduled time with no backlog. Daily load = 1/I1 + 1/I2 + 1/I3 +...+ 1/In, where In is the current interval of the n-th card. If a card's interval is less than a day, it counts as 1. If you don't have a backlog, it should be approximately equal to your number of due cards.
+Daily load is an estimate of the average number of cards to be reviewed daily (assuming review at the scheduled time with no backlog. 
+Daily load = 1/I1 + 1/I2 + 1/I3 +...+ 1/In, where In is the current interval of the n-th card. 
+If a card's interval is less than a day, it counts as 1. If you don't have a backlog, daily load should be 
+approximately equal to your number of due cards.
 
 **Calendar**
 This graph shows past card review activity. Hovering the mouse over a specific item
