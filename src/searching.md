@@ -132,15 +132,18 @@ finds notes with no tags.
 finds notes with tags starting with "ani".
 
 `deck:french`\
-find cards in a deck called "French", or its subdecks like "French::Vocab".
+find cards in a deck called "French", or its subdecks. Note that, the search doesn't work if "French" is a subdeck of another deck.
+
+`deck:languages::french`\
+find cards in a deck called "French" when it's a subdeck to "Languages".
 
 `deck:french -deck:french::*`\
 finds cards in "French", but not its subdecks.
 
-`deck:"french vocab"`\
+`deck:"french words"`\
 searching when the deck name has a space.
 
-`"deck:french vocab"`\
+`"deck:french words"`\
 same as earlier.
 
 `deck:filtered`\
