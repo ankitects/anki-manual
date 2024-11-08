@@ -175,7 +175,7 @@ as new notes instead of updating existing ones.
 
 The 'match scope' setting controls how duplicates are identified. When
 'note type' is selected, Anki will identify a duplicate if another note
-with the same notetype has the same first field. When set to 'note type and deck',
+with the same note type has the same first field. When set to 'note type and deck',
 a duplicate will only be flagged if the existing note also happens to be
 in the deck you are importing into.
 
