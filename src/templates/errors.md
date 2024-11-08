@@ -2,7 +2,7 @@
 
 <!-- toc -->
 
-When you save changes to a notetype or export a deck, Anki 2.1.45+ checks
+When you save changes to a note type or export a deck, Anki 2.1.45+ checks
 for some common errors. These errors will cause issues later on when anyone studies
 the affected cards, so Anki won't let you proceed before you have fixed them.
 
@@ -10,12 +10,12 @@ the affected cards, so Anki won't let you proceed before you have fixed them.
 
 Please see [Key Concepts](../getting-started.md#key-concepts) before reading further.
 
-Most of the errors below will require you to modify your notetype/card template. To do so:
+Most of the errors below will require you to modify your note type/card template. To do so:
 
 - Open the Browse screen, and look at the items on the left.
-- Locate the notetype mentioned in error message. You can use the search bar at the top left
+- Locate the note type mentioned in error message. You can use the search bar at the top left
   if necessary.
-- Click on the notetype, to show its cards/notes on the right.
+- Click on the note type, to show its cards/notes on the right.
 - Click the Cards... button at the top of the editing area to open the [templates screen](./intro.md#the-templates-screen).
 
 ## Specific Issues
@@ -138,9 +138,9 @@ a normal notetype, but this was never a use case that was intended to be support
 If you want to combine cloze deletions with regular cards, you may find an add-on
 like the Closet add-on provides some alternatives.
 
-### No Cloze Filter on Cloze Notetype
+### No Cloze Filter on Cloze Note Type
 
-A Cloze notetype's front and back templates should have a [cloze](../editing.md#cloze-deletion)
+A Cloze note type's front and back templates should have a [cloze](../editing.md#cloze-deletion)
 filter. If one is missing, you will need to add it back so that Anki can create cloze cards
 correctly.
 
