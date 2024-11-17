@@ -139,6 +139,7 @@ If you want to combine cloze deletions with regular cards, you may find an add-o
 like the Closet add-on provides some alternatives.
 
 ### No Cloze Filter on Cloze Note Type
+<div id="no-cloze-filter-on-cloze-notetype" />
 
 A Cloze note type's front and back templates should have a [cloze](../editing.md#cloze-deletion)
 filter. If one is missing, you will need to add it back so that Anki can create cloze cards
