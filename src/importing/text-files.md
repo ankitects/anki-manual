@@ -174,8 +174,8 @@ this behaviour, to either ignore duplicates completely, or import them
 as new notes instead of updating existing ones.
 
 The 'match scope' setting controls how duplicates are identified. When
-'notetype' is selected, Anki will identify a duplicate if another note
-with the same notetype has the same first field. When set to 'notetype and deck',
+'note type' is selected, Anki will identify a duplicate if another note
+with the same note type has the same first field. When set to 'note type and deck',
 a duplicate will only be flagged if the existing note also happens to be
 in the deck you are importing into.
 
@@ -205,9 +205,9 @@ You must enable the new importing option in the preferences screen to use this o
 | `html`            | `true`, `false`                                                                            | Determines whether the file is treated as HTML.                                                                 |
 | `tags`            | List of tags, separated by spaces                                                          | Same as [the old syntax](#adding-tags).                                                                         |
 | `columns`         | List of names, separated by the previously set separator                                   | Determines the number of columns and shows their given names when importing.                                    |
-| `notetype`        | Notetype name or id                                                                        | Presets the notetype, if it exists.                                                                             |
+| `notetype`        | Note type name or id                                                                        | Presets the note type, if it exists.                                                                             |
 | `deck`            | Deck name or id                                                                            | Presets the deck, if it exists.                                                                                 |
-| `notetype column` | `1`, `2`, `3`, ...                                                                         | Determines which column contains the notetype name or id of each note, see [Notetype Column](#notetype-column). |
+| `notetype column` | `1`, `2`, `3`, ...                                                                         | Determines which column contains the note type name or id of each note, see [Notetype Column](#notetype-column). |
 | `deck column`     | `1`, `2`, `3`, ...                                                                         | Determines which column contains the deck name or id of each note, see [Deck Column](#deck-column).             |
 | `tags column`     | `1`, `2`, `3`, ...                                                                         | Determines which column contains the tags of each note.                                                         |
 | `guid column`     | `1`, `2`, `3`, ...                                                                         | Determines which column contains the GUID of each note, see [GUID Column](#guid-column).                        |
@@ -216,15 +216,15 @@ Some headers have further implications.
 
 ### Notetype Column
 
-Usually, all notes from a file will be mapped to a single notetype, and you may
-choose which column should be mapped to which field of that notetype.
+Usually, all notes from a file will be mapped to a single note type, and you may
+choose which column should be mapped to which field of that note type.
 
-That changes, if there is a column with notetype names or ids. This allows to
-import notes with different notetypes, and their fields will be mapped implicitly:
+That changes, if there is a column with note type names or ids. This allows to
+import notes with different note types, and their fields will be mapped implicitly:
 The first regular column is used for the first field of any note regardless of
-its notetype, the second regular column for the second field, and so on.
+its note type, the second regular column for the second field, and so on.
 A 'regular column' here being a column that does not contain special information
-like decks, tags, notetypes or GUIDs.
+like decks, tags, note types or GUIDs.
 
 ### Deck Column
 
