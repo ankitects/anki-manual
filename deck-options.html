@@ -359,10 +359,17 @@ until the next day.</li>
 becomes a review card. The card is shown again after the delay configured by the
 <em>graduating interval</em>.</li>
 </ul>
-<p>If there’s nothing else to study, Anki will show cards up to 20 minutes
-early by default. The amount of time to look ahead is configurable in
-the <a href="preferences.html">preferences</a>.</p>
-<p>For more info on how the steps work, see the <a href="studying.html#learningrelearning-cards">learning</a> section.</p>
+<p>The <strong>Hard</strong> button works differently depending on which step you're on.</p>
+<ul>
+<li>When you're on the first step, the <strong>Hard</strong> button shows a delay of <code>6m</code>. The <code>6m</code> delay is the average of first two steps: <code>2m 10m</code>.
+<ul>
+<li>Exception: When there's only one learning step, <strong>Hard</strong> button shows a delay 1.5 times that step. This delay is at most 1 day longer than the learning step.</li>
+</ul>
+</li>
+<li>When you're on any other step, the <strong>Hard</strong> button repeats that step.</li>
+</ul>
+<p>If there’s nothing else to study, Anki will show learning cards up to 20 minutes
+early by default. To turn this off or change the amount of time to look ahead, see <a href="preferences.html">Preferences</a>.</p>
 <h4 id="day-boundaries"><a class="header" href="#day-boundaries">Day Boundaries</a></h4>
 <p>Anki treats small steps and steps that <a href="./preferences.html#review">cross a day boundary</a> differently.
 With small steps, the cards are shown as soon as the delay has passed,
