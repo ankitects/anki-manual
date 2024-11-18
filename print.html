@@ -5354,8 +5354,10 @@ option key while clicking on the Go menu. If you're on an older Anki
 version, your Anki files will be in your <code>Documents/Anki</code> folder.</p>
 <p>On <strong>Linux</strong>, recent Anki versions store your data in
 <code>~/.local/share/Anki2</code>, or <code>$XDG_DATA_HOME/Anki2</code> if you have set a
-custom data path. Older versions of Anki stored your files in
-<code>~/Documents/Anki</code> or <code>~/Anki</code>.</p>
+custom data path. If you are using a third-party <strong>Flatpak</strong> build,
+your files will be in <code>~/.var/app/net.ankiweb.Anki/data/Anki2/</code>.
+Older versions of Anki stored your files in
+<code>~/Documents/Anki</code> or <code>~/Anki</code>. </p>
 <p>Within the Anki folder, the program-level and profile-level preferences
 are stored in a file called prefs.db.</p>
 <p>There is also a separate folder for each profile. The folder contains:</p>
