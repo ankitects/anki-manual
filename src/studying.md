@@ -58,13 +58,21 @@ and show the answer than keep struggling to remember.
 After the answer is shown, compare the answer you thought of
 with the answer which is shown and select any of the following button.
 
-- **Again**: Select this when your answer is incorrect or when you couldn't recall the answer. If your answer is partially correct, you should be strict with yourself: if it counts as a fail in a real-life context outside of Anki, then it counts as a fail in Anki as well. You'll typically use this button about 5-20% of the time. **Keyboard Shortcut**: <kbd>1</kbd>
+- **Again**: Select this when your answer is incorrect or when you couldn't recall the answer. If your answer is partially correct, you should be strict with yourself: if it counts as a fail in a real-life context outside of Anki, then it counts as a fail in Anki as well. You'll typically use this button about 5-20% of the time.
 
-- **Hard**: Select this button when your answer is correct, but you had doubts about it or it took a long time to recall. **Keyboard Shortcut**: <kbd>2</kbd>
+  Keyboard Shortcut: <kbd>1</kbd>
 
-- **Good**: Select this when your answer is correct, but it took some mental effort to recall it. When Anki is used properly, this should be the most commonly used button. You'll typically use this button about 80-95% of the time. **Keyboard Shortcut**: <kbd>3</kbd>, <kbd>Space</kbd>, <kbd>Enter</kbd>
+- **Hard**: Select this button when your answer is correct, but you had doubts about it or it took a long time to recall.
 
-- **Easy**: Select this if your answer is correct and it took no mental effort to recall it. **Keyboard Shortcut**: <kbd>4</kbd>
+  Keyboard Shortcut: <kbd>2</kbd>
+
+- **Good**: Select this when your answer is correct, but it took some mental effort to recall it. When Anki is used properly, this should be the most commonly used button. You'll typically use this button about 80-95% of the time.
+
+  Keyboard Shortcut: <kbd>3</kbd>, <kbd>Space</kbd>, <kbd>Enter</kbd>
+
+- **Easy**: Select this if your answer is correct and it took no mental effort to recall it.
+
+  Keyboard Shortcut: <kbd>4</kbd>
 
 If you find it hard to use four answer buttons, you can also use only **Again** and **Good** buttons. Use **Again** for incorrect answers and use **Good** for correct answers.
 
