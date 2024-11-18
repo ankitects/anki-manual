@@ -171,7 +171,7 @@ after each review.
 Only shown if FSRS is enabled. "Retrievability" is synonymous with "probability of recall".
 
 Estimated total knowledge is the number of cards the user is expected to know today, 
-calculated as the product of average retrievability and the number of cards that have been 
+calculated by multiplying average retrievability by the number of cards that have been 
 reviewed at least once.
 
 **Hourly Breakdown**\
