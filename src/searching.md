@@ -132,7 +132,7 @@ finds notes with no tags.
 finds notes with tags starting with "ani".
 
 `deck:french`\
-find cards in a top-level deck called "French", or its subdecks like "French::Vocab". It will not match subdecks with that name, such as "Languages::French".
+find cards in a top-level deck called "French", or its subdecks like "French::Words". It will not match subdecks with that name, such as "Languages::French".
 
 `deck:french::words`\
 find cards in the "french::words" subdeck.
