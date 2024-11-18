@@ -53,97 +53,30 @@ you a little while to recall the answer, but as a general rule if you
 can’t answer within about 10 seconds, it’s probably better to move on
 and show the answer than keep struggling to remember.
 
-When the answer is shown, you should compare the answer you thought of
-with the answer which is shown and tell Anki how well you remembered. If
-you don’t trust yourself to compare your answer accurately, you can ask
-Anki to [prompt you to type in the answer](templates/fields.md#checking-your-answer) rather than
-just showing it to you.
+## Answer Buttons
 
-## Learning/Relearning Cards
+After the answer is shown, compare the answer you thought of
+with the answer which is shown and select any of the following button.
 
-When learning new cards, or when relearning cards that you have
-forgotten, Anki will show you the cards one or more times to help you
-memorize them. Each time is called a 'learning step'. By default, there
-are two steps: 1 minute and 10 minutes. You can change the number of
-steps and the delays between them in the [deck options](deck-options.md#new-cards).
+- **Again**: Select this when your answer is incorrect or when you couldn't recall the answer. If your answer is partially correct, you should be strict with yourself: if it counts as a fail in a real-life context outside of Anki, then it counts as a fail in Anki as well. You'll typically use this button about 5-20% of the time.
 
-There are four rating buttons when learning:
+  Keyboard Shortcut: <kbd>1</kbd>
 
-- **Again** moves the card back to the first step.
+- **Hard**: Select this button when your answer is correct, but you had doubts about it or it took a long time to recall.
 
-- **Hard** repeats the current step.
-  - If the card is on the first (and the only) step, the delay is 50% larger than the step. But, this delay is at most one day larger than the step.
-  - If the card is on the first step and you have configured more than one step, the delay will be the average of Again and Good, i.e., the average of the first two steps.
-  - If the card is on any subsequent step, Hard repeats the previous delay.
+  Keyboard Shortcut: <kbd>2</kbd>
 
-- **Good** moves the card to the [next step](deck-options.md#learning-steps). If the card was on the final
-  step, the card is converted into a review card (it 'graduates'). By
-  default, once the card has reached the end of the learning steps, the
-  card will be shown again the next day, then at increasingly long delays
-  (see the next section).
+- **Good**: Select this when your answer is correct, but it took some mental effort to recall it. When Anki is used properly, this should be the most commonly used button. You'll typically use this button about 80-95% of the time.
 
-- **Easy** immediately converts the card into a review card. [By default](deck-options.md#easy-interval), the card is shown again 4 days
-  later, and then at increasingly long delays.
+  Keyboard Shortcut: <kbd>3</kbd>, <kbd>Space</kbd>, <kbd>Enter</kbd>
 
-When cards are seen for the first time, they start at step one. This
-means answering **Good** on a card for the first time will show it one
-more time in 10 minutes, and the initial 1 minute step will be skipped.
-If you push **Again**, though, the card will come back in 1 minute.
+- **Easy**: Select this if your answer is correct and it took no mental effort to recall it.
 
-You can use the <kbd>1</kbd>, <kbd>2</kbd>, <kbd>3</kbd> and <kbd>4</kbd> keys on your keyboard to select a particular
-button, where <kbd>1</kbd> is **Again**. Pressing <kbd>Space</kbd> or <kbd>Enter</kbd> will select
-**Good**.
+  Keyboard Shortcut: <kbd>4</kbd>
 
-If there are no other cards to show you, Anki will show learning cards
-again even if their delay has not elapsed completely. If you’d prefer to
-wait the full learning delay, you can change this behaviour in
-[Preferences>Scheduling>Learn Ahead Limit](preferences.md).
+If you find it hard to use four answer buttons, you can also use only **Again** and **Good** buttons. Use **Again** for incorrect answers and use **Good** for correct answers.
 
-## Review Cards
-
-When a card has been previously learnt and is ready to be reviewed
-again, there are four buttons to rate your answer:
-
-- **Again** marks your answer as incorrect and asks Anki to show the card
-  more frequently in the future. The card is said to have 'lapsed'. Please
-  see the [lapses](deck-options.md#lapses) section for more information about how lapsed
-  reviews are handled.
-
-- **Hard** by default, shows the card at a [slightly longer delay](deck-options.md#hard-interval)
-  than last time, and tells Anki to show the card more frequently in the future.
-
-- **Good** tells Anki that the last delay was about right, and the card
-  easiness doesn’t need to be adjusted down or up. At the [default starting easiness](deck-options.md#starting-ease), the card will be shown again approximately 2 1/2 times longer
-  than the previous time, so if you had waited 10 days to see the card
-  previously, the next delay would be about 25 days.
-
-- **Easy** tells Anki you found the delay too short. The card will be
-  scheduled [further into the future than 'Good'](deck-options.md#easy-bonus), and Anki will schedule
-  the card less frequently in the future. Because 'Easy' rapidly increases
-  the delay, it’s best used for only the easiest of cards. Usually you
-  should find yourself answering 'Good' instead.
-
-As with learning cards, you can use <kbd>1</kbd>, <kbd>2</kbd>, <kbd>3</kbd> and <kbd>4</kbd> on the keyboard to select an
-answer. Pressing the <kbd>spacebar</kbd> or <kbd>Enter</kbd> will select **Good**.
-
-See [Deck Options](deck-options.md) and the [FAQ](https://faqs.ankiweb.net/what-spaced-repetition-algorithm.html)
-to learn more about how the algorithm works.
-
-## How to choose the answer button
-
-- **Again** should be pressed if your answer is incorrect. If your answer is partially correct, you should be
-strict with yourself: if it would count as a fail in real-life context outside of Anki, then it counts as a fail in Anki as well. 
-You'll typically use this button about 5-20% of the time.
-
-- **Hard** should be pressed if your answer is correct, but you had doubts about it or it took a long time to recall.
-
-- **Good** should be pressed if your answer is correct, but it took some mental effort to recall it.
-When Anki is used properly, this should be the most commonly used button. You'll typically use this button about 80-95% of the time.
-
-- **Easy** should be pressed if your answer is correct and it took no mental effort to recall it.
-
-Simply put, press Again if your answer was not completely correct, and press Hard, Good, or Easy otherwise. If you don't feel confident 
-in your ability to decide precisely how difficult a card is, you can only use Again and Good, which is a perfectly valid way of using Anki.
+Each answer button shows the next time a card will be reviewed again if you select that button. To learn about the settings that control the next review intervals, see the topics [New Cards](deck-options.md#new-cards), [Lapses](deck-options.md#lapses) and [Advanced](deck-options.md#advanced) in the Deck Options section.
 
 ## Due Counts
 
@@ -153,10 +86,6 @@ learning (red), and cards to review (green). If you’d prefer not to see the nu
 you can turn them off in Anki’s [preferences.](preferences.md)
 
 ![Due Counts](media/due_counts.png)
-
-When the answer is shown, Anki shows an estimate of the next time a card
-will be shown above each button. If you’d prefer not to see the
-estimates, you can disable them in Anki’s [preferences](preferences.md).
 
 ## Fuzz Factor
 
