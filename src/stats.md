@@ -113,6 +113,10 @@ Note that the forecast graph does not count reviews that are currently
 overdue, so if you have a large backlog, the overdue cards will not be
 displayed.
 
+Daily load is an estimate of the average number of cards to be reviewed daily 
+If you don't have a backlog, daily load should be approximately equal to 
+your number of due cards.
+
 **Calendar**
 This graph shows past card review activity. Hovering the mouse over a specific item
 allows you to view the number of revisions made that day. Click on a day of the
@@ -151,9 +155,24 @@ graph than other graphs: rather than changing which cards or period of
 studying is included, it limits how far out the intervals are displayed
 to (so 14-month intervals are not displayed at all on a 1-year graph).
 
-**Card Ease**
+**Card Ease**\
 This graph shows the number of cards that have a specific ease factor.
 Average ease of the selected deck / collection is also displayed here.
+
+**Card Stability**\
+Only shown if FSRS is enabled. Stability is defined as the amount of time required
+for the probability of recall to decrease from 100% to 90%.
+
+**Card Difficulty**\
+Only shown if FSRS is enabled. Difficulty determines how quickly a card's interval grows
+after each review.
+
+**Card Retrievability**\
+Only shown if FSRS is enabled. "Retrievability" is synonymous with "probability of recall".
+
+Estimated total knowledge is the total number of cards you are likely to currently remember, 
+calculated by multiplying average retrievability by the number of cards that have been 
+reviewed at least once.
 
 **Hourly Breakdown**\
 This graph shows what percentage of total reviews you have passed (i.e.,
