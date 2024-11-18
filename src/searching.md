@@ -135,7 +135,7 @@ finds notes with tags starting with "ani".
 find cards in a top-level deck called "French", or its subdecks like "French::Vocab". It will not match subdecks with that name, such as "Languages::French".
 
 `deck:french::words`\
-find cards in a deck called "Words" when it's a subdeck to "French". Don't use `deck:words` as it'll not work.
+find cards in the the "french::words" subdeck.
 
 `deck:french -deck:french::*`\
 finds cards in "French", but not its subdecks.
