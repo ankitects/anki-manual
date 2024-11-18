@@ -58,7 +58,7 @@ and show the answer than keep struggling to remember.
 After the answer is shown, compare the answer you thought of
 with the answer which is shown and select any of the following button.
 
-- **Again**: Select this when your answer is incorrect or when you couldn't recall the answer. If your answer is partially correct, you should be strict with yourself: if it counts as a fail in real-life context outside of Anki, then it counts as a fail in Anki as well. You'll typically use this button about 5-20% of the time. **Keyboard Shortcut**: <kbd>1</kbd>
+- **Again**: Select this when your answer is incorrect or when you couldn't recall the answer. If your answer is partially correct, you should be strict with yourself: if it counts as a fail in a real-life context outside of Anki, then it counts as a fail in Anki as well. You'll typically use this button about 5-20% of the time. **Keyboard Shortcut**: <kbd>1</kbd>
 
 - **Hard**: Select this button when your answer is correct, but you had doubts about it or it took a long time to recall. **Keyboard Shortcut**: <kbd>2</kbd>
 
@@ -68,7 +68,7 @@ with the answer which is shown and select any of the following button.
 
 If you find it hard to use four answer buttons, you can also use only **Again** and **Good** buttons. Use **Again** for incorrect answers and use **Good** for correct answers.
 
-The answer buttons show the next time a card will be reviewed again if you select it. To learn about the settings that control the next review intervals, see the topics [New Cards](deck-options.md#new-cards), [Lapses](deck-options.md#lapses) and [Advanced](deck-options.md#advanced) in the Deck Options section.
+Each answer button shows the next time a card will be reviewed again if you select that button. To learn about the settings that control the next review intervals, see the topics [New Cards](deck-options.md#new-cards), [Lapses](deck-options.md#lapses) and [Advanced](deck-options.md#advanced) in the Deck Options section.
 
 ## Due Counts
 
