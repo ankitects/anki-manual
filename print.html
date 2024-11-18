@@ -3626,7 +3626,7 @@ number, and recommend you keep it lower than <code>0.97</code> and higher than t
 <p>FSRS parameters affect how cards are scheduled. Do not change the parameters manually or copy them from someone else.</p>
 <p><strong>Optimize FSRS Parameters</strong></p>
 <p>The FSRS optimizer uses machine learning to learn your memory patterns and find parameters that best fit your review history. To do this, the optimizer requires several reviews to fine-tune the parameters.</p>
-<p>When you click the Optimize button, FSRS will analyze your review history, and generate parameters that are optimal for your memory and the content you're studying. If you have decks that vary wildly in subjective difficulty, it
+<p>When you click the <strong>Optimize</strong> button, FSRS will analyze your review history, and generate parameters that are optimal for your memory and the content you're studying. If you have decks that vary wildly in subjective difficulty, it
 is recommended to assign them separate presets, as the parameters for easier
 decks will be different from harder decks. There is no need to optimize your
 parameters frequently: once every few months is sufficient.</p>
@@ -5615,6 +5615,9 @@ number of cards due on that day if you don’t study at all until then.
 Note that the forecast graph does not count reviews that are currently
 overdue, so if you have a large backlog, the overdue cards will not be
 displayed.</p>
+<p>Daily load is an estimate of the average number of cards to be reviewed daily 
+If you don't have a backlog, daily load should be approximately equal to 
+your number of due cards.</p>
 <p><strong>Calendar</strong>
 This graph shows past card review activity. Hovering the mouse over a specific item
 allows you to view the number of revisions made that day. Click on a day of the
@@ -5648,9 +5651,20 @@ time below that point. The time scope has a different effect on this
 graph than other graphs: rather than changing which cards or period of
 studying is included, it limits how far out the intervals are displayed
 to (so 14-month intervals are not displayed at all on a 1-year graph).</p>
-<p><strong>Card Ease</strong>
+<p><strong>Card Ease</strong><br />
 This graph shows the number of cards that have a specific ease factor.
 Average ease of the selected deck / collection is also displayed here.</p>
+<p><strong>Card Stability</strong><br />
+Only shown if FSRS is enabled. Stability is defined as the amount of time required
+for the probability of recall to decrease from 100% to 90%.</p>
+<p><strong>Card Difficulty</strong><br />
+Only shown if FSRS is enabled. Difficulty determines how quickly a card's interval grows
+after each review.</p>
+<p><strong>Card Retrievability</strong><br />
+Only shown if FSRS is enabled. &quot;Retrievability&quot; is synonymous with &quot;probability of recall&quot;.</p>
+<p>Estimated total knowledge is the total number of cards you are likely to currently remember, 
+calculated by multiplying average retrievability by the number of cards that have been 
+reviewed at least once.</p>
 <p><strong>Hourly Breakdown</strong><br />
 This graph shows what percentage of total reviews you have passed (i.e.,
 not pressed Again on) during given hours. The larger, darker bars and
