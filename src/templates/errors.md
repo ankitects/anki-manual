@@ -120,23 +120,7 @@ You can add extra fields with the Add Field button.
 If you are using the Cloze note type,
 please make sure you've included one or more cloze deletions in the Text field, e.g. {{c1::some cloze-deleted text}}.
 
-If you're using the type-in-the-answer functionality, please make sure you've included another field on the front side as well.
-
-### Cloze Filter Outside Cloze Notetype
-
-The [cloze](../editing.md#cloze-deletion) filter (as in `{{cloze:Some Field}}`)
-may only be used on the cloze notetype, and on those created by cloning it.
-
-If you get this error, you can remove the cloze filter from the template.
-
-If you have notes with cloze deletions that are using that notetype, you can select
-them in the Browse screen, and use the Change Notetype action to assign them to
-a standard Cloze notetype instead.
-
-Older Anki versions did not complain when you attempted to use cloze deletions on
-a normal notetype, but this was never a use case that was intended to be supported.
-If you want to combine cloze deletions with regular cards, you may find an add-on
-like the Closet add-on provides some alternatives.
+If you're using the type-in-the-answer functionality, please make sure you've included another field on the front side as well. 
 
 ### No Cloze Filter on Cloze Note Type
 <div id="no-cloze-filter-on-cloze-notetype" />
