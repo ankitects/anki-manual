@@ -281,12 +281,14 @@ finds notes with no tags.</p>
 <p><code>tag:ani*</code><br />
 finds notes with tags starting with &quot;ani&quot;.</p>
 <p><code>deck:french</code><br />
-find cards in a deck called &quot;French&quot;, or its subdecks like &quot;French::Vocab&quot;.</p>
+find cards in a top-level deck called &quot;French&quot;, or its subdecks like &quot;French::Words&quot;. It will not match subdecks with that name, such as &quot;Languages::French&quot;.</p>
+<p><code>deck:french::words</code><br />
+find cards in the &quot;French::Words&quot; subdeck.</p>
 <p><code>deck:french -deck:french::*</code><br />
 finds cards in &quot;French&quot;, but not its subdecks.</p>
-<p><code>deck:&quot;french vocab&quot;</code><br />
+<p><code>deck:&quot;french words&quot;</code><br />
 searching when the deck name has a space.</p>
-<p><code>&quot;deck:french vocab&quot;</code><br />
+<p><code>&quot;deck:french words&quot;</code><br />
 same as earlier.</p>
 <p><code>deck:filtered</code><br />
 filtered decks only.</p>
