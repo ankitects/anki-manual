@@ -164,7 +164,7 @@ Only shown if FSRS is enabled. Stability is defined as the amount of time requir
 for the probability of recall to decrease from 100% to 90%.
 
 **Card Difficulty**\
-Only shown if FSRS is enabled. Difficulty determines how quickly the intervals grow
+Only shown if FSRS is enabled. Difficulty determines how quickly a card's interval grows
 after each review.
 
 **Card Retrievability**\
