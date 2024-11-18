@@ -135,7 +135,11 @@ make the backlog worse.
 
 ### Limits Start From The Top
 
-By default, the daily limits of a higher-level deck do not apply if you're studying from its subdeck. However, if this option is enabled, the limits will start from the top-level decks instead, which can be useful if you wish to study individual subdecks, while enforcing a total limit on cards for the deck tree. Enabling this option for any preset will affect all decks and presets in your collection.
+By default, the daily limits of a higher-level deck do not apply if you select one of its subdecks. A parent deck can have a new card limit of 10 cards/day and its subdecks can have a new card limit of 20 cards/day. The limits set on parent deck do not affect the number of new cards you can study from its subdeck.
+
+When this option is enabled, the limits set on higher-level decks also apply to their subdecks when a subdeck is selected. In the previous example, you will be able to study only 10 new cards from the subdecks instead of 20 new cards.
+
+This option can be useful if you wish to study individual subdecks, while enforcing a total limit on cards all the subdecks.
 
 ## New Cards
 
