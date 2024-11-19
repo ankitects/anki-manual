@@ -113,7 +113,7 @@ Note that the forecast graph does not count reviews that are currently
 overdue, so if you have a large backlog, the overdue cards will not be
 displayed.
 
-Daily load is an estimate of the average number of cards to be reviewed daily 
+Daily load is an estimate of the average number of cards to be reviewed daily.
 If you don't have a backlog, daily load should be approximately equal to 
 your number of due cards.
 
