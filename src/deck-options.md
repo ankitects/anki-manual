@@ -144,7 +144,7 @@ This option can be useful if you wish to study individual subdecks, while enforc
 ## New Cards
 
 The options here only affect new cards and
-[learning cards](studying.md#learningrelearning-cards). Once a card
+[learning cards](getting-started.md#card-states). Once a card
 has graduated (that is, gone through all the learning steps), the options in this section no longer apply to the card.
 
 ### Learning Steps
