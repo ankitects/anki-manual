@@ -170,12 +170,10 @@ and the desired retention in the deck preset.
 
 ## Steps & Returning
 
-Please see the section on [learning](studying.md#learningrelearning-cards) as a reminder of how
-steps work.
-
 By default, Anki will use the steps of a card’s home deck. If a new card
 would normally be reviewed twice when being learnt, the same thing will
 happen when you study it in a filtered deck.
+To learn about how (re)learning steps work, see [Deck Options](deck-options.md#learning-steps) section.
 
 Cards return to their home deck when (re)learning is complete. Thus if
 you have 3 learning steps, a new card will return to its home deck upon
