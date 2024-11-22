@@ -484,11 +484,12 @@ Compute minimum recommended retention (CMRR) attempts to find the desired retent
 
 In the latest version of Anki, you can use the simulator to get an estimate of your workload,
 either in reviews per day or in minutes of studying per day.
-'Days to simulate' controls the duration of the simulated study history. 'Additional new cards to simulate' 
+**Days to simulate** controls the duration of the simulated study history. **Additional new cards to simulate** 
 controls whether the simulator should simulate more cards than what already exists under this preset. For example, if you currently have 100 cards under this preset,
-and you set 'Additional new cards to simulate' to 50, the simulator will simulate a total of 150 cards. 'New cards/day' and 'Maximum reviews/day' control
-how many new cards will be learned each day and the maximum number of reviews per day. 'Maximum interval' controls the maximum interval length (in days).
-The simulator relies on your FSRS parameters and cannot be used if FSRS is disabled.
+and you set **Additional new cards to simulate** to 50, the simulator will simulate a total of 150 cards. **New cards/day** and **Maximum reviews/day** control
+how many new cards will be learned each day and the maximum number of reviews per day. **Maximum interval** controls the maximum interval length (in days).
+To make the simulation as realistic as possible, the simulator takes into account real memory states (difficulty, stability, retrievability) of your cards as opposed
+to assuming that you start from zero, which is the assumption in CMRR.
 
 #### Learning and Relearning Steps
 
