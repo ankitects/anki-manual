@@ -368,6 +368,12 @@ Requires Anki 23.12 or later. Auto Advance allows you to automatically take some
 time in **Seconds to show question for** and/or **Seconds to show answer for**. Then, in the
 review screen, use the Auto Advance action from the **More** button to start advancing.
 
+## Easy Days
+
+If you want to spend less time on Anki on some days of the week, such as Sundays, this feature can help you do that.
+After the optimal interval is calculated, it will be adjusted by a small amount to change the due date.
+Note that setting all days to "Reduced" or "Minimum" will result in the same workload as setting all days to "Normal".
+
 ## FSRS
 
 The [Free Spaced Repetition Scheduler (FSRS)](https://github.com/open-spaced-repetition/fsrs4anki/wiki/ABC-of-FSRS) is an alternative to Anki's legacy
@@ -491,6 +497,9 @@ We also recommend you keep the number of learning steps to a minimum. Evidence
 shows that repeating a card multiple times in a single day does not significantly
 contribute to long-term memory, so your time is
 better spent on other cards or a shorter study session.
+
+In the latest version of Anki you can let FSRS control short-term scheduling by leaving the (re)learning steps field empty.
+Note that just because FSRS-5 *can* give you intervals shorter than one day doesn't necessarily mean that it *will*. Your "Again" interval can be 1d or even longer.
 
 #### Add-On Compatibility
 
