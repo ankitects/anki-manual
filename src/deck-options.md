@@ -480,6 +480,16 @@ If you're first switching from SM-2 and still wish to use this option, we recomm
 
 Compute minimum recommended retention (CMRR) attempts to find the desired retention value that leads to the most material learnt, in the least amount of time. The calculated number can serve as a reference when deciding what to set your desired retention to. You may wish to choose a higher desired retention, if you’re willing to trade more study time for a greater retention rate. However, setting your desired retention lower than the minimum is not recommended, as you'll spend more time studying than necessary, due to increased forgetting.
 
+### The Simulator
+
+In the latest version of Anki, you can use the simulator to get an estimate of your workload,
+either in reviews per day or in minutes of studying per day.
+'Days to simulate' controls the duration of the simulated study history. Additional new cards to simulate 
+controls whether the simulator should simulate more cards being created. For example, if you currently have 100 cards under this preset,
+and you set 'Additional new cards to simulate' to 50, the simulator will simulate a total of 150 cards. 'New cards/day' and 'Maximum reviews/day' control
+how many new cards will be learned each day and the maximum number of reviews per day. 'Maximum interval' controls the maximum interval length in days.
+The simulator uses your FSRS parameters and cannot be used if FSRS is disabled.
+
 #### Learning and Relearning Steps
 
 (Re)learning steps of 1 day or greater are not recommended when using FSRS. The main
