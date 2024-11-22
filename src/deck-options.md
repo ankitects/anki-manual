@@ -487,8 +487,8 @@ either in reviews per day or in minutes of studying per day.
 'Days to simulate' controls the duration of the simulated study history. 'Additional new cards to simulate' 
 controls whether the simulator should simulate more cards being created. For example, if you currently have 100 cards under this preset,
 and you set 'Additional new cards to simulate' to 50, the simulator will simulate a total of 150 cards. 'New cards/day' and 'Maximum reviews/day' control
-how many new cards will be learned each day and the maximum number of reviews per day. 'Maximum interval' controls the maximum interval length in days.
-The simulator uses your FSRS parameters and cannot be used if FSRS is disabled.
+how many new cards will be learned each day and the maximum number of reviews per day. 'Maximum interval' controls the maximum interval length (in days).
+The simulator relies on your FSRS parameters and cannot be used if FSRS is disabled.
 
 #### Learning and Relearning Steps
 
