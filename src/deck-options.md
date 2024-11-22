@@ -489,7 +489,7 @@ controls whether the simulator should simulate more cards than what already exis
 and you set **Additional new cards to simulate** to 50, the simulator will simulate a total of 150 cards. **New cards/day** and **Maximum reviews/day** control
 how many new cards will be learned each day and the maximum number of reviews per day. **Maximum interval** controls the maximum interval length (in days).
 To make the simulation as realistic as possible, the simulator takes into account real memory states (difficulty, stability, retrievability) of your cards as opposed
-to assuming that you start from zero, which is the assumption in CMRR.
+to assuming that you start from zero, which is the assumption in CMRR. It also uses your value of desired retention, therefore changing it will affect the simulation.
 
 #### Learning and Relearning Steps
 
