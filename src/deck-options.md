@@ -482,7 +482,7 @@ Compute minimum recommended retention (CMRR) attempts to find the desired retent
 
 ### The Simulator
 
-In the latest version of Anki, you can use the simulator to get an estimate of your workload,
+You can use the simulator to get an estimate of your workload,
 either in reviews per day or in minutes of studying per day.
 **Days to simulate** controls the duration of the simulated study history. **Additional new cards to simulate** 
 controls whether the simulator should simulate more cards than what already exists under this preset. For example, if you currently have 100 cards under this preset,
