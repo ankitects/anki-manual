@@ -511,7 +511,7 @@ contribute to long-term memory, so your time is
 better spent on other cards or a shorter study session.
 
 In the latest version of Anki you can let FSRS control short-term scheduling by leaving the (re)learning steps field empty.
-Note that just because FSRS-5 *can* give you intervals shorter than one day doesn't necessarily mean that it *will*. Your **Again** interval can be one day long or even longer.
+Note that just because FSRS-5 *can* give you intervals shorter than one day doesn't necessarily mean that it *will*. Your **Again** interval can be one day long, or even longer.
 
 #### Add-On Compatibility
 
