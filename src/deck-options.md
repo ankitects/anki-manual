@@ -493,9 +493,8 @@ and you set **Additional new cards to simulate** to 50, the simulator will simul
 the maximum number of reviews per day.
 - **Maximum interval** controls the maximum interval length (in days).
 
-To make the simulation as realistic as possible, the simulator takes into account real memory states (difficulty, stability, retrievability) of your cards as opposed
-to assuming that you start from zero, which is the assumption in CMRR. It also uses your FSRS parameters and the value of desired retention, therefore 
-changing them will affect the simulation.
+To make the simulation as realistic as possible, the simulator takes into account the real memory states (difficulty, stability, retrievability) of your cards. 
+It also uses your FSRS parameters and the value of desired retention, therefore changing them will affect the simulation.
 
 #### Learning and Relearning Steps
 
