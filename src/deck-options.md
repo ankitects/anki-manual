@@ -514,7 +514,7 @@ shows that repeating a card multiple times in a single day does not significantl
 contribute to long-term memory, so your time is
 better spent on other cards or a shorter study session.
 
-In the latest version of Anki you can let FSRS control short-term scheduling by leaving the (re)learning steps field empty.
+In the latest version of Anki you can let FSRS control short-term scheduling by leaving the (re)learning steps field empty. This is an experimental feature.
 Note that just because FSRS-5 *can* give you intervals shorter than one day doesn't necessarily mean that it *will*. Your **Again** interval can be one day long, or even longer.
 
 #### Add-On Compatibility
