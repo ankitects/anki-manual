@@ -374,6 +374,7 @@ If you want to spend less time on Anki on some days of the week, such as Sundays
 After the optimal interval is calculated, it will be adjusted by a small amount to change the due date.
 Note that setting all days to "Reduced" or "Minimum" will result in the same workload as setting all days to "Normal".
 This feature works with both FSRS and the legacy SM-2 algorithm.
+Changing your Easy Days configuration doesn't retroactively change existing intervals and will only affect future intervals. Simply put, you will not see immediate changes in the number of due cards.
 
 ## FSRS
 
