@@ -373,6 +373,7 @@ review screen, use the Auto Advance action from the **More** button to start adv
 If you want to spend less time on Anki on some days of the week, such as Sundays, this feature can help you do that.
 After the optimal interval is calculated, it will be adjusted by a small amount to change the due date.
 Note that setting all days to "Reduced" or "Minimum" will result in the same workload as setting all days to "Normal".
+This feature works with both FSRS and the legacy SM-2 algorithm.
 
 ## FSRS
 
