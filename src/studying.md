@@ -245,18 +245,11 @@ or “on1 ja” would both match a deck called “Japanese::Lesson1”.
 
 ## Falling Behind
 
-If you fall behind in your reviews, Anki will prioritize cards that have
-been waiting the longest. It does this by taking the cards that have
-been waiting the longest and showing them to you in a random order up
-until your daily review limit. This ordering ensures that no cards will
+When you fall behind in your reviews, Anki by default prioritizes cards that have
+been waiting the longest. This ordering ensures that no cards will
 be left waiting indefinitely, but it means that if you introduce new
 cards, their reviews won’t appear until you’ve gotten through your
 backlog.
 
-If you wish to change the order of the overdue reviews, you can do so by
-creating a [filtered deck](filtered-decks.md).
-
 When you answer cards that have been waiting for a while, Anki factors
-in that delay when determining the next time a card should be shown.
-Please see the section on Anki’s spaced-repetition
-[algorithm](https://faqs.ankiweb.net/due-times-after-a-break.html) for more information.
+in that delay when determining the next time a card should be shown. This means if you are returning to Anki after a long break, you don't have to start anew and can just start back from where you left.
