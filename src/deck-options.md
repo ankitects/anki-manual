@@ -368,6 +368,14 @@ Requires Anki 23.12 or later. Auto Advance allows you to automatically take some
 time in **Seconds to show question for** and/or **Seconds to show answer for**. Then, in the
 review screen, use the Auto Advance action from the **More** button to start advancing.
 
+## Easy Days
+
+If you want to spend less time on Anki on some days of the week, such as Sundays, this feature can help you do that.
+After the interval is calculated, it will be adjusted by a small amount to change the due date.
+Note that setting all days to "Reduced" or "Minimum" will result in the same workload as setting all days to "Normal".
+This feature works with both FSRS and the legacy SM-2 algorithm.
+Changing your Easy Days configuration doesn't retroactively change existing intervals and will only affect future intervals. Simply put, you will not see immediate changes in the number of due cards.
+
 ## FSRS
 
 The [Free Spaced Repetition Scheduler (FSRS)](https://github.com/open-spaced-repetition/fsrs4anki/wiki/ABC-of-FSRS) is an alternative to Anki's legacy
@@ -474,6 +482,22 @@ If you're first switching from SM-2 and still wish to use this option, we recomm
 
 Compute minimum recommended retention (CMRR) attempts to find the desired retention value that leads to the most material learnt, in the least amount of time. The calculated number can serve as a reference when deciding what to set your desired retention to. You may wish to choose a higher desired retention, if you’re willing to trade more study time for a greater retention rate. However, setting your desired retention lower than the minimum is not recommended, as you'll spend more time studying than necessary, due to increased forgetting.
 
+### The Simulator
+
+You can use the simulator to get an estimate of your workload,
+either in reviews per day or in minutes of studying per day.
+
+- **Days to simulate** controls the duration of the simulated study history.
+- **Additional new cards to simulate** controls whether the simulator should 
+simulate more cards than this preset already has. For example, if you currently have 100 cards under this preset,
+and you set **Additional new cards to simulate** to 50, the simulator will simulate a total of 150 cards.
+- **New cards/day** and **Maximum reviews/day** control how many new cards will be learned each day and 
+the maximum number of reviews per day.
+- **Maximum interval** controls the maximum interval length (in days).
+
+To make the simulation as realistic as possible, the simulator takes into account the real memory states (difficulty, stability, retrievability) of your cards. 
+It also uses your FSRS parameters and the value of desired retention, therefore changing them will affect the simulation.
+
 #### Learning and Relearning Steps
 
 (Re)learning steps of 1 day or greater are not recommended when using FSRS. The main
@@ -491,6 +515,9 @@ We also recommend you keep the number of learning steps to a minimum. Evidence
 shows that repeating a card multiple times in a single day does not significantly
 contribute to long-term memory, so your time is
 better spent on other cards or a shorter study session.
+
+In the latest version of Anki you can let FSRS control short-term scheduling by leaving the (re)learning steps field empty. This is an experimental feature.
+Note that just because FSRS-5 *can* give you intervals shorter than one day doesn't necessarily mean that it *will*. Your **Again** interval can be one day long, or even longer.
 
 #### Add-On Compatibility
 
