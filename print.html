@@ -3205,13 +3205,15 @@ with an older version that is on AnkiWeb.</p>
 <li><a href="deck-options.html#audio">Audio</a></li>
 <li><a href="deck-options.html#timer">Timer</a></li>
 <li><a href="deck-options.html#auto-advance">Auto Advance</a></li>
+<li><a href="deck-options.html#easy-days">Easy Days</a></li>
 <li><a href="deck-options.html#fsrs">FSRS</a>
 <ul>
 <li><a href="deck-options.html#a-short-guide">A Short Guide</a></li>
 <li><a href="deck-options.html#desired-retention">Desired Retention</a></li>
 <li><a href="deck-options.html#fsrs-parameters">FSRS Parameters</a></li>
 <li><a href="deck-options.html#reschedule-cards-on-change">Reschedule Cards on Change</a></li>
-<li><a href="deck-options.html#compute-minimum-recommended-retention">Compute Minimum Recommended Retention</a>
+<li><a href="deck-options.html#compute-minimum-recommended-retention">Compute Minimum Recommended Retention</a></li>
+<li><a href="deck-options.html#the-simulator">The Simulator</a>
 <ul>
 <li><a href="deck-options.html#learning-and-relearning-steps">Learning and Relearning Steps</a></li>
 <li><a href="deck-options.html#add-on-compatibility">Add-On Compatibility</a></li>
@@ -3572,6 +3574,12 @@ the answer.</li>
 <p>Requires Anki 23.12 or later. Auto Advance allows you to automatically take some actions after a certain amount of time has passed. To use it, you must first set a non-zero
 time in <strong>Seconds to show question for</strong> and/or <strong>Seconds to show answer for</strong>. Then, in the
 review screen, use the Auto Advance action from the <strong>More</strong> button to start advancing.</p>
+<h2 id="easy-days"><a class="header" href="#easy-days">Easy Days</a></h2>
+<p>If you want to spend less time on Anki on some days of the week, such as Sundays, this feature can help you do that.
+After the interval is calculated, it will be adjusted by a small amount to change the due date.
+Note that setting all days to &quot;Reduced&quot; or &quot;Minimum&quot; will result in the same workload as setting all days to &quot;Normal&quot;.
+This feature works with both FSRS and the legacy SM-2 algorithm.
+Changing your Easy Days configuration doesn't retroactively change existing intervals and will only affect future intervals. Simply put, you will not see immediate changes in the number of due cards.</p>
 <h2 id="fsrs"><a class="header" href="#fsrs">FSRS</a></h2>
 <p>The <a href="https://github.com/open-spaced-repetition/fsrs4anki/wiki/ABC-of-FSRS">Free Spaced Repetition Scheduler (FSRS)</a> is an alternative to Anki's legacy
 SuperMemo 2 (SM-2) algorithm. By more accurately determining how much information you are likely
@@ -3653,6 +3661,20 @@ so two decks may have similar RMSE values but very different log-loss values, or
 <p>If you're first switching from SM-2 and still wish to use this option, we recommend you first create a backup, enable FSRS with rescheduling, and then if needed, you can undo or restore from the backup.</p>
 <h3 id="compute-minimum-recommended-retention"><a class="header" href="#compute-minimum-recommended-retention">Compute Minimum Recommended Retention</a></h3>
 <p>Compute minimum recommended retention (CMRR) attempts to find the desired retention value that leads to the most material learnt, in the least amount of time. The calculated number can serve as a reference when deciding what to set your desired retention to. You may wish to choose a higher desired retention, if you’re willing to trade more study time for a greater retention rate. However, setting your desired retention lower than the minimum is not recommended, as you'll spend more time studying than necessary, due to increased forgetting.</p>
+<h3 id="the-simulator"><a class="header" href="#the-simulator">The Simulator</a></h3>
+<p>You can use the simulator to get an estimate of your workload,
+either in reviews per day or in minutes of studying per day.</p>
+<ul>
+<li><strong>Days to simulate</strong> controls the duration of the simulated study history.</li>
+<li><strong>Additional new cards to simulate</strong> controls whether the simulator should 
+simulate more cards than this preset already has. For example, if you currently have 100 cards under this preset,
+and you set <strong>Additional new cards to simulate</strong> to 50, the simulator will simulate a total of 150 cards.</li>
+<li><strong>New cards/day</strong> and <strong>Maximum reviews/day</strong> control how many new cards will be learned each day and 
+the maximum number of reviews per day.</li>
+<li><strong>Maximum interval</strong> controls the maximum interval length (in days).</li>
+</ul>
+<p>To make the simulation as realistic as possible, the simulator takes into account the real memory states (difficulty, stability, retrievability) of your cards. 
+It also uses your FSRS parameters and the value of desired retention, therefore changing them will affect the simulation.</p>
 <h4 id="learning-and-relearning-steps"><a class="header" href="#learning-and-relearning-steps">Learning and Relearning Steps</a></h4>
 <p>(Re)learning steps of 1 day or greater are not recommended when using FSRS. The main
 reason they were popular with the legacy SM-2 algorithm is because repeatedly
@@ -3668,6 +3690,8 @@ showing a longer time than <strong>Good</strong>.</p>
 shows that repeating a card multiple times in a single day does not significantly
 contribute to long-term memory, so your time is
 better spent on other cards or a shorter study session.</p>
+<p>In the latest version of Anki you can let FSRS control short-term scheduling by leaving the (re)learning steps field empty. This is an experimental feature.
+Note that just because FSRS-5 <em>can</em> give you intervals shorter than one day doesn't necessarily mean that it <em>will</em>. Your <strong>Again</strong> interval can be one day long, or even longer.</p>
 <h4 id="add-on-compatibility-3"><a class="header" href="#add-on-compatibility-3">Add-On Compatibility</a></h4>
 <p>Some add-ons can cause conflicts with FSRS. As a general rule of thumb,
 if an add-on affects a card's intervals, it shouldn't be used with FSRS.
