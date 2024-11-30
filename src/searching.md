@@ -367,6 +367,17 @@ cards answered Easy (4) in the last 31 days.
 
 Anki 2.1.39+ supports rating searches over 31 days.
 
+Note that, to search for cards answered at a particular day, `rated:n -rated:(n-1)` might not work every time. Use the following instead:
+
+`prop:rated=0`\
+cards answered today.
+
+`prop:rated=-1`\
+cards answered one day ago.
+
+`prop:rated=-7`\
+cards answered 7 days ago.
+
 ### First Answered
 
 Requires Anki 2.1.45+.
