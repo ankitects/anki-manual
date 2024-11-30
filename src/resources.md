@@ -15,3 +15,17 @@
 ## Guides
 
 - [Anki Mastery Course](https://www.theanking.com/anki-mastery-course): A paid-for guide focusing on Anki use in medical schools.
+
+## Tools
+
+- [Yomitan](https://yomitan.wiki/): Yomitan is a dictionary pop-up that integrates with Anki. You can use this to create Anki cards for langauge learning.
+
+- [Jidoujisho](https://github.com/arianneorpilla/jidoujisho?tab=readme-ov-file): An Android application that allows you to create Anki cards for langauge learning.
+
+## Templates
+
+- [Prettify by Pranav Deshai](https://github.com/pranavdeshai/anki-prettify#instructions): Collection of customizable Anki flashcard templates with modern and clean themes.
+
+- [Programming Templates from Rob](https://github.com/badlydrawnrob/anki#quick-start): Templates created for learning how to code with Anki.
+
+- [Memrise Templates from Eltaurus](https://github.com/Eltaurus-Lt/Anki-Card-Templates?tab=readme-ov-file#-quick-start): This card template recreates the Memrise interface in Anki.
