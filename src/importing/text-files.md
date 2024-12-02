@@ -12,10 +12,6 @@ are met.
 
 - The files must be in UTF-8 format (see below).
 
-- The first line also defines the separating character – if Anki finds
-  a ';' on the first line it will use that, if it finds a comma it’ll
-  use that, etc.
-
 - Anki determines the number of fields in the file by looking at the first
   (non-commented) line. If some of the later records in the file contain fewer
   fields, Anki will treat the missing fields as if they were blank. If some of your
@@ -33,7 +29,7 @@ the one you’ve selected.
 This is an example of a valid file with three fields:
 
     apple;banana;grape
-    some text;other text;yet more text
+    first field;second field;third field
 
 There are two ways to include newlines or the field separator in fields.
 
@@ -60,7 +56,7 @@ file for you, it will automatically take care of escaping double quotes.
     hello; this is<br>a two line answer
     two; this is a one line one
 
-You need to turn on the "allow HTML in fields" checkbox in the import
+You need to turn on the **Allow HTML in fields** in the import
 dialog for HTML newlines to work.
 
 Escaped multi-lines will not work correctly if you are using cloze
@@ -85,11 +81,11 @@ and so on), Anki expects files to be saved in a 'UTF-8 encoding'. The
 easiest way to do this is to use the free LibreOffice spreadsheet
 program instead of Excel to edit your file, as it supports UTF-8 easily,
 and also exports multi-line content properly, unlike Excel. If you wish
-to keep using Excel, please see [this forum post](https://docs.google.com/document/d/12YE_FS6A9ANLTESJNtPP116ti4nNmCBghyoJBRtno_k/edit?usp=sharing)
+to keep using Excel, please see [this docs](https://docs.google.com/document/d/12YE_FS6A9ANLTESJNtPP116ti4nNmCBghyoJBRtno_k/edit?usp=sharing)
 for more information.
 
 To save your spreadsheet to a file Anki can read with LibreOffice, go to
-File&gt;Save As, and then select CSV for the type of file. After
+**File &gt; Save As**, and then select CSV for the type of file. After
 accepting the default options, LibreOffice will save the file and you
 can then import the saved file into Anki.
 
