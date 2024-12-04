@@ -123,9 +123,8 @@ for the numerical position you want the field to have. So if you want to
 change a field to be the new first field, enter "1".
 
 Alternatively you can also drag and drop the field names to re-order them. To do
-that, right-click the field, and while still pressing the right mouse button,
-drag the field to the desired position. An indicator will show you where the
-field will be moved to.
+that, right-click the field, and drag the field to the desired position. An
+indicator will show you where the field will be moved to.
 
 Do not use 'Tags', 'Type', 'Deck', 'Card', or 'FrontSide' as field
 names, as they are [special fields](templates/fields.md#special-fields) and will not work
