@@ -121,7 +121,7 @@ It is calculated as 1/I1 + 1/I2 + 1/I3 + ... + I/In, where In is the interval of
 the n-th card. If the interval is less than one day, the summation term is 1. This
 prevents cards with short intervals from unrealistically skewing the value of daily load.
 Example: you have a card with an interval of 10 days and a card with an interval of 50 days. 
-Daily load = 1/10 + 1/50 = 0.12, meaning that, *on average*, you will have to see 0.12 cards per day.
+Daily load = 1/10 + 1/50 = 0.12, meaning that, *on average*, you will have 0.12 due cards per day.
 
 **Calendar**
 This graph shows past card review activity. Hovering the mouse over a specific item
