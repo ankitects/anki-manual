@@ -124,7 +124,7 @@ the n-th card. If the interval is less than one day, the summation term is 1. Th
 prevents cards with short intervals from unrealistically skewing the value of daily load.
 
 Example: you have a card with an interval of 10 days and a card with an interval of 50 days. 
-Daily load = \\( ]frac{1}{10} + \frac{1}{50} = 0.12 \\), meaning that, *on average*, you will have 0.12 due cards per day.
+Daily load = \\(\frac{1}{10} + \frac{1}{50} = 0.12\\), meaning that, _on average_, you will have 0.12 due cards per day.
 
 **Calendar**
 This graph shows past card review activity. Hovering the mouse over a specific item
