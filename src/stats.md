@@ -119,7 +119,8 @@ your number of due cards.
 
 It is calculated as follows:
 \\[\frac{1}{I_1} + \frac{1}{I_2} + \frac{1}{I_3} + \dots + \frac{1}{I_n}\\]
-where In is the interval of
+
+Here, \\(I_n\\) is the interval of
 the n-th card. If the interval is less than one day, the summation term is 1. This
 prevents cards with short intervals from unrealistically skewing the value of daily load.
 
