@@ -117,7 +117,9 @@ Daily load is an estimate of the average number of cards to be reviewed daily.
 If you don't have a backlog, daily load should be approximately equal to 
 your number of due cards.
 
-It is calculated as 1/I1 + 1/I2 + 1/I3 + ... + I/In, where In is the interval of
+It is calculated as follows:
+\\[\frac{1}{I_1} + \frac{1}{I_2} + \frac{1}{I_3} + \dots + \frac{1}{I_n}\\]
+where In is the interval of
 the n-th card. If the interval is less than one day, the summation term is 1. This
 prevents cards with short intervals from unrealistically skewing the value of daily load.
 Example: you have a card with an interval of 10 days and a card with an interval of 50 days. 
