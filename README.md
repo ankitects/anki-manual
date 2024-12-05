@@ -21,4 +21,4 @@ The following conventions are not consistently applied in the manual. If you fin
 - When defining words or using words as words, use italics, `_` for emphasis.
 - When referring to UI elements, use bold formatting, `**`.
 - When referring to keyboard buttons, wrap them with `<kbd></kbd>`.
-- Use code formatting for example inputs by wrapping them with backticks (`).
+- Use code formatting for example inputs by wrapping it with backticks, `` ` ``.
