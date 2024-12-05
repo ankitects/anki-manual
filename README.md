@@ -17,8 +17,8 @@ submit will be licensed under the [CC BY-SA 4 license](https://creativecommons.o
 
 The following conventions are not consistently applied in the manual. If you find such text, feel free to change it.
 
-- Use double quotes, `""`, instead of single quotes, `''`.
-- When defining words or using words as words, use italics, `_` for emphasis.
+- Use double quotes, `"`, instead of single quotes, `'`.
+- For emphasis, when defining anything or using words as words, use italics, `_`.
 - When referring to UI elements, use bold formatting, `**`.
 - When referring to keyboard buttons, wrap them with `<kbd></kbd>`.
-- Use code formatting for example inputs by wrapping it with backticks, `` ` ``.
+- Use code formatting for example inputs by wrapping them with backticks, `` ` ``.
