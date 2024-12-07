@@ -502,30 +502,38 @@ often be typed on a generic "international keyboard" layout. These work
 by typing the accent, then the character you want accented - e.g. an
 apostrophe (´) then the letter a (a) gives á.
 
-To add the international keyboard on Windows machines, please see
-<https://thegeekpage.com/how-to-add-us-international-keyboard-in-windows-10/>
+### Adding international keyboard layouts
+Instructions on how to use international keyboards vary depending on the operating
+system and desktop environment that you are using. To get started, please see the
+links below.
 
-To add it on Macs, please see
-<http://www.macworld.com/article/1147039/os-x/accentinput.html>
+Windows:
+- <https://thegeekpage.com/how-to-add-us-international-keyboard-in-windows-10/>
+  
+Mac:
+- <http://www.macworld.com/article/1147039/os-x/accentinput.html>
+  
+Linux:
+- Gnome: <https://help.gnome.org/users/gnome-help/stable/tips-specialchars.html.en>
+- KDE Plasma: <https://userbase.kde.org/Tutorials/ComposeKey>
 
-Instructions on how to use international keyboards in Linux vary depending on the desktop
-environment that you are using. If you use Gnome, please see
-<https://help.gnome.org/users/gnome-help/stable/tips-specialchars.html.en>.
-If you use KDE Plasma, please see <https://userbase.kde.org/Tutorials/ComposeKey>.
-
-Keyboards for a specific language are added in a similar way, but we can
+### Adding keyboard layouts for specific languages
+Keyboards for specific languages are added in a similar way, but we can
 not cover them all here. For more information, please try searching
 on the internet for "input Japanese on a mac", "type Chinese on Windows 10", and
 so on.
 
-As an example on typing specific languagues in Linux, please see
-<https://wiki.archlinux.org/title/Input_method> and <https://wiki.debian.org/Keyboard#Modern_strategy>.
-For example, `apt install ibus-anthy` on Debian Linux allows you to type hiragana characters.
+For linux it's best to look at the wiki pages of your distro, e.g.
+[arch linux](https://wiki.archlinux.org/title/Input_method) and
+[debian linux](https://wiki.debian.org/Keyboard#Modern_strategy).
+As an example, `apt install ibus-anthy` on Debian allows you to type hiragana characters.
 
+### Right-to-left languages
 If you are learning a right-to-left language, there are lots of other
-things to consider. Please see [this page](http://dotancohen.com/howto/rtl_right_to_left.html) for more
-information.
+things to consider. Please see [this page](http://dotancohen.com/howto/rtl_right_to_left.html)
+for more information.
 
+### Limitations
 The toolkit on which Anki is built has trouble dealing with a few input
 methods, such as holding down keys to select accented characters on macOS,
 and typing characters by holding down the <kbd>Alt</kbd> key and typing a
