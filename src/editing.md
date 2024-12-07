@@ -488,7 +488,7 @@ can use. Of note:
 While reviewing IO Cards a "Toggle Masks" button will appear just below the image.
 This button will temporary clear all shapes of the note when using "Hide All, Guess One" mode.
 
-## Inputting Non-English Characters and Accents
+## Inputting Non-Latin Characters and Accents
 
 All modern computers have built-in support for typing accents and
 non-english characters, and multiple ways to go about it. The method we
