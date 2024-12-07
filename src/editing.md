@@ -500,7 +500,7 @@ have their own layouts specific to that language.
 European languages that use accents may have their own layout, but can
 often be typed on a generic "international keyboard" layout. These work
 by typing the accent, then the character you want accented - e.g. an
-apostrophe (´) then the letter a (a) gives á.
+apostrophe (<kbd>´</kbd>) then the letter a (<kbd>a</kbd>) gives á.
 
 ### Adding international keyboard layouts
 Instructions on how to use international keyboards vary depending on the operating
