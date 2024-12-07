@@ -508,14 +508,19 @@ To add the international keyboard on Windows machines, please see
 To add it on Macs, please see
 <http://www.macworld.com/article/1147039/os-x/accentinput.html>
 
-To add it on Linux, please see
-<https://wiki.archlinux.org/title/Input_method> or <https://wiki.debian.org/Keyboard#Modern_strategy>.
-For example, `apt install ibus-anthy` on debian allows you to type hiragana characters.
+Instructions on how to use international keyboards in Linux vary depending on the desktop
+environment that you are using. If you use Gnome, please see
+<https://help.gnome.org/users/gnome-help/stable/tips-specialchars.html.en>.
+If you use KDE Plasma, please see <https://userbase.kde.org/Tutorials/ComposeKey>.
 
 Keyboards for a specific language are added in a similar way, but we can
 not cover them all here. For more information, please try searching
 on the internet for "input Japanese on a mac", "type Chinese on Windows 10", and
 so on.
+
+As an example on typing specific languagues in Linux, please see
+<https://wiki.archlinux.org/title/Input_method> and <https://wiki.debian.org/Keyboard#Modern_strategy>.
+For example, `apt install ibus-anthy` on Debian Linux allows you to type hiragana characters.
 
 If you are learning a right-to-left language, there are lots of other
 things to consider. Please see [this page](http://dotancohen.com/howto/rtl_right_to_left.html) for more
