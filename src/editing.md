@@ -131,7 +131,7 @@ reviewing; for that, please see [templates](templates/intro.md).
 
 - **Editing Font** allows you to customize the font and size used when
   editing notes. This is useful if you want to make unimportant
-  information smaller, or increase the size of non-english characters which
+  information smaller, or increase the size of non-latin characters which
   are hard to read. The changes you make here do not affect how cards
   appear when reviewing: to do that, please see the
   [templates](templates/intro.md) section. If you have enabled the "type in the
@@ -491,7 +491,7 @@ This button will temporary clear all shapes of the note when using "Hide All, Gu
 ## Inputting Non-Latin Characters and Accents
 
 All modern computers have built-in support for typing accents and
-non-english characters, and multiple ways to go about it. The method we
+non-latin characters, and multiple ways to go about it. The method we
 recommend is by using a keyboard layout for the language you want to learn.
 
 Languages with a separate script like Japanese, Chinese, Thai, and so on,
