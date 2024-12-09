@@ -10,30 +10,10 @@ The last Anki release that supported macOS 10.10 to 10.13.3 was [Anki 2.1.35-alt
 
 ## Installing
 
-1. Download Anki from <https://apps.ankiweb.net>. See the next section
-   for how to choose between -qt5 and -qt6.
+1. Download Anki from <https://apps.ankiweb.net>.
 2. Save the file to your desktop or downloads folder.
 3. Open it, and drag Anki to your Applications folder or desktop.
 4. Double-click on Anki in the location you placed it.
-
-## Qt5 vs. Qt6
-
-Recent Anki versions come in separate Qt5 and Qt6 variants. The Qt6 version
-is recommended for most users.
-
-Advantages of the Qt6 version:
-
-- Native support for recent Apple Silicon Macs (faster, better battery life).
-- Various bugfixes, including things like better support for less common languages.
-- Security updates. Support for the Qt5 library was discontinued in Nov 2020,
-  meaning that any security flaws discovered since then will remain unfixed.
-
-Disadvantages of the Qt6 version:
-
-- Tabbed windows (e.g in full screen) are no longer possible.
-- Some Mac users have reported that the Intel Qt5 version was faster and
-  more reliable for them.
-- Some add-ons currently only work with the Qt5 version.
 
 ## Upgrading
 

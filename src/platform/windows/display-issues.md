@@ -8,32 +8,7 @@ other options that are faster: _OpenGL_ and _ANGLE_. They are faster, but they
 may not work, or may cause display issues such as missing menubars, blank
 windows, and so on. Which one works best will depend on your computer.
 
-If and how you can change this display method depends on which Anki version you
-are using, more precisely on the version of the used Qt toolkit.
-
-## Qt5
-
-This toolkit is used by all Anki versions prior to 2.1.50.
-Here, the display driver can be adjusted via the Tools>Preferences menu. Make sure
-you restart Anki after adjusting it.
-
-If you’re unable to get to Anki’s preferences screen, and restarting Anki a few
-times does not help, you may need to manually adjust the graphics driver. You
-can do this by starting cmd.exe and typing the following:
-
-```bat
-echo auto > %APPDATA%\Anki2\gldriver
-```
-
-It will not print anything. You can then start Anki again.
-
-The default is `software`; the other two drivers you can try are `angle` and `auto`.
-
-## Qt6
-
-Anki 2.1.50+ is available with the more recent Qt6 toolkit. The new toolkit
-defaults to having graphics acceleration enabled. If you run into display issues,
-you can try switching to software mode via cmd:
+If you run into display issues, you can try switching to software mode via cmd:
 
 ```bat
 echo software > %APPDATA%\Anki2\gldriver6

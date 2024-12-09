@@ -8,7 +8,7 @@ If you start Anki and it fails to appear, without
 any error message, you can try the following:
 
 - Disconnect multiple/external displays.
-- Install the [latest Anki version](https://apps.ankiweb.net/) (try both qt6 and qt5).
+- Install the [latest Anki version](https://apps.ankiweb.net/).
 - Adjust [your decimal separator](https://forums.ankiweb.net/t/windows-update-broke-anki/1822/75), if it is not a period.
 - Install the old [2.1.35-alternate build](https://github.com/ankitects/anki/releases/tag/2.1.35) of Anki.
 
