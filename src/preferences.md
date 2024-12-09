@@ -127,11 +127,6 @@ with "deck:current").
 **Ignore accents in search (slower)**\
 When enabled, simple text searches automatically [ignore accents](./searching.md#ignoring-accentscombining-characters).
 
-### Import/Export
-
-**Legacy import/export handling**\
-If enabled, legacy (pre 2.1.55) import / export code will be used. It is recommended to deactivate this option.
-
 ## Syncing
 
 This tab contains options related to syncing with AnkiWeb.
