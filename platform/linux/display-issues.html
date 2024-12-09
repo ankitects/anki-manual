@@ -148,18 +148,6 @@
                 <div id="content" class="content">
                     <main>
                         <h2 id="display-issues-on-linux"><a class="header" href="#display-issues-on-linux">Display Issues on Linux</a></h2>
-<h3 id="qt5"><a class="header" href="#qt5">Qt5</a></h3>
-<p>Hardware acceleration defaults to off. Enabling it in the preferences screen and
-restarting Anki may make Anki’s interface more responsive, but some users may
-experience missing menubars, blank windows or crashes when it is enabled.
-(Blank windows may also be caused by <a href="./blank-window.html">this problem</a>.)</p>
-<p>You can adjust the display driver in Anki's Preferences screen. We
-recommend you try both settings, and see which one works best for you.</p>
-<p>If you're unable to open Anki, you can adjust the driver in a terminal, by
-writing either <code>auto</code> or <code>software</code> into <code>~/.local/share/Anki2/gldriver</code>. Please
-note that if you’re using nouveau, it is known to be buggy, and it only supports
-software mode.</p>
-<h3 id="qt6"><a class="header" href="#qt6">Qt6</a></h3>
 <p>Hardware acceleration defaults to on. If you experience blank screens
 or display issues, you can try enabling software rendering using the terminal:</p>
 <pre><code>echo software &gt; ~/.local/share/Anki2/gldriver6

@@ -332,7 +332,6 @@ subsections in the table of contents.</p>
 <ul>
 <li><a href="platform/windows/installing.html#requirements">Requirements</a></li>
 <li><a href="platform/windows/installing.html#installing">Installing</a></li>
-<li><a href="platform/windows/installing.html#qt5-vs-qt6">Qt5 vs. Qt6</a></li>
 <li><a href="platform/windows/installing.html#upgrading">Upgrading</a></li>
 <li><a href="platform/windows/installing.html#add-on-compatibility">Add-on Compatibility</a></li>
 <li><a href="platform/windows/installing.html#problems">Problems</a></li>
@@ -348,30 +347,13 @@ subsections in the table of contents.</p>
 <h2 id="installing"><a class="header" href="#installing">Installing</a></h2>
 <p>To install Anki:</p>
 <ol>
-<li>Download Anki from <a href="https://apps.ankiweb.net">https://apps.ankiweb.net</a>. See the next section
-for how to choose between -qt5 and -qt6.</li>
+<li>Download Anki from <a href="https://apps.ankiweb.net">https://apps.ankiweb.net</a>.</li>
 <li>Save the installer to your desktop or downloads folder.</li>
 <li>Double-click on the installer to run it. If you see an error
 message, please see the <a href="platform/windows/installation-issues.html">installation issues page</a>.</li>
 <li>Once Anki is installed, double-click on the new star icon on your
 desktop to start Anki.</li>
 </ol>
-<h2 id="qt5-vs-qt6"><a class="header" href="#qt5-vs-qt6">Qt5 vs. Qt6</a></h2>
-<p>Recent Anki versions come in separate Qt5 and Qt6 variants. The Qt6 version is
-recommended for most users.</p>
-<p>Advantages of the Qt6 version:</p>
-<ul>
-<li>Various bugfixes, including things like better support for less common languages.</li>
-<li>Very large images load faster than the Qt5 version.</li>
-<li>Security updates. Support for the Qt5 library was discontinued in Nov 2020,
-meaning that any security flaws discovered since then will remain unfixed.</li>
-<li>Some users experience freezes when using <a href="https://github.com/ankitects/anki/issues/1105">a custom shortcut key to switch input languages</a>
-in Qt5.</li>
-</ul>
-<p>Disadvantages of the Qt6 version:</p>
-<ul>
-<li>Some add-ons currently only work with the Qt5 version.</li>
-</ul>
 <h2 id="upgrading"><a class="header" href="#upgrading">Upgrading</a></h2>
 <p>If upgrading from Anki 2.1.6+, there is no need to uninstall the previous
 version first. All you need to do is close Anki if it is open, and then follow
@@ -433,7 +415,7 @@ with app installation, please use <a href="https://www.tekrevue.com/tip/windows-
 any error message, you can try the following:</p>
 <ul>
 <li>Disconnect multiple/external displays.</li>
-<li>Install the <a href="https://apps.ankiweb.net/">latest Anki version</a> (try both qt6 and qt5).</li>
+<li>Install the <a href="https://apps.ankiweb.net/">latest Anki version</a>.</li>
 <li>Adjust <a href="https://forums.ankiweb.net/t/windows-update-broke-anki/1822/75">your decimal separator</a>, if it is not a period.</li>
 <li>Install the old <a href="https://github.com/ankitects/anki/releases/tag/2.1.35">2.1.35-alternate build</a> of Anki.</li>
 </ul>
@@ -496,8 +478,6 @@ two remaining options:</p>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="windows-display-issues"><a class="header" href="#windows-display-issues">Windows display issues</a></h1>
 <ul>
-<li><a href="platform/windows/display-issues.html#qt5">Qt5</a></li>
-<li><a href="platform/windows/display-issues.html#qt6">Qt6</a></li>
 <li><a href="platform/windows/display-issues.html#full-screen">Full screen</a></li>
 </ul>
 <p>On Windows, there are three ways of content being displayed on screen. The
@@ -505,23 +485,7 @@ default is <em>software</em>, which is slower, but the most compatible. There ar
 other options that are faster: <em>OpenGL</em> and <em>ANGLE</em>. They are faster, but they
 may not work, or may cause display issues such as missing menubars, blank
 windows, and so on. Which one works best will depend on your computer.</p>
-<p>If and how you can change this display method depends on which Anki version you
-are using, more precisely on the version of the used Qt toolkit.</p>
-<h2 id="qt5"><a class="header" href="#qt5">Qt5</a></h2>
-<p>This toolkit is used by all Anki versions prior to 2.1.50.
-Here, the display driver can be adjusted via the Tools&gt;Preferences menu. Make sure
-you restart Anki after adjusting it.</p>
-<p>If you’re unable to get to Anki’s preferences screen, and restarting Anki a few
-times does not help, you may need to manually adjust the graphics driver. You
-can do this by starting cmd.exe and typing the following:</p>
-<pre><code class="language-bat">echo auto &gt; %APPDATA%\Anki2\gldriver
-</code></pre>
-<p>It will not print anything. You can then start Anki again.</p>
-<p>The default is <code>software</code>; the other two drivers you can try are <code>angle</code> and <code>auto</code>.</p>
-<h2 id="qt6"><a class="header" href="#qt6">Qt6</a></h2>
-<p>Anki 2.1.50+ is available with the more recent Qt6 toolkit. The new toolkit
-defaults to having graphics acceleration enabled. If you run into display issues,
-you can try switching to software mode via cmd:</p>
+<p>If you run into display issues, you can try switching to software mode via cmd:</p>
 <pre><code class="language-bat">echo software &gt; %APPDATA%\Anki2\gldriver6
 </code></pre>
 <p>Or you can do it via PowerShell:</p>
@@ -603,7 +567,6 @@ setting.</p>
 <ul>
 <li><a href="platform/mac/installing.html#requirements">Requirements</a></li>
 <li><a href="platform/mac/installing.html#installing">Installing</a></li>
-<li><a href="platform/mac/installing.html#qt5-vs-qt6">Qt5 vs. Qt6</a></li>
 <li><a href="platform/mac/installing.html#upgrading">Upgrading</a></li>
 <li><a href="platform/mac/installing.html#homebrew">Homebrew</a></li>
 <li><a href="platform/mac/installing.html#add-on-compatibility">Add-on Compatibility</a></li>
@@ -614,29 +577,11 @@ setting.</p>
 <p>The last Anki release that supported macOS 10.10 to 10.13.3 was <a href="https://github.com/ankitects/anki/releases/tag/2.1.35">Anki 2.1.35-alternate</a>. If you're on an old machine, you can obtain the old version from the <a href="https://github.com/ankitects/anki/releases">releases page</a>.</p>
 <h2 id="installing-1"><a class="header" href="#installing-1">Installing</a></h2>
 <ol>
-<li>Download Anki from <a href="https://apps.ankiweb.net">https://apps.ankiweb.net</a>. See the next section
-for how to choose between -qt5 and -qt6.</li>
+<li>Download Anki from <a href="https://apps.ankiweb.net">https://apps.ankiweb.net</a>.</li>
 <li>Save the file to your desktop or downloads folder.</li>
 <li>Open it, and drag Anki to your Applications folder or desktop.</li>
 <li>Double-click on Anki in the location you placed it.</li>
 </ol>
-<h2 id="qt5-vs-qt6-1"><a class="header" href="#qt5-vs-qt6-1">Qt5 vs. Qt6</a></h2>
-<p>Recent Anki versions come in separate Qt5 and Qt6 variants. The Qt6 version
-is recommended for most users.</p>
-<p>Advantages of the Qt6 version:</p>
-<ul>
-<li>Native support for recent Apple Silicon Macs (faster, better battery life).</li>
-<li>Various bugfixes, including things like better support for less common languages.</li>
-<li>Security updates. Support for the Qt5 library was discontinued in Nov 2020,
-meaning that any security flaws discovered since then will remain unfixed.</li>
-</ul>
-<p>Disadvantages of the Qt6 version:</p>
-<ul>
-<li>Tabbed windows (e.g in full screen) are no longer possible.</li>
-<li>Some Mac users have reported that the Intel Qt5 version was faster and
-more reliable for them.</li>
-<li>Some add-ons currently only work with the Qt5 version.</li>
-</ul>
 <h2 id="upgrading-1"><a class="header" href="#upgrading-1">Upgrading</a></h2>
 <p>To upgrade, close Anki if it is open, and then follow the steps above. Drag
 the Anki icon into the same location you previously stored it, and when prompted,
@@ -686,7 +631,6 @@ remove that file.</p>
 <ul>
 <li><a href="platform/linux/installing.html#requirements">Requirements</a></li>
 <li><a href="platform/linux/installing.html#installing">Installing</a></li>
-<li><a href="platform/linux/installing.html#qt5-vs-qt6">Qt5 vs. Qt6</a></li>
 <li><a href="platform/linux/installing.html#upgrading">Upgrading</a></li>
 <li><a href="platform/linux/installing.html#add-on-compatibility">Add-on Compatibility</a></li>
 <li><a href="platform/linux/installing.html#problems">Problems</a></li>
@@ -707,8 +651,7 @@ installing:</p>
 <h2 id="installing-2"><a class="header" href="#installing-2">Installing</a></h2>
 <p>To install Anki:</p>
 <ol>
-<li>Download Anki from <a href="https://apps.ankiweb.net">https://apps.ankiweb.net</a> to your Downloads folder. See the next section
-for how to choose between -qt5 and -qt6.</li>
+<li>Download Anki from <a href="https://apps.ankiweb.net">https://apps.ankiweb.net</a> to your Downloads folder.</li>
 <li>If zstd is not already installed on your system, you'll need to install it (e.g <code>sudo apt install zstd</code>).</li>
 <li>Open a terminal and run the following commands, replacing the filename as appropriate.</li>
 </ol>
@@ -721,22 +664,6 @@ sudo ./install.sh
 <li>You can then start Anki by typing 'anki' and hitting enter. If you encounter
 any issues, please see the links on the left.</li>
 </ol>
-<h2 id="qt5-vs-qt6-2"><a class="header" href="#qt5-vs-qt6-2">Qt5 vs. Qt6</a></h2>
-<p>Recent Anki versions come in separate Qt5 and Qt6 variants. The Qt6 version
-is recommended for most users.</p>
-<p>Advantages of the Qt6 version:</p>
-<ul>
-<li>Compatibility with recent glibc versions (fixes <a href="platform/linux/./blank-window.html">blank screens on recent distros</a>).</li>
-<li>Better HiDPI support.</li>
-<li>Better Wayland support.</li>
-<li>Various bugfixes, including things like better support for less common languages.</li>
-<li>Security updates. Support for the Qt5 library was discontinued in Nov 2020,
-meaning that any security flaws discovered since then will remain unfixed.</li>
-</ul>
-<p>Disadvantages of the Qt6 version include:</p>
-<ul>
-<li>Some add-ons currently only work with the Qt5 version.</li>
-</ul>
 <h2 id="upgrading-2"><a class="header" href="#upgrading-2">Upgrading</a></h2>
 <p>If you were running Anki from a .deb/.rpm/etc in the past, please make
 sure to remove the system version before installing the package
@@ -772,18 +699,6 @@ following command line, which should reveal a missing library:</p>
 <p>After installing the library with apt-get or similar, repeat the process. You
 may need to do this a few times before all required libraries are installed.</p>
 <div style="break-before: page; page-break-before: always;"></div><h2 id="display-issues-on-linux"><a class="header" href="#display-issues-on-linux">Display Issues on Linux</a></h2>
-<h3 id="qt5-1"><a class="header" href="#qt5-1">Qt5</a></h3>
-<p>Hardware acceleration defaults to off. Enabling it in the preferences screen and
-restarting Anki may make Anki’s interface more responsive, but some users may
-experience missing menubars, blank windows or crashes when it is enabled.
-(Blank windows may also be caused by <a href="platform/linux/./blank-window.html">this problem</a>.)</p>
-<p>You can adjust the display driver in Anki's Preferences screen. We
-recommend you try both settings, and see which one works best for you.</p>
-<p>If you're unable to open Anki, you can adjust the driver in a terminal, by
-writing either <code>auto</code> or <code>software</code> into <code>~/.local/share/Anki2/gldriver</code>. Please
-note that if you’re using nouveau, it is known to be buggy, and it only supports
-software mode.</p>
-<h3 id="qt6-1"><a class="header" href="#qt6-1">Qt6</a></h3>
 <p>Hardware acceleration defaults to on. If you experience blank screens
 or display issues, you can try enabling software rendering using the terminal:</p>
 <pre><code>echo software &gt; ~/.local/share/Anki2/gldriver6

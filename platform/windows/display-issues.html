@@ -149,8 +149,6 @@
                     <main>
                         <h1 id="windows-display-issues"><a class="header" href="#windows-display-issues">Windows display issues</a></h1>
 <ul>
-<li><a href="#qt5">Qt5</a></li>
-<li><a href="#qt6">Qt6</a></li>
 <li><a href="#full-screen">Full screen</a></li>
 </ul>
 <p>On Windows, there are three ways of content being displayed on screen. The
@@ -158,23 +156,7 @@ default is <em>software</em>, which is slower, but the most compatible. There ar
 other options that are faster: <em>OpenGL</em> and <em>ANGLE</em>. They are faster, but they
 may not work, or may cause display issues such as missing menubars, blank
 windows, and so on. Which one works best will depend on your computer.</p>
-<p>If and how you can change this display method depends on which Anki version you
-are using, more precisely on the version of the used Qt toolkit.</p>
-<h2 id="qt5"><a class="header" href="#qt5">Qt5</a></h2>
-<p>This toolkit is used by all Anki versions prior to 2.1.50.
-Here, the display driver can be adjusted via the Tools&gt;Preferences menu. Make sure
-you restart Anki after adjusting it.</p>
-<p>If you’re unable to get to Anki’s preferences screen, and restarting Anki a few
-times does not help, you may need to manually adjust the graphics driver. You
-can do this by starting cmd.exe and typing the following:</p>
-<pre><code class="language-bat">echo auto &gt; %APPDATA%\Anki2\gldriver
-</code></pre>
-<p>It will not print anything. You can then start Anki again.</p>
-<p>The default is <code>software</code>; the other two drivers you can try are <code>angle</code> and <code>auto</code>.</p>
-<h2 id="qt6"><a class="header" href="#qt6">Qt6</a></h2>
-<p>Anki 2.1.50+ is available with the more recent Qt6 toolkit. The new toolkit
-defaults to having graphics acceleration enabled. If you run into display issues,
-you can try switching to software mode via cmd:</p>
+<p>If you run into display issues, you can try switching to software mode via cmd:</p>
 <pre><code class="language-bat">echo software &gt; %APPDATA%\Anki2\gldriver6
 </code></pre>
 <p>Or you can do it via PowerShell:</p>
