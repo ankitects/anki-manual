@@ -41,7 +41,7 @@ top of the main window, or by pressing <kbd>T</kbd>.
 
 ## Selecting Decks / Collection
 
-### Deck.
+### Deck
 
 By default, the statistics window will show statistics from the currently selected deck and any
 subdecks it may contain, but you can select any deck from your collection by typing its name in the
@@ -114,8 +114,18 @@ overdue, so if you have a large backlog, the overdue cards will not be
 displayed.
 
 Daily load is an estimate of the average number of cards to be reviewed daily.
-If you don't have a backlog, daily load should be approximately equal to 
+If you don't have a backlog, daily load should be approximately equal to
 your number of due cards.
+
+It is calculated as follows:
+\\[\frac{1}{I_1} + \frac{1}{I_2} + \frac{1}{I_3} + \dots + \frac{1}{I_n}\\]
+
+Here, \\(I_n\\) is the interval of
+the n-th card. If the interval is less than one day, the summation term is 1. This
+prevents cards with short intervals from unrealistically skewing the value of daily load.
+
+Example: you have a card with an interval of 10 days and a card with an interval of 50 days.
+Daily load = \\(\frac{1}{10} + \frac{1}{50} = 0.12\\), meaning that, _on average_, you will have 0.12 due cards per day.
 
 **Calendar**
 This graph shows past card review activity. Hovering the mouse over a specific item
@@ -170,8 +180,8 @@ after each review.
 **Card Retrievability**\
 Only shown if FSRS is enabled. "Retrievability" is synonymous with "probability of recall".
 
-Estimated total knowledge is the total number of cards you are likely to currently remember, 
-calculated by multiplying average retrievability by the number of cards that have been 
+Estimated total knowledge is the total number of cards you are likely to currently remember,
+calculated by multiplying average retrievability by the number of cards that have been
 reviewed at least once.
 
 **Hourly Breakdown**\
