@@ -523,12 +523,12 @@ not cover them all here. For more information, please try searching
 on the internet for "input Japanese on a mac", "type Chinese on Windows 10", and
 so on.
 
-For linux it's best to look at the wiki pages of your distro, e.g.
-[arch linux](https://wiki.archlinux.org/title/Input_method) and
-[debian linux](https://wiki.debian.org/Keyboard#Modern_strategy).
+For Linux it's best to look at the wiki pages of your distro, e.g.
+[Arch Linux](https://wiki.archlinux.org/title/Input_method) and
+[Debian Linux](https://wiki.debian.org/Keyboard#Modern_strategy).
 As an example, `apt install ibus-anthy` on Debian allows you to type hiragana characters.
 
-### Right-to-left languages
+### Right-to-left Languages
 If you are learning a right-to-left language, there are lots of other
 things to consider. Please see [this page](http://dotancohen.com/howto/rtl_right_to_left.html)
 for more information.
