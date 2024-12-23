@@ -3691,7 +3691,36 @@ the <strong>New Interval</strong> to 0.20, the new interval would be 20 days.</p
 <p>While preserving part of the interval may seem to make sense, SuperMemo has observed
 that preserving part of the delay can actually <a href="https://supermemo.guru/wiki/Post-lapse_stability">be counter-productive</a>. For this reason, we recommend you leave it on the default setting.</p>
 <h3 id="custom-scheduling"><a class="header" href="#custom-scheduling">Custom Scheduling</a></h3>
-<p>Please see <a href="https://faqs.ankiweb.net/the-2021-scheduler.html#add-ons-and-custom-scheduling">this page</a>.</p>
+<p>You can have more control over Anki's scheduling of cards by using your own JavaScript in the custom scheduling field. This is a global option, so code entered here applies to every preset.</p>
+<p>Here is an example custom scheduling script. Note that, for Qt5 versions of Anki, the code needs to be transpiled.</p>
+<pre><code class="language-javascript">// print the existing states
+console.log(
+  JSON.stringify(states, null, 4)
+);
+
+// load the debugger if the web inspector is open
+debugger;
+
+// if the hard button is a learning step, make it
+// a 123 minute delay
+if (states.hard.normal?.learning) {
+  states.hard.normal.learning.scheduledSecs = 123 * 60;
+}
+
+// apply the same change in a rescheduling filtered deck
+if (states.hard.filtered?.rescheduling?.originalState?.learning) {
+  states.hard.filtered.rescheduling.originalState.learning.scheduledSecs =
+    123 * 60;
+}
+
+// increase ease factor by 0.2 when Easy used on a review
+if (states.good.normal?.review) {
+  states.easy.normal.review.easeFactor =
+    states.good.normal.review.easeFactor + 0.2;
+}
+</code></pre>
+<p>You can also see <a href="https://github.com/open-spaced-repetition/fsrs4anki/blob/main/fsrs4anki_scheduler.js">FSRS custom scheduling code</a> as an example.</p>
+<p>The various scheduling states of cards are described in <a href="https://github.com/ankitects/anki/blob/main/proto/anki/scheduler.proto">SchedulingStates</a>.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="syncing-with-ankiweb"><a class="header" href="#syncing-with-ankiweb">Syncing with AnkiWeb</a></h1>
 <ul>
 <li><a href="syncing.html#intro-videos">Intro Videos</a></li>
