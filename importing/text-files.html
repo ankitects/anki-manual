@@ -155,7 +155,6 @@
 <li><a href="#html">HTML</a></li>
 <li><a href="#importing-media">Importing Media</a></li>
 <li><a href="#bulk-media">Bulk Media</a></li>
-<li><a href="#adding-tags">Adding Tags</a></li>
 <li><a href="#duplicates-and-updating">Duplicates and Updating</a></li>
 <li><a href="#file-headers">File Headers</a>
 <ul>
@@ -178,11 +177,6 @@ file first.</p>
 <p>The files must be in UTF-8 format (see below).</p>
 </li>
 <li>
-<p>The first line also defines the separating character – if Anki finds
-a ';' on the first line it will use that, if it finds a comma it’ll
-use that, etc.</p>
-</li>
-<li>
 <p>Anki determines the number of fields in the file by looking at the first
 (non-commented) line. If some of the later records in the file contain fewer
 fields, Anki will treat the missing fields as if they were blank. If some of your
@@ -198,7 +192,7 @@ or more of your templates, the cards will go to that deck rather than
 the one you’ve selected.</p>
 <p>This is an example of a valid file with three fields:</p>
 <pre><code>apple;banana;grape
-some text;other text;yet more text
+first field;second field;third field
 </code></pre>
 <p>There are two ways to include newlines or the field separator in fields.</p>
 <p><strong>Escape the characters by placing the contents of the field in
@@ -220,7 +214,7 @@ file for you, it will automatically take care of escaping double quotes.</p>
 <pre><code>hello; this is&lt;br&gt;a two line answer
 two; this is a one line one
 </code></pre>
-<p>You need to turn on the &quot;allow HTML in fields&quot; checkbox in the import
+<p>You need to turn on the <strong>Allow HTML in fields</strong> in the import
 dialog for HTML newlines to work.</p>
 <p>Escaped multi-lines will not work correctly if you are using cloze
 deletions that span multiple lines. In this case, please use HTML
@@ -240,10 +234,10 @@ and so on), Anki expects files to be saved in a 'UTF-8 encoding'. The
 easiest way to do this is to use the free LibreOffice spreadsheet
 program instead of Excel to edit your file, as it supports UTF-8 easily,
 and also exports multi-line content properly, unlike Excel. If you wish
-to keep using Excel, please see <a href="https://docs.google.com/document/d/12YE_FS6A9ANLTESJNtPP116ti4nNmCBghyoJBRtno_k/edit?usp=sharing">this forum post</a>
+to keep using Excel, please see <a href="https://docs.google.com/document/d/12YE_FS6A9ANLTESJNtPP116ti4nNmCBghyoJBRtno_k/edit?usp=sharing">this doc</a>
 for more information.</p>
 <p>To save your spreadsheet to a file Anki can read with LibreOffice, go to
-File&gt;Save As, and then select CSV for the type of file. After
+<strong>File &gt; Save As</strong>, and then select CSV for the type of file. After
 accepting the default options, LibreOffice will save the file and you
 can then import the saved file into Anki.</p>
 <h2 id="html"><a class="header" href="#html">HTML</a></h2>
@@ -295,11 +289,6 @@ you select, with the filenames on the front (minus the file extension,
 so if you have a file named apple.jpg, the front would say 'apple') and
 the images or audio on the back. If you would like a different
 arrangement of media and filenames, you can <a href="../browsing.html">change the note type</a> of the created cards afterwards.</p>
-<h2 id="adding-tags"><a class="header" href="#adding-tags">Adding Tags</a></h2>
-<p>If you want to add 'tag1' and 'tag2' to every line you’re importing, add
-the following to the top of the text file:</p>
-<pre><code>tags:tag1 tag2
-</code></pre>
 <h2 id="duplicates-and-updating"><a class="header" href="#duplicates-and-updating">Duplicates and Updating</a></h2>
 <p>When importing text files, Anki uses the first field to determine if a
 note is unique. By default, if the file you are importing has a first
@@ -324,15 +313,11 @@ scheduling information on all their cards will be preserved.</p>
 <h2 id="file-headers"><a class="header" href="#file-headers">File Headers</a></h2>
 <p>Anki 2.1.54+ supports certain headers that can be included in the text file to
 make importing more powerful or convenient. They consist of <code>#key:value</code> pairs
-and must be listed in separate lines at the top of the file, though the <a href="#adding-tags">tags line</a>
-may precede them. Since header lines start with the comment character <code>#</code>, earlier
-Anki clients will just ignore them.</p>
-<p>You must enable the new importing option in the preferences screen to use this on
-2.1.54. On 2.1.55, the new importing path is the default.</p>
+and must be listed in separate lines at the top of the file.</p>
 <div class="table-wrapper"><table><thead><tr><th>Key</th><th>Allowed Values</th><th>Behaviour</th></tr></thead><tbody>
 <tr><td><code>separator</code></td><td><code>Comma</code>, <code>Semicolon</code>, <code>Tab</code>, <code>Space</code>, <code>Pipe</code>, <code>Colon</code>, or the according literal characters</td><td>Determines the field separator.</td></tr>
 <tr><td><code>html</code></td><td><code>true</code>, <code>false</code></td><td>Determines whether the file is treated as HTML.</td></tr>
-<tr><td><code>tags</code></td><td>List of tags, separated by spaces</td><td>Same as <a href="#adding-tags">the old syntax</a>.</td></tr>
+<tr><td><code>tags</code></td><td>List of tags, separated by spaces</td><td>Adds the listed tags to every imported note.</td></tr>
 <tr><td><code>columns</code></td><td>List of names, separated by the previously set separator</td><td>Determines the number of columns and shows their given names when importing.</td></tr>
 <tr><td><code>notetype</code></td><td>Note type name or id</td><td>Presets the note type, if it exists.</td></tr>
 <tr><td><code>deck</code></td><td>Deck name or id</td><td>Presets the deck, if it exists.</td></tr>
@@ -344,13 +329,12 @@ Anki clients will just ignore them.</p>
 </div>
 <p>Some headers have further implications.</p>
 <h3 id="notetype-column"><a class="header" href="#notetype-column">Notetype Column</a></h3>
-<p>Usually, all notes from a file will be mapped to a single note type, and you may
-choose which column should be mapped to which field of that note type.</p>
-<p>That changes, if there is a column with note type names or ids. This allows to
+<p>Usually, all notes from a file will be mapped to a single note type. That changes, if there is a column with note type names or ids. </p>
+<p>This allows you to
 import notes with different note types, and their fields will be mapped implicitly:
 The first regular column is used for the first field of any note regardless of
 its note type, the second regular column for the second field, and so on.
-A 'regular column' here being a column that does not contain special information
+A <em>regular column</em> here being a column that does not contain special information
 like decks, tags, note types or GUIDs.</p>
 <h3 id="deck-column"><a class="header" href="#deck-column">Deck Column</a></h3>
 <p>Usually, any new cards created as a result of importing a text file will be placed
@@ -364,11 +348,11 @@ export your notes with the GUID included, you can make changes to the notes, and
 as long as you do not modify the GUID field, you'll be able to import the notes back
 in to update the existing notes.</p>
 <p>Please note that the GUID is intended to be created by Anki. If you are creating
-your own IDs, such as MYNOTE0001, then it's recommended that you place the IDs
+your own IDs, such as <code>MYNOTE0001</code>, then it's recommended that you place the IDs
 in the first field, instead of assigning them to Anki's internal GUID. When importing,
 Anki is able to use either the first field or the GUID for duplicate checking, so you do not
 need to make IDs a GUID in order to be able to update your notes.</p>
-<p>One other thing to note is that the 'duplicate' option will not work for rows that have a
+<p>One other thing to note is that the duplicate option will not work for rows that have a
 non-empty GUID. If a GUID is provided, and already exists in the collection, a duplicate will
 not be created.</p>
 
