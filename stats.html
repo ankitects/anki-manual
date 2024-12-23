@@ -33,6 +33,8 @@
         <link rel="stylesheet" href="css/misc.css">
         <link rel="stylesheet" href="css/kbd.css">
 
+        <!-- MathJax -->
+        <script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     </head>
     <body>
         <!-- Provide site root to javascript -->
@@ -153,7 +155,7 @@
 <li><a href="#statistics">Statistics</a></li>
 <li><a href="#selecting-decks--collection">Selecting Decks / Collection</a>
 <ul>
-<li><a href="#deck">Deck.</a></li>
+<li><a href="#deck">Deck</a></li>
 <li><a href="#collection">Collection</a></li>
 <li><a href="#history">History</a></li>
 <li><a href="#more">More</a></li>
@@ -190,7 +192,7 @@ and the rating as 0.</p>
 top of the main window, or by pressing <kbd>T</kbd>.</p>
 <p><img src="media/Statistics.png" alt="Statistics screen" /></p>
 <h2 id="selecting-decks--collection"><a class="header" href="#selecting-decks--collection">Selecting Decks / Collection</a></h2>
-<h3 id="deck"><a class="header" href="#deck">Deck.</a></h3>
+<h3 id="deck"><a class="header" href="#deck">Deck</a></h3>
 <p>By default, the statistics window will show statistics from the currently selected deck and any
 subdecks it may contain, but you can select any deck from your collection by typing its name in the
 text box at the top of the screen or (from Anki 2.1.61), by using the deck selector at the bottom.</p>
@@ -253,8 +255,15 @@ Note that the forecast graph does not count reviews that are currently
 overdue, so if you have a large backlog, the overdue cards will not be
 displayed.</p>
 <p>Daily load is an estimate of the average number of cards to be reviewed daily.
-If you don't have a backlog, daily load should be approximately equal to 
+If you don't have a backlog, daily load should be approximately equal to
 your number of due cards.</p>
+<p>It is calculated as follows:
+\[\frac{1}{I_1} + \frac{1}{I_2} + \frac{1}{I_3} + \dots + \frac{1}{I_n}\]</p>
+<p>Here, \(I_n\) is the interval of
+the n-th card. If the interval is less than one day, the summation term is 1. This
+prevents cards with short intervals from unrealistically skewing the value of daily load.</p>
+<p>Example: you have a card with an interval of 10 days and a card with an interval of 50 days.
+Daily load = \(\frac{1}{10} + \frac{1}{50} = 0.12\), meaning that, <em>on average</em>, you will have 0.12 due cards per day.</p>
 <p><strong>Calendar</strong>
 This graph shows past card review activity. Hovering the mouse over a specific item
 allows you to view the number of revisions made that day. Click on a day of the
@@ -299,8 +308,8 @@ Only shown if FSRS is enabled. Difficulty determines how quickly a card's interv
 after each review.</p>
 <p><strong>Card Retrievability</strong><br />
 Only shown if FSRS is enabled. &quot;Retrievability&quot; is synonymous with &quot;probability of recall&quot;.</p>
-<p>Estimated total knowledge is the total number of cards you are likely to currently remember, 
-calculated by multiplying average retrievability by the number of cards that have been 
+<p>Estimated total knowledge is the total number of cards you are likely to currently remember,
+calculated by multiplying average retrievability by the number of cards that have been
 reviewed at least once.</p>
 <p><strong>Hourly Breakdown</strong><br />
 This graph shows what percentage of total reviews you have passed (i.e.,
