@@ -78,15 +78,6 @@ If you find it hard to use four answer buttons, you can also use only **Again** 
 
 Each answer button shows the next time a card will be reviewed again if you select that button. To learn about the settings that control the next review intervals, see the topics [New Cards](deck-options.md#new-cards), [Lapses](deck-options.md#lapses) and [Advanced](deck-options.md#advanced) in the Deck Options section.
 
-## Due Counts
-
-When only the question is shown, Anki shows three numbers like 6 + 9 + 59
-at the bottom of the screen. These represent the new cards (blue), cards in
-learning (red), and cards to review (green). If you’d prefer not to see the numbers,
-you can turn them off in Anki’s [preferences.](preferences.md)
-
-![Due Counts](media/due_counts.png)
-
 ## Fuzz Factor
 
 When you select an answer button on a review card, Anki also applies a small amount of random “fuzz”
