@@ -137,7 +137,7 @@ reviewing; for that, please see [templates](templates/intro.md).
 
 - **Editing Font** allows you to customize the font and size used when
   editing notes. This is useful if you want to make unimportant
-  information smaller, or increase the size of foreign characters which
+  information smaller, or increase the size of non-Latin characters which
   are hard to read. The changes you make here do not affect how cards
   appear when reviewing: to do that, please see the
   [templates](templates/intro.md) section. If you have enabled the "type in the
@@ -494,10 +494,10 @@ can use. Of note:
 While reviewing IO Cards a "Toggle Masks" button will appear just below the image.
 This button will temporary clear all shapes of the note when using "Hide All, Guess One" mode.
 
-## Inputting Foreign Characters and Accents
+## Inputting Non-Latin Characters and Accents
 
 All modern computers have built-in support for typing accents and
-foreign characters, and multiple ways to go about it. The method we
+non-Latin characters, and multiple ways to go about it. The method we
 recommend is by using a keyboard layout for the language you want to learn.
 
 Languages with a separate script like Japanese, Chinese, Thai, and so on,
@@ -506,23 +506,40 @@ have their own layouts specific to that language.
 European languages that use accents may have their own layout, but can
 often be typed on a generic "international keyboard" layout. These work
 by typing the accent, then the character you want accented - e.g. an
-apostrophe (') then the letter a (a) gives á.
+apostrophe (<kbd>´</kbd>) then the letter a (<kbd>a</kbd>) gives á.
 
-To add the international keyboard on Windows machines, please see
-<https://thegeekpage.com/how-to-add-us-international-keyboard-in-windows-10/>
+### Adding international keyboard layouts
+Instructions on how to use international keyboards vary depending on the operating
+system and desktop environment that you are using. To get started, please see the
+links below.
 
-To add it on Macs, please see
-<http://www.macworld.com/article/1147039/os-x/accentinput.html>
+Windows:
+- <https://thegeekpage.com/how-to-add-us-international-keyboard-in-windows-10/>
+  
+Mac:
+- <http://www.macworld.com/article/1147039/os-x/accentinput.html>
+  
+Linux:
+- Gnome: <https://help.gnome.org/users/gnome-help/stable/tips-specialchars.html.en>
+- KDE Plasma: <https://userbase.kde.org/Tutorials/ComposeKey>
 
-Keyboards for a specific language are added in a similar way, but we can
+### Adding keyboard layouts for specific languages
+Keyboards for specific languages are added in a similar way, but we can
 not cover them all here. For more information, please try searching
-Google for "input Japanese on a mac", "type Chinese on Windows 10", and
+on the internet for "input Japanese on a mac", "type Chinese on Windows 10", and
 so on.
 
-If you are learning a right-to-left language, there are lots of other
-things to consider. Please see [this page](http://dotancohen.com/howto/rtl_right_to_left.html) for more
-information.
+For Linux it's best to look at the wiki pages of your distro, e.g.
+[Arch Linux](https://wiki.archlinux.org/title/Input_method) and
+[Debian Linux](https://wiki.debian.org/Keyboard#Modern_strategy).
+As an example, `apt install ibus-anthy` on Debian allows you to type hiragana characters.
 
+### Right-to-left Languages
+If you are learning a right-to-left language, there are lots of other
+things to consider. Please see [this page](http://dotancohen.com/howto/rtl_right_to_left.html)
+for more information.
+
+### Limitations
 The toolkit on which Anki is built has trouble dealing with a few input
 methods, such as holding down keys to select accented characters on macOS,
 and typing characters by holding down the <kbd>Alt</kbd> key and typing a
