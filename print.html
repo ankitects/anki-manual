@@ -4666,6 +4666,13 @@ cards answered Again (1) in the last 7 days.</p>
 <p><code>rated:31:4</code><br />
 cards answered Easy (4) in the last 31 days.</p>
 <p>Anki 2.1.39+ supports rating searches over 31 days.</p>
+<p>Note that, to search for cards answered at a particular day, <code>rated:n -rated:(n-1)</code> might not work every time. Use the following instead:</p>
+<p><code>prop:rated=0</code><br />
+cards answered today.</p>
+<p><code>prop:rated=-1</code><br />
+cards answered one day ago.</p>
+<p><code>prop:rated=-7</code><br />
+cards answered 7 days ago.</p>
 <h3 id="first-answered"><a class="header" href="#first-answered">First Answered</a></h3>
 <p>Requires Anki 2.1.45+.</p>
 <p><code>introduced:1</code><br />
