@@ -43,7 +43,23 @@ equations. Please see the 'chemical equations' section and the following
 sections for more information:
 <https://mhchem.github.io/MathJax-mhchem/>
 
-It is possible to [customize some settings](https://faqs.ankiweb.net/customizing-mathjax.html).
+### Customize MathJax
+
+Anki's bundled MathJax support is loaded before card content, so if you wish to customise MathJax you'll have to do so in a specific way. An example is provided here.
+
+```javascript
+<script>
+MathJax.config.tex['macros'] = {
+    R: '{\\mathbb {R}}',
+};
+if (typeof is_already_run == 'undefined') {
+  is_already_run = true
+  MathJax.startup.getComponents();
+}
+</script>
+```
+
+Note that Anki has special logic for cloze deletions that might not work if you change the standard delimiters for MathJax equations.
 
 ## LaTeX
 
