@@ -85,6 +85,11 @@ If you've cloned the Anki repo from GitHub, you can install from there:
 cargo install --path rslib/sync
 ```
 
+### With Docker
+
+You can find a user-contributed Dockerfile and some instructions
+[here](https://github.com/ankitects/anki/tree/main/docs/syncserver).
+
 ## Multiple Users
 
 `SYNC_USER1` declares the first user and password, and must be set.
