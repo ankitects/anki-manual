@@ -491,6 +491,7 @@ either in reviews per day or in minutes of studying per day.
 - **Additional new cards to simulate** controls whether the simulator should 
 simulate more cards than this preset already has. For example, if you currently have 100 cards under this preset,
 and you set **Additional new cards to simulate** to 50, the simulator will simulate a total of 150 cards.
+This can be useful if you plan to create more new cards in the future.
 - **New cards/day** and **Maximum reviews/day** control how many new cards will be learned each day and 
 the maximum number of reviews per day.
 - **Maximum interval** controls the maximum interval length (in days).
