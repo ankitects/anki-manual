@@ -15,20 +15,20 @@ For a quick introduction to syncing, please check out the
 ## Setup
 
 To start syncing your collection across devices, click the sync button
-(the top right one on the [main screen](studying.md#decks), or press 'y' on your keyboard.
+(the top right one on the [main screen](studying.md#decks), or press <kbd>Y</kbd> on your keyboard.
 You’ll be prompted for your AnkiWeb ID and password, which you created
 in the signup process.
 
 When you synchronize your collection for the first time, Anki will ask
 you if you want to upload or download. If you have cards on your
-computer and your AnkiWeb account is empty, choose "upload" to send your
+computer and your AnkiWeb account is empty, choose **Upload** to send your
 data to AnkiWeb. If you have cards on AnkiWeb from another device, and
-no cards on your computer, choose "download" to replace the empty local
+no cards on your computer, choose **Download** to replace the empty local
 collection with the cards that are on AnkiWeb. If you have different
 cards on both devices, [more work is required](#merging-conflicts) to
 avoid losing data.
 
-Once the initial one way sync is completed, Anki will be able to merge
+Once the initial one-way sync is completed, Anki will be able to merge
 changes from multiple locations with a few exceptions.
 
 If you have multiple people using Anki on one machine and have created a
@@ -49,7 +49,7 @@ and red when a full sync is required.
 
 ## Media
 
-Related video: <https://www.youtube.com/watch?v=phP9GGG-PxY>
+You can watch a [related video](https://www.youtube.com/watch?v=phP9GGG-PxY) on this topic.
 
 Anki will synchronize any sounds and images used by your notes. It will
 notice when media has been added, removed or replaced in your [media folder](files.md#file-locations), but
@@ -73,7 +73,7 @@ filesystem.
 
 ## Conflicts
 
-Related video: <https://www.youtube.com/watch?v=UEAcpfMQnjo>
+You can watch a [related video](https://www.youtube.com/watch?v=UEAcpfMQnjo) on this topic.
 
 Under normal circumstances, reviews and note edits can be merged, so if
 you review or edit on two different devices before syncing, Anki will
@@ -90,20 +90,20 @@ operation. If you choose to continue, you’ll be asked to choose whether
 to keep the local copy or the copy on AnkiWeb when your collection is
 next synchronized.
 
-If certain problems are detected while syncing, it will also force a one
-way sync. If you find this consistently happens, please post on our
-support site.
+If certain problems are detected while syncing, it will also force a 
+one-way sync. If you find this consistently happening, please post on our
+[support site](https://forums.ankiweb.net).
 
-When a one way sync is required, you need to choose whether you wish to
+When a one-way sync is required, you need to choose whether you wish to
 keep the collection on your local device, or the collection on AnkiWeb.
 If changes have been made on both ends, only changes on one end can be
 preserved.
 
-If you choose Upload, the content on your local device will be sent to
-AnkiWeb. You then need to sync your other devices, and choose "Download"
+If you choose **Upload**, the content on your local device will be sent to
+AnkiWeb. You then need to sync your other devices, and choose **Download**
 to have them grab a copy of that content.
 
-If you choose Download, it will replace any local changes you’ve made
+If you choose **Download**, it will replace any local changes you’ve made
 with the data that is on AnkiWeb.
 
 Once all devices are in sync, future syncs will return to the normal
@@ -113,13 +113,13 @@ If you wish to force a full upload or download (for example, because you
 accidentally deleted a deck on one side and want to restore the deck
 rather than having its deletion synchronized), you can check the "On
 next sync, force changes in one direction" box in
-Tools&gt;Preferences&gt;Network, then sync as usual. (You’ll be given
+**Tools &gt; Preferences &gt; Network**, then sync as usual. (You’ll be given
 the option to choose which side you want to use.)
 
 Forcing a one way sync only affects card syncing - media is synced as
 normal. If you have files that you want to remove from AnkiWeb, please
 ensure your client is fully in sync first. After syncing is up to date,
-any files you remove (e.g via the Check Media function) will be removed
+any files you remove (e.g. via the **Check Media** function) will be removed
 from AnkiWeb on the following sync.
 
 ## Merging Conflicts
@@ -131,13 +131,13 @@ if you overwrite it with the content from the other device. With some
 work, it is possible to manually merge data into a single collection.
 
 Start by taking a backup on each device/profile, in case something goes
-wrong. With the computer version you can use File&gt;Export to export
+wrong. With the computer version you can use **File &gt; Export** to export
 "all decks" with scheduling information and media files included, and
 save the file somewhere safe. In AnkiMobile, the Add/Export button on
 the decks list screen will let you export all decks with media.
 
 Next, if one of your devices is a mobile device, synchronize it first.
-If there’s a conflict, choose "upload" to overwrite any existing data on
+If there’s a conflict, choose **Upload** to overwrite any existing data on
 AnkiWeb with the data from your mobile device. If both devices/profiles
 are on your computer, synchronize the device/profile with the most
 number of decks first.
@@ -147,15 +147,15 @@ a message may pop up asking if you want to upload or download. Click the
 cancel button - we don’t want to sync yet.
 
 Once you’re looking at the deck list, click the cog icon next to the
-first deck, and choose "export". Export the content with scheduling
-information and media included, and save the .apkg file somewhere. Now
+first deck, and choose **Export**. Export the content with scheduling
+information and media included, and save the `.apkg` file somewhere. Now
 you’ll need to repeat this for each top-level deck.
 
 Once all top-level decks have been exported, click the sync button at
-the top right, and choose "download", which will overwrite the local
+the top right, and choose **Download**, which will overwrite the local
 content with the content you synced from your other device.
 
-You can now use File&gt;Import to import the .apkg files you exported
+You can now use **File &gt; Import** to import the `.apkg` files you exported
 earlier, which will merge the exported content with the existing
 content, so everything will be in one place.
 
