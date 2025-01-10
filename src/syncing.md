@@ -159,6 +159,32 @@ You can now use **File &gt; Import** to import the `.apkg` files you exported
 earlier, which will merge the exported content with the existing
 content, so everything will be in one place.
 
+## AnkiWeb Data Deletion
+
+As AnkiWeb is a free service, we need to periodically delete unused account data 
+to keep costs down. If you haven't accessed your account or synced in the last 6 months,
+ the data on your account might get deleted.
+
+### What Gets Deleted
+
+Only the AnkiWeb copy of your data is deleted. The account itself doesn't get deleted and can be used again. 
+Also, any cards you have stored on your computer, phone or tablet will remain on those devices.  
+
+### Returning to AnkiWeb
+
+Once your deck data has expired, it is not possible for us to recover your data from AnkiWeb,
+ but you may be able to recover it if you have a local copy or a [backup](backup.md).
+
+### Avoiding Data Deletion
+
+Each time you visit ankiweb.net, or use the synchronization feature in Anki, AnkiMobile or AnkiDroid,
+your account will automatically be marked as active.
+
+If your account has been inactive for 6 months or more, and you used the service for a week or longer,
+we will send you an email notifying you that deletion is pending. 
+If you'd like to keep your account active, please log in to ankiweb.net
+and study a card, or sync one of your devices within 30 days.
+
 ## Firewalls
 
 Anki needs to be able to make outbound HTTPS connections to sync. It must be
