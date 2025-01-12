@@ -173,7 +173,7 @@ Also, any cards you have stored on your computer, phone or tablet will remain on
 ### Returning to AnkiWeb
 
 Once your deck data has expired, it is not possible for us to recover your data from AnkiWeb,
- but you may be able to recover it if you have a local copy or a [backup](./backups.md).
+ but you may be able to recover it if you have a local copy or a [backup](backups.md).
 
 ### Avoiding Data Deletion
 
