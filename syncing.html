@@ -158,6 +158,13 @@
 <li><a href="#media">Media</a></li>
 <li><a href="#conflicts">Conflicts</a></li>
 <li><a href="#merging-conflicts">Merging Conflicts</a></li>
+<li><a href="#ankiweb-data-deletion">AnkiWeb Data Deletion</a>
+<ul>
+<li><a href="#what-gets-deleted">What Gets Deleted</a></li>
+<li><a href="#returning-to-ankiweb">Returning to AnkiWeb</a></li>
+<li><a href="#avoiding-data-deletion">Avoiding Data Deletion</a></li>
+</ul>
+</li>
 <li><a href="#firewalls">Firewalls</a></li>
 <li><a href="#proxies">Proxies</a></li>
 </ul>
@@ -170,18 +177,18 @@ below.</p>
 <a href="https://www.youtube.com/watch?v=YkiM4DPzSVc&amp;list=PLGgmaKOIHykFoomqkBJAyGiDQ2kyiuTao&amp;yt:cc=on">syncing intro videos</a>.</p>
 <h2 id="setup"><a class="header" href="#setup">Setup</a></h2>
 <p>To start syncing your collection across devices, click the sync button
-(the top right one on the <a href="studying.html#decks">main screen</a>, or press 'y' on your keyboard.
+(the top right one on the <a href="studying.html#decks">main screen</a>, or press <kbd>Y</kbd> on your keyboard.
 You’ll be prompted for your AnkiWeb ID and password, which you created
 in the signup process.</p>
 <p>When you synchronize your collection for the first time, Anki will ask
 you if you want to upload or download. If you have cards on your
-computer and your AnkiWeb account is empty, choose &quot;upload&quot; to send your
+computer and your AnkiWeb account is empty, choose <strong>Upload</strong> to send your
 data to AnkiWeb. If you have cards on AnkiWeb from another device, and
-no cards on your computer, choose &quot;download&quot; to replace the empty local
+no cards on your computer, choose <strong>Download</strong> to replace the empty local
 collection with the cards that are on AnkiWeb. If you have different
 cards on both devices, <a href="#merging-conflicts">more work is required</a> to
 avoid losing data.</p>
-<p>Once the initial one way sync is completed, Anki will be able to merge
+<p>Once the initial one-way sync is completed, Anki will be able to merge
 changes from multiple locations with a few exceptions.</p>
 <p>If you have multiple people using Anki on one machine and have created a
 profile for each user, each user will need to create their own AnkiWeb
@@ -195,7 +202,7 @@ manually, you can disable automatic syncing in Anki’s <a href="preferences.htm
 <p>The sync button will change to blue when a normal sync is required,
 and red when a full sync is required.</p>
 <h2 id="media"><a class="header" href="#media">Media</a></h2>
-<p>Related video: <a href="https://www.youtube.com/watch?v=phP9GGG-PxY">https://www.youtube.com/watch?v=phP9GGG-PxY</a></p>
+<p>You can watch a <a href="https://www.youtube.com/watch?v=phP9GGG-PxY">related video</a> on this topic.</p>
 <p>Anki will synchronize any sounds and images used by your notes. It will
 notice when media has been added, removed or replaced in your <a href="files.html#file-locations">media folder</a>, but
 will not notice if you have made edits to existing files. To get your edits synced, you
@@ -212,7 +219,7 @@ on AnkiWeb still.</p>
 file system, as Anki may not be able to detect media changes on a FAT32
 filesystem.</p>
 <h2 id="conflicts"><a class="header" href="#conflicts">Conflicts</a></h2>
-<p>Related video: <a href="https://www.youtube.com/watch?v=UEAcpfMQnjo">https://www.youtube.com/watch?v=UEAcpfMQnjo</a></p>
+<p>You can watch a <a href="https://www.youtube.com/watch?v=UEAcpfMQnjo">related video</a> on this topic.</p>
 <p>Under normal circumstances, reviews and note edits can be merged, so if
 you review or edit on two different devices before syncing, Anki will
 preserve your changes from both locations. If the same card has been
@@ -226,17 +233,17 @@ merged, Anki will warn you, and give you the option of aborting the
 operation. If you choose to continue, you’ll be asked to choose whether
 to keep the local copy or the copy on AnkiWeb when your collection is
 next synchronized.</p>
-<p>If certain problems are detected while syncing, it will also force a one
-way sync. If you find this consistently happens, please post on our
-support site.</p>
-<p>When a one way sync is required, you need to choose whether you wish to
+<p>If certain problems are detected while syncing, it will also force a 
+one-way sync. If you find this consistently happening, please post on our
+<a href="https://forums.ankiweb.net">support site</a>.</p>
+<p>When a one-way sync is required, you need to choose whether you wish to
 keep the collection on your local device, or the collection on AnkiWeb.
 If changes have been made on both ends, only changes on one end can be
 preserved.</p>
-<p>If you choose Upload, the content on your local device will be sent to
-AnkiWeb. You then need to sync your other devices, and choose &quot;Download&quot;
+<p>If you choose <strong>Upload</strong>, the content on your local device will be sent to
+AnkiWeb. You then need to sync your other devices, and choose <strong>Download</strong>
 to have them grab a copy of that content.</p>
-<p>If you choose Download, it will replace any local changes you’ve made
+<p>If you choose <strong>Download</strong>, it will replace any local changes you’ve made
 with the data that is on AnkiWeb.</p>
 <p>Once all devices are in sync, future syncs will return to the normal
 behaviour of merging changes from both ends.</p>
@@ -244,12 +251,12 @@ behaviour of merging changes from both ends.</p>
 accidentally deleted a deck on one side and want to restore the deck
 rather than having its deletion synchronized), you can check the &quot;On
 next sync, force changes in one direction&quot; box in
-Tools&gt;Preferences&gt;Network, then sync as usual. (You’ll be given
+<strong>Tools &gt; Preferences &gt; Network</strong>, then sync as usual. (You’ll be given
 the option to choose which side you want to use.)</p>
 <p>Forcing a one way sync only affects card syncing - media is synced as
 normal. If you have files that you want to remove from AnkiWeb, please
 ensure your client is fully in sync first. After syncing is up to date,
-any files you remove (e.g via the Check Media function) will be removed
+any files you remove (e.g. via the <strong>Check Media</strong> function) will be removed
 from AnkiWeb on the following sync.</p>
 <h2 id="merging-conflicts"><a class="header" href="#merging-conflicts">Merging Conflicts</a></h2>
 <p>Because the <a href="#setup">first sync</a> can only sync changes in one
@@ -258,12 +265,12 @@ profiles before setting syncing up, content on one device will be lost
 if you overwrite it with the content from the other device. With some
 work, it is possible to manually merge data into a single collection.</p>
 <p>Start by taking a backup on each device/profile, in case something goes
-wrong. With the computer version you can use File&gt;Export to export
+wrong. With the computer version you can use <strong>File &gt; Export</strong> to export
 &quot;all decks&quot; with scheduling information and media files included, and
 save the file somewhere safe. In AnkiMobile, the Add/Export button on
 the decks list screen will let you export all decks with media.</p>
 <p>Next, if one of your devices is a mobile device, synchronize it first.
-If there’s a conflict, choose &quot;upload&quot; to overwrite any existing data on
+If there’s a conflict, choose <strong>Upload</strong> to overwrite any existing data on
 AnkiWeb with the data from your mobile device. If both devices/profiles
 are on your computer, synchronize the device/profile with the most
 number of decks first.</p>
@@ -271,15 +278,32 @@ number of decks first.</p>
 a message may pop up asking if you want to upload or download. Click the
 cancel button - we don’t want to sync yet.</p>
 <p>Once you’re looking at the deck list, click the cog icon next to the
-first deck, and choose &quot;export&quot;. Export the content with scheduling
-information and media included, and save the .apkg file somewhere. Now
+first deck, and choose <strong>Export</strong>. Export the content with scheduling
+information and media included, and save the <code>.apkg</code> file somewhere. Now
 you’ll need to repeat this for each top-level deck.</p>
 <p>Once all top-level decks have been exported, click the sync button at
-the top right, and choose &quot;download&quot;, which will overwrite the local
+the top right, and choose <strong>Download</strong>, which will overwrite the local
 content with the content you synced from your other device.</p>
-<p>You can now use File&gt;Import to import the .apkg files you exported
+<p>You can now use <strong>File &gt; Import</strong> to import the <code>.apkg</code> files you exported
 earlier, which will merge the exported content with the existing
 content, so everything will be in one place.</p>
+<h2 id="ankiweb-data-deletion"><a class="header" href="#ankiweb-data-deletion">AnkiWeb Data Deletion</a></h2>
+<p>As AnkiWeb is a free service, we need to periodically delete unused account data 
+to keep costs down. If you haven't accessed your account or synced in the last 6 months,
+the data on your account might get deleted.</p>
+<h3 id="what-gets-deleted"><a class="header" href="#what-gets-deleted">What Gets Deleted</a></h3>
+<p>Only the AnkiWeb copy of your data is deleted. The account itself doesn't get deleted and can be used again. 
+Also, any cards you have stored on your computer, phone or tablet will remain on those devices.</p>
+<h3 id="returning-to-ankiweb"><a class="header" href="#returning-to-ankiweb">Returning to AnkiWeb</a></h3>
+<p>Once your deck data has expired, it is not possible for us to recover your data from AnkiWeb,
+but you may be able to recover it if you have a local copy or a <a href="backup.html">backup</a>.</p>
+<h3 id="avoiding-data-deletion"><a class="header" href="#avoiding-data-deletion">Avoiding Data Deletion</a></h3>
+<p>Each time you visit ankiweb.net, or use the synchronization feature in Anki, AnkiMobile or AnkiDroid,
+your account will automatically be marked as active.</p>
+<p>If your account has been inactive for 6 months or more, and you used the service for a week or longer,
+we will send you an email notifying you that deletion is pending. 
+If you'd like to keep your account active, please log in to ankiweb.net
+and study a card, or sync one of your devices within 30 days.</p>
 <h2 id="firewalls"><a class="header" href="#firewalls">Firewalls</a></h2>
 <p>Anki needs to be able to make outbound HTTPS connections to sync. It must be
 able to connect to ankiweb.net, sync.ankiweb.net, sync2.ankiweb.net, and so on.
