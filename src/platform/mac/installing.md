@@ -4,9 +4,10 @@
 
 ## Requirements
 
-Recent Anki releases require a Mac running macOS 10.13.4 or later.
+macOS version requirements are listed on the download page.
 
-The last Anki release that supported macOS 10.10 to 10.13.3 was [Anki 2.1.35-alternate](https://github.com/ankitects/anki/releases/tag/2.1.35). If you're on an old machine, you can obtain the old version from the [releases page](https://github.com/ankitects/anki/releases).
+If you're on an old machine, you can obtain the old version from the [releases page](https://github.com/ankitects/anki/releases). The Qt5 builds on 24.11 and earlier support macOS 10.14 and later. If your macOS
+is between 10.10 and 10.13, you'll need to use [Anki 2.1.35-alternate](https://github.com/ankitects/anki/releases/tag/2.1.35).
 
 ## Installing
 
