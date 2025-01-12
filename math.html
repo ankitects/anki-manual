@@ -151,7 +151,11 @@
                     <main>
                         <h1 id="math-and-symbols"><a class="header" href="#math-and-symbols">Math and Symbols</a></h1>
 <ul>
-<li><a href="#mathjax">MathJax</a></li>
+<li><a href="#mathjax">MathJax</a>
+<ul>
+<li><a href="#customize-mathjax">Customize MathJax</a></li>
+</ul>
+</li>
 <li><a href="#latex">LaTeX</a>
 <ul>
 <li><a href="#security-warning">Security Warning</a></li>
@@ -189,13 +193,14 @@ inline&quot; from the menu. Anki will change the text so it reads:</p>
 </code></pre>
 </li>
 <li>
-<p>If you click the Cards… button, you’ll see a preview of how the
-equation will appear when the card is reviewed.</p>
+<p>Click the <strong>Cards...</strong> button. You’ll see a preview of how the
+equation will appear when the card is reviewed.
+\[\sqrt{x}\]</p>
 </li>
 </ol>
 <p>Anki’s MathJax support expects content in TeX format. If you’re not
 familiar with TeX formatting, please see <a href="https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference">this cheatsheet</a>.
-Please note that point 2 does not apply in Anki - Anki uses <code>\(</code> and
+Please note that point 1 does not apply in Anki - Anki uses <code>\(</code> and
 <code>\)</code> for inline equations, and <code>\[</code> and <code>\]</code> for display equations.</p>
 <p>If you want to use newlines in a MathJax expression, please use
 <kbd>Shift</kbd>+<kbd>Enter</kbd> instead of just <kbd>Enter</kbd>, as a normal newline will prevent
@@ -204,7 +209,19 @@ MathJax from working correctly.</p>
 equations. Please see the 'chemical equations' section and the following
 sections for more information:
 <a href="https://mhchem.github.io/MathJax-mhchem/">https://mhchem.github.io/MathJax-mhchem/</a></p>
-<p>It is possible to <a href="https://faqs.ankiweb.net/customizing-mathjax.html">customize some settings</a>.</p>
+<h3 id="customize-mathjax"><a class="header" href="#customize-mathjax">Customize MathJax</a></h3>
+<p>Anki's bundled MathJax support is loaded before card content, so if you wish to customise MathJax you'll have to do so in a specific way. An example is provided here.</p>
+<pre><code class="language-javascript">&lt;script&gt;
+MathJax.config.tex['macros'] = {
+    R: '{\\mathbb {R}}',
+};
+if (typeof is_already_run == 'undefined') {
+  is_already_run = true
+  MathJax.startup.getComponents();
+}
+&lt;/script&gt;
+</code></pre>
+<p>Note that Anki has special logic for cloze deletions that might not work if you change the standard delimiters for MathJax equations.</p>
 <h2 id="latex"><a class="header" href="#latex">LaTeX</a></h2>
 <p>LaTeX is a powerful typesetting system, useful for entering mathematical
 formulas, chemical formulas, musical notation and so on. Anki provides
