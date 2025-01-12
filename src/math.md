@@ -25,12 +25,13 @@ To try it out:
 
        \(\sqrt{x}\)
 
-4. If you click the Cards… button, you’ll see a preview of how the
+4. Click the **Cards...** button. You’ll see a preview of how the
    equation will appear when the card is reviewed.
+   \\[\sqrt{x}\\]
 
 Anki’s MathJax support expects content in TeX format. If you’re not
 familiar with TeX formatting, please see [this cheatsheet](https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference).
-Please note that point 2 does not apply in Anki - Anki uses `\(` and
+Please note that point 1 does not apply in Anki - Anki uses `\(` and
 `\)` for inline equations, and `\[` and `\]` for display equations.
 
 If you want to use newlines in a MathJax expression, please use
@@ -42,7 +43,23 @@ equations. Please see the 'chemical equations' section and the following
 sections for more information:
 <https://mhchem.github.io/MathJax-mhchem/>
 
-It is possible to [customize some settings](https://faqs.ankiweb.net/customizing-mathjax.html).
+### Customize MathJax
+
+Anki's bundled MathJax support is loaded before card content, so if you wish to customise MathJax you'll have to do so in a specific way. An example is provided here.
+
+```javascript
+<script>
+MathJax.config.tex['macros'] = {
+    R: '{\\mathbb {R}}',
+};
+if (typeof is_already_run == 'undefined') {
+  is_already_run = true
+  MathJax.startup.getComponents();
+}
+</script>
+```
+
+Note that Anki has special logic for cloze deletions that might not work if you change the standard delimiters for MathJax equations.
 
 ## LaTeX
 
