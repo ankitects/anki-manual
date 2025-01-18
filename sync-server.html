@@ -225,9 +225,13 @@ the PHC Format.</p>
 <h2 id="storage-location"><a class="header" href="#storage-location">Storage Location</a></h2>
 <p>The server needs to store a copy of your collection and media in a folder.
 By default it is ~/.syncserver; you can change this by defining
-a <code>SYNC_BASE</code> environmental variable. This must not be the same
-location as your normal Anki data folder, as the server and client
-must store separate copies.</p>
+a <code>SYNC_BASE</code> environmental variable.</p>
+<ul>
+<li>This must not be the same location as your normal Anki data folder, as the
+server and client must store separate copies.</li>
+<li>You must sync your data to the server, not manually copy files into the
+server folder.</li>
+</ul>
 <h2 id="public-access"><a class="header" href="#public-access">Public Access</a></h2>
 <p>The server listens on an unencrypted HTTP connection, so it's not a good
 idea to expose it directly to the internet. You'll want to either restrict
