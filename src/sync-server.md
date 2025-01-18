@@ -112,9 +112,12 @@ the PHC Format.
 
 The server needs to store a copy of your collection and media in a folder.
 By default it is ~/.syncserver; you can change this by defining
-a `SYNC_BASE` environmental variable. This must not be the same
-location as your normal Anki data folder, as the server and client
-must store separate copies.
+a `SYNC_BASE` environmental variable.
+
+- This must not be the same location as your normal Anki data folder, as the
+server and client must store separate copies.
+- You must sync your data to the server, not manually copy files into the
+server folder.
 
 ## Public Access
 
