@@ -5,6 +5,8 @@
 Exporting allows you to save part of your collection as a text file or
 packaged Anki deck. To export, click the File menu and choose 'Export'.
 
+<img width="761" alt="image" src="https://github.com/user-attachments/assets/81029e59-5c4f-4426-ad92-8baefe24b53b" />
+
 ## Text Files
 
 If you choose "Notes in Plain Text", Anki will write the contents of the
