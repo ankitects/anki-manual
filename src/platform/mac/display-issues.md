@@ -19,6 +19,9 @@ It will not print anything. You can then start Anki again.
 If you wish to switch back to the default, change `software` to `auto`, or
 remove that file.
 
+<img width="737" alt="image" src="https://github.com/user-attachments/assets/4b9c0d6c-5625-48fb-a43d-c505fdb18429" />
+
+
 ## eGPUs
 
 If you experience blank screens when using an external graphics card on a Mac, you can ctrl+click on the Anki app, click "Get Info", and enable the "prefer eGPU" option.
