@@ -22,6 +22,8 @@ AnkiDroid does not support profiles.
 
 ## Profiles window
 
+![Profiles](media/profiles.png)
+
 From the Profiles window (accessible via File>Switch Profile from the main window), you can:
 
 - Open / Add / Rename / Delete user profiles.
