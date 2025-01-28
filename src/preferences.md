@@ -7,6 +7,9 @@ the Anki menu on a Mac.
 
 ## Appearance
 
+![Preferences > Appearance](media/preferences_appearance.png)
+
+
 ### General
 
 **Language**\
@@ -46,6 +49,8 @@ These options allow you to remove some unnecessary elements from the screen duri
 - Switching between native styling and the Anki theme (only on Mac/Linux).
 
 ## Review
+
+![Preferences > Review](media/preferences_review.png)
 
 ### Scheduler
 
@@ -93,6 +98,8 @@ Defines whether a press on the space bar (or the enter key) also answers cards.
 
 ## Editing
 
+![Preferences > Editing](media/preferences_editing.png)
+
 ### Editing
 
 **Paste clipboard images as PNG**\
@@ -131,6 +138,8 @@ When enabled, simple text searches automatically [ignore accents](./searching.md
 
 This tab contains options related to syncing with AnkiWeb.
 
+![Prefrences > Syncing](media/preferences_syncing.png)
+
 ### Synchronisation
 
 **Synchronize audio and images too**\
@@ -158,3 +167,13 @@ For info on the custom sync server option, see [this section](./sync-server.md).
 ## Backups
 
 Please see [this](backups.md#automatic-backups) section of the manual.
+
+![Preferences > Backups](media/preferences_backups.png)
+
+## Third-Party Services
+
+Third-party services are unaffiliated with and not endorsed by Anki. Use of these services may require payment.
+
+![Preferences > Third-Party Services](media/preferences_third_party_services.png)
+
+A**nkiHub**: provides collaborative deck editing and additional study tools. A paid subscription is required to access certain features

@@ -106,6 +106,8 @@ material that you are studying is a good choice here – things like "Japanese",
 "Trivia", and so on. Once you have chosen a name, close the Note Types
 window, and you will return to the adding window.
 
+![Manage Note Types](media/manage_note_types.png)
+
 ## Customizing Fields
 
 To customize fields, click the "Fields…​" button when adding or editing
@@ -175,6 +177,8 @@ While adding, you can click on the top left button to change note type,
 and the top right button to change deck. The window that opens up will
 not only allow you to select a deck or note type, but also to add new
 decks or manage your note types.
+
+![Changing Note Type](media/choose_note_type.png)
 
 ## Organizing Content
 

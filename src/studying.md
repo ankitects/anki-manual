@@ -78,6 +78,8 @@ If you find it hard to use four answer buttons, you can also use only **Again** 
 
 Each answer button shows the next time a card will be reviewed again if you select that button. To learn about the settings that control the next review intervals, see the topics [Learning Steps](deck-options.html#learning-steps), [Lapses](deck-options.md#lapses), [FSRS](deck-options.html#fsrs) and [Advanced](deck-options.md#advanced) in the Deck Options section.
 
+![Answers](media/answers.png)
+
 ## Fuzz Factor
 
 When you select an answer button on a review card, Anki also applies a small amount of random “fuzz”
