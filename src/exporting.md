@@ -5,7 +5,6 @@
 Exporting allows you to save part of your collection as a text file or
 packaged Anki deck. To export, click the File menu and choose 'Export'.
 
-<img width="761" alt="image" src="https://github.com/user-attachments/assets/81029e59-5c4f-4426-ad92-8baefe24b53b" />
 
 ## Text Files
 
@@ -23,6 +22,8 @@ add-on to make this easier.)
 
 In order for formatting to be preserved when you import text back in,
 the text is exported with all the HTML formatting embedded in it.
+
+![Export: Anki Collection Package](media/export_notes_plain_text.png)
 
 ## Packaged Decks
 
@@ -55,6 +56,8 @@ If you choose Anki 2.1.50+ Collection Package format, imports and exports
 will be faster, and media files will be compressed, but the resulting
 .colpkg file will not be readable by older Anki clients.
 
+![Export: Anki Collection Package](media/export_anki_collection_package.png)
+
 ### Deck (.apkg)
 
 Deck packages contain a single deck (and any child decks it may have).
@@ -72,3 +75,5 @@ your collection will be kept.
 If you choose not to include scheduling information, Anki will assume
 that you are sharing the deck with other people, and will remove marked
 and leech tags so that they will have a clean copy of it.
+
+![Export: Anki Deck Package](media/export_anki_deck_package.png)

@@ -16,6 +16,8 @@ previewing cards, cramming cards before a test, studying particular
 tags, catching up on a backlog with a particular sort order, reviewing
 ahead of schedule, going over the day's failed cards, and more.
 
+![Filtered Decks](media/filtered_deck.png)
+
 ## Custom Study
 
 The easiest way to create a filtered deck is with the Custom Study
@@ -27,6 +29,8 @@ the cards that you have failed that day. It will create a filtered deck called
 If an existing "Custom Study Session" deck exists, it will be emptied
 before a new one is created. If you wish to keep a custom study deck,
 you can rename it from the deck list.
+
+![Custom Study](media/custom_study.png)
 
 Here is a summary of each of the options:
 

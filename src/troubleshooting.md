@@ -21,6 +21,8 @@ the process until you've figured out which add-on is causing the problem. Then p
 
 You can find the version you're using in the Help>About or Anki>About menu. If the version you're using is not the latest version published on <https://apps.ankiweb.net>, please close Anki, install the latest version, and then start Anki again to see if the problem has gone away.
 
+![About Anki](media/about_anki.png)
+
 If you're using Linux, please make sure you can reproduce the error using the packaged version on the Anki website, as distros often distribute [broken versions](https://anki.tenderapp.com/kb/anki-ecosystem/third-party-linux-packages-and-source-builds-are-not-supported).
 
 **4. Check your database**

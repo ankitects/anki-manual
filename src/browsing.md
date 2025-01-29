@@ -263,17 +263,19 @@ they can be found in a submenu of the context menu.
 This menu exists to provide keyboard shortcuts to jump to various
 parts of the browser, and to go up and down the card list.
 
-| Name          | Shortcut          |
-|---------------|-------------------|
-| Find          | Crtl+ F           |
-| Filter        | Crtl + Shift + F  |
-| Sidebar       | Crtl + Alt + R    |
-| Note          | Crtl + Shift + N  |
-| Card List     | Crtl+ Shift + L   |
-| First Card    | Crtl + Up Arrow   |
-| Previous Card | Crtl + P          |
-| Next Card     | Crtl + N          |
-| Last Card     | Crtl + Down Arrow |
+<!-- prettier-ignore -->
+
+| Name          | Shortcut         |
+|---------------|------------------|
+| Find          | Crtl+ F          |
+| Filter        | Crtl + Shift + F |
+| Sidebar       | Crtl + Alt + R   |
+| Note          | Crtl + Shift + N |
+| Card List     | Crtl+ Shift + L  |
+| First Card    | Home             |
+| Previous Card | Crtl + P         |
+| Next Card     | Crtl + N         |
+| Last Card     | Down             |
 
 ## Find and Replace
 

@@ -29,6 +29,8 @@ missing from your media folder. It also allows you:
 - To empty your trash folder.
 - To restore the deleted files back to your media folder.
 
+![Check Media](media/check_media.png)
+
 This tool does not scan question or answer
 templates, which is why you can’t place media references to fields in
 the template. If you need a static image or sound on every card, name it
@@ -37,6 +39,7 @@ checking for media. If you delete media using the unused media check,
 Anki will move it into your operating system’s trash folder, so you can
 recover if you accidentally delete media that shouldn’t have been
 deleted.
+
 
 ## Manually Adding Media
 
