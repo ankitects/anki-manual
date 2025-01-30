@@ -19,10 +19,6 @@ of the search area, or pressing <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>T</kbd> or
 <kbd>Cmd</kbd>+<kbd>Opt</kbd>+<kbd>T</kbd>. The switch also indicates if **C**ards
 or **N**otes are currently shown.
 
-![Table Modes: Cards](media/table_mode_cards.png)
-
-![Table Modes: Notes](media/table_mode_notes.png)
-
 **Note**: For the sake of simplicity, this manual generally assumes the Cards
 mode to be the active one. Whenever selecting/finding/etc. "cards" is mentioned,
 the reader may substitute it for "cards or notes depending on the active mode".
@@ -90,11 +86,10 @@ to append the resulting search to the current search.
 
 ### Saved Searches
 
-If you regularly search for the same thing,
-you can save the current search by right-clicking the topmost item in the sidebar,
-choosing “Save Current Search” and typing in a name.
-You can also drag and drop any sidebar item onto this area to add an equivalent
-saved search, effectively pinning it at the top.
+If you regularly search for the same thing, you can save the current search by right-clicking the topmost item in the sidebar, choosing “Save Current Search” and typing in a name.
+You can also drag and drop any sidebar item onto this area to add an equivalent saved search, effectively pinning it at the top.
+
+![Saved Searches](media/saved_searches.png)
 
 ### Editing Items
 
@@ -117,6 +112,10 @@ see [Searching](searching.md).
 
 The table's rows represent cards or notes that match the current search.
 When you click on a row, the corresponding note will be shown in the bottom section.
+
+![Table Modes: Cards](media/table_mode_cards.png)
+
+![Table Modes: Notes](media/table_mode_notes.png)
 
 
 ### Rows
@@ -295,6 +294,8 @@ have the same content. When you open the window, Anki will look at all
 of your note types and present a list of all possible fields. If you
 want to look for duplicates in the _Back_ field, you’d select it from
 the list and then click **Search**.
+
+![Finding Duplicates](media/find_duplicates.png)
 
 By default, it will search in all note types that have the field you provided.
 This differs from the duplicate check when you add cards manually, which

@@ -19,8 +19,6 @@ To start syncing your collection across devices, click the sync button
 You’ll be prompted for your AnkiWeb ID and password, which you created
 in the signup process.
 
-![Account Required](media/sync_account_required.png)
-
 When you synchronize your collection for the first time, Anki will ask
 you if you want to upload or download. If you have cards on your
 computer and your AnkiWeb account is empty, choose **Upload** to send your
@@ -29,8 +27,6 @@ no cards on your computer, choose **Download** to replace the empty local
 collection with the cards that are on AnkiWeb. If you have different
 cards on both devices, [more work is required](#merging-conflicts) to
 avoid losing data.
-
-![Sync with no cards](media/sync_no_cards.png)
 
 Once the initial one-way sync is completed, Anki will be able to merge
 changes from multiple locations with a few exceptions.
@@ -103,6 +99,8 @@ keep the collection on your local device, or the collection on AnkiWeb.
 If changes have been made on both ends, only changes on one end can be
 preserved.
 
+![Merging Conflicts](media/sync_conflict.png)
+
 If you choose **Upload**, the content on your local device will be sent to
 AnkiWeb. You then need to sync your other devices, and choose **Download**
 to have them grab a copy of that content.
@@ -133,8 +131,6 @@ direction, if you have added different content to different devices or
 profiles before setting syncing up, content on one device will be lost
 if you overwrite it with the content from the other device. With some
 work, it is possible to manually merge data into a single collection.
-
-![Merging Conflicts](media/sync_conflict.png)
 
 Start by taking a backup on each device/profile, in case something goes
 wrong. With the computer version you can use **File &gt; Export** to export

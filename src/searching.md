@@ -5,8 +5,6 @@
 Anki's Browse screen and the Filtered Deck feature use a common method
 of searching for specific cards/notes. This method can also be used to adjust the scope of FSRS optimization. 
 
-![Browse: Search](media/browse_search.png)
-
 ## Simple searches
 
 When you type some text into the search box, Anki finds matching notes
