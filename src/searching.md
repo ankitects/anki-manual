@@ -112,7 +112,7 @@ finds notes where the Front field contains dog somewhere.
 finds notes that have an empty Front field.
 
 `front:_*`\
-findd notes that have a non-empty Front field.
+finds notes that have a non-empty Front field.
 
 `front:*`\
 finds notes that have a Front field, empty or not.
