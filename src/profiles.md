@@ -1,5 +1,7 @@
 # Profiles
 
+![Profiles](media/profiles.png)
+
 If more than one person wants to use Anki on your computer, you can set
 up a separate profile for each user. Each user profile has their own
 collection, and own program settings. Add-ons are shared across profiles.
@@ -21,8 +23,6 @@ in profile A, until everything is in profile B.
 AnkiDroid does not support profiles.
 
 ## Profiles window
-
-![Profiles](media/profiles.png)
 
 From the Profiles window (accessible via File>Switch Profile from the main window), you can:
 

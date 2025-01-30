@@ -20,15 +20,13 @@ Here are some community posts about deck options that have been contributed in t
 - [Deck Options Explained](https://forums.ankiweb.net/t/deck-options-explained/213)
 - [Deck Options in a Mental Map](https://forums.ankiweb.net/t/deck-options-in-a-mental-map/15757)
 
-![Deck Options](media/deck_options_overview.png)
+![Deck Options](media/deck_options.png)
 
 ## Presets
 
 Anki allows you to share options between different decks, to make
 it easier to update options in many decks at once. To do this, options are
 grouped into _presets_. If you change an option in a preset, the change is applied to all decks that use the same preset. All newly created decks use the "Default" preset.
-
-![Deck Options > Presets](media/deck_options_presets.png)
 
 To change the options in one deck but not other decks, click the
 arrow icon in the top right of the Deck Options window. You can do the following:
@@ -84,8 +82,6 @@ If you choose to study Deck A:
 - All new cards will be mixed with reviews (Preset 1 applies).
 
 ## Daily Limits
-
-![Deck Options > Daily Limits](media/deck_options_daily_limits.png)
 
 ### New Cards/Day
 
@@ -153,8 +149,6 @@ The options here only affect new cards and
 [learning cards](getting-started.md#card-states). Once a card
 has graduated (that is, gone through all the learning steps), the options in this section no longer apply to the card.
 
-![Deck Options > New Cards](media/deck_options_new_cards.png)
-
 ### Learning Steps
 
 Controls the number of learning repetitions, and the delay
@@ -215,8 +209,6 @@ On recent Anki versions, you should leave this option set to `Sequential`, and a
 
 When you click **Again** on a review card, it is called a _lapse_. The options listed here affect such lapsed cards.
 
-![Deck Options > Lapses](media/deck_options_lapses.png)
-
 ### Relearning Steps
 
 The same as learning steps, but for lapsed cards. When you fail a review card
@@ -242,8 +234,6 @@ The options in this section are taken from the deck you select to study, not
 the deck of the currently displayed card.
 
 Some further information about display order is available in the [studying section](studying.md#display-order).
-
-![Deck Options > Display Order](media/deck_options_display_order.png)
 
 ### New Card Gather Order
 
@@ -338,8 +328,6 @@ When Anki gathers cards, it first gathers intraday learning cards, then interday
 - If you have all burying options enabled, the sibling that comes earliest in that list will be shown. For example, a review card will be shown in preference to a new card.
 - Siblings later in the list can not bury earlier card types. For example, if you disable burying of new cards, and study a new card, it will not bury any interday learning or review cards, and you may see both a review sibling and new sibling in the same session.
 
-![Deck Options > Burying](media/deck_options_burying.png)
-
 The options are:
 
 - **Bury new siblings**: Whether other new cards of the same note (e.g. reverse cards, adjacent cloze deletions) will be delayed until the next day.
@@ -349,8 +337,6 @@ The options are:
 For more info about burying cards, please see [this section](./studying.md#siblings-and-burying) of the manual.
 
 ## Audio
-
-![Deck Options > Audio](media/deck_options_audio.png)
 
 - **Don't play audio automatically**: By default, Anki automatically plays any audio you have on
   cards. If you turn on this option Anki will not play audio until you press the replay audio key, <kbd>R</kbd> or <kbd>F5</kbd>.
@@ -363,8 +349,6 @@ For more info about burying cards, please see [this section](./studying.md#sibli
 Anki monitors how long it takes you to answer each card, so that it
 can show you how long was spent studying each day. The time taken does
 not influence scheduling.
-
-![Deck Options > Timer](media/deck_options_timer.png)
 
 The options are:
 
@@ -386,8 +370,6 @@ Requires Anki 23.12 or later. Auto Advance allows you to automatically take some
 time in **Seconds to show question for** and/or **Seconds to show answer for**. Then, in the
 review screen, use the Auto Advance action from the **More** button to start advancing.
 
-![Deck Options > Auto Advance](media/deck_options_auto_advanced.png)
-
 ## Easy Days
 
 If you want to spend less time on Anki on some days of the week, such as Sundays, this feature can help you do that.
@@ -395,8 +377,6 @@ After the interval is calculated, it will be adjusted by a small amount to chang
 Note that setting all days to "Reduced" or "Minimum" will result in the same workload as setting all days to "Normal".
 This feature works with both FSRS and the legacy SM-2 algorithm.
 Changing your Easy Days configuration doesn't retroactively change existing intervals and will only affect future intervals. Simply put, you will not see immediate changes in the number of due cards.
-
-![Deck Options > Easy Days](media/deck_options_easy_days.png)
 
 ## FSRS
 
@@ -407,8 +387,6 @@ to forget, it can help you remember more material in the same amount of time.
 When you turn on FSRS, some new options
 become available, and SM-2 specific options, such as **Graduating interval**,
 **Easy bonus**, etc. are hidden. This option is shared by all deck presets.
-
-![Deck Options > FSRS](media/deck_options_fsrs.png)
 
 **Before Enabling**
 
@@ -438,7 +416,7 @@ them when they come up for review again. This should normally translate to remem
 
 Here is a graph that shows how adjusting this value will affect your workload:
 
-![graph showing an exponential increase in workload as desired retention nears one.](./media/FSRS_retention.png)
+![graph showing an exponential increase in workload as desired retention nears one.](media/FSRS_desired_retention.png)
 
 The exact shape of the graph is different for everyone. However, there are two patterns that hold true for all:
 
@@ -560,8 +538,6 @@ For more info on FSRS, please check:
 - [FSRS4Anki on Github](https://github.com/open-spaced-repetition/fsrs4anki)
 
 ## Advanced
-
-![Deck Options > Advanced](media/deck_options_advanced.png)
 
 ### Maximum Interval
 

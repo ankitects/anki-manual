@@ -8,6 +8,8 @@ packaged Anki deck. To export, click the File menu and choose 'Export'.
 
 ## Text Files
 
+![Export Plain Text](media/export_plain_text.png)
+
 If you choose "Notes in Plain Text", Anki will write the contents of the
 notes into a text file. Each field is separated by a tab. If you edit
 the resulting file and don't modify the first field, you can later
@@ -23,8 +25,6 @@ add-on to make this easier.)
 In order for formatting to be preserved when you import text back in,
 the text is exported with all the HTML formatting embedded in it.
 
-![Export: Anki Collection Package](media/export_notes_plain_text.png)
-
 ## Packaged Decks
 
 A 'packaged deck' consists of cards, notes, note types, and any sounds or
@@ -35,6 +35,8 @@ of your collection.
 There are two different kinds of packaged decks.
 
 ### Collection (.colpkg)
+
+![Export Collection](media/export_collection.png)
 
 When you export all decks with scheduling included, this is called a
 'collection package'. Anki will copy your entire collection into a file
@@ -56,9 +58,9 @@ If you choose Anki 2.1.50+ Collection Package format, imports and exports
 will be faster, and media files will be compressed, but the resulting
 .colpkg file will not be readable by older Anki clients.
 
-![Export: Anki Collection Package](media/export_anki_collection_package.png)
-
 ### Deck (.apkg)
+
+![Export decks](media/export_deck.png)
 
 Deck packages contain a single deck (and any child decks it may have).
 They have a filename ending with .apkg, but a filename other than
@@ -75,5 +77,3 @@ your collection will be kept.
 If you choose not to include scheduling information, Anki will assume
 that you are sharing the deck with other people, and will remove marked
 and leech tags so that they will have a clean copy of it.
-
-![Export: Anki Deck Package](media/export_anki_deck_package.png)

@@ -8,7 +8,7 @@ Recall from the [basics](getting-started.md) that in Anki we add notes rather th
 cards, and Anki creates cards for us. Click 'Add' in the [main window](studying.md#decks),
 and the Add Notes window will appear.
 
-![Add Screen](media/add_screen.png)
+![Editor](media/editor.png)
 
 The top left of the window shows us the current [note type](getting-started.md#note-types). If it does
 not say "Basic," then you may have added some note types when you
@@ -178,8 +178,6 @@ and the top right button to change deck. The window that opens up will
 not only allow you to select a deck or note type, but also to add new
 decks or manage your note types.
 
-![Changing Note Type](media/choose_note_type.png)
-
 ## Organizing Content
 
 ### Using Decks Appropriately
@@ -281,7 +279,7 @@ marks or fields are better.
 
 The editor is shown when [adding notes](editing.md), [editing a note](studying.md#editing-and-more) during reviews, or [browsing](browsing.md).
 
-![Editor icons](media/editor_icons.png)
+![Editor Features](media/features.png)
 
 On the top left are two buttons, which open the [fields](editing.md#customizing-fields) and
 [cards](templates/intro.md) windows.
@@ -309,10 +307,10 @@ The Fx button shows shortcuts to add MathJax or
 [LaTeX](math.md) to your notes.
 
 The \[…​\] buttons are visible when a cloze note type is selected.
-![Cloze icons](media/cloze_icons.png)
+![Cloze](media/cloze.png)
 
 The `</>` button allows editing the underlying HTML of a field.
-![HTML icon](media/html_icon.png)
+![HTML icon](media/html_editor.png)
 
 Anki 2.1.45+ supports adjusting sticky fields directly from the editing screen.
 If you click on the pin icon on the right of a field, Anki will not clear out
@@ -320,7 +318,7 @@ the field's content after a note is added. If you find yourself entering the
 same content into multiple notes, you may find this useful. On previous Anki
 versions, sticky fields were toggled from the Fields screen.
 
-![Pin icon](media/Pin_icon.png)
+![Sticky Fields](media/sticky_fields.png)
 
 Most of the buttons have shortcut keys. You can hover the mouse cursor
 over a button to see its shortcut.
@@ -436,7 +434,7 @@ Occlusion (IO) note is a special case of cloze deletion based on images
 instead of text, and allows you to create cards that hide some parts
 of an image, testing your knowledge of that hidden information.
 
-![Image Occlusion](media/io.jpg)
+![Image Occlusion](media/image_occlusion.jpg)
 
 ### Adding an image
 
@@ -445,6 +443,8 @@ and choose "Image Occlusion" from the list of built-in note types.
 Then, click on "Select Image" to load an image file saved on your
 computer's hard drive, or on "Paste image from clipboard"
 if you have an image copied to the clipboard.
+
+![Add: Image Occlusion](media/editor_image_occlusion.png)
 
 ### Adding IO cards
 
@@ -463,7 +463,7 @@ You can also choose between two different IO modes for each note:
 - **Hide One, Guess One**: Only one area at a time is hidden
   and will be revealed during learning. The other areas will be visible.
 
-![Image Occlusion Modes](media/io_modes.jpg)
+![Image Occlusion Modes](media/image_occlusion_modes.jpg)
 
 Once you're done, click on the "Add" button, at the bottom of the screen.
 Anki will add a card for each shape or group of shapes you added in the previous step,

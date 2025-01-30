@@ -9,19 +9,19 @@ left, the _card/note table_ on the top right, and the _editing area_ on the bott
 right. By positioning the mouse between two sections, it is possible to click
 and drag to expand one section and shrink the other.
 
-![Browse Overview](media/browse_overview.png)
+![Browse Overview](media/browse.png)
 
 ## Table Modes
-
-![Table Modes: Cards](media/browse_table_mode_cards.png)
-
-![Table Modes: Notes](media/browse_table_mode_notes.png)
 
 Anki 2.1.45+ offers two modes: either cards or notes are shown in the data table.
 You can change the current mode by clicking the switch at the top, to the left
 of the search area, or pressing <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>T</kbd> or
 <kbd>Cmd</kbd>+<kbd>Opt</kbd>+<kbd>T</kbd>. The switch also indicates if **C**ards
 or **N**otes are currently shown.
+
+![Table Modes: Cards](media/table_mode_cards.png)
+
+![Table Modes: Notes](media/table_mode_notes.png)
 
 **Note**: For the sake of simplicity, this manual generally assumes the Cards
 mode to be the active one. Whenever selecting/finding/etc. "cards" is mentioned,
@@ -35,11 +35,9 @@ choice of two different tools, which are discussed in the following sections.
 You can switch tools using the toolbar at the top of the sidebar or the shortcuts
 <kbd>Alt</kbd>+<kbd>1</kbd>/<kbd>2</kbd>.
 
-![Browse: Sidebar](media/browse_sidebar.png)
 
 ### Search Tool
 
-![Sidebar: Search Tool](media/browse_sidebar_search.png)
 
 With this tool, the sidebar behaves as in previous versions: Clicking on an item
 will search for it.
@@ -72,7 +70,8 @@ following search expression:
 
 ### Selection Tool
 
-![Sidebar: Selection Tool](media/browse_sidebar_select.png)
+![Sidebar Search](media/sidebar_search.png)
+![Sidebar Select](media/sidebar_select.png)
 
 The Selection tool allows for selecting multiple items at the same time by holding down <kbd>Ctrl</kbd>
 or <kbd>Shift</kbd> while clicking. It also enables drag-and-drop to reorder decks and
@@ -97,8 +96,6 @@ choosing “Save Current Search” and typing in a name.
 You can also drag and drop any sidebar item onto this area to add an equivalent
 saved search, effectively pinning it at the top.
 
-![Sidebar: Saved Searches](media/browse_sidebar_saved_searches.png)
-
 ### Editing Items
 
 You can delete or rename tags, decks, and saved searches directly from the sidebar,
@@ -110,24 +107,17 @@ from the right-click menu, or by using a shortcut key (<kbd>Del</kbd> and
 
 To find a certain item in the sidebar tree, type part of its name into the searchbar at the top.
 
-![Sidebar: Filter](media/browse_sidebar_filter.png)
-
 ## Search Box
 
 Above the card list is a search box. You can type in various things
 there to search for cards. For information on the search syntax,
 see [Searching](searching.md).
 
-![Browse: Search](media/browse_search.png)
-
 ## Card/Note Table
 
 The table's rows represent cards or notes that match the current search.
 When you click on a row, the corresponding note will be shown in the bottom section.
 
-![Table Modes: Cards](media/browse_table_mode_cards.png)
-
-![Table Modes: Notes](media/browse_table_mode_notes.png)
 
 ### Rows
 
@@ -207,14 +197,13 @@ turn offer various actions that can be performed in the browser.
 
 <!-- prettier-ignore -->
 
-| Name                 | Shortcut       | Action                                                                                                                                                                  |
-|----------------------|----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Undo                 | Crtl + Z       | Revert the most recently performed operation.                                                                                                                           |
-| Select All           | Crtl + Alt + A | Select all rows displayed.                                                                                                                                              |
-| Select Notes         |                | Show only the currently selected notes and select all rows.                                                                                                             |
-| Invert Selection     | Crtl + Alt + S | Select those rows not selected, and deselect the currently selected rows.                                                                                               |
-| Close                | Crtl + W       | Close the browser                                                                                                                                                       |
-| Create Filtered Deck | Crtl + G       | Show the [filtered deck](filtered-decks.md#creating-manually) dialog and set the current browser search as a filter. Use Alt / Option to set the second filter instead. |
+| Name                 | Action                                                                                                                                                                                                                        |
+| -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Undo                 | Revert the most recently performed operation.                                                                                                                                                                                 |
+| Select All           | Select all rows displayed.                                                                                                                                                                                                    |
+| Select Notes         | Show only the currently selected notes and select all rows.                                                                                                                                                                   |
+| Invert Selection     | Select those rows not selected, and deselect the currently selected rows.                                                                                                                                                     |
+| Create Filtered Deck | Show the [filtered deck](filtered-decks.md#creating-manually) dialog and set the current browser search as a filter. Use <kbd>Alt</kbd> / <kbd>Option</kbd> to set the second filter instead.|
 
 ### Notes
 
@@ -224,20 +213,20 @@ they can be found in a submenu of the context menu.
 
 <!-- prettier-ignore -->
 
-| Name              | Shortcut               | Action                                                                                                                                                                                                                                                                                                                                                       |
-|-------------------|------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Add Notes         | Crtl + E               | Open the [Add](editing.md#adding-cards-and-notes) dialog.                                                                                                                                                                                                                                                                                                    |
-| Create Copy       | Crtl + Alt + E         | Open a [duplicate](browsing.md#finding-duplicates) of the current note in the [editor](editing.md#adding-cards-and-notes), which can be slightly modified to easily obtain variations of your cards. By default, the duplicate card will be created in the same deck as the original.                                                                        |
-| Export Notes      | Crtl + Shift + E       | Open the [Export](exporting.md) dialog.                                                                                                                                                                                                                                                                                                                      |
-| Add Tags          | Crtl + Shift + A       | Add provided tags to all selected notes.                                                                                                                                                                                                                                                                                                                     |
-| Remove Tags       | Crtl + Shift + Alt + A | Enter tags and remove them from all selected notes.                                                                                                                                                                                                                                                                                                          |
-| Clear Unused Tags |                        | Remove all tags from the sidebar that are not used by any notes.                                                                                                                                                                                                                                                                                             |
-| Toggle Mark       | Crtl + K               | If the current note is marked (i.e., has the _Marked_ tag), unmark all selected notes. If the current is not marked, mark all selected notes.                                                                                                                                                                                                                |
-| Change Note Type  | Crtl + Shift + M       | Convert the selected notes from one type to another. For example, imagine you have a _Russian_ note type and a _Computer_ note type, and you accidentally added some computer-related text into a _Russian_ note. You can use this option to fix that mistake. The scheduling of cards is not affected. Changing the type of a note requires a one-way sync. |
-| Find Duplicates   |                        | Open the [Duplicates](#finding-duplicates) dialog.                                                                                                                                                                                                                                                                                                           |
-| Find and Replace  | Crtl + Alt + F         | Open the [Find and Replace](#find-and-replace) dialog.                                                                                                                                                                                                                                                                                                       |
-| Manage Note Types |                        | Open the [Note Types](editing.md#adding-a-note-type) dialog.                                                                                                                                                                                                                                                                                                 |
-| Delete            | Crtl + Delete          | Delete all selected notes and their cards. It is not possible to remove individual cards, as individual cards are controlled by the [templates](templates/intro.md).                                                                                                                                                                                         |
+| Name              | Action                                                                                                                                                                                                                                                                                                                                                     |
+| ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Add Notes         | Open the [Add](editing.md#adding-cards-and-notes) dialog.                                                                                                                                                                                                                                                                                                  |
+| Create Copy       | Open a [duplicate](browsing.md#finding-duplicates) of the current note in the [editor](editing.md#adding-cards-and-notes), which can be slightly modified to easily obtain variations of your cards. By default, the duplicate card will be created in the same deck as the original.                                                                      |
+| Export Notes      | Open the [Export](exporting.md) dialog.                                                                                                                                                                                                                                                                                                                    |
+| Add Tags          | Add provided tags to all selected notes.                                                                                                                                                                                                                                                                                                                   |
+| Remove Tags       | Enter tags and remove them from all selected notes.                                                                                                                                                                                                                                                                                                        |
+| Clear Unused Tags | Remove all tags from the sidebar that are not used by any notes.                                                                                                                                                                                                                                                                                           |
+| Toggle Mark       | If the current note is marked (i.e., has the _Marked_ tag), unmark all selected notes. If the current is not marked, mark all selected notes.                                                                                                                                                                                                              |
+| Change Note Type   | Convert the selected notes from one type to another. For example, imagine you have a _Russian_ note type and a _Computer_ note type, and you accidentally added some computer-related text into a _Russian_ note. You can use this option to fix that mistake. The scheduling of cards is not affected. Changing the type of a note requires a one-way sync. |
+| Find Duplicates   | Open the [Duplicates](#finding-duplicates) dialog.                                                                                                                                                                                                                                                                                                         |
+| Find and Replace  | Open the [Find and Replace](#find-and-replace) dialog.                                                                                                                                                                                                                                                                                                     |
+| Manage Note Types  | Open the [Note Types](editing.md#adding-a-note-type) dialog.                                                                                                                                                                                                                                                                                                |
+| Delete            | Delete all selected notes and their cards. It is not possible to remove individual cards, as individual cards are controlled by the [templates](templates/intro.md). |
 
 ### Cards
 
@@ -247,42 +236,26 @@ they can be found in a submenu of the context menu.
 
 <!-- prettier-ignore -->
 
-| Name           | Shortcut         | Action                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-|----------------|------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Change Deck    | Crtl+ D          | Move currently selected cards to a different deck.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| Set Due Date   | Crtl + Shift + D | Turns cards into review cards if they are new, and makes them due on a certain date. This can be useful for moving cards forward or back a few days when your study schedule is interrupted. Entering a range like `60-90` will make the selected cards due between 60 and 90 days from now. New cards will have their interval set to the same delay, but review cards will be rescheduled without changing their current interval, unless an exclamation mark (`!`) is included at the end of the range. Note that the answer time is not recorded when manually scheduling cards, since the action can be performed even outside of review, and Anki isn't aware of which card may or may not be shown at the time.                                                                                                                                                                                                                                                                                                                                                                               |
-| Reset          | Crtl + Alt + N   | Move currently selected cards to the end of the new queue. The existing review history is preserved. In 2.1.50+, there are options to restore the original card position, and to reset the card's lapse and repetition counters.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| Reposition     | Crtl + Shift + S | Change the order new cards will appear in. You can find out the existing positions by enabling the _due_ column, as described in the [table](#cardnote-table) section above. If you run the reposition command when multiple cards are selected, it will apply increasing numbers to each card in turn. By default the number increases by one for each card, but this can be adjusted by changing the "step" setting. The **Shift position of existing cards** option allows you to insert cards between currently existing ones, pushing the currently existing ones apart. For instance, if you have five cards and you want to move 3, 4, and 5 between 1 and 2, selecting this setting would cause the cards to end up in the order 1, 3, 4, 5, 2. By contrast, if you turn this option off, 1 and 2 will get the same position number (and it will thus be unpredictable which of the cards with the same number comes up first). Please note that when enabled, any card with a higher position will be modified, and all of those changed cards will need to be sent the next time you sync. |
-| Toggle Suspend | Crtl+ J          | [Suspend](studying.md#editing-and-more) or unsuspend all selected cards, depending on whether the current card is suspended or not.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| Toggle Bury    | Crtl+ Shit + J   | [Bury](studying.md#editing-and-more) or unbury all selected cards, depending on whether the current card is buried or not.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| Flag           | Crtl + 1-7       | Toggle the flags of all selected cards. Whether a flag is added or removed depends on whether the current card has the chosen flag.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| Info           | Crtl + Shift + I | Show various information about the current card, including its review history. For more information, see [Card Info](stats.md#card-info).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| Name           | Action                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Change Deck    | Move currently selected cards to a different deck.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| Set Due Date   | Turns cards into review cards if they are new, and makes them due on a certain date. This can be useful for moving cards forward or back a few days when your study schedule is interrupted. Entering a range like `60-90` will make the selected cards due between 60 and 90 days from now. New cards will have their interval set to the same delay, but review cards will be rescheduled without changing their current interval, unless an exclamation mark (`!`) is included at the end of the range. Note that the answer time is not recorded when manually scheduling cards, since the action can be performed even outside of review, and Anki isn't aware of which card may or may not be shown at the time.                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| Reset        | Move currently selected cards to the end of the new queue. The existing review history is preserved. In 2.1.50+, there are options to restore the original card position, and to reset the card's lapse and repetition counters.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| Reposition     | Change the order new cards will appear in. You can find out the existing positions by enabling the _due_ column, as described in the [table](#cardnote-table) section above. If you run the reposition command when multiple cards are selected, it will apply increasing numbers to each card in turn. By default the number increases by one for each card, but this can be adjusted by changing the "step" setting. The **Shift position of existing cards** option allows you to insert cards between currently existing ones, pushing the currently existing ones apart. For instance, if you have five cards and you want to move 3, 4, and 5 between 1 and 2, selecting this setting would cause the cards to end up in the order 1, 3, 4, 5, 2. By contrast, if you turn this option off, 1 and 2 will get the same position number (and it will thus be unpredictable which of the cards with the same number comes up first). Please note that when enabled, any card with a higher position will be modified, and all of those changed cards will need to be sent the next time you sync. |
+| Toggle Suspend | [Suspend](studying.md#editing-and-more) or unsuspend all selected cards, depending on whether the current card is suspended or not.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| Flag           | Toggle the flags of all selected cards. Whether a flag is added or removed depends on whether the current card has the chosen flag.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| Info           | Show various information about the current card, including its review history. For more information, see [Card Info](stats.md#card-info).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 
 ### Go
 
 This menu exists to provide keyboard shortcuts to jump to various
 parts of the browser, and to go up and down the card list.
 
-<!-- prettier-ignore -->
-
-| Name          | Shortcut         |
-|---------------|------------------|
-| Find          | Crtl+ F          |
-| Filter        | Crtl + Shift + F |
-| Sidebar       | Crtl + Alt + R   |
-| Note          | Crtl + Shift + N |
-| Card List     | Crtl+ Shift + L  |
-| First Card    | Home             |
-| Previous Card | Crtl + P         |
-| Next Card     | Crtl + N         |
-| Last Card     | Down             |
-
 ## Find and Replace
 
 This dialog allows for replacing text on notes. As described above, it is available
 from the toolbar and the table's context menu.
 
-![Notes: Find and Replace](media/browse_find_replace.png)
 
 The first input field is for the text that is going to be replaced, the second
 one for the replacement. Next, there is a dropdown menu that allows you to specify
@@ -300,7 +273,7 @@ For example, assume there is the following text in a field:
 
 We use these settings:
 
-![Find and Replace: Example](media/browse_find_replace_example.png)
+![Find and Replace](media/find_replace.png)
 
 (Note that on Anki versions prior to 2.1.28, you would need to replace `${1}`
 with `\1`.)
@@ -322,8 +295,6 @@ have the same content. When you open the window, Anki will look at all
 of your note types and present a list of all possible fields. If you
 want to look for duplicates in the _Back_ field, you’d select it from
 the list and then click **Search**.
-
-![Notes: Finding Duplicates](media/browse_find_duplicates.png)
 
 By default, it will search in all note types that have the field you provided.
 This differs from the duplicate check when you add cards manually, which
