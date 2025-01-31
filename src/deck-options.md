@@ -319,7 +319,6 @@ Controls how the review cards are sorted. The options are:
   When using FSRS, overdueness is calculated based on on each card's retrievability,
   and the desired retention in the deck preset.
 
-
 ## Burying
 
 When Anki gathers cards, it first gathers intraday learning cards, then interday learning cards, then review cards, and finally new cards. This affects how burying works:
