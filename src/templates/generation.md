@@ -155,58 +155,13 @@ on the front template as a conditional, like so:
 
 This will ensure the card is generated only if both Field 2 and Field 1 are non-empty.
 
-## Limitations in Older Anki Versions
-
-The following limitations do not apply to Anki 2.1.28+ and AnkiMobile 2.0.64+.
-
-Older Anki versions cannot use negated conditionals for card generation.
-For example, on Anki 2.1.28, the following would add a card if a field
-called AddIfEmpty is empty, and Front is non-empty:
-
-    {{^AddIfEmpty}}
-        {{Front}}
-    {{/AddIfEmpty}}
-
-On earlier Anki versions, the negated conditional is ignored, and card
-generation will depend only on Front being non-empty.
-
-Mixing **AND** and **OR** conditions can also cause problems on older versions.
-For example, the following ("add the card if A **OR** B **OR** C is non-empty")
-is fine:
-
-    {{A}}
-    {{B}}
-    {{C}}
-
-And the following ("add the card if A **AND** B **AND** C are non-empty") is fine:
-
-    {{#A}}
-        {{#B}}
-            {{#C}}
-                {{A}}
-            {{/C}}
-        {{/B}}
-    {{/A}}
-
-But the following ("add the card if A **OR** (B **AND** C) are non-empty") will not work properly:
-
-    {{A}}
-    {{#B}}
-        {{#C}}
-            {{B}}
-        {{/C}}
-    {{/B}}
-
 ## Adding Empty Notes
 
-When you add a new note in Anki 2.1.28+ and AnkiMobile 2.0.64+, if the card
+When you add a new note in Anki, if the card
 templates and note fields combine to produce no cards, a blank card will be
 created using the first template. This allows you to add material even if it's
 incomplete, and modify it or the template later to make it valid. If you don't
 wish to keep an empty note, you can remove it with the Empty Cards function.
-
-On older Anki versions, Anki refuses to add or import a note if no cards
-would be generated.
 
 ## Cloze Templates
 

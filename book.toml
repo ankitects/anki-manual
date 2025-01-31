@@ -17,6 +17,7 @@ renderer = ["html"]
 git-repository-url = "https://github.com/ankitects/anki-manual/"
 cname = "docs.ankiweb.net"
 additional-css = ["css/misc.css", "css/kbd.css"]
+mathjax-support = true
 
 [output.linkcheck]
 optional = true
@@ -30,6 +31,7 @@ exclude = [
   'https://github.com/open-spaced-repetition/fsrs4anki#add-on-compatibility',
   'support.google.com',
   'wikiwiki.jp',
+  'web.archive.org',
 ]
 
 [output.html.fold]

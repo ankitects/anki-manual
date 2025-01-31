@@ -36,8 +36,10 @@ version, your Anki files will be in your `Documents/Anki` folder.
 
 On **Linux**, recent Anki versions store your data in
 `~/.local/share/Anki2`, or `$XDG_DATA_HOME/Anki2` if you have set a
-custom data path. Older versions of Anki stored your files in
-`~/Documents/Anki` or `~/Anki`.
+custom data path. If you are using a third-party **Flatpak** build,
+your files will be in `~/.var/app/net.ankiweb.Anki/data/Anki2/`.
+Older versions of Anki stored your files in
+`~/Documents/Anki` or `~/Anki`. 
 
 Within the Anki folder, the program-level and profile-level preferences
 are stored in a file called prefs.db.
@@ -62,9 +64,9 @@ If you have made a destructive change on one computer and have an
 undamaged copy on another computer, you may wish to start Anki without
 syncing in order to use the full sync option without first downloading
 the changes. Similarly, if you are experiencing problems with Anki, you
-might want to (or might be instructed to) disable add-ons temporarily to
-see if one might be causing the problem. You can do both of these things
-by holding down the <kbd>Shift</kbd> key while starting Anki.
+might need to (or might be instructed to) disable add-ons temporarily to
+see if one might be causing the problem. To do both of these things at the same time, you can 
+open Anki in safe mode by holding down the <kbd>Shift</kbd> key while starting Anki. Keep holding <kbd>Shift</kbd> down until the on-screen message informs you that Anki has started in safe mode.
 
 It is possible to specify a custom folder location during startup. This
 is an advanced feature that is primarily intended to be used with

@@ -31,11 +31,10 @@ This will reset all windows sizes and locations to the default settings.
 **Video driver**\
 Anki's libraries need a video driver to draw content on the screen.
 Due to different hardware and software configurations, the driver that
-works best on your machine may vary. ANGLE and OpenGL will perform better
-than the software option, but they may not function correctly on some
-systems. On Macs, you will almost always want to use the OpenGL option.
+works best on your machine may vary. Software tends to be slower, but will
+work on some systems where the other options do not.
 
-Note: If you're using 2.1.50+ (Qt6), please, check [this page](./platform/windows/display-issues.md#qt6).
+Note: If you're on Windows, please check [this page](./platform/windows/display-issues.md) as well.
 
 ### Distractions
 
@@ -116,7 +115,7 @@ note type (and opens the add window to the last-used note type when you choose
 Add). This may be more convenient if you always use a single note type for each
 deck.
 
-The last used deck/notetype is updated when you add a card. If you change the deck
+The last used deck/note type is updated when you add a card. If you change the deck
 and close the add window without adding a card, it won't be saved.
 
 ### Browsing
@@ -127,11 +126,6 @@ with "deck:current").
 
 **Ignore accents in search (slower)**\
 When enabled, simple text searches automatically [ignore accents](./searching.md#ignoring-accentscombining-characters).
-
-### Import/Export
-
-**Legacy import/export handling**\
-If enabled, legacy (pre 2.1.55) import / export code will be used. It is recommended to deactivate this option.
 
 ## Syncing
 

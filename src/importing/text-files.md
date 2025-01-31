@@ -12,10 +12,6 @@ are met.
 
 - The files must be in UTF-8 format (see below).
 
-- The first line also defines the separating character – if Anki finds
-  a ';' on the first line it will use that, if it finds a comma it’ll
-  use that, etc.
-
 - Anki determines the number of fields in the file by looking at the first
   (non-commented) line. If some of the later records in the file contain fewer
   fields, Anki will treat the missing fields as if they were blank. If some of your
@@ -33,7 +29,7 @@ the one you’ve selected.
 This is an example of a valid file with three fields:
 
     apple;banana;grape
-    some text;other text;yet more text
+    first field;second field;third field
 
 There are two ways to include newlines or the field separator in fields.
 
@@ -60,7 +56,7 @@ file for you, it will automatically take care of escaping double quotes.
     hello; this is<br>a two line answer
     two; this is a one line one
 
-You need to turn on the "allow HTML in fields" checkbox in the import
+You need to turn on the **Allow HTML in fields** in the import
 dialog for HTML newlines to work.
 
 Escaped multi-lines will not work correctly if you are using cloze
@@ -85,11 +81,11 @@ and so on), Anki expects files to be saved in a 'UTF-8 encoding'. The
 easiest way to do this is to use the free LibreOffice spreadsheet
 program instead of Excel to edit your file, as it supports UTF-8 easily,
 and also exports multi-line content properly, unlike Excel. If you wish
-to keep using Excel, please see [this forum post](https://docs.google.com/document/d/12YE_FS6A9ANLTESJNtPP116ti4nNmCBghyoJBRtno_k/edit?usp=sharing)
+to keep using Excel, please see [this doc](https://docs.google.com/document/d/12YE_FS6A9ANLTESJNtPP116ti4nNmCBghyoJBRtno_k/edit?usp=sharing)
 for more information.
 
 To save your spreadsheet to a file Anki can read with LibreOffice, go to
-File&gt;Save As, and then select CSV for the type of file. After
+**File &gt; Save As**, and then select CSV for the type of file. After
 accepting the default options, LibreOffice will save the file and you
 can then import the saved file into Anki.
 
@@ -155,13 +151,6 @@ so if you have a file named apple.jpg, the front would say 'apple') and
 the images or audio on the back. If you would like a different
 arrangement of media and filenames, you can [change the note type](../browsing.md) of the created cards afterwards.
 
-## Adding Tags
-
-If you want to add 'tag1' and 'tag2' to every line you’re importing, add
-the following to the top of the text file:
-
-    tags:tag1 tag2
-
 ## Duplicates and Updating
 
 When importing text files, Anki uses the first field to determine if a
@@ -174,8 +163,8 @@ this behaviour, to either ignore duplicates completely, or import them
 as new notes instead of updating existing ones.
 
 The 'match scope' setting controls how duplicates are identified. When
-'notetype' is selected, Anki will identify a duplicate if another note
-with the same notetype has the same first field. When set to 'notetype and deck',
+'note type' is selected, Anki will identify a duplicate if another note
+with the same note type has the same first field. When set to 'note type and deck',
 a duplicate will only be flagged if the existing note also happens to be
 in the deck you are importing into.
 
@@ -192,22 +181,17 @@ For info on how duplicates are handled in .apkg files, please see the
 
 Anki 2.1.54+ supports certain headers that can be included in the text file to
 make importing more powerful or convenient. They consist of `#key:value` pairs
-and must be listed in separate lines at the top of the file, though the [tags line](#adding-tags)
-may precede them. Since header lines start with the comment character `#`, earlier
-Anki clients will just ignore them.
-
-You must enable the new importing option in the preferences screen to use this on
-2.1.54. On 2.1.55, the new importing path is the default.
+and must be listed in separate lines at the top of the file.
 
 | Key               | Allowed Values                                                                             | Behaviour                                                                                                       |
 | ----------------- | ------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------- |
 | `separator`       | `Comma`, `Semicolon`, `Tab`, `Space`, `Pipe`, `Colon`, or the according literal characters | Determines the field separator.                                                                                 |
 | `html`            | `true`, `false`                                                                            | Determines whether the file is treated as HTML.                                                                 |
-| `tags`            | List of tags, separated by spaces                                                          | Same as [the old syntax](#adding-tags).                                                                         |
+| `tags`            | List of tags, separated by spaces                                                          | Adds the listed tags to every imported note.                                                                      |
 | `columns`         | List of names, separated by the previously set separator                                   | Determines the number of columns and shows their given names when importing.                                    |
-| `notetype`        | Notetype name or id                                                                        | Presets the notetype, if it exists.                                                                             |
+| `notetype`        | Note type name or id                                                                        | Presets the note type, if it exists.                                                                             |
 | `deck`            | Deck name or id                                                                            | Presets the deck, if it exists.                                                                                 |
-| `notetype column` | `1`, `2`, `3`, ...                                                                         | Determines which column contains the notetype name or id of each note, see [Notetype Column](#notetype-column). |
+| `notetype column` | `1`, `2`, `3`, ...                                                                         | Determines which column contains the note type name or id of each note, see [Notetype Column](#notetype-column). |
 | `deck column`     | `1`, `2`, `3`, ...                                                                         | Determines which column contains the deck name or id of each note, see [Deck Column](#deck-column).             |
 | `tags column`     | `1`, `2`, `3`, ...                                                                         | Determines which column contains the tags of each note.                                                         |
 | `guid column`     | `1`, `2`, `3`, ...                                                                         | Determines which column contains the GUID of each note, see [GUID Column](#guid-column).                        |
@@ -216,15 +200,14 @@ Some headers have further implications.
 
 ### Notetype Column
 
-Usually, all notes from a file will be mapped to a single notetype, and you may
-choose which column should be mapped to which field of that notetype.
+Usually, all notes from a file will be mapped to a single note type. That changes, if there is a column with note type names or ids. 
 
-That changes, if there is a column with notetype names or ids. This allows to
-import notes with different notetypes, and their fields will be mapped implicitly:
+This allows you to
+import notes with different note types, and their fields will be mapped implicitly:
 The first regular column is used for the first field of any note regardless of
-its notetype, the second regular column for the second field, and so on.
-A 'regular column' here being a column that does not contain special information
-like decks, tags, notetypes or GUIDs.
+its note type, the second regular column for the second field, and so on.
+A _regular column_ here being a column that does not contain special information
+like decks, tags, note types or GUIDs.
 
 ### Deck Column
 
@@ -242,11 +225,11 @@ as long as you do not modify the GUID field, you'll be able to import the notes 
 in to update the existing notes.
 
 Please note that the GUID is intended to be created by Anki. If you are creating
-your own IDs, such as MYNOTE0001, then it's recommended that you place the IDs
+your own IDs, such as `MYNOTE0001`, then it's recommended that you place the IDs
 in the first field, instead of assigning them to Anki's internal GUID. When importing,
 Anki is able to use either the first field or the GUID for duplicate checking, so you do not
 need to make IDs a GUID in order to be able to update your notes.
 
-One other thing to note is that the 'duplicate' option will not work for rows that have a
+One other thing to note is that the duplicate option will not work for rows that have a
 non-empty GUID. If a GUID is provided, and already exists in the collection, a duplicate will
 not be created.

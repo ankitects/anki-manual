@@ -16,31 +16,12 @@ If you're on an old machine, you can obtain old releases from the [releases page
 
 To install Anki:
 
-1. Download Anki from <https://apps.ankiweb.net>. See the next section
-   for how to choose between -qt5 and -qt6.
+1. Download Anki from <https://apps.ankiweb.net>.
 2. Save the installer to your desktop or downloads folder.
 3. Double-click on the installer to run it. If you see an error
    message, please see the [installation issues page](installation-issues.md).
 4. Once Anki is installed, double-click on the new star icon on your
    desktop to start Anki.
-
-## Qt5 vs. Qt6
-
-Recent Anki versions come in separate Qt5 and Qt6 variants. The Qt6 version is
-recommended for most users.
-
-Advantages of the Qt6 version:
-
-- Various bugfixes, including things like better support for less common languages.
-- Very large images load faster than the Qt5 version.
-- Security updates. Support for the Qt5 library was discontinued in Nov 2020,
-  meaning that any security flaws discovered since then will remain unfixed.
-- Some users experience freezes when using [a custom shortcut key to switch input languages](https://github.com/ankitects/anki/issues/1105)
-  in Qt5.
-
-Disadvantages of the Qt6 version:
-
-- Some add-ons currently only work with the Qt5 version.
 
 ## Upgrading
 
