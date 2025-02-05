@@ -364,7 +364,7 @@ not influence scheduling.
 
 - Show on-screen timer: On the Study screen, show a timer that counts the time
   you're taking to study each card. (This timer will stop when it reaches the Maximum answer seconds set for the internal timer.)
-- Stop timer on answer: Whether the on-screen timer should continue running from when you show
+- Stop on-screen timer on answer: Whether the on-screen timer should continue running from when you show
   the answer until you press a button to grade your answer. This option does not impact the time that is recorded for your statistics.
 
 ## Auto Advance
