@@ -463,7 +463,7 @@ development or otherwise working closely with the database.
 ## Other Searches
 
 `prop:due=1 is:learn`\
-interday learning cards due for tommorow.
+interday learning cards due for tomorrow.
 
 `prop:due=0 is:learn -introduced:1`\
 interday learning cards due today.
