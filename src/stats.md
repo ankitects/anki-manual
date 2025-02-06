@@ -197,6 +197,23 @@ Easy button while studying learning/new, young, and
 [mature](getting-started.md#card-states) cards. Anki also displays the percentage
 of correct reviews for each type of card.
 
+
+## True Retention Table
+
+This table shows your retention across different cards and different time frames.
+A card is defined as "mature" if its interval is ≥21 days. Only one review per day - the first one - counts.
+Again counts as "Fail"; Hard, Good, and Easy count as "Pass".
+This table can be used to check how well [Anki's spaced repetition algorithm](https://faqs.ankiweb.net/what-spaced-repetition-algorithm.html) is working for you.
+
+If you are using FSRS, your [desired retention](deck-options.md#desired-retention) should be close to your true retention.
+Please keep in mind that data for a single day is noisy, so it's better to look at monthly data. If your true retention doesn't match your desired retention very well, here are some general recommendations:
+
+1) Optimize your FSRS parameters.
+2) Use different presets with their own parameters for different material.
+3) Suspend/reformulate [leeches](leeches.md).
+4) Make sure you are [using the answer buttons as intended](studying.md#answer-buttons).
+
+
 ## Manual Analysis
 
 If you’re interested in getting information from your statistics other
