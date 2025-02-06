@@ -2,7 +2,7 @@
 
 <!-- toc -->
 
-## Qt6 Video Driver
+## Video Driver
 
 If you're experiencing display issues or crashes in Anki 23.10+, you can try
 changing the video driver in the preferences screen, then restarting Anki.
