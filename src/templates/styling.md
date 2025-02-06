@@ -302,13 +302,19 @@ particular browsers when using AnkiWeb. Please see
 
 ## Installing Fonts
 
-If you’re using Anki on a work or school computer where you don’t have
-permission to install new fonts, or you’re using Anki on a mobile
-device, it’s possible to add fonts directly to Anki.
+You can install fonts directly to Anki. This is useful if you’re using Anki on
+a work or school computer where you don’t have permission to install new fonts,
+or if you’re using Anki on a mobile device.
 
-To add a font to Anki, it must be in the TrueType format. TrueType fonts
-have a filename ending in .ttf, such as "Arial.ttf". Once you’ve located
-a TrueType font, we’ll need to add it to the media folder:
+Anki supports the following file formats:
+* TrueType (.ttf)
+* OpenType (.otf)
+* Web Open Font Format (.woff)
+
+### Add font to media folder
+
+Once you have downloaded a supported font, such as "Arial.ttf", you have to add
+it to the media folder.
 
 1. Rename the file, adding an underscore at the start, so it becomes
    like "\_arial.ttf". Adding an underscore will tell Anki that this
@@ -322,7 +328,10 @@ a TrueType font, we’ll need to add it to the media folder:
 3. Inside the folder, you should see a folder called collection.media.
    Drag the renamed file to that folder.
 
-After that, we need to update the template:
+### Update template to use that font
+
+After the font has been added to the media folder, you need to update the
+template.
 
 1. Click **Add** at the top of the main screen, and then select the
    note type you want to change with the top left button.
