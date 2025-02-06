@@ -1735,6 +1735,10 @@ correctly, please see the section on <a href="templates/fields.html#checking-you
 Canberra [...] in 1913 -&gt; was founded
 </code></pre>
 <p>with the word &quot;was&quot; appearing in both deletions.</p>
+<p>The current implementation can only handle a limited amount of nesting. In Anki 24.11, it is 3 levels.
+In other versions, the limit is around 8, but Anki may become slow as you approach the limit. It is
+not possible to extend the limit. If you use this feature, it is recommended you limit yourself to a
+few levels of nesting.</p>
 <p>Prior to version 2.1.56, if you need to create clozes from overlapping text, add another Text
 field to your cloze, add it to the <a href="templates/intro.html">template</a>, and then when
 creating notes, paste the text into two separate fields, like so:</p>
