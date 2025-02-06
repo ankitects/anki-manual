@@ -42,7 +42,7 @@ Preferences* (or *Anki > Preferences* if you're on a Mac) and change the driver
 from the dropdown menu.
 
 If you are on an older Anki version or if you cannot access the preferences for
-some reason, you can use the command-line instructions instead and manualy
+some reason, you can use the command-line instructions instead and manually
 change the gldriver file:
 
 - [Windows](https://docs.ankiweb.net/platform/windows/display-issues.html)
