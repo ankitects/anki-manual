@@ -163,6 +163,7 @@
 </li>
 <li><a href="#today">Today</a></li>
 <li><a href="#the-graphs">The Graphs</a></li>
+<li><a href="#true-retention-table">True Retention Table</a></li>
 <li><a href="#manual-analysis">Manual Analysis</a></li>
 </ul>
 <h2 id="card-info"><a class="header" href="#card-info">Card Info</a></h2>
@@ -322,6 +323,19 @@ This graph shows how many times you’ve chosen the Again, Hard, Good, or
 Easy button while studying learning/new, young, and
 <a href="getting-started.html#card-states">mature</a> cards. Anki also displays the percentage
 of correct reviews for each type of card.</p>
+<h2 id="true-retention-table"><a class="header" href="#true-retention-table">True Retention Table</a></h2>
+<p>This table shows your retention across different cards and different time frames.
+A card is defined as &quot;mature&quot; if its interval is ≥21 days. Only one review per day - the first one - counts.
+Again counts as &quot;Fail&quot;; Hard, Good, and Easy count as &quot;Pass&quot;.
+This table can be used to check how well <a href="https://faqs.ankiweb.net/what-spaced-repetition-algorithm.html">Anki's spaced repetition algorithm</a> is working for you.</p>
+<p>If you are using FSRS, your <a href="deck-options.html#desired-retention">desired retention</a> should be close to your true retention.
+Please keep in mind that data for a single day is noisy, so it's better to look at monthly data. If your true retention doesn't match your desired retention very well, here are some general recommendations:</p>
+<ol>
+<li>Optimize your FSRS parameters.</li>
+<li>Use different presets with their own parameters for different material.</li>
+<li>Suspend/reformulate <a href="leeches.html">leeches</a>.</li>
+<li>Make sure you are <a href="studying.html#answer-buttons">using the answer buttons as intended</a>.</li>
+</ol>
 <h2 id="manual-analysis"><a class="header" href="#manual-analysis">Manual Analysis</a></h2>
 <p>If you’re interested in getting information from your statistics other
 than what Anki provides, it is possible to access the data directly.
