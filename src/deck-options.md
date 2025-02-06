@@ -343,7 +343,7 @@ For more info about burying cards, please see [this section](./studying.md#sibli
   the question side is played when you use replay action on the answer side. Note that, Anki [does not automatically play](./templates/fields.md#special-fields) audio from the `{{FrontSide}}` field. This option does not influence the behaviour of automatic play.
 
 ## Timers
-<a id="Timer"></a>
+<a id="timer"></a>
 
 Anki monitors how long it takes you to answer each card, so that it
 can show you how long was spent studying each day. The time taken does
