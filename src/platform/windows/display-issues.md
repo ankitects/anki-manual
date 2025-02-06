@@ -8,6 +8,14 @@ other options that are faster: _OpenGL_ and _ANGLE_. They are faster, but they
 may not work, or may cause display issues such as missing menubars, blank
 windows, and so on. Which one works best will depend on your computer.
 
+
+## Changing the driver with the preferences screen
+In Anki 23.10+, you can change the graphics driver from preferences screen by
+navigating to *Tools > Preferences* and then selecting the driver from the
+dropdown menu.
+
+
+## Changing the driver with cmd / PowerShell
 If you run into display issues, you can try switching to software mode via cmd:
 
 ```bat
@@ -23,8 +31,6 @@ echo software > $env:APPDATA\Anki2\gldriver6
 It will not print anything. You can then start Anki again.
 
 To revert to the default behaviour, change `software` to `auto`, or delete that file.
-
-In Anki 23.10+, you can also change the graphics driver from preferences screen.
 
 ## Full screen
 
