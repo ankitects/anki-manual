@@ -407,6 +407,11 @@ The inner cloze is entirely nested within the outer. There is no support for par
 
 with the word "was" appearing in both deletions.
 
+The current implementation can only handle a limited amount of nesting. In Anki 24.11, it is 3 levels.
+In other versions, the limit is around 8, but Anki may become slow as you approach the limit. It is
+not possible to extend the limit. If you use this feature, it is recommended you limit yourself to a
+few levels of nesting.
+
 Prior to version 2.1.56, if you need to create clozes from overlapping text, add another Text
 field to your cloze, add it to the [template](templates/intro.md), and then when
 creating notes, paste the text into two separate fields, like so:
