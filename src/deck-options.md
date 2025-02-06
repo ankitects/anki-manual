@@ -342,25 +342,30 @@ For more info about burying cards, please see [this section](./studying.md#sibli
 - **Skip question when replaying answer**: Controls whether audio from
   the question side is played when you use replay action on the answer side. Note that, Anki [does not automatically play](./templates/fields.md#special-fields) audio from the `{{FrontSide}}` field. This option does not influence the behaviour of automatic play.
 
-## Timer
+## Timers
+<a id="Timer"></a>
 
 Anki monitors how long it takes you to answer each card, so that it
 can show you how long was spent studying each day. The time taken does
 not influence scheduling.
 
-The options are:
+### Internal Timer
 
 - Maximum answer seconds: The default limit is 60 seconds. If you take
   longer than that, Anki assumes you have walked away from your computer
-  or have been distracted, and limits the recorded time to 60 seconds, so
-  that you don’t end up with inaccurate statistics. If you consistently
-  take longer than 60 seconds to answer a card (from when question is shown
-  until you press an answer button), you may want to either consider raising
-  this limit, or, ideally, making your cards simpler.
-- Show answer timer: In the review screen, show a timer that counts the number
-  of seconds you're taking to review each card.
-- Stop timer on answer: whether the timer should keep running when you show
-  the answer.
+  or have been distracted, and caps the recorded time at 60 seconds, so
+  that you don’t end up with inaccurate statistics.
+- This internal timer runs from when the question is shown until you press a button to grade your answer. If you consistently
+  spend longer than 60 seconds on a card, 
+  you may want to consider either raising
+  this limit, or even better, making your cards simpler.
+
+### On-screen Timer
+
+- Show on-screen timer: On the Study screen, show a timer that counts the time
+  you're taking to study each card. (This timer will stop when it reaches the Maximum answer seconds set for the internal timer.)
+- Stop on-screen timer on answer: Whether the on-screen timer should continue running from when you show
+  the answer until you press a button to grade your answer. This option does not impact the time that is recorded for your statistics.
 
 ## Auto Advance
 
