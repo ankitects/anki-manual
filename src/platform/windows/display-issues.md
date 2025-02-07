@@ -9,7 +9,7 @@ may not work, or may cause display issues such as missing menubars, blank
 windows, and so on. Which one works best will depend on your computer.
 
 
-## Changing the driver with the preferences screen
+## Changing the driver from the Preferences Screen
 In Anki 23.10+, you can change the graphics driver from preferences screen by
 navigating to **Tools → Preferences** and then selecting the driver from the
 dropdown menu.
