@@ -5,7 +5,7 @@ or display issues, you can try enabling software rendering.
 
 ### Using the Preferences Screen
 In Anki 23.10+, you can change the graphics driver from preferences screen by
-navigating to *Tools > Preferences* and then selecting the driver from the
+navigating to **Tools → Preferences** and then selecting the driver from the
 dropdown menu.
 
 ### Using the Terminal
