@@ -2,7 +2,7 @@
 
 <!-- toc -->
 
-## Changing Video Drivers
+## Change the Video Driver
 
 ### From Preferences Screen
 If you're experiencing display issues or crashes in Anki 23.10+, you can try
