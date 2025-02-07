@@ -37,9 +37,9 @@ Crashes and display issues can be caused by the video driver. Changing to a
 different video driver may help. Make sure you try all the driver options and
 restart Anki after each change.
 
-If you're using Anki version 23.10 or above, the easiest way is to open *Tools >
-Preferences* (or *Anki > Preferences* if you're on a Mac) and change the driver
-from the dropdown menu.
+If you're using Anki version 23.10 or above, the easiest way is to open
+**Tools → Preferences** (or **Anki → Preferences** if you're on a Mac) and
+change the driver from the dropdown menu.
 
 If you are on an older Anki version or if you cannot access the preferences for
 some reason, you can use the command-line instructions instead and manually
