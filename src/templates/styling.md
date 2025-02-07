@@ -306,10 +306,8 @@ You can install fonts directly to Anki. This is useful if you’re using Anki on
 a work or school computer where you don’t have permission to install new fonts,
 or if you’re using Anki on a mobile device.
 
-Anki supports the following file formats:
-* TrueType (.ttf)
-* OpenType (.otf)
-* Web Open Font Format (.woff)
+Anki supports the most widely used font formats, such as TrueType (.ttf),
+OpenType (.otf), Web Open Font Format (.woff) and others.
 
 ### Add font to media folder
 
