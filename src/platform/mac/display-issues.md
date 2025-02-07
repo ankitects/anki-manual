@@ -6,8 +6,8 @@
 
 ### From Preferences Screen
 If you're experiencing display issues or crashes in Anki 23.10+, you can try
-changing the video driver in the preferences screen by navigating to *Anki >
-Preferences* and then selecting the driver from the dropdown menu. After that it
+changing the video driver in the preferences screen by navigating to **Anki →
+Preferences** and then selecting the driver from the dropdown menu. After that it
 is necessary to restart Anki.
 
 ### From Terminal.app
