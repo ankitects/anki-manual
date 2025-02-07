@@ -11,7 +11,7 @@ windows, and so on. Which one works best will depend on your computer.
 
 ## Changing the driver with the preferences screen
 In Anki 23.10+, you can change the graphics driver from preferences screen by
-navigating to *Tools > Preferences* and then selecting the driver from the
+navigating to **Tools → Preferences** and then selecting the driver from the
 dropdown menu.
 
 
