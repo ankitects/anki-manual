@@ -6,26 +6,41 @@ If you encounter a problem with Anki, please try the following steps in order:
 
 Please close Anki, then start it again.
 
-If you are unable to close Anki because of an error message, you can either terminate Anki using your task manager, or restart your computer. Anki saves periodically, so you should not lose more than a few minutes of work in most circumstances.
+If you are unable to close Anki because of an error message, you can either
+terminate Anki using your task manager, or restart your computer. Anki saves
+periodically, so you should not lose more than a few minutes of work in most
+circumstances.
 
 If the problem does not occur again, you can skip the following steps.
 
 **2. Check add-ons**
 
-Please close Anki, then open it in safe mode by holding down the <kbd>Shift</kbd> key while starting Anki. Keep holding <kbd>Shift</kbd> down until the on-screen message informs you that Anki has started in safe mode. 
+Please close Anki, then open it in safe mode by holding down the
+<kbd>Shift</kbd> key while starting Anki. Keep holding <kbd>Shift</kbd> down
+until the on-screen message informs you that Anki has started in safe mode. 
 
-If the problem goes away, that indicates an add-on is causing the problem. Remove any add-ons you don't need, and disable half of the others. If the problem continues, try the other half. Repeat
-the process until you've figured out which add-on is causing the problem. Then please report the issue to the add-on author, using the Copy Debug Info button, and pasting that into the report.
+If the problem goes away, that indicates an add-on is causing the problem.
+Remove any add-ons you don't need, and disable half of the others. If the
+problem continues, try the other half. Repeat the process until you've figured
+out which add-on is causing the problem. Then please report the issue to the
+add-on author, using the Copy Debug Info button, and pasting that into the
+report.
 
 **3. Check your Anki version**
 
-You can find the version you're using in the Help>About or Anki>About menu. If the version you're using is not the latest version published on <https://apps.ankiweb.net>, please close Anki, install the latest version, and then start Anki again to see if the problem has gone away.
+You can find the version you're using in the **Help → About** or **Anki → About
+menu**. If the version you're using is not the latest version published on
+<https://apps.ankiweb.net>, please close Anki, install the latest version, and
+then start Anki again to see if the problem has gone away.
 
-If you're using Linux, please make sure you can reproduce the error using the packaged version on the Anki website, as distros often distribute [broken versions](https://anki.tenderapp.com/kb/anki-ecosystem/third-party-linux-packages-and-source-builds-are-not-supported).
+If you're using Linux, please make sure you can reproduce the error using the
+packaged version on the Anki website, as distros often distribute [broken
+versions](https://anki.tenderapp.com/kb/anki-ecosystem/third-party-linux-packages-and-source-builds-are-not-supported).
 
 **4. Check your database**
 
-After restarting Anki, please try the Tools>Check Database menu item to make sure your collection doesn't have any problems.
+After restarting Anki, please try the **Tools → Check Database** menu item to
+make sure your collection doesn't have any problems.
 
 **5. Restart your computer**
 
@@ -56,4 +71,7 @@ immediately after starting Anki will help.
 
 **8. If the problem remains**
 
-If you're confirmed you are using the latest Anki version, and are still receiving errors when starting Anki while holding down the shift key, please [report the problem](./getting-help.md), including the next error you receive in your post.
+If you're confirmed you are using the latest Anki version, and are still
+receiving errors when starting Anki while holding down the shift key,
+please [report the problem](./getting-help.md), including the next error you
+receive in your post.
