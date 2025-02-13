@@ -584,7 +584,7 @@ interval would be around 13 days).
 
 An extra multiplier that is applied to all reviews. At its default of 1.00 it
 does nothing. If you set it to 0.80, intervals will be generated at
-80% of their normal size (so a 10 day interval would become 8 days). You can
+80% of their normal size (so a 10 day interval would become 8 days).
 You can thus use the multiplier to to make your reviews less or more frequent.
 
 For moderately difficult material, the average user should find they
