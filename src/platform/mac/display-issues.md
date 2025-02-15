@@ -7,6 +7,8 @@
 If you're experiencing display issues or crashes in Anki 23.10+, you can try
 changing the video driver in the preferences screen, then restarting Anki.
 
+![Display Issues MacOS](/src/media/display_issues_macos.png)
+
 Older Anki versions did not provide an option in the preferences, but allowed
 you to adjust the driver by opening Terminal.app, then pasting the following and hit enter:
 
@@ -18,6 +20,7 @@ It will not print anything. You can then start Anki again.
 
 If you wish to switch back to the default, change `software` to `auto`, or
 remove that file.
+
 
 ## eGPUs
 

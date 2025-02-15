@@ -1,5 +1,7 @@
 # Math and Symbols
 
+![Formulas](media/math.png)
+
 <!-- toc -->
 
 ## MathJax

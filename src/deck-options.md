@@ -20,6 +20,8 @@ Here are some community posts about deck options that have been contributed in t
 - [Deck Options Explained](https://forums.ankiweb.net/t/deck-options-explained/213)
 - [Deck Options in a Mental Map](https://forums.ankiweb.net/t/deck-options-in-a-mental-map/15757)
 
+![Deck Options](media/deck_options.png)
+
 ## Presets
 
 Anki allows you to share options between different decks, to make
@@ -419,7 +421,7 @@ them when they come up for review again. This should normally translate to remem
 
 Here is a graph that shows how adjusting this value will affect your workload:
 
-![graph showing an exponential increase in workload as desired retention nears one.](./media/FSRS_retention.png)
+![graph showing an exponential increase in workload as desired retention nears one.](media/FSRS_desired_retention.png)
 
 The exact shape of the graph is different for everyone. However, there are two patterns that hold true for all:
 

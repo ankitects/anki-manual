@@ -9,9 +9,9 @@ left, the _card/note table_ on the top right, and the _editing area_ on the bott
 right. By positioning the mouse between two sections, it is possible to click
 and drag to expand one section and shrink the other.
 
-## Table Modes
+![Browse Overview](media/browse.png)
 
-![Table Modes](media/browser_table_modes.png)
+## Table Modes
 
 Anki 2.1.45+ offers two modes: either cards or notes are shown in the data table.
 You can change the current mode by clicking the switch at the top, to the left
@@ -31,9 +31,9 @@ choice of two different tools, which are discussed in the following sections.
 You can switch tools using the toolbar at the top of the sidebar or the shortcuts
 <kbd>Alt</kbd>+<kbd>1</kbd>/<kbd>2</kbd>.
 
+
 ### Search Tool
 
-![Search Tool](media/browser_search_tool.png)
 
 With this tool, the sidebar behaves as in previous versions: Clicking on an item
 will search for it.
@@ -66,7 +66,8 @@ following search expression:
 
 ### Selection Tool
 
-![Selection Tool](media/browser_selection_tool2.png)
+![Sidebar Search](media/sidebar_search.png)
+![Sidebar Select](media/sidebar_select.png)
 
 The Selection tool allows for selecting multiple items at the same time by holding down <kbd>Ctrl</kbd>
 or <kbd>Shift</kbd> while clicking. It also enables drag-and-drop to reorder decks and
@@ -85,11 +86,10 @@ to append the resulting search to the current search.
 
 ### Saved Searches
 
-If you regularly search for the same thing,
-you can save the current search by right-clicking the topmost item in the sidebar,
-choosing “Save Current Search” and typing in a name.
-You can also drag and drop any sidebar item onto this area to add an equivalent
-saved search, effectively pinning it at the top.
+If you regularly search for the same thing, you can save the current search by right-clicking the topmost item in the sidebar, choosing “Save Current Search” and typing in a name.
+You can also drag and drop any sidebar item onto this area to add an equivalent saved search, effectively pinning it at the top.
+
+![Saved Searches](media/saved_searches.png)
 
 ### Editing Items
 
@@ -100,8 +100,7 @@ from the right-click menu, or by using a shortcut key (<kbd>Del</kbd> and
 
 ### Finding Items
 
-To find a certain item in the sidebar tree, type part of its name into the searchbar
-at the top.
+To find a certain item in the sidebar tree, type part of its name into the searchbar at the top.
 
 ## Search Box
 
@@ -113,6 +112,11 @@ see [Searching](searching.md).
 
 The table's rows represent cards or notes that match the current search.
 When you click on a row, the corresponding note will be shown in the bottom section.
+
+![Table Modes: Cards](media/table_mode_cards.png)
+
+![Table Modes: Notes](media/table_mode_notes.png)
+
 
 ### Rows
 
@@ -221,7 +225,7 @@ they can be found in a submenu of the context menu.
 | Find Duplicates   | Open the [Duplicates](#finding-duplicates) dialog.                                                                                                                                                                                                                                                                                                         |
 | Find and Replace  | Open the [Find and Replace](#find-and-replace) dialog.                                                                                                                                                                                                                                                                                                     |
 | Manage Note Types  | Open the [Note Types](editing.md#adding-a-note-type) dialog.                                                                                                                                                                                                                                                                                                |
-| Delete            | Delete all selected notes and their cards. It is not possible to remove individual cards, as individual cards are controlled by the [templates](templates/intro.md).                                                                                                                                                                                       |
+| Delete            | Delete all selected notes and their cards. It is not possible to remove individual cards, as individual cards are controlled by the [templates](templates/intro.md). |
 
 ### Cards
 
@@ -251,6 +255,7 @@ parts of the browser, and to go up and down the card list.
 This dialog allows for replacing text on notes. As described above, it is available
 from the toolbar and the table's context menu.
 
+
 The first input field is for the text that is going to be replaced, the second
 one for the replacement. Next, there is a dropdown menu that allows you to specify
 where Anki should look for text to replace: in a note's tags (requires Anki 2.1.45+),
@@ -267,7 +272,7 @@ For example, assume there is the following text in a field:
 
 We use these settings:
 
-![Find and Replace dialog](media/find_and_replace.png)
+![Find and Replace](media/find_replace.png)
 
 (Note that on Anki versions prior to 2.1.28, you would need to replace `${1}`
 with `\1`.)
@@ -289,6 +294,8 @@ have the same content. When you open the window, Anki will look at all
 of your note types and present a list of all possible fields. If you
 want to look for duplicates in the _Back_ field, you’d select it from
 the list and then click **Search**.
+
+![Finding Duplicates](media/find_duplicates.png)
 
 By default, it will search in all note types that have the field you provided.
 This differs from the duplicate check when you add cards manually, which

@@ -8,7 +8,7 @@ You can display information about a card by using the Cards&gt;Info menu item,
 by right-clicking on the card and then selecting **Info**, or by pressing
 <kbd>I</kbd> on the review screen.
 
-![Card Info](media/card_info.png)
+![Card Info](media/current_card_information.png)
 
 A few notes:
 
@@ -37,7 +37,7 @@ and the rating as 0.
 The statistics window is accessed by clicking on **Stats** button at the
 top of the main window, or by pressing <kbd>T</kbd>.
 
-![Statistics screen](media/Statistics.png)
+![Statistics screen](media/statistics.png)
 
 ## Selecting Decks / Collection
 

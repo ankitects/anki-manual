@@ -38,6 +38,7 @@ Anki will move it into your operating system’s trash folder, so you can
 recover if you accidentally delete media that shouldn’t have been
 deleted.
 
+
 ## Manually Adding Media
 
 When you add media via Anki's interface, Anki takes care of ensuring the

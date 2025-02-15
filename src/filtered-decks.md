@@ -24,6 +24,9 @@ deck. It offers some convenient preset filters for common tasks like reviewing
 the cards that you have failed that day. It will create a filtered deck called
 "Custom Study Session" and automatically open it for you.
 
+![Custom Study](media/custom_study.png)
+
+
 If an existing "Custom Study Session" deck exists, it will be emptied
 before a new one is created. If you wish to keep a custom study deck,
 you can rename it from the deck list.
@@ -85,6 +88,8 @@ It is also possible to move all cards back to their home decks at once:
   deleted when you delete a filtered deck.
 
 ## Creating Manually
+
+![Filtered Decks](media/filtered_deck.png)
 
 Advanced users can create filtered decks with arbitrary search strings
 (or 'filters'),

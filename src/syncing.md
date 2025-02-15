@@ -99,6 +99,8 @@ keep the collection on your local device, or the collection on AnkiWeb.
 If changes have been made on both ends, only changes on one end can be
 preserved.
 
+![Merging Conflicts](media/sync_conflict.png)
+
 If you choose **Upload**, the content on your local device will be sent to
 AnkiWeb. You then need to sync your other devices, and choose **Download**
 to have them grab a copy of that content.

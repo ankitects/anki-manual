@@ -5,6 +5,8 @@
 Anki packages (.apkg files) enable you to import decks, notes, note types, and cards from
 other users. They are commonly shared on [AnkiWeb](https://ankiweb.net/shared/decks).
 
+![Export Tab](/src/media/export.png)
+
 ## Scheduling
 
 Anki packages may also contain scheduling information, which is useful if you want to
