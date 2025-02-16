@@ -15,7 +15,7 @@ navigating to **Tools → Preferences** and then selecting the driver from the
 dropdown menu.
 
 
-## Changing the driver from the command line
+## Changing the driver from the Command Line
 If you run into display issues, you can try switching to software mode via cmd:
 
 ```bat
