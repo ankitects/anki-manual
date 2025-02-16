@@ -309,7 +309,7 @@ or if you’re using Anki on a mobile device.
 Anki supports the most widely used font formats, such as TrueType (.ttf),
 OpenType (.otf), Web Open Font Format (.woff) and others.
 
-### Add font to media folder
+### Add Font to Media Folder
 
 Once you have downloaded a supported font, such as "Arial.ttf", you have to add
 it to the media folder.
@@ -326,7 +326,7 @@ it to the media folder.
 3. Inside the folder, you should see a folder called collection.media.
    Drag the renamed file to that folder.
 
-### Update template to use that font
+### Update Template to use that Font
 
 After the font has been added to the media folder, you need to update the
 template.
