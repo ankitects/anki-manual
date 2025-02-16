@@ -28,8 +28,8 @@ report.
 
 **3. Check your Anki version**
 
-You can find the version you're using in the **Help → About** or **Anki → About
-menu**. If the version you're using is not the latest version published on
+You can find the version you're using in the **Help → About** or **Anki →
+About** menu. If the version you're using is not the latest version published on
 <https://apps.ankiweb.net>, please close Anki, install the latest version, and
 then start Anki again to see if the problem has gone away.
 
