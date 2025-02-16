@@ -35,7 +35,7 @@ then start Anki again to see if the problem has gone away.
 
 If you're using Linux, please make sure you can reproduce the error using the
 packaged version on the Anki website, as distros often distribute [broken
-versions](https://anki.tenderapp.com/kb/anki-ecosystem/third-party-linux-packages-and-source-builds-are-not-supported).
+versions](platform/linux/distro-packages.md).
 
 **4. Check your database**
 
