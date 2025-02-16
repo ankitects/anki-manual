@@ -2,7 +2,7 @@
 
 If you encounter a problem with Anki, please try the following steps in order:
 
-**1. Restart Anki**
+### 1. Restart Anki
 
 Please close Anki, then start it again.
 
@@ -13,7 +13,7 @@ circumstances.
 
 If the problem does not occur again, you can skip the following steps.
 
-**2. Check add-ons**
+### 2. Check add-ons
 
 Please close Anki, then open it in safe mode by holding down the
 <kbd>Shift</kbd> key while starting Anki. Keep holding <kbd>Shift</kbd> down
@@ -26,7 +26,7 @@ out which add-on is causing the problem. Then please report the issue to the
 add-on author, using the Copy Debug Info button, and pasting that into the
 report.
 
-**3. Check your Anki version**
+### 3. Check your Anki version
 
 You can find the version you're using in the **Help → About** or **Anki →
 About** menu. If the version you're using is not the latest version published on
@@ -37,16 +37,16 @@ If you're using Linux, please make sure you can reproduce the error using the
 packaged version on the Anki website, as distros often distribute [broken
 versions](platform/linux/distro-packages.md).
 
-**4. Check your database**
+### 4. Check your database
 
 After restarting Anki, please try the **Tools → Check Database** menu item to
 make sure your collection doesn't have any problems.
 
-**5. Restart your computer**
+### 5. Restart your computer
 
 Sometimes restarting your computer may help.
 
-**6. Change the Video Driver**
+### 6. Change the Video Driver
 
 Crashes and display issues can be caused by the video driver. Changing to a
 different video driver may help. Make sure you try all the driver options and
@@ -64,12 +64,12 @@ change the gldriver file:
 - [Mac](https://docs.ankiweb.net/platform/mac/display-issues.html)
 - [Linux](https://docs.ankiweb.net/platform/linux/display-issues.html)
 
-**7. Reset window sizes**
+### 7. Reset window sizes
 
 Sometimes pressing 'reset window sizes' button in the preferences screen
 immediately after starting Anki will help.
 
-**8. If the problem remains**
+### 8. If the problem remains
 
 If you've confirmed you are using the latest Anki version, and are still
 receiving errors when starting Anki while holding down the shift key,
