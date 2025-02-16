@@ -326,7 +326,7 @@ it to the media folder.
 3. Inside the folder, you should see a folder called collection.media.
    Drag the renamed file to that folder.
 
-### Update Template to use that Font
+### Update Template to Use That Font
 
 After the font has been added to the media folder, you need to update the
 template.
