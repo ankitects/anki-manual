@@ -478,15 +478,22 @@ two remaining options:</p>
 <li>You can try an older Anki version built with an older toolkit, such as
 <a href="https://github.com/ankitects/anki/releases/tag/2.1.35">2.1.35-alternate</a>, or <a href="https://github.com/ankitects/anki/releases/tag/2.1.15">2.1.15</a>.</li>
 </ul>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="windows-display-issues"><a class="header" href="#windows-display-issues">Windows display issues</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="windows-display-issues"><a class="header" href="#windows-display-issues">Windows Display Issues</a></h1>
 <ul>
-<li><a href="platform/windows/display-issues.html#full-screen">Full screen</a></li>
+<li><a href="platform/windows/display-issues.html#changing-the-driver-from-the-preferences-screen">Changing the Driver From the Preferences Screen</a></li>
+<li><a href="platform/windows/display-issues.html#changing-the-driver-from-the-command-line">Changing the Driver From the Command Line</a></li>
+<li><a href="platform/windows/display-issues.html#full-screen">Full Screen</a></li>
 </ul>
 <p>On Windows, there are three ways of content being displayed on screen. The
 default is <em>software</em>, which is slower, but the most compatible. There are two
 other options that are faster: <em>OpenGL</em> and <em>ANGLE</em>. They are faster, but they
 may not work, or may cause display issues such as missing menubars, blank
 windows, and so on. Which one works best will depend on your computer.</p>
+<h2 id="changing-the-driver-from-the-preferences-screen"><a class="header" href="#changing-the-driver-from-the-preferences-screen">Changing the Driver From the Preferences Screen</a></h2>
+<p>In Anki 23.10+, you can change the graphics driver from preferences screen by
+navigating to <strong>Tools → Preferences</strong> and then selecting the driver from the
+dropdown menu.</p>
+<h2 id="changing-the-driver-from-the-command-line"><a class="header" href="#changing-the-driver-from-the-command-line">Changing the Driver From the Command Line</a></h2>
 <p>If you run into display issues, you can try switching to software mode via cmd:</p>
 <pre><code class="language-bat">echo software &gt; %APPDATA%\Anki2\gldriver6
 </code></pre>
@@ -495,8 +502,7 @@ windows, and so on. Which one works best will depend on your computer.</p>
 </code></pre>
 <p>It will not print anything. You can then start Anki again.</p>
 <p>To revert to the default behaviour, change <code>software</code> to <code>auto</code>, or delete that file.</p>
-<p>In Anki 23.10+, you can also change the graphics driver from preferences screen.</p>
-<h2 id="full-screen"><a class="header" href="#full-screen">Full screen</a></h2>
+<h2 id="full-screen"><a class="header" href="#full-screen">Full Screen</a></h2>
 <p>Anki 2.1.50+ comes with a full screen mode, but due to various issues, it had to
 be disabled while <code>OpenGL</code> is used. Turning on software rendering as described
 above will allow the full screen option to be used, though please bear in mind
@@ -604,13 +610,22 @@ you can download older Anki versions from the <a href="https://github.com/ankite
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="display-issues-on-macos"><a class="header" href="#display-issues-on-macos">Display Issues on macOS</a></h1>
 <ul>
-<li><a href="platform/mac/display-issues.html#qt6-video-driver">Qt6 Video Driver</a></li>
-<li><a href="platform/mac/display-issues.html#egpus">eGPUs</a></li>
-<li><a href="platform/mac/display-issues.html#monitors-with-different-resolutions">Monitors with different resolutions</a></li>
+<li><a href="platform/mac/display-issues.html#change-the-video-driver">Change the Video Driver</a>
+<ul>
+<li><a href="platform/mac/display-issues.html#changing-the-driver-from-the-preferences-screen">Changing the Driver From the Preferences Screen</a></li>
+<li><a href="platform/mac/display-issues.html#changing-the-driver-from-terminalapp">Changing the Driver From Terminal.app</a></li>
 </ul>
-<h2 id="qt6-video-driver"><a class="header" href="#qt6-video-driver">Qt6 Video Driver</a></h2>
+</li>
+<li><a href="platform/mac/display-issues.html#egpus">eGPUs</a></li>
+<li><a href="platform/mac/display-issues.html#monitors-with-different-resolutions">Monitors with Different Resolutions</a></li>
+</ul>
+<h2 id="change-the-video-driver"><a class="header" href="#change-the-video-driver">Change the Video Driver</a></h2>
+<h3 id="changing-the-driver-from-the-preferences-screen-1"><a class="header" href="#changing-the-driver-from-the-preferences-screen-1">Changing the Driver From the Preferences Screen</a></h3>
 <p>If you're experiencing display issues or crashes in Anki 23.10+, you can try
-changing the video driver in the preferences screen, then restarting Anki.</p>
+changing the video driver in the preferences screen by navigating to <strong>Anki →
+Preferences</strong> and then selecting the driver from the dropdown menu. After that it
+is necessary to restart Anki.</p>
+<h3 id="changing-the-driver-from-terminalapp"><a class="header" href="#changing-the-driver-from-terminalapp">Changing the Driver From Terminal.app</a></h3>
 <p>Older Anki versions did not provide an option in the preferences, but allowed
 you to adjust the driver by opening Terminal.app, then pasting the following and hit enter:</p>
 <pre><code>echo software &gt; ~/Library/Application\ Support/Anki2/gldriver6
@@ -620,7 +635,7 @@ you to adjust the driver by opening Terminal.app, then pasting the following and
 remove that file.</p>
 <h2 id="egpus"><a class="header" href="#egpus">eGPUs</a></h2>
 <p>If you experience blank screens when using an external graphics card on a Mac, you can ctrl+click on the Anki app, click &quot;Get Info&quot;, and enable the &quot;prefer eGPU&quot; option.</p>
-<h2 id="monitors-with-different-resolutions"><a class="header" href="#monitors-with-different-resolutions">Monitors with different resolutions</a></h2>
+<h2 id="monitors-with-different-resolutions"><a class="header" href="#monitors-with-different-resolutions">Monitors with Different Resolutions</a></h2>
 <p>Please see <a href="https://forums.ankiweb.net/t/mac-known-issues-wording-suggestion/7331">this forum post</a>.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="linux"><a class="header" href="#linux">Linux</a></h1>
 <h2 id="installing--upgrading-anki-on-linux"><a class="header" href="#installing--upgrading-anki-on-linux">Installing &amp; Upgrading Anki on Linux</a></h2>
@@ -703,12 +718,16 @@ following command line, which should reveal a missing library:</p>
 may need to do this a few times before all required libraries are installed.</p>
 <div style="break-before: page; page-break-before: always;"></div><h2 id="display-issues-on-linux"><a class="header" href="#display-issues-on-linux">Display Issues on Linux</a></h2>
 <p>Hardware acceleration defaults to on. If you experience blank screens
-or display issues, you can try enabling software rendering using the terminal:</p>
+or display issues, you can try enabling software rendering.</p>
+<h3 id="changing-the-driver-from-the-preferences-screen-2"><a class="header" href="#changing-the-driver-from-the-preferences-screen-2">Changing the Driver From the Preferences Screen</a></h3>
+<p>In Anki 23.10+, you can change the graphics driver from preferences screen by
+navigating to <strong>Tools → Preferences</strong> and then selecting the driver from the
+dropdown menu.</p>
+<h3 id="changing-the-driver-from-the-terminal"><a class="header" href="#changing-the-driver-from-the-terminal">Changing the Driver From the Terminal</a></h3>
 <pre><code>echo software &gt; ~/.local/share/Anki2/gldriver6
 </code></pre>
 <p>If you wish to switch back to the default, change <code>software</code> to <code>auto</code>, or
 remove that file.</p>
-<p>In Anki 23.10+, you can also change the graphics driver from preferences screen.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="blank-main-window"><a class="header" href="#blank-main-window">Blank Main Window</a></h1>
 <p>Some Linux distros have recently updated glibc. Recent versions break the web toolkit that Anki is built on, causing Anki's main window to appear blank.</p>
 <p>There are two ways to work around this:</p>
@@ -6154,35 +6173,59 @@ the top of the file may help.</p>
 <p>To learn how to write your own add-ons, please see the <a href="https://addon-docs.ankiweb.net">add-on writing guide</a>.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="troubleshooting"><a class="header" href="#troubleshooting">Troubleshooting</a></h1>
 <p>If you encounter a problem with Anki, please try the following steps in order:</p>
-<p><strong>1. Restart Anki</strong></p>
+<h3 id="1-restart-anki"><a class="header" href="#1-restart-anki">1. Restart Anki</a></h3>
 <p>Please close Anki, then start it again.</p>
-<p>If you are unable to close Anki because of an error message, you can either terminate Anki using your task manager, or restart your computer. Anki saves periodically, so you should not lose more than a few minutes of work in most circumstances.</p>
+<p>If you are unable to close Anki because of an error message, you can either
+terminate Anki using your task manager, or restart your computer. Anki saves
+periodically, so you should not lose more than a few minutes of work in most
+circumstances.</p>
 <p>If the problem does not occur again, you can skip the following steps.</p>
-<p><strong>2. Check add-ons</strong></p>
-<p>Please close Anki, then open it in safe mode by holding down the <kbd>Shift</kbd> key while starting Anki. Keep holding <kbd>Shift</kbd> down until the on-screen message informs you that Anki has started in safe mode. </p>
-<p>If the problem goes away, that indicates an add-on is causing the problem. Remove any add-ons you don't need, and disable half of the others. If the problem continues, try the other half. Repeat
-the process until you've figured out which add-on is causing the problem. Then please report the issue to the add-on author, using the Copy Debug Info button, and pasting that into the report.</p>
-<p><strong>3. Check your Anki version</strong></p>
-<p>You can find the version you're using in the Help&gt;About or Anki&gt;About menu. If the version you're using is not the latest version published on <a href="https://apps.ankiweb.net">https://apps.ankiweb.net</a>, please close Anki, install the latest version, and then start Anki again to see if the problem has gone away.</p>
-<p>If you're using Linux, please make sure you can reproduce the error using the packaged version on the Anki website, as distros often distribute <a href="https://anki.tenderapp.com/kb/anki-ecosystem/third-party-linux-packages-and-source-builds-are-not-supported">broken versions</a>.</p>
-<p><strong>4. Check your database</strong></p>
-<p>After restarting Anki, please try the Tools&gt;Check Database menu item to make sure your collection doesn't have any problems.</p>
-<p><strong>5. Restart your computer</strong></p>
+<h3 id="2-check-add-ons"><a class="header" href="#2-check-add-ons">2. Check add-ons</a></h3>
+<p>Please close Anki, then open it in safe mode by holding down the
+<kbd>Shift</kbd> key while starting Anki. Keep holding <kbd>Shift</kbd> down
+until the on-screen message informs you that Anki has started in safe mode. </p>
+<p>If the problem goes away, that indicates an add-on is causing the problem.
+Remove any add-ons you don't need, and disable half of the others. If the
+problem continues, try the other half. Repeat the process until you've figured
+out which add-on is causing the problem. Then please report the issue to the
+add-on author, using the Copy Debug Info button, and pasting that into the
+report.</p>
+<h3 id="3-check-your-anki-version"><a class="header" href="#3-check-your-anki-version">3. Check your Anki version</a></h3>
+<p>You can find the version you're using in the <strong>Help → About</strong> or <strong>Anki →
+About</strong> menu. If the version you're using is not the latest version published on
+<a href="https://apps.ankiweb.net">https://apps.ankiweb.net</a>, please close Anki, install the latest version, and
+then start Anki again to see if the problem has gone away.</p>
+<p>If you're using Linux, please make sure you can reproduce the error using the
+packaged version on the Anki website, as distros often distribute <a href="platform/linux/distro-packages.html">broken
+versions</a>.</p>
+<h3 id="4-check-your-database"><a class="header" href="#4-check-your-database">4. Check your database</a></h3>
+<p>After restarting Anki, please try the <strong>Tools → Check Database</strong> menu item to
+make sure your collection doesn't have any problems.</p>
+<h3 id="5-restart-your-computer"><a class="header" href="#5-restart-your-computer">5. Restart your computer</a></h3>
 <p>Sometimes restarting your computer may help.</p>
-<p><strong>6. Change the Video Driver</strong></p>
+<h3 id="6-change-the-video-driver"><a class="header" href="#6-change-the-video-driver">6. Change the Video Driver</a></h3>
 <p>Crashes and display issues can be caused by the video driver. Changing to a
-different video driver in the preferences screen or via the gldriver file may
-help. Make sure you try all three options and restart Anki after each change.</p>
+different video driver may help. Make sure you try all the driver options and
+restart Anki after each change.</p>
+<p>If you're using Anki version 23.10 or above, the easiest way is to open
+<strong>Tools → Preferences</strong> (or <strong>Anki → Preferences</strong> if you're on a Mac) and
+change the driver from the dropdown menu.</p>
+<p>If you are on an older Anki version or if you cannot access the preferences for
+some reason, you can use the command-line instructions instead and manually
+change the gldriver file:</p>
 <ul>
 <li><a href="https://docs.ankiweb.net/platform/windows/display-issues.html">Windows</a></li>
 <li><a href="https://docs.ankiweb.net/platform/mac/display-issues.html">Mac</a></li>
 <li><a href="https://docs.ankiweb.net/platform/linux/display-issues.html">Linux</a></li>
 </ul>
-<p><strong>7. Reset window sizes</strong></p>
+<h3 id="7-reset-window-sizes"><a class="header" href="#7-reset-window-sizes">7. Reset window sizes</a></h3>
 <p>Sometimes pressing 'reset window sizes' button in the preferences screen
 immediately after starting Anki will help.</p>
-<p><strong>8. If the problem remains</strong></p>
-<p>If you're confirmed you are using the latest Anki version, and are still receiving errors when starting Anki while holding down the shift key, please <a href="./getting-help.html">report the problem</a>, including the next error you receive in your post.</p>
+<h3 id="8-if-the-problem-remains"><a class="header" href="#8-if-the-problem-remains">8. If the problem remains</a></h3>
+<p>If you've confirmed you are using the latest Anki version, and are still
+receiving errors when starting Anki while holding down the shift key,
+please <a href="./getting-help.html">report the problem</a>, including the next error you
+receive in your post.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="self-hosted-sync-server-1"><a class="header" href="#self-hosted-sync-server-1">Self-Hosted Sync Server</a></h1>
 <p>Advanced users who cannot or do not wish to use AnkiWeb can use a self-hosted
 sync server instead.</p>

@@ -149,15 +149,22 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="windows-display-issues"><a class="header" href="#windows-display-issues">Windows display issues</a></h1>
+                        <h1 id="windows-display-issues"><a class="header" href="#windows-display-issues">Windows Display Issues</a></h1>
 <ul>
-<li><a href="#full-screen">Full screen</a></li>
+<li><a href="#changing-the-driver-from-the-preferences-screen">Changing the Driver From the Preferences Screen</a></li>
+<li><a href="#changing-the-driver-from-the-command-line">Changing the Driver From the Command Line</a></li>
+<li><a href="#full-screen">Full Screen</a></li>
 </ul>
 <p>On Windows, there are three ways of content being displayed on screen. The
 default is <em>software</em>, which is slower, but the most compatible. There are two
 other options that are faster: <em>OpenGL</em> and <em>ANGLE</em>. They are faster, but they
 may not work, or may cause display issues such as missing menubars, blank
 windows, and so on. Which one works best will depend on your computer.</p>
+<h2 id="changing-the-driver-from-the-preferences-screen"><a class="header" href="#changing-the-driver-from-the-preferences-screen">Changing the Driver From the Preferences Screen</a></h2>
+<p>In Anki 23.10+, you can change the graphics driver from preferences screen by
+navigating to <strong>Tools → Preferences</strong> and then selecting the driver from the
+dropdown menu.</p>
+<h2 id="changing-the-driver-from-the-command-line"><a class="header" href="#changing-the-driver-from-the-command-line">Changing the Driver From the Command Line</a></h2>
 <p>If you run into display issues, you can try switching to software mode via cmd:</p>
 <pre><code class="language-bat">echo software &gt; %APPDATA%\Anki2\gldriver6
 </code></pre>
@@ -166,8 +173,7 @@ windows, and so on. Which one works best will depend on your computer.</p>
 </code></pre>
 <p>It will not print anything. You can then start Anki again.</p>
 <p>To revert to the default behaviour, change <code>software</code> to <code>auto</code>, or delete that file.</p>
-<p>In Anki 23.10+, you can also change the graphics driver from preferences screen.</p>
-<h2 id="full-screen"><a class="header" href="#full-screen">Full screen</a></h2>
+<h2 id="full-screen"><a class="header" href="#full-screen">Full Screen</a></h2>
 <p>Anki 2.1.50+ comes with a full screen mode, but due to various issues, it had to
 be disabled while <code>OpenGL</code> is used. Turning on software rendering as described
 above will allow the full screen option to be used, though please bear in mind

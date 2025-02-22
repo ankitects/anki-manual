@@ -151,12 +151,16 @@
                     <main>
                         <h2 id="display-issues-on-linux"><a class="header" href="#display-issues-on-linux">Display Issues on Linux</a></h2>
 <p>Hardware acceleration defaults to on. If you experience blank screens
-or display issues, you can try enabling software rendering using the terminal:</p>
+or display issues, you can try enabling software rendering.</p>
+<h3 id="changing-the-driver-from-the-preferences-screen"><a class="header" href="#changing-the-driver-from-the-preferences-screen">Changing the Driver From the Preferences Screen</a></h3>
+<p>In Anki 23.10+, you can change the graphics driver from preferences screen by
+navigating to <strong>Tools → Preferences</strong> and then selecting the driver from the
+dropdown menu.</p>
+<h3 id="changing-the-driver-from-the-terminal"><a class="header" href="#changing-the-driver-from-the-terminal">Changing the Driver From the Terminal</a></h3>
 <pre><code>echo software &gt; ~/.local/share/Anki2/gldriver6
 </code></pre>
 <p>If you wish to switch back to the default, change <code>software</code> to <code>auto</code>, or
 remove that file.</p>
-<p>In Anki 23.10+, you can also change the graphics driver from preferences screen.</p>
 
                     </main>
 
