@@ -2506,7 +2506,12 @@ could use the following template:</p>
 <li><a href="templates/styling.html#other-html">Other HTML</a></li>
 <li><a href="templates/styling.html#browser-appearance">Browser Appearance</a></li>
 <li><a href="templates/styling.html#platform-specific-css">Platform-Specific CSS</a></li>
-<li><a href="templates/styling.html#installing-fonts">Installing Fonts</a></li>
+<li><a href="templates/styling.html#installing-fonts">Installing Fonts</a>
+<ul>
+<li><a href="templates/styling.html#add-font-to-media-folder">Add Font to Media Folder</a></li>
+<li><a href="templates/styling.html#update-template-to-use-that-font">Update Template to Use That Font</a></li>
+</ul>
+</li>
 <li><a href="templates/styling.html#night-mode">Night Mode</a></li>
 <li><a href="templates/styling.html#fading-and-scrolling">Fading and Scrolling</a></li>
 <li><a href="templates/styling.html#javascript">Javascript</a></li>
@@ -2740,12 +2745,14 @@ font depending on where you’re reviewing:</p>
 particular browsers when using AnkiWeb. Please see
 <a href="http://rafael.adm.br/css_browser_selector/">http://rafael.adm.br/css_browser_selector/</a> for a full list of options.</p>
 <h2 id="installing-fonts"><a class="header" href="#installing-fonts">Installing Fonts</a></h2>
-<p>If you’re using Anki on a work or school computer where you don’t have
-permission to install new fonts, or you’re using Anki on a mobile
-device, it’s possible to add fonts directly to Anki.</p>
-<p>To add a font to Anki, it must be in the TrueType format. TrueType fonts
-have a filename ending in .ttf, such as &quot;Arial.ttf&quot;. Once you’ve located
-a TrueType font, we’ll need to add it to the media folder:</p>
+<p>You can install fonts directly to Anki. This is useful if you’re using Anki on
+a work or school computer where you don’t have permission to install new fonts,
+or if you’re using Anki on a mobile device.</p>
+<p>Anki supports the most widely used font formats, such as TrueType (.ttf),
+OpenType (.otf), Web Open Font Format (.woff) and others.</p>
+<h3 id="add-font-to-media-folder"><a class="header" href="#add-font-to-media-folder">Add Font to Media Folder</a></h3>
+<p>Once you have downloaded a supported font, such as &quot;Arial.ttf&quot;, you have to add
+it to the media folder.</p>
 <ol>
 <li>
 <p>Rename the file, adding an underscore at the start, so it becomes
@@ -2763,7 +2770,9 @@ renamed/added profiles).</p>
 Drag the renamed file to that folder.</p>
 </li>
 </ol>
-<p>After that, we need to update the template:</p>
+<h3 id="update-template-to-use-that-font"><a class="header" href="#update-template-to-use-that-font">Update Template to Use That Font</a></h3>
+<p>After the font has been added to the media folder, you need to update the
+template.</p>
 <ol>
 <li>
 <p>Click <strong>Add</strong> at the top of the main screen, and then select the
