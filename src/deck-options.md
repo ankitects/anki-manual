@@ -315,8 +315,8 @@ Controls how the review cards are sorted. The options are:
   current interval of 5 days that is overdue by 2 days, will display before a card
   with a current interval of 10 days that is overdue by 3 days.
 
-  When using FSRS, overdueness is calculated based on on each card's retrievability,
-  and the desired retention in the deck preset.
+  When FSRS is enabled, this sort order is removed; the FSRS equivalent is **Ascending retrievability**,
+  which is calculated based on each card's retrievability (probability of recall) and the desired retention in the deck preset.
 
 ## Burying
 
