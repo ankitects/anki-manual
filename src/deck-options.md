@@ -316,7 +316,7 @@ Controls how the review cards are sorted. The options are:
   with a current interval of 10 days that is overdue by 3 days.
 
   When FSRS is enabled, this sort order is removed; the FSRS equivalent is **Ascending retrievability**,
-  which is calculated based on each card's retrievability (probability of recall) and the desired retention in the deck preset.
+  which is calculated based on each card's retrievability (probability of recall) and the desired retention in the preset.
 
 ## Burying
 
@@ -388,7 +388,7 @@ to forget, it can help you remember more material in the same amount of time.
 
 When you turn on FSRS, some new options
 become available, and SM-2 specific options, such as **Graduating interval**,
-**Easy bonus**, etc. are hidden. This option is shared by all deck presets.
+**Easy bonus**, etc. are hidden. This option is shared by all presets.
 
 **Before Enabling**
 
