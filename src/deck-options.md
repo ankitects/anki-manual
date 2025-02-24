@@ -455,8 +455,7 @@ decks using the current preset. You can optionally [adjust the search](./searchi
 before optimizing the parameters, if you'd like to change which cards
 are used for optimization.
 
-You can also optimize the parameters for all of your presets at once, by clicking on the
-down arrow in the top right corner of the deck options window, then choosing **Optimize All Presets**.
+You can also optimize the parameters for all of your presets at once by clicking on **Optimize All Presets**.
 
 **Evaluate FSRS Parameters**
 
