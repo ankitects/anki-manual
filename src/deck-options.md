@@ -448,7 +448,7 @@ The FSRS optimizer uses machine learning to learn your memory patterns and find 
 When you click the **Optimize** button, FSRS will analyze your review history, and generate parameters that are optimal for your memory and the content you're studying. If you have decks that vary wildly in subjective difficulty, it
 is recommended to assign them separate presets, as the parameters for easier
 decks will be different from harder decks. There is no need to optimize your
-parameters frequently: once every few months is sufficient.
+parameters frequently: once every month is sufficient.
 
 By default, parameters are calculated from the review history of all
 decks using the current preset. You can optionally [adjust the search](./searching.md)
