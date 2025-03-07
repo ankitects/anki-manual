@@ -34,7 +34,7 @@ Instead, please provide as much detail as you can. For example:
 
 This is a much better question. It tells us:
 
-- What you have tried.
+- What have you tried.
 - What steps you are taking when the problem happens.
 - What problems/errors you are getting when things go wrong.
 
