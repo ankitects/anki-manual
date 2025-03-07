@@ -167,8 +167,8 @@ For example, let's say that your learning steps are `1m 10m 1d`.
 
 The **Hard** button works differently depending on which step you're on.
 
-- When you're on the first step, the **Hard** button shows a delay of `6m`. The `6m` delay is the average of first two steps: `2m 10m`.
-  - Exception: When there's only one learning step, **Hard** button shows a delay 1.5 times that step. This delay is at most 1 day longer than the learning step.
+- When you're on the first step, the **Hard** button shows a delay of `6m`. The `6m` delay is the average of first two steps: `1m` and `10m`.
+  - Exception: When there's only one learning step, the **Hard** button shows a delay 1.5 times that step. This delay is at most 1 day longer than the learning step.
 - When you're on any other step, the **Hard** button repeats that step.
 
 If there’s nothing else to study, Anki will show learning cards up to 20 minutes
