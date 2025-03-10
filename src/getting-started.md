@@ -26,9 +26,6 @@ are the same.
 
 - [Typing in the Answer](http://www.youtube.com/watch?v=5tYObQ3ocrw&yt:cc=on)
 
-If YouTube is unavailable in your country, you can [download the videos](https://apps.ankiweb.net/downloads/archive/screencasts/2.0/)
-instead.
-
 ## Key Concepts
 
 ### Cards
