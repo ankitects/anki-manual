@@ -3234,7 +3234,6 @@ want to modify some of the options but keep the rest as they are.</li>
 a <a href="./syncing.html#conflicts">one-way sync</a>.</li>
 <li><strong>Save to All Subdecks</strong>: Like <strong>Save</strong>, but also assigns the selected preset to all
 subdecks of the currently selected deck.</li>
-<li><strong>Optimize All Presets</strong>: When FSRS is enabled, this allows you to optimize the parameters of all presets at once.</li>
 </ul>
 <p>Deck options are not retroactive. For example, if you change an option that
 controls the delay after failing a card, cards that you failed before
@@ -3489,8 +3488,8 @@ reduce the chances of forgetting more cards.</p>
 overdue cards are, and how long their interval is. For example, a card with a
 current interval of 5 days that is overdue by 2 days, will display before a card
 with a current interval of 10 days that is overdue by 3 days.</p>
-<p>When using FSRS, overdueness is calculated based on on each card's retrievability,
-and the desired retention in the deck preset.</p>
+<p>When FSRS is enabled, this sort order is removed; the FSRS equivalent is <strong>Ascending retrievability</strong>,
+which is calculated based on each card's retrievability (probability of recall) and the desired retention in the preset.</p>
 </li>
 </ul>
 <h2 id="burying"><a class="header" href="#burying">Burying</a></h2>
@@ -3556,7 +3555,7 @@ SuperMemo 2 (SM-2) algorithm. By more accurately determining how much informatio
 to forget, it can help you remember more material in the same amount of time.</p>
 <p>When you turn on FSRS, some new options
 become available, and SM-2 specific options, such as <strong>Graduating interval</strong>,
-<strong>Easy bonus</strong>, etc. are hidden. This option is shared by all deck presets.</p>
+<strong>Easy bonus</strong>, etc. are hidden. This option is shared by all presets.</p>
 <p><strong>Before Enabling</strong></p>
 <ul>
 <li>Please ensure all of your Anki clients support FSRS. Anki 23.10, AnkiMobile 23.10,
@@ -3607,13 +3606,12 @@ number, and recommend you keep it lower than <code>0.97</code> and higher than t
 <p>When you click the <strong>Optimize</strong> button, FSRS will analyze your review history, and generate parameters that are optimal for your memory and the content you're studying. If you have decks that vary wildly in subjective difficulty, it
 is recommended to assign them separate presets, as the parameters for easier
 decks will be different from harder decks. There is no need to optimize your
-parameters frequently: once every few months is sufficient.</p>
+parameters frequently: once every month is sufficient.</p>
 <p>By default, parameters are calculated from the review history of all
 decks using the current preset. You can optionally <a href="./searching.html">adjust the search</a>
 before optimizing the parameters, if you'd like to change which cards
 are used for optimization.</p>
-<p>You can also optimize the parameters for all of your presets at once, by clicking on the
-down arrow in the top right corner of the deck options window, then choosing <strong>Optimize All Presets</strong>.</p>
+<p>You can also optimize the parameters for all of your presets at once by clicking on <strong>Optimize All Presets</strong>.</p>
 <p><strong>Evaluate FSRS Parameters</strong></p>
 <p>You can use the <strong>Evaluate</strong> button to see metrics that show how well the parameters fit your review history. Smaller numbers
 indicate a better fit to your review history.</p>
