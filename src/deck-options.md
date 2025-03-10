@@ -38,7 +38,6 @@ arrow icon in the top right of the Deck Options window. You can do the following
   a [one-way sync](./syncing.md#conflicts).
 - **Save to All Subdecks**: Like **Save**, but also assigns the selected preset to all
   subdecks of the currently selected deck.
-- **Optimize All Presets**: When FSRS is enabled, this allows you to optimize the parameters of all presets at once.
 
 Deck options are not retroactive. For example, if you change an option that
 controls the delay after failing a card, cards that you failed before
@@ -316,8 +315,8 @@ Controls how the review cards are sorted. The options are:
   current interval of 5 days that is overdue by 2 days, will display before a card
   with a current interval of 10 days that is overdue by 3 days.
 
-  When using FSRS, overdueness is calculated based on on each card's retrievability,
-  and the desired retention in the deck preset.
+  When FSRS is enabled, this sort order is removed; the FSRS equivalent is **Ascending retrievability**,
+  which is calculated based on each card's retrievability (probability of recall) and the desired retention in the preset.
 
 ## Burying
 
@@ -389,7 +388,7 @@ to forget, it can help you remember more material in the same amount of time.
 
 When you turn on FSRS, some new options
 become available, and SM-2 specific options, such as **Graduating interval**,
-**Easy bonus**, etc. are hidden. This option is shared by all deck presets.
+**Easy bonus**, etc. are hidden. This option is shared by all presets.
 
 **Before Enabling**
 
@@ -449,15 +448,14 @@ The FSRS optimizer uses machine learning to learn your memory patterns and find 
 When you click the **Optimize** button, FSRS will analyze your review history, and generate parameters that are optimal for your memory and the content you're studying. If you have decks that vary wildly in subjective difficulty, it
 is recommended to assign them separate presets, as the parameters for easier
 decks will be different from harder decks. There is no need to optimize your
-parameters frequently: once every few months is sufficient.
+parameters frequently: once every month is sufficient.
 
 By default, parameters are calculated from the review history of all
 decks using the current preset. You can optionally [adjust the search](./searching.md)
 before optimizing the parameters, if you'd like to change which cards
 are used for optimization.
 
-You can also optimize the parameters for all of your presets at once, by clicking on the
-down arrow in the top right corner of the deck options window, then choosing **Optimize All Presets**.
+You can also optimize the parameters for all of your presets at once by clicking on **Optimize All Presets**.
 
 **Evaluate FSRS Parameters**
 
