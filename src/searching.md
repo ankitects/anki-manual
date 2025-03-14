@@ -313,6 +313,9 @@ cards that been lapsed more than 3 times.
 `prop:ease!=2.5`\
 cards easier or harder than default ease.
 
+`has-cd:v`\
+cards having the property `v` in custom data (requires Anki 23.10+).
+
 `prop:cdn:d>5`\
 cards with the value of `d` in custom data (usually refers to difficulty in FSRS) greater than 5 (requires Anki 2.1.64+).
 
