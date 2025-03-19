@@ -456,9 +456,10 @@ development or otherwise working closely with the database.
 
 ## Custom Data
 
-Anki allows small amounts of extra custom data to be stored on cards, which
-was used by earlier implementations of FSRS. In Anki 23.10+, there are
-some ways to search it:
+Anki allows small amounts of custom data to be stored on cards, enabling
+advanced use cases such as custom schedulers. One of the notable applications
+of this feature was in earlier implementations of FSRS. In Anki 23.10+, there
+are some ways to search it:
 
 `has-cd:v`\
 cards having the property `v` in custom data.
