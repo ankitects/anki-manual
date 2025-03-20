@@ -39,7 +39,7 @@ If you want to use newlines in a MathJax expression, please use
 MathJax from working correctly.
 
 Anki includes built in support for mhchem for rendering chemical
-equations. Please see the 'chemical equations' section and the following
+equations. Please see the "chemical equations" section and the following
 sections for more information:
 <https://mhchem.github.io/MathJax-mhchem/>
 
@@ -81,7 +81,7 @@ LaTeX code can contain malicious commands that can read or write non-Anki
 data on your computer. For this reason, recent Anki versions will refuse to
 generate LaTeX images by default.
 
-If you wish to use LaTeX on your own cards, you will need to enable the 'Generate LaTeX images' option in the preferences screen.
+If you wish to use LaTeX on your own cards, you will need to enable the "Generate LaTeX images" option in the preferences screen.
 
 **We strongly recommend you do not enable this option if you use shared decks, or think
 you will import shared decks in the future, as you are potentially giving any shared
@@ -151,9 +151,9 @@ will produce this when the flashcard is viewed:
 
 ![convergence question](math/convergence_question.png)
 
-The formula in the example above is called a 'text formula', because it
+The formula in the example above is called a "text formula", because it
 is displayed right within the non-mathematical text. In contrast, the
-following example shows a 'displayed formula':
+following example shows a "displayed formula":
 
     Does the sum below converge?
 
@@ -161,7 +161,7 @@ following example shows a 'displayed formula':
 
 ![convergence question 2](math/convergence_question_2.png)
 
-'Text formulas' and 'display formulas' are the most common type of LaTeX
+"Text formulas" and "display formulas" are the most common type of LaTeX
 expressions, so Anki provides abbreviated versions of them. Expressions
 of the form:
 

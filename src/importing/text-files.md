@@ -77,7 +77,7 @@ This is an example of a valid file where the first line is ignored (\#):
 ## Spreadsheets and UTF-8
 
 If you have non-Latin characters in your file (such as accents, Japanese
-and so on), Anki expects files to be saved in a 'UTF-8 encoding'. The
+and so on), Anki expects files to be saved in a "UTF-8 encoding". The
 easiest way to do this is to use the free LibreOffice spreadsheet
 program instead of Excel to edit your file, as it supports UTF-8 easily,
 and also exports multi-line content properly, unlike Excel. If you wish
@@ -127,7 +127,7 @@ Alternatively, you can use the [find and replace](../browsing.md) feature
 in the browse screen to update all the fields at once. If each field
 contains text like "myaudio", and you wish to make it play a sound,
 you’d search for (.\*) and replace it with "\[sound:\\1.mp3\]", with the
-'regular expressions' option enabled.
+"regular expressions" option enabled.
 
 When importing a text file with these references, you must make sure to
 enable the "Allow HTML" option.
@@ -147,7 +147,7 @@ Another option for importing large amounts of media at once is to use
 the [media import add-on](https://ankiweb.net/shared/info/129299120).
 This add-on will automatically create notes for all files in a folder
 you select, with the filenames on the front (minus the file extension,
-so if you have a file named apple.jpg, the front would say 'apple') and
+so if you have a file named apple.jpg, the front would say "apple") and
 the images or audio on the back. If you would like a different
 arrangement of media and filenames, you can [change the note type](../browsing.md) of the created cards afterwards.
 
@@ -162,9 +162,9 @@ imported file. A drop-down box in the import screen allows you to change
 this behaviour, to either ignore duplicates completely, or import them
 as new notes instead of updating existing ones.
 
-The 'match scope' setting controls how duplicates are identified. When
-'note type' is selected, Anki will identify a duplicate if another note
-with the same note type has the same first field. When set to 'note type and deck',
+The "match scope" setting controls how duplicates are identified. When
+"note type" is selected, Anki will identify a duplicate if another note
+with the same note type has the same first field. When set to "note type and deck",
 a duplicate will only be flagged if the existing note also happens to be
 in the deck you are importing into.
 

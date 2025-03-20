@@ -249,7 +249,7 @@ Copy the `sqlite3.exe` program and your deck to your desktop. Then go to
 
 If you're on a recent Windows, the command prompt may not start on your
 desktop. If you don't see desktop displayed in the command prompt, type
-something like the following, replacing 'administrator' with your login
+something like the following, replacing "administrator" with your login
 name.
 
     cd C:\Users\Administrator\Desktop

@@ -29,7 +29,7 @@ at the end.
 Whether the text should be aligned in the center, left, or right.
 
 **color**\
-The color of the text. Simple color names like 'blue', 'lightyellow',
+The color of the text. Simple color names like "blue", "lightyellow",
 and so on will work, or you can use HTML color codes to select arbitrary
 colors. Please see [this webpage](https://htmlcolorcodes.com/) for more
 information.
@@ -373,7 +373,7 @@ something like:
 }
 ```
 
-If you have a 'myclass' style, the following would show the text in
+If you have a "myclass" style, the following would show the text in
 yellow when night mode is enabled:
 
 ```css

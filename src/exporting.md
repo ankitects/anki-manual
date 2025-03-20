@@ -3,7 +3,7 @@
 <!-- toc -->
 
 Exporting allows you to save part of your collection as a text file or
-packaged Anki deck. To export, click the File menu and choose 'Export'.
+packaged Anki deck. To export, click the File menu and choose "Export".
 
 ## Text Files
 
@@ -24,7 +24,7 @@ the text is exported with all the HTML formatting embedded in it.
 
 ## Packaged Decks
 
-A 'packaged deck' consists of cards, notes, note types, and any sounds or
+A "packaged deck" consists of cards, notes, note types, and any sounds or
 images bundled up into a file ending with .apkg or .colpkg. You can use
 packaged decks to transfer cards between people, or for backing up parts
 of your collection.
@@ -34,7 +34,7 @@ There are two different kinds of packaged decks.
 ### Collection (.colpkg)
 
 When you export all decks with scheduling included, this is called a
-'collection package'. Anki will copy your entire collection into a file
+"collection package". Anki will copy your entire collection into a file
 ending in .colpkg, and place it on your desktop. A collection package is
 used to back up your collection, or copy it to another device.
 
