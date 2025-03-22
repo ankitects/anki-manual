@@ -66,7 +66,7 @@ change the gldriver file:
 
 ### 7. Reset window sizes
 
-Sometimes pressing "reset window sizes" button in the preferences screen
+Sometimes pressing **reset window sizes** button in the preferences screen
 immediately after starting Anki will help.
 
 ### 8. If the problem remains

@@ -227,7 +227,7 @@ find it convenient to answer most cards with <kbd>Space</kbd> and keep one finge
 on <kbd>1</kbd> for when they forget.
 
 The "Study Deck" item in the Tools menu allows you to quickly switch to
-a deck with the keyboard. You can trigger it with the "/" key. When
+a deck with the keyboard. You can trigger it with the <kbd>/</kbd> key. When
 opened, it will display all of your decks and show a filter area at the
 top. As you type characters, Anki will display only decks matching the
 characters you type. You can add a space to separate multiple search

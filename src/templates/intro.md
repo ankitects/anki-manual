@@ -15,7 +15,7 @@ Card templates are covered in some of the intro videos:
 
 ## The Templates Screen
 
-You can modify card templates by clicking the "Cards..." button inside the
+You can modify card templates by clicking the **Cards...** button inside the
 editing screen.
 
 
@@ -37,7 +37,7 @@ At the top right of the window is an Options button that gives you
 options to rename or reorder the cards, as well as the following two
 options:
 
-- The "Deck Override" option allows you to change the deck that cards
+- The **Deck Override** option allows you to change the deck that cards
   generated from the current card type will be placed into. By
   default, cards are placed into the deck you provide in the Add Notes
   window. If you set a deck here, that card type will be placed into
@@ -48,7 +48,7 @@ options:
   can check which deck the cards are currently going to by choosing
   Deck Override again.
 
-- The "Browser Appearance" option allows you to set different (perhaps
+- The **Browser Appearance** option allows you to set different (perhaps
   simplified) templates for display in the Question and Answer columns
   of the browser; see [browser appearance](styling.md#browser-appearance) for more
   information.

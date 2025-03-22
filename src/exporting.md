@@ -3,7 +3,7 @@
 <!-- toc -->
 
 Exporting allows you to save part of your collection as a text file or
-packaged Anki deck. To export, click the File menu and choose "Export".
+packaged Anki deck. To export, click the File menu and choose **Export**.
 
 ## Text Files
 

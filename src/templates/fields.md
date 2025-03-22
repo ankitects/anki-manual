@@ -34,7 +34,7 @@ line, and then the Back field”.
 
 The "id=answer" part tells Anki where the divider is between the
 question and the answer. This allows Anki to automatically scroll to the
-spot where the answer starts when you press "show answer" on a long card
+spot where the answer starts when you press **show answer** on a long card
 (especially useful on mobile devices with small screens). If you don’t
 want a horizontal line at the beginning of the answer, you can use
 another HTML element such as a paragraph or div instead.
@@ -165,7 +165,7 @@ As with other fields, special field names are case sensitive - you must use
 ## Hint Fields
 
 It’s possible to add a field to the front or back of a card, but make it
-hidden until you explicitly show it. We call this a "hint field". Before
+hidden until you explicitly show it. We call this a _hint field_. Before
 adding a hint, please bear in mind that the easier you make it to answer
 a question in Anki, the less likely you are to remember that question
 when you encounter it in real life. Please have a read about the

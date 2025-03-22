@@ -5,7 +5,7 @@
 ## Adding Cards and Notes
 
 Recall from the [basics](getting-started.md) that in Anki we add notes rather than
-cards, and Anki creates cards for us. Click "Add" in the [main window](studying.md#decks),
+cards, and Anki creates cards for us. Click **Add** in the [main window](studying.md#decks),
 and the Add Notes window will appear.
 
 ![Add Screen](media/add_screen.png)
@@ -17,7 +17,7 @@ selected.
 
 The top right of the window shows us the [deck](getting-started.md#decks) cards will be added to. If
 you would like to add cards to a new deck, you can click on the deck name
-button and then click "Add".
+button and then click **Add**.
 
 Below the note type, you'll see some buttons, and an area labelled
 "Front" and "Back". Front and Back are called [fields](getting-started.md#notes--fields), and you can add,
@@ -328,7 +328,7 @@ key strips formatting" to modify the default behaviour.
 
 ## Cloze Deletion
 
-"Cloze deletion" is the process of hiding one or more words in a
+_Cloze deletion_ is the process of hiding one or more words in a
 sentence. For example, if you have the sentence:
 
     Canberra was founded in 1913.

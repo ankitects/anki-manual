@@ -127,7 +127,7 @@ Alternatively, you can use the [find and replace](../browsing.md) feature
 in the browse screen to update all the fields at once. If each field
 contains text like "myaudio", and you wish to make it play a sound,
 you’d search for (.\*) and replace it with "\[sound:\\1.mp3\]", with the
-"regular expressions" option enabled.
+**regular expressions** option enabled.
 
 When importing a text file with these references, you must make sure to
 enable the "Allow HTML" option.
@@ -162,9 +162,9 @@ imported file. A drop-down box in the import screen allows you to change
 this behaviour, to either ignore duplicates completely, or import them
 as new notes instead of updating existing ones.
 
-The "match scope" setting controls how duplicates are identified. When
-"note type" is selected, Anki will identify a duplicate if another note
-with the same note type has the same first field. When set to "note type and deck",
+The **match scope** setting controls how duplicates are identified. When
+**note type** is selected, Anki will identify a duplicate if another note
+with the same note type has the same first field. When set to **note type and deck**,
 a duplicate will only be flagged if the existing note also happens to be
 in the deck you are importing into.
 
