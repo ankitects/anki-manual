@@ -56,7 +56,7 @@ and show the answer than keep struggling to remember.
 ## Answer Buttons
 
 After the answer is shown, compare the answer you thought of
-with the answer which is shown and select any of the following button.
+with the answer that is shown and select any of the following buttons.
 
 - **Again**: Select this when your answer is incorrect or when you couldn't recall the answer. If your answer is partially correct, you should be strict with yourself: if it counts as a fail in a real-life context outside of Anki, then it counts as a fail in Anki as well. You'll typically use this button about 5-20% of the time.
 
