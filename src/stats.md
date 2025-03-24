@@ -205,7 +205,7 @@ A card is defined as "mature" if its interval is ≥21 days. Only one review per
 Again counts as "Fail"; Hard, Good, and Easy count as "Pass".
 This table can be used to check how well [Anki's spaced repetition algorithm](https://faqs.ankiweb.net/what-spaced-repetition-algorithm.html) is working for you.
 
-If you are using FSRS, your true retention should be close to your [desired retention](deck-options.md#desired-retention).
+If you are using FSRS, your true retention is expected to be close to your [desired retention](deck-options.md#desired-retention).
 Please keep in mind that data for a single day is noisy, so it's better to look at monthly data. If your true retention doesn't match your desired retention very well, here are some general recommendations:
 
 1) Optimize your FSRS parameters.
