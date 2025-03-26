@@ -15,7 +15,7 @@ cards for that day will be also displayed here.
 
 ![Decks screen](media/decks_screen.png)
 
-When you click on a deck, it will become the 'current deck', and Anki
+When you click on a deck, it will become the "current deck", and Anki
 will change to the study screen. You can return to the deck list at any time by clicking on “Decks” at
 the top of the main window. (You can also use the Study
 Deck action in the menu to select a new deck from the keyboard, or you
@@ -27,7 +27,7 @@ delete the deck, change its [options](deck-options.md), or [export](exporting.md
 ## Study Overview
 
 After clicking on a deck to study, you’ll see a screen that shows you
-how many cards are due today. This is called the 'deck overview' screen:
+how many cards are due today. This is called the "deck overview" screen:
 
 ![Study overview](media/study_overview.png)
 
@@ -192,10 +192,10 @@ can change the order in the [browser](browsing.md).
 Recall from [the basics](getting-started.md) that Anki can create more than one
 card for each thing you input, such as a front→back card and a
 back→front card, or two different cloze deletions from the same text.
-These related cards are called 'siblings'.
+These related cards are called "siblings".
 
 When you answer a card that has siblings, Anki can prevent the card’s
-siblings from being shown in the same session by automatically 'burying'
+siblings from being shown in the same session by automatically "burying"
 them. Buried cards are hidden from review until the clock rolls over to
 a new day or you manually unbury them using the “Unbury” button that’s
 visible at the bottom of the [deck overview](studying.md#study-overview) screen. Anki
@@ -227,7 +227,7 @@ find it convenient to answer most cards with <kbd>Space</kbd> and keep one finge
 on <kbd>1</kbd> for when they forget.
 
 The "Study Deck" item in the Tools menu allows you to quickly switch to
-a deck with the keyboard. You can trigger it with the '/' key. When
+a deck with the keyboard. You can trigger it with the <kbd>/</kbd> key. When
 opened, it will display all of your decks and show a filter area at the
 top. As you type characters, Anki will display only decks matching the
 characters you type. You can add a space to separate multiple search

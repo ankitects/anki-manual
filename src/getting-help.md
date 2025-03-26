@@ -29,7 +29,7 @@ Instead, please provide as much detail as you can. For example:
 > "When I double-click on the Anki icon, an error message pops up. I tried
 > searching for the error on Google, but couldn't find anything useful. I have
 > copied and pasted the error message to the bottom of my post. I followed the
-> steps on the 'When problems occur' page, but the error message does not go
+> steps on the "When problems occur" page, but the error message does not go
 > away. What should I do?"
 
 This is a much better question. It tells us:

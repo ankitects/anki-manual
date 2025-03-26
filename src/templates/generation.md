@@ -17,7 +17,7 @@ important material, or some of your cards don’t make sense reversed),
 you can select the “Basic (optional reversed card)” note type. This note
 type generates a forward-only card when you fill in only the first two
 fields; if you additionally enter something in the “Add Reverse” field
-(like a 'y'), Anki will generate a reverse card as well. The contents of
+(like a "y"), Anki will generate a reverse card as well. The contents of
 this field will never be displayed on a card.
 
 ## Card Generation & Deletion
@@ -123,7 +123,7 @@ Keep in mind that this only works when you place the
 conditional replacement code on the _front_ of the card; if you do this
 on the back, you will simply end up with cards with a blank back side.
 Similarly, since this works by checking if the front field would be
-empty, it is important to make sure you wrap the 'entire' front side in
+empty, it is important to make sure you wrap the "entire" front side in
 the conditional replacement; for instance, the following would not work
 as expected:
 

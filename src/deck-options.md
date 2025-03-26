@@ -395,7 +395,7 @@ become available, and SM-2 specific options, such as **Graduating interval**,
 - Please ensure all of your Anki clients support FSRS. Anki 23.10, AnkiMobile 23.10,
   and AnkiWeb all support it. AnkiDroid supports it in 2.17+. If
   one of your clients doesn't support it, things will not work correctly.
-- If you previously used the 'custom scheduling' version of FSRS, please make
+- If you previously used the "custom scheduling" version of FSRS, please make
   sure you clear out the custom scheduling section before enabling FSRS.
 
 ### A Short Guide

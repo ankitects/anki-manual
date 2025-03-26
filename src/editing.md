@@ -5,7 +5,7 @@
 ## Adding Cards and Notes
 
 Recall from the [basics](getting-started.md) that in Anki we add notes rather than
-cards, and Anki creates cards for us. Click 'Add' in the [main window](studying.md#decks),
+cards, and Anki creates cards for us. Click **Add** in the [main window](studying.md#decks),
 and the Add Notes window will appear.
 
 ![Add Screen](media/add_screen.png)
@@ -17,7 +17,7 @@ selected.
 
 The top right of the window shows us the [deck](getting-started.md#decks) cards will be added to. If
 you would like to add cards to a new deck, you can click on the deck name
-button and then click "Add".
+button and then click **Add**.
 
 Below the note type, you'll see some buttons, and an area labelled
 "Front" and "Back". Front and Back are called [fields](getting-started.md#notes--fields), and you can add,
@@ -126,7 +126,7 @@ Alternatively you can also drag and drop the field names to re-order them. To do
 that, use your mouse or finger to drag the field to the desired position. An indicator will
 show you where the field will be moved to.
 
-Do not use 'Tags', 'Type', 'Deck', 'Card', or 'FrontSide' as field
+Do not use "Tags", "Type", "Deck", "Card", or "FrontSide" as field
 names, as they are [special fields](templates/fields.md#special-fields) and will not work
 properly.
 
@@ -294,7 +294,7 @@ of the text, whether the selected text is bold, etc. The next three buttons allo
 You can use the paper-clip button to select audio, images, and videos from
 your computer's hard drive and attach them to your notes. Alternatively, you
 can copy the media onto your computer's clipboard (for instance, by
-right-clicking an image on the web and choosing 'Copy Image') and paste
+right-clicking an image on the web and choosing "Copy Image") and paste
 it into the field that you want to place it in. For more information
 about media, please see the [media](media.md) section.
 
@@ -328,7 +328,7 @@ key strips formatting" to modify the default behaviour.
 
 ## Cloze Deletion
 
-'Cloze deletion' is the process of hiding one or more words in a
+_Cloze deletion_ is the process of hiding one or more words in a
 sentence. For example, if you have the sentence:
 
     Canberra was founded in 1913.
@@ -339,7 +339,7 @@ become:
     Canberra was founded in [...].
 
 Sometimes sections that have been removed in this fashion are said to be
-'occluded'.
+"occluded".
 
 For more information on why you might want to use cloze deletion, see
 Rule 5 [here](https://super-memory.com/articles/20rules.htm).

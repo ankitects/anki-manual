@@ -76,7 +76,7 @@ You can change this to all history scope or deck life scope at the top. (The
 
 At the top of the statistics window is a brief list of textual
 statistics about the reviews that you have completed today. A “review”
-in this context is 'one answering of a card', so a card might count as
+in this context is "one answering of a card", so a card might count as
 multiple reviews if it needed to be seen multiple times, and a learning
 card answered also counts as a “review.” A couple of the stats whose
 meaning may not be immediately obvious:
@@ -84,7 +84,7 @@ meaning may not be immediately obvious:
 **Again Count**\
 This is the number of reviews that you have failed (i.e., pressed Again
 on). The correct percentage listed afterwards is the number of cards you
-did 'not' fail divided by the total number of cards you studied.
+did "not" fail divided by the total number of cards you studied.
 
 **Learn, Review, Relearn, Filtered**\
 The number of reviews that were learning cards, review cards, relearning
@@ -234,19 +234,19 @@ with is called [SQLite Browser](http://sqlitebrowser.org/), which will
 allow you to look around the database as well as export a CSV version of
 tables for import into another program.
 
-The most important table for statistics is the 'revlog' table, which
+The most important table for statistics is the "revlog" table, which
 stores an entry for each review that you conduct. The columns are as
 follows:
 
 **id**\
 The time at which the review was conducted, as the number of
 milliseconds that had passed since midnight UTC on January 1, 1970.
-(This is sometimes known as 'Unix epoch time', especially when in
+(This is sometimes known as "Unix epoch time", especially when in
 straight seconds instead of milliseconds.)
 
 **cid**\
 The ID of the card that was reviewed. You can look up this value in the
-id field of the 'cards' table to get more information about the card,
+id field of the "cards" table to get more information about the card,
 although note that the card could have changed between when the revlog
 entry was recorded and when you are looking it up. It is also the
 millisecond timestamp of the card’s creation time.

@@ -5,7 +5,7 @@
 Leeches are cards that you keep forgetting. Because they require so
 many reviews, they take up a lot more of your time, compared to other cards.
 
-Anki can help you identify leeches. Each time a review card 'lapses' (is 
+Anki can help you identify leeches. Each time a review card "lapses" (is 
 failed while it is in review mode), a counter increases. When this counter
 reaches 8, Anki tags the note as a leech and suspends the card. The 
 threshold, and whether to suspend or not, can be adjusted in the
@@ -41,7 +41,7 @@ useful for future reference, you can leave it suspended.
 
 ## Waiting
 
-Some leeches are caused by 'interference'. For example, an English
+Some leeches are caused by "interference". For example, an English
 learner may have recently learnt the words "disappoint" and "disappear".
 As they look similar, the learner may find themselves confusing the two
 when trying to answer. In such situations, it’s often helpful to

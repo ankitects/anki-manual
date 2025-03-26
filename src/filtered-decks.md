@@ -8,8 +8,8 @@ limit of new cards. This is generally useful, as it ensures you don't
 spend more time studying than necessary. But sometimes it can be useful
 to step outside of these normal limits, such as when you need to review
 for a test, focus on particular material, and so on. To make this
-possible, Anki provides a different type of deck called a 'filtered
-deck'.
+possible, Anki provides a different type of deck called a "filtered
+deck".
 
 Filtered decks offer a lot of possibilities. They can be used for
 previewing cards, cramming cards before a test, studying particular
@@ -32,7 +32,7 @@ Here is a summary of each of the options:
 
 **Increase today's new card limit**\
 Add more new cards to the deck you are currently studying. Note that
-unlike other options, this does 'not' create a new filtered deck, it
+unlike other options, this does "not" create a new filtered deck, it
 modifies the existing deck.
 
 **Increase today's review card limit**\
@@ -66,8 +66,8 @@ cards in the deck.
 ## Home Decks
 
 When a card is moved to a filtered deck, it retains a link to the deck,
-from which it came. That previous deck is said to be the card's 'home
-deck'.
+from which it came. That previous deck is said to be the card's "home
+deck".
 
 Cards automatically return to their home deck after they are studied in
 the filtered deck. This can be after a single review, or after multiple
@@ -87,7 +87,7 @@ It is also possible to move all cards back to their home decks at once:
 ## Creating Manually
 
 Advanced users can create filtered decks with arbitrary search strings
-(or 'filters'),
+(or "filters"),
 instead of relying on the preset filters. To create a filtered deck manually,
 choose Create Filtered Deck from the Tools menu.
 
@@ -153,7 +153,7 @@ Display cards with the earliest due date first.
 
 **Latest added first**\
 Display cards that you have most recently added to the deck first.
-(This is the opposite of 'Order added'.)
+(This is the opposite of "Order added".)
 
 **Relative overdueness**\
 Display cards that you're most likely to have forgotten first. This is useful if
