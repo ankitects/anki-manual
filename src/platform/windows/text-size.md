@@ -15,7 +15,7 @@ Anki. For example, create a file called startanki.bat on your desktop
 with the following text:
 
     set ANKI_WEBSCALE=0.75
-    start "Anki" "C:\%LocalAppData%\Programs\Anki\anki.exe"
+    start "Anki" "%LocalAppData%\Programs\Anki\anki.exe"
 
 After saving, you can double click on the file to start Anki with that
 setting.
