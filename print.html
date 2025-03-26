@@ -4514,6 +4514,7 @@ day like you would for new cards. Up to you.
 </ul>
 </li>
 <li><a href="searching.html#object-ids">Object IDs</a></li>
+<li><a href="searching.html#custom-data">Custom Data</a></li>
 <li><a href="searching.html#other-searches">Other Searches</a></li>
 </ul>
 <p>Anki's Browse screen and the Filtered Deck feature use a common method
@@ -4744,10 +4745,6 @@ cards that have been answered less than 10 times.</p>
 cards that been lapsed more than 3 times.</p>
 <p><code>prop:ease!=2.5</code><br />
 cards easier or harder than default ease.</p>
-<p><code>prop:cdn:d&gt;5</code><br />
-cards with the value of <code>d</code> in custom data (usually refers to difficulty in FSRS) greater than 5 (requires Anki 2.1.64+).</p>
-<p><code>prop:cds:v=reschedule</code><br />
-cards with the string <code>v</code> in custom data equal to <code>reschedule</code> (requires Anki 23.10+).</p>
 <p>The following searches require Anki 23.10+ and FSRS enabled:</p>
 <p><code>prop:s&gt;21</code><br />
 cards with stability greater than 21 days.</p>
@@ -4869,6 +4866,17 @@ all cards with card ids 123, 456, or 789.</p>
 <p>Note and card IDs can be found in the <a href="stats.html">card info</a> dialog in the
 browser. These searches may also be helpful when doing add-on
 development or otherwise working closely with the database.</p>
+<h2 id="custom-data"><a class="header" href="#custom-data">Custom Data</a></h2>
+<p>Anki allows small amounts of custom data to be stored on cards, enabling
+advanced use cases such as custom schedulers. One of the notable applications
+of this feature was in earlier implementations of FSRS. In Anki 23.10+, there
+are some ways to search it:</p>
+<p><code>has-cd:v</code><br />
+cards having the property <code>v</code> in custom data.</p>
+<p><code>prop:cdn:d&gt;5</code><br />
+cards with the value of <code>d</code> in custom data (usually refers to difficulty in FSRS) greater than 5.</p>
+<p><code>prop:cds:v=reschedule</code><br />
+cards with the string <code>v</code> in custom data equal to <code>reschedule</code>.</p>
 <h2 id="other-searches"><a class="header" href="#other-searches">Other Searches</a></h2>
 <p><code>prop:due=1 is:learn</code><br />
 interday learning cards due for tomorrow.</p>
