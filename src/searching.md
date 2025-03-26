@@ -313,12 +313,6 @@ cards that been lapsed more than 3 times.
 `prop:ease!=2.5`\
 cards easier or harder than default ease.
 
-`prop:cdn:d>5`\
-cards with the value of `d` in custom data (usually refers to difficulty in FSRS) greater than 5 (requires Anki 2.1.64+).
-
-`prop:cds:v=reschedule`\
-cards with the string `v` in custom data equal to `reschedule` (requires Anki 23.10+).
-
 The following searches require Anki 23.10+ and FSRS enabled:
 
 `prop:s>21`\
@@ -459,6 +453,22 @@ all cards with card ids 123, 456, or 789.
 Note and card IDs can be found in the [card info](stats.md) dialog in the
 browser. These searches may also be helpful when doing add-on
 development or otherwise working closely with the database.
+
+## Custom Data
+
+Anki allows small amounts of custom data to be stored on cards, enabling
+advanced use cases such as custom schedulers. One of the notable applications
+of this feature was in earlier implementations of FSRS. In Anki 23.10+, there
+are some ways to search it:
+
+`has-cd:v`\
+cards having the property `v` in custom data.
+
+`prop:cdn:d>5`\
+cards with the value of `d` in custom data (usually refers to difficulty in FSRS) greater than 5.
+
+`prop:cds:v=reschedule`\
+cards with the string `v` in custom data equal to `reschedule`.
 
 ## Other Searches
 
