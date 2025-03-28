@@ -496,6 +496,11 @@ can use. Of note:
 - Ungroup selection: Select a group and then click this button to make each shape independent again.
 - Alignment: This tool can be used to align your shapes / text areas as desired.
 
+<!-- fields & tags are not intuitive to find in editor -->
+By default, IO notes also have fields for an header, a text for the back
+and a comment field. To access those in the editor, click on "Toggle Mask Editor".
+There you may also edit the tags of IO notes.
+
 While reviewing IO Cards a "Toggle Masks" button will appear just below the image.
 This button will temporary clear all shapes of the note when using "Hide All, Guess One" mode.
 
