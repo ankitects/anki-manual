@@ -185,11 +185,16 @@ calculated by multiplying average retrievability by the number of cards that hav
 reviewed at least once.
 
 ### Hourly Breakdown
-This graph shows what percentage of total reviews you have passed (i.e.,
-not pressed Again on) during given hours. The larger, darker bars and
-left axis show the success rate; the thinner, lighter bars and right
-axis show the number of reviews you’ve made at that hour (so you know
-how significant the results are).
+This graph shows the percentage of total reviews you have passed during given
+hours.
+1. x-axis (bottom): Time of day (at given hour).
+2. y-axis (right): Amount of cards studied.
+3. secondary y-axis (left): Success rate in percent.
+
+The blue bars thus show you the number of reviews you’ve made at that hour (so
+that you know how significant the results are). The gray wave-like line shows
+the percentage of the total reviews you have passed (i.e., not pressed _Again_
+on) at that hour.
 
 ### Answer Buttons
 This graph shows how many times you’ve chosen the Again, Hard, Good, or
