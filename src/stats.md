@@ -107,8 +107,8 @@ bottom of the window.
 This graph shows an estimated number of reviews that will be due on a
 given day in the future if you learn no new cards and fail no cards. The
 bars and the left axis show the number of cards due on each day if you
-study all cards each day, while the line and the right axis show the
-number of cards due on that day if you don’t study at all until then.
+study all cards each day, while the gray shaded region and the right axis show
+the number of cards due on that day if you don’t study at all until then.
 Note that the forecast graph does not count reviews that are currently
 overdue, so if you have a large backlog, the overdue cards will not be
 displayed.
@@ -139,8 +139,8 @@ you’ve selected at the bottom of the screen. The differently colored
 blocks show how many of the cards you answered on each day were
 [mature](getting-started.md#card-states), young, relearning, or learning cards.
 There is also a separate group for cards answered in a filtered/cram
-deck while they were not due. The line and the right axis shows the
-cumulative total for each type of review as time progresses across the
+deck while they were not due. The gray shaded region and the right axis shows
+the cumulative total for each type of review as time progresses across the
 graph (so at 0 days, it would display the number for the entire time
 period displayed on the graph).
 
@@ -158,8 +158,8 @@ cards answered.
 
 ### Review Intervals
 This graph displays the number of cards that have a given interval (the
-delay between two reviews). The line and the right axis tell you what
-percentage of your cards have an interval of less than or equal to the
+delay between two reviews). The gray shaded region and the right axis tell you
+what percentage of your cards have an interval of less than or equal to the
 time below that point. The time scope has a different effect on this
 graph than other graphs: rather than changing which cards or period of
 studying is included, it limits how far out the intervals are displayed
@@ -192,7 +192,7 @@ hours.
 3. secondary y-axis (left): Success rate in percent.
 
 The blue bars thus show you the number of reviews you’ve made at that hour (so
-that you know how significant the results are). The gray wave-like line shows
+that you know how significant the results are). The gray shaded region shows
 the percentage of the total reviews you have passed (i.e., not pressed _Again_
 on) at that hour.
 
