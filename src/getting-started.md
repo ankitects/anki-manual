@@ -4,7 +4,11 @@
 
 ## Installing & Upgrading
 
-Please see the instructions for your computer:
+The Anki ecosystem is made up of Anki, AnkiMobile, AnkiDroid, and AnkiWeb, all
+of which are linked from our [official website](https://apps.ankiweb.net).
+
+For instructions on how to install and upgrade Anki for your computer, please
+read the links below:
 
 - [Windows](./platform/windows/installing.md)
 - [Mac](./platform/mac/installing.md)
