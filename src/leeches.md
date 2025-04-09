@@ -42,7 +42,7 @@ useful for future reference, you can leave it suspended.
 ## Waiting
 
 Some leeches are caused by "interference". For example, an English
-learner may have recently learnt the words "disappoint" and "disappear".
+learner may have recently learned the words "disappoint" and "disappear".
 As they look similar, the learner may find themselves confusing the two
 when trying to answer. In such situations, it’s often helpful to
 concentrate on one idea at a time. Once that idea is firmly ingrained in 
