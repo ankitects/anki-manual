@@ -497,9 +497,7 @@ can use. Of note:
 - Alignment: This tool can be used to align your shapes / text areas as desired.
 
 <!-- fields & tags are not intuitive to find in editor -->
-By default, IO notes also have fields for an header, a text for the back
-and a comment field. To access those in the editor, click on "Toggle Mask Editor".
-There you may also edit the tags of IO notes.
+The default IO note type also has standard fields: **Header** (displayed above the image on the front and back of each card), **Back Extra** (displayed below the image on the back of each card), and **Comments** (not displayed on the cards). To access those from the IO editor, click the **Toggle Mask Editor** button. There you can also view and edit the **Tags** of the note.
 
 While reviewing IO Cards a "Toggle Masks" button will appear just below the image.
 This button will temporary clear all shapes of the note when using "Hide All, Guess One" mode.
