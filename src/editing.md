@@ -466,6 +466,14 @@ You can also choose between two different IO modes for each note:
 
 ![Image Occlusion Modes](media/io_modes.jpg)
 
+<!-- fields & tags are not intuitive to find in editor -->
+The default IO note type also has standard fields:
+**Header** (displayed above the image on the front and back of each card),
+**Back Extra** (displayed below the image on the back of each card),
+and **Comments** (not displayed on the cards). To access those from the IO editor,
+click the **Toggle Mask Editor** button.
+There you can also view and edit the **Tags** of the note.
+
 Once you're done, click on the "Add" button, at the bottom of the screen.
 Anki will add a card for each shape or group of shapes you added in the previous step,
 and you can start reviewing them normally.
@@ -495,9 +503,6 @@ can use. Of note:
   two or more single shapes will create only one card once grouped.
 - Ungroup selection: Select a group and then click this button to make each shape independent again.
 - Alignment: This tool can be used to align your shapes / text areas as desired.
-
-<!-- fields & tags are not intuitive to find in editor -->
-The default IO note type also has standard fields: **Header** (displayed above the image on the front and back of each card), **Back Extra** (displayed below the image on the back of each card), and **Comments** (not displayed on the cards). To access those from the IO editor, click the **Toggle Mask Editor** button. There you can also view and edit the **Tags** of the note.
 
 While reviewing IO Cards a "Toggle Masks" button will appear just below the image.
 This button will temporary clear all shapes of the note when using "Hide All, Guess One" mode.
