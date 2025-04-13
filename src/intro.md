@@ -1,5 +1,11 @@
 # Introduction
-You are currently viewing the manual for the desktop version of Anki. If you are looking for the manual for the mobile version instead, please read [AnkiDroid Manual](https://docs.ankidroid.org/) for the Android version and [AnkiMobile Manual](https://docs.ankimobile.net/) for the iOS version.
+
+## Mobile Clients
+
+This is the manual for the computer version of Anki. Separate manuals are available for the mobile clients:
+
+- [AnkiDroid Manual](https://docs.ankidroid.org/) (Android)
+- [AnkiMobile Manual](https://docs.ankimobile.net/) (iPhone/iPad)
 
 ## Quickstart
 
