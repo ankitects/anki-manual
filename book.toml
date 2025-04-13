@@ -4,7 +4,7 @@ description = "Anki's user manual. Anki is a flashcard program that makes learni
 language = "en"
 multilingual = false
 src = "src"
-title = "Anki Manual for Desktop"
+title = "Anki Manual"
 
 [build]
 create-missing = true
