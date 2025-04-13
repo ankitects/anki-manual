@@ -161,9 +161,29 @@
 <li><a href="#more">More</a></li>
 </ul>
 </li>
-<li><a href="#today">Today</a></li>
-<li><a href="#the-graphs">The Graphs</a></li>
+<li><a href="#today">Today</a>
+<ul>
+<li><a href="#again-count">Again Count</a></li>
+<li><a href="#learn-review-relearn-filtered">Learn, Review, Relearn, Filtered</a></li>
+</ul>
+</li>
+<li><a href="#the-graphs">The Graphs</a>
+<ul>
+<li><a href="#future-due">Future Due</a></li>
+<li><a href="#calendar">Calendar</a></li>
+<li><a href="#reviews">Reviews</a></li>
+<li><a href="#card-counts">Card Counts</a></li>
+<li><a href="#review-time">Review Time</a></li>
+<li><a href="#review-intervals">Review Intervals</a></li>
+<li><a href="#card-ease">Card Ease</a></li>
+<li><a href="#card-stability">Card Stability</a></li>
+<li><a href="#card-difficulty">Card Difficulty</a></li>
+<li><a href="#card-retrievability">Card Retrievability</a></li>
+<li><a href="#hourly-breakdown">Hourly Breakdown</a></li>
+<li><a href="#answer-buttons">Answer Buttons</a></li>
 <li><a href="#true-retention-table">True Retention Table</a></li>
+</ul>
+</li>
 <li><a href="#manual-analysis">Manual Analysis</a></li>
 </ul>
 <h2 id="card-info"><a class="header" href="#card-info">Card Info</a></h2>
@@ -229,12 +249,12 @@ in this context is &quot;one answering of a card&quot;, so a card might count as
 multiple reviews if it needed to be seen multiple times, and a learning
 card answered also counts as a “review.” A couple of the stats whose
 meaning may not be immediately obvious:</p>
-<p><strong>Again Count</strong><br />
-This is the number of reviews that you have failed (i.e., pressed Again
+<h3 id="again-count"><a class="header" href="#again-count">Again Count</a></h3>
+<p>This is the number of reviews that you have failed (i.e., pressed Again
 on). The correct percentage listed afterwards is the number of cards you
 did &quot;not&quot; fail divided by the total number of cards you studied.</p>
-<p><strong>Learn, Review, Relearn, Filtered</strong><br />
-The number of reviews that were learning cards, review cards, relearning
+<h3 id="learn-review-relearn-filtered"><a class="header" href="#learn-review-relearn-filtered">Learn, Review, Relearn, Filtered</a></h3>
+<p>The number of reviews that were learning cards, review cards, relearning
 cards, or studied in a filtered deck when not due.</p>
 <p>The stats for the current day are not a good overall indicator of your
 learning progress; everyone has bad days and good days, and seeing that
@@ -246,12 +266,12 @@ performance.</p>
 <p>The “today” statistics are unaffected by the time period selected at the
 bottom of the window.</p>
 <h2 id="the-graphs"><a class="header" href="#the-graphs">The Graphs</a></h2>
-<p><strong>Future Due</strong><br />
-This graph shows an estimated number of reviews that will be due on a
+<h3 id="future-due"><a class="header" href="#future-due">Future Due</a></h3>
+<p>This graph shows an estimated number of reviews that will be due on a
 given day in the future if you learn no new cards and fail no cards. The
 bars and the left axis show the number of cards due on each day if you
-study all cards each day, while the line and the right axis show the
-number of cards due on that day if you don’t study at all until then.
+study all cards each day, while the gray shaded region and the right axis show
+the number of cards due on that day if you don’t study at all until then.
 Note that the forecast graph does not count reviews that are currently
 overdue, so if you have a large backlog, the overdue cards will not be
 displayed.</p>
@@ -265,65 +285,71 @@ the n-th card. If the interval is less than one day, the summation term is 1. Th
 prevents cards with short intervals from unrealistically skewing the value of daily load.</p>
 <p>Example: you have a card with an interval of 10 days and a card with an interval of 50 days.
 Daily load = \(\frac{1}{10} + \frac{1}{50} = 0.12\), meaning that, <em>on average</em>, you will have 0.12 due cards per day.</p>
-<p><strong>Calendar</strong>
-This graph shows past card review activity. Hovering the mouse over a specific item
+<h3 id="calendar"><a class="header" href="#calendar">Calendar</a></h3>
+<p>This graph shows past card review activity. Hovering the mouse over a specific item
 allows you to view the number of revisions made that day. Click on a day of the
 week to make that the starting day.</p>
-<p><strong>Reviews</strong><br />
-This graph counts the number of card reviews you have done. The bars may
+<h3 id="reviews"><a class="header" href="#reviews">Reviews</a></h3>
+<p>This graph counts the number of card reviews you have done. The bars may
 correspond to days, weeks, or months, depending on the time period
 you’ve selected at the bottom of the screen. The differently colored
 blocks show how many of the cards you answered on each day were
 <a href="getting-started.html#card-states">mature</a>, young, relearning, or learning cards.
 There is also a separate group for cards answered in a filtered/cram
-deck while they were not due. The line and the right axis shows the
-cumulative total for each type of review as time progresses across the
+deck while they were not due. The gray shaded region and the right axis shows
+the cumulative total for each type of review as time progresses across the
 graph (so at 0 days, it would display the number for the entire time
 period displayed on the graph).</p>
-<p><strong>Card Counts</strong><br />
-This pie chart shows what percentage of your deck or collection consists
+<h3 id="card-counts"><a class="header" href="#card-counts">Card Counts</a></h3>
+<p>This pie chart shows what percentage of your deck or collection consists
 of mature, unseen, young/learn, and suspended cards. If you wish to
 calculate a more precise percentage, the key shows the exact number of
 cards in each section, and the total number of cards is displayed to the
 side.</p>
-<p><strong>Review Time</strong><br />
-This graph works exactly like Review Count, except that it deals with
+<h3 id="review-time"><a class="header" href="#review-time">Review Time</a></h3>
+<p>This graph works exactly like Review Count, except that it deals with
 the amount of time you spent on each card rather than the number of
 cards answered.</p>
-<p><strong>Review Intervals</strong><br />
-This graph displays the number of cards that have a given interval (the
-delay between two reviews). The line and the right axis tell you what
-percentage of your cards have an interval of less than or equal to the
+<h3 id="review-intervals"><a class="header" href="#review-intervals">Review Intervals</a></h3>
+<p>This graph displays the number of cards that have a given interval (the
+delay between two reviews). The gray shaded region and the right axis tell you
+what percentage of your cards have an interval of less than or equal to the
 time below that point. The time scope has a different effect on this
 graph than other graphs: rather than changing which cards or period of
 studying is included, it limits how far out the intervals are displayed
 to (so 14-month intervals are not displayed at all on a 1-year graph).</p>
-<p><strong>Card Ease</strong><br />
-This graph shows the number of cards that have a specific ease factor.
+<h3 id="card-ease"><a class="header" href="#card-ease">Card Ease</a></h3>
+<p>This graph shows the number of cards that have a specific ease factor.
 Average ease of the selected deck / collection is also displayed here.</p>
-<p><strong>Card Stability</strong><br />
-Only shown if FSRS is enabled. Stability is defined as the amount of time required
+<h3 id="card-stability"><a class="header" href="#card-stability">Card Stability</a></h3>
+<p>Only shown if FSRS is enabled. Stability is defined as the amount of time required
 for the probability of recall to decrease from 100% to 90%.</p>
-<p><strong>Card Difficulty</strong><br />
-Only shown if FSRS is enabled. Difficulty determines how quickly a card's interval grows
+<h3 id="card-difficulty"><a class="header" href="#card-difficulty">Card Difficulty</a></h3>
+<p>Only shown if FSRS is enabled. Difficulty determines how quickly a card's interval grows
 after each review.</p>
-<p><strong>Card Retrievability</strong><br />
-Only shown if FSRS is enabled. &quot;Retrievability&quot; is synonymous with &quot;probability of recall&quot;.</p>
+<h3 id="card-retrievability"><a class="header" href="#card-retrievability">Card Retrievability</a></h3>
+<p>Only shown if FSRS is enabled. &quot;Retrievability&quot; is synonymous with &quot;probability of recall&quot;.</p>
 <p>Estimated total knowledge is the total number of cards you are likely to currently remember,
 calculated by multiplying average retrievability by the number of cards that have been
 reviewed at least once.</p>
-<p><strong>Hourly Breakdown</strong><br />
-This graph shows what percentage of total reviews you have passed (i.e.,
-not pressed Again on) during given hours. The larger, darker bars and
-left axis show the success rate; the thinner, lighter bars and right
-axis show the number of reviews you’ve made at that hour (so you know
-how significant the results are).</p>
-<p><strong>Answer Buttons</strong><br />
-This graph shows how many times you’ve chosen the Again, Hard, Good, or
+<h3 id="hourly-breakdown"><a class="header" href="#hourly-breakdown">Hourly Breakdown</a></h3>
+<p>This graph shows the percentage of total reviews you have passed during given
+hours.</p>
+<ol>
+<li>x-axis (bottom): Time of day (at given hour).</li>
+<li>y-axis (right): Amount of cards studied.</li>
+<li>secondary y-axis (left): Success rate in percent.</li>
+</ol>
+<p>The blue bars thus show you the number of reviews you’ve made at that hour (so
+that you know how significant the results are). The gray shaded region shows
+the percentage of the total reviews you have passed (i.e., not pressed <em>Again</em>
+on) at that hour.</p>
+<h3 id="answer-buttons"><a class="header" href="#answer-buttons">Answer Buttons</a></h3>
+<p>This graph shows how many times you’ve chosen the Again, Hard, Good, or
 Easy button while studying learning/new, young, and
 <a href="getting-started.html#card-states">mature</a> cards. Anki also displays the percentage
 of correct reviews for each type of card.</p>
-<h2 id="true-retention-table"><a class="header" href="#true-retention-table">True Retention Table</a></h2>
+<h3 id="true-retention-table"><a class="header" href="#true-retention-table">True Retention Table</a></h3>
 <p>This table shows your retention across different cards and different time frames.
 A card is defined as &quot;mature&quot; if its interval is ≥21 days. Only one review per day - the first one - counts.
 Again counts as &quot;Fail&quot;; Hard, Good, and Easy count as &quot;Pass&quot;.
