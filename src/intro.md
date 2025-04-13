@@ -1,5 +1,12 @@
 # Introduction
 
+## Mobile Clients
+
+This is the manual for the computer version of Anki. Separate manuals are available for the mobile clients:
+
+- [AnkiDroid Manual](https://docs.ankidroid.org/) (Android)
+- [AnkiMobile Manual](https://docs.ankimobile.net/) (iPhone/iPad)
+
 ## Quickstart
 
 In a hurry? Jump straight to [Getting Started](getting-started.md).
