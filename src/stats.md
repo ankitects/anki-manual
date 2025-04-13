@@ -81,12 +81,12 @@ multiple reviews if it needed to be seen multiple times, and a learning
 card answered also counts as a “review.” A couple of the stats whose
 meaning may not be immediately obvious:
 
-**Again Count**\
+### Again Count
 This is the number of reviews that you have failed (i.e., pressed Again
 on). The correct percentage listed afterwards is the number of cards you
 did "not" fail divided by the total number of cards you studied.
 
-**Learn, Review, Relearn, Filtered**\
+### Learn, Review, Relearn, Filtered
 The number of reviews that were learning cards, review cards, relearning
 cards, or studied in a filtered deck when not due.
 
@@ -103,12 +103,12 @@ bottom of the window.
 
 ## The Graphs
 
-**Future Due**\
+### Future Due
 This graph shows an estimated number of reviews that will be due on a
 given day in the future if you learn no new cards and fail no cards. The
 bars and the left axis show the number of cards due on each day if you
-study all cards each day, while the line and the right axis show the
-number of cards due on that day if you don’t study at all until then.
+study all cards each day, while the gray shaded region and the right axis show
+the number of cards due on that day if you don’t study at all until then.
 Note that the forecast graph does not count reviews that are currently
 overdue, so if you have a large backlog, the overdue cards will not be
 displayed.
@@ -127,78 +127,83 @@ prevents cards with short intervals from unrealistically skewing the value of da
 Example: you have a card with an interval of 10 days and a card with an interval of 50 days.
 Daily load = \\(\frac{1}{10} + \frac{1}{50} = 0.12\\), meaning that, _on average_, you will have 0.12 due cards per day.
 
-**Calendar**
+### Calendar
 This graph shows past card review activity. Hovering the mouse over a specific item
 allows you to view the number of revisions made that day. Click on a day of the
 week to make that the starting day.
 
-**Reviews**\
+### Reviews
 This graph counts the number of card reviews you have done. The bars may
 correspond to days, weeks, or months, depending on the time period
 you’ve selected at the bottom of the screen. The differently colored
 blocks show how many of the cards you answered on each day were
 [mature](getting-started.md#card-states), young, relearning, or learning cards.
 There is also a separate group for cards answered in a filtered/cram
-deck while they were not due. The line and the right axis shows the
-cumulative total for each type of review as time progresses across the
+deck while they were not due. The gray shaded region and the right axis shows
+the cumulative total for each type of review as time progresses across the
 graph (so at 0 days, it would display the number for the entire time
 period displayed on the graph).
 
-**Card Counts**\
+### Card Counts
 This pie chart shows what percentage of your deck or collection consists
 of mature, unseen, young/learn, and suspended cards. If you wish to
 calculate a more precise percentage, the key shows the exact number of
 cards in each section, and the total number of cards is displayed to the
 side.
 
-**Review Time**\
+### Review Time
 This graph works exactly like Review Count, except that it deals with
 the amount of time you spent on each card rather than the number of
 cards answered.
 
-**Review Intervals**\
+### Review Intervals
 This graph displays the number of cards that have a given interval (the
-delay between two reviews). The line and the right axis tell you what
-percentage of your cards have an interval of less than or equal to the
+delay between two reviews). The gray shaded region and the right axis tell you
+what percentage of your cards have an interval of less than or equal to the
 time below that point. The time scope has a different effect on this
 graph than other graphs: rather than changing which cards or period of
 studying is included, it limits how far out the intervals are displayed
 to (so 14-month intervals are not displayed at all on a 1-year graph).
 
-**Card Ease**\
+### Card Ease
 This graph shows the number of cards that have a specific ease factor.
 Average ease of the selected deck / collection is also displayed here.
 
-**Card Stability**\
+### Card Stability
 Only shown if FSRS is enabled. Stability is defined as the amount of time required
 for the probability of recall to decrease from 100% to 90%.
 
-**Card Difficulty**\
+### Card Difficulty
 Only shown if FSRS is enabled. Difficulty determines how quickly a card's interval grows
 after each review.
 
-**Card Retrievability**\
+### Card Retrievability
 Only shown if FSRS is enabled. "Retrievability" is synonymous with "probability of recall".
 
 Estimated total knowledge is the total number of cards you are likely to currently remember,
 calculated by multiplying average retrievability by the number of cards that have been
 reviewed at least once.
 
-**Hourly Breakdown**\
-This graph shows what percentage of total reviews you have passed (i.e.,
-not pressed Again on) during given hours. The larger, darker bars and
-left axis show the success rate; the thinner, lighter bars and right
-axis show the number of reviews you’ve made at that hour (so you know
-how significant the results are).
+### Hourly Breakdown
+This graph shows the percentage of total reviews you have passed during given
+hours.
+1. x-axis (bottom): Time of day (at given hour).
+2. y-axis (right): Amount of cards studied.
+3. secondary y-axis (left): Success rate in percent.
 
-**Answer Buttons**\
+The blue bars thus show you the number of reviews you’ve made at that hour (so
+that you know how significant the results are). The gray shaded region shows
+the percentage of the total reviews you have passed (i.e., not pressed _Again_
+on) at that hour.
+
+### Answer Buttons
 This graph shows how many times you’ve chosen the Again, Hard, Good, or
 Easy button while studying learning/new, young, and
 [mature](getting-started.md#card-states) cards. Anki also displays the percentage
 of correct reviews for each type of card.
 
 
-## True Retention Table
+### True Retention Table
 
 This table shows your retention across different cards and different time frames.
 A card is defined as "mature" if its interval is ≥21 days. Only one review per day - the first one - counts.
