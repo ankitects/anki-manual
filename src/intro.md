@@ -1,5 +1,5 @@
 # Introduction
-You are currently viewing the manual for the desktop version of Anki. If you are looking for the manual for the mobile version instead, please read [AnkiDroid Manual](https://docs.ankidroid.org/) for the Android version and [AnkiMobile Manual](https://docs.ankimobile.net/) for the mac version.
+You are currently viewing the manual for the desktop version of Anki. If you are looking for the manual for the mobile version instead, please read [AnkiDroid Manual](https://docs.ankidroid.org/) for the Android version and [AnkiMobile Manual](https://docs.ankimobile.net/) for the iOS version.
 
 ## Quickstart
 
