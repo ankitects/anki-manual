@@ -457,13 +457,7 @@ down arrow in the top right corner of the deck options window, then choosing **O
 **Evaluate FSRS Parameters**
 
 You can use the **Evaluate** button to see metrics that show how well the parameters fit your review history. Smaller numbers
-indicate a better fit to your review history.
-
-Log loss doesn't have an intuitive interpretation. RMSE (bins) can be
-interpreted as the average difference between the predicted probability
-of recalling a card (R) and the actual
-probability measured from your review history. For example, RMSE=5% means that, on average, FSRS
-is off by 5% when predicting R. You don't need to understand these metrics to use FSRS.
+indicate a better fit to your review history. The metrics are hard to interpret intuitively so this is all you need to know.
 
 Note that log loss and RMSE (bins) are not perfectly correlated,
 so two decks may have similar RMSE values but very different log-loss values, or the other way around.
