@@ -2,6 +2,8 @@
 
 [Introduction](intro.md)
 
+- [FAQs](faqs.md)
+  - [FSRS](faqs/fsrs.md)
 - [Background](background.md)
 - [Platform Notes](platform/intro.md)
   - [Windows](platform/windows/intro.md)
@@ -56,5 +58,4 @@
 - [Miscellaneous](misc.md)
 
 [Contributing](contrib.md)
-[FAQs](faqs.md)
 [Resources](resources.md)
