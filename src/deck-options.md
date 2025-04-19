@@ -557,7 +557,7 @@ Your review history may be incomplete for two reasons:
 
 The latter is quite rare, so unless you're using the former option, you probably don't need to adjust this setting.
 
-### Ignore Cards Reviews Before
+### Ignore Cards Reviewed Before
 
 If set, cards reviewed before the provided date will be ignored when optimizing FSRS parameters. This can be useful if you imported someone else's scheduling data, or have changed the way you use the answer buttons.
 
