@@ -420,7 +420,7 @@ Here is a graph that shows how adjusting this value will affect your workload:
 
 ![graph showing an exponential increase in workload as desired retention nears one.](./media/FSRS_retention.png)
 
-The exact shape of the graph is different for everyone. However, there is a pattern that hold true for everyone: as desired retention approaches 1.0, the workload increases drastically.
+The exact shape of the graph is different for everyone. However, there is a pattern that hold true for everyone: as desired retention approaches 100%, the workload increases drastically.
 
 For this reason, we suggest you be conservative when adjusting desired retention. It's recommended to keep it lower than 97%.
 
