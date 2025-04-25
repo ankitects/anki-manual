@@ -421,13 +421,8 @@ Here is a graph that shows how adjusting this value will affect your workload:
 ![graph showing an exponential increase in workload as desired retention nears one.](./media/FSRS_retention.png)
 
 The exact shape of the graph is different for everyone. However, there is a pattern that hold true for everyone: as desired retention approaches 1.0, the workload increases drastically.
-  Imagine you have a card with a 90% chance of remembering it after 100 days. If your desired retention is `0.90`, you'll review the card again in 100 days. But if your desired retention is `0.95`, you'll need to review it after 46 days instead.
-  This means that the intervals of your cards almost halve at `0.95` desired retention and you need to review cards twice as frequently compared to `0.90` desired retention.
-  At `0.97`, the interval will be 27 days (you'll have to review your cards 3.7x as frequently).
-  At `0.99`, the interval will be only 9 days (you'll have to review your cards more than 10x more frequently than with the defaults).
 
-
-For these reasons, we suggest you be conservative when adjusting desired retention. It's recommended to keep it lower than `0.97`.
+For this reason, we suggest you be conservative when adjusting desired retention. It's recommended to keep it lower than `0.97`.
 
 ### FSRS Parameters
 
