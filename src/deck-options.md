@@ -403,7 +403,7 @@ become available, and SM-2 specific options, such as **Graduating interval**,
 - Enable FSRS under the "FSRS" section, at the bottom of the deck options page. FSRS can only be enabled globally; you cannot enable it for some presets and disable it for others.
 - Ensure that all your learning and re-learning steps are shorter than 1d and can be completed on the same day. 23h is not recommended even though it's less than one day because you won't be able to finish this step on the same day as your first review. Steps such as 10m or 30m are good.
 - Click the "Optimize" button under the "FSRS parameters" field. If you see a message that says "The FSRS parameters currently appear to be optimal", that's fine.
-- Choose a value of desired retention: the proportion of cards recalled successfully when they are due. **This is the most important setting in FSRS. Higher retention leads to shorter intervals and more reviews per day.** The default is 90%, which offers a good balance of retention and workload. Above 90% the workload increases very quickly, and above 97% the workload can be overwhelming. You can use ["Compute minimum recommended retention"](#compute-minimum-recommended-retention) to help you choose the value of desired retention.
+- Choose a value of desired retention: the proportion of cards recalled successfully when they are due. **This is the most important setting in FSRS. Higher retention leads to shorter intervals and more reviews per day.** The default is 90%, which offers a good balance of retention and workload. Above 90% the workload increases very quickly, and above 97% the workload can be overwhelming.
 Parameters and desired retention are preset-specific, you can make multiple presets with different parameters and desired retention.
 
 FSRS can adapt to almost any habit, except for one: pressing "Hard" instead of "Again" when you forget the information. When you press "Hard", FSRS assumes you have recalled the information correctly (though with hesitation and a lot of mental effort). If you press "Hard" when you have failed to recall the information, all intervals will be unreasonably high. So, if you have this habit, please change it and use "Again" when you forget the information.
@@ -420,22 +420,14 @@ Here is a graph that shows how adjusting this value will affect your workload:
 
 ![graph showing an exponential increase in workload as desired retention nears one.](./media/FSRS_retention.png)
 
-The exact shape of the graph is different for everyone. However, there are two patterns that hold true for all:
-
-- As desired retention approaches 1.0, the workload increases drastically.
+The exact shape of the graph is different for everyone. However, there is a pattern that hold true for everoyne: as desired retention approaches 1.0, the workload increases drastically.
   Imagine you have a card with a 90% chance of remembering it after 100 days. If your desired retention is `0.90`, you'll review the card again in 100 days. But if your desired retention is `0.95`, you'll need to review it after 46 days instead.
   This means that the intervals of your cards almost halve at `0.95` desired retention and you need to review cards twice as frequently compared to `0.90` desired retention.
   At `0.97`, the interval will be 27 days (you'll have to review your cards 3.7x as frequently).
   At `0.99`, the interval will be only 9 days (you'll have to review your cards more than 10x more frequently than with the defaults).
 
-- As desired retention decreases, you'll forget a greater percentage of your
-  cards, and those cards will need to be reviewed again. Eventually, you'll
-  get to a point where the forgotten cards contribute more to your workload
-  than you gain from the longer delays. Also, keep in mind that forgetting
-  material frequently is demotivating.
 
-For these reasons, we suggest you be conservative when adjusting this
-number, and recommend you keep it lower than `0.97` and higher than the [minimum recommended retention](#compute-minimum-recommended-retention).
+For these reasons, we suggest you be conservative when adjusting desired retention. It's recommended to keep it lower than `0.97`.
 
 ### FSRS Parameters
 
@@ -480,10 +472,6 @@ This option controls whether the due dates of cards will be changed when you ena
 Use this option sparingly, as it will add a review entry to each of your cards, and increase the size of your collection.
 
 If you're first switching from SM-2 and still wish to use this option, we recommend you first create a backup, enable FSRS with rescheduling, and then if needed, you can undo or restore from the backup.
-
-### Compute Minimum Recommended Retention
-
-Compute minimum recommended retention (CMRR) attempts to find the desired retention value that leads to the most material learnt, in the least amount of time. The calculated number can serve as a reference when deciding what to set your desired retention to. You may wish to choose a higher desired retention, if you’re willing to trade more study time for a greater retention rate. However, setting your desired retention lower than the minimum is not recommended, as you'll spend more time studying than necessary, due to increased forgetting.
 
 ### The Simulator
 
