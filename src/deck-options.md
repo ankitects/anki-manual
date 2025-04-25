@@ -413,7 +413,7 @@ Regarding add-on compatibility, as a general rule of thumb, if an add-on affects
 ### Desired Retention
 
 Desired retention controls how likely you are to remember cards when they are scheduled for a review.
-The default value of `0.90` will schedule cards so you have a 90% chance of remembering
+The default value of 90% will schedule cards so you have a 90% chance of remembering
 them when they come up for review again. This should normally translate to remembering around 90% cards when they are reviewed, and only failing around 10%.
 
 Here is a graph that shows how adjusting this value will affect your workload:
@@ -422,7 +422,7 @@ Here is a graph that shows how adjusting this value will affect your workload:
 
 The exact shape of the graph is different for everyone. However, there is a pattern that hold true for everyone: as desired retention approaches 1.0, the workload increases drastically.
 
-For this reason, we suggest you be conservative when adjusting desired retention. It's recommended to keep it lower than `0.97`.
+For this reason, we suggest you be conservative when adjusting desired retention. It's recommended to keep it lower than 97%.
 
 ### FSRS Parameters
 
