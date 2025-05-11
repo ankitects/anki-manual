@@ -17,6 +17,10 @@ are met.
   fields, Anki will treat the missing fields as if they were blank. If some of your
   records contain extra fields, the extra content will not be imported.
 
+- Anki tries to guess which field separator (commas, tabs, etc.) your file uses. 
+  If it guesses wrongly, you can change it in the import options window and preview 
+  the results. Or you can add [file headers](#file-headers) to force a specific field separator.
+
 Fields in your text file can be mapped to any field in your notes,
 including the tags field. You can choose which field in the text file
 corresponds to which field in the note when you import.
