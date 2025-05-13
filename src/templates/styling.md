@@ -309,6 +309,10 @@ or if you’re using Anki on a mobile device.
 Anki supports the most widely used font formats, such as TrueType (.ttf),
 OpenType (.otf), Web Open Font Format (.woff) and others.
 
+Anki doesn’t follow symbolic links in the media folder when syncing. Place your
+fonts, stylesheets, and other custom files directly in the `collection.media`
+folder instead of using symlinks.
+
 ### Add Font to Media Folder
 
 Once you have downloaded a supported font, such as "Arial.ttf", you have to add
