@@ -420,21 +420,16 @@ Here is a graph that shows how adjusting this value will affect your workload:
 
 ![graph showing an exponential increase in workload as desired retention nears one.](./media/FSRS_retention.png)
 
-The exact shape of the graph is different for everyone. However, there are two patterns that hold true for all:
+The exact shape of the graph is different for everyone. However, the overall shape is the same.
 
-- As desired retention approaches 1.0, the workload increases drastically.
-  Imagine you have a card with a 90% chance of remembering it after 100 days. If your desired retention is `0.90`, you'll review the card again in 100 days. But if your desired retention is `0.95`, you'll need to review it after 46 days instead.
-  This means that the intervals of your cards almost halve at `0.95` desired retention and you need to review cards twice as frequently compared to `0.90` desired retention.
-  At `0.97`, the interval will be 27 days (you'll have to review your cards 3.7x as frequently).
-  At `0.99`, the interval will be only 9 days (you'll have to review your cards more than 10x more frequently than with the defaults).
+As desired retention approaches 1.0, the workload increases drastically. Imagine you have a card with a 90% chance of remembering it after 100 days. 
 
-- As desired retention decreases, you'll forget a greater percentage of your
-  cards, and those cards will need to be reviewed again. Eventually, you'll
-  get to a point where the forgotten cards contribute more to your workload
-  than you gain from the longer delays. Also, keep in mind that forgetting
-  material frequently is demotivating.
+- If your desired retention is `0.90`, you'll review the card again in 100 days.
+- If your desired retention is `0.95`, you'll need to review it after 46 days instead (your cards almost halve and you need to review cards twice as frequently now).
+- At `0.97`, the interval will be 27 days (you'll have to review your cards 3.7x as frequently).
+- At `0.99`, the interval will be only 9 days (you'll have to review your cards more than 10x more frequently than with the defaults).
 
-For these reasons, we suggest you be conservative when adjusting this
+For this reason, we suggest you be conservative when adjusting this
 number, and recommend you keep it lower than `0.97` and higher than the [minimum recommended retention](#compute-minimum-recommended-retention).
 
 ### FSRS Parameters
