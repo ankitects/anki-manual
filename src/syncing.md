@@ -240,7 +240,7 @@ normally use.
 ## Are there limits on file sizes on AnkiWeb?
 Yes.
 
-- **Collection limit**: 100MB (compressed) or 300MB (uncompressed).
+- **Collection limit**: 300MB (uncompressed).
 
 - **Media limit**: No limit for the total amount of media, but 100MB for
 individual media files.
