@@ -249,9 +249,8 @@ The collection includes the text on your cards and the scheduling information,
 but does not include media (sounds and images), as they are stored separately.
 
 ## How do I know if I reached the collection size limit?
-If you have hit the collection size limit, you will see messages about the
-collection being in an inconsistent state when you do a one way upload to
-AnkiWeb.
+If you have hit the collection size limit, you will see a message notifying you
+that your collection is too large to sync.
 
 ## What can I do if I reached the collection size limit?
 If you have imported a dictionary's worth of content, you will need to do the
