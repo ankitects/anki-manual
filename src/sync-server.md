@@ -63,7 +63,7 @@ From Anki 2.1.66+, you can alternatively build a Rust implementation of the stan
 Make sure you have Rustup installed.
 
 ```
-cargo install --git https://github.com/ankitects/anki.git --tag 2.1.66 anki-sync-server
+cargo install --locked --git https://github.com/ankitects/anki.git --tag 2.1.66 anki-sync-server
 ```
 
 Replace 2.1.66 with whatever the latest Anki version is.
