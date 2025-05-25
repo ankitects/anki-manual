@@ -118,7 +118,10 @@ If you don't have a backlog, daily load should be approximately equal to
 your number of due cards.
 
 It is calculated as follows:
-\\[\frac{1}{I_1} + \frac{1}{I_2} + \frac{1}{I_3} + \dots + \frac{1}{I_n}\\]
+
+$$
+\frac{1}{I_1} + \frac{1}{I_2} + \frac{1}{I_3} + \dots + \frac{1}{I_n}
+$$
 
 Here, \\(I_n\\) is the interval of
 the n-th card. If the interval is less than one day, the summation term is 1. This
