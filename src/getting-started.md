@@ -57,7 +57,7 @@ remembered the answer, and Anki will choose when to show you the card again. For
 
 - **New:** Cards that you have downloaded or created yourself, but have never studied before.
 
-- **Learning:** Cards that were seen for the first time recently, and are still being learnt.
+- **Learning:** Cards that were seen for the first time recently, and are still being learned.
 
 - **Review:** Cards that you have finished learning. These cards will be shown again after their delay (interval) has elapsed.
   There are two types of review cards:
