@@ -37,8 +37,8 @@ Certain operations will trigger a backup, even if the configured time has not
 elapsed yet:
 
 - A one-way sync download
-- Importing a .colpkg file using File>Import
-- Tools>Check Database
+- Importing a .colpkg file using **File → Import**
+- **Tools → Check Database**
 
 After backups are two days old, Anki will start removing some of the older ones.
 You can control how many daily, weekly and monthly backups you'd like to keep.
@@ -51,11 +51,11 @@ Backups created with 2.1.50 will not be importable into older Anki versions.
 
 ### Restoring
 
-You can restore from a manual backup by using File>Import.
+You can restore from a manual backup by using **File → Import**.
 
 ### Creating
 
-In Anki 2.1.50+, you can use File>Create Backup to trigger an immediate backup. This
+In Anki 2.1.50+, you can use **File → Create Backup** to trigger an immediate backup. This
 functions like regular automatic backups, and does not include media files.
 
 To create a backup that includes your sounds and images:
@@ -79,7 +79,7 @@ you can force a one-way sync in the preferences screen, or sync from a new devic
 
 Anki logs deleted notes to a text file called deleted.txt in your
 profile folder. These notes are in a text format that can be read by
-File&gt;Import, though please note the import feature only supports a
+**File → Import**, though please note the import feature only supports a
 single note type at one time, so if you have deleted notes from
 different note types, you'll need to split the file into separate files
 for each note type first.
