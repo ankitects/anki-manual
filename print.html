@@ -5702,8 +5702,10 @@ displayed.</p>
 <p>Daily load is an estimate of the average number of cards to be reviewed daily.
 If you don’t have a backlog, daily load should be approximately equal to
 your number of due cards.</p>
-<p>It is calculated as follows:
-\[\frac{1}{I_1} + \frac{1}{I_2} + \frac{1}{I_3} + \dots + \frac{1}{I_n}\]</p>
+<p>It is calculated as follows:</p>
+<p>$$
+\frac{1}{I_1} + \frac{1}{I_2} + \frac{1}{I_3} + \dots + \frac{1}{I_n}
+$$</p>
 <p>Here, \(I_n\) is the interval of
 the n-th card. If the interval is less than one day, the summation term is 1. This
 prevents cards with short intervals from unrealistically skewing the value of daily load.</p>
@@ -5937,14 +5939,16 @@ inline” from the menu. Anki will change the text so it reads:</p>
 </li>
 <li>
 <p>Click the <strong>Cards…</strong> button. You’ll see a preview of how the
-equation will appear when the card is reviewed.
-\[\sqrt{x}\]</p>
-</li>
-</ol>
-<p>Anki’s MathJax support expects content in TeX format. If you’re not
+equation will appear when the card is reviewed.</p>
+<p>$$
+\sqrt{x}
+$$
+Anki’s MathJax support expects content in TeX format. If you’re not
 familiar with TeX formatting, please see <a href="https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference">this cheatsheet</a>.
 Please note that point 1 does not apply in Anki - Anki uses <code>\(</code> and
 <code>\)</code> for inline equations, and <code>\[</code> and <code>\]</code> for display equations.</p>
+</li>
+</ol>
 <p>If you want to use newlines in a MathJax expression, please use
 <kbd>Shift</kbd>+<kbd>Enter</kbd> instead of just <kbd>Enter</kbd>, as a normal newline will prevent
 MathJax from working correctly.</p>
