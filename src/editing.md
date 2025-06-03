@@ -245,7 +245,7 @@ and from the [Browser.](browsing.md)
 ### The "Marked" Tag
 
 Anki treats a tag called "marked" specially. There are options in the review
-screen and browse screen to add and remove the "marked" tag. The review screen
+screen and browse screen to add and remove the "marked" tag. The study screen
 will show a star when the current card's note has that tag. And cards are
 shown in a different color in the browse screen when their note is marked.
 
