@@ -365,7 +365,7 @@ edit your front template so that it looks like this:
     {{Native Word}}
     {{type:Foreign Word}}
 
-Note that we have added `type:` in front of the field we want to
+Here, we have added `type:` in front of the field we want to
 compare. Since FrontSide is on the back of the card, the type answer box
 will appear on the back as well.
 
@@ -374,6 +374,8 @@ answer, and upon hitting <kbd>Enter</kbd> or showing the answer, Anki will show 
 which parts you got right and which parts you got wrong. The text box’s
 font size will be the size you configured for that field (via the
 “Fields” button when editing).
+
+Note that the type answer boxes don't appear in preview dialog or in AnkiWeb.
 
 This feature does not change how the cards are answered, so it’s still
 up to you to decide how well you remembered or not.
@@ -412,13 +414,6 @@ template, so the back looks something like this:
     {{type:cloze:Text}}
     {{Extra}}
 
-Note that since the cloze type does not use FrontSide, this must be
-added to both sides on a cloze note type.
 
 If there are multiple sections elided, you can separate the answers in
 the text box with a comma.
-
-Type answer boxes will not appear in the ["preview" dialog](intro.md) in the browser. When you review or look at
-the preview in the card types window, they will display.
-
-Type answer boxes will not be displayed when you review your cards on [ankiweb.net](../syncing.md).
