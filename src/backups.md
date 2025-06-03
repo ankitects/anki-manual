@@ -21,7 +21,9 @@ To restore from an automatic backup:
 - Click on the "Open Backup" button.
 - Select the backup you wish to restore from.
 
+``` admonish caution
 When restoring from a backup, any changes made since the backup was created will be lost.
+```
 
 Anki disables automatic syncing and backups when you restore from a backup. Once you're
 happy that you've restored the correct backup, close and re-open Anki to return to normal.
@@ -41,7 +43,9 @@ elapsed yet:
 After backups are two days old, Anki will start removing some of the older ones.
 You can control how many daily, weekly and monthly backups you'd like to keep.
 
+``` admonish info
 Backups created with 2.1.50 will not be importable into older Anki versions.
+```
 
 ## Manual colpkg backups
 
