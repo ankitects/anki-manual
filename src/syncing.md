@@ -167,8 +167,9 @@ to keep costs down. If you haven't accessed your account or synced in the last 6
 
 ### What Gets Deleted
 
-Only the AnkiWeb copy of your data is deleted. The account itself doesn't get deleted and can be used again. 
-Also, any cards you have stored on your computer, phone or tablet will remain on those devices.  
+Only your data stored on AnkiWeb is deleted. Your account itself will remain and can be used again.
+
+Any cards you have stored on your computer, phone or tablet will remain on those devices. Items shared from your account, including decks and add-ons will also remain on AnkiWeb.
 
 ### Returning to AnkiWeb
 
