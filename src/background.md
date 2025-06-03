@@ -2,6 +2,23 @@
 
 <!-- toc -->
 
+``` admonish summary
+Anki helps you to remember anything you want. With Anki, you'll learn much
+faster (or more material in the same time frame) compared with traditional
+study methods.
+
+For that, Anki uses scientifically well-established principles of memory
+sciences:
+1. **Active Recall** (You try to remember actively, rather than reading /
+listening passively).
+2. **Spaced Repetition** (You'll only study cards when you're about to forget
+them. The easier the card, the longer the intervals between reviews becomes)
+
+Anki is open source and cross-platform. It supports many addons developed by
+contributors. It also uses the FSRS algorithm, which will improve your studying
+results drastically.
+```
+
 Anki is a program which makes remembering things easy. Because it is a
 lot more efficient than traditional study methods, you can either
 greatly decrease your time spent studying, or greatly increase the
