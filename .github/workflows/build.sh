@@ -7,4 +7,5 @@ export PATH="$HOME:$PATH"
 if [ "$CHECK" = "" ]; then
     rm $HOME/mdbook-linkcheck
 fi
+mdbook --version
 mdbook build

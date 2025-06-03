@@ -48,7 +48,7 @@ when trying to answer. In such situations, it’s often helpful to
 concentrate on one idea at a time. Once that idea is firmly ingrained in 
 your mind, you can then start learning the other idea. So, in these
 situations, you might want to leave one of the words suspended until you
-have learnt the other one well, and then unsuspend it.
+have learned the other one well, and then unsuspend it.
 
 For a more detailed discussion, you can refer to the article "[Dealing 
 with Leeches](https://controlaltbackspace.org/leech/)", written by Soren 
