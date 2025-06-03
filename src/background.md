@@ -12,7 +12,7 @@ sciences:
 1. **Active Recall** (You try to remember actively, rather than reading /
 listening passively).
 2. **Spaced Repetition** (You'll only study cards when you're about to forget
-them. The easier the card, the longer the intervals between reviews becomes)
+them. The easier the card, the longer the intervals between reviews becomes).
 
 Anki is open source and cross-platform. It supports many addons developed by
 contributors. It also uses the FSRS algorithm, which will improve your studying
