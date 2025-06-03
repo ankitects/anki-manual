@@ -196,7 +196,7 @@ you might create a front template like this:</p>
 </code></pre>
 <p>This means “show me the text that’s on the front side, then a divider
 line, and then the Back field”.</p>
-<p>The &quot;id=answer&quot; part tells Anki where the divider is between the
+<p>The “id=answer” part tells Anki where the divider is between the
 question and the answer. This allows Anki to automatically scroll to the
 spot where the answer starts when you press <strong>show answer</strong> on a long card
 (especially useful on mobile devices with small screens). If you don’t
@@ -216,7 +216,7 @@ line, like so:</p>
 <pre><code>one&lt;br&gt;
 two
 </code></pre>
-<p>The br code stands for &quot;(line) br(eak)&quot;.</p>
+<p>The br code stands for “(line) br(eak)”.</p>
 <p>The same applies for fields. If you want to display two fields, one on
 each line, you would use</p>
 <pre><code>{{Field 1}}&lt;br&gt;
@@ -308,7 +308,7 @@ hidden until you explicitly show it. We call this a <em>hint field</em>. Before
 adding a hint, please bear in mind that the easier you make it to answer
 a question in Anki, the less likely you are to remember that question
 when you encounter it in real life. Please have a read about the
-&quot;minimum information principle&quot; on
+“minimum information principle” on
 <a href="https://super-memory.com/articles/20rules.htm">https://super-memory.com/articles/20rules.htm</a> before proceeding.</p>
 <p>First, you’ll need to add a field to store the hint in if you have not
 already. Please see the <a href="../editing.html#customizing-fields">fields</a> section if you’re not sure how
@@ -352,11 +352,11 @@ by clicking on the link while reviewing. There is a caveat however, so
 please see the next section.</p>
 <h2 id="html-stripping"><a class="header" href="#html-stripping">HTML Stripping</a></h2>
 <p>Like templates, fields are stored in HTML. In the dictionary link
-example above, if the expression contained the word &quot;myword&quot; without any
-formatting, then the HTML would be the same: &quot;myword&quot;. But when you
-include formatting in your fields, extra HTML is included. If &quot;myword&quot;
+example above, if the expression contained the word “myword” without any
+formatting, then the HTML would be the same: “myword”. But when you
+include formatting in your fields, extra HTML is included. If “myword”
 was bolded for example, the actual HTML would be
-&quot;&lt;b&gt;myword&lt;/b&gt;&quot;.</p>
+“&lt;b&gt;myword&lt;/b&gt;”.</p>
 <p>This can present a problem for things like dictionary links. In the
 above example, the dictionary link would end up being:</p>
 <pre><code>&lt;a href=&quot;http://example.com/search?q=&lt;b&gt;myword&lt;/b&gt;&quot;&gt;check in dictionary&lt;/a&gt;
@@ -425,7 +425,7 @@ do so. This has implications for including media on the template.</p>
 for every card (eg, a company logo at the top of each card):</p>
 <ol>
 <li>
-<p>Rename the file so it starts with an underscore, e.g &quot;_logo.jpg&quot;.
+<p>Rename the file so it starts with an underscore, e.g “_logo.jpg”.
 The underscore tells Anki that the file is used by the template and
 it should be exported when sharing the deck.</p>
 </li>
@@ -451,8 +451,8 @@ see the <a href="../importing/text-files.html#importing-media">importing section
 <h2 id="checking-your-answer"><a class="header" href="#checking-your-answer">Checking Your Answer</a></h2>
 <p>You can watch <a href="http://www.youtube.com/watch?v=5tYObQ3ocrw&amp;yt:cc=on">a video about this feature</a> on
 YouTube.</p>
-<p>The easiest way to check your answer is to click &quot;Basic&quot; at the top
-left of the card adding screen, and select &quot;Basic (type in the answer)&quot;.</p>
+<p>The easiest way to check your answer is to click “Basic” at the top
+left of the card adding screen, and select “Basic (type in the answer)”.</p>
 <p>If you have downloaded a shared deck and would like to type in the answer
 with it, you can modify its card template. If it has a template like:</p>
 <pre><code>{{Native Word}}
@@ -492,8 +492,8 @@ of your styling section:</p>
 <pre><code>&lt;code id=typeans&gt;...&lt;/code&gt;
 </code></pre>
 <p>Advanced users can override the default type-answer colors with the css
-classes &quot;typeGood&quot;, &quot;typeBad&quot; and &quot;typeMissed&quot;. AnkiMobile supports
-&quot;typeGood&quot; and &quot;typeBad&quot;, but not &quot;typeMissed&quot;.</p>
+classes “typeGood”, “typeBad” and “typeMissed”. AnkiMobile supports
+“typeGood” and “typeBad”, but not “typeMissed”.</p>
 <p>If you wish to override the size of the typing box and don’t want to
 change the font in the Fields dialog, you can override the default
 inline style using <code>!important</code>, like so:</p>
@@ -510,7 +510,7 @@ template, so the back looks something like this:</p>
 added to both sides on a cloze note type.</p>
 <p>If there are multiple sections elided, you can separate the answers in
 the text box with a comma.</p>
-<p>Type answer boxes will not appear in the <a href="intro.html">&quot;preview&quot; dialog</a> in the browser. When you review or look at
+<p>Type answer boxes will not appear in the <a href="intro.html">“preview” dialog</a> in the browser. When you review or look at
 the preview in the card types window, they will display.</p>
 <p>Type answer boxes will not be displayed when you review your cards on <a href="../syncing.html">ankiweb.net</a>.</p>
 

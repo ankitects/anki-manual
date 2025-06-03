@@ -209,7 +209,7 @@ two;this is a one line field
 </code></pre>
 <p>Because quotes are used to mark where a field begins and ends, if you
 wish to include them inside your field, you need to replace a single
-doublequote with two doublequotes to &quot;escape&quot; them from the regular
+doublequote with two doublequotes to “escape” them from the regular
 handling, like so:</p>
 <pre><code>field one;&quot;field two with &quot;&quot;escaped quotes&quot;&quot; inside it&quot;
 </code></pre>
@@ -235,7 +235,7 @@ field1;field2;field3
 </code></pre>
 <h2 id="spreadsheets-and-utf-8"><a class="header" href="#spreadsheets-and-utf-8">Spreadsheets and UTF-8</a></h2>
 <p>If you have non-Latin characters in your file (such as accents, Japanese
-and so on), Anki expects files to be saved in a &quot;UTF-8 encoding&quot;. The
+and so on), Anki expects files to be saved in a “UTF-8 encoding”. The
 easiest way to do this is to use the free LibreOffice spreadsheet
 program instead of Excel to edit your file, as it supports UTF-8 easily,
 and also exports multi-line content properly, unlike Excel. If you wish
@@ -249,8 +249,8 @@ can then import the saved file into Anki.</p>
 <p>Anki can treat text imported from text files as HTML (the language used
 for web pages). This means that text with bold, italics and other
 formatting can be exported to a text file and imported again. If you
-want to include HTML formatting, you can check the &quot;allow HTML in
-fields&quot; checkbox when importing. You may wish to turn this off if you’re
+want to include HTML formatting, you can check the “allow HTML in
+fields” checkbox when importing. You may wish to turn this off if you’re
 trying to import cards whose content contains angle brackets or other
 HTML syntax.</p>
 <p>If you wish to use HTML for formatting your file but also wish to
@@ -274,11 +274,11 @@ file as follows.</p>
 </code></pre>
 <p>Alternatively, you can use the <a href="../browsing.html">find and replace</a> feature
 in the browse screen to update all the fields at once. If each field
-contains text like &quot;myaudio&quot;, and you wish to make it play a sound,
-you’d search for (.*) and replace it with &quot;[sound:\1.mp3]&quot;, with the
+contains text like “myaudio”, and you wish to make it play a sound,
+you’d search for (.*) and replace it with “[sound:\1.mp3]”, with the
 <strong>regular expressions</strong> option enabled.</p>
 <p>When importing a text file with these references, you must make sure to
-enable the &quot;Allow HTML&quot; option.</p>
+enable the “Allow HTML” option.</p>
 <p>You might be tempted to do this in a template, like:</p>
 <pre><code>&lt;img src=&quot;{{field name}}&quot;&gt;
 </code></pre>
@@ -291,7 +291,7 @@ instead.</p>
 the <a href="https://ankiweb.net/shared/info/129299120">media import add-on</a>.
 This add-on will automatically create notes for all files in a folder
 you select, with the filenames on the front (minus the file extension,
-so if you have a file named apple.jpg, the front would say &quot;apple&quot;) and
+so if you have a file named apple.jpg, the front would say “apple”) and
 the images or audio on the back. If you would like a different
 arrangement of media and filenames, you can <a href="../browsing.html">change the note type</a> of the created cards afterwards.</p>
 <h2 id="duplicates-and-updating"><a class="header" href="#duplicates-and-updating">Duplicates and Updating</a></h2>
@@ -326,10 +326,10 @@ and must be listed in separate lines at the top of the file.</p>
 <tr><td><code>columns</code></td><td>List of names, separated by the previously set separator</td><td>Determines the number of columns and shows their given names when importing.</td></tr>
 <tr><td><code>notetype</code></td><td>Note type name or id</td><td>Presets the note type, if it exists.</td></tr>
 <tr><td><code>deck</code></td><td>Deck name or id</td><td>Presets the deck, if it exists.</td></tr>
-<tr><td><code>notetype column</code></td><td><code>1</code>, <code>2</code>, <code>3</code>, ...</td><td>Determines which column contains the note type name or id of each note, see <a href="#notetype-column">Notetype Column</a>.</td></tr>
-<tr><td><code>deck column</code></td><td><code>1</code>, <code>2</code>, <code>3</code>, ...</td><td>Determines which column contains the deck name or id of each note, see <a href="#deck-column">Deck Column</a>.</td></tr>
-<tr><td><code>tags column</code></td><td><code>1</code>, <code>2</code>, <code>3</code>, ...</td><td>Determines which column contains the tags of each note.</td></tr>
-<tr><td><code>guid column</code></td><td><code>1</code>, <code>2</code>, <code>3</code>, ...</td><td>Determines which column contains the GUID of each note, see <a href="#guid-column">GUID Column</a>.</td></tr>
+<tr><td><code>notetype column</code></td><td><code>1</code>, <code>2</code>, <code>3</code>, …</td><td>Determines which column contains the note type name or id of each note, see <a href="#notetype-column">Notetype Column</a>.</td></tr>
+<tr><td><code>deck column</code></td><td><code>1</code>, <code>2</code>, <code>3</code>, …</td><td>Determines which column contains the deck name or id of each note, see <a href="#deck-column">Deck Column</a>.</td></tr>
+<tr><td><code>tags column</code></td><td><code>1</code>, <code>2</code>, <code>3</code>, …</td><td>Determines which column contains the tags of each note.</td></tr>
+<tr><td><code>guid column</code></td><td><code>1</code>, <code>2</code>, <code>3</code>, …</td><td>Determines which column contains the GUID of each note, see <a href="#guid-column">GUID Column</a>.</td></tr>
 </tbody></table>
 </div>
 <p>Some headers have further implications.</p>
@@ -350,11 +350,11 @@ exist, a deck with the given name will be created.</p>
 <p>GUID stands for <em>Globally Unique Identifier</em>. When you create notes in Anki, Anki
 assigns each note a unique ID, which can be used for duplicate checking. If you
 export your notes with the GUID included, you can make changes to the notes, and
-as long as you do not modify the GUID field, you'll be able to import the notes back
+as long as you do not modify the GUID field, you’ll be able to import the notes back
 in to update the existing notes.</p>
 <p>Please note that the GUID is intended to be created by Anki. If you are creating
-your own IDs, such as <code>MYNOTE0001</code>, then it's recommended that you place the IDs
-in the first field, instead of assigning them to Anki's internal GUID. When importing,
+your own IDs, such as <code>MYNOTE0001</code>, then it’s recommended that you place the IDs
+in the first field, instead of assigning them to Anki’s internal GUID. When importing,
 Anki is able to use either the first field or the GUID for duplicate checking, so you do not
 need to make IDs a GUID in order to be able to update your notes.</p>
 <p>One other thing to note is that the duplicate option will not work for rows that have a

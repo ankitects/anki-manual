@@ -198,15 +198,15 @@ in relative to other new cards. The position can be changed in the
 browser. Once a card has been studied, the position is not used, unless
 the card is manually reset to new again.</p>
 <p><strong>Interval</strong><br />
-The delay from one review to the next. Times are abbreviated; &quot;0s, 1m,
-3h, 4d, 5mo, 6y&quot; refers to seconds, minutes, hours, days, months and
+The delay from one review to the next. Times are abbreviated; “0s, 1m,
+3h, 4d, 5mo, 6y” refers to seconds, minutes, hours, days, months and
 years respectively.</p>
 <p><strong>Ease</strong><br />
 The approximate amount the interval will grow when you answer a review
-card with the &quot;Good&quot; button.</p>
+card with the “Good” button.</p>
 <p>The bottom section shows the review history for the card. Rating denotes
 the button (1 = Again, 4 = Easy). When cards are manually rescheduled using
-the &quot;reset&quot; or &quot;set due date&quot; actions, the type will be listed as Manual
+the “reset” or “set due date” actions, the type will be listed as Manual
 and the rating as 0.</p>
 <h2 id="statistics"><a class="header" href="#statistics">Statistics</a></h2>
 <p>The statistics window is accessed by clicking on <strong>Stats</strong> button at the
@@ -223,11 +223,11 @@ for arbitrary searches by adding filters in the search box at the top (2.1.28+).
 <h3 id="history"><a class="header" href="#history">History</a></h3>
 <p>By default, Anki shows you statistics for the last 12 months.
 You can change this to all history scope or deck life scope at the top. (The
-&quot;today&quot; section at the top remains of course unaffected by this selection.)</p>
+“today” section at the top remains of course unaffected by this selection.)</p>
 <h3 id="more"><a class="header" href="#more">More</a></h3>
 <ul>
 <li>
-<p>Clicking on &quot;Save PDF&quot; at the bottom will save a PDF document of the statistics to a file
+<p>Clicking on “Save PDF” at the bottom will save a PDF document of the statistics to a file
 on your desktop to make it easy to share your statistics with others.</p>
 </li>
 <li>
@@ -245,14 +245,14 @@ accessible with a <kbd>Shift</kbd>-click on the Stats button.</p>
 <h2 id="today"><a class="header" href="#today">Today</a></h2>
 <p>At the top of the statistics window is a brief list of textual
 statistics about the reviews that you have completed today. A “review”
-in this context is &quot;one answering of a card&quot;, so a card might count as
+in this context is “one answering of a card”, so a card might count as
 multiple reviews if it needed to be seen multiple times, and a learning
 card answered also counts as a “review.” A couple of the stats whose
 meaning may not be immediately obvious:</p>
 <h3 id="again-count"><a class="header" href="#again-count">Again Count</a></h3>
 <p>This is the number of reviews that you have failed (i.e., pressed Again
 on). The correct percentage listed afterwards is the number of cards you
-did &quot;not&quot; fail divided by the total number of cards you studied.</p>
+did “not” fail divided by the total number of cards you studied.</p>
 <h3 id="learn-review-relearn-filtered"><a class="header" href="#learn-review-relearn-filtered">Learn, Review, Relearn, Filtered</a></h3>
 <p>The number of reviews that were learning cards, review cards, relearning
 cards, or studied in a filtered deck when not due.</p>
@@ -276,7 +276,7 @@ Note that the forecast graph does not count reviews that are currently
 overdue, so if you have a large backlog, the overdue cards will not be
 displayed.</p>
 <p>Daily load is an estimate of the average number of cards to be reviewed daily.
-If you don't have a backlog, daily load should be approximately equal to
+If you don’t have a backlog, daily load should be approximately equal to
 your number of due cards.</p>
 <p>It is calculated as follows:
 \[\frac{1}{I_1} + \frac{1}{I_2} + \frac{1}{I_3} + \dots + \frac{1}{I_n}\]</p>
@@ -325,10 +325,10 @@ Average ease of the selected deck / collection is also displayed here.</p>
 <p>Only shown if FSRS is enabled. Stability is defined as the amount of time required
 for the probability of recall to decrease from 100% to 90%.</p>
 <h3 id="card-difficulty"><a class="header" href="#card-difficulty">Card Difficulty</a></h3>
-<p>Only shown if FSRS is enabled. Difficulty determines how quickly a card's interval grows
+<p>Only shown if FSRS is enabled. Difficulty determines how quickly a card’s interval grows
 after each review.</p>
 <h3 id="card-retrievability"><a class="header" href="#card-retrievability">Card Retrievability</a></h3>
-<p>Only shown if FSRS is enabled. &quot;Retrievability&quot; is synonymous with &quot;probability of recall&quot;.</p>
+<p>Only shown if FSRS is enabled. “Retrievability” is synonymous with “probability of recall”.</p>
 <p>Estimated total knowledge is the total number of cards you are likely to currently remember,
 calculated by multiplying average retrievability by the number of cards that have been
 reviewed at least once.</p>
@@ -351,11 +351,11 @@ Easy button while studying learning/new, young, and
 of correct reviews for each type of card.</p>
 <h3 id="true-retention-table"><a class="header" href="#true-retention-table">True Retention Table</a></h3>
 <p>This table shows your retention across different cards and different time frames.
-A card is defined as &quot;mature&quot; if its interval is ≥21 days. Only one review per day - the first one - counts.
-Again counts as &quot;Fail&quot;; Hard, Good, and Easy count as &quot;Pass&quot;.
-This table can be used to check how well <a href="https://faqs.ankiweb.net/what-spaced-repetition-algorithm.html">Anki's spaced repetition algorithm</a> is working for you.</p>
+A card is defined as “mature” if its interval is ≥21 days. Only one review per day - the first one - counts.
+Again counts as “Fail”; Hard, Good, and Easy count as “Pass”.
+This table can be used to check how well <a href="https://faqs.ankiweb.net/what-spaced-repetition-algorithm.html">Anki’s spaced repetition algorithm</a> is working for you.</p>
 <p>If you are using FSRS, your true retention is expected to be close to your <a href="deck-options.html#desired-retention">desired retention</a>.
-Please keep in mind that data for a single day is noisy, so it's better to look at monthly data. If your true retention doesn't match your desired retention very well, here are some general recommendations:</p>
+Please keep in mind that data for a single day is noisy, so it’s better to look at monthly data. If your true retention doesn’t match your desired retention very well, here are some general recommendations:</p>
 <ol>
 <li>Optimize your FSRS parameters.</li>
 <li>Use different presets with their own parameters for different material.</li>
@@ -378,17 +378,17 @@ available for working with SQLite databases; one of the easiest to start
 with is called <a href="http://sqlitebrowser.org/">SQLite Browser</a>, which will
 allow you to look around the database as well as export a CSV version of
 tables for import into another program.</p>
-<p>The most important table for statistics is the &quot;revlog&quot; table, which
+<p>The most important table for statistics is the “revlog” table, which
 stores an entry for each review that you conduct. The columns are as
 follows:</p>
 <p><strong>id</strong><br />
 The time at which the review was conducted, as the number of
 milliseconds that had passed since midnight UTC on January 1, 1970.
-(This is sometimes known as &quot;Unix epoch time&quot;, especially when in
+(This is sometimes known as “Unix epoch time”, especially when in
 straight seconds instead of milliseconds.)</p>
 <p><strong>cid</strong><br />
 The ID of the card that was reviewed. You can look up this value in the
-id field of the &quot;cards&quot; table to get more information about the card,
+id field of the “cards” table to get more information about the card,
 although note that the card could have changed between when the revlog
 entry was recorded and when you are looking it up. It is also the
 millisecond timestamp of the card’s creation time.</p>
@@ -413,7 +413,7 @@ The amount of time (in milliseconds) you spent on the question and
 answer sides of the card before selecting an ease button.</p>
 <p><strong>type</strong><br />
 This is 0 for learning cards, 1 for review cards, 2 for relearning cards,
-and 3 for early &quot;cram&quot; cards (cards being studied in a filtered deck when they
+and 3 for early “cram” cards (cards being studied in a filtered deck when they
 are not due).</p>
 
                     </main>

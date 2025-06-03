@@ -176,46 +176,46 @@
 <li><a href="#custom-data">Custom Data</a></li>
 <li><a href="#other-searches">Other Searches</a></li>
 </ul>
-<p>Anki's Browse screen and the Filtered Deck feature use a common method
+<p>Anki’s Browse screen and the Filtered Deck feature use a common method
 of searching for specific cards/notes. This method can also be used to adjust the scope of FSRS optimization. </p>
 <h2 id="simple-searches"><a class="header" href="#simple-searches">Simple searches</a></h2>
 <p>When you type some text into the search box, Anki finds matching notes
 and displays their cards. Anki searches in all fields of the notes, but
 does not search for tags (see <a href="#tags-decks-cards-and-notes">later in this section</a> to search for tags). Some examples:</p>
 <p><code>dog</code><br />
-searches for &quot;dog&quot; - will match words like &quot;doggy&quot; and &quot;underdog&quot; too.</p>
+searches for “dog” - will match words like “doggy” and “underdog” too.</p>
 <p><code>dog cat</code><br />
-finds notes that have both &quot;dog&quot; and &quot;cat&quot; on them, such as &quot;raining
-cats and dogs&quot;.</p>
+finds notes that have both “dog” and “cat” on them, such as “raining
+cats and dogs”.</p>
 <p><code>dog or cat</code><br />
-finds notes with either &quot;dog&quot; or &quot;cat&quot;.</p>
+finds notes with either “dog” or “cat”.</p>
 <p><code>dog (cat or mouse)</code><br />
-finds notes with &quot;dog&quot; and &quot;cat&quot;, or &quot;dog&quot; and &quot;mouse&quot;.</p>
+finds notes with “dog” and “cat”, or “dog” and “mouse”.</p>
 <p><code>-cat</code><br />
-finds notes without &quot;cat&quot;.</p>
+finds notes without “cat”.</p>
 <p><code>-cat -mouse</code><br />
-finds notes with neither &quot;cat&quot; nor &quot;mouse&quot;.</p>
+finds notes with neither “cat” nor “mouse”.</p>
 <p><code>-(cat or mouse)</code><br />
 same as the above.</p>
 <p><code>&quot;a dog&quot;</code><br />
-finds notes with the exact sequence of characters &quot;a dog&quot; in them, such
-as &quot;atta dog&quot;, but not &quot;dog a&quot; or &quot;adog&quot;.</p>
+finds notes with the exact sequence of characters “a dog” in them, such
+as “atta dog”, but not “dog a” or “adog”.</p>
 <p><code>-&quot;a dog&quot;</code><br />
-finds notes without the exact sequence of characters &quot;a dog&quot; in them.</p>
+finds notes without the exact sequence of characters “a dog” in them.</p>
 <p><code>d_g</code><br />
 finds notes with d, &lt;one character&gt;, g, like dog, dig, dug, and so on.</p>
 <p><code>d*g</code><br />
 finds notes with d, &lt;zero or more characters&gt;, g, like dg, dog, dung,
 etc.</p>
 <p><code>w:dog</code><br />
-searches for the word &quot;dog&quot; as opposed to a sequence of characters - will match &quot;dog&quot;, but not &quot;doggy&quot;
-or &quot;underdog&quot;. Requires Anki 2.1.24+, AnkiMobile 2.1.61+, or AnkiDroid 2.17+. Note that
+searches for the word “dog” as opposed to a sequence of characters - will match “dog”, but not “doggy”
+or “underdog”. Requires Anki 2.1.24+, AnkiMobile 2.1.61+, or AnkiDroid 2.17+. Note that
 formatting changes may be interpreted as word boundaries, e.g. searching
-for <code>w:exam</code> will match <strong>exam</strong>ple, as the &quot;exam&quot; part of example is in bold format.</p>
+for <code>w:exam</code> will match <strong>exam</strong>ple, as the “exam” part of example is in bold format.</p>
 <p><code>w:dog*</code><br />
-will match &quot;dog&quot; and &quot;doggy&quot;, but not &quot;underdog&quot;.</p>
+will match “dog” and “doggy”, but not “underdog”.</p>
 <p><code>w:*dog</code><br />
-will match &quot;dog&quot; and &quot;underdog&quot;, but not &quot;doggy&quot;.</p>
+will match “dog” and “underdog”, but not “doggy”.</p>
 <p>Things to note from the above:</p>
 <ul>
 <li>
@@ -239,12 +239,12 @@ match the term.</p>
 <p>You can group search terms by placing them in parentheses, as in the
 <code>dog (cat or mouse)</code> example. This becomes important when
 combining OR and AND searches — in the example, with the
-parentheses, it matches either &quot;dog cat&quot; or &quot;dog mouse&quot;, whereas
-without them it would match either &quot;dog and cat&quot; or &quot;mouse&quot;.</p>
+parentheses, it matches either “dog cat” or “dog mouse”, whereas
+without them it would match either “dog and cat” or “mouse”.</p>
 </li>
 <li>
 <p>Anki is only able to search within formatting in the <a href="editing.html#customizing-fields">sort field</a> you’ve configured. For example, if you add
-&quot;<strong>exa</strong>mple&quot; to one of your fields, with the &quot;exa&quot; part in bold, this will not be matched when
+“<strong>exa</strong>mple” to one of your fields, with the “exa” part in bold, this will not be matched when
 searching for <code>example</code> unless that field is the sort field. If a
 word is not formatted, or the formatting does not change in the
 middle of the word, then Anki will be able to find it in any field.</p>
@@ -261,10 +261,10 @@ boundary or regular expression (<code>w:</code>, <code>re:</code>).</p>
 text. Unlike the previous search examples, searching in fields requires an exact
 match by default.</p>
 <p><code>front:dog</code><br />
-finds notes with a Front field of exactly &quot;dog&quot;. A field that says &quot;a
-dog&quot; will not match.</p>
+finds notes with a Front field of exactly “dog”. A field that says “a
+dog” will not match.</p>
 <p><code>&quot;animal front:a dog&quot;</code><br />
-finds notes where the &quot;Animal Front&quot; field is exactly &quot;a dog&quot;. The double quotes are
+finds notes where the “Animal Front” field is exactly “a dog”. The double quotes are
 mandatory: see <a href="#matching-special-characters">later in this section</a>.</p>
 <p><code>front:*dog*</code><br />
 finds notes where the Front field contains dog somewhere.</p>
@@ -275,20 +275,20 @@ finds notes that have a non-empty Front field.</p>
 <p><code>front:*</code><br />
 finds notes that have a Front field, empty or not.</p>
 <p><code>fr*:text</code><br />
-finds notes in a field starting with &quot;fr&quot;. Requires Anki 2.1.24+, AnkiMobile 2.1.60+, or AnkiDroid 2.17+.</p>
+finds notes in a field starting with “fr”. Requires Anki 2.1.24+, AnkiMobile 2.1.60+, or AnkiDroid 2.17+.</p>
 <h2 id="tags-decks-cards-and-notes"><a class="header" href="#tags-decks-cards-and-notes">Tags, decks, cards and notes</a></h2>
 <p><code>tag:animal</code><br />
-finds notes with the tag &quot;animal&quot;, or subtags like &quot;animal::mammal&quot;.</p>
+finds notes with the tag “animal”, or subtags like “animal::mammal”.</p>
 <p><code>tag:none</code><br />
 finds notes with no tags.</p>
 <p><code>tag:ani*</code><br />
-finds notes with tags starting with &quot;ani&quot;.</p>
+finds notes with tags starting with “ani”.</p>
 <p><code>deck:french</code><br />
-find cards in a top-level deck called &quot;French&quot;, or its subdecks like &quot;French::Words&quot;. It will not match subdecks with that name, such as &quot;Languages::French&quot;.</p>
+find cards in a top-level deck called “French”, or its subdecks like “French::Words”. It will not match subdecks with that name, such as “Languages::French”.</p>
 <p><code>deck:french::words</code><br />
-find cards in the &quot;French::Words&quot; subdeck.</p>
+find cards in the “French::Words” subdeck.</p>
 <p><code>deck:french -deck:french::*</code><br />
-finds cards in &quot;French&quot;, but not its subdecks.</p>
+finds cards in “French”, but not its subdecks.</p>
 <p><code>deck:&quot;french words&quot;</code><br />
 searching when the deck name has a space.</p>
 <p><code>&quot;deck:french words&quot;</code><br />
@@ -298,51 +298,51 @@ filtered decks only.</p>
 <p><code>-deck:filtered</code><br />
 normal decks only.</p>
 <p><code>preset:&quot;Default&quot;</code><br />
-cards in all decks that use the &quot;Default&quot; deck options preset.
+cards in all decks that use the “Default” deck options preset.
 Requires Anki 23.10+, AnkiMobile 23.10+ or AnkiDroid 2.17+.</p>
 <p><code>card:forward</code><br />
-finds cards created by a card type named &quot;Forward&quot;.</p>
+finds cards created by a card type named “Forward”.</p>
 <p><code>card:1</code><br />
 searches for cards by card type number, e.g. to find the second cloze
 deletion for a note, you’d use <code>card:2</code></p>
 <p><code>note:basic</code><br />
-searches for cards created with a note type named &quot;Basic&quot;.</p>
+searches for cards created with a note type named “Basic”.</p>
 <h2 id="ignoring-accentscombining-characters"><a class="header" href="#ignoring-accentscombining-characters">Ignoring accents/combining characters</a></h2>
 <p>Requires Anki 2.1.24+, AnkiMobile 2.0.60+ or AnkiDroid 2.17+.</p>
-<p>You can use <code>nc:</code> (nc stands for &quot;no combining&quot;) to make Anki ignore combining characters. For example:</p>
+<p>You can use <code>nc:</code> (nc stands for “no combining”) to make Anki ignore combining characters. For example:</p>
 <p><code>nc:uber</code><br />
-matches notes with &quot;uber&quot;, &quot;über&quot;, &quot;Über&quot; and so on.</p>
+matches notes with “uber”, “über”, “Über” and so on.</p>
 <p><code>nc:は</code><br />
-matches &quot;は&quot;, &quot;ば&quot;, and &quot;ぱ&quot;.</p>
+matches “は”, “ば”, and “ぱ”.</p>
 <p>Searches that ignore combining characters are slower than regular searches.</p>
 <h2 id="regular-expressions"><a class="header" href="#regular-expressions">Regular expressions</a></h2>
-<p>Anki 2.1.24+, AnkiMobile 2.0.60+ and AnkiDroid 2.17+ support searching in notes with &quot;regular expressions&quot;,
+<p>Anki 2.1.24+, AnkiMobile 2.0.60+ and AnkiDroid 2.17+ support searching in notes with “regular expressions”,
 a standard and powerful way of searching in text.</p>
 <p>Start a search with <code>re:</code> to search using regular expressions. To make things easier, Anki will
 treat the following as <a href="#raw-input">raw input</a>, so bear in mind the rules listed there.</p>
 <p>Some examples:</p>
 <p><code>&quot;re:(some|another).*thing&quot;</code><br />
-finds notes that have &quot;some&quot; or &quot;another&quot; on them, followed by 0 or more characters, and then &quot;thing&quot;.</p>
+finds notes that have “some” or “another” on them, followed by 0 or more characters, and then “thing”.</p>
 <p><code>re:\d{3}</code><br />
 finds notes that have 3 digits in a row.</p>
 <p>Regular expressions can also be limited to a specific field. Please note that unlike the normal searches
-in a specific field, regular expressions in fields don't require an exact match:</p>
+in a specific field, regular expressions in fields don’t require an exact match:</p>
 <p><code>front:re:[a-c]1</code><br />
-matches uppercase or lowercase a1, B1 or c1 that occurs anywhere in the &quot;Front&quot; field.</p>
+matches uppercase or lowercase a1, B1 or c1 that occurs anywhere in the “Front” field.</p>
 <p><code>front:re:^[a-c]1$</code><br />
 same as the previous example, but will not match if any other text falls before or after a1/b1/c1.</p>
 <p>Anki 2.1.50+ supports regular expressions for tags:</p>
 <p><code>tag:re:^parent$</code><br />
-finds notes with the exact tag &quot;parent&quot;, disregarding any child tags like &quot;parent::child&quot;.</p>
+finds notes with the exact tag “parent”, disregarding any child tags like “parent::child”.</p>
 <p><code>&quot;tag:re:lesson-(1[7-9]|2[0-5])&quot;</code><br />
-finds notes with tags &quot;lesson-17&quot; through &quot;lesson-25&quot;.</p>
+finds notes with tags “lesson-17” through “lesson-25”.</p>
 <p>For more information on regular expressions, see <a href="https://regexone.com/lesson/introduction_abcs">this website</a>.</p>
 <p>Some things to be aware of:</p>
 <ul>
 <li>The search is case-insensitive by default; use <code>(?-i)</code> at the start to turn on case sensitivity.</li>
 <li>Some text like spaces and newlines may be represented differently in HTML - you can
 use the HTML editor in the editing screen to see the underlying HTML contents.</li>
-<li>For the specifics of Anki's regex support, see the <a href="https://docs.rs/regex/1.3.9/regex/#syntax">regex crate documentation</a>.</li>
+<li>For the specifics of Anki’s regex support, see the <a href="https://docs.rs/regex/1.3.9/regex/#syntax">regex crate documentation</a>.</li>
 </ul>
 <h2 id="card-state"><a class="header" href="#card-state">Card state</a></h2>
 <p><code>is:due</code><br />
@@ -448,10 +448,10 @@ cards answered for the first time today.</p>
 <p><code>introduced:365</code><br />
 cards answered for the first time within the last 365 days.</p>
 <h2 id="matching-special-characters"><a class="header" href="#matching-special-characters">Matching special characters</a></h2>
-<p>If you're using a version earlier than Anki 2.1.36 the following searches may not work.</p>
+<p>If you’re using a version earlier than Anki 2.1.36 the following searches may not work.</p>
 <p>As shown in the previous section, some characters like <code>*</code>, <code>_</code> and <code>&quot;</code> have a
 special meaning in search. If you need to locate those characters in a search,
-you need to tell Anki not to treat them specially. This is called &quot;escaping a character&quot; and is primarily done by using double quotes and backslashes.</p>
+you need to tell Anki not to treat them specially. This is called “escaping a character” and is primarily done by using double quotes and backslashes.</p>
 <ul>
 <li>
 <p><em>Space</em><br />
@@ -461,7 +461,7 @@ quotes. If it is a colon search, you also have the option to only quote the
 </li>
 <li>
 <p><code>And</code>/<code>Or</code><br />
-To search for these words, wrap them with double quotes. For example, <code>dog &quot;and&quot; cat</code> searches for &quot;dog&quot;, &quot;cat&quot; and the word &quot;and&quot;.
+To search for these words, wrap them with double quotes. For example, <code>dog &quot;and&quot; cat</code> searches for “dog”, “cat” and the word “and”.
 If you wrap the entire search term with quotes like in the previous example, you do not need to escape <code>and</code> or <code>or</code>.</p>
 </li>
 <li>
@@ -486,18 +486,18 @@ by using a backslash, or both at the same time. For example, <code>&quot;(text)&
 Starting a search term with <code>-</code> usually inverts it: <code>-dog</code> matches everything
 except dog for example. If you instead wish to include an actual hyphen,
 you can either use a backslash, or include the text in quotes. For example,
-<code>\-free</code> or <code>&quot;-free&quot;</code> will match &quot;guilt-free&quot; and &quot;cruelty-free&quot;.</p>
+<code>\-free</code> or <code>&quot;-free&quot;</code> will match “guilt-free” and “cruelty-free”.</p>
 </li>
 <li>
 <p><code>:</code><br />
 Colons have to be escaped using backslashes unless they are preceded by another, unescaped colon.
-For example, <code>w:3:30</code> searches for &quot;3:30&quot; on word boundary and doesn't require you to use a backslash.
-However, if you don't use a colon search, the colons need to be escaped like this: <code>3\:30</code>.</p>
+For example, <code>w:3:30</code> searches for “3:30” on word boundary and doesn’t require you to use a backslash.
+However, if you don’t use a colon search, the colons need to be escaped like this: <code>3\:30</code>.</p>
 </li>
 <li>
 <p><code>&amp;</code>, <code>&lt;</code>, and <code>&gt;</code><br />
 <code>&amp;</code>, <code>&lt;</code>, and <code>&gt;</code> are treated as HTML when searching in Anki, and as such, searches
-containing them don't work as expected. However, you can search for them by using their
+containing them don’t work as expected. However, you can search for them by using their
 corresponding HTML entity names (<code>&amp;amp;</code> for <code>&amp;</code>, <code>&amp;lt;</code> for <code>&lt;</code>, and <code>&amp;gt;</code> for <code>&gt;</code>).
 For example, searching <code>&amp;amp;text</code> searches for a note with <code>&amp;text</code> in a field.</p>
 </li>

@@ -202,15 +202,15 @@ are the same.</p>
 </ul>
 <h2 id="key-concepts"><a class="header" href="#key-concepts">Key Concepts</a></h2>
 <h3 id="cards"><a class="header" href="#cards">Cards</a></h3>
-<p>A question and answer pair is called a <em>card</em>. It's similar to a paper
+<p>A question and answer pair is called a <em>card</em>. It’s similar to a paper
 flashcard with a question on the front and answer on the back. However, in
-Anki, a card doesn't look like a physical card, and when you
+Anki, a card doesn’t look like a physical card, and when you
 show the answer the question remains visible by default. For example, if
-you're studying basic chemistry, you might see a question like:</p>
+you’re studying basic chemistry, you might see a question like:</p>
 <pre><code>Q: Chemical symbol for oxygen?
 </code></pre>
 <p>After deciding the answer is O, you click the
-&quot;Show Answer&quot; button, and Anki shows you:</p>
+“Show Answer” button, and Anki shows you:</p>
 <pre><code>Q: Chemical symbol for oxygen?
 A: O
 </code></pre>
@@ -243,22 +243,22 @@ study parts of your card collection instead of studying everything at
 once. Each deck can have different settings, such as how many new cards
 to show each day, or how long to wait until cards are shown again.</p>
 <p>Decks can contain other decks, which allows you to organize decks into a
-tree. Anki uses double colons (&quot;::&quot;) to show different levels within the deck tree. For example, a deck called
-&quot;Chinese::Hanzi&quot; refers to a &quot;Hanzi&quot; deck, which is part of a &quot;Chinese&quot;
-deck. If you select &quot;Hanzi&quot;, then only the Hanzi cards will be shown; if
-you select &quot;Chinese&quot;, then all the Chinese cards will be shown, including the Hanzi cards.</p>
+tree. Anki uses double colons (“::”) to show different levels within the deck tree. For example, a deck called
+“Chinese::Hanzi” refers to a “Hanzi” deck, which is part of a “Chinese”
+deck. If you select “Hanzi”, then only the Hanzi cards will be shown; if
+you select “Chinese”, then all the Chinese cards will be shown, including the Hanzi cards.</p>
 <p>To place decks within a tree, you can either name them with double colons between
 each level, or drag and drop them within the deck list. Decks that have
-been placed inside another deck are often called &quot;subdecks&quot;, and top-level decks are called &quot;parent decks&quot;.</p>
-<p>Anki starts with a deck called &quot;Default&quot;; any cards which have somehow
+been placed inside another deck are often called “subdecks”, and top-level decks are called “parent decks”.</p>
+<p>Anki starts with a deck called “Default”; any cards which have somehow
 become separated from other decks will go here. Anki will hide the
 default deck if it contains no cards and you have added other decks.
 Alternatively, you may rename this deck and use it for other cards.</p>
 <p>Decks in the deck list are sorted alphabetically. This can result in
-a surprising order if your deck names contain numbers. For example, &quot;My Deck 10&quot;
-will come before &quot;My Deck 9&quot;, as 1 comes before 9. If you want &quot;My deck 9&quot; to appear earlier, you can rename it to &quot;My deck 09&quot;, which appears before &quot;My deck 10&quot;.</p>
+a surprising order if your deck names contain numbers. For example, “My Deck 10”
+will come before “My Deck 9”, as 1 comes before 9. If you want “My deck 9” to appear earlier, you can rename it to “My deck 09”, which appears before “My deck 10”.</p>
 <p>Decks are best used to hold broad categories of cards, rather than
-specific topics such as &quot;food verbs&quot; or &quot;lesson 1&quot;. For more information about
+specific topics such as “food verbs” or “lesson 1”. For more information about
 this, please see the <a href="editing.html#using-decks-appropriately">using decks appropriately</a> section.</p>
 <p>For information on how the order of decks affects the order cards are studied in,
 please see the <a href="studying.html#display-order">display order</a> section.</p>
@@ -266,9 +266,9 @@ please see the <a href="studying.html#display-order">display order</a> section.<
 <p>When making flashcards, it’s often desirable to make more than one card
 that relates to the same information. For example, if you’re learning
 French, and you learn that the word <em>bonjour</em> means hello, you may
-wish to create one card that shows you &quot;bonjour&quot; and asks you to
-remember &quot;hello&quot;, and another card that shows you &quot;hello&quot; and asks you
-to remember &quot;bonjour&quot;. One card is testing your ability to recognize the
+wish to create one card that shows you “bonjour” and asks you to
+remember “hello”, and another card that shows you “hello” and asks you
+to remember “bonjour”. One card is testing your ability to recognize the
 French word, and the other card is testing your ability to produce it.</p>
 <p>When using paper flashcards, your only option in this case is to write
 out the information twice, once for each card. Some flashcard
@@ -312,8 +312,8 @@ English: Hello
 Page: 12
 </code></pre>
 <p>In Anki, this collection of related information is called a <em>note</em> and each piece of information is contained in a <em>field</em>. In this example, the note
-has three fields: &quot;French&quot;, &quot;English&quot;, and &quot;Page&quot;.</p>
-<p>To add and edit fields, click the &quot;Fields…​&quot; button while adding or
+has three fields: “French”, “English”, and “Page”.</p>
+<p>To add and edit fields, click the “Fields…​” button while adding or
 editing notes. For more information on fields, please see the
 <a href="editing.html#customizing-fields">Customizing Fields</a> section.</p>
 <h3 id="card-types"><a class="header" href="#card-types">Card Types</a></h3>
@@ -334,9 +334,9 @@ A: Hello
 A: {{English}}&lt;br&gt;
    Page #{{Page}}
 </code></pre>
-<p>In card templates, field names are wrapped in double curly brackets, like <code>{{French}}</code> or <code>{{English}}</code>. Anki replaces those with the actual text the fields contain. This is called a <a href="templates/fields.html">&quot;Field replacement&quot;</a>. Text not wrapped in double curly brackets appears the same on each card. For example, we won't need to add &quot;Page #&quot; on every note because the template will add it automatically to every card. The <code>&lt;br&gt;</code> tag is
+<p>In card templates, field names are wrapped in double curly brackets, like <code>{{French}}</code> or <code>{{English}}</code>. Anki replaces those with the actual text the fields contain. This is called a <a href="templates/fields.html">“Field replacement”</a>. Text not wrapped in double curly brackets appears the same on each card. For example, we won’t need to add “Page #” on every note because the template will add it automatically to every card. The <code>&lt;br&gt;</code> tag is
 a special code that tells Anki to move to the next line. For details, see the <a href="templates/intro.html">templates</a> section.</p>
-<p>The production card's templates will also work in a similar way:</p>
+<p>The production card’s templates will also work in a similar way:</p>
 <pre><code>Q: {{English}}
 A: {{French}}&lt;br&gt;
    Page #{{Page}}
@@ -345,51 +345,51 @@ A: {{French}}&lt;br&gt;
 will be created based on that card type. Card types make it easy to keep
 the formatting of your cards consistent and can greatly reduce the
 amount of effort involved in adding information. They also mean Anki can
-ensure related cards don't appear too close to each other, and they
+ensure related cards don’t appear too close to each other, and they
 allow you to fix a typing mistake or factual error once and have all the
 related cards update at once.</p>
-<p>To add and edit card types, click the &quot;Cards…​&quot; button while adding or
+<p>To add and edit card types, click the “Cards…​” button while adding or
 editing notes. For more information on card types, please see the <a href="templates/intro.html">Cards and Templates</a> section.</p>
 <h3 id="note-types"><a class="header" href="#note-types">Note Types</a></h3>
 <p>Anki allows you to create different types of notes for different
 material. Each type of note has its own set of fields and card types.
-It's a good idea to create a separate note type for each broad topic
-you're studying. In the previous French example, we might create a note
-type called &quot;French&quot; for that. If we wanted to learn capital cities, we
+It’s a good idea to create a separate note type for each broad topic
+you’re studying. In the previous French example, we might create a note
+type called “French” for that. If we wanted to learn capital cities, we
 could create a note type for that as well, with fields such as
-&quot;Country&quot; and &quot;Capital City&quot;.</p>
+“Country” and “Capital City”.</p>
 <p>Anki comes with some standard
 note types included. These note types are provided to make Anki easier for
-new users, but in the long run it's recommended you create your own note
+new users, but in the long run it’s recommended you create your own note
 types specifically for the content you are learning. The standard note types are:</p>
 <ul>
 <li>
 <p><strong>Basic</strong><br />
-Has &quot;Front&quot; and &quot;Back&quot; fields, and will create one card. Text you enter in
-&quot;Front&quot; will appear on the front of the card, and text you enter in &quot;Back&quot;
+Has “Front” and “Back” fields, and will create one card. Text you enter in
+“Front” will appear on the front of the card, and text you enter in “Back”
 will appear on the back of the card.</p>
 </li>
 <li>
 <p><strong>Basic (and reversed card)</strong><br />
-Like &quot;Basic&quot;, but creates two cards for the text you enter:
+Like “Basic”, but creates two cards for the text you enter:
 front→back and back→front.</p>
 </li>
 <li>
 <p><strong>Basic (optional reversed card)</strong><br />
-Like &quot;Basic&quot;, but has a third field called &quot;Add Reverse&quot;. If you enter any text into
+Like “Basic”, but has a third field called “Add Reverse”. If you enter any text into
 that field, a reversed card (back→front) will also be created. For details, see the <a href="templates/intro.html">Cards and Templates</a> section.</p>
 </li>
 <li>
 <p><strong>Basic (type in the answer)</strong><br />
-This is essentially &quot;Basic&quot;, with an extra text box on the front where you
+This is essentially “Basic”, with an extra text box on the front where you
 can type your answer in. When you reveal the back, Anki will show you any differences between your input and the actual answer. For details, see the
 <a href="templates/fields.html#checking-your-answer">Checking Your Answer</a> section.</p>
 </li>
 <li>
 <p><strong>Cloze</strong><br />
 A note type that allows you to select text and turn it into a cloze
-deletion (e.g. &quot;Humans landed on the moon in […​]&quot; → &quot;Humans landed on the
-moon in 1969&quot;). For details, see the <a href="editing.html#cloze-deletion">cloze deletion</a> section.</p>
+deletion (e.g. “Humans landed on the moon in […​]” → “Humans landed on the
+moon in 1969”). For details, see the <a href="editing.html#cloze-deletion">cloze deletion</a> section.</p>
 </li>
 <li>
 <p><strong>Image Occlusion</strong><br />
@@ -407,7 +407,7 @@ note types in a single deck, or have cards generated from the
 same note put into different decks. When you add notes using the
 Add window, you can select what note type to use and what deck to use,
 and these choices are completely independent of each other. You can also
-<a href="browsing.html#notes">change the note type of notes</a> after you've already created them.</p>
+<a href="browsing.html#notes">change the note type of notes</a> after you’ve already created them.</p>
 <h3 id="collection"><a class="header" href="#collection">Collection</a></h3>
 <p>Your <em>collection</em> is all the material stored in Anki: your cards,
 notes, decks, note types, deck options, and so on.</p>
@@ -417,10 +417,10 @@ notes, decks, note types, deck options, and so on.</p>
 someone else has shared:</p>
 <ol>
 <li>
-<p>Click the &quot;Get Shared&quot; button at the bottom of the deck list.</p>
+<p>Click the “Get Shared” button at the bottom of the deck list.</p>
 </li>
 <li>
-<p>When you've found a deck you're interested in, click the &quot;Download&quot;
+<p>When you’ve found a deck you’re interested in, click the “Download”
 button to download a deck package.</p>
 </li>
 <li>

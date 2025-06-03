@@ -174,13 +174,13 @@
 The video shows Anki 2.0’s interface, but the concepts are largely the
 same.</p>
 <p>The styling section of the Cards screen can be accessed by clicking the
-&quot;Styling&quot; button next to the &quot;Back Template&quot; button. In that section,
+“Styling” button next to the “Back Template” button. In that section,
 you can change the background color of the card, the default font, the
 text alignment, and so on.</p>
 <p>The standard options available to you are:</p>
 <p><strong>font-family</strong><br />
 The name of the font to use on the card. If your font has spaces in it
-like &quot;MS Unicode&quot;, then you need to surround the font name in double
+like “MS Unicode”, then you need to surround the font name in double
 quotes as in this sentence. It is also possible to use multiple fonts on
 one card; for information on that, please see below.</p>
 <p><strong>font-size</strong><br />
@@ -189,7 +189,7 @@ at the end.</p>
 <p><strong>text-align</strong><br />
 Whether the text should be aligned in the center, left, or right.</p>
 <p><strong>color</strong><br />
-The color of the text. Simple color names like &quot;blue&quot;, &quot;lightyellow&quot;,
+The color of the text. Simple color names like “blue”, “lightyellow”,
 and so on will work, or you can use HTML color codes to select arbitrary
 colors. Please see <a href="https://htmlcolorcodes.com/">this webpage</a> for more
 information.</p>
@@ -352,11 +352,11 @@ there are plenty of good introductory guides to HTML available on the
 web if you’d like to learn more.</p>
 <h2 id="browser-appearance"><a class="header" href="#browser-appearance">Browser Appearance</a></h2>
 <p>If your card templates are complex, it may be difficult to read the
-question and answer columns (called &quot;Front&quot; and &quot;Back&quot;) in the <a href="../browsing.html#cardnote-table">card list</a>. The &quot;browser appearance&quot; option allows you to define a
+question and answer columns (called “Front” and “Back”) in the <a href="../browsing.html#cardnote-table">card list</a>. The “browser appearance” option allows you to define a
 custom template to be used only in the browser, so you can include only
 the important fields and change the order if you desire. The syntax is
 the same as in standard card templates.</p>
-<p>When using this option, if the text in the question column is repeated at the beginning of the answer column, Anki will display the text only in the question column. For example, if the question column text is &quot;People in Ladakh speak&quot;, and the answer is &quot;People in Ladakh speak Ladakhi&quot;, the answer column will only display &quot;Ladakhi&quot;, omitting the rest.</p>
+<p>When using this option, if the text in the question column is repeated at the beginning of the answer column, Anki will display the text only in the question column. For example, if the question column text is “People in Ladakh speak”, and the answer is “People in Ladakh speak Ladakhi”, the answer column will only display “Ladakhi”, omitting the rest.</p>
 <h2 id="platform-specific-css"><a class="header" href="#platform-specific-css">Platform-Specific CSS</a></h2>
 <p>Anki defines some special CSS classes that allow you to define different
 styling for different platforms. The example below shows how to vary the
@@ -404,18 +404,18 @@ or if you’re using Anki on a mobile device.</p>
 <p>Anki supports the most widely used font formats, such as TrueType (.ttf),
 OpenType (.otf), Web Open Font Format (.woff) and others.</p>
 <h3 id="add-font-to-media-folder"><a class="header" href="#add-font-to-media-folder">Add Font to Media Folder</a></h3>
-<p>Once you have downloaded a supported font, such as &quot;Arial.ttf&quot;, you have to add
+<p>Once you have downloaded a supported font, such as “Arial.ttf”, you have to add
 it to the media folder.</p>
 <ol>
 <li>
 <p>Rename the file, adding an underscore at the start, so it becomes
-like &quot;_arial.ttf&quot;. Adding an underscore will tell Anki that this
+like “_arial.ttf”. Adding an underscore will tell Anki that this
 file will be used on a template, and should not be deleted when
 checking for unused media.</p>
 </li>
 <li>
 <p>In your computer’s file browser, go to your <a href="../files.html">Anki Folder</a>,
-and then a folder called &quot;User 1&quot; (or your profile name if you’ve
+and then a folder called “User 1” (or your profile name if you’ve
 renamed/added profiles).</p>
 </li>
 <li>
@@ -436,7 +436,7 @@ note type you want to change with the top left button.</p>
 </li>
 <li>
 <p>In the styling section, add the following text to the bottom (after
-the last &quot;}&quot; character), replacing &quot;_arial.ttf&quot; with the name of
+the last “}” character), replacing “_arial.ttf” with the name of
 the file you copied into your media folder:</p>
 </li>
 </ol>
@@ -445,11 +445,11 @@ the file you copied into your media folder:</p>
   src: url(&quot;_arial.ttf&quot;);
 }
 </code></pre>
-<p>Only change the &quot;arial&quot; part, not the &quot;myfont&quot; part.</p>
+<p>Only change the “arial” part, not the “myfont” part.</p>
 <p>After that, you can either change the font for the entire card, or for
 individual fields. To change the font for the entire card, simply locate
 the font-family: line in the .card section and change the font to
-&quot;myfont&quot;. To change the font for only certain fields, please see the
+“myfont”. To change the font for only certain fields, please see the
 <a href="#field-styling">Field Styling</a> instructions above.</p>
 <p>Please make sure the filenames match exactly. If the file is called
 arial.TTF and you write arial.ttf in your card templates, it will not
@@ -463,7 +463,7 @@ something like:</p>
   background-color: #555;
 }
 </code></pre>
-<p>If you have a &quot;myclass&quot; style, the following would show the text in
+<p>If you have a “myclass” style, the following would show the text in
 yellow when night mode is enabled:</p>
 <pre><code class="language-css">.nightMode .myclass {
   color: yellow;
@@ -503,8 +503,8 @@ update sections of the document using things like
 document.getElementById() rather than doing things like
 document.write().</p>
 <p>Functions like window.alert may not be available. Anki will write
-javascript errors to the terminal, so you'll need to <a href="https://addon-docs.ankiweb.net/console-output.html#console-output">view the console</a> to
-see them. To debug issues with JavaScript, you can use Chrome's
+javascript errors to the terminal, so you’ll need to <a href="https://addon-docs.ankiweb.net/console-output.html#console-output">view the console</a> to
+see them. To debug issues with JavaScript, you can use Chrome’s
 <a href="https://addon-docs.ankiweb.net/debugging.html#webviews">inspector</a>.</p>
 
                     </main>

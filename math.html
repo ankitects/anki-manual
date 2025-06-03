@@ -187,13 +187,13 @@ AnkiDroid 2.9+.</p>
 <p>Select the text you just typed.</p>
 </li>
 <li>
-<p>Click the rightmost button in the editor, and choose &quot;MathJax
-inline&quot; from the menu. Anki will change the text so it reads:</p>
+<p>Click the rightmost button in the editor, and choose “MathJax
+inline” from the menu. Anki will change the text so it reads:</p>
 <pre><code>\(\sqrt{x}\)
 </code></pre>
 </li>
 <li>
-<p>Click the <strong>Cards...</strong> button. You’ll see a preview of how the
+<p>Click the <strong>Cards…</strong> button. You’ll see a preview of how the
 equation will appear when the card is reviewed.
 \[\sqrt{x}\]</p>
 </li>
@@ -206,11 +206,11 @@ Please note that point 1 does not apply in Anki - Anki uses <code>\(</code> and
 <kbd>Shift</kbd>+<kbd>Enter</kbd> instead of just <kbd>Enter</kbd>, as a normal newline will prevent
 MathJax from working correctly.</p>
 <p>Anki includes built in support for mhchem for rendering chemical
-equations. Please see the &quot;chemical equations&quot; section and the following
+equations. Please see the “chemical equations” section and the following
 sections for more information:
 <a href="https://mhchem.github.io/MathJax-mhchem/">https://mhchem.github.io/MathJax-mhchem/</a></p>
 <h3 id="customize-mathjax"><a class="header" href="#customize-mathjax">Customize MathJax</a></h3>
-<p>Anki's bundled MathJax support is loaded before card content, so if you wish to customise MathJax you'll have to do so in a specific way. An example is provided here.</p>
+<p>Anki’s bundled MathJax support is loaded before card content, so if you wish to customise MathJax you’ll have to do so in a specific way. An example is provided here.</p>
 <pre><code class="language-javascript">&lt;script&gt;
 MathJax.config.tex['macros'] = {
     R: '{\\mathbb {R}}',
@@ -253,8 +253,8 @@ LaTeX forum.</p>
 <p>To install LaTeX, on Windows use MiKTeX; on macOS use MacTeX, and on Linux
 use your distro’s package manager. Dvipng must also be installed.</p>
 <p>On Windows, go to Settings in MikTeX’s maintenance window, and make sure
-&quot;Install missing packages on the fly&quot; is set to &quot;Always&quot;, not to &quot;Ask me
-first&quot;. If you continue to have difficulties, one user reported that
+“Install missing packages on the fly” is set to “Always”, not to “Ask me
+first”. If you continue to have difficulties, one user reported that
 running Anki as an administrator until all the packages were fetched
 helped.</p>
 <p>On macOS, LaTeX has only been tested with MacTeX and BasicTeX. If you use
@@ -288,15 +288,15 @@ template will <a href="templates/fields.html">cause problems</a>.</p>
 </code></pre>
 <p>will produce this when the flashcard is viewed:</p>
 <p><img src="math/convergence_question.png" alt="convergence question" /></p>
-<p>The formula in the example above is called a &quot;text formula&quot;, because it
+<p>The formula in the example above is called a “text formula”, because it
 is displayed right within the non-mathematical text. In contrast, the
-following example shows a &quot;displayed formula&quot;:</p>
+following example shows a “displayed formula”:</p>
 <pre><code>Does the sum below converge?
 
 [latex]\begin{displaymath}\sum_{k = 1}^{\infty}\frac{1}{k}\end{displaymath}[/latex]
 </code></pre>
 <p><img src="math/convergence_question_2.png" alt="convergence question 2" /></p>
-<p>&quot;Text formulas&quot; and &quot;display formulas&quot; are the most common type of LaTeX
+<p>“Text formulas” and “display formulas” are the most common type of LaTeX
 expressions, so Anki provides abbreviated versions of them. Expressions
 of the form:</p>
 <pre><code>[latex]\begin{math}...\end{math}[/latex]
@@ -346,9 +346,9 @@ order to install the package. To check the package is working, you’ll
 want to put code like the above into a .latex file and test if you can
 compile it from the command line. Once you’ve confirmed that the package
 is available and working, we can integrate it with Anki.</p>
-<p>To use the package with Anki, click &quot;Add&quot; in the main window, then click
-the note type selection button. Click the &quot;Manage&quot; button, then select
-the note type you plan to use and click &quot;Options&quot;. The LaTeX header and
+<p>To use the package with Anki, click “Add” in the main window, then click
+the note type selection button. Click the “Manage” button, then select
+the note type you plan to use and click “Options”. The LaTeX header and
 footer are shown. The header will look something like:</p>
 <pre><code>\documentclass[12pt]{article}
 \special{papersize=3in,5in}

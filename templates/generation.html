@@ -171,7 +171,7 @@ important material, or some of your cards don’t make sense reversed),
 you can select the “Basic (optional reversed card)” note type. This note
 type generates a forward-only card when you fill in only the first two
 fields; if you additionally enter something in the “Add Reverse” field
-(like a &quot;y&quot;), Anki will generate a reverse card as well. The contents of
+(like a “y”), Anki will generate a reverse card as well. The contents of
 this field will never be displayed on a card.</p>
 <h2 id="card-generation--deletion"><a class="header" href="#card-generation--deletion">Card Generation &amp; Deletion</a></h2>
 <p>Anki will not create cards with empty front sides. Thus if “My Field”
@@ -198,7 +198,7 @@ following, no card would be generated if Country was empty:</p>
 <p>Sometimes you may want to generate extra cards for only some of your
 material, such as testing your ability to recall the most important
 words of a set. You can accomplish this by adding an extra field to your
-note, and adding some text into it (such as &quot;1&quot;) on the notes you want
+note, and adding some text into it (such as “1”) on the notes you want
 the extra card. Then in the card template, you can make the card’s
 creation depend on that field being non-empty. For more information on
 this, please see the conditional replacement section below.</p>
@@ -262,7 +262,7 @@ replacements:</p>
 conditional replacement code on the <em>front</em> of the card; if you do this
 on the back, you will simply end up with cards with a blank back side.
 Similarly, since this works by checking if the front field would be
-empty, it is important to make sure you wrap the &quot;entire&quot; front side in
+empty, it is important to make sure you wrap the “entire” front side in
 the conditional replacement; for instance, the following would not work
 as expected:</p>
 <pre><code>{{#Expression}}
@@ -290,8 +290,8 @@ on the front template as a conditional, like so:</p>
 <h2 id="adding-empty-notes"><a class="header" href="#adding-empty-notes">Adding Empty Notes</a></h2>
 <p>When you add a new note in Anki, if the card
 templates and note fields combine to produce no cards, a blank card will be
-created using the first template. This allows you to add material even if it's
-incomplete, and modify it or the template later to make it valid. If you don't
+created using the first template. This allows you to add material even if it’s
+incomplete, and modify it or the template later to make it valid. If you don’t
 wish to keep an empty note, you can remove it with the Empty Cards function.</p>
 <h2 id="cloze-templates"><a class="header" href="#cloze-templates">Cloze Templates</a></h2>
 <p>Please see the <a href="../editing.html#cloze-deletion">cloze deletion</a> section for background info.</p>
@@ -318,8 +318,8 @@ like {{cloze:FieldName}}.</p>
 {{cloze:…​}} tags can not be used with a regular note type - they
 will only function properly when used with a cloze note type.</p>
 <p>Conditional generation provides a special field so you can check which
-card you are rendering. If you wanted to display the &quot;hint1&quot; field on
-the first cloze, and &quot;hint2&quot; field on the second cloze for example, you
+card you are rendering. If you wanted to display the “hint1” field on
+the first cloze, and “hint2” field on the second cloze for example, you
 could use the following template:</p>
 <pre><code>{{cloze:Text}}
 

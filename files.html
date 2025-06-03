@@ -175,7 +175,7 @@ Checking the database ensures the file has not been corrupted, rebuilds some
 internal structures, and optimizes the file.</p>
 <p>When you check the database, your tag list is also rebuilt. When you
 delete individual decks or cards, Anki does not update the list of used
-tags, as it's inefficient to do so. If you want to clear old tags out
+tags, as it’s inefficient to do so. If you want to clear old tags out
 from the list that are no longer in use, checking your database is the
 way to do it.</p>
 <p>Please note that Anki will automatically optimize your collection once
@@ -191,7 +191,7 @@ folder.</p>
 <p>On <strong>Mac</strong> computers, recent Anki versions store all their files in the
 <code>~/Library/Application Support/Anki2</code> folder. The Library folder is
 hidden by default, but can be revealed in Finder by holding down the
-option key while clicking on the Go menu. If you're on an older Anki
+option key while clicking on the Go menu. If you’re on an older Anki
 version, your Anki files will be in your <code>Documents/Anki</code> folder.</p>
 <p>On <strong>Linux</strong>, recent Anki versions store your data in
 <code>~/.local/share/Anki2</code>, or <code>$XDG_DATA_HOME/Anki2</code> if you have set a
@@ -245,13 +245,13 @@ If no profile is provided, the last-used profile is loaded.</p>
 </li>
 <li>
 <p>To change the interface language, use -l &lt;iso 639-1 language
-code&gt;, such as &quot;-l ja&quot; for Japanese.</p>
+code&gt;, such as “-l ja” for Japanese.</p>
 </li>
 </ul>
 <p>If you always want to use a custom folder location, you can modify your
 shortcut to Anki. On Windows, right-click on the shortcut, choose
-Properties, select the Shortcut tab, and add &quot;-b
-\path\to\data\folder&quot; after the path to the program, which should
+Properties, select the Shortcut tab, and add “-b
+\path\to\data\folder” after the path to the program, which should
 leave you with something like</p>
 <pre><code>&quot;C:\Program Files\Anki\anki.exe&quot; -b &quot;C:\AnkiDataFolder&quot;
 </code></pre>
@@ -263,7 +263,7 @@ the Anki icon, but it is possible to start Anki with a custom base
 folder from a terminal:</p>
 <pre><code>open /Applications/Anki.app --args -b ~/myankifolder
 </code></pre>
-<p>Alternatively, you can define the environment variable &quot;ANKI_BASE&quot;.
+<p>Alternatively, you can define the environment variable “ANKI_BASE”.
 On Windows, you can define the environment variable with:</p>
 <pre><code>set &quot;ANKI_BASE=C:/path/to/AnkiDataFolder&quot;
 </code></pre>
@@ -318,16 +318,16 @@ correctly.</p>
 <h2 id="backups"><a class="header" href="#backups">Backups</a></h2>
 <p>Please see <a href="./backups.html">this section</a>.</p>
 <h2 id="inaccessible-harddisk"><a class="header" href="#inaccessible-harddisk">Inaccessible Harddisk</a></h2>
-<p>If Anki can't write to files in the <a href="#file-locations">Anki folder</a>, a message
-will be displayed on startup saying that Anki can't write to the
-harddisk, and Anki will close. If you're unsure how to fix the
+<p>If Anki can’t write to files in the <a href="#file-locations">Anki folder</a>, a message
+will be displayed on startup saying that Anki can’t write to the
+harddisk, and Anki will close. If you’re unsure how to fix the
 permissions, please contact someone near you who is knowledgeable about
 computers and can help you out.</p>
 <h2 id="permissions-of-temp-folder"><a class="header" href="#permissions-of-temp-folder">Permissions of Temp Folder</a></h2>
-<p>Anki uses the system's temporary folder to store temporary data. If the
+<p>Anki uses the system’s temporary folder to store temporary data. If the
 permissions of this folder have been changed from the default settings
 by a rogue app or buggy antivirus app, Anki will not function properly.</p>
-<p>If you're on a Windows 7 machine, the general steps to fix the problem
+<p>If you’re on a Windows 7 machine, the general steps to fix the problem
 are listed below. As this is somewhat complicated, please ask someone
 knowledgeable about Windows if you are not sure.</p>
 <ol>
@@ -343,7 +343,7 @@ choose Properties.</p>
 <p>In the security tab, click on Advanced.</p>
 </li>
 <li>
-<p>Click on the Owner tab. If you're not listed as the owner, click the
+<p>Click on the Owner tab. If you’re not listed as the owner, click the
 button to take ownership.</p>
 </li>
 <li>
@@ -354,7 +354,7 @@ c:\users\your-username.</p>
 </ol>
 <h2 id="corrupt-collections"><a class="header" href="#corrupt-collections">Corrupt Collections</a></h2>
 <p>Anki uses a file format that is robust against program and computer
-crashes, but it's still possible for your collection to become corrupt
+crashes, but it’s still possible for your collection to become corrupt
 if the files are modified while Anki is open, stored on a network drive,
 or corrupted by a bug.</p>
 <p>When you run Tools&gt;Check Database, you will receive a message if Anki
@@ -373,19 +373,19 @@ type:</p>
 <pre><code>sqlite3 collection.anki2 .dump &gt; dump.txt
 </code></pre>
 <p>Open the resulting dump.txt file in a text editor, and look at the final
-line. If it reads &quot;rollback;&quot;, change it to &quot;commit;&quot;</p>
+line. If it reads “rollback;”, change it to “commit;”</p>
 <p>Then run the following in a terminal:</p>
 <pre><code>cat dump.txt | sqlite3 temp.file
 </code></pre>
 <p>Make sure you use temp.file - do not put collection.anki2 on the right,
-or you will blank out the file. When you're done, proceed to the final
+or you will blank out the file. When you’re done, proceed to the final
 step.</p>
 <h3 id="windows"><a class="header" href="#windows">Windows</a></h3>
 <p>Copy the <code>sqlite3.exe</code> program and your deck to your desktop. Then go to
 <strong>Start&gt;Run</strong> and type in <code>cmd.exe</code>.</p>
-<p>If you're on a recent Windows, the command prompt may not start on your
-desktop. If you don't see desktop displayed in the command prompt, type
-something like the following, replacing &quot;administrator&quot; with your login
+<p>If you’re on a recent Windows, the command prompt may not start on your
+desktop. If you don’t see desktop displayed in the command prompt, type
+something like the following, replacing “administrator” with your login
 name.</p>
 <pre><code>cd C:\Users\Administrator\Desktop
 </code></pre>
@@ -393,18 +393,18 @@ name.</p>
 <pre><code>sqlite3 collection.anki2 .dump &gt; dump.txt
 </code></pre>
 <p>Open the resulting dump.txt file in a text editor, and look at the final
-line. If it reads &quot;rollback;&quot;, change it to &quot;commit;&quot;</p>
+line. If it reads “rollback;”, change it to “commit;”</p>
 <p>Then run the following in a terminal:</p>
 <pre><code>type dump.txt | sqlite3 temp.file
 </code></pre>
 <p>Make sure you use temp.file - do not put collection.anki2 on the right,
-or you will blank out the file. When you're done, proceed to the final
+or you will blank out the file. When you’re done, proceed to the final
 step.</p>
 <h3 id="final-step"><a class="header" href="#final-step">Final Step</a></h3>
-<p>Check that you didn't get an error message, and that temp.file is not
-empty. The procedure optimizes the collection in the process, so it's
+<p>Check that you didn’t get an error message, and that temp.file is not
+empty. The procedure optimizes the collection in the process, so it’s
 normal for the new file to be somewhat smaller than the old one.</p>
-<p>When you've confirmed the file is not empty:</p>
+<p>When you’ve confirmed the file is not empty:</p>
 <ul>
 <li>
 <p>rename the original collection.anki2 file to something else</p>
