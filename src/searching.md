@@ -480,3 +480,6 @@ interday learning cards due today.
 
 `prop:resched=0`\
 cards rescheduled today, either using **Set due date** or **Reschedule cards on change**.
+
+`*:dog`
+searches for notes with a field that exactly says "dog".
