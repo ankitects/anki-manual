@@ -79,15 +79,17 @@ MathJax provides.
 
 ### Security Warning
 
+```admonish danger
 LaTeX code can contain malicious commands that can read or write non-Anki
 data on your computer. For this reason, recent Anki versions will refuse to
 generate LaTeX images by default.
 
-If you wish to use LaTeX on your own cards, you will need to enable the **Generate LaTeX images** option in the preferences screen.
-
 **We strongly recommend you do not enable this option if you use shared decks, or think
 you will import shared decks in the future, as you are potentially giving any shared
 deck author access to your computer**.
+```
+
+If you wish to use LaTeX on your own cards, you will need to enable the **Generate LaTeX images** option in the preferences screen.
 
 You do not need to enable this option for shared decks. If a shared deck author has
 correctly generated all the images prior to them sharing the deck, the images should
