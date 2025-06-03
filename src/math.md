@@ -61,7 +61,9 @@ if (typeof is_already_run == 'undefined') {
 </script>
 ```
 
-Note that Anki has special logic for cloze deletions that might not work if you change the standard delimiters for MathJax equations.
+```admonish note
+Anki has special logic for cloze deletions that might not work if you change the standard delimiters for MathJax equations.
+```
 
 ## LaTeX
 
