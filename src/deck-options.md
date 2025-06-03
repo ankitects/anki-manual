@@ -91,7 +91,7 @@ When studying a deck that has subdecks inside it, the limits set on each subdeck
 For earlier versions, see [this FAQ page](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html).
 
 Studying new cards will temporarily increase the number of reviews you need to
-do a day, as newly-learnt material needs to be repeated a number of times
+do a day, as newly-learned material needs to be repeated a number of times
 before the delay between repetitions can increase appreciably. If you are
 consistently learning 20 new cards a day, you can expect your daily reviews to
 be roughly about 200 cards/day. You can decrease the reviews required by
@@ -483,7 +483,7 @@ If you're first switching from SM-2 and still wish to use this option, we recomm
 
 ### Compute Minimum Recommended Retention
 
-Compute minimum recommended retention (CMRR) attempts to find the desired retention value that leads to the most material learnt, in the least amount of time. The calculated number can serve as a reference when deciding what to set your desired retention to. You may wish to choose a higher desired retention, if you’re willing to trade more study time for a greater retention rate. However, setting your desired retention lower than the minimum is not recommended, as you'll spend more time studying than necessary, due to increased forgetting.
+Compute minimum recommended retention (CMRR) attempts to find the desired retention value that leads to the most material learned, in the least amount of time. The calculated number can serve as a reference when deciding what to set your desired retention to. You may wish to choose a higher desired retention, if you’re willing to trade more study time for a greater retention rate. However, setting your desired retention lower than the minimum is not recommended, as you'll spend more time studying than necessary, due to increased forgetting.
 
 ### The Simulator
 
