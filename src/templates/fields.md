@@ -424,4 +424,5 @@ If you don't want Anki to compare accents on characters in your typed input with
 
     {{type:nc:Front}}
 
-This makes sure a difference in accents isn't marked as incorrect by Anki.
+This makes sure a difference in accents isn't marked as incorrect by Anki. 
+For example, `بطيخ` would be treated the same as `بَطِّيخ` or `elite` would be treated same as `élite`.
