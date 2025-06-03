@@ -194,9 +194,9 @@ SYNC_USER1=user:pass ~/syncserver/bin/python -m anki.syncserver
 <h3 id="with-cargo"><a class="header" href="#with-cargo">With Cargo</a></h3>
 <p>From Anki 2.1.66+, you can alternatively build a Rust implementation of the standalone sync server using the below command.
 Make sure you have Rustup installed.</p>
-<pre><code>cargo install --git https://github.com/ankitects/anki.git --tag 2.1.66 anki-sync-server
+<pre><code>cargo install --locked --git https://github.com/ankitects/anki.git --tag 25.02.5 anki-sync-server
 </code></pre>
-<p>Replace 2.1.66 with whatever the latest Anki version is.</p>
+<p>Replace 25.02.5 with whatever the latest Anki version is.</p>
 <p>Protobuf (protoc) will need to be installed.</p>
 <p>After building, you can run it with:</p>
 <pre><code>SYNC_USER1=user:pass anki-sync-server
