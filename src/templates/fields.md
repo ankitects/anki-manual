@@ -417,3 +417,11 @@ template, so the back looks something like this:
 
 If there are multiple sections elided, you can separate the answers in
 the text box with a comma.
+
+### Ignoring Diacritics in Answer
+
+If you don't want Anki to compare accents on characters in your typed input with the correct answer, you can do so by using `type:nc` in your fields.
+
+    {{type:nc:Front}}
+
+This makes sure a difference in accents isn't marked as incorrect by Anki.
