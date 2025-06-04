@@ -1,5 +1,8 @@
 env:
   cname: docs.ankiweb.net
+  MDBOOK_VERSION: "0.4.51"
+  MDBOOK_LINKCHECK_COMMIT: "3222e857f22a5b41596070848203d160a4d78fd9"
+  MDBOOK_TOC_VERSION: "0.14.2"
 
 name: github pages
 
@@ -15,6 +18,25 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Install Rust
+        uses: dtolnay/rust-toolchain@stable
+        with:
+          components: rustfmt
+
+      - name: Cache cargo binaries
+        uses: actions/cache@v4
+        with:
+          path: ~/.cargo/bin
+          key: ${{ runner.os }}-cargo-bin-${{ env.MDBOOK_VERSION }}-${{ env.MDBOOK_LINKCHECK_COMMIT }}-${{ env.MDBOOK_TOC_VERSION }}
+          restore-keys: |
+            ${{ runner.os }}-cargo-bin-
+
+      - name: Install mdbook and mdbook-linkcheck
+        run: |
+          cargo install mdbook --version ${{ env.MDBOOK_VERSION }}
+          cargo install --git https://github.com/ankitects/mdbook-linkcheck --rev ${{ env.MDBOOK_LINKCHECK_COMMIT }} mdbook-linkcheck
+          cargo install mdbook-toc --version ${{ env.MDBOOK_TOC_VERSION }}
+
       - name: Build
         run: .github/workflows/build.sh
 
@@ -29,6 +51,25 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v4
+
+      - name: Install Rust
+        uses: dtolnay/rust-toolchain@stable
+        with:
+          components: rustfmt
+
+      - name: Cache cargo binaries
+        uses: actions/cache@v4
+        with:
+          path: ~/.cargo/bin
+          key: ${{ runner.os }}-cargo-bin-${{ env.MDBOOK_VERSION }}-${{ env.MDBOOK_LINKCHECK_COMMIT }}-${{ env.MDBOOK_TOC_VERSION }}
+          restore-keys: |
+            ${{ runner.os }}-cargo-bin-
+
+      - name: Install mdbook and mdbook-linkcheck
+        run: |
+          cargo install mdbook --version ${{ env.MDBOOK_VERSION }}
+          cargo install --git https://github.com/ankitects/mdbook-linkcheck --rev ${{ env.MDBOOK_LINKCHECK_COMMIT }} mdbook-linkcheck
+          cargo install mdbook-toc --version ${{ env.MDBOOK_TOC_VERSION }}
 
       - name: Build
         run: CHECK=1 .github/workflows/build.sh

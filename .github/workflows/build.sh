@@ -1,11 +1,10 @@
 #!/bin/bash
 
-(cd && \
-  curl -LO https://github.com/ankitects/mdbook-linkcheck/releases/download/anki-2022-11-17/mdbook.tar.zst && \
-  tar xaf mdbook.tar.zst)
-export PATH="$HOME:$PATH"
 if [ "$CHECK" = "" ]; then
-    rm $HOME/mdbook-linkcheck
+    # Remove the binary to prevent link checking in second run
+    rm $HOME/.cargo/bin/mdbook-linkcheck
 fi
+
 mdbook --version
 mdbook build
+
