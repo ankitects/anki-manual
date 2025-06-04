@@ -16,11 +16,6 @@ renderer = ["html"]
 git-repository-url = "https://github.com/ankitects/anki-manual/"
 cname = "docs.ankiweb.net"
 additional-css = ["css/misc.css", "css/kbd.css"]
-# currently, anki uses a mdbook version which is too old to understand
-# smart-punctuation. We thus include the old curly-quotes here as well.
-# Once anki uses a more recent version, curly-quotes should be dropped.
-# See https://github.com/ankitects/anki-manual/pull/389#issuecomment-2930623051
-curly-quotes = true
 smart-punctuation = true
 mathjax-support = true
 
