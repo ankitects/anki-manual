@@ -79,7 +79,7 @@ displayed by mobile clients. Because of the extra complexity LaTeX
 brings, it is only recommended for users that need more features than
 MathJax provides.
 
-### Security Warning
+### Enable LaTeX
 
 ```admonish danger
 LaTeX code can contain malicious commands that can read or write non-Anki
