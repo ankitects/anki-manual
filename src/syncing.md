@@ -240,7 +240,7 @@ normally use.
 
 
 
-``` admonish faq collapsible=true, title="Are there limits on file sizes on AnkiWeb?"
+```admonish faq collapsible=true, title="Are there limits on file sizes on AnkiWeb?"
 Yes.
 
 - **Collection limit**: 300MB (uncompressed).
@@ -253,13 +253,13 @@ but does not include media (sounds and images), as they are stored separately.
 ```
 
 
-``` admonish faq collapsible=true, title="How do I know if I reached the collection size limit?"
+```admonish faq collapsible=true, title="How do I know if I reached the collection size limit?"
 If you have hit the collection size limit, you will see a message notifying you
 that your collection is too large to sync.
 ```
 
 
-``` admonish faq collapsible=true, title="What can I do if I reached the collection size limit?"
+```admonish faq collapsible=true, title="What can I do if I reached the collection size limit?"
 If you have imported a dictionary's worth of content, you will need to do the
 following:
 1. Move some unused cards to a separate deck.
@@ -270,20 +270,20 @@ cards.
 ```
 
 
-``` admonish faq collapsible=true, title="Can I increase the collection size limit?"
+```admonish faq collapsible=true, title="Can I increase the collection size limit?"
 No. It is not possible to increase the limit, because such large collections
 slow down AnkiWeb for other users.
 ```
 
 
-``` admonish faq collapsible=true, title="Can I buy more storage space?"
+```admonish faq collapsible=true, title="Can I buy more storage space?"
 No, at least not yet. As the usage of Anki and AnkiWeb increases, at some point
 a pricing system may be introduced where basic, low-capacity accounts are free
 and heavier users can pay more for more space.
 ```
 
 
-``` admonish faq collapsible=true, title="Will I likely reach the limit?"
+```admonish faq collapsible=true, title="Will I likely reach the limit?"
 Most users will never reach the limit.
 
 25,000 average-sized cards and several years of review history will take up
