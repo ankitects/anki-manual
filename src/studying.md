@@ -94,7 +94,7 @@ You can click the **Edit** button in the bottom left to edit the current
 note. When you finish editing, you’ll be returned to study. The editing
 screen works very similarly to the [add notes](editing.md) screen.
 
-At the bottom right of the review screen is a button labeled **More**.
+At the bottom right of the study screen is a button labeled **More**.
 This button provides some other operations you can do on the current
 card or note:
 
