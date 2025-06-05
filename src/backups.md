@@ -21,7 +21,8 @@ To restore from an automatic backup:
 - Click on the "Open Backup" button.
 - Select the backup you wish to restore from.
 
-``` admonish caution
+
+```admonish caution
 When restoring from a backup, any changes made since the backup was created will be lost.
 ```
 

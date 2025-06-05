@@ -12,15 +12,14 @@ create-missing = true
 command = "mdbook-toc"
 renderer = ["html"]
 
+[preprocessor.admonish]
+command = "mdbook-admonish"
+assets_version = "3.0.3" # do not edit: managed by `mdbook-admonish install`
+
 [output.html]
 git-repository-url = "https://github.com/ankitects/anki-manual/"
 cname = "docs.ankiweb.net"
-additional-css = ["css/misc.css", "css/kbd.css"]
-# currently, anki uses a mdbook version which is too old to understand
-# smart-punctuation. We thus include the old curly-quotes here as well.
-# Once anki uses a more recent version, curly-quotes should be dropped.
-# See https://github.com/ankitects/anki-manual/pull/389#issuecomment-2930623051
-curly-quotes = true
+additional-css = ["css/misc.css", "css/mdbook-admonish.css"]
 smart-punctuation = true
 mathjax-support = true
 
