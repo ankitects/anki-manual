@@ -6,7 +6,7 @@ collection, and own program settings. Add-ons are shared across profiles.
 Profiles are configured by going to the File menu and choosing "Switch Profile".
 
 ```admonish caution
-**Only a single profile can be synced to an AnkiWeb account.**
+Only a single profile can be synced to an AnkiWeb account.
 
 If you have different users on your computer, each user will
 need to set up a separate AnkiWeb account for their profile. If you attempt
