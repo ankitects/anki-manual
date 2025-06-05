@@ -28,7 +28,7 @@ syntax.
 You can correct mistakes on the template by opening the card templates screen:
 
 - On the computer version, edit a problem card, and then click on the Cards... button
-- On AnkiMobile, while viewing a problem card in the review screen, tap the cog/gear, then Card Template.
+- On AnkiMobile, while viewing a problem card in the study screen, tap the cog/gear, then Card Template.
 
 When you correct a mistake, it will update all cards of that type - you do not need to make the same change for every card that uses the template.
 
