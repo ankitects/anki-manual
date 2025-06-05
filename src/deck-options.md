@@ -457,7 +457,7 @@ are used for optimization.
 
 You can also optimize the parameters for all of your presets at once by clicking on **Optimize All Presets**.
 
-``` admonish faq collapsible=true, title="My interval went down (e.g. from 4 to 3 days) after optimizing my FSRS parameters. Why is that?"
+```admonish faq collapsible=true, title="My interval went down (e.g. from 4 to 3 days) after optimizing my FSRS parameters. Why is that?"
 If you optimize your parameters, FSRS might determine that the intervalls should
 be shorter than it previously predicted. The reason is that the Difficulty,
 Stability and Retrievability values are recalculated, if you optimize your
