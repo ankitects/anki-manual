@@ -2,7 +2,7 @@
 
 <!-- toc -->
 
-``` admonish summary
+```admonish summary
 Anki helps you to remember anything you want. With Anki, you'll learn much
 faster (or more material in the same time frame) compared with traditional
 study methods.
