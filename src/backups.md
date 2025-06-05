@@ -17,7 +17,7 @@ protect you if your device breaks or is stolen. We recommend you combine them wi
 
 To restore from an automatic backup:
 
-- Click **File > Load Backup**.
+- Click **File > Restore to Backup**.
 - Select the backup you wish to restore from.
 
 When restoring from a backup, any changes made since the backup was created will be lost.
