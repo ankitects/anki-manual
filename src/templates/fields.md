@@ -375,7 +375,7 @@ which parts you got right and which parts you got wrong. The text box’s
 font size will be the size you configured for that field (via the
 “Fields” button when editing).
 
-Note that the type answer boxes don't appear in preview dialog or in AnkiWeb.
+Note that the type answer boxes don't appear in the preview dialog or in AnkiWeb.
 
 This feature does not change how the cards are answered, so it’s still
 up to you to decide how well you remembered or not.
@@ -418,7 +418,7 @@ template, so the back looks something like this:
 If there are multiple sections elided, you can separate the answers in
 the text box with a comma.
 
-### Ignoring Diacritics in Answer
+### Ignoring Diacritics
 
 If you don't want Anki to compare accents on characters in your typed input with the correct answer, you can do so by using `type:nc` in your fields.
 
