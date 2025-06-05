@@ -370,7 +370,7 @@ not influence scheduling.
 
 Requires Anki 23.12 or later. Auto Advance allows you to automatically take some actions after a certain amount of time has passed. To use it, you must first set a non-zero
 time in **Seconds to show question for** and/or **Seconds to show answer for**. Then, in the
-review screen, use the Auto Advance action from the **More** button to start advancing.
+study screen, use the Auto Advance action from the **More** button to start advancing.
 
 ## Easy Days
 
