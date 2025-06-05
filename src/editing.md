@@ -245,7 +245,7 @@ and from the [Browser.](browsing.md)
 ### The "Marked" Tag
 
 Anki treats a tag called "marked" specially. There are options in the review
-screen and browse screen to add and remove the "marked" tag. The review screen
+screen and browse screen to add and remove the "marked" tag. The study screen
 will show a star when the current card's note has that tag. And cards are
 shown in a different color in the browse screen when their note is marked.
 
@@ -465,6 +465,14 @@ You can also choose between two different IO modes for each note:
   and will be revealed during learning. The other areas will be visible.
 
 ![Image Occlusion Modes](media/io_modes.jpg)
+
+<!-- fields & tags are not intuitive to find in editor -->
+The default IO note type also has standard fields:
+**Header** (displayed above the image on the front and back of each card),
+**Back Extra** (displayed below the image on the back of each card),
+and **Comments** (not displayed on the cards). To access those from the IO editor,
+click the **Toggle Mask Editor** button.
+There you can also view and edit the **Tags** of the note.
 
 Once you're done, click on the "Add" button, at the bottom of the screen.
 Anki will add a card for each shape or group of shapes you added in the previous step,

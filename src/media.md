@@ -50,6 +50,11 @@ you should use Tools&gt;Check Media afterwards, to ensure the filenames are
 encoded correctly. If you skip this step, any filenames that are not compatible
 will be skipped when syncing.
 
+Anki doesn’t follow symbolic links in the media folder when syncing. If you
+rely on symlinks for including fonts, stylesheets, or other resources, these files
+may appear to work on desktop but fail on mobile. To ensure files sync properly, copy
+the actual files into the collection.media folder instead of using symlinks. 
+
 ## Supported Formats
 
 Anki uses a program called mpv (and mplayer as a fallback) in order to support

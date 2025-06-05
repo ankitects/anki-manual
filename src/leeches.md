@@ -42,13 +42,13 @@ useful for future reference, you can leave it suspended.
 ## Waiting
 
 Some leeches are caused by "interference". For example, an English
-learner may have recently learnt the words "disappoint" and "disappear".
+learner may have recently learned the words "disappoint" and "disappear".
 As they look similar, the learner may find themselves confusing the two
 when trying to answer. In such situations, it’s often helpful to
 concentrate on one idea at a time. Once that idea is firmly ingrained in 
 your mind, you can then start learning the other idea. So, in these
 situations, you might want to leave one of the words suspended until you
-have learnt the other one well, and then unsuspend it.
+have learned the other one well, and then unsuspend it.
 
 For a more detailed discussion, you can refer to the article "[Dealing 
 with Leeches](https://controlaltbackspace.org/leech/)", written by Soren 

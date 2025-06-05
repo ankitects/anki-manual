@@ -68,11 +68,11 @@ you're likely to still remember it in vivid detail.
 The brain's "use it or lose it" policy applies to everything we learn.
 If you spend an afternoon memorizing some science terms, and then don't
 think about that material for two weeks, you'll probably have forgotten
-most of it. In fact, studies show we forget about 75% of material learnt
+most of it. In fact, studies show we forget about 75% of material learned
 within a 48 hour period. This can seem pretty depressing when you need
 to learn a lot of information!
 
-However, the solution is simple: _review_. By reviewing newly-learnt
+However, the solution is simple: _review_. By reviewing newly-learned
 information, we can greatly reduce forgetting.
 
 The only problem is that traditionally, reviewing has not been very practical. If
@@ -116,7 +116,7 @@ gets stronger each time you successfully recall it, the time between
 reviews gets longer and longer — so you may see a question for the first
 time today, then 3 days later, 15 days later, 45 days later, and so on.
 
-This was a revolution in learning, as it meant material could be learnt
+This was a revolution in learning, as it meant material could be learned
 and retained with the absolute minimum amount of effort necessary.
 SuperMemo's slogan sums it up: with spaced repetition, you can: "forget
 about forgetting".

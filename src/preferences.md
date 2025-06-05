@@ -75,7 +75,7 @@ cards you’ve managed to study during the prescribed time limit.
 ### Review
 
 **Show play buttons on cards with audio**\
-Whether a clickable (re)play button will be shown in the review screen
+Whether a clickable (re)play button will be shown in the study screen
 for cards with audio.
 
 **Interrupt current audio when answering**\

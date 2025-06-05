@@ -21,7 +21,9 @@ To restore from an automatic backup:
 - Click on the "Open Backup" button.
 - Select the backup you wish to restore from.
 
+```admonish warning
 When restoring from a backup, any changes made since the backup was created will be lost.
+```
 
 Anki disables automatic syncing and backups when you restore from a backup. Once you're
 happy that you've restored the correct backup, close and re-open Anki to return to normal.

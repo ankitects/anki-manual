@@ -2,7 +2,6 @@
 authors = ["Ankitects Pty Ltd and contributors"]
 description = "Anki's user manual. Anki is a flashcard program that makes learning easier."
 language = "en"
-multilingual = false
 src = "src"
 title = "Anki Manual"
 
@@ -13,10 +12,15 @@ create-missing = true
 command = "mdbook-toc"
 renderer = ["html"]
 
+[preprocessor.admonish]
+command = "mdbook-admonish"
+assets_version = "3.0.3" # do not edit: managed by `mdbook-admonish install`
+
 [output.html]
 git-repository-url = "https://github.com/ankitects/anki-manual/"
 cname = "docs.ankiweb.net"
-additional-css = ["css/misc.css", "css/kbd.css"]
+additional-css = ["css/misc.css", "css/mdbook-admonish.css"]
+smart-punctuation = true
 mathjax-support = true
 
 [output.linkcheck]

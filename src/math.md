@@ -27,8 +27,10 @@ To try it out:
 
 4. Click the **Cards...** button. You’ll see a preview of how the
    equation will appear when the card is reviewed.
-   \\[\sqrt{x}\\]
 
+    $$
+    \sqrt{x}
+    $$
 Anki’s MathJax support expects content in TeX format. If you’re not
 familiar with TeX formatting, please see [this cheatsheet](https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference).
 Please note that point 1 does not apply in Anki - Anki uses `\(` and

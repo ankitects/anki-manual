@@ -47,7 +47,7 @@ you specify.
 **Review ahead**\
 Show cards that will be due in the near future (the number of days you
 specify). This is useful for working through some of your older cards
-before a vacation, but it will not help with cards you have learnt
+before a vacation, but it will not help with cards you have learned
 recently. Please see the [reviewing ahead](#reviewing-ahead) section
 below for more info.
 
@@ -171,7 +171,7 @@ and the desired retention in the deck preset.
 ## Steps & Returning
 
 By default, Anki will use the steps of a card’s home deck. If a new card
-would normally be reviewed twice when being learnt, the same thing will
+would normally be reviewed twice when being learned, the same thing will
 happen when you study it in a filtered deck.
 To learn about how (re)learning steps work, see [Deck Options](deck-options.md#learning-steps) section.
 
