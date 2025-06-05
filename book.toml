@@ -14,7 +14,6 @@ renderer = ["html"]
 
 [output.html]
 git-repository-url = "https://github.com/ankitects/anki-manual/"
-cname = "docs.ankiweb.net"
 additional-css = ["css/misc.css"]
 smart-punctuation = true
 mathjax-support = true
