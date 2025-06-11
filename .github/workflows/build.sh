@@ -35,6 +35,9 @@ if [ "$CHECK" == "" ]; then
 fi
 
 mdbook --version
+
+# Build Japanese version (as main site)
+echo "Building Japanese version..."
 mdbook build
 
 if [ "$CHECK" == "" ]; then
