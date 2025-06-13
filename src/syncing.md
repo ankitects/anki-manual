@@ -90,7 +90,7 @@ operation. If you choose to continue, you’ll be asked to choose whether
 to keep the local copy or the copy on AnkiWeb when your collection is
 next synchronized.
 
-If certain problems are detected while syncing, Anki will also force a
+If any problems are detected while syncing, Anki forces a
 one-way sync. If you find this consistently happening, please post on our
 [support site](https://forums.ankiweb.net).
 
