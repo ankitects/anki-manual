@@ -299,7 +299,7 @@ cards due yesterday that haven’t been answered yet.
 all cards due in the future, including tomorrow.
 
 `prop:due<=-1`\
-all  overdue cards.
+all overdue cards.
 
 `prop:due>=-1 prop:due<=1`\
 cards due yesterday, today and tomorrow.
@@ -308,7 +308,7 @@ cards due yesterday, today and tomorrow.
 cards that have been answered less than 10 times.
 
 `prop:lapses>3`\
-cards that been lapsed more than 3 times.
+cards that have been lapsed more than 3 times.
 
 `prop:ease!=2.5`\
 cards easier or harder than default ease.
@@ -404,7 +404,7 @@ you need to tell Anki not to treat them specially. This is called "escaping a ch
   `_` will match any single character, but `\_` matches only an actual underscore.
 
 - `\`\
-  Because a backlash is used to remove the special meaning from other characters,
+  Because a backslash is used to remove the special meaning from other characters,
   it too is treated specially. If you need to search for an actual backslash,
   use `\\` instead of `\`.
 

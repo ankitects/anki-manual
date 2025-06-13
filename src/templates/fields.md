@@ -74,7 +74,7 @@ the following in your card template:
 
     {{tts en_US:Front}}
 
-On Windows, macOS, and iOS, Anki will use the OS’s built in voices. On
+On Windows, macOS, and iOS, Anki will use the OS’s built-in voices. On
 Linux, no voices are built in, but voices can be provided by add-ons,
 such as [this one](https://ankiweb.net/shared/info/391644525).
 
@@ -199,7 +199,7 @@ implement the hint field yourself. We can not provide any support for
 doing so, but the following code should get you started:
 
     {{#Back}}
-    ﻿<a class=hint href="#"
+    <a class=hint href="#"
     onclick="this.style.display='none';document.getElementById('hint4753594160').style.display='inline-block';return false;">
     Show Back</a><div id="hint4753594160" class=hint style="display: none">{{Back}}</div>
     {{/Back}}
@@ -313,7 +313,7 @@ do so. This has implications for including media on the template.
 ### Static Sounds/Images
 
 If you wish to include images or sounds on your cards that are the same
-for every card (eg, a company logo at the top of each card):
+for every card (e.g., a company logo at the top of each card):
 
 1. Rename the file so it starts with an underscore, e.g "\_logo.jpg".
    The underscore tells Anki that the file is used by the template and
