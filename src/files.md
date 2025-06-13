@@ -38,11 +38,11 @@ folder.
 
 Folder location: `~/Library/Application Support/Anki2`
 
-You can access it by opening Finder, CMD + Shift + G, and typing in
+To access the folder, open Finder, press <kbd>Command</kbd> + <kbd>Shift</kbd> + <kbd>G</kbd>, and type in
 `~/Library/Application Support/Anki2` in the field.
 
-The `~/Library/` folder is hidden by default, but can be revealed in Finder by holding down the
-option key while clicking on the Go menu. Older version of Anki store files
+The `~/Library/` folder is hidden by default, but can be revealed in Finder by holding the
+<kbd>Option</kbd> key while clicking on the **Go** menu. Older version of Anki store files
 in your `Documents/Anki` folder.
 
 ### Linux
