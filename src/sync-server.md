@@ -15,7 +15,7 @@ Things to be aware of:
   they tend to take time to catch up when the sync protocol changes, so they
   are not recommended.
 - The messages inside Anki will use the term "AnkiWeb" even if a custom server
-  has been configured, (e.g., "Cannot connect to AnkiWeb" when your server is down).
+  has been configured, (e.g. "Cannot connect to AnkiWeb" when your server is down).
 
 ## Installing/Running
 
