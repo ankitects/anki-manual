@@ -23,24 +23,7 @@ automatically optimizing.
 ## File Locations
 
 Files used by Anki are stored in the Anki folder. The location of it 
-depends on the operating system. See the Windows, Mac and Linux sections below.
-
-Within the Anki folder, the program-level and profile-level preferences
-are stored in a file called prefs.db.
-
-There is also a separate folder for each profile. The folder contains:
-
-- Your notes, decks, cards and so on in a file called collection.anki2
-
-- Your audio and images in a collection.media folder
-
-- A backups folder
-
-- Some system files
-
-You should never copy or move your collection while Anki is open. Doing
-so could cause your collection to become corrupt. Please do not move or
-modify the other files in the folder either.
+depends on the operating system.
 
 ### Windows
 
@@ -71,6 +54,27 @@ If you are using a third-party **Flatpak** build,
 your files will be in `~/.var/app/net.ankiweb.Anki/data/Anki2/`.
 Older versions of Anki stored your files in
 `~/Documents/Anki` or `~/Anki`.
+
+### Inside the Anki Folder
+
+The program-level and profile-level preferences
+are stored in a file called `prefs.db`.
+
+There is also a separate folder for each profile, e.g. `User 1`.
+
+Each profile folder contains:
+
+- Your notes, decks, cards and so on in a file called `collection.anki2`
+
+- Your audio and images in a `collection.media` folder
+
+- A backups folder
+
+- Some system files
+
+You should never copy or move your collection while Anki is open. Doing
+so could cause your collection to become corrupt. Please do not move or
+modify the other files in the folder either.
 
 ## Startup Options
 
