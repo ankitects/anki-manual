@@ -33,7 +33,7 @@ them. Tags are separated by a space. If the tags area says
 …​then the note you add would have two tags.
 
 When you have entered text into the front and back, you can click the
-"Add" button or press <kbd>Ctrl</kbd>+<kbd>Enter</kbd> (<kbd>Command</kbd>+<kbd>Enter</kbd> on a Mac) to add the
+**Add** button or press <kbd>Ctrl</kbd>+<kbd>Enter</kbd> (<kbd>Command</kbd>+<kbd>Enter</kbd> on a Mac) to add the
 note to your collection. When you do so, a card will be created as well,
 and placed into the deck you chose. If you would like to edit a card you
 added, you can click the history button to search for a recently added
@@ -92,8 +92,8 @@ back, except by laboriously copying and pasting it for every note. By
 keeping content in separate fields, you make it much easier to adjust
 the layout of your cards in the future.
 
-To create a new type of note, choose Tools → Manage Note Types from the
-main Anki window. Then click "Add" to add a new type of note. You will now
+To create a new type of note, choose **Tools > Manage Note Types** from the
+main Anki window. Then click **Add** to add a new type of note. You will now
 see another screen that gives you a choice of note types to base the new
 type on. "Add" means to base the newly created type on one that comes
 with Anki. "Clone" means to base the newly created type on one that is
@@ -108,7 +108,7 @@ window, and you will return to the adding window.
 
 ## Customizing Fields
 
-To customize fields, click the "Fields…​" button when adding or editing
+To customize fields, click the **Fields...** button when adding or editing
 a note, or while the note type is selected in the Manage Note Types
 window.
 
@@ -443,8 +443,8 @@ of an image, testing your knowledge of that hidden information.
 
 To add IO cards to your collection, open the Add screen, click on "Type"
 and choose "Image Occlusion" from the list of built-in note types.
-Then, click on "Select Image" to load an image file saved on your
-computer's hard drive, or on "Paste image from clipboard"
+Then, click on **Select Image** to load an image file saved on your
+computer's hard drive, or on **Paste image from clipboard**
 if you have an image copied to the clipboard.
 
 ### Adding IO cards
