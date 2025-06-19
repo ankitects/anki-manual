@@ -88,8 +88,8 @@ Disable this option to hide the card count at the bottom of the screen.
 **Show next review time above answer buttons**\
 Useful to know how far in the future your cards are being pushed.
 
-**<kbd>Space</kbd> (or <kbd>Enter</kbd>) also answers card**\
-Defines whether a press on the space bar (or the enter key) also answers cards.
+**Spacebar (or enter) also answers card**\
+Whether pressing <kbd>Space</kbd> or <kbd>Enter</kbd> answers cards.
 
 ## Editing
 
