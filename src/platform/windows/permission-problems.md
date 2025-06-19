@@ -27,7 +27,7 @@ Some users have experienced "permission denied" or "readonly" errors that were c
 
 ## Debugging Permission Problems
 
-If problems persist after you've ruled out Antivirus and related programs, have performed the steps above to fix permissions, and don't use OneDrive, please run the following commands in cmd.exe, pressing <kbd>Enter</kbd> after each one.
+If problems persist after you've ruled out Antivirus and related programs, have performed the steps above to fix permissions, and don't use OneDrive, please run the following commands in `cmd.exe`, pressing <kbd>Enter</kbd> after each one.
 
 whoami
 
