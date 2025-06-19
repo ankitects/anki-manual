@@ -8,12 +8,12 @@ If you receive "access denied" messages, some of Anki's files may be set to read
 
 To fix the problem, you can do the following:
 
-- in the search area of the start bar, type cmd.exe and hit enter
-- in the window that opens, type the following and hit enter to see your username:
+- in the search area of the start bar, type `cmd.exe` and hit <kbd>Enter</kbd>
+- in the window that opens, type the following and hit <kbd>Enter</kbd> to see your username:
 
 whoami
 
-- type the following, hitting enter after each line, and replacing ____ (and keeping the :F part) with your username from the previous command
+- type the following, hitting <kbd>Enter</kbd> after each line, and replacing ____ (and keeping the :F part) with your username from the previous command
 
 cd %APPDATA%
 
@@ -27,7 +27,7 @@ Some users have experienced "permission denied" or "readonly" errors that were c
 
 ## Debugging Permission Problems
 
-If problems persist after you've ruled out Antivirus and related programs, have performed the steps above to fix permissions, and don't use OneDrive, please run the following commands in cmd.exe, pressing enter after each one.
+If problems persist after you've ruled out Antivirus and related programs, have performed the steps above to fix permissions, and don't use OneDrive, please run the following commands in `cmd.exe`, pressing <kbd>Enter</kbd> after each one.
 
 whoami
 
