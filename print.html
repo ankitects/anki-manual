@@ -6379,7 +6379,7 @@ Make sure you have Rustup installed.</p>
 </code></pre>
 <h3 id="from-a-source-checkout"><a class="header" href="#from-a-source-checkout">From a source checkout</a></h3>
 <p>If you’ve cloned the Anki repo from GitHub, you can install from there:</p>
-<pre><code>./ninja extract:protoc
+<pre><code>./ninja extract:protoc ftl_repo
 cargo install --path rslib/sync
 </code></pre>
 <h3 id="with-docker"><a class="header" href="#with-docker">With Docker</a></h3>
@@ -6393,7 +6393,7 @@ wish to set up multiple accounts.</p>
 <p>Advanced users may wish to use hashed passwords instead of plain text
 passwords. If you wish to do this, you’ll need to use a separate tool (such as
 <a href="https://git.sr.ht/~laalsaas/pbkdf2-password-hash">this one</a>) to generate a
-password hash.  You can then tell the server to expect hashed passwords by
+password hash. You can then tell the server to expect hashed passwords by
 setting the env var PASSWORDS_HASHED to 1 (or any other value).</p>
 <p>When hashed passwords are used, SYNC_USER variables are expected to be in
 username:password_hash format, where password_hash is a hash of the password in
@@ -6424,7 +6424,7 @@ point each of your Anki clients to the address, e.g something like
 network, please go into the iOS settings, locate Anki near the bottom, and
 toggle “Allow Anki to access local network” off and then on again.</p>
 <p>Older desktop clients required you to define <code>SYNC_ENDPOINT</code> and
-<code>SYNC_ENDPOINT_MEDIA</code>.  If using an older client, you’d put it as e.g.
+<code>SYNC_ENDPOINT_MEDIA</code>. If using an older client, you’d put it as e.g.
 <code>http://192.168.1.200:8080/sync/</code> and <code>http://192.168.1.200:8080/msync/</code>
 respectively. AnkiDroid clients before 2.16 require separate configuration for
 the two endpoints.</p>
