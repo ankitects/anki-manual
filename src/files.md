@@ -27,32 +27,52 @@ depends on the operating system.
 
 ### Windows
 
-Folder location: `%APPDATA%\Anki2`
+Folder location:
 
-You can access it by opening the file manager, and
-typing `%APPDATA%\Anki2` in the location field. Older versions of Anki
-stored files in a folder called `Anki` in your `Documents`
-folder.
+```
+%APPDATA%\Anki2
+```
+
+To access the folder, open File Explorer and paste the path above in the address bar and hit <kbd>Enter</kbd>.
+
+Older versions of Anki store files in a folder called `Anki` in your `Documents` folder.
 
 ### Mac
 
-Folder location: `~/Library/Application Support/Anki2`
+Folder location:
 
-To access the folder, open Finder, press <kbd>Command</kbd> + <kbd>Shift</kbd> + <kbd>G</kbd>, and type in
-`~/Library/Application Support/Anki2` in the field.
+```
+~/Library/Application Support/Anki2
+```
 
+To access the folder, open Finder, press <kbd>Command</kbd>+<kbd>Shift</kbd>+<kbd>G</kbd>, and paste the path above in the input field and hit <kbd>Enter</kbd>. 
 The `~/Library/` folder is hidden by default, but can be revealed in Finder by holding the
-<kbd>Option</kbd> key while clicking on the **Go** menu. Older version of Anki store files
+<kbd>Option</kbd> key while clicking on the **Go** menu.
+
+Older versions of Anki store files
 in your `Documents/Anki` folder.
 
 ### Linux
 
-Folder location: `~/.local/share/Anki2` or `$XDG_DATA_HOME/Anki2` (if you have set a
-custom data path)
+Folder location:
 
-If you are using a third-party **Flatpak** build,
-your files will be in `~/.var/app/net.ankiweb.Anki/data/Anki2/`.
-Older versions of Anki stored your files in
+```
+~/.local/share/Anki2
+```
+
+If you have set a custom data path, the folder location is:
+
+```
+`$XDG_DATA_HOME/Anki2`
+```
+
+If you are using a third-party **Flatpak** build, , the folder location is:
+
+```
+~/.var/app/net.ankiweb.Anki/data/Anki2
+```
+
+Older versions of Anki store your files in
 `~/Documents/Anki` or `~/Anki`.
 
 ### Inside the Anki Folder
