@@ -45,7 +45,7 @@ changing this option will still have the old delay, not the new one.
 
 ## Subdecks
 
-If your deck has subdecks, and you wish one or more subdecks to have different settings to the parent deck, you can assign those subdecks to different presets.
+If your deck has subdecks, and you wish one or more of them to have different settings from the parent deck, you can assign those subdecks to separate presets.
 When Anki shows a card, it will check which subdeck the card is in, and use the options
 for that deck. There are two exceptions:
 
