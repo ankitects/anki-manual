@@ -37,7 +37,7 @@ of <kbd>;</kbd>.
 
 In the window that has popped up, please paste the text you were asked
 to paste in the top section. When you’ve done so, please press
-Ctrl+Return (Command+Return on a Mac), and some text should appear in
+<kbd>Ctrl</kbd>+<kbd>Return</kbd> (On Mac, <kbd>Command</kbd>+<kbd>Return</kbd>), and some text should appear in
 the bottom section. If you’ve been asked to paste the resulting output,
 please copy it from the bottom area, and paste it back to the support
 person.
