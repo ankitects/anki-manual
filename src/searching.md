@@ -308,7 +308,7 @@ cards due yesterday, today and tomorrow.
 cards that have been answered less than 10 times.
 
 `prop:lapses>3`\
-cards that have been lapsed more than 3 times.
+cards that have lapsed more than 3 times.
 
 `prop:ease!=2.5`\
 cards easier or harder than default ease.
