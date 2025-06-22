@@ -572,12 +572,12 @@ setting.</p>
 <p>If you receive “access denied” messages, some of Anki’s files may be set to read only mode, meaning Anki is not able to write to them.</p>
 <p>To fix the problem, you can do the following:</p>
 <ul>
-<li>in the search area of the start bar, type cmd.exe and hit enter</li>
-<li>in the window that opens, type the following and hit enter to see your username:</li>
+<li>in the search area of the start bar, type <code>cmd.exe</code> and hit <kbd>Enter</kbd></li>
+<li>in the window that opens, type the following and hit <kbd>Enter</kbd> to see your username:</li>
 </ul>
 <p>whoami</p>
 <ul>
-<li>type the following, hitting enter after each line, and replacing ____ (and keeping the :F part) with your username from the previous command</li>
+<li>type the following, hitting <kbd>Enter</kbd> after each line, and replacing ____ (and keeping the :F part) with your username from the previous command</li>
 </ul>
 <p>cd %APPDATA%</p>
 <p>icacls Anki2 /grant ____:F /t</p>
@@ -585,7 +585,7 @@ setting.</p>
 <h2 id="antivirusfirewallanti-malware"><a class="header" href="#antivirusfirewallanti-malware">Antivirus/Firewall/Anti-Malware</a></h2>
 <p>Some users have experienced “permission denied” or “readonly” errors that were caused by security software installed on their machine. You may need to add an exception for Anki, or try temporarily disabling the software to rule it out as the cause. Some users have reported that simply turning off their software did not fix the problem, and they either had to add an exception for Anki or uninstall the software.</p>
 <h2 id="debugging-permission-problems"><a class="header" href="#debugging-permission-problems">Debugging Permission Problems</a></h2>
-<p>If problems persist after you’ve ruled out Antivirus and related programs, have performed the steps above to fix permissions, and don’t use OneDrive, please run the following commands in cmd.exe, pressing enter after each one.</p>
+<p>If problems persist after you’ve ruled out Antivirus and related programs, have performed the steps above to fix permissions, and don’t use OneDrive, please run the following commands in <code>cmd.exe</code>, pressing <kbd>Enter</kbd> after each one.</p>
 <p>whoami</p>
 <p>cd %APPDATA%</p>
 <p>icacls Anki2 /t</p>
@@ -654,14 +654,14 @@ Preferences</strong> and then selecting the driver from the dropdown menu. After
 is necessary to restart Anki.</p>
 <h3 id="changing-the-driver-from-terminalapp"><a class="header" href="#changing-the-driver-from-terminalapp">Changing the Driver From Terminal.app</a></h3>
 <p>Older Anki versions did not provide an option in the preferences, but allowed
-you to adjust the driver by opening Terminal.app, then pasting the following and hit enter:</p>
+you to adjust the driver by opening Terminal.app, then pasting the following and hit <kbd>Enter</kbd>:</p>
 <pre><code>echo software &gt; ~/Library/Application\ Support/Anki2/gldriver6
 </code></pre>
 <p>It will not print anything. You can then start Anki again.</p>
 <p>If you wish to switch back to the default, change <code>software</code> to <code>auto</code>, or
 remove that file.</p>
 <h2 id="egpus"><a class="header" href="#egpus">eGPUs</a></h2>
-<p>If you experience blank screens when using an external graphics card on a Mac, you can ctrl+click on the Anki app, click “Get Info”, and enable the “prefer eGPU” option.</p>
+<p>If you experience blank screens when using an external graphics card on a Mac, you can <kbd>Ctrl</kbd>+click on the Anki app, click <strong>Get Info</strong>, and enable the <strong>prefer eGPU</strong> option.</p>
 <h2 id="monitors-with-different-resolutions"><a class="header" href="#monitors-with-different-resolutions">Monitors with Different Resolutions</a></h2>
 <p>Please see <a href="https://forums.ankiweb.net/t/mac-known-issues-wording-suggestion/7331">this forum post</a>.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="linux"><a class="header" href="#linux">Linux</a></h1>
@@ -706,7 +706,7 @@ sudo ./install.sh
 </code></pre>
 <p>On some Linux systems, you may need to use <code>tar xaf --use-compress-program=unzstd</code>.</p>
 <ol start="4">
-<li>You can then start Anki by typing <code>anki</code> and hitting enter. If you encounter
+<li>You can then start Anki by typing <code>anki</code> and hitting <kbd>Enter</kbd>. If you encounter
 any issues, please see the links on the left.</li>
 </ol>
 <h2 id="upgrading-2"><a class="header" href="#upgrading-2">Upgrading</a></h2>
@@ -1199,7 +1199,7 @@ cards for that day will be also displayed here.</p>
 will change to the study screen. You can return to the deck list at any time by clicking on “Decks” at
 the top of the main window. (You can also use the Study
 Deck action in the menu to select a new deck from the keyboard, or you
-can press the <kbd>s</kbd> key to study the currently selected deck.)</p>
+can press the <kbd>S</kbd> key to study the currently selected deck.)</p>
 <p>You can click the gears button to the right of a deck to rename or
 delete the deck, change its <a href="deck-options.html">options</a>, or <a href="exporting.html">export</a> it.</p>
 <h2 id="study-overview"><a class="header" href="#study-overview">Study Overview</a></h2>
@@ -1213,12 +1213,12 @@ may see how many cards will be buried in grey:</p>
 <p>To start a study session, click the <strong>Study Now</strong> button. Anki will
 proceed to show you cards until the cards to be shown for the day have
 run out.</p>
-<p>While studying, you can return to the overview by pressing the <kbd>s</kbd> key
+<p>While studying, you can return to the overview by pressing the <kbd>S</kbd> key
 on your keyboard.</p>
 <h2 id="questions"><a class="header" href="#questions">Questions</a></h2>
 <p>When a card is shown, only the question is shown at first. After
 thinking about the answer, either click the <strong>Show Answer</strong> button, or
-press the spacebar. The answer will then be shown. It’s okay if it takes
+press the <kbd>Space</kbd>. The answer will then be shown. It’s okay if it takes
 you a little while to recall the answer, but as a general rule if you
 can’t answer within about 10 seconds, it’s probably better to move on
 and show the answer than keep struggling to remember.</p>
@@ -3111,7 +3111,7 @@ Disable this option to hide the card count at the bottom of the screen.</p>
 <p><strong>Show next review time above answer buttons</strong><br />
 Useful to know how far in the future your cards are being pushed.</p>
 <p><strong>Spacebar (or enter) also answers card</strong><br />
-Defines whether a press on the space bar (or the enter key) also answers cards.</p>
+Defines whether a press on <kbd>Space</kbd> or <kbd>Enter</kbd> answers cards.</p>
 <h2 id="editing"><a class="header" href="#editing">Editing</a></h2>
 <h3 id="editing-1"><a class="header" href="#editing-1">Editing</a></h3>
 <p><strong>Paste clipboard images as PNG</strong><br />
@@ -6475,7 +6475,7 @@ and in the main window, press</p>
 of <kbd>;</kbd>.</p>
 <p>In the window that has popped up, please paste the text you were asked
 to paste in the top section. When you’ve done so, please press
-Ctrl+Return (Command+Return on a Mac), and some text should appear in
+<kbd>Ctrl</kbd>+<kbd>Return</kbd> (On Mac, <kbd>Command</kbd>+<kbd>Return</kbd>), and some text should appear in
 the bottom section. If you’ve been asked to paste the resulting output,
 please copy it from the bottom area, and paste it back to the support
 person.</p>
