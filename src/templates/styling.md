@@ -18,7 +18,7 @@ The standard options available to you are:
 **font-family**\
 The name of the font to use on the card. If your font has spaces in it
 like "MS Unicode", then you need to surround the font name in double
-quotes, e.g. `font-family: "MS Unicode";`. It is also possible to use multiple fonts on
+quotes, like `font-family: "MS Unicode";`. It is also possible to use multiple fonts on
 one card; for information on that, please see below.
 
 **font-size**\
