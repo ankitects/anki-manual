@@ -66,7 +66,7 @@ If you have set a custom data path, the folder location is:
 `$XDG_DATA_HOME/Anki2`
 ```
 
-If you are using a third-party **Flatpak** build, , the folder location is:
+If you are using a third-party **Flatpak** build, the folder location is:
 
 ```
 ~/.var/app/net.ankiweb.Anki/data/Anki2
