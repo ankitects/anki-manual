@@ -45,7 +45,7 @@ Folder location:
 ~/Library/Application Support/Anki2
 ```
 
-To access the folder, open Finder, press <kbd>Command</kbd>+<kbd>Shift</kbd>+<kbd>G</kbd>, and paste the path above in the input field and hit <kbd>Enter</kbd>. 
+To access the folder, open Finder, press <kbd>Command</kbd>+<kbd>Shift</kbd>+<kbd>G</kbd>, paste the path above in the input field, and hit <kbd>Enter</kbd>. 
 The `~/Library/` folder is hidden by default, but can be revealed in Finder by holding the
 <kbd>Option</kbd> key while clicking on the **Go** menu.
 
