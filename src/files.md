@@ -75,7 +75,7 @@ If you are using a third-party **Flatpak** build, the folder location is:
 Older versions of Anki store your files in
 `~/Documents/Anki` or `~/Anki`.
 
-### Inside the Anki Folder
+### Inside the Anki2 Folder
 
 The program-level and profile-level preferences
 are stored in a file called `prefs.db`.
