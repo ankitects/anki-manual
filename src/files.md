@@ -22,7 +22,7 @@ automatically optimizing.
 
 ## File Locations
 
-Files used by Anki are stored in the Anki folder. The location of it 
+Your data is stored in the `Anki2` folder. The location of it 
 depends on the operating system.
 
 ### Windows
