@@ -2,7 +2,7 @@
 
 ## Asking good questions
 
-With the exception of AnkiMobile, Anki and its support is provided free of
+With the exception of AnkiMobile, Anki and its support are provided free of
 charge, by people who generously volunteer their time. Please bear this in mind
 when posting - if you are rude and demanding, or have made no effort to solve
 the problem on your own, people are less likely to want to help you.
