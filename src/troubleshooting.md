@@ -72,6 +72,6 @@ immediately after starting Anki will help.
 ### 8. If the problem remains
 
 If you've confirmed you are using the latest Anki version, and are still
-receiving errors when starting Anki while holding down the shift key,
+receiving errors when starting Anki while holding down the <kbd>Shift</kbd> key,
 please [report the problem](./getting-help.md), including the next error you
 receive in your post.
