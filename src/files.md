@@ -72,7 +72,7 @@ If you are using a third-party **Flatpak** build, the folder location is:
 ~/.var/app/net.ankiweb.Anki/data/Anki2
 ```
 
-Older versions of Anki store your files in
+Older versions of Anki stored your files in
 `~/Documents/Anki` or `~/Anki`.
 
 ### Inside the Anki2 Folder
