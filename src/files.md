@@ -49,7 +49,7 @@ To access the folder, open Finder, press <kbd>Command</kbd>+<kbd>Shift</kbd>+<kb
 The `~/Library/` folder is hidden by default, but can be revealed in Finder by holding the
 <kbd>Option</kbd> key while clicking on the **Go** menu.
 
-Older versions of Anki store files
+Older versions of Anki stored files
 in your `Documents/Anki` folder.
 
 ### Linux
