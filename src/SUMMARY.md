@@ -54,7 +54,10 @@
 - [Troubleshooting](troubleshooting.md)
 - [Sync Server](sync-server.md)
 - [Miscellaneous](misc.md)
+  
+____
 
+[Effective Use of Anki](effective-use.md)
 [Contributing](contrib.md)
 [FAQs](faqs.md)
 [Resources](resources.md)
