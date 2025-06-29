@@ -35,7 +35,7 @@ Folder location:
 
 To access the folder, open File Explorer, paste the path above in the address bar, and hit <kbd>Enter</kbd>.
 
-Older versions of Anki store files in a folder called `Anki` in your `Documents` folder.
+Older versions of Anki stored files in a folder called `Anki` in your `Documents`.
 
 ### macOS
 
