@@ -45,12 +45,12 @@ Folder location:
 ~/Library/Application Support/Anki2
 ```
 
-To access the folder, open Finder, press <kbd>Command</kbd>+<kbd>Shift</kbd>+<kbd>G</kbd>, paste the path above in the input field, and hit <kbd>Enter</kbd>. 
-The `~/Library/` folder is hidden by default, but can be revealed in Finder by holding the
-<kbd>Option</kbd> key while clicking on the **Go** menu.
+To access the folder, open Finder, press <kbd>Command</kbd>+<kbd>Shift</kbd>+<kbd>G</kbd>, paste the path above in the input field, and hit <kbd>Enter</kbd>.
+
+Alternatively, you can also follow Apple's guide [Go to a folder by entering its pathname](https://support.apple.com/en-gu/guide/mac-help/mchlp1236/mac#mchl734f1724).
 
 Older versions of Anki stored files
-in your `Documents/Anki` folder.
+in your `~/Documents/Anki` folder.
 
 ### Linux
 
