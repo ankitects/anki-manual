@@ -84,7 +84,7 @@ There is also a separate folder for each profile, e.g. `User 1`.
 
 Each profile folder contains:
 
-- Your notes, decks, cards and so on in a file called `collection.anki2`
+- Your notes, decks, cards, review history, etc. in a database file called `collection.anki2`
 
 - Your audio and images in a `collection.media` folder
 
