@@ -189,6 +189,8 @@ You can use `sc:` (sc stands for “strip clozes”) to make the Anki browser se
 matches the following cloze deletion card:
 {{c1::mn}}{{c2::e}}monic (is a trick for remembering something.)
 
+Searches that use the sc keyword are slower than regular accent searches.
+
 ## Regular expressions
 
 Anki 2.1.24+, AnkiMobile 2.0.60+ and AnkiDroid 2.17+ support searching in notes with "regular expressions",
