@@ -181,7 +181,7 @@ matches "は", "ば", and "ぱ".
 Searches that ignore combining characters are slower than regular searches.
 
 ## Strip cloze deletions before search
-Requires Anki ⁨25.07+.
+Requires Anki 25.07+.
 
 You can use `sc:` (sc stands for “strip clozes”) to make the Anki browser search and find de-clozed text. For example:
 `sc:mnemonic`
