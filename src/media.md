@@ -1,7 +1,7 @@
 # Media
 
 Anki stores the sounds and images used in your notes in a folder next to
-the collection. For more on the folder location, please see the [file locations](files.md#file-locations) section. When you add media within Anki, either by
+the collection. For more on the folder location, please see the [file locations](files.md#user-data) section. When you add media within Anki, either by
 using the paperclip icon in the [editor](editing.md) or by pasting it into
 a field, Anki will copy it from its original location into the media
 folder. This makes it easy to back up your collection’s media or move it
@@ -45,7 +45,7 @@ filenames are encoded in a way that should work across different devices,
 removing characters that won't work on certain operating systems,
 and truncating very long filenames.
 
-If you manually add files to your [media folder](files.md#file-locations),
+If you manually add files to your [media folder](files.md#user-data),
 you should use Tools&gt;Check Media afterwards, to ensure the filenames are
 encoded correctly. If you skip this step, any filenames that are not compatible
 will be skipped when syncing.
@@ -53,7 +53,7 @@ will be skipped when syncing.
 Anki doesn’t follow symbolic links in the media folder when syncing. If you
 rely on symlinks for including fonts, stylesheets, or other resources, these files
 may appear to work on desktop but fail on mobile. To ensure files sync properly, copy
-the actual files into the collection.media folder instead of using symlinks. 
+the actual files into the collection.media folder instead of using symlinks.
 
 ## Supported Formats
 
