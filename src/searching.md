@@ -191,7 +191,7 @@ matches the following cloze deletion card:
 {{c1::mn}}{{c2::e}}monic (is a trick for remembering something.)
 ```
 
-Searches that use the sc keyword are slower than regular accent searches.
+Searches that use the sc keyword are slower than regular searches.
 
 ## Regular expressions
 
