@@ -187,7 +187,9 @@ You can use `sc:` (sc stands for “strip clozes”) to make the Anki browser se
 `sc:mnemonic`
 
 matches the following cloze deletion card:
+```
 {{c1::mn}}{{c2::e}}monic (is a trick for remembering something.)
+```
 
 Searches that use the sc keyword are slower than regular accent searches.
 
