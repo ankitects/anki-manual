@@ -7,7 +7,7 @@
 The Anki ecosystem is made up of Anki, AnkiMobile, AnkiDroid, and AnkiWeb, all
 of which are linked from our [official website](https://apps.ankiweb.net).
 
-For instructions on how to install and upgrade Anki for your computer, please
+For instructions on how to install and upgrade Anki for your computer,
 read the links below:
 
 - [Windows](./platform/windows/installing.md)
@@ -94,10 +94,10 @@ will come before "My Deck 9", as 1 comes before 9. If you want "My deck 9" to ap
 
 Decks are best used to hold broad categories of cards, rather than
 specific topics such as "food verbs" or "lesson 1". For more information about
-this, please see the [using decks appropriately](editing.md#using-decks-appropriately) section.
+this, see the [using decks appropriately](editing.md#using-decks-appropriately) section.
 
 For information on how the order of decks affects the order cards are studied in,
-please see the [display order](studying.md#display-order) section.
+see the [display order](studying.md#display-order) section.
 
 ### Notes & Fields
 
@@ -155,7 +155,7 @@ In Anki, this collection of related information is called a _note_ and each piec
 has three fields: "French", "English", and "Page".
 
 To add and edit fields, click the "Fields…​" button while adding or
-editing notes. For more information on fields, please see the
+editing notes. For more information on fields, see the
 [Customizing Fields](editing.md#customizing-fields) section.
 
 ### Card Types
@@ -198,7 +198,7 @@ allow you to fix a typing mistake or factual error once and have all the
 related cards update at once.
 
 To add and edit card types, click the "Cards…​" button while adding or
-editing notes. For more information on card types, please see the [Cards and Templates](templates/intro.md) section.
+editing notes. For more information on card types, see the [Cards and Templates](templates/intro.md) section.
 
 ### Note Types
 
@@ -241,7 +241,7 @@ types specifically for the content you are learning. The standard note types are
 - **Image Occlusion**\
   Like the cloze note type, but it works with images instead of text,
   which is especially useful when studying material that heavily relies on images,
-  such as anatomy and geography. For details, please see the [Image Occlusion](editing.md#image-occlusion)
+  such as anatomy and geography. For details, see the [Image Occlusion](editing.md#image-occlusion)
   section of the manual.
 
 To add your own note types and modify existing ones, you can use Tools →
