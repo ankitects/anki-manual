@@ -25,12 +25,12 @@ When starting Anki, you may receive a message like the following:
 These errors are usually because your computer is missing a Windows update
 or Windows library.
 
-Please open Windows update, and ensure your system has all updates installed.
-If any needed to be installed, please restart your device after installing.
+Open Windows update, and ensure your system has all updates installed.
+If any needed to be installed, restart your device after installing.
 
 ## Windows 7/8
 
-On Windows 7/8, you may need to manually install extra updates. Please try:
+On Windows 7/8, you may need to manually install extra updates. Try:
 
 - <https://www.microsoft.com/en-us/download/details.aspx?id=48234>
 - <https://aka.ms/vs/15/release/vc_redist.x64.exe>

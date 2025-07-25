@@ -13,7 +13,7 @@ In a hurry? Jump straight to [Getting Started](getting-started.md).
 
 ## Getting Help
 
-Looking for help? Please see [Getting Help](./getting-help.md).
+Looking for help? See [Getting Help](./getting-help.md).
 
 ## Translations
 

@@ -10,7 +10,7 @@ architecture (e.g ARM/AArch64), or a barebones Linux distro, you will not be abl
 packaged version, but you may be able to use the [Python wheels](https://betas.ankiweb.net/#via-pypipip)
 instead.
 
-Debian and derivatives, such as Ubuntu and [Chromebooks with Linux enabled](https://support.google.com/chromebook/answer/9145439?), please use the following before
+Debian and derivatives, such as Ubuntu and [Chromebooks with Linux enabled](https://support.google.com/chromebook/answer/9145439?), use the following before
 installing:
 
 ```shell
@@ -44,7 +44,7 @@ On some Linux systems, you may need to use `tar xaf --use-compress-program=unzst
 
 ## Upgrading
 
-If you were running Anki from a .deb/.rpm/etc in the past, please make
+If you were running Anki from a .deb/.rpm/etc in the past, make
 sure to remove the system version before installing the package
 provided here.
 
@@ -52,7 +52,7 @@ If you're upgrading from a previous package, simply repeat the
 installation steps to upgrade to the latest version. Your user data
 will be preserved.
 
-If you wish to downgrade to a previous version, please make sure you
+If you wish to downgrade to a previous version, make sure you
 [downgrade first](http://changes.ankiweb.net).
 
 ## Add-on Compatibility

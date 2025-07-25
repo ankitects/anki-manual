@@ -40,7 +40,7 @@ added, you can click the history button to search for a recently added
 card in the [browser](browsing.md).
 
 For more information on the buttons between the note type and the
-fields, please see the [editor](editing.md) section.
+fields, see the [editor](editing.md) section.
 
 ### Duplicate Check
 
@@ -133,17 +133,17 @@ properly.
 The options at the bottom of the screen allow you to edit various
 properties of the fields to be used when adding and editing the cards.
 This is _not_ where you customize what appears on your cards when
-reviewing; for that, please see [templates](templates/intro.md).
+reviewing; for that, see [templates](templates/intro.md).
 
 - **Editing Font** allows you to customize the font and size used when
   editing notes. This is useful if you want to make unimportant
   information smaller, or increase the size of non-Latin characters which
   are hard to read. The changes you make here do not affect how cards
-  appear when reviewing: to do that, please see the
+  appear when reviewing: to do that, see the
   [templates](templates/intro.md) section. If you have enabled the "type in the
   answer" function, however, the text you type will use the font size
   defined here. (For information about how to change the actual font face
-  when typing the answer, please see the [checking your answer](templates/fields.md#checking-your-answer) section.)
+  when typing the answer, see the [checking your answer](templates/fields.md#checking-your-answer) section.)
 
 - **Sort by this field…​** tells Anki to show this field in the Sort Field
   column of the browser. You can use this to sort cards by that field.
@@ -166,7 +166,7 @@ reviewing; for that, please see [templates](templates/intro.md).
   searches.
 
 After you have added fields, you will probably want to add them to the front
-or back of your cards. For more information on that, please see the
+or back of your cards. For more information on that, see the
 [templates](templates/intro.md) section.
 
 ## Changing Deck / Note Type
@@ -223,7 +223,7 @@ cards to your main language study deck, and tag the cards with "food" and
 food-related vocabulary, or all verbs that are related to food.
 
 You can add tags from the Edit window and from the [Browser](browsing.md), and you can also add,
-delete, rename, or organize tags there. Please note that
+delete, rename, or organize tags there. Note that
 tags work at [note](getting-started.md#notes--fields) level, which means that when you tag a card that has siblings,
 all the siblings will be tagged as well. If you need to tag a single card,
 but not its siblings, you should consider using flags instead.
@@ -296,7 +296,7 @@ your computer's hard drive and attach them to your notes. Alternatively, you
 can copy the media onto your computer's clipboard (for instance, by
 right-clicking an image on the web and choosing "Copy Image") and paste
 it into the field that you want to place it in. For more information
-about media, please see the [media](media.md) section.
+about media, see the [media](media.md) section.
 
 The microphone icon allows you to record from your computer's microphone
 and attach the recording to the note.
@@ -394,7 +394,7 @@ When the card comes up for review, it will appear as:
     [city] was founded in 1913.
 
 For information on testing your ability to type in a cloze deletion
-correctly, please see the section on [typing answers](templates/fields.md#checking-your-answer).
+correctly, see the section on [typing answers](templates/fields.md#checking-your-answer).
 
 From version 2.1.56, nested cloze deletions are supported. For example, the following is valid:
 
@@ -425,7 +425,7 @@ shown on the answer side of each card. It can be used for adding some
 usage notes or extra information.
 
 The cloze note type is treated specially by Anki, and cannot be created
-based on a regular note type. If you wish to customize it, please make
+based on a regular note type. If you wish to customize it, make
 sure to clone the existing Cloze type instead of another type of note.
 Things like formatting can be customized, but it is not possible to add
 extra card templates to the cloze note type.
@@ -493,13 +493,13 @@ can use. Of note:
 - Undo / Redo.
 - Zoom In / Out - Reset zoom.
 - Toggle Translucency: Use this tool to temporarily view the hidden areas.
-- Delete: Use this tool to delete selected shapes and text areas. Please
-  note that deleting a shape won't delete its associated card automatically;
+- Delete: Use this tool to delete selected shapes and text areas. Note
+  that deleting a shape won't delete its associated card automatically;
   you will need to use Tools>Empty Cards afterwards, the same as
   with regular cloze deletions.
 - Duplicate.
 - Group selection: Use this tool to create a cluster of shapes, which will
-  allow you to move, resize or delete them simultaneously. Please note that
+  allow you to move, resize or delete them simultaneously. Note that
   two or more single shapes will create only one card once grouped.
 - Ungroup selection: Select a group and then click this button to make each shape independent again.
 - Alignment: This tool can be used to align your shapes / text areas as desired.
@@ -523,7 +523,7 @@ apostrophe (<kbd>´</kbd>) then the letter a (<kbd>a</kbd>) gives á.
 
 ### Adding international keyboard layouts
 Instructions on how to use international keyboards vary depending on the operating
-system and desktop environment that you are using. To get started, please see the
+system and desktop environment that you are using. To get started, see the
 links below.
 
 Windows:
@@ -549,7 +549,7 @@ As an example, `apt install ibus-anthy` on Debian allows you to type hiragana ch
 
 ### Right-to-left Languages
 If you are learning a right-to-left language, there are lots of other
-things to consider. Please see [this page](http://dotancohen.com/howto/rtl_right_to_left.html)
+things to consider. See [this page](http://dotancohen.com/howto/rtl_right_to_left.html)
 for more information.
 
 ### Limitations

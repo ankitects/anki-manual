@@ -4,7 +4,7 @@
 
 Deck options primarily control the way Anki schedules cards. It is recommended
 that you spend a few weeks with the defaults to get a feel for how Anki works
-before you start adjusting the options. Please make sure you understand the options
+before you start adjusting the options. Make sure you understand the options
 before changing them, as mistakes can reduce Anki's effectiveness.
 
 On your computer, do any of the following to open deck options:
@@ -184,7 +184,7 @@ In contrast, if the step crosses a day boundary, the delay is automatically conv
 ### Graduating Interval
 
 The number of days to wait before showing a card again, after the Good button is used on the final learning step. This means that it is the first interval
-after the learning card graduates. Please see the example
+after the learning card graduates. See the example
 from [earlier in this section](deck-options.md#learning-steps).
 
 ### Easy Interval
@@ -331,7 +331,7 @@ The options are:
 - **Bury review siblings**: Whether other review cards of the same note will be delayed until the next day.
 - **Bury interday learning siblings**: Whether other learning cards of the same note that crossed a day boundary will be delayed until the next day.
 
-For more info about burying cards, please see [this section](./studying.md#siblings-and-burying) of the manual.
+For more info about burying cards, see [this section](./studying.md#siblings-and-burying) of the manual.
 
 ## Audio
 
@@ -393,10 +393,10 @@ become available, and SM-2 specific options, such as **Graduating interval**,
 
 **Before Enabling**
 
-- Please ensure all of your Anki clients support FSRS. Anki 23.10, AnkiMobile 23.10,
+- Ensure all of your Anki clients support FSRS. Anki 23.10, AnkiMobile 23.10,
   and AnkiWeb all support it. AnkiDroid supports it in 2.17+. If
   one of your clients doesn't support it, things will not work correctly.
-- If you previously used the "custom scheduling" version of FSRS, please make
+- If you previously used the "custom scheduling" version of FSRS, make
   sure you clear out the custom scheduling section before enabling FSRS.
 
 ### A Short Guide
@@ -534,7 +534,7 @@ A list of commonly used add-ons and their FSRS compatibility can be found in [Ad
 
 Several frequently asked questions about FSRS have been answered in [its FAQ](https://faqs.ankiweb.net/frequently-asked-questions-about-fsrs.html).
 
-For more info on FSRS, please check:
+For more info on FSRS, check:
 
 - [FSRS4Anki Wiki](https://github.com/open-spaced-repetition/fsrs4anki/wiki)
 - [FSRS4Anki on Github](https://github.com/open-spaced-repetition/fsrs4anki)

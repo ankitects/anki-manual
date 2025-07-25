@@ -30,7 +30,7 @@ In 2024, we began efforts to standardize the styles used throughout the document
 
 We often use anchor links to direct users to the specific section of a page that will be most useful to them. These anchor links are created from section headers, e.g., `https://docs.ankiweb.net/deck-options.html#timers`. 
 
-If you are submitting a PR that changes or deletes a section header, please add a hidden anchor so those legacy anchor links will continue to function correctly. 
+If you are submitting a PR that changes or deletes a section header, add a hidden anchor so those legacy anchor links will continue to function correctly. 
 
 Example: To change the header "Clocks" to "Timers" -- replace: 
 ```
