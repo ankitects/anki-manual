@@ -32,8 +32,8 @@ To install Anki:
 3. Open a terminal and run the following commands, replacing the filename as appropriate.
 
 ```shell
-tar xaf Downloads/anki-2XXX-linux-qt6.tar.zst
-cd anki-2XXX-linux-qt6
+tar xaf Downloads/anki-launcher-2XXX-linux.tar.zst
+cd anki-launcher-2XXX-linux
 sudo ./install.sh
 ```
 
