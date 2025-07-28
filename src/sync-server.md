@@ -154,6 +154,17 @@ If using a reverse proxy to provide HTTPS access (e.g. nginx), and binding to a 
 including a trailing slash when configuring Anki. If you put `http://example.com/custom`
 instead, it will not work.
 
+If you are using a caddy, increase 
+[the http read buffer size](https://caddyserver.com/docs/caddyfile/directives/reverse_proxy#read_buffer) 
+to avoid connection problems when downloading media files.
+```caddyfile
+reverse_proxy http://127.0.0.1:8080 {
+	transport http {
+		read_buffer 512k
+	}
+}
+```
+
 On iOS, TLS 1.3 is not supported, so your reverse proxy will need to have TLS 1.2
 enabled, or you'll get an "error code -9836".
 
