@@ -95,7 +95,7 @@ do a day, as newly-learned material needs to be repeated a number of times
 before the delay between repetitions can increase appreciably. If you are
 consistently learning 20 new cards a day, you can expect your daily reviews to
 be roughly about 200 cards/day. You can decrease the reviews required by
-introducing fewer new cards each day until your review burden decreases. Many Anki users have excitedly studied
+introducing fewer new cards each day until your review burden decreases. More than one Anki user has excitedly studied
 hundreds of new cards over their first few days of using the program, and then has
 become overwhelmed by the reviews required.
 
