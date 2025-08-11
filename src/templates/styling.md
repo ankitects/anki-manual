@@ -18,7 +18,7 @@ The standard options available to you are:
 **font-family**\
 The name of the font to use on the card. If your font has spaces in it
 like "MS Unicode", then you need to surround the font name in double
-quotes as in this sentence. It is also possible to use multiple fonts on
+quotes, like `font-family: "MS Unicode";`. It is also possible to use multiple fonts on
 one card; for information on that, please see below.
 
 **font-size**\
@@ -107,7 +107,7 @@ is particularly important when studying foreign languages, as Anki will
 sometimes be unable to correctly display characters unless an
 appropriate font has been chosen.
 
-Say you have an “Expression” field, and you want to give it the OSX Thai
+Say you have an “Expression” field, and you want to give it the macOS Thai
 font “Ayuthaya”. Imagine your template already reads:
 
     What is {{Expression}}?
@@ -319,9 +319,8 @@ it to the media folder.
    file will be used on a template, and should not be deleted when
    checking for unused media.
 
-2. In your computer’s file browser, go to your [Anki Folder](../files.md),
-   and then a folder called "User 1" (or your profile name if you’ve
-   renamed/added profiles).
+2.  In your computer’s file browser, go to your Anki application data folder (see [File Locations](../files.md#file-locations) for details),
+    and then into your profile folder (e.g., "User 1").
 
 3. Inside the folder, you should see a folder called collection.media.
    Drag the renamed file to that folder.
@@ -404,7 +403,7 @@ template:
 
 ## Javascript
 
-As Anki cards are treated like webpages, it is possible to embed some
+As Anki cards are treated like web pages, it is possible to embed some
 Javascript on your cards via the card template. For a good reference
 please read [this post](https://forums.ankiweb.net/t/card-templates-user-input-101-buttons-keyboard-shortcuts-etc-guide/13756)
 in the forums.
