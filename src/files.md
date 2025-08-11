@@ -20,35 +20,37 @@ every 2 weeks. This optimization ensures the collection performs well,
 but it does not check for errors or rebuild the tag list when
 automatically optimizing.
 
-## File Locations
+<a id="file-locations"></a>
 
-On **Windows**, the latest Anki versions store your Anki files in your
+## User Data
+
+On **Windows**, the latest Anki versions store your collection files in your
 appdata folder. You can access it by opening the file manager, and
 typing `%APPDATA%\Anki2` in the location field. Older versions of Anki
 stored your Anki files in a folder called `Anki` in your `Documents`
 folder.
 
-On **Mac** computers, recent Anki versions store all their files in the
+On **Mac** computers, recent Anki versions store all user data in the
 `~/Library/Application Support/Anki2` folder. The Library folder is
 hidden by default, but can be revealed in Finder by holding down the
 option key while clicking on the Go menu. If you're on an older Anki
 version, your Anki files will be in your `Documents/Anki` folder.
 
-On **Linux**, recent Anki versions store your data in
+On **Linux**, recent Anki versions store your user data in
 `~/.local/share/Anki2`, or `$XDG_DATA_HOME/Anki2` if you have set a
 custom data path. If you are using a third-party **Flatpak** build,
 your files will be in `~/.var/app/net.ankiweb.Anki/data/Anki2/`.
 Older versions of Anki stored your files in
-`~/Documents/Anki` or `~/Anki`. 
+`~/Documents/Anki` or `~/Anki`.
 
 Within the Anki folder, the program-level and profile-level preferences
-are stored in a file called prefs.db.
+are stored in a file called `prefs.db`.
 
 There is also a separate folder for each profile. The folder contains:
 
-- Your notes, decks, cards and so on in a file called collection.anki2
+- Your notes, decks, cards and so on in a file called `collection.anki2`
 
-- Your audio and images in a collection.media folder
+- Your audio and images in a `collection.media` folder
 
 - A backups folder
 
@@ -58,6 +60,30 @@ You should never copy or move your collection while Anki is open. Doing
 so could cause your collection to become corrupt. Please do not move or
 modify the other files in the folder either.
 
+## Program Files
+
+Anki's launcher is installed in the following locations by default:
+
+- Windows: `%LOCALAPPDATA%\Programs\Anki`
+- macOS: `/Applications/Anki.app`
+- Linux: `/usr/local/share/anki`
+
+When you install/update Anki with the launcher, it downloads support
+files and places them in the following locations:
+
+- Windows: `%LOCALAPPDATA%\AnkiProgramFiles`
+- macOS: `~/Library/Application Support/AnkiProgramFiles`
+- Linux: `~/.local/share/AnkiProgramFiles`
+
+Removing that folder will cause the launcher to behave like a fresh install.
+
+The `AnkiProgramFiles` contains all the files needed to run Anki aside from
+the launcher. You can copy it to a different folder or system, and start
+Anki from the new location by opening `AnkiProgramFiles/.venv/bin/anki` (or
+`AnkiProgramFiles\.venv\scripts\anki` on Windows). If placed in the standard location on a new computer, the launcher will also be able to re-use the existing files, provided the files were copied with modification times preserved.
+
+See the flash drive section below for more.
+
 ## Startup Options
 
 If you have made a destructive change on one computer and have an
@@ -65,7 +91,7 @@ undamaged copy on another computer, you may wish to start Anki without
 syncing in order to use the full sync option without first downloading
 the changes. Similarly, if you are experiencing problems with Anki, you
 might need to (or might be instructed to) disable add-ons temporarily to
-see if one might be causing the problem. To do both of these things at the same time, you can 
+see if one might be causing the problem. To do both of these things at the same time, you can
 open Anki in safe mode by holding down the <kbd>Shift</kbd> key while starting Anki. Keep holding <kbd>Shift</kbd> down until the on-screen message informs you that Anki has started in safe mode.
 
 It is possible to specify a custom folder location during startup. This
@@ -143,25 +169,17 @@ Database to detect corruption is recommended.
 
 On Windows, Anki can be installed on a USB / flash drive and run as a
 portable application. The following example assumes your USB drive is
-drive G.
+drive G. Please ensure you've read the Program Files section above first.
 
-- Copy the \\Program Files\\Anki folder to the flash drive, so you
-  have a folder like G:\\Anki.
+- Copy the `AnkiProgramFiles` folder to the flash drive, so you
+  have a folder like `G:\Anki`.
 
-- Create a text file called G:\\anki.bat with the following text:
+- Create a text file called `G:\anki.bat` with the following text:
 
-  g:\anki\anki.exe -b g:\ankidata
+  `g:\anki\.venv\scripts\pythonw -c 'import aqt; aqt.run()' -b g:\ankidata`
 
-If you would like to prevent the black command prompt window from
-remaining open, you can instead use:
-
-    start /b g:\anki\anki.exe -b g:\ankidata
-
-- Double-clicking on anki.bat should start Anki with the user data
-  stored in G:\\ankidata.
-
-The full path including drive letter is required - if you try using
-`\anki\anki.exe` instead you will find syncing stops working.
+- Double-clicking on `anki.bat` should start Anki with the user data
+  stored in `G:\\ankidata`.
 
 Media syncing with AnkiWeb may not work if your flash drive is formatted
 as FAT32. Please format the drive as NTFS to ensure media syncs
@@ -173,7 +191,7 @@ Please see [this section](./backups.md).
 
 ## Inaccessible Harddisk
 
-If Anki can't write to files in the [Anki folder](#file-locations), a message
+If Anki can't write to files in the [Anki folder](#user-data), a message
 will be displayed on startup saying that Anki can't write to the
 harddisk, and Anki will close. If you're unsure how to fix the
 permissions, please contact someone near you who is knowledgeable about

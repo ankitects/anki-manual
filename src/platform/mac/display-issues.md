@@ -12,7 +12,7 @@ is necessary to restart Anki.
 
 ### Changing the Driver From Terminal.app
 Older Anki versions did not provide an option in the preferences, but allowed
-you to adjust the driver by opening Terminal.app, then pasting the following and hit enter:
+you to adjust the driver by opening Terminal.app, then pasting the following and hit <kbd>Enter</kbd>:
 
 ```
 echo software > ~/Library/Application\ Support/Anki2/gldriver6
@@ -25,7 +25,7 @@ remove that file.
 
 ## eGPUs
 
-If you experience blank screens when using an external graphics card on a Mac, you can ctrl+click on the Anki app, click "Get Info", and enable the "prefer eGPU" option.
+If you experience blank screens when using an external graphics card on a Mac, you can <kbd>Ctrl</kbd>+click on the Anki app, click **Get Info**, and enable the **prefer eGPU** option.
 
 ## Monitors with Different Resolutions
 
