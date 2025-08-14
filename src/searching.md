@@ -404,7 +404,7 @@ you need to tell Anki not to treat them specially. This is called "escaping a ch
   `_` will match any single character, but `\_` matches only an actual underscore.
 
 - `\`\
-  Because a backlash is used to remove the special meaning from other characters,
+  Because a backslash is used to remove the special meaning from other characters,
   it too is treated specially. If you need to search for an actual backslash,
   use `\\` instead of `\`.
 
