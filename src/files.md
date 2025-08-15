@@ -15,7 +15,7 @@ tags, as it's inefficient to do so. If you want to clear old tags out
 from the list that are no longer in use, checking your database is the
 way to do it.
 
-Please note that Anki will automatically optimize your collection once
+Note that Anki will automatically optimize your collection once
 every 2 weeks. This optimization ensures the collection performs well,
 but it does not check for errors or rebuild the tag list when
 automatically optimizing.
@@ -146,7 +146,7 @@ third-party synchronization service, as it can lead to database
 corruption when files are synced while in use.
 
 If you just want to synchronize your media, you can link external
-folders into services like DropBox. Please see [DropboxWiki: Sync
+folders into services like DropBox. See [DropboxWiki: Sync
 Folders Outside Dropbox (archive.org)][dropboxwiki-sync-other]
 for more info.
 
@@ -169,7 +169,7 @@ Database to detect corruption is recommended.
 
 On Windows, Anki can be installed on a USB / flash drive and run as a
 portable application. The following example assumes your USB drive is
-drive G. Please ensure you've read the Program Files section above first.
+drive G. Ensure you've read the Program Files section above first.
 
 - Copy the `AnkiProgramFiles` folder to the flash drive, so you
   have a folder like `G:\Anki`.
@@ -187,7 +187,7 @@ correctly.
 
 ## Backups
 
-Please see [this section](./backups.md).
+See [this section](./backups.md).
 
 ## Inaccessible Harddisk
 
