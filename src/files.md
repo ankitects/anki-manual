@@ -172,14 +172,14 @@ portable application. The following example assumes your USB drive is
 drive G. Please ensure you've read the Program Files section above first.
 
 - Copy the `AnkiProgramFiles` folder to the flash drive, so you
-  have a folder like `G:\Anki`.
+  have a folder like `G:\AnkiProgramFiles`.
 
 - Create a text file called `G:\anki.bat` with the following text:
 
-  `g:\anki\.venv\scripts\pythonw -c 'import aqt; aqt.run()' -b g:\ankidata`
+  `G:\AnkiProgramFiles\.venv\scripts\pythonw -c "import aqt; aqt.run()" -b G:\AnkiData`
 
 - Double-clicking on `anki.bat` should start Anki with the user data
-  stored in `G:\\ankidata`.
+  stored in `G:\AnkiData`.
 
 Media syncing with AnkiWeb may not work if your flash drive is formatted
 as FAT32. Please format the drive as NTFS to ensure media syncs
