@@ -176,7 +176,7 @@ drive G. Please ensure you've read the Program Files section above first.
 
 - Create a text file called `G:\anki.bat` with the following text:
 
-  `G:\AnkiProgramFiles\.venv\scripts\pythonw -c "import aqt; aqt.run()" -b G:\AnkiData`
+  `start /b G:\AnkiProgramFiles\.venv\scripts\pythonw -c "import aqt; aqt.run()" -b G:\AnkiData`
 
 - Double-clicking on `anki.bat` should start Anki with the user data
   stored in `G:\AnkiData`.
