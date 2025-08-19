@@ -19,7 +19,7 @@ The standard options available to you are:
 The name of the font to use on the card. If your font has spaces in it
 like "MS Unicode", then you need to surround the font name in double
 quotes as in this sentence. It is also possible to use multiple fonts on
-one card; for information on that, please see below.
+one card; for information on that, see below.
 
 **font-size**\
 The size of the font in pixels. When changing it, make sure you leave px
@@ -31,7 +31,7 @@ Whether the text should be aligned in the center, left, or right.
 **color**\
 The color of the text. Simple color names like "blue", "lightyellow",
 and so on will work, or you can use HTML color codes to select arbitrary
-colors. Please see [this webpage](https://htmlcolorcodes.com/) for more
+colors. See [this webpage](https://htmlcolorcodes.com/) for more
 information.
 
 **background-color**\
@@ -39,7 +39,7 @@ The color of the card background.
 
 Any CSS can be placed in the styling section – advanced users may wish
 to do things like add a background image or gradient, for example. If
-you’re wondering how to get some particular formatting, please search
+you’re wondering how to get some particular formatting, search
 the web for information about how to do it in CSS, as there is a great
 deal of documentation available.
 
@@ -182,7 +182,7 @@ like:
 ```
 
 It’s also possible to bundle custom fonts with your deck, so you don’t
-need to install them on your computer or mobile device. Please see the
+need to install them on your computer or mobile device. See the
 [installing fonts](#installing-fonts) section for more info.
 
 ## Audio Replay Buttons
@@ -226,7 +226,7 @@ of only certain fields by wrapping their references in some HTML:
 
     <div dir="rtl">{{Front}}</div>
 
-To change the direction of fields in the editor, please see
+To change the direction of fields in the editor, see
 the [editing](../editing.md#customizing-fields) section.
 
 ## Other HTML
@@ -297,7 +297,7 @@ And in the template:
 ```
 
 You can also use properties like .gecko, .opera, and .ie to select
-particular browsers when using AnkiWeb. Please see
+particular browsers when using AnkiWeb. See
 <http://rafael.adm.br/css_browser_selector/> for a full list of options.
 
 ## Installing Fonts
@@ -352,10 +352,10 @@ Only change the "arial" part, not the "myfont" part.
 After that, you can either change the font for the entire card, or for
 individual fields. To change the font for the entire card, simply locate
 the font-family: line in the .card section and change the font to
-"myfont". To change the font for only certain fields, please see the
+"myfont". To change the font for only certain fields, see the
 [Field Styling](#field-styling) instructions above.
 
-Please make sure the filenames match exactly. If the file is called
+Make sure the filenames match exactly. If the file is called
 arial.TTF and you write arial.ttf in your card templates, it will not
 work.
 
@@ -405,8 +405,8 @@ template:
 ## Javascript
 
 As Anki cards are treated like webpages, it is possible to embed some
-Javascript on your cards via the card template. For a good reference
-please read [this post](https://forums.ankiweb.net/t/card-templates-user-input-101-buttons-keyboard-shortcuts-etc-guide/13756)
+Javascript on your cards via the card template. For a good reference,
+read [this post](https://forums.ankiweb.net/t/card-templates-user-input-101-buttons-keyboard-shortcuts-etc-guide/13756)
 in the forums.
 
 Because Javascript is an advanced feature and so many things can go

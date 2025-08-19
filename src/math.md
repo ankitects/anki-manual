@@ -32,16 +32,16 @@ To try it out:
     \sqrt{x}
     $$
 Anki’s MathJax support expects content in TeX format. If you’re not
-familiar with TeX formatting, please see [this cheatsheet](https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference).
-Please note that point 1 does not apply in Anki - Anki uses `\(` and
+familiar with TeX formatting, see [this cheatsheet](https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference).
+Note that point 1 does not apply in Anki - Anki uses `\(` and
 `\)` for inline equations, and `\[` and `\]` for display equations.
 
-If you want to use newlines in a MathJax expression, please use
+If you want to use newlines in a MathJax expression, use
 <kbd>Shift</kbd>+<kbd>Enter</kbd> instead of just <kbd>Enter</kbd>, as a normal newline will prevent
 MathJax from working correctly.
 
 Anki includes built in support for mhchem for rendering chemical
-equations. Please see the "chemical equations" section and the following
+equations. See the "chemical equations" section and the following
 sections for more information:
 <https://mhchem.github.io/MathJax-mhchem/>
 
@@ -132,7 +132,7 @@ already exist, but can not generate the images on their own.
 
 To avoid having to review all your cards at least once before you can
 study on the other clients, Anki can generate the images in bulk for
-you. To generate all the images, please go to Tools&gt;Check Media.
+you. To generate all the images, go to Tools&gt;Check Media.
 After that, syncing should upload the generated media to AnkiWeb and the
 other clients.
 
@@ -255,7 +255,7 @@ your Anki cards:
 
 As of Anki 2.1.20 / AnkiMobile 2.0.56 / AnkiDroid 2.13, this workaround is no
 longer required, as `{{field}}` text inside fields no longer causes problems. If
-you need to support older versions and want to keep using this syntax, please
+you need to support older versions and want to keep using this syntax,
 make sure you place the `{{=<% %>=}}` string at the very top of your front and
 back template, as recent Anki versions will not recognize it anywhere but the
 start.
@@ -312,5 +312,5 @@ shared decks to damage your system. (To be on the safe side, these
 commands are prohibited even in comments, so if you’re getting this
 error but don’t think you’ve used one, please double-check any comments
 you have in your headers, templates, and cards.) If you need to use
-these commands, please add them to a system package and import that
+these commands, add them to a system package and import that
 package as described in the previous section.

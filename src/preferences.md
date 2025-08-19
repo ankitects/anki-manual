@@ -17,7 +17,7 @@ Change your display language. You can help to improve translations [here](https:
 **Theme**\
 Dark (night) mode will make Anki's interface dark, and will cause cards to be shown as white text on a
 black background. Some card templates may need to be modified to work
-properly with this option enabled - please see [night mode styling](templates/styling.md#night-mode) for more information.
+properly with this option enabled - see [night mode styling](templates/styling.md#night-mode) for more information.
 
 From 2.1.50+ there is an option to switch to day or night mode automatically.
 
@@ -34,7 +34,7 @@ Due to different hardware and software configurations, the driver that
 works best on your machine may vary. Software tends to be slower, but will
 work on some systems where the other options do not.
 
-Note: If you're on Windows, please check [this page](./platform/windows/display-issues.md) as well.
+Note: If you're on Windows, check [this page](./platform/windows/display-issues.md) as well.
 
 ### Distractions
 
@@ -157,4 +157,4 @@ For info on the custom sync server option, see [this section](./sync-server.md).
 
 ## Backups
 
-Please see [this](backups.md#automatic-backups) section of the manual.
+See [this](backups.md#automatic-backups) section of the manual.
