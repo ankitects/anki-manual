@@ -1,6 +1,6 @@
 # Text Size
 
-If you find the text is the wrong size, there are two environmental
+If you find the text is the wrong size, there are two environment
 variables you can try:
 
 - ANKI_NOHIGHDPI=1 will turn off some of Qt’s high dpi support
