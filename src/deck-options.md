@@ -482,7 +482,7 @@ Use this option sparingly, as it will add a review entry to each of your cards, 
 
 If you're first switching from SM-2 and still wish to use this option, we recommend you first create a backup, enable FSRS with rescheduling, and then if needed, you can undo or restore from the backup.
 
-### Compute Minimum Recommended Retention (pre 25.07) {#compute-minimum-recommended-retention}
+### Compute Minimum Recommended Retention (<25.07) {#compute-minimum-recommended-retention}
 
 > ***Removed Feature***
 >
