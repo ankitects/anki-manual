@@ -4,7 +4,7 @@
 
 ## Requirements
 
-The packaged version requires a recent 64 bit Intel/AMD Linux with glibc, and common
+The packaged version requires a recent 64 bit Intel/AMD Linux with glibc 2.36+, and common
 libraries like libwayland-client and systemd. If you are on a different
 architecture (e.g ARM/AArch64), or a barebones Linux distro, you will not be able to use the
 packaged version, but you may be able to use the [Python wheels](https://betas.ankiweb.net/#via-pypipip)
