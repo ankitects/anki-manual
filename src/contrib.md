@@ -60,11 +60,11 @@ them about it.
 
 ## Sharing Add-ons
 
-Please see <https://addon-docs.ankiweb.net/sharing.html>
+See <https://addon-docs.ankiweb.net/sharing.html>
 
 ## Translating Anki
 
-Please see <https://translating.ankiweb.net>
+See <https://translating.ankiweb.net>
 
 ## Contributing Code
 

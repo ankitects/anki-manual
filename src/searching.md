@@ -196,7 +196,7 @@ finds notes that have "some" or "another" on them, followed by 0 or more charact
 `re:\d{3}`\
 finds notes that have 3 digits in a row.
 
-Regular expressions can also be limited to a specific field. Please note that unlike the normal searches
+Regular expressions can also be limited to a specific field. Note that unlike the normal searches
 in a specific field, regular expressions in fields don't require an exact match:
 
 `front:re:[a-c]1`\
