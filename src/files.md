@@ -169,21 +169,35 @@ Database to detect corruption is recommended.
 
 On Windows, Anki can be installed on a USB / flash drive and run as a
 portable application. The following example assumes your USB drive is
-drive G. Please ensure you've read the Program Files section above first.
+drive E; adjust as necessary.
 
-- Copy the `AnkiProgramFiles` folder to the flash drive, so you
-  have a folder like `G:\AnkiProgramFiles`.
+WARNING: The drive letter must be the same on all devices. If you set this up for drive E,
+it won't work for a flash drive mapped to drive D for example.
 
-- Create a text file called `G:\anki.bat` with the following text:
-
-  `start /b G:\AnkiProgramFiles\.venv\scripts\pythonw -c "import aqt; aqt.run()" -b G:\AnkiData`
-
-- Double-clicking on `anki.bat` should start Anki with the user data
-  stored in `G:\AnkiData`.
-
-Media syncing with AnkiWeb may not work if your flash drive is formatted
+WARNING: Media syncing with AnkiWeb may not work if your flash drive is formatted
 as FAT32. Please format the drive as NTFS to ensure media syncs
 correctly.
+
+1. Download the latest Anki launcher, and install it in a custom location:
+   `E:\Anki\Launcher`.
+2. When the launcher appears, close it without installing.
+3. Put the following in a file `E:\Anki\Anki.bat`:
+
+```bat
+@echo off
+echo Starting Anki...
+set USB_ROOT=%~dp0
+set ANKI_LAUNCHER_VENV_ROOT=%USB_ROOT%\AnkiProgramFiles
+set ANKI_LAUNCHER=%USB_ROOT%\Launcher\anki
+set ANKI_BASE=%USB_ROOT%\AnkiData
+start /b %ANKI_LAUNCHER%
+```
+
+4. Double-click on the .bat file you created, and install Anki as normal.
+5. You can now double-click on the .bat file to run Anki from other machines.
+
+Tools>Upgrade/Downgrade will continue to function, but only when your machine
+has access to the internet.
 
 ## Backups
 
