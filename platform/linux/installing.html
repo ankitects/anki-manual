@@ -179,6 +179,7 @@
 <li><a href="#installing">Installing</a></li>
 <li><a href="#upgrading">Upgrading</a></li>
 <li><a href="#add-on-compatibility">Add-on Compatibility</a></li>
+<li><a href="#system-qt-versions">System Qt versions</a></li>
 <li><a href="#problems">Problems</a></li>
 </ul>
 <h2 id="requirements"><a class="header" href="#requirements">Requirements</a></h2>
@@ -223,6 +224,38 @@ will be preserved.</p>
 <p>Some add-ons may not always work with the latest Anki release. If you upgrade to
 the latest Anki version and find an add-on you cannot live without stops working,
 you can download older Anki versions from the <a href="https://github.com/ankitects/anki/releases">releases page</a>.</p>
+<h2 id="system-qt-versions"><a class="header" href="#system-qt-versions">System Qt versions</a></h2>
+<p>Anki’s launcher uses the official PyQt builds by default. This makes it easier to
+install Anki on distros that don’t have the relevant Python/Qt versions, but means that
+you may not have access certain Qt features provided by your Linux distro, such as certain
+Qt themes, support for the FCITX input method, etc.</p>
+<p>If your Linux distro provides up-to-date Anki packages, you may find using them easiest.</p>
+<p>If it doesn’t, advanced users may wish to combine Anki’s launcher with their system’s Qt version.
+To do this, your system needs to have a Python version Anki supports (soon to be 3.11+),
+and suitable PyQt libraries (6.2+).</p>
+<p>WARNING: This is an experimental feature, and your system’s Qt may fix some bugs while
+introducing others.</p>
+<ol>
+<li>
+<p>Install Python and the relevant PyQt packages. On Ubuntu:</p>
+<blockquote>
+<p>sudo apt install python3-pyqt6.qtwebengine</p>
+</blockquote>
+</li>
+<li>
+<p>If you previously used the launcher, <code>rm -rf ~/.local/share/AnkiProgramFiles</code>.</p>
+</li>
+<li>
+<p>Untar the launcher, and cd to its folder.</p>
+</li>
+<li>
+<p>Run <code>touch system_qt</code> to create a system_qt file in that folder.</p>
+</li>
+<li>
+<p>Install Anki via ./anki or ./install.sh. In the list of installed packages,
+you should not see any mention of PyQt6.</p>
+</li>
+</ol>
 <h2 id="problems"><a class="header" href="#problems">Problems</a></h2>
 <p>If you encounter any issues when installing or starting Anki, please see the
 following pages:</p>
