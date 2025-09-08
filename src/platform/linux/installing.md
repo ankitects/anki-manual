@@ -61,6 +61,35 @@ Some add-ons may not always work with the latest Anki release. If you upgrade to
 the latest Anki version and find an add-on you cannot live without stops working,
 you can download older Anki versions from the [releases page](https://github.com/ankitects/anki/releases).
 
+## System Qt versions
+
+Anki's launcher uses the official PyQt builds by default. This makes it easier to
+install Anki on distros that don't have the relevant Python/Qt versions, but means that
+you may not have access certain Qt features provided by your Linux distro, such as certain
+Qt themes, support for the FCITX input method, etc.
+
+If your Linux distro provides up-to-date Anki packages, you may find using them easiest.
+
+If it doesn't, advanced users may wish to combine Anki's launcher with their system's Qt version.
+To do this, your system needs to have a Python version Anki supports (soon to be 3.11+),
+and suitable PyQt libraries (6.2+).
+
+WARNING: This is an experimental feature, and your system's Qt may fix some bugs while
+introducing others.
+
+1. Install Python and the relevant PyQt packages. On Ubuntu:
+
+   > sudo apt install python3-pyqt6.qtwebengine
+
+1. If you previously used the launcher, `rm -rf ~/.local/share/AnkiProgramFiles`.
+
+1. Untar the launcher, and cd to its folder.
+
+1. Run `touch system_qt` to create a system_qt file in that folder.
+
+1. Install Anki via ./anki or ./install.sh. In the list of installed packages,
+   you should not see any mention of PyQt6.
+
 ## Problems
 
 If you encounter any issues when installing or starting Anki, please see the
