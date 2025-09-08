@@ -5499,24 +5499,32 @@ Database to detect corruption is recommended.</p>
 <h2 id="running-from-a-flash-drive"><a class="header" href="#running-from-a-flash-drive">Running from a Flash Drive</a></h2>
 <p>On Windows, Anki can be installed on a USB / flash drive and run as a
 portable application. The following example assumes your USB drive is
-drive G. Please ensure you’ve read the Program Files section above first.</p>
-<ul>
-<li>
-<p>Copy the <code>AnkiProgramFiles</code> folder to the flash drive, so you
-have a folder like <code>G:\AnkiProgramFiles</code>.</p>
-</li>
-<li>
-<p>Create a text file called <code>G:\anki.bat</code> with the following text:</p>
-<p><code>start /b G:\AnkiProgramFiles\.venv\scripts\pythonw -c "import aqt; aqt.run()" -b G:\AnkiData</code></p>
-</li>
-<li>
-<p>Double-clicking on <code>anki.bat</code> should start Anki with the user data
-stored in <code>G:\AnkiData</code>.</p>
-</li>
-</ul>
-<p>Media syncing with AnkiWeb may not work if your flash drive is formatted
+drive E; adjust as necessary.</p>
+<p>WARNING: The drive letter must be the same on all devices. If you set this up for drive E,
+it won’t work for a flash drive mapped to drive D for example.</p>
+<p>WARNING: Media syncing with AnkiWeb may not work if your flash drive is formatted
 as FAT32. Please format the drive as NTFS to ensure media syncs
 correctly.</p>
+<ol>
+<li>Download the latest Anki launcher, and install it in a custom location:
+<code>E:\Anki\Launcher</code>.</li>
+<li>When the launcher appears, close it without installing.</li>
+<li>Put the following in a file <code>E:\Anki\Anki.bat</code>:</li>
+</ol>
+<pre><code class="language-bat">@echo off
+echo Starting Anki...
+set USB_ROOT=%~dp0
+set ANKI_LAUNCHER_VENV_ROOT=%USB_ROOT%\AnkiProgramFiles
+set ANKI_LAUNCHER=%USB_ROOT%\Launcher\anki
+set ANKI_BASE=%USB_ROOT%\AnkiData
+start /b %ANKI_LAUNCHER%
+</code></pre>
+<ol start="4">
+<li>Double-click on the .bat file you created, and install Anki as normal.</li>
+<li>You can now double-click on the .bat file to run Anki from other machines.</li>
+</ol>
+<p>Tools&gt;Upgrade/Downgrade will continue to function, but only when your machine
+has access to the internet.</p>
 <h2 id="backups-2"><a class="header" href="#backups-2">Backups</a></h2>
 <p>Please see <a href="./backups.html">this section</a>.</p>
 <h2 id="inaccessible-harddisk"><a class="header" href="#inaccessible-harddisk">Inaccessible Harddisk</a></h2>
