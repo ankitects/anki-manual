@@ -313,6 +313,9 @@ cards that been lapsed more than 3 times.
 `prop:ease!=2.5`\
 cards easier or harder than default ease.
 
+`prop:pos<=100`\
+new cards with a position in the queue less than or equal to 100.
+
 The following searches require Anki 23.10+ and FSRS enabled:
 
 `prop:s>21`\
