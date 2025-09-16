@@ -414,29 +414,28 @@ Regarding add-on compatibility, as a general rule of thumb, if an add-on affects
 ### Desired Retention
 
 Desired retention controls how likely you are to remember cards when they are scheduled for a review.
-The default value of `0.90` will schedule cards so you have a 90% chance of remembering
+The default value of 90% will schedule cards so you have a 90% chance of remembering
 them when they come up for review again. This should normally translate to remembering around 90% cards when they are reviewed, and only failing around 10%.
 
-Here is a graph that shows how adjusting this value will affect your workload:
+Here is a graph that shows how adjusting desired retention will affect your workload:
 
 ![graph showing an exponential increase in workload as desired retention nears one.](./media/FSRS_retention.png)
 
-The exact shape of the graph is different for everyone. However, there are two patterns that hold true for all:
+The exact shape of the graph is different for everyone. However, the overall shape is more or less the same. In general, at lower desired retention 
+you will have to do significantly fewer reviews per day, but you will also forget more cards. As desired retention approaches 100%, 
+the workload increases drastically. For this reason, we suggest you be conservative when adjusting this
+number, and recommend you keep it lower than 97%.
 
-- As desired retention approaches 1.0, the workload increases drastically.
-  Imagine you have a card with a 90% chance of remembering it after 100 days. If your desired retention is `0.90`, you'll review the card again in 100 days. But if your desired retention is `0.95`, you'll need to review it after 46 days instead.
-  This means that the intervals of your cards almost halve at `0.95` desired retention and you need to review cards twice as frequently compared to `0.90` desired retention.
-  At `0.97`, the interval will be 27 days (you'll have to review your cards 3.7x as frequently).
-  At `0.99`, the interval will be only 9 days (you'll have to review your cards more than 10x more frequently than with the defaults).
+### Help Me Decide
 
-- As desired retention decreases, you'll forget a greater percentage of your
-  cards, and those cards will need to be reviewed again. Eventually, you'll
-  get to a point where the forgotten cards contribute more to your workload
-  than you gain from the longer delays. Also, keep in mind that forgetting
-  material frequently is demotivating.
+**Help Me Decide (Experimental)** allows you to simulate workload at different levels of retention. In other words, you can find out what your own, personalized retention-workload graph looks like.
+This can help you choose what value of desired retention is the best for your needs.
 
-For these reasons, we suggest you be conservative when adjusting this
-number, and recommend you keep it lower than `0.97` and higher than the [minimum recommended retention](#compute-minimum-recommended-retention).
+If you are unsure what to do with this information, you can ask yourself "How many reviews can I realistically do per day?" or "How many minutes can I realistically spend on reviews per day?", and check the corresponding workload graph to see what value of desired retention gives you a tolerable workload.
+
+Alternatively, you can check the amount of reviews/time at your *current* desired retention, then check how it will change if you change desired retention, and ask yourself "Do I want to study this much more to remember this much more?" or "Do I want to study this much less if it means remembering this much less?".
+
+For more information about the simulator, please read [this section](./deck-options.md#the-simulator).
 
 ### FSRS Parameters
 
@@ -458,21 +457,12 @@ are used for optimization.
 
 You can also optimize the parameters for all of your presets at once by clicking on **Optimize All Presets**.
 
-**Evaluate FSRS Parameters**
+**Health Check**
 
-You can use the **Evaluate** button to see metrics that show how well the parameters fit your review history. Smaller numbers
-indicate a better fit to your review history.
-
-Log loss doesn't have an intuitive interpretation. RMSE (bins) can be
-interpreted as the average difference between the predicted probability
-of recalling a card (R) and the actual
-probability measured from your review history. For example, RMSE=5% means that, on average, FSRS
-is off by 5% when predicting R. You don't need to understand these metrics to use FSRS.
-
-Note that log loss and RMSE (bins) are not perfectly correlated,
-so two decks may have similar RMSE values but very different log-loss values, or the other way around.
-
-By default, log loss and RMSE (bins) are calculated from all decks using the current preset. You can optionally [adjust the search](./searching.md) before evaluating the parameters, if you'd like to change which cards are used for evaluation.
+You can enable **⁨Check health when optimizing⁩ (slow)** to check how well FSRS can adapt to your review history. Some common reasons why FSRS may not perform well:
+- Low number of reviews (less than a few hundred). As a machine learning algorithm, FSRS needs data to learn from.
+- [Hard misuse](https://docs.ankiweb.net/studying.html#answer-buttons). Hard should **not** be used when you forgot the answer; it is a passing grade, not a failing grade.
+- Not using Again when you forgot the answer. Anki assumes that if you forgot the answer, you will press Again, and if you recalled it, you will press Hard/Good/Easy.
 
 ### Reschedule Cards on Change
 
@@ -481,10 +471,6 @@ This option controls whether the due dates of cards will be changed when you ena
 Use this option sparingly, as it will add a review entry to each of your cards, and increase the size of your collection.
 
 If you're first switching from SM-2 and still wish to use this option, we recommend you first create a backup, enable FSRS with rescheduling, and then if needed, you can undo or restore from the backup.
-
-### Compute Minimum Recommended Retention
-
-Compute minimum recommended retention (CMRR) attempts to find the desired retention value that leads to the most material learned, in the least amount of time. The calculated number can serve as a reference when deciding what to set your desired retention to. You may wish to choose a higher desired retention, if you’re willing to trade more study time for a greater retention rate. However, setting your desired retention lower than the minimum is not recommended, as you'll spend more time studying than necessary, due to increased forgetting.
 
 ### The Simulator
 
