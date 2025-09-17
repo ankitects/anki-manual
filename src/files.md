@@ -179,7 +179,7 @@ as FAT32. Please format the drive as NTFS to ensure media syncs
 correctly.
 
 1. Download the latest Anki launcher, and install it in a custom location:
-   `E:\Anki\Launcher`.
+   `E:\Anki\Launcher`. Not `E:\Anki\Launcher\Anki`.
 2. When the launcher appears, close it without installing.
 3. Put the following in a file `E:\Anki\Anki.bat`:
 
