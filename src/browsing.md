@@ -75,7 +75,7 @@ tags.
 Here is an example: Say you have the tags `Math`, `Calculus`, and `Algebra`.
 Click on the `Calculus` tag, then <kbd>Ctrl</kbd>-click on the `Algebra` tag. Now both
 tags are selected, click and drag any of the two onto the `Math` tag to make them
-both children of this tag. Behind the scene, Anki has renamed the two tags to
+both children of this tag. Behind the scenes, Anki has renamed the two tags to
 `Math::Calculus` and `Math::Algebra` respectively and updated your notes accordingly.
 
 Another use case for selecting multiple items is searching: If you right-click on
