@@ -17,7 +17,8 @@ If the problem does not occur again, you can skip the following steps.
 
 Please close Anki, then open it in safe mode by holding down the
 <kbd>Shift</kbd> key while starting Anki. Keep holding <kbd>Shift</kbd> down
-until the on-screen message informs you that Anki has started in safe mode. 
+until the on-screen message informs you that Anki has started in safe mode.
+If you're on Linux and that didn't work, run 'anki --safemode'.
 
 If the problem goes away, that indicates an add-on is causing the problem.
 Remove any add-ons you don't need, and disable half of the others. If the
@@ -34,8 +35,7 @@ About** menu. If the version you're using is not the latest version published on
 then start Anki again to see if the problem has gone away.
 
 If you're using Linux, please make sure you can reproduce the error using the
-packaged version on the Anki website, as distros often distribute [broken
-versions](platform/linux/distro-packages.md).
+packaged version on the Anki website, as distros often distribute [broken versions](platform/linux/distro-packages.md).
 
 ### 4. Check your database
 
@@ -72,6 +72,6 @@ immediately after starting Anki will help.
 ### 8. If the problem remains
 
 If you've confirmed you are using the latest Anki version, and are still
-receiving errors when starting Anki while holding down the shift key,
+receiving errors even with add-ons disabled,
 please [report the problem](./getting-help.md), including the next error you
 receive in your post.
