@@ -5467,7 +5467,7 @@ syncing in order to use the full sync option without first downloading
 the changes. Similarly, if you are experiencing problems with Anki, you
 might need to (or might be instructed to) disable add-ons temporarily to
 see if one might be causing the problem. To do both of these things at the same time, you can
-open Anki in safe mode by holding down the <kbd>Shift</kbd> key while starting Anki. Keep holding <kbd>Shift</kbd> down until the on-screen message informs you that Anki has started in safe mode.</p>
+open Anki in safe mode by holding down the <kbd>Shift</kbd> key while starting Anki. Keep holding <kbd>Shift</kbd> down until the on-screen message informs you that Anki has started in safe mode. If you’re on Linux and that didn’t work, run ‘anki –safemode’.</p>
 <p>It is possible to specify a custom folder location during startup. This
 is an advanced feature that is primarily intended to be used with
 portable installations, and we recommend you use the default location in
@@ -6339,7 +6339,8 @@ circumstances.</p>
 <h3 id="2-check-add-ons"><a class="header" href="#2-check-add-ons">2. Check add-ons</a></h3>
 <p>Please close Anki, then open it in safe mode by holding down the
 <kbd>Shift</kbd> key while starting Anki. Keep holding <kbd>Shift</kbd> down
-until the on-screen message informs you that Anki has started in safe mode.</p>
+until the on-screen message informs you that Anki has started in safe mode.
+If you’re on Linux and that didn’t work, run ‘anki –safemode’.</p>
 <p>If the problem goes away, that indicates an add-on is causing the problem.
 Remove any add-ons you don’t need, and disable half of the others. If the
 problem continues, try the other half. Repeat the process until you’ve figured
@@ -6352,8 +6353,7 @@ About</strong> menu. If the version you’re using is not the latest version pub
 <a href="https://apps.ankiweb.net">https://apps.ankiweb.net</a>, please close Anki, install the latest version, and
 then start Anki again to see if the problem has gone away.</p>
 <p>If you’re using Linux, please make sure you can reproduce the error using the
-packaged version on the Anki website, as distros often distribute <a href="platform/linux/distro-packages.html">broken
-versions</a>.</p>
+packaged version on the Anki website, as distros often distribute <a href="platform/linux/distro-packages.html">broken versions</a>.</p>
 <h3 id="4-check-your-database"><a class="header" href="#4-check-your-database">4. Check your database</a></h3>
 <p>After restarting Anki, please try the <strong>Tools → Check Database</strong> menu item to
 make sure your collection doesn’t have any problems.</p>
@@ -6379,7 +6379,7 @@ change the gldriver file:</p>
 immediately after starting Anki will help.</p>
 <h3 id="8-if-the-problem-remains"><a class="header" href="#8-if-the-problem-remains">8. If the problem remains</a></h3>
 <p>If you’ve confirmed you are using the latest Anki version, and are still
-receiving errors when starting Anki while holding down the shift key,
+receiving errors even with add-ons disabled,
 please <a href="./getting-help.html">report the problem</a>, including the next error you
 receive in your post.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="self-hosted-sync-server-1"><a class="header" href="#self-hosted-sync-server-1">Self-Hosted Sync Server</a></h1>
