@@ -264,7 +264,7 @@ cards that are in learning for the first time.
 ## Flags
 
 `flag:0`\
-cards with no flags.
+cards without a flag.
 
 `flag:1`\
 cards with a red flag.
