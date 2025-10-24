@@ -2,8 +2,8 @@
 
 <!-- toc -->
 
-The preferences are available from the Tools menu on Windows/Linux, or
-the Anki menu on a Mac.
+The preferences are available from the **Tools** menu on Windows/Linux, or
+the **Anki** menu on a Mac.
 
 ## Appearance
 
@@ -106,13 +106,13 @@ By default, formatting like bold and colors are kept when pasting,
 unless the <kbd>Shift</kbd> key is held down. This option reverses the behaviour.
 
 **Default deck**\
-Controls how note types and decks interact. The default of "When adding, default
-to current deck" means that Anki saves the last-used note type for each deck and
-selects it again then next time you choose the deck (and, in addition, will
-start with the current deck selected when choosing Add from anywhere). The other
-option, "Change deck depending on note type," saves the last-used deck for each
+Controls how note types and decks interact. The default option **When adding, default
+to current deck** means that Anki saves the last-used note type for each deck and
+selects it again the next time you choose the deck (and, in addition, will
+start with the current deck selected when choosing **Add** from anywhere). The other
+option, **Change deck depending on note type**, saves the last-used deck for each
 note type (and opens the add window to the last-used note type when you choose
-Add). This may be more convenient if you always use a single note type for each
+**Add**). This may be more convenient if you always use a single note type for each
 deck.
 
 The last used deck/note type is updated when you add a card. If you change the deck
@@ -149,7 +149,7 @@ with an older version that is on AnkiWeb.
 
 ### AnkiWeb Account
 
-When logged in, clicking on Log Out will log you out.
+When logged in, clicking on **Log Out** will log you out.
 
 ### Self-hosted Sync Server
 
