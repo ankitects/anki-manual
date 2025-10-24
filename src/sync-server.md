@@ -32,14 +32,16 @@ On Windows in a cmd.exe session:
 
 ```
 set SYNC_USER1=user:pass
-"\Program Files\anki\anki.exe" --syncserver
+"\Program Files\anki\anki-console" --syncserver
 ```
 
 Or MacOS, in Terminal.app:
 
 ```
-SYNC_USER1=user:pass /Applications/Anki.app/Contents/MacOS/anki --syncserver
+SYNC_USER1=user:pass /Applications/Anki.app/Contents/MacOS/launcher --syncserver
 ```
+
+Replace 'launcher' with 'anki' for old packaged builds prior to 25.07.
 
 Or Linux:
 
