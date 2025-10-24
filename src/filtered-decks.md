@@ -160,7 +160,7 @@ Display cards that you're most likely to have forgotten first. This is useful if
 you have a large backlog that may take some time to get through, and you want to
 reduce the chances of forgetting more cards.
 
-When using the SM-2 algorithm, overduessness is determined by comparing how
+When using the SM-2 algorithm, overdueness is determined by comparing how
 overdue cards are, and how long their interval is. For example, a card with a
 current interval of 5 days that is overdue by 2 days, will display before a card
 with a current interval of 10 days that is overdue by 3 days.
