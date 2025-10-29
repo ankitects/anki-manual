@@ -433,7 +433,7 @@ This can help you choose what value of desired retention is the best for your ne
 
 If you are unsure what to do with this information, you can ask yourself "How many reviews can I realistically do per day?" or "How many minutes can I realistically spend on reviews per day?", and check the corresponding workload graph to see what value of desired retention gives you a tolerable workload.
 
-Alternatively, you can check the amount of reviews/time at your *current* desired retention, then check how it will change if you change desired retention, and ask yourself "Do I want to study this much more to remember this much more?" or "Do I want to study this much less if it means remembering this much less?".
+Alternatively, you can check the amount of reviews/day (or time/day) at your *current* desired retention, then check how it will change if you change desired retention, and ask yourself "Do I want to study this much more to remember this much more?" or "Do I want to study this much less if it means remembering this much less?".
 
 For more information about the simulator, please read [this section](./deck-options.md#the-simulator).
 
