@@ -63,7 +63,7 @@ If true, a legacy version of the file is created. Turn this on if you need to
 support older clients.
 If false, a modern version of the file is created. Imports and exports will be
 faster, and media files will be compressed, but the resulting file will not be
-readable by older Anki clients
+readable by older Anki clients.
 
 ### Deck (.apkg)
 
@@ -113,4 +113,4 @@ If true, a legacy version of the file is created. Turn this on if you need to
 support older clients.
 If false, a modern version of the file is created. Imports and exports will be
 faster, and media files will be compressed, but the resulting file will not be
-readable by older Anki clients
+readable by older Anki clients.
