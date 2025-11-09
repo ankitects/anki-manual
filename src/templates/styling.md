@@ -229,6 +229,31 @@ of only certain fields by wrapping their references in some HTML:
 To change the direction of fields in the editor, please see
 the [editing](../editing.md#customizing-fields) section.
 
+## Displaying Code Snippets
+
+If you want to include code in your Anki cards, you can use HTML tags to format text as code. To enter HTML mode:
+
+- On Windows, press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>X</kbd>
+- On a Mac, press <kbd>Command</kbd>+<kbd>Shift</kbd>+<kbd>X</kbd>
+
+**Inline code**\
+Wrap your text with the `<code>` tag:
+
+```html
+<code>console.log("Hello World!");</code>
+```
+
+**Code blocks**\
+Use `<pre><code>` for multi-line code:
+
+```html
+<pre><code>
+function square(number) {
+  return number * number;
+};
+</code></pre>
+```
+
 ## Other HTML
 
 Your templates can contain arbitrary HTML, which means that all the
