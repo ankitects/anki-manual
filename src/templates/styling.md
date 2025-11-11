@@ -231,10 +231,9 @@ the [editing](../editing.md#customizing-fields) section.
 
 ## Displaying Code Snippets
 
-If you want to include code in your Anki cards, you can use HTML tags to format text as code. To enter HTML mode:
-
-- On Windows, press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>X</kbd>
-- On a Mac, press <kbd>Command</kbd>+<kbd>Shift</kbd>+<kbd>X</kbd>
+If you want to include code in your Anki cards, you can use HTML tags to format
+text as code. For that, you need to open the
+[HTML view](../editing.md#editing-features).
 
 ### Inline code
 
