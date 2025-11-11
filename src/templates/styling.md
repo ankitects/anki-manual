@@ -236,14 +236,16 @@ If you want to include code in your Anki cards, you can use HTML tags to format 
 - On Windows, press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>X</kbd>
 - On a Mac, press <kbd>Command</kbd>+<kbd>Shift</kbd>+<kbd>X</kbd>
 
-**Inline code**\
+### Inline code
+
 Wrap your text with the `<code>` tag:
 
 ```html
 <code>console.log("Hello World!");</code>
 ```
 
-**Code blocks**\
+### Code blocks
+
 Use `<pre><code>` for multi-line code:
 
 ```html
