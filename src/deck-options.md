@@ -415,25 +415,32 @@ Regarding add-on compatibility, as a general rule of thumb, if an add-on affects
 
 Desired retention controls how likely you are to remember cards when they are scheduled for a review.
 The default value of 90% will schedule cards so you have a 90% chance of remembering
-them when they come up for review again. This should normally translate to remembering around 90% cards when they are reviewed, and only failing around 10%.
+them when they come up for review again. This should normally translate to remembering 
+around 90% cards when they are reviewed, and only failing around 10%.
 
 Here is a graph that shows how adjusting desired retention will affect your workload:
 
 ![graph showing an exponential increase in workload as desired retention nears one.](./media/FSRS_retention.png)
 
-The exact shape of the graph is different for everyone. However, the overall shape is more or less the same. In general, at lower desired retention 
-you will have to do significantly fewer reviews per day, but you will also forget more cards. As desired retention approaches 100%, 
-the workload increases drastically. For this reason, we suggest you be conservative when adjusting this
-number, and recommend you keep it lower than 97%.
+The exact shape of the graph is different for everyone. However, the overall shape is more or less the same.
+In general, at lower desired retention you will have to do significantly fewer reviews per day, 
+but you will also forget more cards. As desired retention approaches 100%, 
+the workload increases drastically. For this reason, we suggest you be conservative when adjusting this number, 
+and recommend you keep it lower than 97%.
 
 ### Help Me Decide
 
-**Help Me Decide (Experimental)** allows you to simulate workload at different levels of retention. In other words, you can find out what your own, personalized retention-workload graph looks like.
+**Help Me Decide (Experimental)** allows you to simulate workload at different levels of retention. 
+In other words, you can find out what your own, personalized retention-workload graph looks like.
 This can help you choose what value of desired retention is the best for your needs.
 
-If you are unsure what to do with this information, you can ask yourself "How many reviews can I realistically do per day?" or "How many minutes can I realistically spend on reviews per day?", and check the corresponding workload graph to see what value of desired retention gives you a tolerable workload.
+If you are unsure what to do with this information, you can ask yourself "How many reviews can I realistically do per day?"
+or "How many minutes can I realistically spend on reviews per day?", and check the corresponding workload graph
+to see what value of desired retention gives you a tolerable workload.
 
-Alternatively, you can check the amount of reviews/day (or time/day) at your *current* desired retention, then check how it will change if you change desired retention, and ask yourself "Do I want to study this much more to remember this much more?" or "Do I want to study this much less if it means remembering this much less?".
+Alternatively, you can check the amount of reviews/day (or time/day) at your *current* desired retention,
+then check how it will change if you change desired retention, and ask yourself 
+"Do I want to study this much more to remember this much more?" or "Do I want to study this much less if it means remembering this much less?".
 
 For more information about the simulator, please read [this section](./deck-options.md#the-simulator).
 
@@ -443,9 +450,13 @@ FSRS parameters affect how cards are scheduled. Do not change the parameters man
 
 **Optimize FSRS Parameters**
 
-The FSRS optimizer uses machine learning to learn your memory patterns and find parameters that best fit your review history. To do this, the optimizer requires several reviews to fine-tune the parameters.
+The FSRS optimizer uses machine learning to learn your memory patterns and 
+find parameters that best fit your review history. 
+To do this, the optimizer requires several reviews to fine-tune the parameters.
 
-When you click the **Optimize** button, FSRS will analyze your review history, and generate parameters that are optimal for your memory and the content you're studying. If you have decks that vary wildly in subjective difficulty, it
+When you click the **Optimize** button, FSRS will analyze your review history, 
+and generate parameters that are optimal for your memory and the content you're studying. 
+If you have decks that vary wildly in subjective difficulty, it
 is recommended to assign them separate presets, as the parameters for easier
 decks will be different from harder decks. There is no need to optimize your
 parameters frequently: once every month is sufficient.
@@ -466,11 +477,15 @@ You can enable **Check health when optimizing (slow)** to check how well FSRS ca
 
 ### Reschedule Cards on Change
 
-This option controls whether the due dates of cards will be changed when you enable FSRS, change desired retention, or change the parameters. The default is not to reschedule cards: future reviews will use the new scheduling, but there will be no immediate change to your workload. If rescheduling is enabled, the due dates of cards will be changed. Depending on your desired retention, it will often result in a large number of cards becoming due, so **this option is not recommended** when first switching from SM-2.
+This option controls whether the due dates of cards will be changed when you enable FSRS, change desired retention, or change the parameters. 
+The default is not to reschedule cards: future reviews will use the new scheduling, but there will be no immediate change to your workload. 
+If rescheduling is enabled, the due dates of cards will be changed. Depending on your desired retention, 
+it will often result in a large number of cards becoming due, so **this option is not recommended** when first switching from SM-2.
 
 Use this option sparingly, as it will add a review entry to each of your cards, and increase the size of your collection.
 
-If you're first switching from SM-2 and still wish to use this option, we recommend you first create a backup, enable FSRS with rescheduling, and then if needed, you can undo or restore from the backup.
+If you're first switching from SM-2 and still wish to use this option, we recommend you first create a backup, 
+enable FSRS with rescheduling, and then if needed, you can undo or restore from the backup.
 
 ### The Simulator
 
