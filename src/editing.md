@@ -430,6 +430,19 @@ sure to clone the existing Cloze type instead of another type of note.
 Things like formatting can be customized, but it is not possible to add
 extra card templates to the cloze note type.
 
+Anki now supports a new syntax that allows a single cloze deletion to appear on multiple cards:
+
+    {{c1::-té}}, {{c2::-sion}}, or {{c3::-tion}} are {{c1,2,3,4::feminine}}.
+
+This creates 4 cards, each hiding “feminine” in a different context.
+The same result can however still be achieved with the older nested syntax:
+
+    {{c1::-té}}, {{c2::-sion}}, {{c3::-tion}} are {{c4::{{c3::{{c2::{{c1::feminine}}}}}}}}
+
+The new syntax is easier to read and write, while the old syntax is more verbose.
+
+*Note: The new multi-card syntax is only available in the latest Anki version (currently beta, but will be included in the next release).*
+
 ## Image Occlusion
 
 Anki 23.10+ supports Image Occlusion cards natively. An Image
@@ -533,7 +546,7 @@ Mac:
 - <http://www.macworld.com/article/1147039/os-x/accentinput.html>
   
 Linux:
-- Gnome: <https://help.gnome.org/users/gnome-help/stable/tips-specialchars.html.en>
+- Gnome: <https://help.gnome.org//gnome-help/tips-specialchars.html>
 - KDE Plasma: <https://userbase.kde.org/Tutorials/ComposeKey>
 
 ### Adding keyboard layouts for specific languages
