@@ -12,8 +12,10 @@ internal structures, and optimizes the file.
 When you check the database, your tag list is also rebuilt. When you
 delete individual decks or cards, Anki does not update the list of used
 tags, as it's inefficient to do so. If you want to clear old tags out
-from the list that are no longer in use, checking your database is the
-way to do it.
+from the list that are no longer in use, checking your database is one
+way to do it. \[Note: The clearing out of unused tags is not synced to
+other devices with the rest of your collection, so you will need to run
+Check Database separately on each device.\]
 
 Please note that Anki will automatically optimize your collection once
 every 2 weeks. This optimization ensures the collection performs well,
