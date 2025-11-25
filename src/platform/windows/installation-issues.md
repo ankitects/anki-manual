@@ -4,7 +4,7 @@ Some error messages you may encounter when installing Anki:
 
 <!-- toc -->
 
-Please also see [startup issues](./startup-issues.md).
+Also see [startup issues](./startup-issues.md).
 
 ## "Error opening file for writing"
 

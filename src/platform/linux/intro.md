@@ -2,7 +2,7 @@
 
 ## Installing & Upgrading Anki on Linux
 
-For instructions on how to install or upgrade Anki on Linux, please see:
+For instructions on how to install or upgrade Anki on Linux, see:
 - [Install & Upgrade](installing.md)
 
 ## Problems

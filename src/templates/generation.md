@@ -54,7 +54,7 @@ words of a set. You can accomplish this by adding an extra field to your
 note, and adding some text into it (such as "1") on the notes you want
 the extra card. Then in the card template, you can make the card’s
 creation depend on that field being non-empty. For more information on
-this, please see the conditional replacement section below.
+this, see the conditional replacement section below.
 
 ## Conditional Replacement
 
@@ -165,7 +165,7 @@ wish to keep an empty note, you can remove it with the Empty Cards function.
 
 ## Cloze Templates
 
-Please see the [cloze deletion](../editing.md#cloze-deletion) section for background info.
+See the [cloze deletion](../editing.md#cloze-deletion) section for background info.
 
 The cloze note type functions differently from regular note types.
 Instead of a customizable number of card types, it has a single type

@@ -109,7 +109,7 @@ On a Mac, you can customize the available voices:
 - Click on the system voice dropdown, and choose Customize.
 
 Some voices sound better than others, so experiment to choose the one
-you prefer. Please note that the Siri voice can only be used by Apple
+you prefer. Note that the Siri voice can only be used by Apple
 apps. Once you’ve installed new voices, you’ll need to restart Anki for
 the new voices to become available.
 
@@ -166,14 +166,14 @@ As with other fields, special field names are case sensitive - you must use
 
 It’s possible to add a field to the front or back of a card, but make it
 hidden until you explicitly show it. We call this a _hint field_. Before
-adding a hint, please bear in mind that the easier you make it to answer
+adding a hint, bear in mind that the easier you make it to answer
 a question in Anki, the less likely you are to remember that question
-when you encounter it in real life. Please have a read about the
+when you encounter it in real life. Have a read about the
 "minimum information principle" on
 <https://super-memory.com/articles/20rules.htm> before proceeding.
 
 First, you’ll need to add a field to store the hint in if you have not
-already. Please see the [fields](../editing.md#customizing-fields) section if you’re not sure how
+already. See the [fields](../editing.md#customizing-fields) section if you’re not sure how
 to do this.
 
 Assuming you’ve created a field called MyField, you can tell Anki to
@@ -337,8 +337,8 @@ importing/exporting, and so on. Examples that won’t work:
 
     [latex]{{Field 1}}[/latex]
 
-Instead, you should include the media references in the field. Please
-see the [importing section](../importing/text-files.md#importing-media) for more information.
+Instead, you should include the media references in the field.
+See the [importing section](../importing/text-files.md#importing-media) for more information.
 
 ## Checking Your Answer
 
