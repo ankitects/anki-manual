@@ -75,7 +75,7 @@ errors. After installing the latest Anki version and ensuring all Windows
 updates are installed, instead of running Anki directly, press the <kbd>Windows</kbd> key (or open the Start menu), type `cmd`, and launch Command Prompt. When the terminal window opens, paste the following command, and press <kbd>Enter</kbd>. (The path will be different if Anki is installed in a location that is not the default.)
 
 ```
-%LocalAppData%\Programs\Anki\anki-console.bat
+%LocalAppData%\Programs\Anki\anki-console.exe
 ```
 
 Presumably Anki will fail to open like before, but the output in the terminal window may reveal something about
