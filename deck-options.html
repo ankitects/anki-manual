@@ -292,7 +292,7 @@ subdecks of the currently selected deck.</li>
 controls the delay after failing a card, cards that you failed before
 changing this option will still have the old delay, not the new one.</p>
 <h2 id="subdecks"><a class="header" href="#subdecks">Subdecks</a></h2>
-<p>If your deck has subdecks, and you wish one or more subdecks to have different settings to the parent decks, you can assign those subdecks to different presets.
+<p>If your deck has subdecks, and you wish one or more of them to have different settings from the parent deck, you can assign those subdecks to separate presets.
 When Anki shows a card, it will check which subdeck the card is in, and use the options
 for that deck. There are two exceptions:</p>
 <ul>
@@ -370,9 +370,9 @@ so those learning cards will be subject to the review limit.</p>
 catch up with that backlog. Continuing to introduce new cards when you’re already behind can
 make the backlog worse.</p>
 <h3 id="limits-start-from-top"><a class="header" href="#limits-start-from-top">Limits Start From Top</a></h3>
-<p>By default, the daily limits of a higher-level deck do not apply if you select one of its subdecks. A parent deck can have a new card limit of 10 cards/day and its subdecks can have a new card limit of 20 cards/day. The limits set on parent deck do not affect the number of new cards you can study from its subdeck.</p>
+<p>By default, the daily limits of a higher-level deck do not apply if you select one of its subdecks. A parent deck can have a new card limit of 10 cards/day and its subdecks can have a new card limit of 20 cards/day. The limits set on the parent deck do not affect the number of new cards you can study from its subdeck.</p>
 <p>When this option is enabled, the limits set on higher-level decks also apply to their subdecks when a subdeck is selected. In the previous example, you will be able to study only 10 new cards from the subdecks instead of 20 new cards.</p>
-<p>This option can be useful if you wish to study individual subdecks, while enforcing a total limit on cards all the subdecks.</p>
+<p>This option can be useful if you wish to study individual subdecks, while enforcing a total limit on cards in all the subdecks.</p>
 <h2 id="new-cards"><a class="header" href="#new-cards">New Cards</a></h2>
 <p>The options here only affect new cards and
 <a href="getting-started.html#card-states">learning cards</a>. Once a card
@@ -409,7 +409,7 @@ early by default. To turn this off or change the amount of time to look ahead, s
 With small steps, the cards are shown as soon as the delay has passed,
 in preference to review cards and new cards. This is done so that
 you can answer the card as closely to your requested delay as possible.
-In contrast, if the step crosses a day boundary, the delay is automatically converted to days. For example, if next day starts after 5 hours and the delay is 6 hours, Anki converts the delay to 1 day.</p>
+In contrast, if the step crosses a day boundary, the delay is automatically converted to days. For example, if the next day starts after 5 hours and the delay is 6 hours, Anki converts the delay to 1 day.</p>
 <h3 id="graduating-interval"><a class="header" href="#graduating-interval">Graduating Interval</a></h3>
 <p>The number of days to wait before showing a card again, after the Good button is used on the final learning step. This means that it is the first interval
 after the learning card graduates. Please see the example
@@ -622,9 +622,9 @@ sure you clear out the custom scheduling section before enabling FSRS.</li>
 <li>Enable FSRS under the “FSRS” section, at the bottom of the deck options page. FSRS can only be enabled globally; you cannot enable it for some presets and disable it for others.</li>
 <li>Ensure that all your learning and re-learning steps are shorter than 1d and can be completed on the same day. 23h is not recommended even though it’s less than one day because you won’t be able to finish this step on the same day as your first review. Steps such as 10m or 30m are good.</li>
 <li>Click the “Optimize” button under the “FSRS parameters” field. If you see a message that says “The FSRS parameters currently appear to be optimal”, that’s fine.</li>
-<li>Choose a value of desired retention: the proportion of cards recalled successfully when they are due. <strong>This is the most important setting in FSRS. Higher retention leads to shorter intervals and more reviews per day.</strong> The default is 90%, which offers a good balance of retention and workload. Above 90% the workload increases very quickly, and above 97% the workload can be overwhelming. You can use <a href="#compute-minimum-recommended-retention">“Compute minimum recommended retention”</a> to help you choose the value of desired retention.
-Parameters and desired retention are preset-specific, you can make multiple presets with different parameters and desired retention.</li>
+<li>Choose a value of desired retention: the proportion of cards recalled successfully when they are due. <strong>This is the most important setting in FSRS. Higher retention leads to shorter intervals and more reviews per day.</strong> The default is 90%, which offers a good balance of retention and workload. Above 90% the workload increases very quickly, and above 97% the workload can be overwhelming. You can use <a href="#compute-minimum-recommended-retention">“Compute minimum recommended retention”</a> to help you choose the value of desired retention.</li>
 </ul>
+<p>Parameters and desired retention are preset-specific, so you can create multiple presets with different settings.</p>
 <p>FSRS can adapt to almost any habit, except for one: pressing “Hard” instead of “Again” when you forget the information. When you press “Hard”, FSRS assumes you have recalled the information correctly (though with hesitation and a lot of mental effort). If you press “Hard” when you have failed to recall the information, all intervals will be unreasonably high. So, if you have this habit, please change it and use “Again” when you forget the information.</p>
 <p>Regarding add-on compatibility, as a general rule of thumb, if an add-on affects intervals and scheduling in some way, it shouldn’t be used with FSRS.</p>
 <h3 id="desired-retention"><a class="header" href="#desired-retention">Desired Retention</a></h3>
@@ -657,8 +657,7 @@ number, and recommend you keep it lower than <code>0.97</code> and higher than t
 <p><strong>Optimize FSRS Parameters</strong></p>
 <p>The FSRS optimizer uses machine learning to learn your memory patterns and find parameters that best fit your review history. To do this, the optimizer requires several reviews to fine-tune the parameters.</p>
 <p>When you click the <strong>Optimize</strong> button, FSRS will analyze your review history, and generate parameters that are optimal for your memory and the content you’re studying. If you have decks that vary wildly in subjective difficulty, it
-is recommended to assign them separate presets, as the parameters for easier
-decks will be different from harder decks. There is no need to optimize your
+is recommended to assign them separate presets, as their optimal parameters will differ. There is no need to optimize your
 parameters frequently: once every month is sufficient.</p>
 <p>By default, parameters are calculated from the review history of all
 decks using the current preset. You can optionally <a href="./searching.html">adjust the search</a>
