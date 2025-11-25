@@ -195,7 +195,11 @@
 <li><a href="#field-references">Field References</a></li>
 </ul>
 </li>
-<li><a href="#checking-your-answer">Checking Your Answer</a></li>
+<li><a href="#checking-your-answer">Checking Your Answer</a>
+<ul>
+<li><a href="#ignoring-diacritics">Ignoring Diacritics</a></li>
+</ul>
+</li>
 </ul>
 <h2 id="basic-replacements"><a class="header" href="#basic-replacements">Basic Replacements</a></h2>
 <p>The most basic template looks something like this:</p>
@@ -492,7 +496,7 @@ edit your front template so that it looks like this:</p>
 <pre><code>{{Native Word}}
 {{type:Foreign Word}}
 </code></pre>
-<p>Note that we have added <code>type:</code> in front of the field we want to
+<p>Here, we have added <code>type:</code> in front of the field we want to
 compare. Since FrontSide is on the back of the card, the type answer box
 will appear on the back as well.</p>
 <p>When reviewing, Anki will display a text box where you can type in the
@@ -500,6 +504,7 @@ answer, and upon hitting <kbd>Enter</kbd> or showing the answer, Anki will show 
 which parts you got right and which parts you got wrong. The text box’s
 font size will be the size you configured for that field (via the
 “Fields” button when editing).</p>
+<p>Note that the type answer boxes don’t appear in the preview dialog or in AnkiWeb.</p>
 <p>This feature does not change how the cards are answered, so it’s still
 up to you to decide how well you remembered or not.</p>
 <p>Only one typing comparison can be used on a card. If you add the above
@@ -530,13 +535,14 @@ template, so the back looks something like this:</p>
 {{type:cloze:Text}}
 {{Extra}}
 </code></pre>
-<p>Note that since the cloze type does not use FrontSide, this must be
-added to both sides on a cloze note type.</p>
 <p>If there are multiple sections elided, you can separate the answers in
 the text box with a comma.</p>
-<p>Type answer boxes will not appear in the <a href="intro.html">“preview” dialog</a> in the browser. When you review or look at
-the preview in the card types window, they will display.</p>
-<p>Type answer boxes will not be displayed when you review your cards on <a href="../syncing.html">ankiweb.net</a>.</p>
+<h3 id="ignoring-diacritics"><a class="header" href="#ignoring-diacritics">Ignoring Diacritics</a></h3>
+<p>If you don’t want Anki to compare accents on characters in your typed input with the correct answer, you can do so by using <code>type:nc</code> in your fields.</p>
+<pre><code>{{type:nc:Front}}
+</code></pre>
+<p>This makes sure a difference in accents isn’t marked as incorrect by Anki.
+For example, <code>بطيخ</code> would be treated the same as <code>بَطِّيخ</code> or <code>elite</code> would be treated same as <code>élite</code>.</p>
 
                     </main>
 
