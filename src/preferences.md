@@ -139,7 +139,18 @@ When enabled, media will also be synced with AnkiWeb.
 **Automatically sync on profile open/close**\
 Disable this if you don't want an automatic sync with AnkiWeb when opening / closing a [profile](./profiles.md).
 
-**Periodically sync media**
+**Periodically sync media**\
+Enable this setting if you want to automatically sync your media every 15
+minutes. Without this preference enabled, media would sync in bulk during normal
+syncs. You might want to enable this to avoid large media download / upload on
+normal syncs, e.g. if you have a slower internet connection.
+
+```admonish example
+Let's say you create new anki cards and many of those cards contain media files.
+If you add cards for an hour and have this setting turned on, then there will be
+4 smaller media uploads in total. Without this setting, you would have to upload
+the entire media with the next normal sync, which might take more time.
+```
 
 **On next sync, force changes in one direction**\
 When this option is enabled, the next sync will
