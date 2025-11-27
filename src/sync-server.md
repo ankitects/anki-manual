@@ -135,6 +135,7 @@ that the server binds to.
 
 ## Client Setup
 
+### Server URL
 You'll need to determine your computer's network IP address, and then
 point each of your Anki clients to the address, e.g something like
 `http://192.168.1.200:8080/`. The URL can be configured in the preferences.
@@ -148,6 +149,9 @@ Older desktop clients required you to define `SYNC_ENDPOINT` and
 `http://192.168.1.200:8080/sync/` and `http://192.168.1.200:8080/msync/`
 respectively. AnkiDroid clients before 2.16 require separate configuration for
 the two endpoints.
+
+### Credentials
+To be able to synchronize, put your user credential (`SYNC_USER1` for example) in the **AnkiWeb account** section of the preferences.
 
 ## Reverse Proxies
 
