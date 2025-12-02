@@ -178,6 +178,9 @@ matches notes with "uber", "über", "Über" and so on.
 `nc:は`\
 matches "は", "ば", and "ぱ".
 
+`nc:heisen` or `nc:heißen`\
+matches notes with "heißen" and with "heisen", since ß is treated as s (not ss) and s is treated as ß.
+
 Searches that ignore combining characters are slower than regular searches.
 
 ## Regular expressions
