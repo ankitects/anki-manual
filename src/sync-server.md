@@ -15,7 +15,7 @@ Things to be aware of:
   they tend to take time to catch up when the sync protocol changes, so they
   are not recommended.
 - The messages inside Anki will use the term "AnkiWeb" even if a custom server
-  has been configured, (e.g "Cannot connect to AnkiWeb" when your server is down).
+  has been configured, (e.g. "Cannot connect to AnkiWeb" when your server is down).
 
 ## Installing/Running
 
@@ -115,7 +115,7 @@ the PHC Format.
 
 The server needs to store a copy of your collection and media in a folder.
 By default it is ~/.syncserver; you can change this by defining
-a `SYNC_BASE` environmental variable.
+a `SYNC_BASE` environment variable.
 
 - This must not be the same location as your normal Anki data folder, as the
   server and client must store separate copies.
@@ -153,7 +153,7 @@ the two endpoints.
 
 If using a reverse proxy to provide HTTPS access (e.g. nginx), and binding to a subpath
 (e.g. `http://example.com/custom/` -> `http://localhost:8080/`), you must make sure to
-including a trailing slash when configuring Anki. If you put `http://example.com/custom`
+include a trailing slash when configuring Anki. If you put `http://example.com/custom`
 instead, it will not work.
 
 On iOS, TLS 1.3 is not supported, so your reverse proxy will need to have TLS 1.2

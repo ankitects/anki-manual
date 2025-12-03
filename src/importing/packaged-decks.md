@@ -12,7 +12,7 @@ transfer decks between devices or profiles. However, when importing
 a deck shared by someone else, you typically do not want to adopt their card intervals
 or review history.
 
-If you encounter imported cards with unexpectedly large intevals, the deck author may
+If you encounter imported cards with unexpectedly large intervals, the deck author may
 accidentally have included their scheduling information. You can use the
 [Set Due Date feature](../browsing.md#cards) to reset the imported cards. On Anki
 23.10 and later, you can remove any scheduling information during the import process
