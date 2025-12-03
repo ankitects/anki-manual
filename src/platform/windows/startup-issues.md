@@ -74,13 +74,13 @@ Starting Anki from a terminal may reveal a bit more information about some
 errors. After installing the latest Anki version and ensuring all Windows
 updates are installed, instead of running Anki directly, press the <kbd>Windows</kbd> key (or open the Start menu), type `cmd`, and launch Command Prompt. When the terminal window opens, paste the following command, and press <kbd>Enter</kbd>. (The path will be different if Anki is installed in a location that is not the default.)
 
-For Anki 25.07 and later:
+_For Anki 25.07 and later, paste_
 
 ```
 %LocalAppData%\Programs\Anki\anki-console.exe
 ```
 
-For Anki versions before 25.07:
+_For Anki versions before 25.07, paste_
 
 ```
 %LocalAppData%\Programs\Anki\anki-console.bat
