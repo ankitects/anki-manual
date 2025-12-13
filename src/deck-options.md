@@ -428,6 +428,8 @@ but you will also forget more cards. As desired retention approaches 100%,
 the workload increases drastically. For this reason, we suggest you be conservative when adjusting this number, 
 and recommend you keep it lower than 97%.
 
+In the latest version of Anki, you can set different values of desired retention for different decks within the same preset.
+
 ### Help Me Decide
 
 **Help Me Decide (Experimental)** allows you to simulate workload at different levels of retention. 
