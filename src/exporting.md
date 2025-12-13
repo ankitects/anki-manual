@@ -56,7 +56,7 @@ collection package. To delete unused media, use **Tools > Check Media**.
 
 ##### Include Media
 If true, local media will be included.
-If false, the `.apkg` will not contain any audio, images or other media.
+If false, the `.colpkg` will not contain any audio, images or other media.
 
 ##### Support older Anki versions (slower/larger files)
 If true, a legacy version of the file is created. Turn this on if you need to
