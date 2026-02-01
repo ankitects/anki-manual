@@ -80,7 +80,7 @@ For Anki 25.07 and later, paste
 %LocalAppData%\Programs\Anki\anki-console.exe
 ```
 
-_For Anki versions before 25.07, paste_
+For Anki versions before 25.07, paste
 
 ```
 %LocalAppData%\Programs\Anki\anki-console.bat
