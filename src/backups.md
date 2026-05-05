@@ -83,7 +83,7 @@ you needed to split the file into separate files for each note type
 first.
 
 However, profiles created in Anki versions newer than 25.09.2 have the
-following snippet at the top of deleted.txt (hence allowing you to
+following snippet at the top of `deleted.txt` (hence allowing you to
 import `deleted.txt` without the need to split the file):
 
 ```
