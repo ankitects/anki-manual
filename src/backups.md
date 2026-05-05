@@ -91,5 +91,6 @@ import `deleted.txt` without the need to split the file):
 #notetype column:2
 ```
 
-Please note that `deleted.txt` is unique to each profile
-and is not interchangeable between different user profiles.
+```admonish note
+`deleted.txt` is unique to each profile and is not interchangeable between different user profiles.
+```
