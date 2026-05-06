@@ -4610,6 +4610,7 @@ day like you would for new cards. Up to you.
 <li><a href="searching.html#limiting-to-a-field">Limiting to a field</a></li>
 <li><a href="searching.html#tags-decks-cards-and-notes">Tags, decks, cards and notes</a></li>
 <li><a href="searching.html#ignoring-accentscombining-characters">Ignoring accents/combining characters</a></li>
+<li><a href="searching.html#searching-in-cloze-deletions">Searching in cloze deletions</a></li>
 <li><a href="searching.html#regular-expressions">Regular expressions</a></li>
 <li><a href="searching.html#card-state">Card state</a></li>
 <li><a href="searching.html#flags">Flags</a></li>
@@ -4772,6 +4773,15 @@ matches “は”, “ば”, and “ぱ”.</p>
 <p><code>nc:heisen</code> or <code>nc:heißen</code><br />
 matches notes with “heißen” and with “heisen”, since ß is treated as s (not ss) and s is treated as ß.</p>
 <p>Searches that ignore combining characters are slower than regular searches.</p>
+<h2 id="searching-in-cloze-deletions"><a class="header" href="#searching-in-cloze-deletions">Searching in cloze deletions</a></h2>
+<p>Requires Anki 25.07+.</p>
+<p>You can use <code>sc:</code> (sc stands for “strip clozes”) to search through the full text
+of notes with cloze deletions, ignoring the cloze markup. For example:</p>
+<p><code>sc:mnemonic</code><br />
+matches a note containing <code>{{c1::mn}}{{c2::e}}monic</code>.</p>
+<p><code>sc:capital of France</code><br />
+matches a note containing <code>The {{c1::capital}} of {{c2::France}}</code>.</p>
+<p>Searches that strip cloze deletions are slower than regular searches.</p>
 <h2 id="regular-expressions"><a class="header" href="#regular-expressions">Regular expressions</a></h2>
 <p>Anki 2.1.24+, AnkiMobile 2.0.60+ and AnkiDroid 2.17+ support searching in notes with “regular expressions”,
 a standard and powerful way of searching in text.</p>
