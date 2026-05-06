@@ -18,7 +18,7 @@ If the problem does not occur again, you can skip the following steps.
 Please close Anki, then open it in safe mode by holding down the
 <kbd>Shift</kbd> key while starting Anki. Keep holding <kbd>Shift</kbd> down
 until the on-screen message informs you that Anki has started in safe mode.
-If you're on Linux and that didn't work, run 'anki --safemode'.
+If you're on Linux and that didn't work, run `anki --safemode`.
 
 If the problem goes away, that indicates an add-on is causing the problem.
 Remove any add-ons you don't need, and disable half of the others. If the
