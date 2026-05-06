@@ -183,6 +183,21 @@ matches notes with "heißen" and with "heisen", since ß is treated as s (not ss
 
 Searches that ignore combining characters are slower than regular searches.
 
+## Searching in cloze deletions
+
+Requires Anki 25.07+.
+
+You can use `sc:` (sc stands for “strip clozes”) to search through the full text
+of notes with cloze deletions, ignoring the cloze markup. For example:
+
+`sc:mnemonic`\
+matches a note containing `{{c1::mn}}{{c2::e}}monic`.
+
+`sc:capital of France`\
+matches a note containing `The {{c1::capital}} of {{c2::France}}`.
+
+Searches that strip cloze deletions are slower than regular searches.
+
 ## Regular expressions
 
 Anki 2.1.24+, AnkiMobile 2.0.60+ and AnkiDroid 2.17+ support searching in notes with "regular expressions",
