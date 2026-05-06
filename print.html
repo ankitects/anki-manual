@@ -3211,7 +3211,25 @@ When enabled, simple text searches automatically <a href="./searching.html#ignor
 When enabled, media will also be synced with AnkiWeb.</p>
 <p><strong>Automatically sync on profile open/close</strong><br />
 Disable this if you don’t want an automatic sync with AnkiWeb when opening / closing a <a href="./profiles.html">profile</a>.</p>
-<p><strong>Periodically sync media</strong></p>
+<p><strong>Periodically sync media</strong><br />
+Enable this setting if you want to automatically sync your media every 15
+minutes. Without this preference enabled, media would sync in bulk during normal
+syncs. You might want to enable this to avoid large media download / upload on
+normal syncs, e.g. if you have a slower internet connection.</p>
+<div id="admonition-example" class="admonition admonish-example" role="note" aria-labelledby="admonition-example-title">
+<div class="admonition-title">
+<div id="admonition-example-title">
+<p>Example</p>
+</div>
+<a class="admonition-anchor-link" href="preferences.html#admonition-example"></a>
+</div>
+<div>
+<p>Let’s say you create new anki cards and many of those cards contain media files.
+If you add cards for an hour and have this setting turned on, then there will be
+4 smaller media uploads in total. Without this setting, you would have to upload
+the entire media with the next normal sync, which might take more time.</p>
+</div>
+</div>
 <p><strong>On next sync, force changes in one direction</strong><br />
 When this option is enabled, the next sync will
 ask you whether you wish to upload or download. This is useful if
