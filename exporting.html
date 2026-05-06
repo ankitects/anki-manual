@@ -178,8 +178,18 @@
 <li><a href="#text-files">Text Files</a></li>
 <li><a href="#packaged-decks">Packaged Decks</a>
 <ul>
-<li><a href="#collection-colpkg">Collection (.colpkg)</a></li>
-<li><a href="#deck-apkg">Deck (.apkg)</a></li>
+<li><a href="#collection-colpkg">Collection (.colpkg)</a>
+<ul>
+<li><a href="#what-happens-on-import">What Happens on Import?</a></li>
+<li><a href="#export-options">Export Options</a></li>
+</ul>
+</li>
+<li><a href="#deck-apkg">Deck (.apkg)</a>
+<ul>
+<li><a href="#what-happens-on-import-1">What Happens on Import?</a></li>
+<li><a href="#export-options-1">Export Options</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -205,35 +215,91 @@ packaged decks to transfer cards between people, or for backing up parts
 of your collection.</p>
 <p>There are two different kinds of packaged decks.</p>
 <h3 id="collection-colpkg"><a class="header" href="#collection-colpkg">Collection (.colpkg)</a></h3>
-<p>When you export all decks with scheduling included, this is called a
-“collection package”. Anki will copy your entire collection into a file
-ending in .colpkg, and place it on your desktop. A collection package is
-used to back up your collection, or copy it to another device.</p>
+<p><code>.colpkg</code> stands for “Anki Collection Package”. Exporting it will export your
+entire collection. The collection contains all decks with scheduling included.
+You can use the collection package to back up your collection, or copy it to
+another device.</p>
+<div id="admonition-info" class="admonition admonish-info" role="note" aria-labelledby="admonition-info-title">
+<div class="admonition-title">
+<div id="admonition-info-title">
+<p>Info</p>
+</div>
+<a class="admonition-anchor-link" href="#admonition-info"></a>
+</div>
+<div>
 <p>Collection packages created with previous versions of Anki were called
-collection.apkg.</p>
-<p>When this file is later imported, Anki will delete all the current cards
-in the collection, and replace the collection with the items in the
-file. This is useful for copying your collection back and forth between
-devices.</p>
+<code>collection.apkg</code>.</p>
+</div>
+</div>
+<h4 id="what-happens-on-import"><a class="header" href="#what-happens-on-import">What Happens on Import?</a></h4>
+<p>If you import a <code>.colpkg</code> file, then all of your current cards in Anki will be
+deleted and replaced by the cards from the <code>.colpkg</code> file. This is useful for
+copying your collection back and forth between devices.</p>
 <p>Existing media in your collection is not deleted when you import a
-collection package. To delete unused media, use Tools&gt;Check Media.</p>
-<p>If you choose Anki 2.1.50+ Collection Package format, imports and exports
-will be faster, and media files will be compressed, but the resulting
-.colpkg file will not be readable by older Anki clients.</p>
+collection package. To delete unused media, use <strong>Tools &gt; Check Media</strong>.</p>
+<h4 id="export-options"><a class="header" href="#export-options">Export Options</a></h4>
+<h5 id="include-media"><a class="header" href="#include-media">Include Media</a></h5>
+<p>If true, local media will be included.
+If false, the <code>.colpkg</code> will not contain any audio, images or other media.</p>
+<h5 id="support-older-anki-versions-slowerlarger-files"><a class="header" href="#support-older-anki-versions-slowerlarger-files">Support older Anki versions (slower/larger files)</a></h5>
+<p>If true, a legacy version of the file is created. Turn this on if you need to
+support older clients.
+If false, a modern version of the file is created. Imports and exports will be
+faster, and media files will be compressed, but the resulting file will not be
+readable by older Anki clients.</p>
 <h3 id="deck-apkg"><a class="header" href="#deck-apkg">Deck (.apkg)</a></h3>
-<p>Deck packages contain a single deck (and any child decks it may have).
-They have a filename ending with .apkg, but a filename other than
-collection.apkg. When you import a deck package, Anki will add the
-contents into your collection, rather than overwriting your collection.</p>
+<p><code>.apkg</code> stands for “Anki Deck Package”. You can use it to export a single deck
+(and any child decks it may have).</p>
+<div id="admonition-note" class="admonition admonish-note" role="note" aria-labelledby="admonition-note-title">
+<div class="admonition-title">
+<div id="admonition-note-title">
+<p>Note</p>
+</div>
+<a class="admonition-anchor-link" href="#admonition-note"></a>
+</div>
+<div>
+<p>If the filename is <code>collection.apkg</code>, then it is a collection package instead.
+All other filenames ending with <code>.apkg</code> are deck packages.</p>
+</div>
+</div>
+<h4 id="what-happens-on-import-1"><a class="header" href="#what-happens-on-import-1">What Happens on Import?</a></h4>
+<p>When you import a deck package, Anki will add the contents into your collection,
+rather than overwriting your collection.</p>
 <p>If some notes in the deck package have previously been imported, Anki
-will keep the version with the most recent modification time. So if you
-download an updated deck, the edits that have been made in the updated
-version will be made in your collection as well, but if you re-import an
-unchanged deck after making edits in your collection, the changes in
-your collection will be kept.</p>
-<p>If you choose not to include scheduling information, Anki will assume
-that you are sharing the deck with other people, and will remove marked
-and leech tags so that they will have a clean copy of it.</p>
+will keep the version with the most recent modification time.</p>
+<div id="admonition-example" class="admonition admonish-example" role="note" aria-labelledby="admonition-example-title">
+<div class="admonition-title">
+<div id="admonition-example-title">
+<p>Example</p>
+</div>
+<a class="admonition-anchor-link" href="#admonition-example"></a>
+</div>
+<div>
+<p>You have a deck with the name <em>Biology</em> and use it in Anki. You now download an
+updated version of that same deck. If you import the updated deck, then Anki
+will incorporate all the edits into your own Anki collection.</p>
+<p>If you re-import an unchanged <code>.apkg</code> after making changes in your own
+collection (e.g. editing cards), then Anki will keep the changes in your
+collection instead of overwriting them.</p>
+</div>
+</div>
+<h4 id="export-options-1"><a class="header" href="#export-options-1">Export Options</a></h4>
+<h5 id="include-scheduling-information"><a class="header" href="#include-scheduling-information">Include Scheduling Information</a></h5>
+<p>If true, scheduling information such as your review history will be exported.
+If false, Anki will assume that you are sharing the deck with other people, and
+will remove the entire scheduling information, including marked and leech tags.
+That way users will have a clean copy of your deck.</p>
+<h5 id="include-deck-presets"><a class="header" href="#include-deck-presets">Include Deck Presets</a></h5>
+<p>If true, deck presets will be included.</p>
+<h5 id="include-media-1"><a class="header" href="#include-media-1">Include Media</a></h5>
+<p>If true, local media will be included.
+If false, the <code>.apkg</code> will not contain any audio, images or other media.</p>
+<h5 id="support-older-anki-versions-slowerlarger-files-1"><a class="header" href="#support-older-anki-versions-slowerlarger-files-1">Support older Anki versions (slower/larger files)</a></h5>
+<p>If true, a legacy version of the file is created. Turn this on if you need to
+support older clients.
+If false, a modern version of the file is created. Imports and exports will be
+faster, and media files will be compressed, but the resulting file will not be
+readable by older Anki clients.</p>
 
                     </main>
 
