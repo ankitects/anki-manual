@@ -5373,12 +5373,29 @@ against your device being lost or stolen. If you need to restore your collection
 you can force a one-way sync in the preferences screen, or sync from a new device, and then choose
 “Download”.</p>
 <h2 id="deletion-log"><a class="header" href="#deletion-log">Deletion log</a></h2>
-<p>Anki logs deleted notes to a text file called deleted.txt in your
+<p>Anki logs deleted notes to a text file called <code>deleted.txt</code> in your
 profile folder. These notes are in a text format that can be read by
-File&gt;Import, though please note the import feature only supports a
-single note type at one time, so if you have deleted notes from
-different note types, you’ll need to split the file into separate files
-for each note type first.</p>
+File&gt;Import. Historically, Anki only supported a single note type
+at one time. So, if you had deleted notes from different note types,
+you needed to split the file into separate files for each note type
+first.</p>
+<p>However, profiles created in Anki versions newer than 25.09.2 have the
+following snippet at the top of <code>deleted.txt</code> (hence allowing you to
+import <code>deleted.txt</code> without the need to split the file):</p>
+<pre><code>#guid column:1
+#notetype column:2
+</code></pre>
+<div id="admonition-note" class="admonition admonish-note" role="note" aria-labelledby="admonition-note-title">
+<div class="admonition-title">
+<div id="admonition-note-title">
+<p>Note</p>
+</div>
+<a class="admonition-anchor-link" href="backups.html#admonition-note"></a>
+</div>
+<div>
+<p><code>deleted.txt</code> is unique to each profile and is not interchangeable between different user profiles.</p>
+</div>
+</div>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="managing-files-and-your-collection"><a class="header" href="#managing-files-and-your-collection">Managing Files and Your Collection</a></h1>
 <ul>
 <li><a href="files.html#checking-your-collection">Checking Your Collection</a></li>
