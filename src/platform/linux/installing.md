@@ -14,7 +14,7 @@ Debian and derivatives, such as Ubuntu and [Chromebooks with Linux enabled](http
 installing:
 
 ```shell
-sudo apt install libxcb-xinerama0 libxcb-cursor0 libnss3
+sudo apt install libxcb-xinerama0 libxcb-cursor0 libnss3 libxcb-icccm4 libxcb-keysyms1
 ```
 
 If Anki fails to start after installing, you may be [missing other libraries](./missing-libraries.md).
