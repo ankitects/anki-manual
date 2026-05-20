@@ -17,8 +17,7 @@ protect you if your device breaks or is stolen. We recommend you combine them wi
 
 To restore from an automatic backup:
 
-- Open Anki, and choose Switch Profile from the File menu.
-- Click on the "Open Backup" button.
+- Click **File > Revert to Backup**.
 - Select the backup you wish to restore from.
 
 ```admonish warning
