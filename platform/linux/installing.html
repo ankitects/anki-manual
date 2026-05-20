@@ -192,6 +192,10 @@ instead.</p>
 installing:</p>
 <pre><code class="language-shell">sudo apt install libxcb-xinerama0 libxcb-cursor0 libnss3
 </code></pre>
+<p>Arch and derivatives, such as Manjaro, please use the following before
+installing:</p>
+<pre><code class="language-shell">sudo pacman -S libxinerama xcb-util-cursor nss
+</code></pre>
 <p>If Anki fails to start after installing, you may be <a href="./missing-libraries.html">missing other libraries</a>.</p>
 <p>If you’re on Ubuntu 24.04 and Anki won’t start, please see <a href="https://forums.ankiweb.net/t/issues-running-on-ubuntu-24-04/40974">this thread</a>.</p>
 <p>Anki’s build system only supports glibc, so musl-based distros are not currently supported.</p>
@@ -199,7 +203,7 @@ installing:</p>
 <p>To install Anki:</p>
 <ol>
 <li>Download Anki from <a href="https://apps.ankiweb.net">https://apps.ankiweb.net</a> to your Downloads folder.</li>
-<li>If zstd is not already installed on your system, you’ll need to install it (e.g <code>sudo apt install zstd</code>).</li>
+<li>If zstd is not already installed on your system, you’ll need to install it using your package manager (e.g <code>sudo apt install zstd</code> on Debian/Ubuntu, or <code>sudo pacman -S zstd</code> on Arch).</li>
 <li>Open a terminal and run the following commands, replacing the filename as appropriate.</li>
 </ol>
 <pre><code class="language-shell">tar xaf Downloads/anki-2XXX-linux-qt6.tar.zst
