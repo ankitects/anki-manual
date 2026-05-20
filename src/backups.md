@@ -1,6 +1,6 @@
 # Backups
 
-<!-- toc ->
+<!-- toc -->
 
 ## Automatic backups
 
