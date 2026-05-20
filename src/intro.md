@@ -28,7 +28,7 @@ translations may not always be up to date.
 - [Oʻzbekcha](https://itsbilolbek.github.io/anki-manual/)
 - [Polski](https://platynowy.github.io/anki-manual/)
 - [Português Brasileiro](https://mizerablebr.github.io/anki-manual/)
-- [русский язык](https://alexeygorelov.github.io/anki-manual-ru/)
+- [русский язык](https://andreykaiu.github.io/anki-manual-ru/)
 - [Українська](https://astropsy999.github.io/anki-manual/)
 - [العربية](https://abdnh.github.io/anki-manual/)
 - [فارسى](https://web.archive.org/web/20250328102629/http://ankidroid.ir/anki.pdf)
