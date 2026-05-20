@@ -2609,6 +2609,12 @@ could use the following template:</p>
 <li><a href="templates/styling.html#field-styling">Field Styling</a></li>
 <li><a href="templates/styling.html#audio-replay-buttons">Audio Replay Buttons</a></li>
 <li><a href="templates/styling.html#text-direction">Text Direction</a></li>
+<li><a href="templates/styling.html#displaying-code-snippets">Displaying Code Snippets</a>
+<ul>
+<li><a href="templates/styling.html#inline-code">Inline code</a></li>
+<li><a href="templates/styling.html#code-blocks">Code blocks</a></li>
+</ul>
+</li>
 <li><a href="templates/styling.html#other-html">Other HTML</a></li>
 <li><a href="templates/styling.html#browser-appearance">Browser Appearance</a></li>
 <li><a href="templates/styling.html#platform-specific-css">Platform-Specific CSS</a></li>
@@ -2793,6 +2799,22 @@ of only certain fields by wrapping their references in some HTML:</p>
 </code></pre>
 <p>To change the direction of fields in the editor, please see
 the <a href="templates/../editing.html#customizing-fields">editing</a> section.</p>
+<h2 id="displaying-code-snippets"><a class="header" href="#displaying-code-snippets">Displaying Code Snippets</a></h2>
+<p>If you want to include code in your Anki cards, you can use HTML tags to format
+text as code. For that, you need to open the
+<a href="templates/../editing.html#editing-features">HTML view</a>.</p>
+<h3 id="inline-code"><a class="header" href="#inline-code">Inline code</a></h3>
+<p>Wrap your text with the <code>&lt;code&gt;</code> tag:</p>
+<pre><code class="language-html">&lt;code&gt;console.log("Hello World!");&lt;/code&gt;
+</code></pre>
+<h3 id="code-blocks"><a class="header" href="#code-blocks">Code blocks</a></h3>
+<p>Use <code>&lt;pre&gt;&lt;code&gt;</code> for multi-line code:</p>
+<pre><code class="language-html">&lt;pre&gt;&lt;code&gt;
+function square(number) {
+  return number * number;
+};
+&lt;/code&gt;&lt;/pre&gt;
+</code></pre>
 <h2 id="other-html"><a class="header" href="#other-html">Other HTML</a></h2>
 <p>Your templates can contain arbitrary HTML, which means that all the
 layout possibilities used on internet web pages can also be used on your
