@@ -78,9 +78,9 @@ you can force a one-way sync in the preferences screen, or sync from a new devic
 
 ## Deletion log
 
-Anki logs deleted notes to a text file called deleted.txt in your
+Anki logs deleted notes to a text file called `deleted.txt` in your
 profile folder. These notes are in a text format that can be read by
-**File > Import**, though please note the import feature only supports a
-single note type at one time, so if you have deleted notes from
-different note types, you'll need to split the file into separate files
-for each note type first.
+**File > Import**. Historically, Anki only supported a single note type
+at one time. So, if you had deleted notes from different note types,
+you needed to split the file into separate files for each note type
+first.

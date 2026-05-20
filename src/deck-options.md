@@ -45,7 +45,7 @@ changing this option will still have the old delay, not the new one.
 
 ## Subdecks
 
-If your deck has subdecks, and you wish one or more subdecks to have different settings to the parent decks, you can assign those subdecks to different presets.
+If your deck has subdecks, and you wish one or more of them to have different settings from the parent deck, you can assign those subdecks to separate presets.
 When Anki shows a card, it will check which subdeck the card is in, and use the options
 for that deck. There are two exceptions:
 
@@ -132,13 +132,13 @@ If you have a backlog of overdue review cards, it is recommended that you stop i
 catch up with that backlog. Continuing to introduce new cards when you're already behind can
 make the backlog worse.
 
-### Limits Start From The Top
+### Limits Start From Top
 
-By default, the daily limits of a higher-level deck do not apply if you select one of its subdecks. A parent deck can have a new card limit of 10 cards/day and its subdecks can have a new card limit of 20 cards/day. The limits set on parent deck do not affect the number of new cards you can study from its subdeck.
+By default, the daily limits of a higher-level deck do not apply if you select one of its subdecks. A parent deck can have a new card limit of 10 cards/day and its subdecks can have a new card limit of 20 cards/day. The limits set on the parent deck do not affect the number of new cards you can study from its subdeck.
 
 When this option is enabled, the limits set on higher-level decks also apply to their subdecks when a subdeck is selected. In the previous example, you will be able to study only 10 new cards from the subdecks instead of 20 new cards.
 
-This option can be useful if you wish to study individual subdecks, while enforcing a total limit on cards all the subdecks.
+This option can be useful if you wish to study individual subdecks, while enforcing a total limit on cards in all the subdecks.
 
 ## New Cards
 
@@ -179,7 +179,7 @@ Anki treats small steps and steps that [cross a day boundary](./preferences.md#r
 With small steps, the cards are shown as soon as the delay has passed,
 in preference to review cards and new cards. This is done so that
 you can answer the card as closely to your requested delay as possible.
-In contrast, if the step crosses a day boundary, the delay is automatically converted to days. For example, if next day starts after 5 hours and the delay is 6 hours, Anki converts the delay to 1 day.
+In contrast, if the step crosses a day boundary, the delay is automatically converted to days. For example, if the next day starts after 5 hours and the delay is 6 hours, Anki converts the delay to 1 day.
 
 ### Graduating Interval
 
@@ -342,6 +342,7 @@ For more info about burying cards, please see [this section](./studying.md#sibli
   the question side is played when you use replay action on the answer side. Note that, Anki [does not automatically play](./templates/fields.md#special-fields) audio from the `{{FrontSide}}` field. This option does not influence the behaviour of automatic play.
 
 ## Timers
+
 <a id="timer"></a>
 
 Anki monitors how long it takes you to answer each card, so that it
@@ -355,7 +356,7 @@ not influence scheduling.
   or have been distracted, and caps the recorded time at 60 seconds, so
   that you don’t end up with inaccurate statistics.
 - This internal timer runs from when the question is shown until you press a button to grade your answer. If you consistently
-  spend longer than 60 seconds on a card, 
+  spend longer than 60 seconds on a card,
   you may want to consider either raising
   this limit, or even better, making your cards simpler.
 
@@ -404,7 +405,8 @@ become available, and SM-2 specific options, such as **Graduating interval**,
 - Ensure that all your learning and re-learning steps are shorter than 1d and can be completed on the same day. 23h is not recommended even though it's less than one day because you won't be able to finish this step on the same day as your first review. Steps such as 10m or 30m are good.
 - Click the "Optimize" button under the "FSRS parameters" field. If you see a message that says "The FSRS parameters currently appear to be optimal", that's fine.
 - Choose a value of desired retention: the proportion of cards recalled successfully when they are due. **This is the most important setting in FSRS. Higher retention leads to shorter intervals and more reviews per day.** The default is 90%, which offers a good balance of retention and workload. Above 90% the workload increases very quickly, and above 97% the workload can be overwhelming. You can use ["Compute minimum recommended retention"](#compute-minimum-recommended-retention) to help you choose the value of desired retention.
-Parameters and desired retention are preset-specific, you can make multiple presets with different parameters and desired retention.
+
+Parameters and desired retention are preset-specific, so you can create multiple presets with different settings.
 
 FSRS can adapt to almost any habit, except for one: pressing "Hard" instead of "Again" when you forget the information. When you press "Hard", FSRS assumes you have recalled the information correctly (though with hesitation and a lot of mental effort). If you press "Hard" when you have failed to recall the information, all intervals will be unreasonably high. So, if you have this habit, please change it and use "Again" when you forget the information.
 
@@ -446,8 +448,7 @@ FSRS parameters affect how cards are scheduled. Do not change the parameters man
 The FSRS optimizer uses machine learning to learn your memory patterns and find parameters that best fit your review history. To do this, the optimizer requires several reviews to fine-tune the parameters.
 
 When you click the **Optimize** button, FSRS will analyze your review history, and generate parameters that are optimal for your memory and the content you're studying. If you have decks that vary wildly in subjective difficulty, it
-is recommended to assign them separate presets, as the parameters for easier
-decks will be different from harder decks. There is no need to optimize your
+is recommended to assign them separate presets, as their optimal parameters will differ. There is no need to optimize your
 parameters frequently: once every month is sufficient.
 
 By default, parameters are calculated from the review history of all
@@ -491,15 +492,15 @@ You can use the simulator to get an estimate of your workload,
 either in reviews per day or in minutes of studying per day.
 
 - **Days to simulate** controls the duration of the simulated study history.
-- **Additional new cards to simulate** controls whether the simulator should 
-simulate more cards than this preset already has. For example, if you currently have 100 cards under this preset,
-and you set **Additional new cards to simulate** to 50, the simulator will simulate a total of 150 cards.
-This can be useful if you plan to create more new cards in the future.
-- **New cards/day** and **Maximum reviews/day** control how many new cards will be learned each day and 
-the maximum number of reviews per day.
+- **Additional new cards to simulate** controls whether the simulator should
+  simulate more cards than this preset already has. For example, if you currently have 100 cards under this preset,
+  and you set **Additional new cards to simulate** to 50, the simulator will simulate a total of 150 cards.
+  This can be useful if you plan to create more new cards in the future.
+- **New cards/day** and **Maximum reviews/day** control how many new cards will be learned each day and
+  the maximum number of reviews per day.
 - **Maximum interval** controls the maximum interval length (in days).
 
-To make the simulation as realistic as possible, the simulator takes into account the real memory states (difficulty, stability, retrievability) of your cards. 
+To make the simulation as realistic as possible, the simulator takes into account the real memory states (difficulty, stability, retrievability) of your cards.
 It also uses your FSRS parameters and the value of desired retention, therefore changing them will affect the simulation.
 
 #### Learning and Relearning Steps
@@ -521,7 +522,7 @@ contribute to long-term memory, so your time is
 better spent on other cards or a shorter study session.
 
 In the latest version of Anki you can let FSRS control short-term scheduling by leaving the (re)learning steps field empty. This is an experimental feature.
-Note that just because FSRS-5 *can* give you intervals shorter than one day doesn't necessarily mean that it *will*. Your **Again** interval can be one day long, or even longer.
+Note that just because FSRS-5 _can_ give you intervals shorter than one day doesn't necessarily mean that it _will_. Your **Again** interval can be one day long, or even longer.
 
 #### Add-On Compatibility
 
@@ -583,7 +584,7 @@ interval would be around 13 days).
 An extra multiplier that is applied to all reviews. At its default of 1.00 it
 does nothing. If you set it to 0.80, intervals will be generated at
 80% of their normal size (so a 10 day interval would become 8 days).
-You can thus use the multiplier to to make your reviews less or more frequent.
+You can thus use the multiplier to make your reviews less or more frequent.
 
 For moderately difficult material, the average user should find they
 remember approximately 90% of mature cards when they come up for review. You

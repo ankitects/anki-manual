@@ -52,7 +52,7 @@ and red when a full sync is required.
 You can watch a [related video](https://www.youtube.com/watch?v=phP9GGG-PxY) on this topic.
 
 Anki will synchronize any sounds and images used by your notes. It will
-notice when media has been added, removed or replaced in your [media folder](files.md#file-locations), but
+notice when media has been added, removed or replaced in your [media folder](files.md#user-data), but
 will not notice if you have made edits to existing files. To get your edits synced, you
 need to add, remove or replace a file as well.
 
@@ -90,7 +90,8 @@ operation. If you choose to continue, you’ll be asked to choose whether
 to keep the local copy or the copy on AnkiWeb when your collection is
 next synchronized.
 
-If certain problems are detected while syncing, it will also force a 
+If certain problems are detected while syncing, Anki forces a
+
 one-way sync. If you find this consistently happening, please post on our
 [support site](https://forums.ankiweb.net).
 
@@ -161,9 +162,9 @@ content, so everything will be in one place.
 
 ## AnkiWeb Data Deletion
 
-As AnkiWeb is a free service, we need to periodically delete unused account data 
+As AnkiWeb is a free service, we need to periodically delete unused account data
 to keep costs down. If you haven't accessed your account or synced in the last 6 months,
- the data on your account might get deleted.
+the data on your account might get deleted.
 
 ### What Gets Deleted
 
@@ -174,7 +175,7 @@ Any cards you have stored on your computer, phone or tablet will remain on those
 ### Returning to AnkiWeb
 
 Once your deck data has expired, it is not possible for us to recover your data from AnkiWeb,
- but you may be able to recover it if you have a local copy or a [backup](./backups.md).
+but you may be able to recover it if you have a local copy or a [backup](./backups.md).
 
 ### Avoiding Data Deletion
 
@@ -182,7 +183,7 @@ Each time you visit ankiweb.net, or use the synchronization feature in Anki, Ank
 your account will automatically be marked as active.
 
 If your account has been inactive for 6 months or more, and you used the service for a week or longer,
-we will send you an email notifying you that deletion is pending. 
+we will send you an email notifying you that deletion is pending.
 If you'd like to keep your account active, please log in to ankiweb.net
 and study a card, or sync one of your devices within 30 days.
 
@@ -211,7 +212,7 @@ manually configured, and does not require a password. If your system
 uses automatic proxy setup, or uses a proxy that requires a username and
 password, you will need to manually tell Anki the proxy configuration.
 
-To tell Anki your proxy settings, define a HTTPS_PROXY environmental
+To tell Anki your proxy settings, define a HTTPS_PROXY environment
 variable that points to the proxy server. It will look like:
 
     http://user:pass@proxy.company.com:8080
@@ -223,7 +224,7 @@ you need to change it to %40, like so:
 
 Anki 2.0 expects to find HTTP_PROXY instead of HTTPS_PROXY.
 
-To set environmental variables on Windows, please see
+To set environment variables on Windows, please see
 <https://www.google.com/search?q=windows+set+environmental+variable>
 
 If you’re on a Mac, please see

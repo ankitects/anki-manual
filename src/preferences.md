@@ -2,8 +2,8 @@
 
 <!-- toc -->
 
-The preferences are available from the Tools menu on Windows/Linux, or
-the Anki menu on a Mac.
+The preferences are available from the **Tools** menu on Windows/Linux, or
+the **Anki** menu on a Mac.
 
 ## Appearance
 
@@ -25,8 +25,8 @@ From 2.1.50+ there is an option to switch to day or night mode automatically.
 If you find that the interface elements are too small for you, you can
 try to increase this setting.
 
-**Reset Windows Sizes**\
-This will reset all windows sizes and locations to the default settings.
+**Reset Window Sizes**\
+This will reset all window sizes and locations to the default settings.
 
 **Video driver**\
 Anki's libraries need a video driver to draw content on the screen.
@@ -54,7 +54,7 @@ Controls when Anki should start showing the next day’s cards. The default
 setting of 4AM ensures that if you’re studying around midnight, you won’t have
 two days' worth of cards shown to you in one session. If you stay up very late
 or wake up very early, you may want to adjust this to a time you’re usually
-sleeping. Note that the start of the next day is relative to your current timezone.
+sleeping. Note that the start of the next day is relative to your current time zone.
 Also note that any cards that cross a day boundary [will appear at the start of
 the day they are scheduled for](./deck-options.md#day-boundaries), just like review cards do.
 
@@ -89,7 +89,7 @@ Disable this option to hide the card count at the bottom of the screen.
 Useful to know how far in the future your cards are being pushed.
 
 **Spacebar (or enter) also answers card**\
-Defines whether a press on the space bar (or the enter key) also answers cards.
+Defines whether a press on <kbd>Space</kbd> or <kbd>Enter</kbd> answers cards.
 
 ## Editing
 
@@ -106,13 +106,13 @@ By default, formatting like bold and colors are kept when pasting,
 unless the <kbd>Shift</kbd> key is held down. This option reverses the behaviour.
 
 **Default deck**\
-Controls how note types and decks interact. The default of "When adding, default
-to current deck" means that Anki saves the last-used note type for each deck and
-selects it again then next time you choose the deck (and, in addition, will
-start with the current deck selected when choosing Add from anywhere). The other
-option, "Change deck depending on note type," saves the last-used deck for each
+Controls how note types and decks interact. The default option **When adding, default
+to current deck** means that Anki saves the last-used note type for each deck and
+selects it again the next time you choose the deck (and, in addition, will
+start with the current deck selected when choosing **Add** from anywhere). The other
+option, **Change deck depending on note type**, saves the last-used deck for each
 note type (and opens the add window to the last-used note type when you choose
-Add). This may be more convenient if you always use a single note type for each
+**Add**). This may be more convenient if you always use a single note type for each
 deck.
 
 The last used deck/note type is updated when you add a card. If you change the deck
@@ -139,9 +139,20 @@ When enabled, media will also be synced with AnkiWeb.
 **Automatically sync on profile open/close**\
 Disable this if you don't want an automatic sync with AnkiWeb when opening / closing a [profile](./profiles.md).
 
-**Periodically sync media**
+**Periodically sync media**\
+Enable this setting if you want to automatically sync your media every 15
+minutes. Without this preference enabled, media would sync in bulk during normal
+syncs. You might want to enable this to avoid large media download / upload on
+normal syncs, e.g. if you have a slower internet connection.
 
-**On next sync, force changes on one direction**\
+```admonish example
+Let's say you create new anki cards and many of those cards contain media files.
+If you add cards for an hour and have this setting turned on, then there will be
+4 smaller media uploads in total. Without this setting, you would have to upload
+the entire media with the next normal sync, which might take more time.
+```
+
+**On next sync, force changes in one direction**\
 When this option is enabled, the next sync will
 ask you whether you wish to upload or download. This is useful if
 you have made some changes accidentally, and wish to overwrite them
@@ -149,7 +160,7 @@ with an older version that is on AnkiWeb.
 
 ### AnkiWeb Account
 
-When logged in, clicking on Log Out will log you out.
+When logged in, clicking on **Log Out** will log you out.
 
 ### Self-hosted Sync Server
 

@@ -15,11 +15,12 @@ Things to be aware of:
   they tend to take time to catch up when the sync protocol changes, so they
   are not recommended.
 - The messages inside Anki will use the term "AnkiWeb" even if a custom server
-  has been configured, (e.g "Cannot connect to AnkiWeb" when your server is down).
+  has been configured, (e.g. "Cannot connect to AnkiWeb" when your server is down).
 
 ## Installing/Running
 
 There are various ways you can install and run the server. You can use either:
+
 - the sync server bundled with the desktop version of Anki
 - a separate minimal sync server that doesn't include Anki's GUI dependencies. Python and Rust implementations are available.
 
@@ -31,14 +32,16 @@ On Windows in a cmd.exe session:
 
 ```
 set SYNC_USER1=user:pass
-"\Program Files\anki\anki.exe" --syncserver
+"\Program Files\anki\anki-console" --syncserver
 ```
 
 Or MacOS, in Terminal.app:
 
 ```
-SYNC_USER1=user:pass /Applications/Anki.app/Contents/MacOS/anki --syncserver
+SYNC_USER1=user:pass /Applications/Anki.app/Contents/MacOS/launcher --syncserver
 ```
+
+Replace 'launcher' with 'anki' for old packaged builds prior to 25.07.
 
 Or Linux:
 
@@ -81,7 +84,7 @@ SYNC_USER1=user:pass anki-sync-server
 If you've cloned the Anki repo from GitHub, you can install from there:
 
 ```
-./ninja extract:protoc
+./ninja extract:protoc ftl_repo
 cargo install --path rslib/sync
 ```
 
@@ -101,7 +104,7 @@ wish to set up multiple accounts.
 Advanced users may wish to use hashed passwords instead of plain text
 passwords. If you wish to do this, you'll need to use a separate tool (such as
 [this one](https://git.sr.ht/~laalsaas/pbkdf2-password-hash)) to generate a
-password hash.  You can then tell the server to expect hashed passwords by
+password hash. You can then tell the server to expect hashed passwords by
 setting the env var PASSWORDS_HASHED to 1 (or any other value).
 
 When hashed passwords are used, SYNC_USER variables are expected to be in
@@ -112,12 +115,12 @@ the PHC Format.
 
 The server needs to store a copy of your collection and media in a folder.
 By default it is ~/.syncserver; you can change this by defining
-a `SYNC_BASE` environmental variable.
+a `SYNC_BASE` environment variable.
 
 - This must not be the same location as your normal Anki data folder, as the
-server and client must store separate copies.
+  server and client must store separate copies.
 - You must sync your data to the server, not manually copy files into the
-server folder.
+  server folder.
 
 ## Public Access
 
@@ -141,7 +144,7 @@ network, please go into the iOS settings, locate Anki near the bottom, and
 toggle "Allow Anki to access local network" off and then on again.
 
 Older desktop clients required you to define `SYNC_ENDPOINT` and
-`SYNC_ENDPOINT_MEDIA`.  If using an older client, you'd put it as e.g.
+`SYNC_ENDPOINT_MEDIA`. If using an older client, you'd put it as e.g.
 `http://192.168.1.200:8080/sync/` and `http://192.168.1.200:8080/msync/`
 respectively. AnkiDroid clients before 2.16 require separate configuration for
 the two endpoints.
@@ -150,8 +153,19 @@ the two endpoints.
 
 If using a reverse proxy to provide HTTPS access (e.g. nginx), and binding to a subpath
 (e.g. `http://example.com/custom/` -> `http://localhost:8080/`), you must make sure to
-including a trailing slash when configuring Anki. If you put `http://example.com/custom`
+include a trailing slash when configuring Anki. If you put `http://example.com/custom`
 instead, it will not work.
+
+If you are using a caddy, increase 
+[the http read buffer size](https://caddyserver.com/docs/caddyfile/directives/reverse_proxy#read_buffer) 
+to avoid connection problems when downloading media files.
+```caddyfile
+reverse_proxy http://127.0.0.1:8080 {
+	transport http {
+		read_buffer 512k
+	}
+}
+```
 
 On iOS, TLS 1.3 is not supported, so your reverse proxy will need to have TLS 1.2
 enabled, or you'll get an "error code -9836".
