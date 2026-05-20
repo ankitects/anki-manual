@@ -84,3 +84,17 @@ profile folder. These notes are in a text format that can be read by
 at one time. So, if you had deleted notes from different note types,
 you needed to split the file into separate files for each note type
 first.
+
+However, profiles created in Anki versions newer than 25.09.2 have the
+following snippet at the top of `deleted.txt` (hence allowing you to
+import `deleted.txt` without the need to split the file):
+
+```
+#guid column:1
+#notetype column:2
+```
+
+```admonish note
+`deleted.txt` is unique to each profile and is not interchangeable between
+different user profiles.
+```
