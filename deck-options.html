@@ -228,9 +228,9 @@
 <ul>
 <li><a href="#a-short-guide">A Short Guide</a></li>
 <li><a href="#desired-retention">Desired Retention</a></li>
+<li><a href="#help-me-decide">Help Me Decide</a></li>
 <li><a href="#fsrs-parameters">FSRS Parameters</a></li>
 <li><a href="#reschedule-cards-on-change">Reschedule Cards on Change</a></li>
-<li><a href="#compute-minimum-recommended-retention">Compute Minimum Recommended Retention</a></li>
 <li><a href="#the-simulator">The Simulator</a>
 <ul>
 <li><a href="#learning-and-relearning-steps">Learning and Relearning Steps</a></li>
@@ -629,58 +629,80 @@ sure you clear out the custom scheduling section before enabling FSRS.</li>
 <p>Regarding add-on compatibility, as a general rule of thumb, if an add-on affects intervals and scheduling in some way, it shouldn’t be used with FSRS.</p>
 <h3 id="desired-retention"><a class="header" href="#desired-retention">Desired Retention</a></h3>
 <p>Desired retention controls how likely you are to remember cards when they are scheduled for a review.
-The default value of <code>0.90</code> will schedule cards so you have a 90% chance of remembering
-them when they come up for review again. This should normally translate to remembering around 90% cards when they are reviewed, and only failing around 10%.</p>
-<p>Here is a graph that shows how adjusting this value will affect your workload:</p>
+The default value of 90% will schedule cards so you have a 90% chance of
+remembering them when they come up for review again. This should normally
+translate to remembering around 90% cards when they are reviewed, and only
+failing around 10%.</p>
+<p>Here is a graph that shows how adjusting desired retention will affect your
+workload:</p>
 <p><img src="./media/FSRS_retention.png" alt="graph showing an exponential increase in workload as desired retention nears one." /></p>
-<p>The exact shape of the graph is different for everyone. However, there are two patterns that hold true for all:</p>
-<ul>
-<li>
-<p>As desired retention approaches 1.0, the workload increases drastically.
-Imagine you have a card with a 90% chance of remembering it after 100 days. If your desired retention is <code>0.90</code>, you’ll review the card again in 100 days. But if your desired retention is <code>0.95</code>, you’ll need to review it after 46 days instead.
-This means that the intervals of your cards almost halve at <code>0.95</code> desired retention and you need to review cards twice as frequently compared to <code>0.90</code> desired retention.
-At <code>0.97</code>, the interval will be 27 days (you’ll have to review your cards 3.7x as frequently).
-At <code>0.99</code>, the interval will be only 9 days (you’ll have to review your cards more than 10x more frequently than with the defaults).</p>
-</li>
-<li>
-<p>As desired retention decreases, you’ll forget a greater percentage of your
-cards, and those cards will need to be reviewed again. Eventually, you’ll
-get to a point where the forgotten cards contribute more to your workload
-than you gain from the longer delays. Also, keep in mind that forgetting
-material frequently is demotivating.</p>
-</li>
-</ul>
-<p>For these reasons, we suggest you be conservative when adjusting this
-number, and recommend you keep it lower than <code>0.97</code> and higher than the <a href="#compute-minimum-recommended-retention">minimum recommended retention</a>.</p>
+<p>The exact shape of the graph is different for everyone. However, the overall
+shape is more or less the same. In general, at lower desired retention you will
+have to do significantly fewer reviews per day, but you will also forget more
+cards. As desired retention approaches 100%, the workload increases drastically.
+For this reason, we suggest you be conservative when adjusting this number,
+and recommend you keep it lower than 97%.</p>
+<p>In the latest version of Anki, you can set different values of desired retention
+for different decks within the same preset.</p>
+<h3 id="help-me-decide"><a class="header" href="#help-me-decide">Help Me Decide</a></h3>
+<p><strong>Help Me Decide (Experimental)</strong> allows you to simulate workload at different
+levels of retention. In other words, you can find out what your own,
+personalized retention-workload graph looks like. This can help you choose what
+value of desired retention is the best for your needs.</p>
+<p>If you are unsure what to do with this information, you can ask yourself “How
+many reviews can I realistically do per day?” or “How many minutes can I
+realistically spend on reviews per day?”, and check the corresponding workload
+graph to see what value of desired retention gives you a tolerable workload.</p>
+<p>Alternatively, you can check the amount of reviews/day (or time/day) at your
+<em>current</em> desired retention, then check how it will change if you change desired
+retention, and ask yourself “Do I want to study this much more to remember this
+much more?” or “Do I want to study this much less if it means remembering this
+much less?”.</p>
+<p>For more information about the simulator, please read
+<a href="./deck-options.html#the-simulator">this section</a>.</p>
 <h3 id="fsrs-parameters"><a class="header" href="#fsrs-parameters">FSRS Parameters</a></h3>
 <p>FSRS parameters affect how cards are scheduled. Do not change the parameters manually or copy them from someone else.</p>
 <p><strong>Optimize FSRS Parameters</strong></p>
-<p>The FSRS optimizer uses machine learning to learn your memory patterns and find parameters that best fit your review history. To do this, the optimizer requires several reviews to fine-tune the parameters.</p>
-<p>When you click the <strong>Optimize</strong> button, FSRS will analyze your review history, and generate parameters that are optimal for your memory and the content you’re studying. If you have decks that vary wildly in subjective difficulty, it
-is recommended to assign them separate presets, as their optimal parameters will differ. There is no need to optimize your
+<p>The FSRS optimizer uses machine learning to learn your memory patterns and
+find parameters that best fit your review history.
+To do this, the optimizer requires several reviews to fine-tune the parameters.</p>
+<p>When you click the <strong>Optimize</strong> button, FSRS will analyze your review history,
+and generate parameters that are optimal for your memory and the content you’re
+studying. If you have decks that vary wildly in subjective difficulty, it
+is recommended to assign them separate presets, as the parameters for easier
+decks will be different from harder decks. There is no need to optimize your
 parameters frequently: once every month is sufficient.</p>
 <p>By default, parameters are calculated from the review history of all
 decks using the current preset. You can optionally <a href="./searching.html">adjust the search</a>
 before optimizing the parameters, if you’d like to change which cards
 are used for optimization.</p>
 <p>You can also optimize the parameters for all of your presets at once by clicking on <strong>Optimize All Presets</strong>.</p>
-<p><strong>Evaluate FSRS Parameters</strong></p>
-<p>You can use the <strong>Evaluate</strong> button to see metrics that show how well the parameters fit your review history. Smaller numbers
-indicate a better fit to your review history.</p>
-<p>Log loss doesn’t have an intuitive interpretation. RMSE (bins) can be
-interpreted as the average difference between the predicted probability
-of recalling a card (R) and the actual
-probability measured from your review history. For example, RMSE=5% means that, on average, FSRS
-is off by 5% when predicting R. You don’t need to understand these metrics to use FSRS.</p>
-<p>Note that log loss and RMSE (bins) are not perfectly correlated,
-so two decks may have similar RMSE values but very different log-loss values, or the other way around.</p>
-<p>By default, log loss and RMSE (bins) are calculated from all decks using the current preset. You can optionally <a href="./searching.html">adjust the search</a> before evaluating the parameters, if you’d like to change which cards are used for evaluation.</p>
+<p><strong>Health Check</strong></p>
+<p>You can enable <strong>Check health when optimizing (slow)</strong> to check how well FSRS
+can adapt to your review history. Some common reasons why FSRS may not perform
+well:</p>
+<ul>
+<li>Low number of reviews (less than a few hundred). As a machine learning
+algorithm, FSRS needs data to learn from.</li>
+<li><a href="https://docs.ankiweb.net/studying.html#answer-buttons">Hard misuse</a>. Hard
+should <strong>not</strong> be used when you forgot the answer; it is a passing grade, not a
+failing grade.</li>
+<li>Not using Again when you forgot the answer. Anki assumes that if you forgo
+the answer, you will press Again, and if you recalled it, you will press
+Hard/Good/Easy.</li>
+</ul>
 <h3 id="reschedule-cards-on-change"><a class="header" href="#reschedule-cards-on-change">Reschedule Cards on Change</a></h3>
-<p>This option controls whether the due dates of cards will be changed when you enable FSRS, change desired retention, or change the parameters. The default is not to reschedule cards: future reviews will use the new scheduling, but there will be no immediate change to your workload. If rescheduling is enabled, the due dates of cards will be changed. Depending on your desired retention, it will often result in a large number of cards becoming due, so <strong>this option is not recommended</strong> when first switching from SM-2.</p>
+<p>This option controls whether the due dates of cards will be changed when you
+enable FSRS, change desired retention, or change the parameters. The default is
+not to reschedule cards: future reviews will use the new scheduling, but there
+will be no immediate change to your workload. If rescheduling is enabled, the
+due dates of cards will be changed. Depending on your desired retention, it will
+often result in a large number of cards becoming due, so <strong>this option is not
+recommended</strong> when first switching from SM-2.</p>
 <p>Use this option sparingly, as it will add a review entry to each of your cards, and increase the size of your collection.</p>
-<p>If you’re first switching from SM-2 and still wish to use this option, we recommend you first create a backup, enable FSRS with rescheduling, and then if needed, you can undo or restore from the backup.</p>
-<h3 id="compute-minimum-recommended-retention"><a class="header" href="#compute-minimum-recommended-retention">Compute Minimum Recommended Retention</a></h3>
-<p>Compute minimum recommended retention (CMRR) attempts to find the desired retention value that leads to the most material learned, in the least amount of time. The calculated number can serve as a reference when deciding what to set your desired retention to. You may wish to choose a higher desired retention, if you’re willing to trade more study time for a greater retention rate. However, setting your desired retention lower than the minimum is not recommended, as you’ll spend more time studying than necessary, due to increased forgetting.</p>
+<p>If you’re first switching from SM-2 and still wish to use this option, we
+recommend you first create a backup, enable FSRS with rescheduling, and then if
+needed, you can undo or restore from the backup.</p>
 <h3 id="the-simulator"><a class="header" href="#the-simulator">The Simulator</a></h3>
 <p>You can use the simulator to get an estimate of your workload,
 either in reviews per day or in minutes of studying per day.</p>
