@@ -488,8 +488,9 @@ it will often result in a large number of cards becoming due, so **this option i
 
 Use this option sparingly, as it will add a review entry to each of your cards, and increase the size of your collection.
 
-If you're first switching from SM-2 and still wish to use this option, we recommend you first create a backup, 
-enable FSRS with rescheduling, and then if needed, you can undo or restore from the backup.
+If you're first switching from SM-2 and still wish to use this option, we
+recommend you first create a backup, enable FSRS with rescheduling, and then if
+needed, you can undo or restore from the backup.
 
 ### The Simulator
 
