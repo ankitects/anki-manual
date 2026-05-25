@@ -424,10 +424,11 @@ Here is a graph that shows how adjusting desired retention will affect your work
 
 ![graph showing an exponential increase in workload as desired retention nears one.](./media/FSRS_retention.png)
 
-The exact shape of the graph is different for everyone. However, the overall shape is more or less the same.
-In general, at lower desired retention you will have to do significantly fewer reviews per day, 
-but you will also forget more cards. As desired retention approaches 100%, 
-the workload increases drastically. For this reason, we suggest you be conservative when adjusting this number, 
+The exact shape of the graph is different for everyone. However, the overall
+shape is more or less the same. In general, at lower desired retention you will
+have to do significantly fewer reviews per day, but you will also forget more
+cards. As desired retention approaches 100%, the workload increases drastically.
+For this reason, we suggest you be conservative when adjusting this number, 
 and recommend you keep it lower than 97%.
 
 In the latest version of Anki, you can set different values of desired retention
