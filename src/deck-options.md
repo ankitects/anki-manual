@@ -420,7 +420,8 @@ remembering them when they come up for review again. This should normally
 translate to remembering around 90% cards when they are reviewed, and only
 failing around 10%.
 
-Here is a graph that shows how adjusting desired retention will affect your workload:
+Here is a graph that shows how adjusting desired retention will affect your
+workload:
 
 ![graph showing an exponential increase in workload as desired retention nears one.](./media/FSRS_retention.png)
 
