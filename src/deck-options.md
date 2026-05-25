@@ -481,10 +481,13 @@ You can enable **Check health when optimizing (slow)** to check how well FSRS ca
 
 ### Reschedule Cards on Change
 
-This option controls whether the due dates of cards will be changed when you enable FSRS, change desired retention, or change the parameters. 
-The default is not to reschedule cards: future reviews will use the new scheduling, but there will be no immediate change to your workload. 
-If rescheduling is enabled, the due dates of cards will be changed. Depending on your desired retention, 
-it will often result in a large number of cards becoming due, so **this option is not recommended** when first switching from SM-2.
+This option controls whether the due dates of cards will be changed when you
+enable FSRS, change desired retention, or change the parameters. The default is
+not to reschedule cards: future reviews will use the new scheduling, but there
+will be no immediate change to your workload. If rescheduling is enabled, the
+due dates of cards will be changed. Depending on your desired retention, it will
+often result in a large number of cards becoming due, so **this option is not
+recommended** when first switching from SM-2.
 
 Use this option sparingly, as it will add a review entry to each of your cards, and increase the size of your collection.
 
