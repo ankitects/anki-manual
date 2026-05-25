@@ -178,7 +178,25 @@ matches notes with "uber", "über", "Über" and so on.
 `nc:は`\
 matches "は", "ば", and "ぱ".
 
+`nc:heisen` or `nc:heißen`\
+matches notes with "heißen" and with "heisen", since ß is treated as s (not ss) and s is treated as ß.
+
 Searches that ignore combining characters are slower than regular searches.
+
+## Searching in cloze deletions
+
+Requires Anki 25.07+.
+
+You can use `sc:` (sc stands for “strip clozes”) to search through the full text
+of notes with cloze deletions, ignoring the cloze markup. For example:
+
+`sc:mnemonic`\
+matches a note containing `{{c1::mn}}{{c2::e}}monic`.
+
+`sc:capital of France`\
+matches a note containing `The {{c1::capital}} of {{c2::France}}`.
+
+Searches that strip cloze deletions are slower than regular searches.
 
 ## Regular expressions
 
@@ -263,6 +281,9 @@ cards that are in learning for the first time.
 
 ## Flags
 
+`flag:0`\
+cards without a flag.
+
 `flag:1`\
 cards with a red flag.
 
@@ -299,7 +320,7 @@ cards due yesterday that haven’t been answered yet.
 all cards due in the future, including tomorrow.
 
 `prop:due<=-1`\
-all  overdue cards.
+all overdue cards.
 
 `prop:due>=-1 prop:due<=1`\
 cards due yesterday, today and tomorrow.
@@ -308,10 +329,13 @@ cards due yesterday, today and tomorrow.
 cards that have been answered less than 10 times.
 
 `prop:lapses>3`\
-cards that been lapsed more than 3 times.
+cards that have lapsed more than 3 times.
 
 `prop:ease!=2.5`\
 cards easier or harder than default ease.
+
+`prop:pos<=100`\
+new cards with a position in the queue less than or equal to 100.
 
 The following searches require Anki 23.10+ and FSRS enabled:
 

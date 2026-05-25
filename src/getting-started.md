@@ -43,7 +43,7 @@ you're studying basic chemistry, you might see a question like:
     Q: Chemical symbol for oxygen?
 
 After deciding the answer is O, you click the
-"Show Answer" button, and Anki shows you:
+**Show Answer** button, and Anki shows you:
 
     Q: Chemical symbol for oxygen?
     A: O
@@ -154,7 +154,7 @@ they’d look like this:
 In Anki, this collection of related information is called a _note_ and each piece of information is contained in a _field_. In this example, the note
 has three fields: "French", "English", and "Page".
 
-To add and edit fields, click the "Fields…​" button while adding or
+To add and edit fields, click the **Fields...** button while adding or
 editing notes. For more information on fields, please see the
 [Customizing Fields](editing.md#customizing-fields) section.
 
@@ -197,7 +197,7 @@ ensure related cards don't appear too close to each other, and they
 allow you to fix a typing mistake or factual error once and have all the
 related cards update at once.
 
-To add and edit card types, click the "Cards…​" button while adding or
+To add and edit card types, click the **Cards...** button while adding or
 editing notes. For more information on card types, please see the [Cards and Templates](templates/intro.md) section.
 
 ### Note Types
@@ -244,8 +244,8 @@ types specifically for the content you are learning. The standard note types are
   such as anatomy and geography. For details, please see the [Image Occlusion](editing.md#image-occlusion)
   section of the manual.
 
-To add your own note types and modify existing ones, you can use Tools →
-Manage Note Types from the main Anki window.
+To add your own note types and modify existing ones, you can use **Tools > Manage Note Types**
+from the main Anki window.
 
 Notes and note types are common to your whole collection rather than
 limited to an individual deck. This means you can use different
@@ -267,13 +267,13 @@ You can watch a video about [Shared Decks and Review Basics](http://www.youtube.
 The easiest way to get started with Anki is to download a deck of cards
 someone else has shared:
 
-1. Click the "Get Shared" button at the bottom of the deck list.
+1. Click the **Get Shared** button at the bottom of the deck list.
 
-2. When you've found a deck you're interested in, click the "Download"
+2. When you've found a deck you're interested in, click the **Download**
    button to download a deck package.
 
 3. Double-click the downloaded package to import it into Anki, or go to
-   File → Import.
+   **File > Import**.
 
 Note: It’s not currently possible to add shared decks
 directly to your AnkiWeb account. You need to first import them to the

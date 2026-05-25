@@ -45,7 +45,7 @@ changing this option will still have the old delay, not the new one.
 
 ## Subdecks
 
-If your deck has subdecks, and you wish one or more subdecks to have different settings to the parent decks, you can assign those subdecks to different presets.
+If your deck has subdecks, and you wish one or more of them to have different settings from the parent deck, you can assign those subdecks to separate presets.
 When Anki shows a card, it will check which subdeck the card is in, and use the options
 for that deck. There are two exceptions:
 
@@ -134,11 +134,11 @@ make the backlog worse.
 
 ### Limits Start From Top
 
-By default, the daily limits of a higher-level deck do not apply if you select one of its subdecks. A parent deck can have a new card limit of 10 cards/day and its subdecks can have a new card limit of 20 cards/day. The limits set on parent deck do not affect the number of new cards you can study from its subdeck.
+By default, the daily limits of a higher-level deck do not apply if you select one of its subdecks. A parent deck can have a new card limit of 10 cards/day and its subdecks can have a new card limit of 20 cards/day. The limits set on the parent deck do not affect the number of new cards you can study from its subdeck.
 
 When this option is enabled, the limits set on higher-level decks also apply to their subdecks when a subdeck is selected. In the previous example, you will be able to study only 10 new cards from the subdecks instead of 20 new cards.
 
-This option can be useful if you wish to study individual subdecks, while enforcing a total limit on cards all the subdecks.
+This option can be useful if you wish to study individual subdecks, while enforcing a total limit on cards in all the subdecks.
 
 ## New Cards
 
@@ -179,7 +179,7 @@ Anki treats small steps and steps that [cross a day boundary](./preferences.md#r
 With small steps, the cards are shown as soon as the delay has passed,
 in preference to review cards and new cards. This is done so that
 you can answer the card as closely to your requested delay as possible.
-In contrast, if the step crosses a day boundary, the delay is automatically converted to days. For example, if next day starts after 5 hours and the delay is 6 hours, Anki converts the delay to 1 day.
+In contrast, if the step crosses a day boundary, the delay is automatically converted to days. For example, if the next day starts after 5 hours and the delay is 6 hours, Anki converts the delay to 1 day.
 
 ### Graduating Interval
 
@@ -405,7 +405,8 @@ become available, and SM-2 specific options, such as **Graduating interval**,
 - Ensure that all your learning and re-learning steps are shorter than 1d and can be completed on the same day. 23h is not recommended even though it's less than one day because you won't be able to finish this step on the same day as your first review. Steps such as 10m or 30m are good.
 - Click the "Optimize" button under the "FSRS parameters" field. If you see a message that says "The FSRS parameters currently appear to be optimal", that's fine.
 - Choose a value of desired retention: the proportion of cards recalled successfully when they are due. **This is the most important setting in FSRS. Higher retention leads to shorter intervals and more reviews per day.** The default is 90%, which offers a good balance of retention and workload. Above 90% the workload increases very quickly, and above 97% the workload can be overwhelming. You can use ["Compute minimum recommended retention"](#compute-minimum-recommended-retention) to help you choose the value of desired retention.
-  Parameters and desired retention are preset-specific, you can make multiple presets with different parameters and desired retention.
+
+Parameters and desired retention are preset-specific, so you can create multiple presets with different settings.
 
 FSRS can adapt to almost any habit, except for one: pressing "Hard" instead of "Again" when you forget the information. When you press "Hard", FSRS assumes you have recalled the information correctly (though with hesitation and a lot of mental effort). If you press "Hard" when you have failed to recall the information, all intervals will be unreasonably high. So, if you have this habit, please change it and use "Again" when you forget the information.
 
@@ -587,7 +588,7 @@ interval would be around 13 days).
 An extra multiplier that is applied to all reviews. At its default of 1.00 it
 does nothing. If you set it to 0.80, intervals will be generated at
 80% of their normal size (so a 10 day interval would become 8 days).
-You can thus use the multiplier to to make your reviews less or more frequent.
+You can thus use the multiplier to make your reviews less or more frequent.
 
 For moderately difficult material, the average user should find they
 remember approximately 90% of mature cards when they come up for review. You

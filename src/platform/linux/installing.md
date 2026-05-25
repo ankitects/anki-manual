@@ -14,7 +14,13 @@ Debian and derivatives, such as Ubuntu and [Chromebooks with Linux enabled](http
 installing:
 
 ```shell
-sudo apt install libxcb-xinerama0 libxcb-cursor0 libnss3
+sudo apt install libxcb-xinerama0 libxcb-cursor0 libnss3 libxcb-icccm4 libxcb-keysyms1
+```
+Arch and derivatives, such as Manjaro, please use the following before
+installing:
+
+```shell
+sudo pacman -S libxinerama xcb-util-cursor nss
 ```
 
 If Anki fails to start after installing, you may be [missing other libraries](./missing-libraries.md).
@@ -28,12 +34,12 @@ Anki's build system only supports glibc, so musl-based distros are not currently
 To install Anki:
 
 1. Download Anki from <https://apps.ankiweb.net> to your Downloads folder.
-2. If zstd is not already installed on your system, you'll need to install it (e.g `sudo apt install zstd`).
+2. If zstd is not already installed on your system, you'll need to install it using your package manager (e.g `sudo apt install zstd` on Debian/Ubuntu, or `sudo pacman -S zstd` on Arch).
 3. Open a terminal and run the following commands, replacing the filename as appropriate.
 
 ```shell
-tar xaf Downloads/anki-2XXX-linux-qt6.tar.zst
-cd anki-2XXX-linux-qt6
+tar xaf Downloads/anki-launcher-2XXX-linux.tar.zst
+cd anki-launcher-2XXX-linux
 sudo ./install.sh
 ```
 
