@@ -474,10 +474,17 @@ You can also optimize the parameters for all of your presets at once by clicking
 
 **Health Check**
 
-You can enable **Check health when optimizing (slow)** to check how well FSRS can adapt to your review history. Some common reasons why FSRS may not perform well:
-- Low number of reviews (less than a few hundred). As a machine learning algorithm, FSRS needs data to learn from.
-- [Hard misuse](https://docs.ankiweb.net/studying.html#answer-buttons). Hard should **not** be used when you forgot the answer; it is a passing grade, not a failing grade.
-- Not using Again when you forgot the answer. Anki assumes that if you forgot the answer, you will press Again, and if you recalled it, you will press Hard/Good/Easy.
+You can enable **Check health when optimizing (slow)** to check how well FSRS
+can adapt to your review history. Some common reasons why FSRS may not perform
+well:
+- Low number of reviews (less than a few hundred). As a machine learning
+algorithm, FSRS needs data to learn from.
+- [Hard misuse](https://docs.ankiweb.net/studying.html#answer-buttons). Hard
+should **not** be used when you forgot the answer; it is a passing grade, not a
+failing grade.
+- Not using Again when you forgot the answer. Anki assumes that if you forgo
+the answer, you will press Again, and if you recalled it, you will press
+Hard/Good/Easy.
 
 ### Reschedule Cards on Change
 
