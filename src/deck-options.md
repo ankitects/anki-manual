@@ -510,6 +510,14 @@ If you're first switching from SM-2 and still wish to use this option, we
 recommend you first create a backup, enable FSRS with rescheduling, and then if
 needed, you can undo or restore from the backup.
 
+### Compute Minimum Recommended Retention (<25.07) {#compute-minimum-recommended-retention}
+
+> ***Removed Feature***
+>
+> This feature has been removed as of anki version 25.07
+
+Compute minimum recommended retention (CMRR) attempts to find the desired retention value that leads to the most material learned, in the least amount of time. The calculated number can serve as a reference when deciding what to set your desired retention to. You may wish to choose a higher desired retention, if you’re willing to trade more study time for a greater retention rate. However, setting your desired retention lower than the minimum is not recommended, as you'll spend more time studying than necessary, due to increased forgetting.
+
 ### The Simulator
 
 You can use the simulator to get an estimate of your workload,
