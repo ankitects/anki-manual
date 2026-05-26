@@ -33,7 +33,7 @@ them. Tags are separated by a space. If the tags area says
 …​then the note you add would have two tags.
 
 When you have entered text into the front and back, you can click the
-"Add" button or press <kbd>Ctrl</kbd>+<kbd>Enter</kbd> (<kbd>Command</kbd>+<kbd>Enter</kbd> on a Mac) to add the
+**Add** button or press <kbd>Ctrl</kbd>+<kbd>Enter</kbd> (<kbd>Command</kbd>+<kbd>Enter</kbd> on a Mac) to add the
 note to your collection. When you do so, a card will be created as well,
 and placed into the deck you chose. If you would like to edit a card you
 added, you can click the history button to search for a recently added
@@ -92,8 +92,8 @@ back, except by laboriously copying and pasting it for every note. By
 keeping content in separate fields, you make it much easier to adjust
 the layout of your cards in the future.
 
-To create a new type of note, choose Tools → Manage Note Types from the
-main Anki window. Then click "Add" to add a new type of note. You will now
+To create a new type of note, choose **Tools > Manage Note Types** from the
+main Anki window. Then click **Add** to add a new type of note. You will now
 see another screen that gives you a choice of note types to base the new
 type on. "Add" means to base the newly created type on one that comes
 with Anki. "Clone" means to base the newly created type on one that is
@@ -108,7 +108,7 @@ window, and you will return to the adding window.
 
 ## Customizing Fields
 
-To customize fields, click the "Fields…​" button when adding or editing
+To customize fields, click the **Fields...** button when adding or editing
 a note, or while the note type is selected in the Manage Note Types
 window.
 
@@ -122,7 +122,7 @@ and the add notes dialog, you can use the reposition button, which asks
 for the numerical position you want the field to have. So if you want to
 change a field to be the new first field, enter "1".
 
-Alternatively you can also drag and drop the field names to re-order them. To do
+Alternatively you can also drag and drop the field names to reorder them. To do
 that, use your mouse or finger to drag the field to the desired position. An indicator will
 show you where the field will be moved to.
 
@@ -211,7 +211,7 @@ thinking in advance about how you want to use them will help you decide
 what will work best for you.
 
 Some people prefer using decks and subdecks to keep their cards organized,
-but using tags have a big advantage over decks for that: you can add several
+but using tags offers a big advantage over decks for that: you can add several
 tags to a single note, but a single card can only belong to one deck, which
 makes tags a more powerful and flexible categorization system than
 decks in most cases. You can also organize tags in trees [in the same way as you can do for decks](getting-started.md#decks).
@@ -239,7 +239,7 @@ is that flags work at [card](getting-started.md#cards) level, so flagging a card
 won't have any effect on the card's siblings.
 
 You can flag / unflag cards directly while in review mode (by pressing
-<kbd>CTRL</kbd> + <kbd>1-7</kbd> on Windows or <kbd>CMD</kbd> + <kbd>1-7</kbd> on Mac)
+<kbd>Ctrl</kbd>+<kbd>1-7</kbd> on Windows or <kbd>Cmd</kbd>+<kbd>1-7</kbd> on Mac)
 and from the [Browser.](browsing.md)
 
 ### The "Marked" Tag
@@ -352,7 +352,7 @@ Anki will replace the text with:
 
     Canberra was founded in {{c1::1913}}.
 
-The "c1" part means that you have created one cloze deletion on the
+The "c1" part means that you have created one cloze deletion in the
 sentence. You can create more than one deletion if you'd like. For
 example, if you select Canberra and click \[…​\] again, the text will
 now look like:
@@ -443,8 +443,8 @@ of an image, testing your knowledge of that hidden information.
 
 To add IO cards to your collection, open the Add screen, click on "Type"
 and choose "Image Occlusion" from the list of built-in note types.
-Then, click on "Select Image" to load an image file saved on your
-computer's hard drive, or on "Paste image from clipboard"
+Then, click on **Select Image** to load an image file saved on your
+computer's hard drive, or on **Paste image from clipboard**
 if you have an image copied to the clipboard.
 
 ### Adding IO cards
@@ -484,7 +484,7 @@ You can edit your IO notes by clicking on "Edit" while reviewing,
 or directly from the browser. There are several tools that you
 can use. Of note:
 
-- Select: It allows you selecting one or more shapes to move,
+- Select: It allows you to select one or more shapes to move,
   resize, delete or group them.
 - Zoom: You can freely move the image and zoom in or out using the mouse wheel.
 - Shapes (Rectangle, Ellipse or Polygon): Use them to add new shapes / cards.
@@ -505,7 +505,7 @@ can use. Of note:
 - Alignment: This tool can be used to align your shapes / text areas as desired.
 
 While reviewing IO Cards a "Toggle Masks" button will appear just below the image.
-This button will temporary clear all shapes of the note when using "Hide All, Guess One" mode.
+This button will temporarily clear all shapes of the note when using "Hide All, Guess One" mode.
 
 ## Inputting Non-Latin Characters and Accents
 

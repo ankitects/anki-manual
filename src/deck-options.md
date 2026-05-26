@@ -45,7 +45,7 @@ changing this option will still have the old delay, not the new one.
 
 ## Subdecks
 
-If your deck has subdecks, and you wish one or more subdecks to have different settings to the parent decks, you can assign those subdecks to different presets.
+If your deck has subdecks, and you wish one or more of them to have different settings from the parent deck, you can assign those subdecks to separate presets.
 When Anki shows a card, it will check which subdeck the card is in, and use the options
 for that deck. There are two exceptions:
 
@@ -134,11 +134,11 @@ make the backlog worse.
 
 ### Limits Start From Top
 
-By default, the daily limits of a higher-level deck do not apply if you select one of its subdecks. A parent deck can have a new card limit of 10 cards/day and its subdecks can have a new card limit of 20 cards/day. The limits set on parent deck do not affect the number of new cards you can study from its subdeck.
+By default, the daily limits of a higher-level deck do not apply if you select one of its subdecks. A parent deck can have a new card limit of 10 cards/day and its subdecks can have a new card limit of 20 cards/day. The limits set on the parent deck do not affect the number of new cards you can study from its subdeck.
 
 When this option is enabled, the limits set on higher-level decks also apply to their subdecks when a subdeck is selected. In the previous example, you will be able to study only 10 new cards from the subdecks instead of 20 new cards.
 
-This option can be useful if you wish to study individual subdecks, while enforcing a total limit on cards all the subdecks.
+This option can be useful if you wish to study individual subdecks, while enforcing a total limit on cards in all the subdecks.
 
 ## New Cards
 
@@ -179,7 +179,7 @@ Anki treats small steps and steps that [cross a day boundary](./preferences.md#r
 With small steps, the cards are shown as soon as the delay has passed,
 in preference to review cards and new cards. This is done so that
 you can answer the card as closely to your requested delay as possible.
-In contrast, if the step crosses a day boundary, the delay is automatically converted to days. For example, if next day starts after 5 hours and the delay is 6 hours, Anki converts the delay to 1 day.
+In contrast, if the step crosses a day boundary, the delay is automatically converted to days. For example, if the next day starts after 5 hours and the delay is 6 hours, Anki converts the delay to 1 day.
 
 ### Graduating Interval
 
@@ -405,7 +405,8 @@ become available, and SM-2 specific options, such as **Graduating interval**,
 - Ensure that all your learning and re-learning steps are shorter than 1d and can be completed on the same day. 23h is not recommended even though it's less than one day because you won't be able to finish this step on the same day as your first review. Steps such as 10m or 30m are good.
 - Click the "Optimize" button under the "FSRS parameters" field. If you see a message that says "The FSRS parameters currently appear to be optimal", that's fine.
 - Choose a value of desired retention: the proportion of cards recalled successfully when they are due. **This is the most important setting in FSRS. Higher retention leads to shorter intervals and more reviews per day.** The default is 90%, which offers a good balance of retention and workload. Above 90% the workload increases very quickly, and above 97% the workload can be overwhelming. You can use ["Compute minimum recommended retention"](#compute-minimum-recommended-retention) to help you choose the value of desired retention.
-  Parameters and desired retention are preset-specific, you can make multiple presets with different parameters and desired retention.
+
+Parameters and desired retention are preset-specific, so you can create multiple presets with different settings.
 
 FSRS can adapt to almost any habit, except for one: pressing "Hard" instead of "Again" when you forget the information. When you press "Hard", FSRS assumes you have recalled the information correctly (though with hesitation and a lot of mental effort). If you press "Hard" when you have failed to recall the information, all intervals will be unreasonably high. So, if you have this habit, please change it and use "Again" when you forget the information.
 
@@ -414,29 +415,46 @@ Regarding add-on compatibility, as a general rule of thumb, if an add-on affects
 ### Desired Retention
 
 Desired retention controls how likely you are to remember cards when they are scheduled for a review.
-The default value of `0.90` will schedule cards so you have a 90% chance of remembering
-them when they come up for review again. This should normally translate to remembering around 90% cards when they are reviewed, and only failing around 10%.
+The default value of 90% will schedule cards so you have a 90% chance of
+remembering them when they come up for review again. This should normally
+translate to remembering around 90% cards when they are reviewed, and only
+failing around 10%.
 
-Here is a graph that shows how adjusting this value will affect your workload:
+Here is a graph that shows how adjusting desired retention will affect your
+workload:
 
 ![graph showing an exponential increase in workload as desired retention nears one.](./media/FSRS_retention.png)
 
-The exact shape of the graph is different for everyone. However, there are two patterns that hold true for all:
+The exact shape of the graph is different for everyone. However, the overall
+shape is more or less the same. In general, at lower desired retention you will
+have to do significantly fewer reviews per day, but you will also forget more
+cards. As desired retention approaches 100%, the workload increases drastically.
+For this reason, we suggest you be conservative when adjusting this number, 
+and recommend you keep it lower than 97%.
 
-- As desired retention approaches 1.0, the workload increases drastically.
-  Imagine you have a card with a 90% chance of remembering it after 100 days. If your desired retention is `0.90`, you'll review the card again in 100 days. But if your desired retention is `0.95`, you'll need to review it after 46 days instead.
-  This means that the intervals of your cards almost halve at `0.95` desired retention and you need to review cards twice as frequently compared to `0.90` desired retention.
-  At `0.97`, the interval will be 27 days (you'll have to review your cards 3.7x as frequently).
-  At `0.99`, the interval will be only 9 days (you'll have to review your cards more than 10x more frequently than with the defaults).
+In the latest version of Anki, you can set different values of desired retention
+for different decks within the same preset.
 
-- As desired retention decreases, you'll forget a greater percentage of your
-  cards, and those cards will need to be reviewed again. Eventually, you'll
-  get to a point where the forgotten cards contribute more to your workload
-  than you gain from the longer delays. Also, keep in mind that forgetting
-  material frequently is demotivating.
+### Help Me Decide
 
-For these reasons, we suggest you be conservative when adjusting this
-number, and recommend you keep it lower than `0.97` and higher than the [minimum recommended retention](#compute-minimum-recommended-retention).
+**Help Me Decide (Experimental)** allows you to simulate workload at different
+levels of retention. In other words, you can find out what your own,
+personalized retention-workload graph looks like. This can help you choose what
+value of desired retention is the best for your needs.
+
+If you are unsure what to do with this information, you can ask yourself "How
+many reviews can I realistically do per day?" or "How many minutes can I
+realistically spend on reviews per day?", and check the corresponding workload
+graph to see what value of desired retention gives you a tolerable workload.
+
+Alternatively, you can check the amount of reviews/day (or time/day) at your
+*current* desired retention, then check how it will change if you change desired
+retention, and ask yourself "Do I want to study this much more to remember this
+much more?" or "Do I want to study this much less if it means remembering this
+much less?".
+
+For more information about the simulator, please read
+[this section](./deck-options.md#the-simulator).
 
 ### FSRS Parameters
 
@@ -444,9 +462,13 @@ FSRS parameters affect how cards are scheduled. Do not change the parameters man
 
 **Optimize FSRS Parameters**
 
-The FSRS optimizer uses machine learning to learn your memory patterns and find parameters that best fit your review history. To do this, the optimizer requires several reviews to fine-tune the parameters.
+The FSRS optimizer uses machine learning to learn your memory patterns and 
+find parameters that best fit your review history. 
+To do this, the optimizer requires several reviews to fine-tune the parameters.
 
-When you click the **Optimize** button, FSRS will analyze your review history, and generate parameters that are optimal for your memory and the content you're studying. If you have decks that vary wildly in subjective difficulty, it
+When you click the **Optimize** button, FSRS will analyze your review history, 
+and generate parameters that are optimal for your memory and the content you're
+studying. If you have decks that vary wildly in subjective difficulty, it
 is recommended to assign them separate presets, as the parameters for easier
 decks will be different from harder decks. There is no need to optimize your
 parameters frequently: once every month is sufficient.
@@ -458,29 +480,35 @@ are used for optimization.
 
 You can also optimize the parameters for all of your presets at once by clicking on **Optimize All Presets**.
 
-**Evaluate FSRS Parameters**
+**Health Check**
 
-You can use the **Evaluate** button to see metrics that show how well the parameters fit your review history. Smaller numbers
-indicate a better fit to your review history.
-
-Log loss doesn't have an intuitive interpretation. RMSE (bins) can be
-interpreted as the average difference between the predicted probability
-of recalling a card (R) and the actual
-probability measured from your review history. For example, RMSE=5% means that, on average, FSRS
-is off by 5% when predicting R. You don't need to understand these metrics to use FSRS.
-
-Note that log loss and RMSE (bins) are not perfectly correlated,
-so two decks may have similar RMSE values but very different log-loss values, or the other way around.
-
-By default, log loss and RMSE (bins) are calculated from all decks using the current preset. You can optionally [adjust the search](./searching.md) before evaluating the parameters, if you'd like to change which cards are used for evaluation.
+You can enable **Check health when optimizing (slow)** to check how well FSRS
+can adapt to your review history. Some common reasons why FSRS may not perform
+well:
+- Low number of reviews (less than a few hundred). As a machine learning
+algorithm, FSRS needs data to learn from.
+- [Hard misuse](https://docs.ankiweb.net/studying.html#answer-buttons). Hard
+should **not** be used when you forgot the answer; it is a passing grade, not a
+failing grade.
+- Not using Again when you forgot the answer. Anki assumes that if you forgo
+the answer, you will press Again, and if you recalled it, you will press
+Hard/Good/Easy.
 
 ### Reschedule Cards on Change
 
-This option controls whether the due dates of cards will be changed when you enable FSRS, change desired retention, or change the parameters. The default is not to reschedule cards: future reviews will use the new scheduling, but there will be no immediate change to your workload. If rescheduling is enabled, the due dates of cards will be changed. Depending on your desired retention, it will often result in a large number of cards becoming due, so **this option is not recommended** when first switching from SM-2.
+This option controls whether the due dates of cards will be changed when you
+enable FSRS, change desired retention, or change the parameters. The default is
+not to reschedule cards: future reviews will use the new scheduling, but there
+will be no immediate change to your workload. If rescheduling is enabled, the
+due dates of cards will be changed. Depending on your desired retention, it will
+often result in a large number of cards becoming due, so **this option is not
+recommended** when first switching from SM-2.
 
 Use this option sparingly, as it will add a review entry to each of your cards, and increase the size of your collection.
 
-If you're first switching from SM-2 and still wish to use this option, we recommend you first create a backup, enable FSRS with rescheduling, and then if needed, you can undo or restore from the backup.
+If you're first switching from SM-2 and still wish to use this option, we
+recommend you first create a backup, enable FSRS with rescheduling, and then if
+needed, you can undo or restore from the backup.
 
 ### Compute Minimum Recommended Retention (<25.07) {#compute-minimum-recommended-retention}
 
@@ -588,7 +616,7 @@ interval would be around 13 days).
 An extra multiplier that is applied to all reviews. At its default of 1.00 it
 does nothing. If you set it to 0.80, intervals will be generated at
 80% of their normal size (so a 10 day interval would become 8 days).
-You can thus use the multiplier to to make your reviews less or more frequent.
+You can thus use the multiplier to make your reviews less or more frequent.
 
 For moderately difficult material, the average user should find they
 remember approximately 90% of mature cards when they come up for review. You

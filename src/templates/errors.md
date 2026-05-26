@@ -37,7 +37,7 @@ What needs changing will depend on the message you are getting.
 **Found '{{Field}}', but there is no field called 'Field'**
 
 This indicates your template includes the name of a field that doesn't exist. To fix the problem, locate the
-{{Field}} inside the card template, and remove it.
+`{{Field}}` inside the card template, and remove it.
 
 **Missing }} in {{Field**
 
@@ -137,7 +137,7 @@ When making clozes, each cloze number is turned into a separate card. For exampl
 {{c1::This}} is a {{c2::sample}} {{c3::sentence}}.
 ```
 
-If you you later edit the text, and either remove or change a cloze number, the previously created card may become blank. For example:
+If you later edit the text, and either remove or change a cloze number, the previously created card may become blank. For example:
 
 ```
 {{c1::This}} is a {{c2::sample}}

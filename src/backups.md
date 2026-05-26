@@ -21,7 +21,8 @@ To restore from an automatic backup:
 - Click on the "Open Backup" button.
 - Select the backup you wish to restore from.
 
-```admonish warning
+
+```admonish caution
 When restoring from a backup, any changes made since the backup was created will be lost.
 ```
 
@@ -37,23 +38,25 @@ Certain operations will trigger a backup, even if the configured time has not
 elapsed yet:
 
 - A one-way sync download
-- Importing a .colpkg file using File>Import
-- Tools>Check Database
+- Importing a .colpkg file using **File > Import**
+- **Tools > Check Database**
 
 After backups are two days old, Anki will start removing some of the older ones.
 You can control how many daily, weekly and monthly backups you'd like to keep.
 
+```admonish info
 Backups created with 2.1.50 will not be importable into older Anki versions.
+```
 
 ## Manual colpkg backups
 
 ### Restoring
 
-You can restore from a manual backup by using File>Import.
+You can restore from a manual backup by using **File > Import**.
 
 ### Creating
 
-In Anki 2.1.50+, you can use File>Create Backup to trigger an immediate backup. This
+In Anki 2.1.50+, you can use **File > Create Backup** to trigger an immediate backup. This
 functions like regular automatic backups, and does not include media files.
 
 To create a backup that includes your sounds and images:
@@ -75,9 +78,23 @@ you can force a one-way sync in the preferences screen, or sync from a new devic
 
 ## Deletion log
 
-Anki logs deleted notes to a text file called deleted.txt in your
+Anki logs deleted notes to a text file called `deleted.txt` in your
 profile folder. These notes are in a text format that can be read by
-File&gt;Import, though please note the import feature only supports a
-single note type at one time, so if you have deleted notes from
-different note types, you'll need to split the file into separate files
-for each note type first.
+**File > Import**. Historically, Anki only supported a single note type
+at one time. So, if you had deleted notes from different note types,
+you needed to split the file into separate files for each note type
+first.
+
+However, profiles created in Anki versions newer than 25.09.2 have the
+following snippet at the top of `deleted.txt` (hence allowing you to
+import `deleted.txt` without the need to split the file):
+
+```
+#guid column:1
+#notetype column:2
+```
+
+```admonish note
+`deleted.txt` is unique to each profile and is not interchangeable between
+different user profiles.
+```

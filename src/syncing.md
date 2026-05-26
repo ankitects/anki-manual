@@ -90,7 +90,8 @@ operation. If you choose to continue, you’ll be asked to choose whether
 to keep the local copy or the copy on AnkiWeb when your collection is
 next synchronized.
 
-If certain problems are detected while syncing, it will also force a
+If certain problems are detected while syncing, Anki forces a
+
 one-way sync. If you find this consistently happening, please post on our
 [support site](https://forums.ankiweb.net).
 
@@ -211,7 +212,7 @@ manually configured, and does not require a password. If your system
 uses automatic proxy setup, or uses a proxy that requires a username and
 password, you will need to manually tell Anki the proxy configuration.
 
-To tell Anki your proxy settings, define a HTTPS_PROXY environmental
+To tell Anki your proxy settings, define a HTTPS_PROXY environment
 variable that points to the proxy server. It will look like:
 
     http://user:pass@proxy.company.com:8080
@@ -223,7 +224,7 @@ you need to change it to %40, like so:
 
 Anki 2.0 expects to find HTTP_PROXY instead of HTTPS_PROXY.
 
-To set environmental variables on Windows, please see
+To set environment variables on Windows, please see
 <https://www.google.com/search?q=windows+set+environmental+variable>
 
 If you’re on a Mac, please see

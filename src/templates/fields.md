@@ -74,7 +74,7 @@ the following in your card template:
 
     {{tts en_US:Front}}
 
-On Windows, macOS, and iOS, Anki will use the OS’s built in voices. On
+On Windows, macOS, and iOS, Anki will use the OS’s built-in voices. On
 Linux, no voices are built in, but voices can be provided by add-ons,
 such as [this one](https://ankiweb.net/shared/info/391644525).
 
@@ -199,7 +199,7 @@ implement the hint field yourself. We can not provide any support for
 doing so, but the following code should get you started:
 
     {{#Back}}
-    ﻿<a class=hint href="#"
+    <a class=hint href="#"
     onclick="this.style.display='none';document.getElementById('hint4753594160').style.display='inline-block';return false;">
     Show Back</a><div id="hint4753594160" class=hint style="display: none">{{Back}}</div>
     {{/Back}}
@@ -313,7 +313,7 @@ do so. This has implications for including media on the template.
 ### Static Sounds/Images
 
 If you wish to include images or sounds on your cards that are the same
-for every card (eg, a company logo at the top of each card):
+for every card (e.g. a company logo at the top of each card):
 
 1. Rename the file so it starts with an underscore, e.g "\_logo.jpg".
    The underscore tells Anki that the file is used by the template and
@@ -365,7 +365,7 @@ edit your front template so that it looks like this:
     {{Native Word}}
     {{type:Foreign Word}}
 
-Note that we have added `type:` in front of the field we want to
+Here, we have added `type:` in front of the field we want to
 compare. Since FrontSide is on the back of the card, the type answer box
 will appear on the back as well.
 
@@ -374,6 +374,8 @@ answer, and upon hitting <kbd>Enter</kbd> or showing the answer, Anki will show 
 which parts you got right and which parts you got wrong. The text box’s
 font size will be the size you configured for that field (via the
 “Fields” button when editing).
+
+Note that the type answer boxes don't appear in the preview dialog or in AnkiWeb.
 
 This feature does not change how the cards are answered, so it’s still
 up to you to decide how well you remembered or not.
@@ -412,13 +414,15 @@ template, so the back looks something like this:
     {{type:cloze:Text}}
     {{Extra}}
 
-Note that since the cloze type does not use FrontSide, this must be
-added to both sides on a cloze note type.
 
 If there are multiple sections elided, you can separate the answers in
 the text box with a comma.
 
-Type answer boxes will not appear in the ["preview" dialog](intro.md) in the browser. When you review or look at
-the preview in the card types window, they will display.
+### Ignoring Diacritics
 
-Type answer boxes will not be displayed when you review your cards on [ankiweb.net](../syncing.md).
+If you don't want Anki to compare accents on characters in your typed input with the correct answer, you can do so by using `type:nc` in your fields.
+
+    {{type:nc:Front}}
+
+This makes sure a difference in accents isn't marked as incorrect by Anki. 
+For example, `بطيخ` would be treated the same as `بَطِّيخ` or `elite` would be treated same as `élite`.
