@@ -225,7 +225,7 @@ you need to change it to %40, like so:
 Anki 2.0 expects to find HTTP_PROXY instead of HTTPS_PROXY.
 
 To set environment variables on Windows, please see
-<https://www.google.com/search?q=windows+set+environmental+variable>
+<https://duckduckgo.com/?q=windows+set+environment+variable>
 
 If you’re on a Mac, please see
 <http://stackoverflow.com/questions/135688/setting-environment-variables-in-os-x>
