@@ -183,9 +183,9 @@
 <li><a href="#problems">Problems</a></li>
 </ul>
 <h2 id="requirements"><a class="header" href="#requirements">Requirements</a></h2>
-<p>The packaged version requires a recent 64 bit Intel/AMD Linux with glibc 2.36+, and common
+<p>The packaged version requires a recent 64 bit Intel/AMD Linux with glibc 2.35+ or ARM/AArch64 with glibc 2.39+, and common
 libraries like libwayland-client and systemd. If you are on a different
-architecture (e.g ARM/AArch64), or a barebones Linux distro, you will not be able to use the
+architecture, or a barebones Linux distro, you will not be able to use the
 packaged version, but you may be able to use the <a href="https://betas.ankiweb.net/#via-pypipip">Python wheels</a>
 instead.</p>
 <p>Debian and derivatives, such as Ubuntu and <a href="https://support.google.com/chromebook/answer/9145439?">Chromebooks with Linux enabled</a>, please use the following before
@@ -206,8 +206,8 @@ installing:</p>
 <li>If zstd is not already installed on your system, you’ll need to install it using your package manager (e.g <code>sudo apt install zstd</code> on Debian/Ubuntu, or <code>sudo pacman -S zstd</code> on Arch).</li>
 <li>Open a terminal and run the following commands, replacing the filename as appropriate.</li>
 </ol>
-<pre><code class="language-shell">tar xaf Downloads/anki-launcher-2XXX-linux.tar.zst
-cd anki-launcher-2XXX-linux
+<pre><code class="language-shell">tar xaf Downloads/anki-2XXX-linux-x86_64.tar.zst
+cd anki-linux
 sudo ./install.sh
 </code></pre>
 <p>On some Linux systems, you may need to use <code>tar xaf --use-compress-program=unzstd</code>.</p>
@@ -229,37 +229,11 @@ will be preserved.</p>
 the latest Anki version and find an add-on you cannot live without stops working,
 you can download older Anki versions from the <a href="https://github.com/ankitects/anki/releases">releases page</a>.</p>
 <h2 id="system-qt-versions"><a class="header" href="#system-qt-versions">System Qt versions</a></h2>
-<p>Anki’s launcher uses the official PyQt builds by default. This makes it easier to
+<p>Anki uses the official PyQt builds by default. This makes it easier to
 install Anki on distros that don’t have the relevant Python/Qt versions, but means that
 you may not have access certain Qt features provided by your Linux distro, such as certain
 Qt themes, support for the FCITX input method, etc.</p>
 <p>If your Linux distro provides up-to-date Anki packages, you may find using them easiest.</p>
-<p>If it doesn’t, advanced users may wish to combine Anki’s launcher with their system’s Qt version.
-To do this, your system needs to have a Python version Anki supports (soon to be 3.11+),
-and suitable PyQt libraries (6.2+).</p>
-<p>WARNING: This is an experimental feature, and your system’s Qt may fix some bugs while
-introducing others.</p>
-<ol>
-<li>
-<p>Install Python and the relevant PyQt packages. On Ubuntu:</p>
-<blockquote>
-<p>sudo apt install python3-pyqt6.qtwebengine</p>
-</blockquote>
-</li>
-<li>
-<p>If you previously used the launcher, <code>rm -rf ~/.local/share/AnkiProgramFiles</code>.</p>
-</li>
-<li>
-<p>Untar the launcher, and cd to its folder.</p>
-</li>
-<li>
-<p>Run <code>touch system_qt</code> to create a system_qt file in that folder.</p>
-</li>
-<li>
-<p>Install Anki via ./anki or ./install.sh. In the list of installed packages,
-you should not see any mention of PyQt6.</p>
-</li>
-</ol>
 <h2 id="problems"><a class="header" href="#problems">Problems</a></h2>
 <p>If you encounter any issues when installing or starting Anki, please see the
 following pages:</p>

@@ -520,7 +520,7 @@ errors. After installing the latest Anki version and ensuring all Windows
 updates are installed, instead of running Anki directly, press the <kbd>Windows</kbd> key (or open the Start menu), type <code>cmd</code>, and launch Command Prompt. When the terminal window opens, paste the following command, and press <kbd>Enter</kbd>. (The path will be different if Anki is installed in a location that is not the default.)</p>
 <pre><code>%LocalAppData%\Programs\Anki\anki-console.bat
 </code></pre>
-<p>For Anki versions 25.07 to 25.09.x, paste</p>
+<p>For Anki versions 25.07 to 25.09.4, paste</p>
 <pre><code>%LocalAppData%\Programs\Anki\anki-console.exe
 </code></pre>
 <p>Presumably Anki will fail to open like before, but the output in the terminal window may reveal something about
@@ -710,9 +710,9 @@ remove that file.</p>
 <li><a href="platform/linux/installing.html#problems">Problems</a></li>
 </ul>
 <h2 id="requirements-2"><a class="header" href="#requirements-2">Requirements</a></h2>
-<p>The packaged version requires a recent 64 bit Intel/AMD Linux with glibc 2.36+, and common
+<p>The packaged version requires a recent 64 bit Intel/AMD Linux with glibc 2.35+ or ARM/AArch64 with glibc 2.39+, and common
 libraries like libwayland-client and systemd. If you are on a different
-architecture (e.g ARM/AArch64), or a barebones Linux distro, you will not be able to use the
+architecture, or a barebones Linux distro, you will not be able to use the
 packaged version, but you may be able to use the <a href="https://betas.ankiweb.net/#via-pypipip">Python wheels</a>
 instead.</p>
 <p>Debian and derivatives, such as Ubuntu and <a href="https://support.google.com/chromebook/answer/9145439?">Chromebooks with Linux enabled</a>, please use the following before
@@ -733,8 +733,8 @@ installing:</p>
 <li>If zstd is not already installed on your system, you’ll need to install it using your package manager (e.g <code>sudo apt install zstd</code> on Debian/Ubuntu, or <code>sudo pacman -S zstd</code> on Arch).</li>
 <li>Open a terminal and run the following commands, replacing the filename as appropriate.</li>
 </ol>
-<pre><code class="language-shell">tar xaf Downloads/anki-launcher-2XXX-linux.tar.zst
-cd anki-launcher-2XXX-linux
+<pre><code class="language-shell">tar xaf Downloads/anki-2XXX-linux-x86_64.tar.zst
+cd anki-linux
 sudo ./install.sh
 </code></pre>
 <p>On some Linux systems, you may need to use <code>tar xaf --use-compress-program=unzstd</code>.</p>
@@ -756,37 +756,11 @@ will be preserved.</p>
 the latest Anki version and find an add-on you cannot live without stops working,
 you can download older Anki versions from the <a href="https://github.com/ankitects/anki/releases">releases page</a>.</p>
 <h2 id="system-qt-versions"><a class="header" href="#system-qt-versions">System Qt versions</a></h2>
-<p>Anki’s launcher uses the official PyQt builds by default. This makes it easier to
+<p>Anki uses the official PyQt builds by default. This makes it easier to
 install Anki on distros that don’t have the relevant Python/Qt versions, but means that
 you may not have access certain Qt features provided by your Linux distro, such as certain
 Qt themes, support for the FCITX input method, etc.</p>
 <p>If your Linux distro provides up-to-date Anki packages, you may find using them easiest.</p>
-<p>If it doesn’t, advanced users may wish to combine Anki’s launcher with their system’s Qt version.
-To do this, your system needs to have a Python version Anki supports (soon to be 3.11+),
-and suitable PyQt libraries (6.2+).</p>
-<p>WARNING: This is an experimental feature, and your system’s Qt may fix some bugs while
-introducing others.</p>
-<ol>
-<li>
-<p>Install Python and the relevant PyQt packages. On Ubuntu:</p>
-<blockquote>
-<p>sudo apt install python3-pyqt6.qtwebengine</p>
-</blockquote>
-</li>
-<li>
-<p>If you previously used the launcher, <code>rm -rf ~/.local/share/AnkiProgramFiles</code>.</p>
-</li>
-<li>
-<p>Untar the launcher, and cd to its folder.</p>
-</li>
-<li>
-<p>Run <code>touch system_qt</code> to create a system_qt file in that folder.</p>
-</li>
-<li>
-<p>Install Anki via ./anki or ./install.sh. In the list of installed packages,
-you should not see any mention of PyQt6.</p>
-</li>
-</ol>
 <h2 id="problems-5"><a class="header" href="#problems-5">Problems</a></h2>
 <p>If you encounter any issues when installing or starting Anki, please see the
 following pages:</p>
@@ -5601,7 +5575,11 @@ different user profiles.</p>
 <li><a href="files.html#startup-options">Startup Options</a></li>
 <li><a href="files.html#dropbox-and-file-syncing">DropBox and File Syncing</a></li>
 <li><a href="files.html#network-filesystems">Network Filesystems</a></li>
-<li><a href="files.html#running-from-a-flash-drive">Running from a Flash Drive</a></li>
+<li><a href="files.html#running-from-a-flash-drive">Running from a Flash Drive</a>
+<ul>
+<li><a href="files.html#anki-launcher">Anki Launcher</a></li>
+</ul>
+</li>
 <li><a href="files.html#backups">Backups</a></li>
 <li><a href="files.html#inaccessible-harddisk">Inaccessible Harddisk</a></li>
 <li><a href="files.html#permissions-of-temp-folder">Permissions of Temp Folder</a></li>
@@ -5666,13 +5644,13 @@ are stored in a file called <code>prefs.db</code>.</p>
 so could cause your collection to become corrupt. Please do not move or
 modify the other files in the folder either.</p>
 <h2 id="program-files"><a class="header" href="#program-files">Program Files</a></h2>
-<p>Anki’s launcher is installed in the following locations by default:</p>
+<p>Anki is installed in the following locations by default:</p>
 <ul>
 <li>Windows: <code>%LOCALAPPDATA%\Programs\Anki</code></li>
 <li>macOS: <code>/Applications/Anki.app</code></li>
 <li>Linux: <code>/usr/local/share/anki</code></li>
 </ul>
-<p>When you install/update Anki with the launcher, it downloads support
+<p>When you install/update Anki in versions 25.07 to 25.09.4, it downloads support
 files and places them in the following locations:</p>
 <ul>
 <li>Windows: <code>%LOCALAPPDATA%\AnkiProgramFiles</code></li>
@@ -5758,11 +5736,33 @@ Database to detect corruption is recommended.</p>
 <p>On Windows, Anki can be installed on a USB / flash drive and run as a
 portable application. The following example assumes your USB drive is
 drive E; adjust as necessary.</p>
+<ul>
+<li>
+<p>Copy the %LOCALAPPDATA%\Programs\Anki folder to the flash drive, so you
+have a folder like E:\Anki.</p>
+</li>
+<li>
+<p>Create a text file called E:\anki.bat with the following text:</p>
+<p>E:\anki\anki.exe -b E:\ankidata</p>
+</li>
+</ul>
+<p>If you would like to prevent the black command prompt window from
+remaining open, you can instead use:</p>
+<pre><code>start /b E:\anki\anki.exe -b E:\ankidata
+</code></pre>
+<ul>
+<li>Double-clicking on anki.bat should start Anki with the user data
+stored in E:\ankidata.</li>
+</ul>
+<p>The full path including drive letter is required - if you try using
+<code>\anki\anki.exe</code> instead you will find syncing stops working.</p>
 <p>WARNING: The drive letter must be the same on all devices. If you set this up for drive E,
 it won’t work for a flash drive mapped to drive D for example.</p>
 <p>WARNING: Media syncing with AnkiWeb may not work if your flash drive is formatted
 as FAT32. Please format the drive as NTFS to ensure media syncs
 correctly.</p>
+<h3 id="anki-launcher"><a class="header" href="#anki-launcher">Anki Launcher</a></h3>
+<p>These instructions apply to Anki versions 25.07 to 25.09.4:</p>
 <ol>
 <li>Download the latest Anki launcher, and install it in a custom location:
 <code>E:\Anki\Launcher</code>. Not <code>E:\Anki\Launcher\Anki</code>.</li>
@@ -6657,9 +6657,9 @@ has been configured, (e.g. “Cannot connect to AnkiWeb” when your server is d
 "\Program Files\anki\anki-console" --syncserver
 </code></pre>
 <p>Or MacOS, in Terminal.app:</p>
-<pre><code>SYNC_USER1=user:pass /Applications/Anki.app/Contents/MacOS/launcher --syncserver
+<pre><code>SYNC_USER1=user:pass /Applications/Anki.app/Contents/MacOS/anki --syncserver
 </code></pre>
-<p>Replace ‘launcher’ with ‘anki’ for old packaged builds prior to 25.07.</p>
+<p>Replace ‘anki’ with ‘launcher’ for versions 25.07 to 25.09.4.</p>
 <p>Or Linux:</p>
 <pre><code>SYNC_USER1=user:pass anki --syncserver
 </code></pre>

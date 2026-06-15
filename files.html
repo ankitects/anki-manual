@@ -181,7 +181,11 @@
 <li><a href="#startup-options">Startup Options</a></li>
 <li><a href="#dropbox-and-file-syncing">DropBox and File Syncing</a></li>
 <li><a href="#network-filesystems">Network Filesystems</a></li>
-<li><a href="#running-from-a-flash-drive">Running from a Flash Drive</a></li>
+<li><a href="#running-from-a-flash-drive">Running from a Flash Drive</a>
+<ul>
+<li><a href="#anki-launcher">Anki Launcher</a></li>
+</ul>
+</li>
 <li><a href="#backups">Backups</a></li>
 <li><a href="#inaccessible-harddisk">Inaccessible Harddisk</a></li>
 <li><a href="#permissions-of-temp-folder">Permissions of Temp Folder</a></li>
@@ -246,13 +250,13 @@ are stored in a file called <code>prefs.db</code>.</p>
 so could cause your collection to become corrupt. Please do not move or
 modify the other files in the folder either.</p>
 <h2 id="program-files"><a class="header" href="#program-files">Program Files</a></h2>
-<p>Anki’s launcher is installed in the following locations by default:</p>
+<p>Anki is installed in the following locations by default:</p>
 <ul>
 <li>Windows: <code>%LOCALAPPDATA%\Programs\Anki</code></li>
 <li>macOS: <code>/Applications/Anki.app</code></li>
 <li>Linux: <code>/usr/local/share/anki</code></li>
 </ul>
-<p>When you install/update Anki with the launcher, it downloads support
+<p>When you install/update Anki in versions 25.07 to 25.09.4, it downloads support
 files and places them in the following locations:</p>
 <ul>
 <li>Windows: <code>%LOCALAPPDATA%\AnkiProgramFiles</code></li>
@@ -338,11 +342,33 @@ Database to detect corruption is recommended.</p>
 <p>On Windows, Anki can be installed on a USB / flash drive and run as a
 portable application. The following example assumes your USB drive is
 drive E; adjust as necessary.</p>
+<ul>
+<li>
+<p>Copy the %LOCALAPPDATA%\Programs\Anki folder to the flash drive, so you
+have a folder like E:\Anki.</p>
+</li>
+<li>
+<p>Create a text file called E:\anki.bat with the following text:</p>
+<p>E:\anki\anki.exe -b E:\ankidata</p>
+</li>
+</ul>
+<p>If you would like to prevent the black command prompt window from
+remaining open, you can instead use:</p>
+<pre><code>start /b E:\anki\anki.exe -b E:\ankidata
+</code></pre>
+<ul>
+<li>Double-clicking on anki.bat should start Anki with the user data
+stored in E:\ankidata.</li>
+</ul>
+<p>The full path including drive letter is required - if you try using
+<code>\anki\anki.exe</code> instead you will find syncing stops working.</p>
 <p>WARNING: The drive letter must be the same on all devices. If you set this up for drive E,
 it won’t work for a flash drive mapped to drive D for example.</p>
 <p>WARNING: Media syncing with AnkiWeb may not work if your flash drive is formatted
 as FAT32. Please format the drive as NTFS to ensure media syncs
 correctly.</p>
+<h3 id="anki-launcher"><a class="header" href="#anki-launcher">Anki Launcher</a></h3>
+<p>These instructions apply to Anki versions 25.07 to 25.09.4:</p>
 <ol>
 <li>Download the latest Anki launcher, and install it in a custom location:
 <code>E:\Anki\Launcher</code>. Not <code>E:\Anki\Launcher\Anki</code>.</li>
