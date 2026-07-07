@@ -142,7 +142,7 @@ you’ve selected at the bottom of the screen. The differently colored
 blocks show how many of the cards you answered on each day were
 [mature](getting-started.md#card-states), young, relearning, or learning cards.
 There is also a separate group for cards answered in a filtered/cram
-deck while they were not due. The gray shaded region and the right axis shows
+deck while they were not due. The gray shaded region and the right axis show
 the cumulative total for each type of review as time progresses across the
 graph (so at 0 days, it would display the number for the entire time
 period displayed on the graph).

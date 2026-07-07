@@ -37,7 +37,7 @@ What needs changing will depend on the message you are getting.
 **Found '{{Field}}', but there is no field called 'Field'**
 
 This indicates your template includes the name of a field that doesn't exist. To fix the problem, locate the
-{{Field}} inside the card template, and remove it.
+`{{Field}}` inside the card template, and remove it.
 
 **Missing }} in {{Field**
 

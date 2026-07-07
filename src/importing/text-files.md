@@ -189,7 +189,7 @@ and must be listed in separate lines at the top of the file.
 
 | Key               | Allowed Values                                                                             | Behaviour                                                                                                       |
 | ----------------- | ------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------- |
-| `separator`       | `Comma`, `Semicolon`, `Tab`, `Space`, `Pipe`, `Colon`, or the according literal characters | Determines the field separator.                                                                                 |
+| `separator`       | `Comma`, `Semicolon`, `Tab`, `Space`, `Pipe`, `Colon`, or the corresponding literal characters | Determines the field separator.                                                                                 |
 | `html`            | `true`, `false`                                                                            | Determines whether the file is treated as HTML.                                                                 |
 | `tags`            | List of tags, separated by spaces                                                          | Adds the listed tags to every imported note.                                                                      |
 | `columns`         | List of names, separated by the previously set separator                                   | Determines the number of columns and shows their given names when importing.                                    |

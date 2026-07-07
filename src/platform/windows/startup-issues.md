@@ -78,6 +78,12 @@ updates are installed, instead of running Anki directly, press the <kbd>Windows<
 %LocalAppData%\Programs\Anki\anki-console.bat
 ```
 
+For Anki versions 25.07 to 25.09.4, paste
+
+```
+%LocalAppData%\Programs\Anki\anki-console.exe
+```
+
 Presumably Anki will fail to open like before, but the output in the terminal window may reveal something about
 what is causing the problem.
 

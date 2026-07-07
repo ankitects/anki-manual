@@ -10,9 +10,10 @@ In order to use mdBook, first ensure that you have [Rust](https://www.rust-lang.
 
 Next, install mdBook and its pre-processors
 ```
-cargo install mdbook
-cargo install mdbook-toc
-cargo install mdbook-linkcheck
+cargo install mdbook --version 0.4.52
+cargo install mdbook-toc --version 0.14.2 --force
+cargo install mdbook-admonish --version 1.20.0 --force
+cargo install mdbook-linkcheck --version 0.7.7 --force
 ```
 
 ### Develop and preview

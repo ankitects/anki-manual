@@ -15,7 +15,7 @@ Things to be aware of:
   they tend to take time to catch up when the sync protocol changes, so they
   are not recommended.
 - The messages inside Anki will use the term "AnkiWeb" even if a custom server
-  has been configured, (e.g "Cannot connect to AnkiWeb" when your server is down).
+  has been configured, (e.g. "Cannot connect to AnkiWeb" when your server is down).
 
 ## Installing/Running
 
@@ -38,10 +38,10 @@ set SYNC_USER1=user:pass
 Or MacOS, in Terminal.app:
 
 ```
-SYNC_USER1=user:pass /Applications/Anki.app/Contents/MacOS/launcher --syncserver
+SYNC_USER1=user:pass /Applications/Anki.app/Contents/MacOS/anki --syncserver
 ```
 
-Replace 'launcher' with 'anki' for old packaged builds prior to 25.07.
+Replace 'anki' with 'launcher' for versions 25.07 to 25.09.4.
 
 Or Linux:
 
@@ -115,7 +115,7 @@ the PHC Format.
 
 The server needs to store a copy of your collection and media in a folder.
 By default it is ~/.syncserver; you can change this by defining
-a `SYNC_BASE` environmental variable.
+a `SYNC_BASE` environment variable.
 
 - This must not be the same location as your normal Anki data folder, as the
   server and client must store separate copies.
@@ -135,6 +135,7 @@ that the server binds to.
 
 ## Client Setup
 
+### Server URL
 You'll need to determine your computer's network IP address, and then
 point each of your Anki clients to the address, e.g something like
 `http://192.168.1.200:8080/`. The URL can be configured in the preferences.
@@ -149,12 +150,27 @@ Older desktop clients required you to define `SYNC_ENDPOINT` and
 respectively. AnkiDroid clients before 2.16 require separate configuration for
 the two endpoints.
 
+### Credentials
+To be able to synchronize, put your user credential (`SYNC_USER1` for example)
+in the **AnkiWeb account** section of the preferences.
+
 ## Reverse Proxies
 
 If using a reverse proxy to provide HTTPS access (e.g. nginx), and binding to a subpath
 (e.g. `http://example.com/custom/` -> `http://localhost:8080/`), you must make sure to
-including a trailing slash when configuring Anki. If you put `http://example.com/custom`
+include a trailing slash when configuring Anki. If you put `http://example.com/custom`
 instead, it will not work.
+
+If you are using a caddy, increase 
+[the http read buffer size](https://caddyserver.com/docs/caddyfile/directives/reverse_proxy#read_buffer) 
+to avoid connection problems when downloading media files.
+```caddyfile
+reverse_proxy http://127.0.0.1:8080 {
+	transport http {
+		read_buffer 512k
+	}
+}
+```
 
 On iOS, TLS 1.3 is not supported, so your reverse proxy will need to have TLS 1.2
 enabled, or you'll get an "error code -9836".

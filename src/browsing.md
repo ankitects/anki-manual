@@ -75,7 +75,7 @@ tags.
 Here is an example: Say you have the tags `Math`, `Calculus`, and `Algebra`.
 Click on the `Calculus` tag, then <kbd>Ctrl</kbd>-click on the `Algebra` tag. Now both
 tags are selected, click and drag any of the two onto the `Math` tag to make them
-both children of this tag. Behind the scene, Anki has renamed the two tags to
+both children of this tag. Behind the scenes, Anki has renamed the two tags to
 `Math::Calculus` and `Math::Algebra` respectively and updated your notes accordingly.
 
 Another use case for selecting multiple items is searching: If you right-click on
@@ -87,7 +87,7 @@ to append the resulting search to the current search.
 
 If you regularly search for the same thing,
 you can save the current search by right-clicking the topmost item in the sidebar,
-choosing “Save Current Search” and typing in a name.
+choosing **Save Current Search** and typing in a name.
 You can also drag and drop any sidebar item onto this area to add an equivalent
 saved search, effectively pinning it at the top.
 

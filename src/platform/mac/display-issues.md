@@ -25,7 +25,7 @@ remove that file.
 
 ## eGPUs
 
-If you experience blank screens when using an external graphics card on a Mac, you can <kbd>Ctrl</kbd>+click on the Anki app, click **Get Info**, and enable the **prefer eGPU** option.
+If you experience blank screens when using an external graphics card on a Mac, you can <kbd>Ctrl</kbd>-click on the Anki app, click **Get Info**, and enable the **prefer eGPU** option.
 
 ## Monitors with Different Resolutions
 
