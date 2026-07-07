@@ -6720,6 +6720,7 @@ reverse proxy.</p>
 <p>You can define <code>SYNC_HOST</code> and <code>SYNC_PORT</code> to change the host and port
 that the server binds to.</p>
 <h2 id="client-setup"><a class="header" href="#client-setup">Client Setup</a></h2>
+<h3 id="server-url"><a class="header" href="#server-url">Server URL</a></h3>
 <p>You’ll need to determine your computer’s network IP address, and then
 point each of your Anki clients to the address, e.g something like
 <code>http://192.168.1.200:8080/</code>. The URL can be configured in the preferences.</p>
@@ -6731,6 +6732,9 @@ toggle “Allow Anki to access local network” off and then on again.</p>
 <code>http://192.168.1.200:8080/sync/</code> and <code>http://192.168.1.200:8080/msync/</code>
 respectively. AnkiDroid clients before 2.16 require separate configuration for
 the two endpoints.</p>
+<h3 id="credentials"><a class="header" href="#credentials">Credentials</a></h3>
+<p>To be able to synchronize, put your user credential (<code>SYNC_USER1</code> for example)
+in the <strong>AnkiWeb account</strong> section of the preferences.</p>
 <h2 id="reverse-proxies"><a class="header" href="#reverse-proxies">Reverse Proxies</a></h2>
 <p>If using a reverse proxy to provide HTTPS access (e.g. nginx), and binding to a subpath
 (e.g. <code>http://example.com/custom/</code> -&gt; <code>http://localhost:8080/</code>), you must make sure to
