@@ -151,7 +151,8 @@ respectively. AnkiDroid clients before 2.16 require separate configuration for
 the two endpoints.
 
 ### Credentials
-To be able to synchronize, put your user credential (`SYNC_USER1` for example) in the **AnkiWeb account** section of the preferences.
+To be able to synchronize, put your user credential (`SYNC_USER1` for example)
+in the **AnkiWeb account** section of the preferences.
 
 ## Reverse Proxies
 
