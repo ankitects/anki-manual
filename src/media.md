@@ -1,7 +1,7 @@
 # Media
 
 Anki stores the sounds and images used in your notes in a folder next to
-the collection. For more on the folder location, please see the [file locations](files.md#user-data) section. When you add media within Anki, either by
+the collection. For more on the folder location, see the [file locations](files.md#user-data) section. When you add media within Anki, either by
 using the paperclip icon in the [editor](editing.md) or by pasting it into
 a field, Anki will copy it from its original location into the media
 folder. This makes it easy to back up your collection’s media or move it

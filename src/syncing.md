@@ -3,13 +3,13 @@
 <!-- toc -->
 
 AnkiWeb is a service that allows you to keep your collection
-synchronized across multiple devices, and to study online. Please sign
+synchronized across multiple devices, and to study online. Sign
 up for a [free account](https://ankiweb.net/) before following the steps
 below.
 
 ## Intro Videos
 
-For a quick introduction to syncing, please check out the
+For a quick introduction to syncing, check out the
 [syncing intro videos](https://www.youtube.com/watch?v=YkiM4DPzSVc&list=PLGgmaKOIHykFoomqkBJAyGiDQ2kyiuTao&yt:cc=on).
 
 ## Setup
@@ -92,7 +92,7 @@ next synchronized.
 
 If certain problems are detected while syncing, Anki forces a
 
-one-way sync. If you find this consistently happening, please post on our
+one-way sync. If you find this consistently happening, post on our
 [support site](https://forums.ankiweb.net).
 
 When a one-way sync is required, you need to choose whether you wish to
@@ -118,7 +118,7 @@ next sync, force changes in one direction" box in
 the option to choose which side you want to use.)
 
 Forcing a one way sync only affects card syncing - media is synced as
-normal. If you have files that you want to remove from AnkiWeb, please
+normal. If you have files that you want to remove from AnkiWeb,
 ensure your client is fully in sync first. After syncing is up to date,
 any files you remove (e.g. via the **Check Media** function) will be removed
 from AnkiWeb on the following sync.
@@ -184,7 +184,7 @@ your account will automatically be marked as active.
 
 If your account has been inactive for 6 months or more, and you used the service for a week or longer,
 we will send you an email notifying you that deletion is pending.
-If you'd like to keep your account active, please log in to ankiweb.net
+If you'd like to keep your account active, log in to ankiweb.net
 and study a card, or sync one of your devices within 30 days.
 
 ## Firewalls
@@ -196,7 +196,7 @@ change, so we recommend you allow wildcard access to \*.ankiweb.net to reduce
 the chance of the firewall rules needing to be updated in the future.
 
 If you have a firewall on your machine, you should add an exception for
-Anki. If you are on a work or school network, please contact your
+Anki. If you are on a work or school network, contact your
 network administrator for assistance - it is not something we can help
 you with.
 
@@ -224,10 +224,10 @@ you need to change it to %40, like so:
 
 Anki 2.0 expects to find HTTP_PROXY instead of HTTPS_PROXY.
 
-To set environment variables on Windows, please see
+To set environment variables on Windows, see
 <https://duckduckgo.com/?q=windows+set+environment+variable>
 
-If you’re on a Mac, please see
+If you’re on a Mac, see
 <http://stackoverflow.com/questions/135688/setting-environment-variables-in-os-x>
 
 Heavily locked down networks that intercept secure connections and

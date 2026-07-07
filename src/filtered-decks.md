@@ -48,7 +48,7 @@ you specify.
 Show cards that will be due in the near future (the number of days you
 specify). This is useful for working through some of your older cards
 before a vacation, but it will not help with cards you have learned
-recently. Please see the [reviewing ahead](#reviewing-ahead) section
+recently. See the [reviewing ahead](#reviewing-ahead) section
 below for more info.
 
 **Preview new cards**\
@@ -103,7 +103,7 @@ overview screen.
 The **search** area controls what cards Anki will gather. All of the
 searches possible in the browser are also possible for filtered decks,
 such as limiting to tags, finding cards forgotten a certain number of
-times, and so on. Please see the [searching](searching.md) section of the
+times, and so on. See the [searching](searching.md) section of the
 manual for more information on the different possibilities.
 
 Filtered decks cannot pull in cards that are suspended, buried, or already in a

@@ -64,7 +64,7 @@ You need to turn on the **Allow HTML in fields** in the import
 dialog for HTML newlines to work.
 
 Escaped multi-lines will not work correctly if you are using cloze
-deletions that span multiple lines. In this case, please use HTML
+deletions that span multiple lines. In this case, use HTML
 newlines instead.
 
 You can also include tags in another field and select it as a tags field
@@ -85,7 +85,7 @@ and so on), Anki expects files to be saved in a "UTF-8 encoding". The
 easiest way to do this is to use the free LibreOffice spreadsheet
 program instead of Excel to edit your file, as it supports UTF-8 easily,
 and also exports multi-line content properly, unlike Excel. If you wish
-to keep using Excel, please see [this doc](https://docs.google.com/document/d/12YE_FS6A9ANLTESJNtPP116ti4nNmCBghyoJBRtno_k/edit?usp=sharing)
+to keep using Excel, see [this doc](https://docs.google.com/document/d/12YE_FS6A9ANLTESJNtPP116ti4nNmCBghyoJBRtno_k/edit?usp=sharing)
 for more information.
 
 To save your spreadsheet to a file Anki can read with LibreOffice, go to
@@ -178,7 +178,7 @@ importing are already in your collection, they will be updated in place
 set in the import dialog. If notes are updated in place, the existing
 scheduling information on all their cards will be preserved.
 
-For info on how duplicates are handled in .apkg files, please see the
+For info on how duplicates are handled in .apkg files, see the
 [Deck Packages](../exporting.md#packaged-decks) section.
 
 ## File Headers
@@ -228,7 +228,7 @@ export your notes with the GUID included, you can make changes to the notes, and
 as long as you do not modify the GUID field, you'll be able to import the notes back
 in to update the existing notes.
 
-Please note that the GUID is intended to be created by Anki. If you are creating
+Note that the GUID is intended to be created by Anki. If you are creating
 your own IDs, such as `MYNOTE0001`, then it's recommended that you place the IDs
 in the first field, instead of assigning them to Anki's internal GUID. When importing,
 Anki is able to use either the first field or the GUID for duplicate checking, so you do not

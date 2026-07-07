@@ -2,7 +2,7 @@
 
 ## Installing & Upgrading Anki on Windows
 
-For instructions on how to install or upgrade Anki on Windows, please see:
+For instructions on how to install or upgrade Anki on Windows, see:
 - [Install & Upgrade](installing.md)
 
 ## Problems

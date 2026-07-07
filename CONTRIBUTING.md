@@ -6,7 +6,7 @@ anki-manual is built using [mdBook](https://rust-lang.github.io/mdBook/), a Rust
 
 ### Install dependencies
 
-In order to use mdBook, please first ensure that you have [Rust](https://www.rust-lang.org/tools/install) installed on your machine.
+In order to use mdBook, first ensure that you have [Rust](https://www.rust-lang.org/tools/install) installed on your machine.
 
 Next, install mdBook and its pre-processors
 ```
