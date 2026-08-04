@@ -1,3 +1,6 @@
+> [!WARNING]
+> Docs are being migrated to the [main Anki repo](https://github.com/ankitects/anki/tree/main/docs-site). Please submit issues and PRs there.
+
 # Anki Manual
 
 This repository contains the source of [Anki's user manual](https://docs.ankiweb.net).
