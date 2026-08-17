@@ -571,6 +571,16 @@ based on a regular note type. If you wish to customize it, make
 sure to clone the existing Cloze type instead of another type of note.
 Things like formatting can be customized, but it is not possible to add
 extra card templates to the cloze note type.</p>
+<p>Anki now supports a new syntax that allows a single cloze deletion to appear on
+multiple cards:</p>
+<pre><code>{{c1::-té}}, {{c2::-sion}}, or {{c3::-tion}} are {{c1,2,3,4::feminine}}.
+</code></pre>
+<p>This creates 4 cards, each hiding “feminine” in a different context.
+The same result can however still be achieved with the older nested syntax:</p>
+<pre><code>{{c1::-té}}, {{c2::-sion}}, {{c3::-tion}} are {{c4::{{c3::{{c2::{{c1::feminine}}}}}}}}
+</code></pre>
+<p>The new syntax is easier to read and write, while the old syntax is more
+verbose.</p>
 <h2 id="image-occlusion"><a class="header" href="#image-occlusion">Image Occlusion</a></h2>
 <p>Anki 23.10+ supports Image Occlusion cards natively. An Image
 Occlusion (IO) note is a special case of cloze deletion based on images
@@ -661,7 +671,7 @@ links below.</p>
 </ul>
 <p>Linux:</p>
 <ul>
-<li>Gnome: <a href="https://help.gnome.org/users/gnome-help/stable/tips-specialchars.html.en">https://help.gnome.org/users/gnome-help/stable/tips-specialchars.html.en</a></li>
+<li>Gnome: <a href="https://help.gnome.org/gnome-help/tips-specialchars.html">https://help.gnome.org/gnome-help/tips-specialchars.html</a></li>
 <li>KDE Plasma: <a href="https://userbase.kde.org/Tutorials/ComposeKey">https://userbase.kde.org/Tutorials/ComposeKey</a></li>
 </ul>
 <h3 id="adding-keyboard-layouts-for-specific-languages"><a class="header" href="#adding-keyboard-layouts-for-specific-languages">Adding keyboard layouts for specific languages</a></h3>
