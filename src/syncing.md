@@ -238,3 +238,58 @@ An alternative solution is to install a local proxy server, and point
 that proxy server at your normal proxy server. You can then tell Anki to
 use the local proxy, which will redirect requests to the proxy you
 normally use.
+
+
+
+```admonish faq collapsible=true, title="Are there limits on file sizes on AnkiWeb?"
+Yes.
+
+- **Collection limit**: 300MB (uncompressed).
+
+- **Media limit**: No limit for the total amount of media, but 100MB for
+individual media files.
+
+The collection includes the text on your cards and the scheduling information,
+but does not include media (sounds and images), as they are stored separately.
+```
+
+
+```admonish faq collapsible=true, title="How do I know if I reached the collection size limit?"
+If you have hit the collection size limit, you will see a message notifying you
+that your collection is too large to sync.
+```
+
+
+```admonish faq collapsible=true, title="What can I do if I reached the collection size limit?"
+If you have imported a dictionary's worth of content, you will need to do the
+following:
+1. Move some unused cards to a separate deck.
+2. Export the deck.
+3. Delete the deck from your collection.
+4. Run **Tools → Check Database** to free up space that was taken by the deleted
+cards.
+```
+
+
+```admonish faq collapsible=true, title="Can I increase the collection size limit?"
+No. It is not possible to increase the limit, because such large collections
+slow down AnkiWeb for other users.
+```
+
+
+```admonish faq collapsible=true, title="Can I buy more storage space?"
+No, at least not yet. As the usage of Anki and AnkiWeb increases, at some point
+a pricing system may be introduced where basic, low-capacity accounts are free
+and heavier users can pay more for more space.
+```
+
+
+```admonish faq collapsible=true, title="Will I likely reach the limit?"
+Most users will never reach the limit.
+
+25,000 average-sized cards and several years of review history will take up
+about 25MB, so to hit the limit you usually need to either be copying large
+amounts of text into each card, or filling your collection with hundreds of
+thousands of new cards that you aren't actually studying.
+```
+
