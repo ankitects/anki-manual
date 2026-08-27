@@ -3,13 +3,13 @@
 <!-- toc -->
 
 AnkiWeb is a service that allows you to keep your collection
-synchronized across multiple devices, and to study online. Please sign
+synchronized across multiple devices, and to study online. Sign
 up for a [free account](https://ankiweb.net/) before following the steps
 below.
 
 ## Intro Videos
 
-For a quick introduction to syncing, please check out the
+For a quick introduction to syncing, check out the
 [syncing intro videos](https://www.youtube.com/watch?v=YkiM4DPzSVc&list=PLGgmaKOIHykFoomqkBJAyGiDQ2kyiuTao&yt:cc=on).
 
 ## Setup
@@ -52,7 +52,7 @@ and red when a full sync is required.
 You can watch a [related video](https://www.youtube.com/watch?v=phP9GGG-PxY) on this topic.
 
 Anki will synchronize any sounds and images used by your notes. It will
-notice when media has been added, removed or replaced in your [media folder](files.md#file-locations), but
+notice when media has been added, removed or replaced in your [media folder](files.md#user-data), but
 will not notice if you have made edits to existing files. To get your edits synced, you
 need to add, remove or replace a file as well.
 
@@ -90,8 +90,9 @@ operation. If you choose to continue, you’ll be asked to choose whether
 to keep the local copy or the copy on AnkiWeb when your collection is
 next synchronized.
 
-If certain problems are detected while syncing, it will also force a 
-one-way sync. If you find this consistently happening, please post on our
+If certain problems are detected while syncing, Anki forces a
+
+one-way sync. If you find this consistently happening, post on our
 [support site](https://forums.ankiweb.net).
 
 When a one-way sync is required, you need to choose whether you wish to
@@ -117,7 +118,7 @@ next sync, force changes in one direction" box in
 the option to choose which side you want to use.)
 
 Forcing a one way sync only affects card syncing - media is synced as
-normal. If you have files that you want to remove from AnkiWeb, please
+normal. If you have files that you want to remove from AnkiWeb,
 ensure your client is fully in sync first. After syncing is up to date,
 any files you remove (e.g. via the **Check Media** function) will be removed
 from AnkiWeb on the following sync.
@@ -161,9 +162,9 @@ content, so everything will be in one place.
 
 ## AnkiWeb Data Deletion
 
-As AnkiWeb is a free service, we need to periodically delete unused account data 
+As AnkiWeb is a free service, we need to periodically delete unused account data
 to keep costs down. If you haven't accessed your account or synced in the last 6 months,
- the data on your account might get deleted.
+the data on your account might get deleted.
 
 ### What Gets Deleted
 
@@ -174,7 +175,7 @@ Any cards you have stored on your computer, phone or tablet will remain on those
 ### Returning to AnkiWeb
 
 Once your deck data has expired, it is not possible for us to recover your data from AnkiWeb,
- but you may be able to recover it if you have a local copy or a [backup](./backups.md).
+but you may be able to recover it if you have a local copy or a [backup](./backups.md).
 
 ### Avoiding Data Deletion
 
@@ -182,8 +183,8 @@ Each time you visit ankiweb.net, or use the synchronization feature in Anki, Ank
 your account will automatically be marked as active.
 
 If your account has been inactive for 6 months or more, and you used the service for a week or longer,
-we will send you an email notifying you that deletion is pending. 
-If you'd like to keep your account active, please log in to ankiweb.net
+we will send you an email notifying you that deletion is pending.
+If you'd like to keep your account active, log in to ankiweb.net
 and study a card, or sync one of your devices within 30 days.
 
 ## Firewalls
@@ -195,7 +196,7 @@ change, so we recommend you allow wildcard access to \*.ankiweb.net to reduce
 the chance of the firewall rules needing to be updated in the future.
 
 If you have a firewall on your machine, you should add an exception for
-Anki. If you are on a work or school network, please contact your
+Anki. If you are on a work or school network, contact your
 network administrator for assistance - it is not something we can help
 you with.
 
@@ -211,7 +212,7 @@ manually configured, and does not require a password. If your system
 uses automatic proxy setup, or uses a proxy that requires a username and
 password, you will need to manually tell Anki the proxy configuration.
 
-To tell Anki your proxy settings, define a HTTPS_PROXY environmental
+To tell Anki your proxy settings, define a HTTPS_PROXY environment
 variable that points to the proxy server. It will look like:
 
     http://user:pass@proxy.company.com:8080
@@ -223,10 +224,10 @@ you need to change it to %40, like so:
 
 Anki 2.0 expects to find HTTP_PROXY instead of HTTPS_PROXY.
 
-To set environmental variables on Windows, please see
-<https://www.google.com/search?q=windows+set+environmental+variable>
+To set environment variables on Windows, see
+<https://duckduckgo.com/?q=windows+set+environment+variable>
 
-If you’re on a Mac, please see
+If you’re on a Mac, see
 <http://stackoverflow.com/questions/135688/setting-environment-variables-in-os-x>
 
 Heavily locked down networks that intercept secure connections and

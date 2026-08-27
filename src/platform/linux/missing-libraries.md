@@ -10,5 +10,5 @@ following command line, which should reveal a missing library:
 QT_DEBUG_PLUGINS=1 anki
 ```
 
-After installing the library with apt-get or similar, repeat the process. You
+After installing the library with `apt-get` or similar, repeat the process. You
 may need to do this a few times before all required libraries are installed.

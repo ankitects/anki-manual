@@ -32,16 +32,16 @@ To try it out:
     \sqrt{x}
     $$
 Anki’s MathJax support expects content in TeX format. If you’re not
-familiar with TeX formatting, please see [this cheatsheet](https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference).
-Please note that point 1 does not apply in Anki - Anki uses `\(` and
+familiar with TeX formatting, see [this cheatsheet](https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference).
+Note that point 1 does not apply in Anki - Anki uses `\(` and
 `\)` for inline equations, and `\[` and `\]` for display equations.
 
-If you want to use newlines in a MathJax expression, please use
+If you want to use newlines in a MathJax expression, use
 <kbd>Shift</kbd>+<kbd>Enter</kbd> instead of just <kbd>Enter</kbd>, as a normal newline will prevent
 MathJax from working correctly.
 
 Anki includes built in support for mhchem for rendering chemical
-equations. Please see the "chemical equations" section and the following
+equations. See the "chemical equations" section and the following
 sections for more information:
 <https://mhchem.github.io/MathJax-mhchem/>
 
@@ -61,7 +61,9 @@ if (typeof is_already_run == 'undefined') {
 </script>
 ```
 
-Note that Anki has special logic for cloze deletions that might not work if you change the standard delimiters for MathJax equations.
+```admonish note
+Anki has special logic for cloze deletions that might not work if you change the standard delimiters for MathJax equations.
+```
 
 ## LaTeX
 
@@ -77,17 +79,19 @@ displayed by mobile clients. Because of the extra complexity LaTeX
 brings, it is only recommended for users that need more features than
 MathJax provides.
 
-### Security Warning
+### Enable LaTeX
 
+```admonish danger
 LaTeX code can contain malicious commands that can read or write non-Anki
 data on your computer. For this reason, recent Anki versions will refuse to
 generate LaTeX images by default.
 
-If you wish to use LaTeX on your own cards, you will need to enable the **Generate LaTeX images** option in the preferences screen.
-
 **We strongly recommend you do not enable this option if you use shared decks, or think
 you will import shared decks in the future, as you are potentially giving any shared
 deck author access to your computer**.
+```
+
+If you wish to use LaTeX on your own cards, you will need to enable the **Generate LaTeX images** option in the preferences screen.
 
 You do not need to enable this option for shared decks. If a shared deck author has
 correctly generated all the images prior to them sharing the deck, the images should
@@ -132,7 +136,7 @@ already exist, but can not generate the images on their own.
 
 To avoid having to review all your cards at least once before you can
 study on the other clients, Anki can generate the images in bulk for
-you. To generate all the images, please go to Tools&gt;Check Media.
+you. To generate all the images, go to Tools&gt;Check Media.
 After that, syncing should upload the generated media to AnkiWeb and the
 other clients.
 
@@ -255,7 +259,7 @@ your Anki cards:
 
 As of Anki 2.1.20 / AnkiMobile 2.0.56 / AnkiDroid 2.13, this workaround is no
 longer required, as `{{field}}` text inside fields no longer causes problems. If
-you need to support older versions and want to keep using this syntax, please
+you need to support older versions and want to keep using this syntax,
 make sure you place the `{{=<% %>=}}` string at the very top of your front and
 back template, as recent Anki versions will not recognize it anywhere but the
 start.
@@ -312,5 +316,5 @@ shared decks to damage your system. (To be on the safe side, these
 commands are prohibited even in comments, so if you’re getting this
 error but don’t think you’ve used one, please double-check any comments
 you have in your headers, templates, and cards.) If you need to use
-these commands, please add them to a system package and import that
+these commands, add them to a system package and import that
 package as described in the previous section.

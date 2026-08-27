@@ -13,13 +13,13 @@ subdecks it contains.
 On the decks screen, your decks and subdecks will be displayed in a list. [New, Learn, and Due (To Review)](getting-started.md#card-states)
 cards for that day will be also displayed here.
 
-![Decks screen](media/decks_screen.png)
+![](media/decks_screen.png)
 
 When you click on a deck, it will become the "current deck", and Anki
 will change to the study screen. You can return to the deck list at any time by clicking on “Decks” at
 the top of the main window. (You can also use the Study
 Deck action in the menu to select a new deck from the keyboard, or you
-can press the <kbd>s</kbd> key to study the currently selected deck.)
+can press the <kbd>S</kbd> key to study the currently selected deck.)
 
 You can click the gears button to the right of a deck to rename or
 delete the deck, change its [options](deck-options.md), or [export](exporting.md) it.
@@ -29,26 +29,26 @@ delete the deck, change its [options](deck-options.md), or [export](exporting.md
 After clicking on a deck to study, you’ll see a screen that shows you
 how many cards are due today. This is called the "deck overview" screen:
 
-![Study overview](media/study_overview.png)
+![](media/study_overview.png)
 
 The cards are split into [three types](getting-started.md#card-states): New, Learning, and To Review.
 If you have [Bury siblings](#siblings-and-burying) activated in your deck options, you
 may see how many cards will be buried in grey:
 
-![Study overview (Buried Cards)](media/study_overview_buried_cards.png)
+![](media/study_overview_buried_cards.png)
 
 To start a study session, click the **Study Now** button. Anki will
 proceed to show you cards until the cards to be shown for the day have
 run out.
 
-While studying, you can return to the overview by pressing the <kbd>s</kbd> key
+While studying, you can return to the overview by pressing the <kbd>S</kbd> key
 on your keyboard.
 
 ## Questions
 
 When a card is shown, only the question is shown at first. After
 thinking about the answer, either click the **Show Answer** button, or
-press the spacebar. The answer will then be shown. It’s okay if it takes
+press the <kbd>Space</kbd>. The answer will then be shown. It’s okay if it takes
 you a little while to recall the answer, but as a general rule if you
 can’t answer within about 10 seconds, it’s probably better to move on
 and show the answer than keep struggling to remember.
