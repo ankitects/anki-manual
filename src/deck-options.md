@@ -480,6 +480,16 @@ are used for optimization.
 
 You can also optimize the parameters for all of your presets at once by clicking on **Optimize All Presets**.
 
+```admonish faq collapsible=true, title="My interval went down (e.g. from 4 to 3 days) after optimizing my FSRS parameters. Why is that?"
+If you optimize your parameters, FSRS might determine that the intervalls should
+be shorter than it previously predicted. The reason is that the Difficulty,
+Stability and Retrievability values are recalculated, if you optimize your
+parameters.
+
+You can learn more about those parameters in the official [ABC of FSRS wiki
+page](https://github.com/open-spaced-repetition/fsrs4anki/wiki/abc-of-fsrs).
+```
+
 **Health Check**
 
 You can enable **Check health when optimizing (slow)** to check how well FSRS
