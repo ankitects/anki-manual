@@ -151,6 +151,8 @@ There are some special fields you can include in your templates:
 
     The type of card ("Forward", etc): {{Card}}
 
+    The card's unique ID: {{CardID}}
+
     The content of the front template
     (only valid in back template): {{FrontSide}}
 
@@ -158,6 +160,8 @@ FrontSide will not automatically play any audio that was on the front side
 of the card. If you wish to have the same audio play automatically on both
 the front and back of the card, you’ll need to manually include the audio
 fields on the back as well.
+
+The {{CardID}} replacement was added in Anki 25.07.
 
 As with other fields, special field names are case sensitive - you must use
 `{{Tags}}` rather than `{{tags}}` for example.
