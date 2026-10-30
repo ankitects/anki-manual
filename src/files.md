@@ -195,12 +195,16 @@ remaining open, you can instead use:
 The full path including drive letter is required - if you try using
 `\anki\anki.exe` instead you will find syncing stops working.
 
-WARNING: The drive letter must be the same on all devices. If you set this up for drive E,
+```admonish caution
+The drive letter must be the same on all devices. If you set this up for drive E,
 it won't work for a flash drive mapped to drive D for example.
+```
 
-WARNING: Media syncing with AnkiWeb may not work if your flash drive is formatted
+```admonish caution
+Media syncing with AnkiWeb may not work if your flash drive is formatted
 as FAT32. Please format the drive as NTFS to ensure media syncs
 correctly.
+```
 
 ### Anki Launcher
 
